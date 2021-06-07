@@ -1,0 +1,53 @@
+---
+title: Wprowadzenie do nowej aplikacji Ustawienia
+description: Dowiedz się więcej o nowej aplikacji Ustawienia
+author: joyjaz
+ms.author: v-jjaswinski
+keywords: HoloLens, ustawienia, s wyboru aplikacji, wolumin
+ms.prod: hololens
+ms.sitesec: library
+ms.localizationpriority: high
+ms.reviewer: ''
+manager: yannisle
+ms.openlocfilehash: bf1a2080c15346843b9ea9b2d0dc93154e185107
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "111379818"
+---
+# <a name="new-settings-app"></a><span data-ttu-id="d11b3-104">Nowa aplikacja Ustawienia</span><span class="sxs-lookup"><span data-stu-id="d11b3-104">New Settings app</span></span>
+
+<span data-ttu-id="d11b3-105">W [systemie Windows Holographic w wersji 21H1](hololens-release-notes.md#windows-holographic-version-21h1)wprowadzamy nową wersję aplikacji Ustawienia.</span><span class="sxs-lookup"><span data-stu-id="d11b3-105">With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), we're introducing a new version of the Settings app.</span></span> <span data-ttu-id="d11b3-106">Nowa aplikacja Ustawienia zawiera nowe funkcje i rozszerzone ustawienia dla urządzenia HoloLens 2 w następujących obszarach: Dźwięk, Power & uśpienia, Sieć & Internet, Aplikacje, Konta, Ułatwienia dostępu i inne.</span><span class="sxs-lookup"><span data-stu-id="d11b3-106">The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: Sound, Power & sleep, Network & Internet, Apps, Accounts, Ease of Access, and more.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d11b3-107">Ponieważ nowa aplikacja Ustawienia różni się od starszej aplikacji Ustawienia, wszystkie okna ustawień umieszczone wcześniej w środowisku zostaną usunięte po aktualizacji.</span><span class="sxs-lookup"><span data-stu-id="d11b3-107">Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.</span></span>
+
+![Strona główna nowej aplikacji Ustawienia](images/new-settings-app.png)
+
+<span data-ttu-id="d11b3-109">**Nowe funkcje i ustawienia**</span><span class="sxs-lookup"><span data-stu-id="d11b3-109">**New features and settings**</span></span>
+- <span data-ttu-id="d11b3-110">Wyszukiwanie ustawień: wyszukaj ustawienia na stronie głównej Ustawienia przy użyciu słów kluczowych lub nazwy ustawienia.</span><span class="sxs-lookup"><span data-stu-id="d11b3-110">Settings search: search for settings from the Settings homepage using keywords or the setting's name.</span></span>
+- <span data-ttu-id="d11b3-111">Kolor > [systemu](hololens2-display.md#how-to-use-display-color-calibration)</span><span class="sxs-lookup"><span data-stu-id="d11b3-111">System > [Color calibration](hololens2-display.md#how-to-use-display-color-calibration)</span></span>
+    - <span data-ttu-id="d11b3-112">Wybierz alternatywny profil kolorów dla ekranu urządzenia HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="d11b3-112">Select an alternative color profile for your HoloLens 2 display.</span></span>
+- <span data-ttu-id="d11b3-113">Dźwięk > systemowego:</span><span class="sxs-lookup"><span data-stu-id="d11b3-113">System > Sound:</span></span>
+  - <span data-ttu-id="d11b3-114">Wejściowe i wyjściowe urządzenia audio: niezależne wybieranie wejściowych i wyjściowych urządzeń audio (na przykład nasłuchiwać dźwięku za pośrednictwem słuchawki Bluetooth lub używać mikrofonu USB-C do wprowadzania audio).</span><span class="sxs-lookup"><span data-stu-id="d11b3-114">Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="d11b3-115">Mikrofony Bluetooth nie są obsługiwane przez urządzenie HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="d11b3-115">Bluetooth microphones are not supported by HoloLens 2.</span></span>
+  - <span data-ttu-id="d11b3-116">Wolumin aplikacji: niezależnie dostosuj wolumin każdej aplikacji.</span><span class="sxs-lookup"><span data-stu-id="d11b3-116">App volume: independently adjust the volume of each app.</span></span> <span data-ttu-id="d11b3-117">Zobacz [per app volume control (Kontrola woluminu aplikacji).](holographic-home.md#per-app-volume-control)</span><span class="sxs-lookup"><span data-stu-id="d11b3-117">See [per app volume control](holographic-home.md#per-app-volume-control).</span></span>
+- <span data-ttu-id="d11b3-118">System > zasilania & uśpienia: wybierz, kiedy urządzenie ma przejść w stan uśpienia po okresie braku aktywności.</span><span class="sxs-lookup"><span data-stu-id="d11b3-118">System > Power & sleep: choose when the device should go to sleep after a period of inactivity.</span></span>
+- <span data-ttu-id="d11b3-119">System > Baterii: ręcznie włączyć tryb oszczędzanie baterii lub ustawić próg baterii, w którym punkt oszczędzanie baterii automatycznie włączyć tryb.</span><span class="sxs-lookup"><span data-stu-id="d11b3-119">System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.</span></span>
+- <span data-ttu-id="d11b3-120">Urządzenia > USB: można domyślnie wyłączyć połączenia USB.</span><span class="sxs-lookup"><span data-stu-id="d11b3-120">Devices > USB: you can disable USB connections by default.</span></span>
+- <span data-ttu-id="d11b3-121">Sieć & Internet:</span><span class="sxs-lookup"><span data-stu-id="d11b3-121">Network & Internet:</span></span>
+  - <span data-ttu-id="d11b3-122">Karty Ethernet USB-C będą teraz wyświetlane w sieci & Internet.</span><span class="sxs-lookup"><span data-stu-id="d11b3-122">USB-C Ethernet adapters will now appear in Network & Internet.</span></span>
+  - <span data-ttu-id="d11b3-123">Ustawienia karty Ethernet USB-C są teraz dostępne, w tym jej adres IP.</span><span class="sxs-lookup"><span data-stu-id="d11b3-123">USB-C Ethernet adapter settings are now available, including its IP address.</span></span>
+  - <span data-ttu-id="d11b3-124">Teraz można włączyć tryb samolotowy na urządzeniach HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="d11b3-124">You can now enable airplane mode on HoloLens 2.</span></span>
+- <span data-ttu-id="d11b3-125">Aplikacje: możesz zresetować domyślne aplikacje używane dla typów plików i linków.</span><span class="sxs-lookup"><span data-stu-id="d11b3-125">Apps: you can reset the default apps used for file and link types.</span></span> <span data-ttu-id="d11b3-126">Aby uzyskać więcej informacji, zobacz [S wyboru domyślnej aplikacji.](holographic-home.md#default-app-picker)</span><span class="sxs-lookup"><span data-stu-id="d11b3-126">For more information see [Default app picker](holographic-home.md#default-app-picker).</span></span>
+- <span data-ttu-id="d11b3-127">Konta > innych użytkowników: właściciele urządzeń mogą dodawać użytkowników, uaktualniać użytkowników standardowych do właścicieli urządzeń, obniżać właścicieli urządzeń do użytkowników standardowych i usuwać użytkowników.</span><span class="sxs-lookup"><span data-stu-id="d11b3-127">Accounts > Other users: device owners can add users, upgrade standard users to device owners, downgrade device owners to standard users, and remove users.</span></span>
+- <span data-ttu-id="d11b3-128">Ułatwienia dostępu: zmiana rozmiaru tekstu i niektórych efektów wizualnych.</span><span class="sxs-lookup"><span data-stu-id="d11b3-128">Ease of Access: change text size and some visual effects.</span></span>
+
+<span data-ttu-id="d11b3-129">**Znane problemy**</span><span class="sxs-lookup"><span data-stu-id="d11b3-129">**Known issues**</span></span>
+- <span data-ttu-id="d11b3-130">Wcześniej umieszczone okna Ustawienia zostaną usunięte (patrz uwaga powyżej).</span><span class="sxs-lookup"><span data-stu-id="d11b3-130">Previously placed Settings windows will be removed (see note above).</span></span>
+- <span data-ttu-id="d11b3-131">Nie można już zmienić nazwy urządzenia za pomocą aplikacji Ustawienia.</span><span class="sxs-lookup"><span data-stu-id="d11b3-131">You can no longer rename your device with the Settings app.</span></span> <span data-ttu-id="d11b3-132">Administratorzy IT mogą zmieniać nazwy urządzeń przy użyciu szablonu [nazwy urządzenia Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) lub węzła MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.</span><span class="sxs-lookup"><span data-stu-id="d11b3-132">IT admins can rename devices by using the [Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) device name template or the MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName node.</span></span>
+- <span data-ttu-id="d11b3-133">Na stronie Ethernet przez cały czas jest przedstawiane wirtualne urządzenie Ethernet ("UsbNcm").</span><span class="sxs-lookup"><span data-stu-id="d11b3-133">The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times.</span></span>
+- <span data-ttu-id="d11b3-134">Użycie baterii dla nowej Microsoft Edge może nie być dokładne, ze względu na charakter aplikacji klasycznej Win32 obsługiwanej przez warstwę adaptera platformy uniwersalnej systemu Windows (nie przewiduje się wkrótce żadnej poprawki).</span><span class="sxs-lookup"><span data-stu-id="d11b3-134">Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).</span></span>
+

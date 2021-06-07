@@ -1,0 +1,59 @@
+---
+title: Konfigurowanie CSP i Zarządzanie urządzeniami omówienie
+description: Dowiedz się, jak skonfigurować CSP, zasady i zarządzanie urządzeniami przy użyciu pakietów Zarządzanie urządzeniami mobilnych i aprowizowania.
+ms.prod: hololens
+ms.sitesec: library
+author: evmill
+ms.author: v-evmill
+ms.topic: article
+ms.localizationpriority: medium
+ms.date: 09/16/2020
+ms.reviewer: lavinds
+manager: yannisle
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
+ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "111378392"
+---
+# <a name="configure-csps-and-device-management-overview"></a><span data-ttu-id="676d9-103">Konfigurowanie CSP i Zarządzanie urządzeniami omówienie</span><span class="sxs-lookup"><span data-stu-id="676d9-103">Configure CSPs and Device Management overview</span></span>
+
+<span data-ttu-id="676d9-104">Administratorzy IT mogą definiować i implementować ustawienia zasad na urządzeniach HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="676d9-104">IT Administrators can define and implement policy settings on HoloLens 2.</span></span> <span data-ttu-id="676d9-105">Ustawienia konfiguracji, których użyjemy, różnią się w zależności od scenariusza wdrażania, a urządzenia firmowe będą oferować it najszerszy zakres kontroli.</span><span class="sxs-lookup"><span data-stu-id="676d9-105">What configuration settings you use will differ based on the deployment scenario, and corporate devices will offer IT the broadest range of control.</span></span> <span data-ttu-id="676d9-106">W Windows 10 dostawcy usług konfiguracji (CSP) to interfejs do odczytywania, konfigurowania, modyfikowania lub usuwania ustawień konfiguracji na urządzeniu.</span><span class="sxs-lookup"><span data-stu-id="676d9-106">In Windows 10, Configuration Service Providers (CSP)s are an interface to read, set, modify, or delete configuration settings on the device.</span></span> <span data-ttu-id="676d9-107">Te ustawienia są mapowe na klucze lub pliki rejestru.</span><span class="sxs-lookup"><span data-stu-id="676d9-107">These settings map to registry keys or files.</span></span> <span data-ttu-id="676d9-108">Niektórzy dostawcy usług konfiguracji obsługują format WAP, niektórzy obsługują syncML, a niektórzy obsługują oba te formaty.</span><span class="sxs-lookup"><span data-stu-id="676d9-108">Some configuration service providers support the WAP format, some support SyncML, and some support both.</span></span>
+
+<span data-ttu-id="676d9-109">Aby uzyskać więcej informacji na Windows 10 Holographic zarządzania urządzeniami, zobacz pełną listę adresów CSP obsługiwanych na [urządzeniach HoloLens.](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)</span><span class="sxs-lookup"><span data-stu-id="676d9-109">For more information about Windows 10 Holographic device management CSPs, see the full list of [CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).</span></span>
+<span data-ttu-id="676d9-110">Administratorzy IT mogą również zarządzać programem Policy CSP na urządzeniach. Zobacz pełną listę serwerów CSP zasad obsługiwanych przez [urządzenie HoloLens 2.](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2)</span><span class="sxs-lookup"><span data-stu-id="676d9-110">IT Administrators can also manage Policy CSP on devices, see the full list of [Policy CSPs supported by HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2).</span></span>
+
+## <a name="configuration-methods"></a><span data-ttu-id="676d9-111">Metody konfiguracji</span><span class="sxs-lookup"><span data-stu-id="676d9-111">Configuration methods</span></span>
+
+### <a name="configure-with-mdm"></a><span data-ttu-id="676d9-112">Konfigurowanie przy użyciu rozwiązania MDM</span><span class="sxs-lookup"><span data-stu-id="676d9-112">Configure with MDM</span></span>
+
+<span data-ttu-id="676d9-113">Usługami CSP i zasadami można łatwo zarządzać na dowolnym urządzeniu osobistym lub firmowym zarejestrowanym w systemie MDM.</span><span class="sxs-lookup"><span data-stu-id="676d9-113">CSPs and Policies can be easily managed on any personal or corporate device enrolled in an MDM system.</span></span> <span data-ttu-id="676d9-114">Po zarejestrowaniu urządzenia w rozwiązaniu MDM będzie można zarządzać tym urządzeniem lub zestawem urządzeń przy użyciu konfiguracji urządzeń.</span><span class="sxs-lookup"><span data-stu-id="676d9-114">Once a device is enrolled in your MDM solution, you will be able to manage that device, or set of devices using device configurations.</span></span> <span data-ttu-id="676d9-115">Dowiedz się więcej na temat zarządzania [urządzeniami HoloLens za pomocą rozwiązania MDM.](hololens-mdm-configure.md)</span><span class="sxs-lookup"><span data-stu-id="676d9-115">Learn more about how to [manage your HoloLens devices through MDM](hololens-mdm-configure.md).</span></span>
+
+### <a name="configure-with-provisioning-packages"></a><span data-ttu-id="676d9-116">Konfigurowanie za pomocą pakietów aprowizowania</span><span class="sxs-lookup"><span data-stu-id="676d9-116">Configure with Provisioning Packages</span></span>
+
+<span data-ttu-id="676d9-117">Urządzenie HoloLens 2 obsługuje również ustawianie ograniczonego zestawu konfiguracji CSP dla urządzeń HoloLens 2 za pośrednictwem niestandardowych pakietów aprowingu.</span><span class="sxs-lookup"><span data-stu-id="676d9-117">HoloLens 2 also supports setting a limited set of CSP configurations for HoloLens 2 devices through custom Provisioning Packages.</span></span> <span data-ttu-id="676d9-118">Pakiety aprowizowania są zwykle używane w przypadku urządzeń innych niż zarządzane przez rozwiązanie MDM i wymagają ręcznego zastosowania do każdego urządzenia.</span><span class="sxs-lookup"><span data-stu-id="676d9-118">Provisioning Packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device.</span></span> <span data-ttu-id="676d9-119">Przeczytaj informacje na temat tworzenia niestandardowych [pakietów aprowizowania dla urządzenia HoloLens.](https://docs.microsoft.com/hololens/hololens-provisioning)</span><span class="sxs-lookup"><span data-stu-id="676d9-119">Read information on building custom [Provisioning Packages for HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning).</span></span>
+
+## <a name="configurations"></a><span data-ttu-id="676d9-120">Konfiguracje</span><span class="sxs-lookup"><span data-stu-id="676d9-120">Configurations</span></span>
+
+### <a name="common-device-restrictions"></a><span data-ttu-id="676d9-121">Typowe ograniczenia dotyczące urządzeń</span><span class="sxs-lookup"><span data-stu-id="676d9-121">Common device restrictions</span></span>
+
+<span data-ttu-id="676d9-122">Niektóre ograniczenia dotyczące urządzeń są tak proste, jak wyłączenie funkcjonalności lub połączenia z urządzeniem.</span><span class="sxs-lookup"><span data-stu-id="676d9-122">Some device restrictions are as simple and disabling a functionality or connection to the device.</span></span> <span data-ttu-id="676d9-123">Aby dowiedzieć się więcej o tych ograniczeniach, przeczytaj [więcej na temat typowych ograniczeń dotyczących urządzeń.](hololens-common-device-restrictions.md)</span><span class="sxs-lookup"><span data-stu-id="676d9-123">To learn about these read more about [common device restrictions.](hololens-common-device-restrictions.md)</span></span>
+
+### <a name="kiosk-modes"></a><span data-ttu-id="676d9-124">Tryby kiosku</span><span class="sxs-lookup"><span data-stu-id="676d9-124">Kiosk modes</span></span>
+
+<span data-ttu-id="676d9-125">Użyj trybu kiosku, aby kontrolować, które tożsamości mają domyślnie dostęp do których aplikacji.</span><span class="sxs-lookup"><span data-stu-id="676d9-125">Use Kiosk mode to control which identities have access to which apps by default.</span></span> <span data-ttu-id="676d9-126">Kiosków można używać dla jednej aplikacji lub wielu interfejsów użytkownika aplikacji.</span><span class="sxs-lookup"><span data-stu-id="676d9-126">Kiosks can be used for a single app or multiple app UI experience.</span></span> <span data-ttu-id="676d9-127">Konfiguracje kiosku mogą się różnić od pojedynczej aplikacji dla każdego, kto korzysta z urządzenia, po różne aplikacje dla różnych grup.</span><span class="sxs-lookup"><span data-stu-id="676d9-127">Kiosk configurations range from a single app for anyone using the device, to different selections of apps for different groups.</span></span> <span data-ttu-id="676d9-128">Tryb kiosku nie zatrzymuje uruchamiania innych aplikacji przez "dozwolone aplikacje" i nie był nigdy przeznaczony.</span><span class="sxs-lookup"><span data-stu-id="676d9-128">Kiosk mode does not stop “allowed apps” from launching other apps and was not intended to ever.</span></span> <span data-ttu-id="676d9-129">Aby dowiedzieć się więcej, zapoznaj się [z tematem Tryby kiosku i sposoby ich używania.](hololens-kiosk.md)</span><span class="sxs-lookup"><span data-stu-id="676d9-129">Learn more by [reading about Kiosk modes and how to use them](hololens-kiosk.md).</span></span>
+
+### <a name="settings-page-visibility"></a><span data-ttu-id="676d9-130">Widoczność strony ustawień</span><span class="sxs-lookup"><span data-stu-id="676d9-130">Settings Page Visibility</span></span>
+
+<span data-ttu-id="676d9-131">Użyj zasad aplikacji Ustawienia, aby kontrolować, które tożsamości domyślnie mają dostęp do ustawień.</span><span class="sxs-lookup"><span data-stu-id="676d9-131">Use Settings app policy to control which identities have access to settings by default.</span></span> <span data-ttu-id="676d9-132">Za pomocą tych zasad aplikację Ustawienia można skonfigurować tak, aby wyświetlała tylko wybrane strony lub ukrywała wszystkie wybrane strony.</span><span class="sxs-lookup"><span data-stu-id="676d9-132">Using this policy the Settings app can be configured to either show only the select pages, or hide all selected pages.</span></span> <span data-ttu-id="676d9-133">[Przeczytaj o tym, jak skonfigurować dostępne strony.](settings-uri-list.md)</span><span class="sxs-lookup"><span data-stu-id="676d9-133">[Read about how to configure the pages available](settings-uri-list.md).</span></span>
+
+<span data-ttu-id="676d9-134">Ta funkcja jest obecnie dostępna tylko [w niejawny tester systemu Windows kompilacjach.](hololens-insider.md)</span><span class="sxs-lookup"><span data-stu-id="676d9-134">This feature is currently only available in [Windows Insider builds](hololens-insider.md).</span></span> <span data-ttu-id="676d9-135">Upewnij się, że urządzenia, dla których zamierzasz używać tej funkcji, są w kompilacji 19041.1349+.</span><span class="sxs-lookup"><span data-stu-id="676d9-135">Ensure devices you intend to use this feature for are on build 19041.1349+.</span></span>
+
+### <a name="wdac"></a><span data-ttu-id="676d9-136">WDAC</span><span class="sxs-lookup"><span data-stu-id="676d9-136">WDAC</span></span>
+
+<span data-ttu-id="676d9-137">Konfiguracja funkcji WDAC umożliwia kontrolowanie, które aplikacje/procesy mają być dozwolone lub niedozwolone niezależnie od tego, czy system jest w trybie kiosku, czy nie.</span><span class="sxs-lookup"><span data-stu-id="676d9-137">Use WDAC configuration to control which apps / processes are allowed / disallowed to be launched irrespective of whether system is in kiosk mode or not.</span></span>
+[<span data-ttu-id="676d9-138">Zobacz nasze omówienie usług WDAC.</span><span class="sxs-lookup"><span data-stu-id="676d9-138">See our overview for WDAC.</span></span>](windows-defender-application-control-wdac.md)
