@@ -10,16 +10,16 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
 keywords: holograficzna ramka, pole widzenia, fov, spaces, environment, how-to, HoloLens, mixed reality, zestawy nagłowne rzeczywistości mieszanej
-ms.openlocfilehash: f4d3feb379a1f9815b940614fcd4b29b062f5cdc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379758"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924353"
 ---
 # <a name="hololens-environment-considerations"></a>Zagadnienia dotyczące środowiska urządzenia HoloLens
 
-Urządzenie HoloLens łączy holograficzne z "rzeczywistym" światem, umieszczając hologramy w twoim środowisku. Okno aplikacji holograficznej "zawiesza się" na ścianie, na tablecie kręci się ballerina, a na ścianie nieświadomego znajomego znajduje się chłoń. W przypadku korzystania z gry lub aplikacji immersyjnej świat holograficzny zostanie rozrzuty, aby wypełnić twoje środowiska, ale nadal możesz zobaczyć i poruszać się po przestrzeni.
+Urządzenie HoloLens łączy holograficzne z "rzeczywistym" światem, umieszczając hologramy w twoim środowisku. Okno aplikacji holograficznej "zawiesza się" na ścianie, na tablecie kręci się kula holograficzna, a na ścianie nieświadomego znajomego znajduje się chłoniak. W przypadku korzystania z gry lub aplikacji immersyjnej świat holograficzny zostanie rozrzuty, aby wypełnić twoje środowiska, ale nadal możesz zobaczyć i poruszać się po przestrzeni.
 
 Hologramy, które umieścisz, zostaną tam, gdzie je umieścisz, nawet jeśli wyłączysz urządzenie.
 
@@ -35,31 +35,31 @@ Windows Mixed Reality używa wizualnego światła do śledzenia lokalizacji uży
 
 Obszary, w których istnieją punkty jasnego światła w ogólnym przyciemnionym obszarze, również są problematyczne, ponieważ aparat musi się dostosowywać podczas przechodzenia do i z jasnych obszarów. Może to spowodować "zagubione" urządzenie i sądzi, że zmiana światła odpowiada zmianie lokalizacji. Stabilne poziomy światła w obszarze prowadzą do lepszego śledzenia.  
 
-Każde oświetlenie na zewnątrz może również powodować niestabilność trackera, ponieważ z czasem światło słoneczne może się znacznie zmieniać. Na przykład śledzenie w tej samej przestrzeni w okresie letnim i na zimzie może przynieść znacząco różne wyniki, ponieważ światło z drugiej ręki na zewnątrz może być wyższe o różne godziny roku.  
+Każde oświetlenie na zewnątrz może również powodować niestabilność trackera, ponieważ z czasem światło słoneczne może się znacznie zmieniać. Na przykład śledzenie w tej samej przestrzeni w okresie letnim i na zimzie może przynieść znacząco różne wyniki, ponieważ światło z drugiej ręki na zewnątrz może być wyższe o różnych godzinach roku.  
 
 Jeśli masz mikrometryk, dobrym miejscem do rozpoczęcia jest stały 500–1000 dolarów.  
 
 #### <a name="types-of-lighting"></a>Typy oświetlenia
 
-Różne typy światła w przestrzeni mogą również mieć wpływ na śledzenie. Żarówki pulsuje prądem zmiennym — jeśli częstotliwość prądu zmiennego wynosi 50 Hz, światło pulsuje przy częstotliwości 50 Hz. Dla człowieka to pulsowanie nie jest zauważalne. Jednak 30-cyfrowy aparat HoloLens widzi te zmiany — niektóre ramki będą dobrze oświetlone, niektóre będą źle oświetlone, a niektóre będą zbyt widoczne, gdy aparat spróbuje skompensować pulsy światła.  
+Różne typy światła w przestrzeni mogą również mieć wpływ na śledzenie. Żarówki pulsują prądem zmiennym — jeśli częstotliwość prądu zmiennego wynosi 50 Hz, światło pulsuje przy częstotliwości 50 Hz. Dla człowieka to pulsowanie nie jest zauważalne. Jednak 30-cyfrowy aparat HoloLens widzi te zmiany — niektóre ramki będą dobrze oświetlone, niektóre będą źle oświetlone, a niektóre będą zbyt widoczne, gdy aparat spróbuje skompensować pulsy światła.  
 
-W Stanach Zjednoczonych standard częstotliwości energii elektrycznej wynosi 60 Hz, więc pulsy żarówki są nasycane szybkość klatek urządzenia HoloLens — pulsy 60 Hz są zgodne z 30 ramką FRAME urządzenia HoloLens. Jednak wiele krajów ma standard częstotliwości prądu zmiennego 50 Hz, co oznacza, że niektóre ramki HoloLens będą podejmowane podczas pulsów, a inne nie. W szczególności wiadomo, że oświetlenie w Europie powoduje problemy.  
+W Stanach Zjednoczonych standard częstotliwości energii elektrycznej wynosi 60 Hz, więc pulsy żarówki są nasycane ramką urządzenia HoloLens — pulsy 60 Hz są zgodne ze szybkość ramek 30 FRAME urządzenia HoloLens. Jednak wiele krajów ma standard częstotliwości prądu zmiennego 50 Hz, co oznacza, że niektóre ramki HoloLens będą podejmowane podczas pulsów, a inne nie. W szczególności wiadomo, że oświetlenie w Europie powoduje problemy.  
 
 Istnieje kilka rzeczy, które można spróbować rozwiązać problemy z migotaniami. Temperatury, wiek żarówki i cykle rozgrzewki to typowe przyczyny migotowania i wymiany żarówek. Pomocne może być również zaostrzenie żarówek i upewnienie się, że bieżące rysy są stałe.  
 
 ### <a name="items-in-a-space"></a>Elementy w przestrzeni
 
-Urządzenie HoloLens używa unikatowych elementów krajobrazu, znanych także jako *funkcje*, aby zlokalizować się w przestrzeni.  
+Urządzenie HoloLens używa unikatowych elementów krajobrazu w środowisku, znanych także jako *funkcje*, aby zlokalizować się w przestrzeni.  
 
 Urządzenie prawie nigdy nie może śledzić w obszarze z niską jakością funkcji, ponieważ nie ma możliwości, aby określić, gdzie znajduje się w przestrzeni. Dodawanie funkcji do ścian przestrzeni jest zwykle dobrym sposobem na usprawnienie śledzenia. Pomocne są plakaty, symbole przyklejone do ściany, rośliny, unikatowe obiekty lub inne podobne elementy. Nieuchowe biurko to dobry przykład środowiska, które prowadzi do dobrego śledzenia — w jednym obszarze istnieje wiele różnych funkcji.  
 
-Ponadto należy używać unikatowych funkcji w tym samym miejscu. Na przykład ten sam plakat powtórzony wielokrotnie na ścianie spowoduje dezorientację urządzenia, ponieważ urządzenie HoloLens nie będzie wiedzieć, którego z powtarzających się plakatów się szuka. Jednym z typowych sposobów dodawania unikatowych cech jest użycie linii taśm maskowania w celu utworzenia unikatowych, nie powtarzających się wzorców wzdłuż ścian i podłogi w przestrzeni.  
+Ponadto należy używać unikatowych funkcji w tym samym miejscu. Na przykład ten sam plakat powtórzony wielokrotnie na ścianie spowoduje dezorientację urządzenia, ponieważ urządzenie HoloLens nie będzie wiedzieć, którego z powtarzających się plakatów się szuka. Jednym z typowych sposobów dodawania unikatowych cech jest użycie linii taśmy maskującej w celu utworzenia unikatowych, nie powtarzających się wzorców wzdłuż ścian i podłogi w przestrzeni.  
 
 Warto zadać sobie pytanie: jeśli widzieliśsz tylko niewielką ilość sceny, czy możesz jednoznacznie zlokalizować siebie w przestrzeni? Jeśli nie, prawdopodobnie urządzenie będzie również mieć problemy ze śledzeniem.
 
 #### <a name="wormholes"></a>Wormholes (odchudnianie)
 
-Jeśli masz dwa obszary lub regiony, które wyglądają tak samo, monitor może uważać, że są takie same. Powoduje to, że urządzenie oszuka się, że jest w innym miejscu. Nazywamy je powtarzalnymi *obszarami.*  
+Jeśli masz dwa obszary lub regiony, które wyglądają tak samo, monitor może uważać, że są takie same. Powoduje to, że urządzenie może oszukać się, myśląc, że jest w innym miejscu. Nazywamy je powtarzalnymi *obszarami.*  
 
 Aby zapobiec zrębowi, staraj się zapobiegać identycznym obszarom w tym samym obszarze. Identyczne obszary mogą czasami obejmować stacje fabryczne, okna w budynku, stojaki serwerowe lub stacje robocze. Etykietowanie obszarów lub dodawanie unikatowych cech do każdego podobnego obszaru może pomóc w zminimalizowaniu problemów.
 
@@ -67,9 +67,9 @@ Aby zapobiec zrębowi, staraj się zapobiegać identycznym obszarom w tym samym 
 
 Jeśli środowisko ciągle się przesuwa i zmienia, urządzenie nie ma stabilnych funkcji do zlokalizowania.  
 
-Im więcej obiektów, które znajdują się w przestrzeni, w tym ludzi, tym łatwiej jest utracić śledzenie. Wiadomo, że przenoszenie przenośników taśmowych, elementów w różnych stanach konstrukcji i wielu ludzi w przestrzeni powoduje problemy ze śledzeniem.
+Im więcej obiektów w przestrzeni, w tym osób, tym łatwiej jest utracić śledzenie. Wiadomo, że przenoszenie przenośników taśmowych, elementów w różnych stanach konstrukcji i wielu osób w przestrzeni powoduje problemy ze śledzeniem.
 
-Urządzenie HoloLens może szybko dostosować się do tych zmian, ale tylko wtedy, gdy ten obszar jest wyraźnie widoczny dla urządzenia. Obszary, które nie są często spotykane, mogą być opóźniane w związku z rzeczywistością, co może powodować błędy na mapie przestrzennej. Na przykład użytkownik skanuje znajomego, a następnie zawraca się, gdy znajomy opuszcza pomieszczenie. W danych mapowania przestrzennego będzie zachowywana reprezentacja "zdumuchi" znajomego, dopóki użytkownik nie przeskanuje ponownie pustego miejsca.
+Urządzenie HoloLens może szybko dostosować się do tych zmian, ale tylko wtedy, gdy ten obszar jest wyraźnie widoczny dla urządzenia. Obszary, które nie są często spotykane, mogą być opóźniane w związku z rzeczywistością, co może powodować błędy na mapie przestrzennej. Na przykład użytkownik skanuje znajomego, a następnie zawraca się, gdy znajomy opuszcza pomieszczenie. Reprezentacja "zdumienia" znajomego będzie zachowywana w danych mapowania przestrzennego, dopóki użytkownik nie przeskanuje ponownie pustego miejsca.
 
 ### <a name="proximity-of-the-user-to-items-in-the-space"></a>Bliskość użytkownika z elementami w przestrzeni
 
@@ -95,25 +95,25 @@ Po wprowadzeniu nowej przestrzeni (lub załadowaniu istniejącej) zobaczysz siat
 
 ## <a name="environment-management"></a>Zarządzanie środowiskiem
 
-Istnieją dwa ustawienia, które umożliwiają użytkownikom "czyszczenie" hologramów i powodują,że urządzenie HoloLens "zapomni" spację. Istnieją one w **hologramach i środowiskach** w aplikacji Ustawienia,  a drugie ustawienie jest również wyświetlane w obszarze Prywatność w aplikacji ustawienia.  
+Istnieją dwa ustawienia, które umożliwiają użytkownikom "czyszczenie" hologramów i powodują, że urządzenie HoloLens "zapomni" spację. Istnieją one w **hologramach i środowiskach** w aplikacji ustawienia,  a drugie ustawienie jest również wyświetlane w obszarze Prywatność w aplikacji ustawienia.  
 
-1. **Usuń pobliskie hologramy**. Po wybraniu tego ustawienia urządzenie HoloLens wymazie wszystkie zakotwiczone hologramy i wszystkie przechowywane dane mapy dla "bieżącej przestrzeni", w której znajduje się urządzenie. Nowa sekcja mapy zostanie utworzona i zapisana w bazie danych dla tej lokalizacji, gdy hologramy zostaną ponownie umieszczone w tym samym miejscu.
+1. **Usuń hologramy w pobliżu.** Po wybraniu tego ustawienia urządzenie HoloLens wymazie wszystkie zakotwiczone hologramy i wszystkie przechowywane dane mapy dla "bieżącej przestrzeni", w której znajduje się urządzenie. Nowa sekcja mapy zostanie utworzona i zapisana w bazie danych dla tej lokalizacji, gdy hologramy zostaną ponownie umieszczone w tym samym miejscu.
 
-1. **Usuń wszystkie hologramy**. Po wybraniu tego ustawienia urządzenie HoloLens wymazie WSZYSTKIE dane mapy i zakotwiczone hologramy w całych bazach danych spacji. Nie zostaną ponownie odnalezione żadne hologramy i wszelkie hologramy muszą zostać nowo umieszczone w celu ponownego przechowywania sekcji map w bazie danych.
+1. **Usuń wszystkie hologramy**. Po wybraniu tego ustawienia urządzenie HoloLens wymazie WSZYSTKIE dane mapy i zakotwiczone hologramy z całych baz danych spacji. Nie zostaną ponownie odnalezione żadne hologramy, a wszelkie hologramy muszą zostać nowo umieszczone w celu ponownego przechowywania sekcji map w bazie danych.
 
 ## <a name="hologram-quality"></a>Jakość hologramu
 
 Hologramów można umieszczać w całym środowisku — wysokim, niskim i wokół — [](/windows/mixed-reality/holographic-frame) ale zobaczysz je za pośrednictwem ramki holograficznej, która znajduje się przed twoimi wzrokami. Aby uzyskać najlepszy widok, upewnij się, że urządzenie zostało dostosowane tak, aby widzieć całą ramkę. I nie chciej się eksplorować swojego środowiska.
 
-Aby [hologramy](/windows/mixed-reality/hologram) wyglądały na pętne, jasne i stabilne, urządzenia HoloLens muszą być skalibrowane tylko dla Ciebie. Po pierwszym skonfigurowaniu urządzenia HoloLens zostaniesz poprowadzenie przez ten proces. Później, jeśli hologramy nie wyglądają dobrze lub występują liczne błędy, możesz wprowadzić korekty.
+Aby [hologramy](/windows/mixed-reality/hologram) wyglądały na jasne i stabilne, urządzenia HoloLens muszą być skalibrowane tylko dla Ciebie. Po pierwszym skonfigurowaniu urządzenia HoloLens zostaniesz poprowadzenie przez ten proces. Później, jeśli hologramy nie wyglądają dobrze lub występują liczne błędy, możesz wprowadzić korekty.
 
 Jeśli masz problemy z mapowaniem przestrzeni, spróbuj usunąć pobliskie hologramy i ponownie zamapować miejsce.
 
 ### <a name="calibration"></a>Kalibracja
 
-Jeśli hologramy wyglądają na roztrzęsłość lub potrząsanie lub jeśli masz problemy z umieszczaniem hologramów, najpierw spróbuj użyć [aplikacji Doceń.](hololens-calibration.md) Ta aplikacja może również pomóc, jeśli podczas korzystania z urządzenia HoloLens występują jakieś problemy.
+Jeśli hologramy wyglądają na potrząsanie lub potrząsanie albo jeśli masz problemy z umieszczaniem hologramów, najpierw spróbuj użyć [aplikacji Dosyć.](hololens-calibration.md) Ta aplikacja może również pomóc, jeśli podczas korzystania z urządzenia HoloLens występują jakieś problemy.
 
-Aby uzyskać dostęp do aplikacji Pogotowień, przejdź do **tematu Ustawienia**  >  **Narzędzia**  >  **systemowe**. Wybierz **pozycję Open Przejmij** i postępuj zgodnie z instrukcjami.
+Aby uzyskać dostęp do aplikacji Pogotowień, przejdź do **tematu Ustawienia**  >  **Narzędzia**  >  **systemowe**. Wybierz **pozycję Open Przeszukaj** i postępuj zgodnie z instrukcjami.
 
 Jeśli ktoś inny będzie używać urządzenia HoloLens, powinien najpierw uruchomić aplikację Naręka, aby urządzenie było dla nich prawidłowo skonfigurowane.
 
@@ -125,11 +125,18 @@ Zobacz szczegóły dotyczące urządzenia "HoloLens" w artykule [Materiały i](h
 
 Poniżej podano kilka wskazówek, które należy wykonać podczas korzystania z urządzenia:
 
-1. Przechowuj urządzenie w środowisku w zakresie temperatury (w stanie wstrzymania lub wyłączenia) przez godzinę przed użyciem urządzenia.
+1. Przechowuj urządzenie w środowisku w zakresie temperatury (w stanie wstrzymania lub wyłączonego) przez godzinę przed użyciem urządzenia.
 1. Używaj urządzenia w środowisku w zakresie temperatur.
 1. Korzystanie z urządzeń w pomieszczeniu.
-1. Używanie urządzenia w cieniu; nawet w pomieszczeniu można uniknąć bezpośredniego oświetlenia za pomocą okien lub świetlików.
-1. Jeśli zgodnie z powyższymi wytycznymi wystąpią nieoczekiwane problemy, przed przesłaniem opinii upewnij się, że włączono pełną/opcjonalną [telemetrię.](hololens-feedback.md) Pełna/opcjonalna telemetria będzie wymagana do zbadania wszelkich problemów.
+1. Używanie urządzenia w cieniu; nawet w pomieszczeniu można uniknąć bezpośredniego kontaktu z oknami lub świetlikami.
+1. Jeśli postępuj zgodnie z powyższymi wytycznymi, ale wystąpią nieoczekiwane problemy, wykonaj poniższe kroki, aby przesłać [opinię.](hololens-feedback.md) 
+    1. Upewnij **się,** że **na** urządzeniu jest włączona pełna lub opcjonalna telemetria. Jeśli tak nie jest, włącz ją. 
+    >[!CAUTION]
+    > Telemetria nie jest wsteczna dla zdarzeń cieplnych — musi być włączona podczas przetwarzania lub wymagane dane nie zostaną przechwycone.
+    
+    2. Odttworzyć problem z grzewczym.
+    3. Uwzględnij datę i czas, o których wystąpiło chłonianie.
+    4. Prześlij [opinię.](hololens-feedback.md)
 
 ## <a name="see-also"></a>Zobacz też
 

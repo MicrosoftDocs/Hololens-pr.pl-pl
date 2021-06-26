@@ -14,18 +14,18 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dfa3096f40dab02357409b05c1fc4c0d44a46a6d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: dc5e6a731fb02adab9ef8223313cac52710b6272
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379664"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923503"
 ---
 # <a name="compare-hololens-2-options"></a>Porównanie opcji urządzenia HoloLens 2
 
 HoloLens to urządzenie rzeczywistości mieszanej, które jest obsługiwane przez *hologramy* i udostępnia aplikacje oraz rozwiązania, które usprawniają współpracę. Urządzenie HoloLens 2 zwiększa produktywność i innowacje — celowo — aby pracować inteligentniej.
 
-Niezależnie od tego, czy jesteś specjalistą [](https://www.microsoft.com/hololens/developers) [IT](https://www.microsoft.com/hololens/apps) szukającym kolejnego rozwiązania branżowego, deweloperem, który chce tworzyć środowiska dla nowej rzeczywistości, czy też twórcą decyzji biznesowych, który myśli o kolejnych innowacjach — HoloLens 2 to nowa rzeczywistość przetwarzania. [](https://www.microsoft.com/hololens/apps)
+Niezależnie od tego, czy jesteś specjalistą [](https://www.microsoft.com/hololens/developers) [IT](https://www.microsoft.com/hololens/apps) i szukasz kolejnego rozwiązania branżowego, [](https://www.microsoft.com/hololens/apps) deweloperem, który chce tworzyć środowiska dla nowej rzeczywistości, czy też twórcą decyzji biznesowych, który myśli o kolejnych innowacjach — HoloLens 2 to nowa rzeczywistość przetwarzania.
 
 <br>
 
@@ -44,8 +44,8 @@ Niezależnie od tego, czy jesteś specjalistą [](https://www.microsoft.com/holo
 | Limit zakupów urządzeń                                |    Brak    |              Brak             |              Brak             |                       Brak                       |             Brak             |       Jedna na transakcję      |
 
 - <sup>1</sup> — obejmuje 500 USD środków na korzystanie z platformy Azure i 3-miesięczne wersje próbne dla platformy Unity Pro i wtyczki Pixyz.
-- <sup>2</sup> — Odbierz urządzenie zastępcze w ciągu dnia lub w trybie przyspieszonym (szybsze wysyłanie dostępnych opcji) przed otrzymaniem uszkodzonego urządzenia przez firmę Microsoft.
-- <sup>3</sup> — Aby uzyskać pytania dotyczące gwarancji, pomocy technicznej i certyfikacji dla urządzenia Trimble XR10 z urządzeniem HoloLens 2, skontaktuj się [z działem pomocy technicznej firmy Trimble.](https://fieldtech.trimble.com/en/contact-support)
+- <sup>2</sup> — Odbierz urządzenie zastępcze w ciągu dnia lub w trybie przyspieszonym (szybsze z dostępnych opcji) przed otrzymaniem uszkodzonego urządzenia przez firmę Microsoft.
+- <sup>3</sup> — Aby uzyskać pytania dotyczące gwarancji, pomocy technicznej i certyfikacji dla urządzenia Trimble XR10 z urządzeniem HoloLens 2, skontaktuj się z [trimblem](https://fieldtech.trimble.com/en/contact-support).
 
 ## <a name="countries-where-hololens-2-is-available"></a>Kraje, w których jest dostępny holoLens 2
 
@@ -63,7 +63,7 @@ Niezależnie od tego, czy jesteś specjalistą [](https://www.microsoft.com/holo
 
 **[HoloLens 2 (tylko urządzenie):](hololens2-options-device-only.md)** urządzenie HoloLens 2 oferuje najbardziej wygodne i immersywne środowisko rzeczywistości mieszanej — ulepszone dzięki niezawodności, bezpieczeństwu i skalowalności usług w chmurze i AI firmy Microsoft.
 
-HoloLens 2 z usługą **[Dynamics 365 Remote Assist:](hololens2-options-remote-assist.md)** wprowadzenie od pierwszego dnia z urządzeniem HoloLens 2 i ostateczną aplikacją komunikacji rzeczywistości mieszanej firmy Microsoft, która jest dostępna razem. Pomóż całej firmie pracować wydajniej i wprowadzać innowacje z większą wydajnością. Poznaj teraz rzeczywistość mieszaną z usługą Dynamics 365 i rozwiązaniami od partnerów branżowych.
+**[HoloLens 2 z usługą Dynamics 365 Remote Assist:](hololens2-options-remote-assist.md)** rozpoczynanie pracy od pierwszego dnia z urządzeniem HoloLens 2 i ostateczną aplikacją komunikacji rzeczywistości mieszanej firmy Microsoft, która jest dostępna razem. Pomóż całej firmie pracować wydajniej i wprowadzać innowacje z większą wydajnością. Poznaj teraz rzeczywistość mieszaną z usługą Dynamics 365 i rozwiązaniami od partnerów branżowych.
 
 **[HoloLens 2 Industrial Edition:](hololens2-options-industrial-edition.md)** zaprojektowana, zbudowana i przetestowana pod kątem obsługi środowisk czystego pomieszczenia ze standardami od ISO Class 6 do ISO Class 8, urządzenie HoloLens 2 Industrial Edition ma certyfikat UL Class I, Division 2 i jest obsługiwany z 2-letnią gwarancją i programem szybkiego zastępowania.
 
@@ -87,12 +87,12 @@ Zapoznaj się z tymi dodatkowymi rozwiązaniami dla urządzeń HoloLens rzeczywi
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby rozpocząć pracę dla użytkowników końcowych urządzeń, zobacz [Omówienie użycia](hololens2-setup.md) podstawowego.
+W przypadku użytkowników końcowych urządzeń zobacz [temat Get your HoloLens 2 ready to use to](hololens2-setup.md) get started (Przygotuj urządzenie HoloLens 2 do użycia, aby rozpocząć pracę).
 
 > [!div class="nextstepaction"]
-> [Omówienie użycia podstawowego](hololens2-setup.md)
+> [Przygotuj urządzenie HoloLens 2 do użycia](hololens2-setup.md)
 
-Dla administratorów IT wdrażanie urządzeń w organizacji odblokowuje zaawansowane środowisko rzeczywistości mieszanej. Zapoznaj się z wymaganiami i scenariuszami wdrażania urządzenia HoloLens 2 w różnych konfiguracjach infrastruktury IT.
+Dla administratorów IT wdrożenie urządzeń w organizacji odblokowuje zaawansowane środowisko rzeczywistości mieszanej. Zapoznaj się z wymaganiami i scenariuszami wdrażania urządzenia HoloLens 2 w różnych konfiguracjach infrastruktury IT.
 
 > [!div class="nextstepaction"]
 > [Wdrażanie urządzenia HoloLens 2 w środowisku komercyjnym](hololens-requirements.md)

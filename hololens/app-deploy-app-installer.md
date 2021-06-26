@@ -1,6 +1,6 @@
 ---
 title: Jak ładować bezpośrednio i instalować aplikacje za pomocą urządzenia HoloLens 2 Instalator aplikacji
-description: Dowiedz się, jak instalować aplikacje i rozwiązywać problemy z aplikacjami za pomocą instalatora aplikacji oraz ładować bezpośrednio i instalować aplikacje za pomocą interfejsu użytkownika.
+description: Dowiedz się, jak instalować aplikacje i rozwiązywać problemy z aplikacjami za pomocą instalatora aplikacji oraz ładować bezpośrednio i instalować aplikacje za pośrednictwem interfejsu użytkownika.
 keywords: zarządzanie aplikacją, aplikacja, hololens, instalator aplikacji
 author: evmill
 ms.author: v-evmill
@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378288"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924132"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Instalowanie aplikacji na urządzeniach HoloLens 2 za pośrednictwem Instalator aplikacji
 
 > [!NOTE]
 > Ta funkcja została udostępnione w systemie [Windows Holographic w wersji 20H2 – aktualizacja z grudnia 2020 r.](hololens-release-notes.md). Upewnij się, że urządzenie [zostało zaktualizowane do](hololens-update-hololens.md) korzystania z tej funkcji.
 
-Dodaliśmy **nową funkcję (Instalator aplikacji),** która umożliwia bezproblemowe instalowanie aplikacji na urządzeniach HoloLens 2. Ta funkcja będzie domyślnie **włączona dla urządzeń nieza pomocą programu**. Aby zapobiec zakłóceniom pracy przedsiębiorstw, instalator aplikacji nie **będzie w** tej chwili dostępny dla zarządzanych urządzeń.  
+Dodaliśmy **nową funkcję (Instalator aplikacji),** która umożliwia bezproblemowe instalowanie aplikacji na urządzeniach HoloLens 2. Ta funkcja będzie domyślnie **włączona dla urządzeń nieza pomocą programu**. Aby zapobiec przerwom w działaniu przedsiębiorstw, instalator aplikacji nie **będzie w** tej chwili dostępny dla zarządzanych urządzeń.  
 
 Urządzenie jest uznawane za "zarządzane", **jeśli** spełnione są dowolne z następujących czynności:
 
@@ -44,9 +44,9 @@ Ta funkcja jest obecnie dostępna w kompilacjach systemu Windows Holographic 20H
 
 ### <a name="for-your-apps"></a>Dla aplikacji:
 
-Konfiguracja rozwiązania aplikacji musi być  wzorcem lub wydaniem, ponieważ Instalator aplikacji będą używać zależności ze sklepu.  Zobacz więcej na [temat tworzenia pakietów aplikacji.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+Konfiguracja rozwiązania aplikacji musi mieć wersję **Master** lub **Release,** ponieważ Instalator aplikacji będzie używać zależności ze sklepu. Zobacz więcej na [temat tworzenia pakietów aplikacji.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
-Aplikacje instalowane za pomocą tej metody muszą być podpisane cyfrowo. Do podpisania aplikacji będzie konieczne użycie certyfikatu. Certyfikat można pobrać z listy zaufanych urzędu certyfikacji firmy [MS](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT). W takim przypadku nie trzeba będzie podjąć żadnych dodatkowych działań. Możesz też podpisać własny certyfikat, jednak ten certyfikat będzie musiał zostać wypchnięty na urządzenie.
+Aplikacje instalowane za pomocą tej metody muszą być podpisane cyfrowo. Do podpisania aplikacji będzie konieczne użycie certyfikatu. Możesz pobrać certyfikat z listy zaufanych urzędu certyfikacji ms [,](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)w takim przypadku nie trzeba będzie podjąć żadnych dodatkowych działań. Możesz też podpisać własny certyfikat, jednak ten certyfikat będzie musiał zostać wypchnięty na urządzenie.
 
 - Jak podpisywać aplikacje [przy użyciu narzędzia do podpisywania.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
@@ -66,7 +66,7 @@ Aplikacje instalowane za pomocą tej metody muszą być podpisane cyfrowo. Do po
 1. Sprawdź, czy urządzenie HoloLens 2 jest włączone i czy się zalogowano.
 1. Na komputerze przejdź do aplikacji niestandardowej i skopiuj yourapp.appxbundle do katalogu yourdevicename\Internal Storage\Downloads.
     Po zakończeniu kopiowania pliku możesz rozłączyć urządzenie i zakończyć instalację później.
-1. Na urządzeniu HoloLens 2 otwórz **menu Start,** wybierz pozycję **Wszystkie aplikacje** i uruchom **Eksplorator plików** aplikację.
+1. Na urządzeniu HoloLens 2 Otwórz **menu Start,** wybierz pozycję **Wszystkie aplikacje** i uruchom **Eksplorator plików** aplikację.
 1. Przejdź do folderu Pobrane. W lewym panelu aplikacji może być konieczne wybranie najpierw opcji **To urządzenie,** a następnie przejście do sekcji Pliki do pobrania.
 1. Wybierz plik yourapp.appxbundle.
 1. Zostanie Instalator aplikacji. Wybierz przycisk **Zainstaluj,** aby zainstalować aplikację.
@@ -100,15 +100,13 @@ Użytkownicy mogą instalować aplikację bezpośrednio z serwera internetowego.
 
 Aplikacja zostanie teraz instalowana na urządzeniu. Aby znaleźć aplikację, otwórz menu Start **i** wybierz przycisk **Wszystkie aplikacje,** aby znaleźć aplikację.
 
-- Aby uzyskać więcej pomocy dotyczącej rozwiązywania problemów z metodą instalacji instalatora aplikacji, odwiedź [stronę rozwiązywanie problemów z instalatorem aplikacji.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
+- Aby uzyskać więcej informacji na temat rozwiązywania problemów z metodą instalacji instalatora aplikacji, odwiedź [stronę rozwiązywanie problemów z instalatorem aplikacji.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 
 > [!NOTE]
 > Interfejs użytkownika podczas procesu aktualizacji nie jest obsługiwany. Dlatego opcja ShowPrompt na [tej stronie](https://docs.microsoft.com/windows/msix/app-installer/update-settings) i powiązane opcje nie są obsługiwane.
 
 ## <a name="sample-apps"></a>Przykładowe aplikacje
 
-Aby wypróbować te Instalator aplikacji przykładowe aplikacje, zapoznaj się z naszymi dostępnymi przykładami:
-
-- [Centrum przykładów MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [Powierzchni](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [Przykładowe aplikacje platformy uniwersalnej systemu Windows, których można użyć do testowania](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+Wypróbuj te Instalator aplikacji jedną z naszych dostępnych przykładowych aplikacji. 
+> [!div class="nextstepaction"]
+> [Przykładowe aplikacje](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)

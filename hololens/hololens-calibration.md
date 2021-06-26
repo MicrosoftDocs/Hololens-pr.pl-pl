@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: jego wygląd, komfort, wizualizacje, jakość, ipd, HoloLens, Windows Mixed Reality, zestawy VR
-ms.openlocfilehash: e975e2ccd978d4ec6b5331af0ae566af116711c5
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379683"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924149"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Poprawianie jakości i komfortu wizualizacji
 
@@ -50,7 +50,7 @@ W trakcie tego procesu przyjrzymy się zestawowi celów (gemom). Jest w porządk
 
 ![Dostosowywanie monitu o monitowanie.](./images/09-et-adjusting.png)
 
-Jeśli uda się to zrobić, zostanie wyświetlony ekran sukcesu.  Jeśli nie, przeczytaj więcej na [temat diagnozowania błędów awarii.](#troubleshooting-hololens-2-calibration)
+Jeśli uda się to zrobić, zostanie wyświetlony ekran sukcesu.  Jeśli nie, przeczytaj więcej na [temat diagnozowania błędów awarii.](hololens2-display.md#troubleshooting)
 
 ![Monit o powodzenie monitu.](./images/10-et-success.png)
 
@@ -60,7 +60,7 @@ Wielu użytkowników może współużytkować urządzenie HoloLens 2 bez koniecz
 
 ### <a name="manually-starting-the-calibration-process"></a>Ręczne uruchamianie procesu procesowego
 
-1. Użyj gestu start, aby otworzyć menu [ **Start**](hololens2-basic-usage.md#start-gesture).
+1. Użyj gestu start, aby otworzyć menu [ **Start.**](hololens2-basic-usage.md#start-gesture)
 1. Jeśli aplikacja Ustawienia nie jest przypięta do menu **Start,** wybierz **pozycję Wszystkie aplikacje.**
 1. Wybierz **pozycję Settings**(Ustawienia), a następnie wybierz pozycję **System**  >  **Pogoń** z  >  **okiem Run** eye i wybierz pozycję Run eye w  >  **1996 roku.**
 
@@ -70,7 +70,7 @@ Wielu użytkowników może współużytkować urządzenie HoloLens 2 bez koniecz
 
 Na urządzeniach HoloLens 2 położenia oczu umożliwiają dokładne pozycjonowanie hologramów, wygodne środowisko wyświetlania i lepszą jakość wyświetlania. Pozycje oka są obliczane wewnętrznie w ramach obliczeń śledzenia wzroku. Jednak wymaga to, aby każdy użytkownik przechodził przez śledzenie wzroku, nawet wtedy, gdy środowisko może nie wymagać danych wejściowych spojrzenia wzrokowego.
 
-**Funkcja Automatycznego położenia oka (AEP, Auto Eye Position)** umożliwia tym scenariuszom bez interakcji obliczanie pozycji oka dla użytkownika. Automatyczne położenie oka automatycznie rozpoczyna pracę w tle od momentu, gdy użytkownik umieścił urządzenie. Jeśli użytkownik nie ma wcześniejszego śledzenia wzroku, funkcja automatycznego położenia oka zacznie dostarczać informacje o pozycjach oka użytkownika do systemu wyświetlania po czasie przetwarzania 20–30 sekund. Dane użytkownika nie są utrwalane na urządzeniu i ten proces jest powtarzany, jeśli użytkownik wystartuje i ponownie uruchomi urządzenie lub jeśli urządzenie zostanie ponownie uruchomiony lub wznowiony po uśpieniu.
+**Funkcja Automatycznego położenia oka (AEP, Auto Eye Position)** umożliwia tym scenariuszom bez interakcji obliczanie pozycji oka dla użytkownika. Automatyczne położenie oka automatycznie rozpoczyna pracę w tle od momentu, gdy użytkownik umieścił urządzenie. Jeśli użytkownik nie ma wcześniejszego śledzenia wzroku, funkcja automatycznego położenia oka zacznie dostarczać informacje o pozycjach oka użytkownika do systemu wyświetlania po czasie przetwarzania 20–30 sekund. Dane użytkownika nie są utrwalane na urządzeniu i ten proces jest powtarzany, jeśli użytkownik wyłączy i ponownie uruchomi urządzenie lub jeśli urządzenie zostanie ponownie uruchomiony lub wznowiony po uśpieniu.
 
 Istnieje kilka zmian zachowania systemu za pomocą funkcji automatycznego rozsyłania okiem, gdy użytkownik nieskalowany umieszcza urządzenie. W tym kontekście użytkownik nieskalibrowany odwołuje się do osoby, która wcześniej nie przechodziła przez proces śledzenia wzroku na urządzeniu.
 
@@ -81,9 +81,9 @@ Istnieje kilka zmian zachowania systemu za pomocą funkcji automatycznego rozsy�
 
 Jeśli użytkownik przechodzi z aplikacji bez włączonego spojrzenia do aplikacji, która uzyskuje dostęp do danych spojrzenia, zostanie wyświetlony monit o monit. 
 
-Wszystkie inne zachowania systemu będą podobne do zachowania bieżącego użytkownika, który nie ma aktywnego śledzenia wzroku. Na przykład gest One-handed Start nie zostanie włączony. Nie będzie żadnych zmian w zakresie out-of-box-experience na potrzeby konfiguracji początkowej.
+Wszystkie inne zachowania systemu będą podobne do zachowania bieżącego użytkownika, który nie ma aktywnego śledzenia wzroku. Na przykład gest One-handed Start nie zostanie włączony. W konfiguracji początkowej nie będzie żadnych zmian w zakresie out-of-box-experience.
 
-W przypadku doświadczeń, które wymagają danych o oku lub precyzyjnego pozycjonowania hologramu, zalecamy użytkownikom nieskalicznym uruchamianie śledzenia oczu. Jest on dostępny z monitu o śledzenie wzroku lub przez uruchomienie aplikacji Ustawienia z menu Start, a następnie wybranie pozycji System > Wymusienie **> Eye w**> Uruchomienie oka .
+W przypadku doświadczeń, które wymagają danych o oku lub precyzyjnego pozycjonowania hologramu, zalecamy użytkownikom nieskalowania uruchamianie śledzenia oczu. Jest on dostępny z monitu o śledzenie wzroku lub przez uruchomienie aplikacji Ustawienia z menu Start, a następnie wybranie pozycji System > Wymusienie **> Eye w**> Uruchomienie oka .
 
 #### <a name="deferred-calibration-prompt"></a>Monit o odroczone monity o odroczone monity
 
@@ -94,37 +94,9 @@ W przypadku ustawienia pozycji automatycznego oka okno dialogowe monitu o śledz
 
 Jeśli użytkownik zdecyduje się na uruchomienie aplikacji Eye Tracking Tracking, fokus powinien zostać zwrócony do oryginalnej aplikacji po zakończeniu śledzenia. 
 
-### <a name="troubleshooting-hololens-2-calibration"></a>Rozwiązywanie problemów z urządzeniem HoloLens 2
-
-Większość osób powinna pracować, ale istnieją przypadki, w których niepowodzeniem.
-  
-Niektóre potencjalne przyczyny niepowodzenia awarii to:
-
-- Rozpraszanie uwagi i niesłanianie celów docelowych
-- Zanieczyszczona lub zadrzewiona osłona urządzenia lub urządzenie nie jest prawidłowo pozycjonowane
-- Zanieczyszczone lub porysowane okulary
-- Niektóre typy obiektywów i okularów kontaktowych (kolorowe obiektywy kontaktowe, niektóre toryczne obiektywy kontaktowe, okulary blokujące ir IR, niektóre okulary przeciwsłoneczne, okulary przeciwsłoneczne lub podobne)
-- Bardziej wymawiane nagie i niektóre rozszerzenia ukośników
-- Zarost lub grube ramki okularów, jeśli blokują one wzrok urządzenia
-- Niektóre fizjologia, warunki wzrokowe lub operacje oczu, takie jak wąskie oczy, długie ukośniki, amblyopia, nystagmus, niektóre przypadki LASIK lub inne operacje skoków oczu
-
-Jeśli próba nie powiedzie się, spróbuj:
-
-- Czyszczenie aplikacji do czyszczenia urządzenia
-- Czyszczenie okularów
-- Wypychanie wizjora urządzenia tak blisko oczu, jak to możliwe
-- Przenoszenie obiektów w osłodę poza drogę (na przykład zarostu)
-- Włączanie światła w pomieszczeniu lub wyprowadzanie bezpośredniego światła
-
-Jeśli wszystkie wytyczne i ustawienia nadal nie są stosowane, można wyłączyć monit monitu w ustawieniach. Daj nam również znać, składając opinię w [Centrum opinii](hololens-feedback.md).
-
-Zobacz również powiązane informacje dotyczące [rozwiązywania problemów z kolorem obrazu lub jasność.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
-
-Ustawienie adresu IPD nie ma zastosowania w przypadku urządzenia HoloLens 2, ponieważ pozycje oka są obliczane przez system. 
-
 ### <a name="calibration-data-and-security"></a>Dane i zabezpieczenia na przekłoszcie
 
-Informacje o lokalizacji są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Nie ma danych o tym, kto bez przerwy użył urządzenia. Oznacza to, że nowi użytkownicy otrzymają monit o skalibrowanie wizualizacji podczas korzystania z urządzenia po raz pierwszy, a użytkownicy, którzy zrezygnują z wcześniejszej pracy lub jeśli nie udało się jej odchonić.
+Informacje o lokalizacji są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Nie ma żadnych rekordów osób, które bez wyjątku użyły urządzenia. Oznacza to, że nowi użytkownicy otrzymają monit o skalibrowanie wizualizacji podczas korzystania z urządzenia po raz pierwszy, a użytkownicy, którzy zrezygnują z wcześniejszej pracy lub jeśli nie udało się jej odchonić.
 
 Urządzenie może lokalnie przechowywać maksymalnie 50 profilów profilów profilów. Po osiągnięciu tej liczby urządzenie automatycznie usunie najstarszy nieużywany profil.
 
@@ -152,15 +124,15 @@ Aplikacje dla urządzenia HoloLens śledzą, gdzie patrzysz w czasie rzeczywisty
 
 Urządzenie HoloLens (1. generacja) dostosowuje wyświetlanie hologramów zgodnie z odległością między [kolumnami](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Jeśli adres IPD nie jest dokładny, hologramy mogą wydawać się niestabilne lub z nieprawidłową odległością. Jakość wizualizacji można poprawić, skalibrując urządzenie do odległości międzyobsychowej (IPD).
 
-Po skonfigurowaniu urządzenia HoloLens (1. generacji) zostanie wyświetlony monit o skalibrowanie wizualizacji po wprowadzeniu się Cortany. Zaleca się ukończenie kroku pełnego w tej fazie konfiguracji. Można go jednak pominąć, czekając na monit Cortany, a następnie mówiąc "Pomiń".
+Po skonfigurowaniu urządzenia HoloLens (1. generacji) zostanie wyświetlony monit o skalibrowanie wizualizacji po wprowadzeniu się Cortany. Zaleca się ukończenie kroku konserwacji w tej fazie konfiguracji. Można go jednak pominąć, czekając na monit Cortany, a następnie mówiąc "Pomiń".
 
-Podczas procesu chłoniaka urządzenie HoloLens prosi o wyrównanie palca do serii sześciu obiektów docelowych na oko. Urządzenie HoloLens używa tego procesu, aby prawidłowo ustawić adres IPD dla oczu.
+Podczas procesu chłoniaka urządzenie HoloLens prosi o wyrównanie palca do serii sześciu obiektów docelowych na oko. Urządzenie HoloLens używa tego procesu, aby prawidłowo ustawić adres IPD dla twoich oczu.
 
 ![Ekran wyrównywania linii papilarnych usługi IPD w drugim kroku](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>Ręczne uruchamianie procesu procesów
 
-Jeśli musisz zaktualizować ustawienia lub jeśli nowy użytkownik musi je dostosować, w dowolnym momencie możesz ręcznie uruchomić aplikację Nawę. Domyślnie jest instalowana aplikacja Wymusze. Dostęp do niego można uzyskać za pomocą menu **Start** lub aplikacji Ustawienia.
+Jeśli musisz zaktualizować ustawienia lub jeśli nowy użytkownik będzie musiał je dostosować, możesz ręcznie uruchomić aplikację W dowolnym momencie. Domyślnie jest instalowana aplikacja Wymusze. Dostęp do niego można uzyskać za pomocą menu **Start** lub aplikacji Ustawienia.
 
 Aby użyć menu **Start** do uruchomienia aplikacji Wynisz, wykonaj następujące kroki:
 

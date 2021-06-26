@@ -1,6 +1,6 @@
 ---
 title: Widoczność ustawień strony
-description: Bądź na bieżąco z naszą listą obsługiwanych adresów URI dla elementów PageVisibilityList i Guide on HoloLens mixed reality devices (Lista elementów PageVisibilityList i Przewodnik na urządzeniach z rzeczywistością mieszaną HoloLens).
+description: Bądź na bieżąco z naszą listą obsługiwanych interfejsów URI dla elementów PageVisibilityList i Guide on HoloLens mixed reality devices (Lista obsługiwanych przez usługę PageVisibilityList i przewodnik na urządzeniach z rzeczywistością mieszaną HoloLens).
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5779ffa1de1700b4fcd17fc17b8ae3a82a45c22
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: d28994d911532a940d82756aa45609571ee80ac3
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379733"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924336"
 ---
 # <a name="page-settings-visibility"></a>Widoczność ustawień strony
 
-Jedną z funkcji, które można zarządzać na urządzeniach HoloLens, jest użycie zasad [Settings/PageVisibilityList w](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) celu ograniczenia stron widocznych w aplikacji Ustawienia. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji Ustawienia systemowe lub na ich użycie dla wszystkich stron z wyjątkiem określonych.
+Jedną z funkcji, które można zarządzać na urządzeniach HoloLens, jest użycie zasad [Settings/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w aplikacji Ustawienia. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji Ustawienia systemowe lub zrobić to dla wszystkich stron z wyjątkiem określonych.
 
 > [!NOTE]
 > Ta funkcja jest dostępna tylko w systemie Windows Holographic w wersji [20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub wyższej dla urządzeń HoloLens 2. Upewnij się, że urządzenia, dla których zamierzasz używać tej funkcji, zostały zaktualizowane.
@@ -52,7 +52,7 @@ Niezależnie od wybranej metody urządzenie powinno teraz otrzymywać zmiany, a 
 
 ![Zrzut ekranu przedstawiający modyfikację godzin aktywnego działania w aplikacji Ustawienia](images/hololens-page-visibility-list.jpg)
 
-Aby skonfigurować strony aplikacji Ustawienia do pokazywania lub ukrywania własnych wybranych stron, przyjrzyj się interfejsom URI ustawień dostępnym na urządzeniach HoloLens.
+Aby skonfigurować strony aplikacji Ustawienia do pokazywania lub ukrywania własnych wybranych stron, zobacz Ustawienia URI dostępne na urządzeniach HoloLens.
 
 ## <a name="settings-uris"></a>Ustawienia URI
 
@@ -104,7 +104,7 @@ Urządzenia HoloLens i Windows 10 mają różne strony w aplikacji Ustawienia. N
 | Inne urządzenia            | `ms-settings:privacy-customdevices`               |
 | Obrazy                 | `ms-settings:privacy-pictures`                    |
 | Radia                   | `ms-settings:privacy-radios`                      |
-| Zrzut ekranu <sup>obramowania 2</sup>             | `ms-settings:privacy-graphicsCaptureWithoutBorder`       |
+| Zrzut ekranu przedstawiający <sup>obramowanie 2</sup>             | `ms-settings:privacy-graphicsCaptureWithoutBorder`       |
 | Zrzuty ekranu i aplikacje <sup>2</sup>             | `ms-settings:privacy-graphicsCaptureProgrammatic`       |
 | Mowa                   | `ms-settings:privacy-speech`                      |
 | Zadania                    | `ms-settings:privacy-tasks`                       |
@@ -129,14 +129,14 @@ Urządzenia HoloLens i Windows 10 mają różne strony w aplikacji Ustawienia. N
 | Bateria <sup>2</sup>           | `ms-settings:batterysaver-settings`<br>|
 | Kolory             | `ms-settings:colors`<br>`ms-settings:personalization-colors` |
 | Hologramy <sup>2</sup>  |  `ms-settings:holograms`  |
-| <sup>Przebłyski 2</sup> |  `ms-settings:calibration` |
+| Przekłoń <sup>2</sup> |  `ms-settings:calibration` |
 | Powiadomienia & akcje  | `ms-settings:notifications`          |
 | Udostępnione doświadczenia | `ms-settings:crossdevice` 
 | Dźwięk <sup>2</sup>           | `ms-settings:sound`<br>|
 | Dźwięk > aplikacji i preferencja urządzenia <sup>2</sup>           | `ms-settings:apps-volume`<br>|
 | Zarządzanie > dźwięku <sup>2</sup>           | `ms-settings:sound-devices`<br>|
 | Storage            | `ms-settings:storagesense`           |
-| Konfiguracja > magazynu Czujnik pamięci <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
+| Konfigurowanie > magazynu Czujnik pamięci <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
 
 ### <a name="time--language"></a>Język & czasu
 | Strona Ustawienia | URI                                           |
@@ -155,14 +155,14 @@ Urządzenia HoloLens i Windows 10 mają różne strony w aplikacji Ustawienia. N
 | Resetowanie & odzyskiwania <sup>2</sup>      | `ms-settings:reset`         |
 | Niejawny program testów systemu Windows               | `ms-settings:windowsinsider` <br>`ms-settings:windowsinsider-optin`          |
 | Windows Update                        | `ms-settings:windowsupdate`<br> `ms-settings:windowsupdate-activehours`  <br> `ms-settings:windowsupdate-history` <br> `ms-settings:windowsupdate-optionalupdates` <br><sup>1</sup>`ms-settings:windowsupdate-options`<br><sup>1</sup>`ms-settings:windowsupdate-restartoptions` |
-| Windows Update — sprawdzanie aktualizacji | `ms-settings:windowsupdate-action`          |
+| Windows Update — sprawdzanie, czy są dostępne aktualizacje | `ms-settings:windowsupdate-action`          |
 
 
->  <sup>1</sup> W przypadku wersji wcześniejszych niż Windows Holographic, wersja 21H1, następujące  dwa interfejsy URI w rzeczywistości nie przejdą do stron Opcje zaawansowane **ani** Opcje. Będą blokować lub wyświetlać tylko główną Windows Update internetową.
-> - ms-settings:windowsupdate-options
-> - ms-settings:windowsupdate-restartoptions
- 
-> <sup>2 —</sup> dostępne w systemie Windows Holographic 21H1 lub wyższym.
+- <sup>1</sup> — w przypadku wersji wcześniejszych niż Windows Holographic, wersja 21H1,  następujące dwa interfejsy URI w rzeczywistości nie przejdą do stron Opcje zaawansowane **ani** Opcje. Będą blokować lub wyświetlać tylko główną Windows Update internetową.
+  -  ms-settings:windowsupdate-options
+  -  ms-settings:windowsupdate-restartoptions
+
+- <sup>2 —</sup> dostępne w systemie Windows Holographic 21H1 lub wyższym.
 
 
 Aby uzyskać pełną listę Windows 10 URI ustawień uruchamiania, zapoznaj się z [dokumentacją ustawień uruchamiania.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

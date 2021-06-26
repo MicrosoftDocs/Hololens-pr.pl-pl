@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 21132ed5d1e84d92a877747ac9a4c090b177ca08
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378308"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924574"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Przygotowanie — przewodnik po połączeniu z chmurą
 
@@ -34,7 +34,7 @@ W przypadku scenariuszy wdrażania osobistego i firmowego system MDM jest podsta
 Azure AD to oparta na chmurze usługa katalogowa, która zapewnia zarządzanie tożsamościami i dostępem. Organizacje korzystające z usługi Microsoft Office 365 lub Intune już używają usługi Azure AD, która ma trzy wersje: Bezpłatna, Premium P1 i Premium P2 (zobacz [Azure Active Directory wersji).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Wszystkie wersje obsługują rejestrację urządzeń w usłudze Azure AD, ale do włączenia automatycznej rejestracji w usłudze MDM, której będziemy używać w dalszej części tego przewodnika, jest wymagana wersja Premium P1.
 
 > [!IMPORTANT]
-> Bardzo ważne jest, aby mieć Azure Active Directory, ponieważ urządzenia HoloLens nie obsługują lokalnego dołączania do usługi AD. Jeśli nie&#39;jeszcze Azure Active Directory, postępuj zgodnie z instrukcjami podanymi w tym linku, aby rozpocząć pracę i utworzyć nową dzierżawę w Azure Active Directory [.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+> Bardzo ważne jest, aby mieć Azure Active Directory, ponieważ urządzenia HoloLens nie obsługują lokalnego dołączania do usługi AD. Jeśli nie&#39;jeszcze Azure Active Directory, przejdź do strony Tworzenie nowej dzierżawy w [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Zarządzanie tożsamością
 
@@ -42,7 +42,7 @@ Pracownicy mogą używać tylko jednego konta do inicjowania urządzenia, tak ab
 
 W tym przewodniku wybraliśmy, że dla używanej tożsamości będą używane konta usługi Azure AD lub Azure Active Directory kont. [](https://docs.microsoft.com/hololens/hololens-identity) Istnieje kilka korzyści dla kont usługi Azure AD, których chcemy użyć, takich jak:
 
-- Pracownicy używają swojego konta usługi Azure AD do rejestrowania urządzenia w usłudze Azure AD i automatycznego rejestrowania go w rozwiązaniu MDM organizacji&#39;(Azure AD+MDM — wymaga Azure AD — wersja Premium).
+- Pracownicy używają swojego konta usługi Azure AD do rejestrowania urządzenia w usłudze Azure AD i automatycznego rejestrowania go w organizacji&#39;rozwiązania MDM (Azure AD+MDM — wymaga Azure AD — wersja Premium).
 - Konta usługi Azure AD obsługują [logowanie pojedyncze.](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) Gdy użytkownik zalogował się do usługi Remote Assist, jego tożsamość z zalogowaonego użytkownika usługi Azure AD zostanie rozpoznana, a użytkownik zostanie zalogowany do aplikacji w celu usprawnienia obsługi.
 - Konta usługi Azure AD mają dodatkowe [opcje uwierzytelniania za](https://docs.microsoft.com/hololens/hololens-identity) [pośrednictwem Windows Hello dla firm](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Oprócz logowania irysów użytkownicy mogą logować się z innego urządzenia lub używać kluczy zabezpieczeń FIDO.
 
@@ -54,13 +54,13 @@ Usługa Microsoft [Intune](https://docs.microsoft.com/mem/intune/fundamentals/wh
 > Ważne jest, aby mieć aplikacje mobilne Zarządzanie urządzeniami. Jeśli nie masz&#39;, postępuj zgodnie z tym przewodnikiem i [rozpoczynanie pracy z usługą Intune.](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
 
 > [!NOTE]
-> Wiele systemów MDM obsługuje Windows 10 i większość scenariuszy wdrażania urządzeń osobistych i firmowych. Dostawcy rozwiązań MDM, którzy obsługują Windows 10 Holographic obecnie obejmują: AirWatch, MobileIron i inni. Większość wiodących w branży dostawców rozwiązań MDM obsługuje już integrację z usługą Azure AD. Dostawców rozwiązań MDM, którzy obsługują usługę Azure AD, można znaleźć w [Azure Marketplace](https://azure.microsoft.com/marketplace/).
+> Wiele systemów MDM obsługuje Windows 10 i większość obsługuje scenariusze wdrażania urządzeń osobistych i firmowych. Dostawcy rozwiązań MDM, którzy obsługują Windows 10 Holographic obecnie obejmują: AirWatch, MobileIron i inni. Większość wiodących w branży dostawców rozwiązań MDM obsługuje już integrację z usługą Azure AD. Dostawców rozwiązań MDM, którzy obsługują usługę Azure AD, można znaleźć w [Azure Marketplace](https://azure.microsoft.com/marketplace/).
 
 ## <a name="network"></a>Sieć
 
 W tej konfiguracji przewidujemy urządzenia HoloLens 2 łączące się z Internetem z dowolnej dostępnej otwartej Wi-Fi sieci. Ponieważ użytkownik może wymagać zmiany połączenia sieciowego na podstawie lokalizacji, powinien dowiedzieć się, jak połączyć urządzenia [HoloLens z siecią Wi-Fi.](https://docs.microsoft.com/hololens/hololens-network)
 
-W przypadku usługi Dynamics 365 Remote Assist istnieją różne warunki sieciowe, w tym przepustowość, opóźnienie, zakłócenie i utrata pakietów, które mogą mieć wpływ na środowisko wywoływania wideo. Chociaż wywołania audio i wideo mogą być możliwe w środowiskach z ograniczoną przepustowością, może wystąpić obniżenie jakości funkcji. W przypadku korzystania z usługi Dynamics 365 Remote Assist na urządzeniach HoloLens należy pamiętać o wymaganiach dotyczących sieci:
+W przypadku usługi Dynamics 365 Remote Assist istnieją różne warunki sieciowe, w tym przepustowość, opóźnienie, zakłócenie i utrata pakietów, które mogą mieć wpływ na środowisko wywoływania wideo. Chociaż wywołania audio i wideo mogą być możliwe w środowiskach z ograniczoną przepustowością, może wystąpić pogorszenie funkcji. W przypadku korzystania z usługi Dynamics 365 Remote Assist na urządzeniach HoloLens należy pamiętać o wymaganiach dotyczących sieci:
 
 **Minimum:** 1,5 Mb/s w górę/w dół jest wymagane w przypadku równorzędnego wywoływania wideo w jakości HD z rozdzielczością HD 1080p przy rozdzielczości 30 pikseli.
 
@@ -73,7 +73,7 @@ Więcej informacji:
 
 ### <a name="optional-connect-your-hololens-to-vpn"></a>Opcjonalnie: łączenie urządzenia HoloLens z siecią VPN
 
-Urządzenia połączone z tym przewodnikiem będą łączyć się z siecią za pośrednictwem sieci i zewnętrznej sieci w chmurze. Może się okazać, że aby uzyskać dostęp do zasobów firmy,&#39;będzie konieczne połączenie urządzeń za pośrednictwem sieci VPN. Istnieje kilka różnych sposobów łączenia urządzeń z siecią VPN, zarówno w przypadku, gdy użytkownik końcowy może nawiązać połączenie za pośrednictwem interfejsu użytkownika urządzenia, albo urządzenia mogą być zarządzane i odbierać profil sieci VPN z narzędzia PPKG lub MDM. Sposób skonfigurowania sieci VPN nie zostanie&#39;w tym artykule, dlatego jeśli chcesz dowiedzieć się więcej o różnych protokołach sieci VPN lub sposobach zarządzania siecią VPN&#39;, zapoznaj się z tymi przewodnikami, aby uzyskać informacje na temat urządzenia [HoloLens](https://docs.microsoft.com/hololens/hololens-network#vpn) i sieci VPN.
+Urządzenia połączone z tym przewodnikiem będą łączyć się z siecią za pośrednictwem sieci i zewnętrznej sieci w chmurze. Być może w celu uzyskania dostępu do zasobów firmy&#39;będzie konieczne połączenie urządzeń za pośrednictwem sieci VPN. Istnieje kilka różnych sposobów łączenia urządzeń z siecią VPN, zarówno w przypadku, gdy użytkownik końcowy może nawiązać połączenie za pomocą interfejsu użytkownika urządzenia, albo urządzenia mogą być zarządzane i odbierać profil sieci VPN z narzędzia PPKG lub MDM. Sposób skonfigurowania sieci VPN nie zostanie&#39;w tym artykule, dlatego jeśli chcesz dowiedzieć się więcej o różnych protokołach sieci VPN lub sposobach zarządzania siecią VPN&#39;, zapoznaj się z tymi przewodnikami, aby uzyskać informacje na temat urządzenia [HoloLens](https://docs.microsoft.com/hololens/hololens-network#vpn) i sieci VPN.
 
 ## <a name="next-step"></a>Następny krok
 
