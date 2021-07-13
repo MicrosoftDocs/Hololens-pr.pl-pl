@@ -1,0 +1,193 @@
+### YamlMime:FAQ
+metadata:
+  title: 'HoloLens 2 Development Edition : często zadawane pytania'
+  description: Bądź na bieżąco z najczęściej zadawane pytania dotyczące urządzenia rzeczywistości mieszanej HoloLens 2 Development Edition.
+  keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
+  author: evmill
+  ms.author: v-evmill
+  ms.reviewer: sekerawa
+  ms.date: 11/02/2020
+  ms.prod: hololens
+  ms.topic: article
+  ms.sitesec: library
+  ms.localizationpriority: medium
+  audience: HoloLens
+  manager: yannisle
+  appliesto:
+  - HoloLens 2
+  ms.openlocfilehash: 97f3bbdfec85e64d2895dfb5482ee9dc692c5e4c
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637297"
+title: HoloLens 2 Development Edition — często zadawane pytania
+summary: ''
+sections:
+- name: Pytania ogólne
+  questions:
+  - question: >
+      Co mogę uzyskać w wersji HoloLens 2 Development Edition?
+    answer: >
+      Wersja HoloLens 2 Development Edition obejmuje program HoloLens 2, środki na korzystanie z platformy Azure w wysokości 500 USD, 3-miesięczną wersję próbną aparatu Unity Pro oraz 3-miesięczną wersję próbną wtyczki Pixelyz.
+  - question: >
+      Jaka jest różnica między wersjami HoloLens 2 i HoloLens 2 Development Edition?
+    answer: >
+      Do tworzenia i testowania wewnętrznych aplikacji dla przedsiębiorstw do użycia z programem HoloLens 2 (wersja komercyjna) w środowisku produkcyjnym można używać tylko wersji HoloLens 2 Development Edition. W ramach zakupu wersji Development Edition firma Microsoft może, według własnego uznania, udostępnić Ci pewne uprawnienia określone podczas procesu finalizacji zakupu. Uprawnienia te obejmują prawo do realizowania określonych środków rabatowych lub dostępu w wersji próbnej do niektórych usług lub narzędzi firmy Microsoft lub innych firm przez ograniczony czas. [Dowiedz się więcej](hololens2-options-dev-edition.md)
+  - question: >
+      Czy do opracowania dowolnej wersji HoloLens 2?
+    answer: >
+      Tak. Do tworzenia aplikacji można używać HoloLens wersji 2.
+  - question: >
+      Jak otrzymam środki na korzystanie z platformy Azure w wysokości 500 USD, 3-miesięczną wersję próbną aparatu Unity Pro i 3-miesięczną wersję próbną wtyczki Pixyz?
+    answer: >
+      Środki na rabat lub dostęp próbny zostaną wysłane na adres e-mail użyty podczas zakupu w ciągu 2 dni roboczych od wysyłki produktu.
+  - question: >
+      Czy mogę "uaktualnić" urządzenie HoloLens 2 (tylko urządzenie) do wersji HoloLens 2 Development Edition, aby uzyskać środki na wersję próbną?
+    answer: >
+      Nie, nie oferujemy planów transferu urządzeń. Nie ma możliwości przeniesienia z żadnej wersji do żadnej innej wersji.
+  - question: >
+      Co to jest unity Pro?
+    answer: >
+      Unity Pro to platforma 3D w czasie rzeczywistym dla małych/średnich studia/firm. Jest ona przeznaczona dla zespołów mających mieszane umiejętności techniczne i nietechnyczne. [Dowiedz się więcej](https://store.unity.com/products/unity-pro)
+  - question: >
+      Co to jest wtyczka Pixyz?
+    answer: >
+      Wtyczka Pixyz odczytuje i konwertuje niemal każdy format, optymalizuje i umieszcza go w a unity oraz przygotowuje go w celu zapewnienia gotowych do użycia zasobów dla aplikacji w czasie rzeczywistym. [Dowiedz się więcej](https://unity.com/products/pixyz)
+  - question: >
+      Czy jest dostępny program HoloLens 2 Development Edition?
+    answer: "Tak, [wersja HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) jest teraz dostępna tylko w Stany Zjednoczone. \n"
+  - question: >
+      KtoTo się z pytaniami na temat uprawnień do wersji HoloLens 2 Development Edition?
+    answer: >
+      W przypadku pytań związanych z uprawnieniami skontaktuj się ze specjalistą ds. sprzedaży pod numer 866-425-4709, od mon do pt, od 6:00 do 18:00, PST.
+  - question: "Czy moja firma może kupić wiele urządzeń HoloLens Development Edition w wersji 2? \n"
+    answer: "To urządzenie jest dla deweloperów, którzy przygotowywają rozwiązania rzeczywistości mieszanej. Ograniczamy jeden zakup na transakcję klienta. Jeśli firma chce kupić wiele urządzeń w wersji Development Edition, będzie wymagać oddzielnych transakcji zakupu urządzeń z systemem HoloLens 2 Development Edition w imieniu firmy. \n"
+  - question: "Czy mogę pokazać moje HoloLens 2 Development Edition moim klientom? \n"
+    answer: >
+      Tak, to urządzenie jest przeznaczone do tworzenia prototypów i testowania rozwiązań rzeczywistości mieszanej.
+  - question: "Gdzie mogę kupić wersję HoloLens 2 Development Edition? \n"
+    answer: "HoloLens 2 Development Edition jest sprzedawana wyłącznie na Microsoft Store.  \n"
+  - question: "Czy mogę zwrócić moją HoloLens 2 Development Edition?  \n"
+    answer: >
+      Cała sprzedaż jest ostateczna i nie ma dostępnych zwrotów w HoloLens 2 Development Edition.
+  - question: >
+      Czy wersja Developer Edition ma inne wymagania sprzętowe, które różnią się od wymagań HoloLens 2?
+    answer: "Nie, to urządzenie jest takie samo z punktu widzenia wymagań sprzętowych. Wersja Development Edition może zostać wdrożona w celu pomocy w rozwoju i/lub testowaniu aplikacji w komercyjnej aplikacji. \n"
+  - question: >
+      Jak można używać zestawu narzędzi Mixed Reality Toolkit — Unity do budowania aplikacji na platformie HoloLens 2 Development Edition?
+    answer: >
+      MRTK-Unity to prowadzony przez firmę Microsoft projekt, który udostępnia zestaw składników i funkcji służących do przyspieszania opracowywania aplikacji międzyplatformowych rzeczywistości mieszanej w obrębie aparatu Unity. [Dowiedz się więcej](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+  - question: >
+      Jak można używać zestawu narzędzi Mixed Reality Toolkit – Unreal UXT do tworzenia aplikacji na platformie HoloLens 2 Development Edition?
+    answer: >
+      MRTK-Unreal to pierwszy składnik narzędzi środowiska użytkownika, który zostanie wydany i jest obecnie obsługiwany tylko w wersji HoloLens 2. Wtyczka składnika zawiera kod, strategie i przykładowe zasoby typowych funkcji środowiska użytkownika na potrzeby symulacji danych wejściowych, aktorów interakcji ręcznej, składników przycisków z możliwością naciśnięcia, składników manipulatora i obserwowanych składników zachowania. [Dowiedz się więcej](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+  - question: >
+      Czy wersje systemu operacyjnego dla wersji HoloLens 2 Development Edition są takie same jak HoloLens 2?
+    answer: >
+      Tak.
+  - question: >
+      Czy na urządzeniu z systemem HoloLens Development Edition można uruchamiać wydane aplikacje (ładowane sideload lub sklep)?
+    answer: >
+      Jeśli nie chcesz korzystać z warunków i postanowień HoloLens 2 Development Edition, tak, możesz uruchomić dowolną wydaną aplikację w wersji Developer Edition. Nie ograniczamy użycia aplikacji ładowanych lokalnie ani przechowywanych dla tej sku.
+  - question: >
+      Gdzie mogę dowiedzieć się więcej o wersji HoloLens 2 Development Edition?
+    answer: >
+      Odwiedź stronę dokumentacji HoloLens 2 Development Edition. [Dowiedz się więcej](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+  - question: >
+      Gdzie mogę dowiedzieć się więcej na temat tworzenia Mixed Reality rozwiązań?
+    answer: >
+      Odwiedź stronę Wprowadzenie do Mixed Reality tworzenia aplikacji. [Dowiedz się więcej](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+  - question: >
+      Gdzie mogę dowiedzieć się więcej na temat projektowania Mixed Reality rozwiązań?
+    answer: >
+      Odwiedź stronę Wprowadzenie do Mixed Reality projektowania. [Dowiedz się więcej](https://docs.microsoft.com/windows/mixed-reality/design/design)
+  - question: >
+      Gdzie mogę uzyskać pomoc techniczną HoloLens Developer Edition?
+    answer: >
+      Uzyskaj pomoc [techniczną tutaj.](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
+- name: Unity
+  questions:
+  - question: >
+      Co obejmuje moja wersja próbna aparatu Unity?
+    answer: >
+      Trzymiesięczny okres próbny aparatu Unity Pro dostęp do kompletnego rozwiązania unity&#39;dla profesjonalistów w celu tworzenia, obsługi i zarabiania. Powiązana wersja próbna Pro Unity nie ma ostatecznego terminu realizacji.
+
+
+      Ta oferta jest dla nowych użytkowników i nie ma zastosowania do ustanowionych subskrypcji Pro Unity. Wersja Pro wersji próbnej aparatu Unity może podlegać dodatkowym postanowieńom, które zostaną udostępnione w momencie realizacji. Przejrzyj odpowiednie [warunki &amp; i zasady](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) ochrony [prywatności.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+  - question: >
+      Jak mogę zrealizować moją wersję próbną Pro Unity?
+    answer: >
+      Wskazówki dotyczące realizacji
+
+
+      1. Odwiedź stronę id.unity.com
+
+      2. Zaloguj się przy użyciu identyfikatora aparatu Unity lub utwórz konto
+
+      3. Wybierz &#39;opcję Zrealizuj kod&#39;
+
+      4. Wprowadź kod produktu i wybierz pozycję &#39;zrealizuj kod produktu&#39;
+
+
+      Odwiedź dokumentację HoloLens 2 Development Edition, aby [dowiedzieć się więcej](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+  - question: >
+      Czy można tworzyć aplikacje w wersjach aparatu Unity innych niż licencja PRO?
+    answer: >
+      Tak, można tworzyć aplikacje ze wszystkimi zgodnymi wersjami aparatu Unity.
+  - question: >
+      Jak mogę skontaktować się z pomocą techniczną aparatu Unity?
+    answer: >
+      Aby uzyskać pomoc w przypadku jakichkolwiek pytań dotyczących identyfikatora aparatu Unity, konta, organizacji i subskrypcji, odwiedź support.unity3d.com.
+- name: Pixelyz
+  questions:
+  - question: >
+      Co zawiera moja wersja próbna wtyczki Pixyz?
+    answer: >
+      Wersja próbna wtyczki Pixyz z trzema miesiącami kalendarzowymi, która umożliwia dostęp do aplikacji Pixyz w celu tworzenia gotowych do użycia zasobów z idealnymi siatkami z tessellatami, ograniczoną liczbę wielokątów i automatyczną liczbę wielokątów oraz automatyczną odporność na wielokąty. Powiązana wersja próbna wtyczki Pixelyz nie ma terminu realizacji.
+
+
+      Ta oferta jest dla nowych użytkowników i nie jest stosem dla ustanowionych subskrypcji Pixelyz. Wtyczka Pixelyz może podlegać dodatkowym postanowieńom, które zostaną wprowadzone w momencie realizacji. Przejrzyj odpowiednie [warunki &amp; i zasady](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) ochrony [prywatności.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+  - question: >
+      Jak mogę zrealizować moją wersję próbną wtyczki Pixyz?
+    answer: >
+      Wskazówki dotyczące realizacji
+
+
+      1. Odwiedź stronę id.unity.com
+
+      2. Zaloguj się przy użyciu aplikacji Pixelyz lub utwórz konto
+
+      3. Kliknij &#39;opcję Zrealizuj kod&#39;
+
+      4. Wprowadź kod produktu, a następnie &#39;opcję Zrealizuj kod produktu&#39;
+
+
+      Odwiedź dokumentację HoloLens 2 Development Edition, aby [dowiedzieć się więcej](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+  - question: >
+      Jak mogę skontaktować się z pomocą techniczną aplikacji Pixelyz?
+    answer: >
+      Aby uzyskać pomoc w przypadku jakichkolwiek pytań dotyczących identyfikatora aparatu Unity, konta, organizacji i subskrypcji, odwiedź stronę support.unity3d.com
+
+
+      Aby uzyskać pomoc techniczną specyficzną dla aplikacji Pixelyz (po zrealizowaniu wersji próbnej), odwiedź [Pixyz-software.com/support](http://pixyz-software.com/support)
+- name: Azure
+  questions:
+  - question: >
+      Jak mogę zrealizować moje 500 USD środków na korzystanie z platformy Azure?
+    answer: >
+      Aby zrealizować środki na korzystanie z platformy Azure w wysokości 500 USD, Azure — dostęp próbny kod promocyjny i aktywuj subskrypcję. [Dowiedz się więcej](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+
+
+      Przejrzyj umowę Azure — dostęp próbny [i](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) szczegóły [oferty.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+  - question: >
+      Kiedy wygasają moje 500 USD środków na korzystanie z platformy Azure?
+    answer: >
+      Twoje środków na korzystanie z platformy Azure w wysokości 500 USD wygasną 90 dni po aktywowaniu kodu klucza platformy Azure.
+  - question: >
+      Co mogę zrobić za pomocą środków na korzystanie z platformy Azure?
+    answer: >
+      Dzięki środków na korzystanie z platformy Azure możesz rozpocząć tworzenie dzięki&#39;Microsoft&#39;coraz bardziej rozbudowanych usług w chmurze. Środki na korzystanie z platformy Azure zawarte w wersji HoloLens 2 Development Edition mają na celu umożliwienie klientom szybkiego rozpoczęcia tworzenia i testowania aplikacji rzeczywistości mieszanej na platformie Azure. Aby uzyskać szczegółowe informacje o budowania na platformie Azure, odwiedź [stronę Zasoby platformy Azure](https://azure.microsoft.com/en-us/resources/)
+  - question: >
+      Gdzie mogę dowiedzieć się więcej o usługach rzeczywistości mieszanej platformy Azure?
+    answer: Firma Microsoft oferuje zestaw usług rzeczywistości mieszanej, aby umożliwić deweloperom tworzenie i testowanie rozwiązań rzeczywistości mieszanej. [Dowiedz się więcej](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)

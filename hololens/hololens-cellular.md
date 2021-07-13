@@ -1,6 +1,6 @@
 ---
-title: Nawiązywanie połączenia z siecią komórkową i siecią 5G
-description: Nawiązywanie połączenia z sieciami komórkowymi z urządzeń HoloLens rzeczywistości mieszanej.
+title: Połączenie do sieci komórkowej i 5G
+description: Nawiązywanie połączenia z sieciami komórkowymi z HoloLens rzeczywistości mieszanej.
 ms.assetid: f1aaadce-8762-41f8-bfeb-3b6067a2ec78
 ms.prod: hololens
 ms.sitesec: library
@@ -12,39 +12,39 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379679"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635844"
 ---
-# <a name="connect-to-cellular-and-5g"></a>Nawiązywanie połączenia z siecią komórkową i siecią 5G
+# <a name="connect-to-cellular-and-5g"></a>Połączenie do sieci komórkowej i 5G
 
-Urządzenie HoloLens 2 obsługuje dwie metody łączenia się z sieciami komórkowymi i 5G:
+HoloLens 2 obsługuje dwie metody łączenia się z sieciami komórkowymi i 5G:
 
 - Sieć Wi-Fi ad hoc dostarczana przez urządzenie komórkowe, często nazywana "hotspotem"
 - Ograniczona obsługa urządzeń z tetheredami USB-C
 
 ## <a name="hotspot-wifi"></a>Hotspot (WiFi)
 
-Większość potrzeb w zakresie łączności komórkowej można spełnić za pomocą hotspotu. Sieć Wi-Fi urządzenia HoloLens 2 obsługuje technologię 802.11ac, która może zapewnić wymagania dotyczące przepustowości i opóźnienia niezbędne w większości typowych przypadków użycia. Sieć Wi-Fi jest również bezpłatna i zapewnia zgodność z największą liczbą urządzeń komórkowych.
+Większość potrzeb w zakresie łączności komórkowej można spełnić za pomocą hotspotu. HoloLens 2 sieć Wi-Fi obsługuje sieć 802.11ac, która może zapewnić wymagania dotyczące przepustowości i opóźnienia niezbędne w większości typowych przypadków użycia. Sieć Wi-Fi jest również bezpłatna i zapewnia zgodność z największą liczbą urządzeń komórkowych.
 
 ### <a name="connecting-to-a-hotspot"></a>Nawiązywanie połączenia z hotspotem
 
 1. Zapoznaj się z podręcznikiem urządzenia, aby dowiedzieć się, jak włączyć jego tryb hotspotu.
 1. Włącz tryb hotspot, podając nazwę sieci, a także znane hasło.
-1. W ustawieniach sieciowych urządzenia HoloLens 2 znajdź sieć Wi-Fi utworzoną w kroku 2 i dołącz ją.
+1. W HoloLens 2 sieci znajdź sieć Wi-Fi utworzoną w kroku 2 i dołącz ją.
 
 ## <a name="usb-c-tethering"></a>USB-C Tethering
 
-Tethering USB-C może zapewnić mniejsze opóźnienie dla zaawansowanych obciążeń, które go potrzebują. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering), na przykład może korzystać z tetheringu. Należy pamiętać, że tethering wymaga kabla między urządzeniem komórkowym i urządzeniem HoloLens, a tethering jest obsługiwany przez ograniczoną liczbę urządzeń.
+Tethering USB-C może zapewnić mniejsze opóźnienie dla zaawansowanych obciążeń, które go potrzebują. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering), na przykład może korzystać z tetheringu. Należy pamiętać, że tethering wymaga kabla między urządzeniem komórkowym i HoloLens, a tethering jest obsługiwany przez ograniczoną liczbę urządzeń.
 
 ### <a name="usb-c-compatibility"></a>Zgodność z usb-C
 
-Z systemem Windows Holographic w wersji 2004 lub nowszej można korzystać z ograniczonej liczby urządzeń, które są obecne jako adapter Ethernet.
+Z platformą Holographic w wersji 2004 lub nowszej można używać ograniczonej liczby urządzeń, które Windows jako adapter Ethernet.
 
-Urządzenia, które nie są obecne jako karty Ethernet, muszą obsługiwać ogólny sterownik [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) firmy Microsoft. Jednak tylko ograniczona liczba tych urządzeń jest zgodna z urządzeniem HoloLens 2. Aby uzyskać szczegółowe informacje na temat tego, czy obsługuje ono ogólny sterownik RNDIS firmy Microsoft, skontaktuj się z producentem urządzenia.
+Urządzenia, które nie są obecne jako karty Ethernet, muszą obsługiwać ogólny sterownik [RNDIS firmy](/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) Microsoft. Jednak tylko ograniczona liczba tych urządzeń jest zgodna z HoloLens 2. Aby uzyskać szczegółowe informacje na temat tego, czy obsługuje ono ogólny sterownik RNDIS firmy Microsoft, skontaktuj się z producentem urządzenia.
 
 Urządzenia, które nie są zgodne ze standardem RNDIS lub wymagają zainstalowania sterownika lub aplikacji, nie są obsługiwane.
 
@@ -54,5 +54,5 @@ Firma Microsoft nie utrzymuje listy zgodnych urządzeń, ale w tym miejscu jest 
 
 1. Zapoznaj się z podręcznikiem urządzenia, aby dowiedzieć się, jak włączyć udostępnianie danych za pośrednictwem portu USB. To ustawienie jest często określane jako "Tethering USB", "Udostępnianie danych" lub "Modem USB".
 1. Włącz udostępnianie danych za pośrednictwem portu USB.
-1. Podłącz urządzenie do portu USB-C urządzenia HoloLens.
-1. W ustawieniach sieciowych urządzenia HoloLens 2 urządzenie zostanie automatycznie wyświetlone jako połączenie Ethernet.
+1. Połączenie urządzenie do portu HoloLens USB-C.
+1. W HoloLens 2 ustawienia sieci urządzenie zostanie automatycznie wyświetlone jako połączenie Ethernet.
