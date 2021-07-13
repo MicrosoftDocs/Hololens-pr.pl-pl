@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie urządzenia HoloLens jako kiosku
-description: Dowiedz się, jak skonfigurować konfigurację kiosku i używać jej do blokowania aplikacji na urządzeniach HoloLens.
+title: Konfigurowanie HoloLens jako kiosku
+description: Dowiedz się, jak skonfigurować konfigurację kiosku i używać jej do blokowania aplikacji na HoloLens urządzeniach.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -17,23 +17,23 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 347501c3ac8f1b115b0d537332a17938a99d3257
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 9d9e521f3e337b3a48a60c19e52bfeb3186507af
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378362"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640359"
 ---
-# <a name="set-up-hololens-as-a-kiosk"></a>Konfigurowanie urządzenia HoloLens jako kiosku
+# <a name="set-up-hololens-as-a-kiosk"></a>Konfigurowanie HoloLens jako kiosku
 
-Urządzenie HoloLens można skonfigurować tak, aby działało jako urządzenie o stałym przeznaniu, nazywane *również kioskiem,* przez skonfigurowanie urządzenia do uruchamiania w trybie kiosku. Tryb kiosku ogranicza aplikacje (lub użytkowników), które są dostępne na urządzeniu. Tryb kiosku to wygodna funkcja, za pomocą których można dedykować urządzenie HoloLens do aplikacji biznesowych lub użyć urządzenia HoloLens w pokazie aplikacji.
+Można skonfigurować urządzenie HoloLens, aby działało jako urządzenie o stałym przeznaniu, nazywane *również kioskiem,* przez skonfigurowanie urządzenia do uruchamiania w trybie kiosku. Tryb kiosku ogranicza aplikacje (lub użytkowników), które są dostępne na urządzeniu. Tryb kiosku to wygodna funkcja, za pomocą HoloLens można przeznaczyć urządzenie biznesowe lub użyć urządzenia HoloLens w pokazie aplikacji.
 
-Ten artykuł zawiera informacje dotyczące aspektów konfiguracji kiosku specyficznych dla urządzeń HoloLens. Aby uzyskać ogólne informacje na temat różnych typów kiosków z systemem Windows i sposobu ich konfigurowania, zobacz Configure [kiosks and digital signs on Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-methods)(Konfigurowanie kiosków i podpisów cyfrowych w wersjach klasycznych systemu Windows).  
+Ten artykuł zawiera informacje dotyczące aspektów konfiguracji kiosku, które są specyficzne dla HoloLens urządzeń. Aby uzyskać ogólne informacje na temat różnych typów kiosków opartych na Windows i sposobu ich konfigurowania, zobacz Configure [kiosks and digital signs on Windows desktop editions](/windows/configuration/kiosk-methods)(Konfigurowanie kiosków i podpisów cyfrowych w Windows klasycznych).  
 
 > [!IMPORTANT]  
-> Tryb kiosku określa, które aplikacje są dostępne, gdy użytkownik się na urządzeniu. Jednak tryb kiosku nie jest metodą zabezpieczeń. Nie zatrzymuje to otwierania przez aplikację "dozwoloną" innej aplikacji, która nie jest dozwolona. Aby zablokować otwieranie aplikacji lub procesów, należy użyć Windows Defender CSP kontroli aplikacji [(WDAC)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) w celu utworzenia odpowiednich zasad.
+> Tryb kiosku określa, które aplikacje są dostępne, gdy użytkownik się na urządzeniu. Tryb kiosku nie jest jednak metodą zabezpieczeń. Nie zatrzymuje to otwierania przez aplikację "dozwoloną" innej aplikacji, która nie jest dozwolona. Aby zablokować otwieranie aplikacji lub procesów, należy użyć Windows Defender CSP kontroli aplikacji [(WDAC)](/windows/client-management/mdm/applicationcontrol-csp) w celu utworzenia odpowiednich zasad.
 >
-> Dowiedz się więcej o usługi firmy Microsoft zapewnianiu użytkownikom zaawansowanego poziomu zabezpieczeń, z których korzysta urządzenie HoloLens 2, przeczytaj więcej na temat separacji i izolacji stanu — [zabezpieczenia usługi Defender.](security-state-separation-isolation.md#defender-protections) Możesz też dowiedzieć się, jak używać funkcji WDAC i Windows PowerShell do zezwalania na aplikacje lub blokowania ich na [urządzeniach HoloLens 2 z Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
+> Dowiedz się więcej o usługi firmy Microsoft, aby zapewnić użytkownikom zaawansowany poziom zabezpieczeń, z których korzysta program HoloLens 2, przeczytaj więcej na temat oddzielania i izolacji stanu — [ochrona usługi Defender.](security-state-separation-isolation.md#defender-protections) Możesz też dowiedzieć się, jak [używać funkcji WDAC i Windows PowerShell](/mem/intune/configuration/custom-profile-hololens)do zezwalania na aplikacje lub blokowania ich na HoloLens 2 z Microsoft Intune .
 
 Trybu kiosku można używać w konfiguracji pojedynczej aplikacji lub wielu aplikacji, a do konfigurowania i wdrażania konfiguracji kiosku można użyć jednego z trzech procesów.
 
@@ -42,30 +42,30 @@ Trybu kiosku można używać w konfiguracji pojedynczej aplikacji lub wielu apli
 
 ## <a name="plan-the-kiosk-deployment"></a>Planowanie wdrożenia kiosku
 
-Podczas planowania kiosku musisz mieć możliwość odpowiedzi na następujące pytania. Poniżej znajdują się pewne decyzje, które należy wziąć pod uwagę podczas czytania tej strony, oraz zagadnienia dotyczące tych pytań.
-1. **Kto będzie używać kiosku [](hololens-identity.md) i jakiego typu konta będą używać?** Jest to decyzja, która prawdopodobnie została już podjęta i nie powinna zostać dostosowana do potrzeb kiosku, ale będzie mieć wpływ na sposób przypisania kiosku później.
+Podczas planowania kiosku musisz mieć możliwość odpowiedzi na następujące pytania. Poniżej znajdują się pewne decyzje, które należy wziąć pod uwagę podczas czytania tej strony, oraz kilka kwestii, które należy wziąć pod uwagę w przypadku tych pytań.
+1. **KtoTo będą używać kiosku i jakiego [](hololens-identity.md) typu kont będą używać?** Jest to decyzja, która prawdopodobnie została już podjęta i nie powinna być dostosowywana w celu zapewnienia kiosku, ale będzie mieć wpływ na sposób przypisania kiosku później.
 1. **Czy musisz mieć różne kioski na użytkownika/grupę lub kiosk nie jest włączony dla niektórych?** Jeśli tak, należy utworzyć kiosk za pośrednictwem kodu XML. 
 1. **Ile aplikacji będzie w kiosku?** Jeśli masz więcej niż 1 aplikację, będziesz potrzebować kiosku z wieloma aplikacjami. 
 1. **Które aplikacje będą dostępne w kiosku?** Skorzystaj z poniższej listy identyfikatorów AUMID, aby dodać In-Box aplikacji oprócz własnych.
-1. **Jak planujesz wdrożenie kiosku?** Jeśli rejestrujesz urządzenie w funkcji MDM, zalecamy wdrożenie kiosku przy użyciu rozwiązania MDM. Jeśli nie używasz rozwiązania MDM, wdrożenie z pakietem aprowizowania jest dostępne.  
+1. **Jak planujesz wdrożenie kiosku?** Jeśli rejestrujesz urządzenie w funkcji MDM, zalecamy użycie rozwiązania MDM do wdrożenia kiosku. Jeśli nie używasz rozwiązania MDM, jest dostępne wdrożenie z pakietem aprowizowania.  
 
 ### <a name="kiosk-mode-requirements"></a>Wymagania dotyczące trybu kiosku
 
-Do korzystania z trybu kiosku można skonfigurować dowolne urządzenie HoloLens 2.
+Możesz skonfigurować dowolne urządzenie HoloLens 2 do korzystania z trybu kiosku.
 
 > [!IMPORTANT]
-> Tryb kiosku jest dostępny tylko wtedy, gdy urządzenie Windows Holographic for Business. Wszystkie urządzenia HoloLens 2 są Windows Holographic for Business i nie ma żadnych innych wersji. Na każdym urządzeniu HoloLens 2 można uruchomić tryb kiosku.
+> Tryb kiosku jest dostępny tylko wtedy, gdy urządzenie Windows Holographic for Business. Wszystkie HoloLens 2 są Windows Holographic for Business i nie ma żadnych innych wersji. Co HoloLens 2 urządzenia mogą uruchamiać tryb kiosku.
 >
-> Urządzenia HoloLens (1. generacji) należy uaktualnić zarówno pod względem kompilacji systemu operacyjnego, jak i wersji systemu operacyjnego. Poniżej znajduje się więcej informacji na temat aktualizowania urządzenia HoloLens (1. generacji) [do Windows Holographic for Business](hololens1-upgrade-enterprise.md) wersji. Aby zaktualizować urządzenie HoloLens (1. generacji) w celu używania trybu kiosku, należy najpierw upewnić się, że na urządzeniu działa Windows 10, wersja 1803 lub nowsza. Jeśli do odzyskania urządzenia HoloLens (1. generacji) do kompilacji domyślnej zostało użyte narzędzie do odzyskiwania urządzeń z systemem Windows lub zainstalowano najnowsze aktualizacje, urządzenie jest gotowe do skonfigurowania.
+> HoloLens (1. generacji) należy uaktualnić zarówno pod względem kompilacji systemu operacyjnego, jak i wersji systemu operacyjnego. Poniżej znajduje się więcej informacji na temat aktualizowania HoloLens (1. generacji) do [Windows Holographic for Business](hololens1-upgrade-enterprise.md) wersji. Aby zaktualizować urządzenie HoloLens (1. generacji) w celu używania trybu kiosku, należy najpierw upewnić się, że na urządzeniu działa Windows 10, wersja 1803 lub nowsza. Jeśli do odzyskania urządzenia z systemem HoloLens (pierwszej generacji) do kompilacji domyślnej zostało użyte narzędzie Windows Device Recovery Tool, lub jeśli zainstalowano najnowsze aktualizacje, urządzenie jest gotowe do skonfigurowania.
 
 > [!IMPORTANT]  
 > Aby ułatwić ochronę urządzeń uruchamianych w trybie kiosku, rozważ dodanie zasad zarządzania urządzeniami, które wyłączają funkcje, takie jak łączność USB. Ponadto sprawdź ustawienia pierścienia aktualizacji, aby upewnić się, że aktualizacje automatyczne nie występują w godzinach pracy.
 
 ### <a name="decide-between-a-single-app-kiosk-or-a-multi-app-kiosk"></a>Decydowanie o kiosku z jedną aplikacją lub kiosku z wieloma aplikacjami
 
-Kiosk z jedną aplikacją uruchamia określoną aplikację, gdy użytkownik się na urządzeniu. Ta menu Start jest wyłączona, tak jak Cortana. Urządzenie HoloLens 2 nie odpowiada na gest [Start.](hololens2-basic-usage.md#start-gesture) Urządzenie HoloLens (1. generacji) nie odpowiada na gest [Blooma.](hololens1-basic-usage.md) Ponieważ można uruchomić tylko jedną aplikację, użytkownik nie może umieścić innych aplikacji.
+Kiosk z jedną aplikacją uruchamia określoną aplikację, gdy użytkownik się na urządzeniu. Menu Start jest wyłączona, tak jak Cortana. Urządzenie HoloLens 2 nie odpowiada na gest [Start.](hololens2-basic-usage.md#start-gesture) Urządzenie HoloLens (1. generacji) nie odpowiada na gest [blooma.](hololens1-basic-usage.md) Ponieważ można uruchomić tylko jedną aplikację, użytkownik nie może umieścić innych aplikacji.
 
-Kiosk z wieloma aplikacjami wyświetla menu Start, gdy użytkownik się na urządzeniu. Konfiguracja kiosku określa, które aplikacje są dostępne na menu Start. Możesz użyć kiosku z wieloma aplikacjami, aby zapewnić użytkownikom łatwe do zrozumienia środowisko, prezentując im tylko te rzeczy, których potrzebują, i usuwając rzeczy, których nie potrzebują.
+Kiosk z wieloma aplikacjami wyświetla menu Start, gdy użytkownik się na urządzeniu. Konfiguracja kiosku określa, które aplikacje są dostępne na menu Start. Możesz użyć kiosku z wieloma aplikacjami, aby zapewnić użytkownikom łatwe do zrozumienia środowisko, prezentując im tylko te rzeczy, których potrzebują, i usuwając rzeczy, których nie muszą używać.
 
 W poniższej tabeli wymieniono możliwości funkcji w różnych trybach kiosku.
 
@@ -74,9 +74,9 @@ W poniższej tabeli wymieniono możliwości funkcji w różnych trybach kiosku.
 |Kiosk z jedną aplikacją |Disabled |Disabled |Disabled |Disabled   |Disabled |Włączone<sup>1</sup> |
 |Kiosk z wieloma aplikacjami |Enabled (Włączony) |Włączone<sup>2</sup> |Dostępne<sup>2</sup> |Dostępne<sup>2</sup> |Dostępne<sup>2, 3</sup>  |Włączone<sup>1</sup> |
 
-> <sup>1 Polecenia</sup> głosowe powiązane z wyłączonymi funkcjami nie działają.  
+> <sup>1 Polecenia</sup> głosowe, które odnoszą się do wyłączonych funkcji, nie działają.  
 > <sup>2</sup> Aby uzyskać więcej informacji na temat konfigurowania tych funkcji, zobacz [Wybieranie aplikacji kiosku.](#plan-kiosk-apps)  
-> <sup>3</sup> Nawet jeśli Cortana jest wyłączona, wbudowane polecenia głosowe są włączone.
+> <sup>3</sup> Nawet jeśli Cortana, wbudowane polecenia głosowe są włączone.
 
 W poniższej tabeli wymieniono funkcje obsługi użytkowników w różnych trybach kiosku.
 
@@ -90,20 +90,20 @@ Przykłady użycia tych możliwości można znaleźć w poniższej tabeli.
 |Użyj kiosku z jedną aplikacją, aby: |Użyj kiosku z wieloma aplikacjami, aby: |
 | --- | --- |
 |Urządzenie z uruchomionym tylko przewodnikiem usługi Dynamics 365 dla nowych pracowników. |Urządzenie, na których działa zarówno przewodnik, jak i pomoc zdalna dla wielu pracowników. |
-|Urządzenie, na których działa tylko aplikacja niestandardowa. |Urządzenie, które działa jako kiosk dla większości użytkowników (z uruchamianą tylko aplikacją niestandardową), ale działa jako urządzenie standardowe dla określonej grupy użytkowników. |
+|Urządzenie, na których działa tylko aplikacja niestandardowa. |Urządzenie, które działa jako kiosk dla większości użytkowników (uruchamia tylko aplikację niestandardową), ale działa jako urządzenie standardowe dla określonej grupy użytkowników. |
 
 ### <a name="plan-kiosk-apps"></a>Planowanie aplikacji kiosku
 
-Aby uzyskać ogólne informacje na temat wybierania aplikacji kiosku, zobacz Wytyczne dotyczące wybierania aplikacji do przypisanego dostępu [(tryb kiosku).](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app)
+Aby uzyskać ogólne informacje na temat wybierania aplikacji kiosku, zobacz Wytyczne dotyczące wybierania aplikacji na przypisany dostęp [(tryb kiosku).](/windows/configuration/guidelines-for-assigned-access-app)
 
-Jeśli używasz Portal urządzeń z systemem Windows do konfigurowania kiosku z jedną aplikacją, wybierz aplikację podczas procesu konfiguracji.  
+Jeśli używasz tej Windows Portal urządzeń do konfigurowania kiosku z jedną aplikacją, wybierz aplikację podczas procesu instalacji.  
 
-Jeśli używasz systemu mobile Zarządzanie urządzeniami (MDM) lub pakietu aprowizowania do konfigurowania trybu kiosku, użyj dostawcy usług konfiguracji [AssignedAccess (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) do określenia aplikacji. Program CSP używa [identyfikatorów modelu użytkownika aplikacji (AUMID)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) do identyfikowania aplikacji. W poniższej tabeli wymieniono identyfikatory AUMID niektórych aplikacji, których można używać w kiosku z wieloma aplikacjami.
+Jeśli używasz systemu mobile Zarządzanie urządzeniami (MDM) lub pakietu aprowizowania do konfigurowania trybu kiosku, do określania aplikacji używasz dostawcy usługi konfiguracji [AssignedAccess (CSP).](/windows/client-management/mdm/assignedaccess-csp) Program CSP używa identyfikatorów modelu użytkownika [aplikacji (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) do identyfikowania aplikacji. W poniższej tabeli wymieniono identyfikatory AUMID niektórych aplikacji, których można używać w kiosku z wieloma aplikacjami.
 
 > [!IMPORTANT]
-> Tryb kiosku określa, które aplikacje są dostępne, gdy użytkownik się na urządzeniu. Tryb kiosku nie jest jednak metodą zabezpieczeń. Nie zatrzymuje to otwierania przez aplikację "dozwoloną" innej aplikacji, która nie jest dozwolona. Ponieważ nie ograniczamy tego zachowania, aplikacje nadal mogą być uruchomione z przeglądarki Edge, Eksploratora plików i Microsoft Store aplikacji. Jeśli istnieją określone aplikacje, które nie mają być uruchomione z kiosku, utwórz odpowiednie zasady za pomocą Windows Defender CSP kontroli aplikacji [(WDAC).](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 
+> Tryb kiosku określa, które aplikacje są dostępne, gdy użytkownik się na urządzeniu. Jednak tryb kiosku nie jest metodą zabezpieczeń. Nie zatrzymuje to otwierania przez aplikację "dozwoloną" innej aplikacji, która nie jest dozwolona. Ponieważ nie ograniczamy tego zachowania, aplikacje nadal mogą być uruchomione z przeglądarki Edge, Eksploratora plików i Microsoft Store aplikacji. Jeśli istnieją określone aplikacje, których nie chcesz uruchomiać z kiosku, użyj programu Windows Defender CSP kontroli aplikacji [(WDAC)](/windows/client-management/mdm/applicationcontrol-csp) w celu utworzenia odpowiednich zasad. 
 > 
-> Ponadto nie można Mixed Reality strony głównej jako aplikacji kiosku.
+> Ponadto aplikacji Mixed Reality Home nie można ustawić jako aplikacji kiosku.
 
 <a id="aumids"></a>
 
@@ -111,24 +111,24 @@ Jeśli używasz systemu mobile Zarządzanie urządzeniami (MDM) lub pakietu apro
 | --- | --- |
 |Przeglądarka 3D |Microsoft.Microsoft3DViewer \_ 8wekyb3d8bbwe \! Microsoft.Microsoft3DViewer |
 |Kalendarz |microsoft.windowscommunicationsapps \_ 8wekyb3d8bbwe \! microsoft.windowslive.calendar |
-|Aparat<sup>fotograficzny 1, 2</sup> |HoloCamera \_ cw5n1h2txyewy \! HoloCamera |
+|Aparat<sup>1, 2</sup> |HoloCamera \_ cw5n1h2txyewy \! HoloCamera |
 |Cortana<sup>3</sup> |Microsoft.549981C3F5F10 \_ 8wekyb3d8bbwe \! App |
-|S wyboru urządzeń na urządzeniu HoloLens (1. generacja) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
-|S wyboru urządzenia na urządzeniu HoloLens 2 |Microsoft.Windows.DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows.DevicesFlowHost |
-|Dynamics 365 Guides |Microsoft.Dynamics365.Guides \_ 8wekyb3d8bbwe \! MicrosoftGuides |
+|S wyboru urządzenia na HoloLens (1. generacja) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
+|S wyboru urządzenia w HoloLens 2 |Microsoft. Windows. DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows. DevicesFlowHost |
+|Przewodniki dotyczące usługi Dynamics 365 |Microsoft.Dynamics365.Guides \_ 8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft.RemoteAssist |
-|Centrum &nbsp; opinii |Aplikacja Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! |
+|Centrum &nbsp; opinii |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! App |
 |Eksplorator plików |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy! App |
 |Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
-|Stare Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe! MicrosoftEdge |
+|Stary Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe! MicrosoftEdge |
 |Nowe Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE |
 |Sklepie Microsoft |Microsoft.WindowsStore_8wekyb3d8bbwe! App |
 |Miracast<sup>4</sup> |&nbsp; |
 |Filmy & TV |Microsoft.ZuneVideo \_ 8wekyb3d8bbwe \! Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive \_ 8wekyb3d8bbwe \! App |
-|Zdjęcia |Aplikacja Microsoft.Windows.Photos \_ 8wekyb3d8bbwe \! |
-|Stare ustawienia |HolographicSystemSettings_cw5n1h2txyewy! App |
-|Nowe ustawienia |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
+|Zdjęcia |Microsoft. Windows. Zdjęcia \_ 8wekyb3d8bbwe \! App |
+|Stary Ustawienia |HolographicSystemSettings_cw5n1h2txyewy! App |
+|Nowe Ustawienia |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
 |Porady |Microsoft.HoloLensTips \_ 8wekyb3d8bbwe \! HoloLensTips |
 
 > <sup>1</sup> Aby włączyć funkcję przechwytywania zdjęć lub wideo, należy włączyć aplikację Aparat jako aplikację kiosku.  
@@ -136,8 +136,8 @@ Jeśli używasz systemu mobile Zarządzanie urządzeniami (MDM) lub pakietu apro
 > - Menu Szybkie akcje zawiera przyciski Zdjęcie i Wideo.  
 > - Należy również włączyć aplikację (taką jak Zdjęcia, Poczta lub OneDrive), która może wchodzić w interakcje z obrazami lub je pobierać.  
 >  
-> <sup>3</sup> Nawet jeśli Cortana nie zostanie włączona jako aplikacja kiosku, wbudowane polecenia głosowe są włączone. Jednak polecenia związane z wyłączonymi funkcjami nie mają żadnego efektu.  
-> <sup>4</sup> Nie można włączyć funkcji Miracast bezpośrednio. Aby włączyć miracast jako aplikację kiosku, włącz aplikację Aparat i aplikację S wyboru urządzenia.
+> <sup>3</sup> Nawet jeśli nie włączysz Cortana jako aplikacji kiosku, wbudowane polecenia głosowe są włączone. Jednak polecenia związane z wyłączonymi funkcjami nie mają żadnego efektu.  
+> <sup>4</sup> Nie można włączyć Miracast bezpośrednio. Aby włączyć Miracast jako aplikację kiosku, włącz aplikacje Aparat i S wyboru urządzenia.
 
 ### <a name="plan-kiosk-profiles-for-users-or-groups"></a>Planowanie profilów kiosku dla użytkowników lub grup
 
@@ -146,45 +146,45 @@ Podczas tworzenia pliku XML lub używania interfejsu użytkownika usługi Intune
 Zazwyczaj kioski są włączone dla użytkownika lub grupy użytkowników. Jeśli jednak planujesz pisanie własnego kiosku XML, warto rozważyć dostęp przypisany globalnie, w którym kiosk jest stosowany na poziomie urządzenia niezależnie od tożsamości. Jeśli jest to atrakcyjne dla Ciebie, przeczytaj więcej na temat kiosków z [dostępem przypisanym globalnie.](hololens-global-assigned-access-kiosk.md)
 
 #### <a name="if-you-are-creating-an-xml-file"></a>Jeśli tworzysz plik XML:
--   Wiele z nich tworzy wiele profilów kiosku i przypisuje je do różnych użytkowników/grup. Na przykład kiosk dla grupy usługi Azure AD, która zawiera wiele aplikacji, oraz kiosk z wieloma aplikacjami z pojedynczą aplikacją.
+-   Wiele z nich tworzy wiele profilów kiosku i przypisuje je do różnych użytkowników/grup. Na przykład kiosk dla grupy usługi Azure AD, która zawiera wiele aplikacji, i gość z wieloma kioskami aplikacji z pojedynczą aplikacją.
 -   Konfiguracja kiosku będzie nazywana **identyfikatorem profilu i** identyfikatorem GUID.
--   Przypiszesz ten profil w sekcji konfiguracji, określając typ użytkownika i używając tego samego identyfikatora GUID dla **identyfikatora DefaultProfile.**
-- Plik XML można utworzyć, ale nadal stosować do urządzenia za pośrednictwem rozwiązania MDM, tworząc niestandardowy profil konfiguracji urządzenia OMA URI i stosując go do grupy urządzeń HoloLens przy użyciu wartości URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
+-   Przypiszesz ten profil w sekcji konfiguracji, określając typ użytkownika i używając tego samego identyfikatora GUID dla **identyfikatora DefaultProfile .**
+- Plik XML można utworzyć, ale nadal stosować do urządzenia za pośrednictwem rozwiązania MDM, tworząc niestandardowy profil konfiguracji urządzenia OMA URI i stosując go do grupy urządzeń usługi HoloLens przy użyciu wartości URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
 
 #### <a name="if-you-are-creating-a-kiosk-in-intune"></a>Jeśli tworzysz kiosk w usłudze Intune.
 -   Każde urządzenie może otrzymać tylko jeden profil kiosku. W przeciwnym razie spowoduje konflikt i w ogóle nie otrzyma konfiguracji kiosku. 
-    -   Inne rodzaje profilów i zasad, takie jak ograniczenia dotyczące urządzeń, które nie są związane z profilem konfiguracji kiosku, nie kolidują z profilem konfiguracji kiosku.
--   Kiosk zostanie włączony dla wszystkich użytkowników, którzy są częścią typu logowania Użytkownik. Zostanie on ustawiony za pomocą użytkownika lub grupy usługi Azure AD. 
--   Po skonfigurowaniu konfiguracji kiosku i wybraniu typu Logowanie użytkownika **(użytkownicy,** którzy mogą logować się do kiosku) i Aplikacje, konfiguracja urządzenia nadal musi być przypisana do grupy. Grupy Przypisane określają, które urządzenia odbierają konfigurację urządzenia kiosku, ale nie wchodzą w interakcje, jeśli kiosk jest włączony lub nie. 
-    - Aby uzyskać pełne omówienie skutków przypisywania profilów konfiguracji w usłudze Intune, zobacz [Przypisywanie profilów](https://docs.microsoft.com/intune/configuration/device-profile-assign)użytkowników i urządzeń w usłudze Microsoft Intune .
+    -   Inne rodzaje profilów i zasad, takie jak ograniczenia dotyczące urządzeń, które nie są powiązane z profilem konfiguracji kiosku, nie kolidują z profilem konfiguracji kiosku.
+-   Kiosk zostanie włączony dla wszystkich użytkowników, którzy są częścią typu logowania Użytkownik. Zostanie on ustawiony z użytkownikiem lub grupą usługi Azure AD. 
+-   Po wybraniu opcji Konfiguracja  kiosku i typ logowania użytkownika (użytkownicy, którzy mogą logować się do kiosku) i Aplikacje są zaznaczone, konfiguracja urządzenia nadal musi być przypisana do grupy. Grupy Przypisane określają, które urządzenia odbierają konfigurację urządzenia kiosku, ale nie wchodzą w interakcje, jeśli kiosk jest włączony lub nie. 
+    - Aby uzyskać pełne omówienie skutków przypisywania profilów konfiguracji w usłudze Intune, zobacz [Przypisywanie profilów](/intune/configuration/device-profile-assign)użytkowników i urządzeń w usłudze Microsoft Intune .
 
 ### <a name="select-a-deployment-method"></a>Wybieranie metody wdrażania
 
 Możesz wybrać jedną z następujących metod wdrażania konfiguracji kiosku:
 
-- [Microsoft Intune lub inną usługę zarządzania urządzeniami przenośnymi (MDM)](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
+- [Microsoft Intune lub innej usługi zarządzania urządzeniami przenośnymi (MDM)](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
 
 - [Pakiet aprowizowania](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
-- [Portal urządzeń z systemem Windows](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
+- [Windows Portal urządzeń](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
 
    > [!NOTE]  
-   > Ponieważ ta metoda wymaga włączonego trybu dewelopera na urządzeniu, zalecamy używanie go tylko na pokazach.
+   > Ponieważ ta metoda wymaga, aby tryb dewelopera był włączony na urządzeniu, zalecamy używanie go tylko na pokazach.
 
 W poniższej tabeli wymieniono możliwości i zalety każdej z metod wdrażania.
 
-| &nbsp; |Wdrażanie przy użyciu Portal urządzeń z systemem Windows |Wdrażanie przy użyciu pakietu aprowizowania |Wdrażanie przy użyciu rozwiązania MDM |
+| &nbsp; |Wdrażanie przy użyciu Windows Portal urządzeń |Wdrażanie przy użyciu pakietu aprowizowania |Wdrażanie przy użyciu rozwiązania MDM |
 | --------------------------- | ------------- | -------------------- | ---- |
 |Wdrażanie kiosków z jedną aplikacją   | Tak           | Tak                  | Tak  |
 |Wdrażanie kiosków z wieloma aplikacjami    | Nie            | Tak                  | Tak  |
 |Wdrażanie tylko na urządzeniach lokalnych | Tak           | Tak                  | Nie   |
 |Wdrażanie przy użyciu trybu dewelopera |Wymagane       | Niewymagane            | Niewymagane   |
-|Wdrażanie przy użyciu Azure Active Directory (Azure AD)  | Niewymagane            | Niewymagane                   | Wymagane  |
+|Wdrażanie przy użyciu usługi Azure Active Directory (Azure AD)  | Niewymagane            | Niewymagane                   | Wymagane  |
 |Automatyczne wdrażanie      | Nie            | Nie                   | Tak  |
 |Szybkość wdrażania            | Duża       | Duża                 | Mała |
 |Wdrażanie w dużej skali | Niezalecane    | Zalecane        | Zalecane |
 
-## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>Konfigurowanie kiosku z pojedynczą aplikacją lub kioskiem z wieloma Microsoft Intune urządzeniami przenośnymi za pomocą usługi Microsoft Intune lub innego rozwiązania MDM
+## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>Konfigurowanie kiosku z jedną aplikacją lub wieloma aplikacjami przy użyciu Microsoft Intune lub innego rozwiązania MDM
 
 Aby skonfigurować tryb kiosku przy użyciu Microsoft Intune lub innego systemu MDM, wykonaj następujące kroki.
 
@@ -193,24 +193,24 @@ Aby skonfigurować tryb kiosku przy użyciu Microsoft Intune lub innego systemu 
 1. Konfigurowanie kiosku.
    - [Skonfiguruj ustawienia kiosku z jedną aplikacją.](#mdmconfigsingle)
    - [Skonfiguruj ustawienia kiosku z wieloma aplikacjami.](#mdmconfigmulti)
-1. [Przypisz profil konfiguracji kiosku do grupy.](#mdmassign)
+1. [Przypisz profil konfiguracji kiosku do grupy](#mdmassign).
 1. Wdrażanie urządzeń.
    - [Wdrażanie kiosku z jedną aplikacją.](#mdmsingledeploy)
    - [Wdrażanie kiosku z wieloma aplikacjami.](#mdmmultideploy)
 
 ### <a name="mdm-step-1-ndash-prepare-to-enroll-the-devices"></a><a id="mdmenroll"></a>MDM, krok 1 &ndash; Przygotowanie do zarejestrowania urządzeń
 
-Możesz skonfigurować system MDM do automatycznego rejestrowania urządzeń HoloLens, gdy użytkownik po raz pierwszy się zarejestruje, lub aby użytkownicy rejestrują urządzenia ręcznie. Urządzenia muszą być również przyłączone do twojej domeny usługi Azure AD i przypisane do odpowiednich grup.
+Możesz skonfigurować system MDM do automatycznego rejestrowania urządzeń HoloLens, gdy użytkownik po raz pierwszy się rejestruje, lub ręcznego rejestrowania urządzeń przez użytkowników. Urządzenia muszą być również przyłączone do domeny usługi Azure AD i przypisane do odpowiednich grup.
 
-Aby uzyskać więcej informacji na temat rejestrowania urządzeń, zobacz Rejestrowanie urządzenia [HoloLens](hololens-enroll-mdm.md) w usłudze MDM i Metody rejestracji urządzeń z [systemem Windows w usłudze Intune.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods)
+Aby uzyskać więcej informacji na temat sposobu rejestrowania urządzeń, zobacz Rejestrowanie urządzeń HoloLens w metodach rejestracji w usłudze [MDM](hololens-enroll-mdm.md) i [Intune dla Windows urządzeń.](/mem/intune/enrollment/windows-enrollment-methods)
 
-### <a name="mdm-step-2-ndash-create-a-kiosk-configuration-profile"></a><a id="mdmprofile"></a>MDM, krok 2 &ndash; Tworzenie profilu konfiguracji kiosku
+### <a name="mdm-step-2-ndash-create-a-kiosk-configuration-profile"></a><a id="mdmprofile"></a>MDM, krok &ndash; 2. Tworzenie profilu konfiguracji kiosku
 
 1. Otwórz [witrynę Azure](https://portal.azure.com/) Portal i zaloguj się do konta administratora usługi Intune.
 1. Wybierz **Microsoft Intune**  >  **Konfiguracja urządzenia — Profile** Utwórz  >  **profil.**
 1. Wprowadź nazwę profilu.
-1. Wybierz **pozycję Ustawienia** Windows 10 i  >  **nowsze,** a następnie wybierz pozycję Typ **profilu** Ograniczenia  > **dotyczące urządzeń.**
-1. Wybierz **pozycję**  >  **Skonfiguruj kiosk,** a następnie wybierz jedną z następujących opcji:
+1. Wybierz **pozycję Windows 10** i  >  **nowsze,** a następnie wybierz pozycję Typ **profilu**  > **Ograniczenia urządzenia.**
+1. Wybierz **pozycję Konfiguruj**  >  **kiosk,** a następnie wybierz jedną z następujących opcji:
    - Aby utworzyć kiosk z jedną aplikacją, wybierz **pozycję Kiosk w trybie pojedynczej**  >  **aplikacji.**
    - Aby utworzyć kiosk z wieloma aplikacjami, wybierz **pozycję Kiosk w trybie** wielu  >  **aplikacji.**
 1. Aby rozpocząć konfigurowanie kiosku, wybierz pozycję **Dodaj.**
@@ -220,20 +220,20 @@ Następne kroki różnią się w zależności od wybranego typu kiosku. Aby uzys
 - [Kiosk z jedną aplikacją](#mdmconfigsingle)
 - [Kiosk z wieloma aplikacjami](#mdmconfigmulti)
 
-Aby uzyskać więcej informacji na temat tworzenia profilu konfiguracji kiosku, zobacz Windows 10 i Windows Holographic for Business urządzenia do uruchamiania jako dedykowany kiosk przy [użyciu usługi Intune.](https://docs.microsoft.com/intune/configuration/kiosk-settings)
+Aby uzyskać więcej informacji na temat tworzenia profilu konfiguracji kiosku, zobacz Windows 10 i Windows Holographic for Business urządzenia do uruchamiania jako dedykowany kiosk przy użyciu [usługi Intune.](/intune/configuration/kiosk-settings)
 
 ### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>MDM, krok 3 (pojedyncza aplikacja) &ndash;  Konfigurowanie ustawień kiosku z jedną aplikacją
 
 Ta sekcja zawiera podsumowanie ustawień wymaganych przez kiosk z jedną aplikacją. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- Aby uzyskać informacje na temat konfigurowania profilu konfiguracji kiosku w usłudze Intune, zobacz [Jak skonfigurować tryb kiosku](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)przy użyciu Microsoft Intune .
-- Aby uzyskać więcej informacji na temat dostępnych ustawień kiosków z jedną aplikacją w usłudze Intune, zobacz Kioski z pojedynczą aplikacją [w trybie pełnoekranowym](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
+- Aby uzyskać informacje na temat konfigurowania profilu konfiguracji kiosku w usłudze Intune, zobacz [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- Aby uzyskać więcej informacji o dostępnych ustawieniach kiosków z pojedynczą aplikacją w usłudze Intune, zobacz Kioski z pojedynczą [aplikacją pełnoekranową](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
 - W przypadku innych usług MDM zapoznaj się z dokumentacją dostawcy, aby uzyskać instrukcje. Jeśli musisz użyć niestandardowej konfiguracji XML do skonfigurowania kiosku w usłudze MDM, utwórz plik XML, który [definiuje konfigurację kiosku.](#ppkioskconfig)
 
 1. Wybierz pozycję Logowanie **użytkownika** wpisz Konto użytkownika lokalnego, a następnie wprowadź nazwę użytkownika konta lokalnego (urządzenia) lub konta Microsoft  >  (MSA), które może zalogować się do kiosku.
    > [!NOTE]  
    > Konta użytkowników typu **Logowanie automatyczne** nie są obsługiwane na platformie Windows Holographic for Business.
-1. Wybierz **pozycję Typ** aplikacji Aplikacja ze  >  **sklepu,** a następnie wybierz aplikację z listy.
+1. Wybierz **pozycję Typ aplikacji** Aplikacja ze  >  **sklepu,** a następnie wybierz aplikację z listy.
 
 Następnym krokiem jest [przypisanie](#mdmassign) profilu do grupy.
 
@@ -241,32 +241,32 @@ Następnym krokiem jest [przypisanie](#mdmassign) profilu do grupy.
 
 Ta sekcja zawiera podsumowanie ustawień wymaganych przez kiosk z wieloma aplikacjami. Aby uzyskać bardziej szczegółowe informacje, zobacz następujące artykuły:
 
-- Aby uzyskać informacje na temat konfigurowania profilu konfiguracji kiosku w usłudze Intune, zobacz [Jak skonfigurować tryb kiosku](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)przy użyciu Microsoft Intune .
-- Aby uzyskać więcej informacji na temat dostępnych ustawień kiosków z wieloma aplikacjami w usłudze Intune, zobacz [Kioski z wieloma aplikacjami](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
-- W przypadku innych usług MDM zapoznaj się z dokumentacją dostawcy, aby uzyskać instrukcje. Jeśli musisz użyć niestandardowej konfiguracji XML do skonfigurowania kiosku w usłudze MDM, utwórz plik XML definiujący [konfigurację kiosku.](#ppkioskconfig) Jeśli używasz pliku XML, pamiętaj, aby uwzględnić układ [Start](#start-layout-for-hololens).  
-- Opcjonalnie możesz użyć niestandardowego układu startowego z usługą Intune lub innymi usługami MDM. Aby uzyskać więcej informacji, zobacz [Start layout file for MDM (Intune and others) (Uruchamianie](#start-layout-file-for-mdm-intune-and-others)pliku układu dla rozwiązania MDM (usługi Intune i innych).
+- Aby uzyskać informacje na temat konfigurowania profilu konfiguracji kiosku w usłudze Intune, zobacz [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- Aby uzyskać więcej informacji na temat dostępnych ustawień kiosków z wieloma aplikacjami w usłudze Intune, zobacz [Kioski z wieloma aplikacjami](/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
+- W przypadku innych usług MDM zapoznaj się z dokumentacją dostawcy, aby uzyskać instrukcje. Jeśli musisz użyć niestandardowej konfiguracji XML do skonfigurowania kiosku w usłudze MDM, utwórz plik XML, który [definiuje konfigurację kiosku.](#ppkioskconfig) Jeśli używasz pliku XML, pamiętaj, aby dołączyć układ [Start](#start-layout-for-hololens).  
+- Opcjonalnie możesz użyć niestandardowego układu Start z usługą Intune lub innymi usługami MDM. Aby uzyskać więcej informacji, zobacz [Start layout file for MDM (Intune and others) (Uruchamianie](#start-layout-file-for-mdm-intune-and-others)pliku układu dla rozwiązania MDM (usługi Intune i innych).
 
-1. Wybierz **pozycję Target Windows 10 in S mode devices** No (Nie dla urządzeń  >  **docelowych).**  
+1. Wybierz **pozycję Windows 10 na S mode**  >  **urządzeniach nie.**  
 >[!NOTE]  
 > Tryb S nie jest obsługiwany na platformie Windows Holographic for Business.
 
-1. Wybierz **pozycję User logon type**(Typ logowania użytkownika) user or group (Użytkownik lub grupa) usługi Azure AD lub User  >   **logon type** HoloLens visitor (Typ logowania użytkownika dla gościa urządzenia  >  **HoloLens),** a następnie dodaj co najmniej jedną grupę lub konto użytkownika.  
+1. Wybierz **pozycję User logon type** Azure AD user or group (Typ logowania użytkownika) lub User  >   **logon type**(Typ logowania użytkownika HoloLens użytkownik odwiedzający), a następnie dodaj co najmniej jedną grupę lub konta  >  użytkowników.  
 
-   Tylko użytkownicy, którzy należą do grup lub kont, które określisz w **typie** logowania użytkownika, mogą używać kiosku.
+   Tylko użytkownicy, którzy należą do grup lub kont, które określisz w typie logowania **użytkownika,** mogą używać funkcji kiosku.
 
-1. Wybierz co najmniej jedną aplikacje przy użyciu następujących opcji:
+1. Wybierz co najmniej jedną aplikacje, korzystając z następujących opcji:
    - Aby dodać przesłaną aplikację biznesową, wybierz pozycję **Dodaj** aplikację ze sklepu, a następnie wybierz aplikację, której chcesz użyć.
-   - Aby dodać aplikację, określając jej wartość AUMID, wybierz pozycję Dodaj według **AUMID,** a następnie wprowadź wartość AUMID aplikacji. [Zobacz listę dostępnych identyfikatorów AUMID](#aumids)
+   - Aby dodać aplikację, określając jej wartość AUMID, wybierz pozycję Dodaj według **wartości AUMID, a** następnie wprowadź wartość AUMID aplikacji. [Zobacz listę dostępnych identyfikatorów AUMID](#aumids)
 
 Następnym krokiem jest [przypisanie](#mdmassign) profilu do grupy.
 
-### <a name="mdm-step-4-ndash-assign-the-kiosk-configuration-profile-to-a-group"></a><a id="mdmassign"></a>MDM, krok &ndash; 4. Przypisywanie profilu konfiguracji kiosku do grupy
+### <a name="mdm-step-4-ndash-assign-the-kiosk-configuration-profile-to-a-group"></a><a id="mdmassign"></a>MDM, krok 4 &ndash; Przypisywanie profilu konfiguracji kiosku do grupy
 
-Użyj strony **Przypisania profilu** konfiguracji kiosku, aby określić miejsce wdrożenia konfiguracji kiosku. W najprostszym przypadku przypiszesz profil konfiguracji kiosku do grupy, która będzie zawierać urządzenie HoloLens podczas rejestracji urządzenia w funkcji MDM.
+Użyj strony **Przypisania profilu** konfiguracji kiosku, aby ustawić miejsce wdrożenia konfiguracji kiosku. W najprostszym przypadku przypiszesz profil konfiguracji kiosku do grupy, która będzie zawierać urządzenie HoloLens podczas rejestrowania urządzenia w funkcji MDM.
 
 ### <a name="mdm-step-5-single-app-ndash-deploy-a-single-app-kiosk"></a><a id="mdmsingledeploy"></a>MDM, krok 5 (pojedyncza aplikacja) &ndash; Wdrażanie kiosku z jedną aplikacją
 
-W przypadku korzystania z systemu MDM można zarejestrować urządzenie w układzie MDM podczas OOBE. Po zakończeniu OOBE logowanie na urządzeniu jest łatwe.
+W przypadku korzystania z systemu MDM można zarejestrować urządzenie w układzie MDM podczas OOBE. Po zakończeniu OOBE logowanie do urządzenia jest łatwe.
 
 Podczas OOBE wykonaj następujące kroki:
 
@@ -274,28 +274,28 @@ Podczas OOBE wykonaj następujące kroki:
 1. Zarejestruj urządzenie. Upewnij się, że urządzenie zostało dodane do grupy, do których przypisano profil konfiguracji kiosku.
 1. Poczekaj na zakończenie działania środowiska OOBE, pobranie i zainstalowanie aplikacji ze sklepu oraz zastosowanie zasad. Następnie uruchom ponownie urządzenie.
 
-Po następnym zalogowaniu się do urządzenia aplikacja kiosku powinna zostać automatycznie uruchamiana.
+Przy następnym zalogowaniu się na urządzeniu aplikacja kiosku powinna zostać automatycznie uruchamiana.
 
-Jeśli na tym etapie nie widzisz konfiguracji kiosku, [sprawdź stan przypisania](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
+Jeśli na tym etapie nie widzisz konfiguracji kiosku, [sprawdź stan przypisania](/intune/configuration/device-profile-monitor).
 
 ### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM, krok 5 (wiele aplikacji) &ndash; Wdrażanie kiosku z wieloma aplikacjami
 
-Korzystając z systemu MDM, możesz dołączyć urządzenie do dzierżawy usługi Azure AD i zarejestrować je w usłudze MDM podczas OOBE. W razie potrzeby podaj informacje o rejestracji użytkownikom, aby udostępnili je podczas procesu OOBE.
+Korzystając z systemu MDM, możesz dołączyć urządzenie do dzierżawy usługi Azure AD i zarejestrować je w usłudze MDM podczas OOBE. W razie potrzeby podaj użytkownikom informacje o rejestracji, aby były one dostępne podczas procesu OOBE.
 
 > [!NOTE]  
 > Jeśli profil konfiguracji kiosku został przypisany do grupy zawierającej użytkowników, upewnij się, że jedno z tych kont użytkowników jest pierwszym kontem do zalogowania się na urządzeniu.
 
 Podczas OOBE wykonaj następujące kroki:
 
-1. Zaloguj się przy użyciu konta należącego do **grupy typów logowania** użytkownika.
+1. Zaloguj się przy użyciu konta należącego do grupy **Typów logowania** użytkownika.
 1. Zarejestruj urządzenie.
 1. Poczekaj na pobranie i zainstalowanie wszystkich aplikacji, które są częścią profilu konfiguracji kiosku. Zaczekaj również na zastosowanie zasad.  
-1. Po zakończeniu działania OOBE możesz zainstalować dodatkowe aplikacje ze sklepu Microsoft Store lub przez ładowanie bezpośrednio. [Wymagane aplikacje](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) dla grupy, do której należy urządzenie, aby zainstalować je automatycznie.
+1. Po zakończeniu działania OOBE możesz zainstalować dodatkowe aplikacje ze sklepu Microsoft Store lub przez ładowanie bezpośrednio. [Wymagane aplikacje](/mem/intune/apps/apps-deploy#assign-an-app) dla grupy, do której należy urządzenie, aby zainstalować je automatycznie.
 1. Po zakończeniu instalacji uruchom ponownie urządzenie.
 
 Przy następnym zalogowaniu się na urządzeniu przy użyciu konta należącego do typu logowania Użytkownik **aplikacja** kiosku powinna zostać automatycznie uruchamiana.
 
-Jeśli na tym etapie nie widzisz konfiguracji kiosku, [sprawdź stan przypisania](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
+Jeśli na tym etapie nie widzisz konfiguracji kiosku, [sprawdź stan przypisania](/intune/configuration/device-profile-monitor).
 
 ## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Konfigurowanie kiosku z pojedynczą aplikacją lub wieloma aplikacjami przy użyciu pakietu aprowizowania
 
@@ -303,19 +303,19 @@ Aby skonfigurować tryb kiosku przy użyciu pakietu aprowizowania, wykonaj nast�
 
 1. [Utwórz plik XML definiujący konfigurację kiosku.](#ppkioskconfig), w tym układ [Start.](#start-layout-for-hololens)
 2. [Dodaj plik XML do pakietu aprowizowania.](#ppconfigadd)
-3. [Zastosuj pakiet aprowizowania na urządzeniach HoloLens.](#ppapply)
+3. [Zastosuj pakiet aprowizowania do HoloLens.](#ppapply)
 
 ### <a name="provisioning-package-step-1-ndash-create-a-kiosk-configuration-xml-file"></a><a id="ppkioskconfig"></a>Pakiet aprowizowania, krok &ndash; 1. Tworzenie pliku XML konfiguracji kiosku
 
-Postępuj [zgodnie z ogólnymi instrukcjami, aby utworzyć plik XML](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)konfiguracji kiosku dla komputerów z systemem Windows, z wyjątkiem następujących:
+Postępuj [zgodnie z ogólnymi instrukcjami, aby utworzyć](/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)plik XML konfiguracji kiosku dla Windows, z wyjątkiem następujących:
 
-- Nie uwzględniaj klasycznych aplikacji systemu Windows (Win32). Urządzenie HoloLens nie obsługuje tych aplikacji.
-- Użyj [symbolu zastępczego Xml układu startowego](#start-layout-for-hololens) dla urządzenia HoloLens.
+- Nie dołączaj aplikacji klasycznych Windows (Win32). HoloLens nie obsługuje tych aplikacji.
+- Użyj [symbolu zastępczego Xml układu startowego](#start-layout-for-hololens) dla HoloLens.
 - Opcjonalnie: Dodawanie dostępu gościa do konfiguracji kiosku
 
 #### <a name="optional-add-guest-access-to-the-kiosk-configuration"></a><a id="ppkioskguest"></a>Opcjonalnie: Dodawanie dostępu gościa do konfiguracji kiosku
 
-W [ **sekcji Konfiguracje** pliku XML](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs)można skonfigurować specjalną grupę o nazwie **Odwiedzający,** aby umożliwić gościom korzystanie z kiosku. Po skonfigurowaniu kiosku do obsługi grupy specjalnej **Odwiedzający** do strony logowania zostanie dodana opcja"Gość". Konto **gościa** nie wymaga hasła, a wszystkie dane skojarzone z tym kontem są usuwane po wye m.in.
+W [ **sekcji Konfiguracje** pliku XML](/windows/configuration/lock-down-windows-10-to-specific-apps#configs)można skonfigurować specjalną grupę o nazwie **Odwiedzający,** aby umożliwić gościom korzystanie z kiosku. Po skonfigurowaniu kiosku do obsługi grupy specjalnej **Odwiedzający** do strony logowania zostanie dodana opcja"Gość". Konto **gościa** nie wymaga hasła, a wszystkie dane skojarzone z tym kontem są usuwane po wye m.in.
 
 Aby włączyć konto **gościa,** dodaj następujący fragment kodu do pliku XML konfiguracji kiosku:
 
@@ -329,7 +329,7 @@ Aby włączyć konto **gościa,** dodaj następujący fragment kodu do pliku XML
 ```
 #### <a name="enable-visitor-autologon"></a>Włączanie automatycznegologowania gości
 
-W kompilacjach [systemu Windows Holographic w wersji 21H1](hololens-release-notes.md#windows-holographic-version-21h1) i jego wersjach:
+W kompilacjach [Windows Holographic, wersja 21H1](hololens-release-notes.md#windows-holographic-version-21h1) lub nowsza:
 - Konfiguracje usługi AAD i inne niż ADD obsługują automatyczne logowanie dla kont gości włączonych dla trybów kiosku.
 
 ##### <a name="non-aad-configuration"></a>Konfiguracja bez usługi AAD
@@ -338,13 +338,13 @@ W kompilacjach [systemu Windows Holographic w wersji 21H1](hololens-release-note
     1. Konfiguruje ustawienia środowiska uruchomieniowego/AssignedAccess, aby zezwalać na konta gości.
     1. Opcjonalnie rejestruje urządzenie w układzie MDM (ustawienia środowiska uruchomieniowego/miejsce pracy/rejestracje), aby można było nim zarządzać później.
     1. Nie twórz konta lokalnego
-2. [Zastosuj pakiet aprowizowania](https://docs.microsoft.com/hololens/hololens-provisioning).
+2. [Zastosuj pakiet aprowizowania](hololens-provisioning.md).
 
 ##### <a name="aad-configuration"></a>Konfiguracja usługi AAD
 
 Urządzenia przyłączone do usługi AAD skonfigurowane do trybu kiosku mogą zalogować się do konta gościa jednym naciśnięciem przycisku na ekranie logowania. Po zalogowaniu się do konta gościa urządzenie nie wyświetli monitu o ponowne zalogowanie, dopóki gość nie zostanie jawnie wylogowany z menu Start lub urządzenie zostanie uruchomione ponownie.
 
-Automatyczne logowanie gościa można zarządzać za pomocą niestandardowych zasad [OMA-URI:](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+Automatyczne logowanie gościa można zarządzać za pomocą niestandardowych zasad [OMA-URI:](/mem/intune/configuration/custom-settings-windows-10)
 
 - Wartość URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
@@ -353,7 +353,7 @@ Automatyczne logowanie gościa można zarządzać za pomocą niestandardowych za
 | --------------------------- | ------------- | -------------------- |
 | MixedReality/VisitorAutoLogon | Umożliwia odwiedzającemu automatyczne logowanie do kiosku. | 1 (Tak), 0 (Nie, wartość domyślna). |
 
-#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Układ symbolu zastępczego startu dla urządzenia HoloLens
+#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Układ symbolu zastępczego Start dla HoloLens
 
 Jeśli używasz pakietu [aprowizacyjnego do](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) skonfigurowania kiosku z wieloma aplikacjami, procedura wymaga układu Start. Dostosowywanie układu uruchamiania nie jest obsługiwane w Windows Holographic for Business. W związku z tym należy użyć układu symbolu zastępczego Start.
 
@@ -410,7 +410,7 @@ Zapisz poniższy przykład jako plik XML. Tego pliku można użyć podczas konfi
 
 ### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. pakiet, krok 2. Dodawanie pliku XML konfiguracji &ndash; kiosku do pakietu aprowizowania
 
-1. Otwórz [program Windows Configuration Designer.](https://www.microsoft.com/store/apps/9nblggh4tx22)
+1. Otwórz [Windows Configuration Designer.](https://www.microsoft.com/store/apps/9nblggh4tx22)
 1. Wybierz **pozycję Aprowizowanie zaawansowane,** wprowadź nazwę projektu, a następnie wybierz pozycję **Dalej.**
 1. Wybierz **Windows 10 Holographic**, a następnie wybierz pozycję **Dalej.**
 1. Wybierz pozycję **Zakończ**. Zostanie otwarty obszar roboczy pakietu.
@@ -431,46 +431,46 @@ Zapisz poniższy przykład jako plik XML. Tego pliku można użyć podczas konfi
    > W przypadku wybrania **opcji Włącz podpisywanie pakietu** należy również wybrać prawidłowy certyfikat, który ma być umożliwiający podpisywanie pakietu. W tym celu wybierz **pozycję Przeglądaj** i wybierz certyfikat, którego chcesz użyć do podpisania pakietu.
    
    > [!CAUTION]  
-   > Nie wybieraj opcji **Włącz szyfrowanie pakietów.** Na urządzeniach HoloLens to ustawienie powoduje niepowodzenie aprowizowania.
+   > Nie wybieraj opcji **Włącz szyfrowanie pakietów.** Na HoloLens to ustawienie powoduje niepowodzenie aprowrowi.
 1. Wybierz opcję **Dalej**.
-1. Określ lokalizację wyjściową, do której ma przejść pakiet aprowizowania podczas jego budowania. Domyślnie projektant konfiguracji systemu Windows używa folderu projektu jako lokalizacji wyjściowej. Jeśli chcesz zmienić lokalizację wyjściową, wybierz pozycję **Przeglądaj**. Po zakończeniu wybierz pozycję **Dalej.**
+1. Określ lokalizację wyjściową, do której ma przejść pakiet aprowizowania podczas jego budowania. Domyślnie program Windows Configuration Designer używa folderu projektu jako lokalizacji wyjściowej. Jeśli chcesz zmienić lokalizację wyjściową, wybierz pozycję **Przeglądaj**. Po zakończeniu wybierz pozycję **Dalej.**
 1. Wybierz **pozycję Kompilacja,** aby rozpocząć tworzenie pakietu. Tworzenie pakietu aprowizowania nie trwa długo. Na stronie kompilacji są wyświetlane informacje o projekcie, a pasek postępu wskazuje stan kompilacji.
 
-### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>Pakiet aprowizowania, krok 3. Stosowanie pakietu &ndash; aprowizowania na urządzeniach HoloLens
+### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>Pakiet aprowizowania, krok &ndash; 3. Stosowanie pakietu aprowizowania do HoloLens
 
-Artykuł "Konfigurowanie urządzenia HoloLens przy użyciu pakietu aprowizowania" zawiera szczegółowe instrukcje dotyczące stosowania pakietu aprowizowania w następujących okolicznościach:
+Artykuł "Konfigurowanie HoloLens przy użyciu pakietu aprowizowania" zawiera szczegółowe instrukcje dotyczące stosowania pakietu aprowizowania w następujących okolicznościach:
 
-- Pakiet aprowizowania [można początkowo zastosować do urządzenia HoloLens podczas instalacji](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+- Możesz początkowo zastosować [pakiet aprowizowania do](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)usługi HoloLens podczas instalacji.
 
-- Po zakończeniu konfiguracji możesz również zastosować pakiet aprowizowania [do urządzenia HoloLens.](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)
+- Możesz również zastosować [pakiet aprowizowania do usługi HoloLens po zakończeniu instalacji.](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)
 
-## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Konfigurowanie kiosku z jedną aplikacją przy użyciu Portal urządzeń z systemem Windows aplikacji
+## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Konfigurowanie kiosku z jedną aplikacją przy użyciu Windows Portal urządzeń aplikacji
 
-Aby skonfigurować tryb kiosku przy użyciu Portal urządzeń z systemem Windows, wykonaj następujące kroki.
+Aby skonfigurować tryb kiosku przy użyciu Windows Portal urządzeń, wykonaj następujące kroki.
 
-1. [Skonfiguruj urządzenie HoloLens do korzystania z Portal urządzeń z systemem Windows](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). Serwer Portal urządzeń to serwer internetowy na urządzeniach HoloLens, z którym można nawiązać połączenie z przeglądarki internetowej na komputerze.
+1. [Skonfiguruj urządzenie HoloLens do korzystania z Windows Portal urządzeń](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). Serwer Portal urządzeń to serwer internetowy na komputerze HoloLens z którym można nawiązać połączenie z przeglądarki internetowej na komputerze.
 
     > [!CAUTION]
-    > Po skonfigurowaniu urządzenia HoloLens do korzystania z Portal urządzeń należy włączyć tryb dewelopera na urządzeniu. Tryb dewelopera na urządzeniu, na Windows Holographic for Business umożliwia ładowanie aplikacji side-load. Jednak to ustawienie tworzy ryzyko, że użytkownik może instalować aplikacje, które nie zostały certyfikowane przez Microsoft Store. Administratorzy mogą zablokować możliwość włączania trybu dewelopera przy użyciu ustawienia **ApplicationManagement/AllowDeveloper Unlock** w [programie Policy CSP.](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) [Dowiedz się więcej o trybie dewelopera.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    > Po skonfigurowaniu HoloLens do korzystania z Portal urządzeń należy włączyć tryb dewelopera na urządzeniu. Tryb dewelopera na urządzeniu, na Windows Holographic for Business umożliwia ładowanie aplikacji side-load. Jednak to ustawienie tworzy ryzyko, że użytkownik może instalować aplikacje, które nie zostały certyfikowane przez Microsoft Store. Administratorzy mogą zablokować możliwość włączania trybu dewelopera przy użyciu ustawienia **ApplicationManagement/AllowDeveloper Unlock** w [programie Policy CSP.](/windows/client-management/mdm/policy-configuration-service-provider) [Dowiedz się więcej o trybie dewelopera.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
-1. Na komputerze połącz się z urządzeniem HoloLens przy użyciu [sieci Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) lub [USB.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)
+1. Na komputerze połącz się z siecią HoloLens za pomocą [sieci Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) lub [USB.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)
 
 1. Wykonaj jedną z następujących czynności:
-   - Jeśli łączysz się z Portal urządzeń z systemem Windows po raz pierwszy, [utwórz nazwę użytkownika i hasło](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
+   - Jeśli łączysz się z Windows Portal urządzeń po raz pierwszy, [utwórz nazwę użytkownika i hasło](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
    - Wprowadź nazwę użytkownika i hasło, które zostały wcześniej ustawione.
 
     > [!TIP]
     > Jeśli w przeglądarce zostanie wyświetlony błąd certyfikatu, wykonaj [następujące kroki rozwiązywania problemów.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#security_certificate)
 
-1. W Portal urządzeń z systemem Windows wybierz pozycję **Tryb kiosku.**
+1. W Windows Portal urządzeń wybierz pozycję **Tryb kiosku.**
 
 1. Wybierz **pozycję Włącz tryb kiosku,** wybierz aplikację do uruchomienia po uruchomieniu urządzenia, a następnie wybierz pozycję **Zapisz.**
 
     ![Tryb kiosku](images/kiosk.png)
-1. Uruchom ponownie urządzenie HoloLens. Jeśli nadal masz otwartą Portal urządzeń, możesz wybrać  pozycję Uruchom ponownie w górnej części strony.
+1. Uruchom HoloLens. Jeśli nadal masz otwartą Portal urządzeń, możesz wybrać  pozycję Uruchom ponownie w górnej części strony.
 
 > [!NOTE]
-> Tryb kiosku można ustawić za pośrednictwem interfejsu API REST usługi Portal urządzeń, wykonując wpis POST na wartość /api/holographic/kioskmode/settings z jednym wymaganym parametrem ciągu zapytania ("kioskModeEnabled&quot; o wartości &quot;true&quot; lub &quot;false") i jednym opcjonalnym parametrem ("startupApp" z wartością nazwy pakietu). Należy pamiętać, że Portal urządzeń jest przeznaczona tylko dla deweloperów i nie powinna być włączona na urządzeniach niezamówionych przez deweloperów. Interfejs API REST może ulec zmianie w przyszłych aktualizacjach/wydaniach.
+> Tryb kiosku można ustawić za pośrednictwem interfejsu API REST usługi Portal urządzeń, wykonując wpis POST na adres /api/holographic/kioskmode/settings z jednym wymaganym parametrem ciągu zapytania ("kioskModeEnabled&quot; o wartości &quot;true&quot; lub &quot;false") i jednym opcjonalnym parametrem ("startupApp" z wartością nazwy pakietu). Należy pamiętać, że Portal urządzeń jest przeznaczona tylko dla deweloperów i nie powinna być włączona na urządzeniach innych niż deweloper. Interfejs API REST może ulec zmianie w przyszłych aktualizacjach/wydaniach.
 
 ## <a name="more-information"></a>Więcej informacji
 
@@ -481,14 +481,14 @@ Aby skonfigurować tryb kiosku przy użyciu Portal urządzeń z systemem Windows
 ### <a name="global-assigned-access--kiosk-mode"></a>Dostęp przypisany globalnie — tryb kiosku
 - Zmniejszenie zarządzania tożsamościami w przypadku kiosku przez włączenie nowej metody kiosku, która stosuje tryb kiosku na poziomie systemu.
 
-Ta nowa funkcja umożliwia administratorowi IT skonfigurowanie urządzenia HoloLens 2 pod kątem trybu kiosku z wieloma aplikacjami, który ma zastosowanie na poziomie systemu, nie ma koligacji z żadną tożsamością w systemie i ma zastosowanie do wszystkich osób, które się do niego wyślą. Zobacz dokumentację dotyczącą kiosku z dostępem przypisanym globalnie do urządzenia [HoloLens,](hololens-global-assigned-access-kiosk.md) aby uzyskać więcej informacji na temat tej nowej funkcji.
+Ta nowa funkcja umożliwia administratorowi IT skonfigurowanie urządzenia z systemem HoloLens 2 dla wielu trybów kiosku aplikacji, które ma zastosowanie na poziomie systemu, nie ma koligacji z żadną tożsamością w systemie i ma zastosowanie do wszystkich użytkowników, którzy się na nim inserują. Aby uzyskać więcej HoloLens na temat tej nowej funkcji, zobacz dokumentację [dotyczącą kiosku](hololens-global-assigned-access-kiosk.md) z dostępem przypisanym do globalnego.
 
 ### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Automatyczne uruchamianie aplikacji w trybie kiosku z wieloma aplikacjami 
-- Ukierunkowane środowisko z automatycznym uruchamianiem aplikacji, co dodatkowo zwiększa wybór interfejsu użytkownika i aplikacji wybranych dla trybu kiosku.
+- Ukierunkowane doświadczenie z automatycznym uruchamianiem aplikacji, co dodatkowo zwiększa wybór interfejsu użytkownika i aplikacji wybranych dla trybu kiosku.
 
 Dotyczy tylko trybu kiosku z wieloma aplikacjami i tylko 1 aplikacja może zostać wyznaczona do automatycznego uruchamiania przy użyciu wyróżnienia atrybutu poniżej w konfiguracji przypisanego dostępu. 
 
-Aplikacja jest uruchamiana automatycznie po dojściu użytkownika. 
+Aplikacja jest uruchamiana automatycznie po sięgniecie użytkownika. 
 
 ```xml
 <AllowedApps>                     
@@ -500,51 +500,51 @@ Aplikacja jest uruchamiana automatycznie po dojściu użytkownika.
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Zmiany zachowania trybu kiosku w celu obsługi awarii
 Po napotkaniu błędów podczas stosowania trybu kiosku zostanie wyświetlone następujące zachowanie:
 
-- Przed systemem Windows Holographic w wersji 20H2 — HoloLens będą wyświetlane wszystkie aplikacje w menu Start.
-- Windows Holographic, wersja 20H2 — jeśli urządzenie ma konfigurację kiosku, która jest kombinacją przypisanego dostępu globalnego i dostępu przypisanego do członka grupy usługi AAD, jeśli określenie członkostwa w grupie usługi AAD nie powiedzie się, użytkownik zobaczy menu "Nic nie jest wyświetlane w menu Start".
+- Przed Windows Holographic wersja 20H2 — HoloLens będzie wyświetlać wszystkie aplikacje w menu Start.
+- Windows Holographic, wersja 20H2 — jeśli urządzenie ma konfigurację kiosku, która jest kombinacją przypisanego dostępu globalnego i przypisanego do członka grupy usługi AAD, w przypadku określenia niepowodzenia członkostwa w grupie usługi AAD użytkownik zobaczy menu "nic nie jest wyświetlane w menu Start".
 
-![Obraz tego, jak wygląda teraz tryb kiosku w przypadku jego awarii.](images/hololens-kiosk-failure-behavior.png )
+![Obraz trybu kiosku wygląda teraz w przypadku awarii.](images/hololens-kiosk-failure-behavior.png )
 
 
-- Począwszy od [systemu Windows Holographic w wersji 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)tryb kiosku wyszukuje dostęp przypisany globalnie przed pokazaniem pustego menu Start. W przypadku awarii w trybie kiosku grupy usługi AAD środowisko kiosku zostanie wywłaszczane do globalnej konfiguracji kiosku (jeśli występuje).
+- Począwszy od Windows Holographic w wersji [21H1,](hololens-release-notes.md#windows-holographic-version-21h1)tryb kiosku wyszukuje dostęp przypisany globalnie przed pokazaniem pustego menu Start. W przypadku awarii w trybie kiosku grupy usługi AAD środowisko kiosku po awarii zostanie wywrzeć globalną konfigurację kiosku.
 
 ### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>Buforowanie członkostwa w grupie usługi Azure AD dla kiosku w trybie offline
 
 - Bezpieczniejszy tryb kiosku dzięki wyeliminowaniu dostępnych aplikacji w przypadku awarii trybu kiosku.
-- Włączono kioski offline do użytku z grupami usługi Azure AD przez maksymalnie 60 dni.
+- Włączono kioski w trybie offline do użytku z grupami usługi Azure AD przez maksymalnie 60 dni.
 
-Te zasady służą do określania, ile dni może być używana pamięć podręczna członkostwa grupy usługi Azure AD w konfiguracjach przypisanego dostępu przeznaczonych dla grup usługi Azure AD dla zalogowaowego użytkownika. Gdy ta wartość zasad jest ustawiona na wartość większą niż 0, tylko pamięć podręczna jest używana w przeciwnym razie.  
+Te zasady kontroluje, ile dni może być używana pamięć podręczna członkostwa w grupach usługi Azure AD dla konfiguracji przypisanego dostępu przeznaczonych dla grup usługi Azure AD dla zalogowanych użytkowników. Gdy ta wartość zasad jest ustawiona na wartość większą niż 0, pamięć podręczna jest używana w przeciwnym razie.  
 
 Nazwa: Wartość URI AADGroupMembershipCacheValidityInDays: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
 Min. – 0 dni  
 Maks. — 60 dni 
 
-Kroki poprawnego używania tych zasad: 
-1. Utwórz profil konfiguracji urządzenia dla grup usługi Azure AD przeznaczony dla kiosku i przypisz go do urządzeń HoloLens. 
-1. Utwórz niestandardową konfigurację urządzenia opartą na interfejsie OMA URI, która ustawia tę wartość zasad na żądaną liczbę dni (> 0) i przypisz ją do urządzeń HoloLens. 
+Kroki prawidłowego używania tych zasad: 
+1. Utwórz profil konfiguracji urządzenia dla grup usługi Azure AD przeznaczony dla kiosku i przypisz go do HoloLens urządzeń. 
+1. Utwórz niestandardową konfigurację urządzenia opartą na URI OMA, która ustawia tę wartość zasad na żądaną liczbę dni (> 0) i przypisuje ją do HoloLens urządzeń. 
     1. Wartość URI powinna zostać wprowadzona w polu tekstowym OMA-URI jako ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
-    1. Ta wartość może być między dozwolonymi wartościami minimalnej/maksymalnej.
-1. Zarejestruj urządzenia HoloLens i sprawdź, czy obie konfiguracje są stosowane do urządzenia. 
-1. Po pomyślnym zalogowaniu się użytkownika usługi Azure AD i pomyślnym potwierdzeniu członkostwa w grupie usługi Azure AD zostanie utworzona pamięć podręczna. 
-1. Teraz użytkownik 1 usługi Azure AD może przeczekać urządzenie HoloLens w tryb offline i używać go w trybie kiosku, o ile wartość zasad zezwala na X liczbę dni. 
-1. Kroki 4 i 5 można powtórzyć dla każdego innego użytkownika usługi Azure AD N. Kluczową punktu w tym miejscu jest to, że każdy użytkownik usługi Azure AD musi zalogować się do urządzenia przy użyciu Internetu, aby co najmniej raz ustalić, że należy on do grupy usługi Azure AD, której celem jest konfiguracja kiosku. 
+    1. Dozwolona wartość może być minimalna/maksymalna.
+1. Zarejestruj HoloLens i sprawdź, czy obie konfiguracje są stosowane do urządzenia. 
+1. Pozwól użytkownikowi usługi Azure AD 1 zalogować się, gdy internet jest dostępny, po pomyślnym zalogowaniu użytkownika i pomyślnym potwierdzeniu członkostwa w grupie usługi Azure AD zostanie utworzona pamięć podręczna. 
+1. Teraz użytkownik 1 usługi Azure AD może HoloLens w trybie offline i używać go w trybie kiosku, o ile wartość zasad zezwala na X liczbę dni. 
+1. Kroki 4 i 5 można powtórzyć dla każdego innego użytkownika usługi Azure AD N. Kluczową punktem tutaj jest to, że każdy użytkownik usługi Azure AD musi zalogować się do urządzenia przy użyciu Internetu, aby co najmniej raz ustalić, że jest on członkiem grupy usługi Azure AD, której celem jest konfiguracja kiosku. 
  
 > [!NOTE]
-> Do momentu wykonania kroku 4 dla użytkownika usługi Azure AD występuje błąd w środowiskach "odłączonych". 
+> Dopóki krok 4 nie zostanie wykonany dla użytkownika usługi Azure AD, wystąpi awaria wymieniona w środowiskach "odłączonych". 
 
 
-## <a name="xml-kiosk-code-samples-for-hololens"></a>Przykłady kodu kiosku XML dla urządzenia HoloLens
+## <a name="xml-kiosk-code-samples-for-hololens"></a>Przykłady kodu kiosku XML dla HoloLens
 
 ### <a name="multiple-app-kiosk-mode-targeting-an-azure-ad-group"></a>Tryb kiosku z wieloma aplikacjami przeznaczony dla grupy usługi Azure AD. 
-Ten kiosk wdraża kiosk, który dla użytkowników w grupie usługi Azure AD będzie miał włączony kiosk, który obejmuje 3 aplikacje: Ustawienia, Pomoc zdalna i Centrum opinii. Aby zmodyfikować ten przykład, aby był używany natychmiast, zmień identyfikator GUID wyróżniony poniżej, aby dopasować go do własnej grupy usługi Azure AD. 
+Ten kiosk wdraża kiosk, który dla użytkowników w grupie usługi Azure AD będzie mieć włączony kiosk, który obejmuje 3 aplikacje: Ustawienia, Remote Assist i Centrum opinii. Aby zmodyfikować ten przykład, aby był używany natychmiast, zmień identyfikator GUID wyróżniony poniżej, aby dopasować go do własnej grupy usługi Azure AD. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
 ### <a name="multiple-app-kiosk-mode-targeting-azure-ad-account"></a>Tryb kiosku z wieloma aplikacjami przeznaczony dla konta usługi Azure AD.
-Ten kiosk wdraża kiosk dla jednego użytkownika. Ma on włączoną obsługę kiosku, która obejmuje 3 aplikacje: Ustawienia, Pomoc zdalna i Centrum opinii. Aby zmodyfikować ten przykład, aby był używany natychmiast, zmień konto wyróżnione poniżej, aby dopasować je do własnego konta usługi Azure AD. 
+Ten kiosk wdraża kiosk dla jednego użytkownika. Będzie on miał włączony kiosk, który obejmuje 3 aplikacje: Ustawienia, Remote Assist i Centrum opinii. Aby zmodyfikować ten przykład, aby był używany natychmiast, zmień konto wyróżnione poniżej, aby dopasować je do własnego konta usługi Azure AD. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

@@ -1,6 +1,6 @@
 ---
 title: Widoczność Ustawienia stron
-description: Bądź na bieżąco z naszą listą obsługiwanych adresów URI dla elementów PageVisibilityList i Guide on HoloLens rzeczywistości mieszanej.
+description: Bądź na bieżąco z naszą listą obsługiwanych interfejsów URI dla elementów PageVisibilityList i Przewodnika na HoloLens rzeczywistości mieszanej.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,25 +13,25 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5ac3ff27085fd2f7c5bc1de0e461079a673bbb23
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637170"
+ms.locfileid: "113639237"
 ---
 # <a name="page-settings-visibility"></a>Widoczność Ustawienia stron
 
-Jedną z funkcji, które można zarządzać HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub na ich użycie dla wszystkich stron z wyjątkiem określonych.
+Jedną z funkcji, które można zarządzać HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub aby to zrobić dla wszystkich stron z wyjątkiem określonych.
 
 > [!NOTE]
-> Ta funkcja jest dostępna tylko w Windows Holographic w wersji [20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub wyższej dla urządzeń HoloLens 2. Upewnij się, że urządzenia, dla których zamierzasz używać tej funkcji, zostały zaktualizowane.
+> Ta funkcja jest dostępna tylko na [platformie Windows Holographic w wersji 20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub wyższej dla urządzeń HoloLens 2. Upewnij się, że urządzenia, dla których zamierzasz używać tej funkcji, zostały zaktualizowane.
 
 
 ## <a name="examples"></a>Przykłady
-Strony są identyfikowane za pomocą skróconej wersji opublikowanych identyfikatora URI, czyli identyfikatora URI minus prefiks "ms-settings:".
+Strony są identyfikowane za pomocą skróconej wersji opublikowanych URI, czyli identyfikatora URI pomniejszonej o prefiks "ms-settings:".
 
-Poniższy przykład ilustruje zasady, które zezwalają na dostęp tylko do stron about i Bluetooth, które mają odpowiednio URI "sieć-Wi-Fi" i "bluetooth":
+Poniższy przykład ilustruje zasady, które zezwalają na dostęp tylko do stron about i Bluetooth, które mają odpowiednio URI "sieć-sieć-Wi-Fi" i "bluetooth":
 - `showonly:network-wifi;network-proxy;bluetooth`
 
 Poniższy przykład ilustruje zasady, które ukrywałyby stronę Resetowanie systemu operacyjnego:
@@ -43,29 +43,29 @@ Poniższy przykład ilustruje zasady, które ukrywałyby stronę Resetowanie sys
 Są to wartości konfiguracji, które zostaną dostarczone do usługi Intune:
 
 - **Nazwa:** Preferowana przez administratora nazwa wyświetlana profilu.
-- **OMA-URI:** W pełni kwalifikowany URI strony ustawienia, w tym jej [zakres](/windows/client-management/mdm/policy-configuration-service-provider). Te przykłady na tej stronie są przy użyciu `./Device` zakresu.
-- **Wartość:** Wartość ciągu wskazująca, czy ukrywać lub *wyświetlać tylko* określone strony. Możliwe wartości to `hide:<pagename>` i `showonly:<pagename>` . 
+- **OMA-URI:** W pełni kwalifikowany URI strony ustawienia wraz z jej [zakresem](/windows/client-management/mdm/policy-configuration-service-provider). W tych przykładach na tej stronie jest on korzystający z `./Device` zakresu .
+- **Wartość:** Wartość ciągu wskazująca, czy ukryć lub pokazać *tylko* określone strony. Możliwe wartości to `hide:<pagename>` i `showonly:<pagename>` . 
  
-Wiele stron można określić, oddzielając je średnikami, a listę typowych stron można znaleźć poniżej.
+Można określić wiele stron, oddzielając je średnikami, a listę typowych stron można znaleźć poniżej.
 
 1. Utwórz zasady **niestandardowe.**
-1. Podczas ustawiania wartości **OMA-URI** wprowadź w pełni ograniczony adres URI. Na przykład: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
+1. Podczas ustawiania wartości **OMA-URI** wprowadź w pełni zakresowy adres URI. Na przykład: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
 1. Podczas wybierania danych wybierz **pozycję** Ciąg
-1. Podczas określania **wartości skorzystaj** z powyższych wskazówek. Na przykład: **`showonly:network-wifi;network-proxy;bluetooth`** lub **`hide:reset`** 
+1. Podczas określania **wartości** skorzystaj z powyższych wskazówek. Na przykład: **`showonly:network-wifi;network-proxy;bluetooth`** lub **`hide:reset`** 
 > [!IMPORTANT]
-> Pamiętaj, aby przypisać niestandardową konfigurację urządzenia do grupy, w która ma się znaleźć urządzenie. Jeśli ten krok nie zostanie wykonany, zasady zostaną wypchnięci, ale nie zostaną zastosowane.
+> Pamiętaj, aby przypisać niestandardową konfigurację urządzenia do grupy, w która ma być urządzenie. Jeśli ten krok nie zostanie wykonany, zasady zostaną wypchniętą, ale nie zostaną zastosowane.
 
 Zobacz [HoloLens mdm,](hololens-mdm-configure.md) aby uzyskać więcej informacji na temat grup i konfiguracji urządzeń usługi Intune.
 
 
 ## <a name="deploying-this-policy-via-a-provisioning-package"></a>Wdrażanie tych zasad za pośrednictwem pakietu aprowizowania
 
-Są to wartości konfiguracji, które zostaną określone w programie Windows Configuration Designer:
+Są to wartości konfiguracji, które zostaną określone w Windows Configuration Designer:
 
-**Wartość:** Wartość ciągu wskazująca, czy ukrywać lub *wyświetlać tylko* określone strony. Możliwe wartości to `hide:<pagename>` i `showonly:<pagename>` . Wiele stron można określić, oddzielając je średnikami, a listę typowych stron można znaleźć poniżej.
+**Wartość:** Wartość ciągu wskazująca, czy ukryć lub pokazać *tylko* określone strony. Możliwe wartości to `hide:<pagename>` i `showonly:<pagename>` . Można określić wiele stron, oddzielając je średnikami, a listę typowych stron można znaleźć poniżej.
 
 
-1. Podczas tworzenia pakietu w programie Windows Configuration Designer przejdź do opcji **Policies > Ustawienia > PageVisibilityList**
+1. Podczas tworzenia pakietu w programie Windows Configuration Designer przejdź do opcji **Zasady > Ustawienia > PageVisibilityList**
 1. Wprowadź ciąg: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Wyeksportuj pakiet aprowizowania.
 1. Zastosuj pakiet do urządzenia.
@@ -76,11 +76,11 @@ Niezależnie od wybranej metody urządzenie powinno teraz otrzymywać zmiany, a 
 
 ![Zrzut ekranu przedstawiający modyfikację godzin aktywnego Ustawienia aplikacji](images/hololens-page-visibility-list.jpg)
 
-Aby skonfigurować Ustawienia aplikacji do pokazywania lub ukrywania własnych wybranych stron, przyjrzyj się Ustawienia URI dostępnym na HoloLens.
+Aby skonfigurować Ustawienia aplikacji do pokazywania lub ukrywania własnych wybranych stron, przyjrzyj się dostępnym w Ustawienia URI HoloLens.
 
 ## <a name="settings-uris"></a>Ustawienia Identyfikatory uri
 
-HoloLens urządzenia i Windows 10 mają inny wybór stron w Ustawienia aplikacji. Na tej stronie znajdziesz tylko ustawienia, które istnieją na HoloLens.
+HoloLens i Windows 10 mają różne opcje wyboru stron w Ustawienia aplikacji. Na tej stronie znajdziesz tylko ustawienia, które istnieją w HoloLens.
 
 ### <a name="accounts"></a>Konta
 | Strona Ustawienia           | URI                                            |
@@ -95,7 +95,7 @@ HoloLens urządzenia i Windows 10 mają inny wybór stron w Ustawienia aplikacji
 | Funkcje & <sup>2</sup>     | `appsfeatures` <br> |
 | Funkcje & aplikacji > opcje zaawansowane <sup>2</sup>     | `appsfeatures-app` <br> |
 | Funkcje & aplikacji > offline Mapy <sup>2</sup>     | `maps-maps` <br> |
-| Aplikacje & funkcje > offline Mapy > Pobieranie map <sup>2</sup>     | `maps-downloadmaps` <br> |
+| Aplikacje & funkcje > offline Mapy > Pobierz mapy <sup>2</sup>     | `maps-downloadmaps` <br> |
 
 ### <a name="devices"></a>Urządzenia
 | Strona Ustawienia | URI                          |
@@ -128,7 +128,7 @@ HoloLens urządzenia i Windows 10 mają inny wybór stron w Ustawienia aplikacji
 | Inne urządzenia            | `privacy-customdevices`               |
 | Obrazy                 | `privacy-pictures`                    |
 | Radia                   | `privacy-radios`                      |
-| Zrzut ekranu <sup>obramowania 2</sup>             | `privacy-graphicsCaptureWithoutBorder`       |
+| Zrzut ekranu z <sup>obramowaniami 2</sup>             | `privacy-graphicsCaptureWithoutBorder`       |
 | Zrzuty ekranu i aplikacje <sup>2</sup>             | `privacy-graphicsCaptureProgrammatic`       |
 | Mowa                   | `privacy-speech`                      |
 | Zadania                    | `privacy-tasks`                       |
@@ -189,4 +189,4 @@ HoloLens urządzenia i Windows 10 mają inny wybór stron w Ustawienia aplikacji
 - <sup>2</sup> — dostępne w Windows Holographic 21H1 lub wyższej.
 
 
-Aby uzyskać pełną listę Windows 10 Ustawienia URI, odwiedź [dokumentację ustawień uruchamiania.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+Aby uzyskać pełną listę Windows 10 Ustawienia URI, odwiedź [dokumentację ustawień uruchamiania.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

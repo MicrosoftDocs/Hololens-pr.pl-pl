@@ -2,7 +2,7 @@
 title: HoloLens 2 Industrial Edition
 description: Dowiedz się HoloLens 2 Industrial Edition i co zrobić po otrzymaniu własnej wersji.
 keywords: HoloLens 2 opcje zakupu, opcje HoloLens, Industrial Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a1b204cdc51ef55230c94d8f71a362549daf6ef4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636337"
+ms.locfileid: "113639577"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -29,7 +29,7 @@ Zaprojektowana, zbudowana i przetestowana pod kątem obsługi środowisk czystyc
 
 Wersja HoloLens 2 Industrial Edition została ulepszona i przeprojektowana o nowe materiały i certyfikaty w celu obsługi szerszego zestawu środowisk przemysłowych, w tym:
 
-- **Środowiska czystego pomieszczenia:** Wersja HoloLens 2 Industrial Edition obsługuje standardy od ISO 14644-1, pomieszczenia czyste klasy 5, w których ilość cząstek obcych jest ograniczona i ograniczona, a obiekty w tych miejscach mają ograniczenia dotyczące magazynowania, odgazowania i przechowywania na powierzchni.
+- **Środowiska czystego pomieszczenia:** Wersja HoloLens 2 Industrial Edition obsługuje standardy od ISO 14644-1, pomieszczenia czyste klasy 5, w których ilość cząstek obcych jest ograniczona i ograniczona, a obiekty w tych miejscach mają ograniczenia dotyczące magazynowania, odgazowania i przechowywania na przechowanie.
 - **Lokalizacje niebezpieczne:** Wersja HoloLens 2 Industrial Edition obsługuje środowiska, w których istnieją gazy gazowe, parsy lub płyny, ale zazwyczaj nie występują w nieznajomym wydaniu podczas normalnych operacji i obejmują certyfikację UL Class I, Division 2-Groups A, B, C i D HAZLOC.
 
 Oprócz uaktualnionego urządzenia system HoloLens 2 Industrial Edition ma 2-letnią gwarancję & programem szybkiej wymiany.

@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie do nowej aplikacji Ustawienia
-description: Dowiedz się więcej o nowej aplikacji Ustawienia
+title: Wprowadzenie do nowej Ustawienia aplikacji
+description: Dowiedz się więcej o nowej Ustawienia aplikacji
 author: joyjaz
 ms.author: v-jjaswinski
 keywords: HoloLens, ustawienia, s wyboru aplikacji, wolumin
@@ -9,45 +9,45 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: bf1a2080c15346843b9ea9b2d0dc93154e185107
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379818"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640172"
 ---
-# <a name="new-settings-app"></a>Nowa aplikacja Ustawienia
+# <a name="new-settings-app"></a>Nowa Ustawienia aplikacji
 
-W [systemie Windows Holographic w wersji 21H1](hololens-release-notes.md#windows-holographic-version-21h1)wprowadzamy nową wersję aplikacji Ustawienia. Nowa aplikacja Ustawienia zawiera nowe funkcje i rozszerzone ustawienia dla urządzenia HoloLens 2 w następujących obszarach: Dźwięk, Power & uśpienia, Sieć & Internet, Aplikacje, Konta, Ułatwienia dostępu i inne.
+W Windows Holographic w wersji [21H1](hololens-release-notes.md#windows-holographic-version-21h1)wprowadzamy nową wersję Ustawienia aplikacji. Nowa aplikacja Ustawienia obejmuje nowe funkcje i rozszerzone ustawienia dla usługi HoloLens 2 w następujących obszarach: dźwięk, uśpienie usługi Power &, Internet sieci &, aplikacje, konta, Ułatwienia dostępu i inne.
 
 > [!NOTE]
-> Ponieważ nowa aplikacja Ustawienia różni się od starszej aplikacji Ustawienia, wszystkie okna ustawień umieszczone wcześniej w środowisku zostaną usunięte po aktualizacji.
+> Ponieważ nowa Ustawienia aplikacji różni się od starszej Ustawienia, wszystkie okna Ustawienia wcześniej umieszczone wokół środowiska zostaną usunięte po aktualizacji.
 
-![Strona główna nowej aplikacji Ustawienia](images/new-settings-app.png)
+![Strona główna Ustawienia nowej aplikacji](images/new-settings-app.png)
 
 **Nowe funkcje i ustawienia**
-- Wyszukiwanie ustawień: wyszukaj ustawienia na stronie głównej Ustawienia przy użyciu słów kluczowych lub nazwy ustawienia.
-- Kolor > [systemu](hololens2-display.md#how-to-use-display-color-calibration)
-    - Wybierz alternatywny profil kolorów dla ekranu urządzenia HoloLens 2.
+- Ustawienia wyszukiwania: wyszukaj ustawienia na stronie Ustawienia głównej przy użyciu słów kluczowych lub nazwy ustawienia.
+- Kolorowanie > [systemowego](hololens2-display.md#how-to-use-display-color-calibration)
+    - Wybierz alternatywny profil kolorów dla ekranu HoloLens 2.
 - Dźwięk > systemowego:
-  - Wejściowe i wyjściowe urządzenia audio: niezależne wybieranie wejściowych i wyjściowych urządzeń audio (na przykład nasłuchiwać dźwięku za pośrednictwem słuchawki Bluetooth lub używać mikrofonu USB-C do wprowadzania audio).
+  - Wejściowe i wyjściowe urządzenia audio: niezależne wybieranie wejściowych i wyjściowych urządzeń audio (na przykład nasłuchiwać dźwięku za pośrednictwem mikrofonu Bluetooth lub używać mikrofonu USB-C do wprowadzania audio).
     > [!NOTE]
-    > Mikrofony Bluetooth nie są obsługiwane przez urządzenie HoloLens 2.
-  - Wolumin aplikacji: niezależnie dostosuj wolumin każdej aplikacji. Zobacz [per app volume control (Kontrola woluminu aplikacji).](holographic-home.md#per-app-volume-control)
-- System > zasilania & uśpienia: wybierz, kiedy urządzenie ma przejść w stan uśpienia po okresie braku aktywności.
-- System > Baterii: ręcznie włączyć tryb oszczędzanie baterii lub ustawić próg baterii, w którym punkt oszczędzanie baterii automatycznie włączyć tryb.
+    > Bluetooth mikrofony nie są obsługiwane przez HoloLens 2.
+  - Wolumin aplikacji: niezależnie dostosuj wolumin każdej aplikacji. Zobacz [sterowanie głośnością aplikacji.](holographic-home.md#per-app-volume-control)
+- System > Power & uśpienia: wybierz, kiedy urządzenie ma przejść w stan uśpienia po okresie braku aktywności.
+- System > Battery: ręcznie włącz tryb oszczędzanie baterii lub ustaw próg naładowania baterii, w którym oszczędzanie baterii jest automatycznie włączany.
 - Urządzenia > USB: można domyślnie wyłączyć połączenia USB.
 - Sieć & Internet:
   - Karty Ethernet USB-C będą teraz wyświetlane w sieci & Internet.
-  - Ustawienia karty Ethernet USB-C są teraz dostępne, w tym jej adres IP.
-  - Teraz można włączyć tryb samolotowy na urządzeniach HoloLens 2.
+  - Dostępne są teraz ustawienia karty Ethernet USB-C, w tym jej adres IP.
+  - Teraz możesz włączyć tryb samolotowy na HoloLens 2.
 - Aplikacje: możesz zresetować domyślne aplikacje używane dla typów plików i linków. Aby uzyskać więcej informacji, zobacz [S wyboru domyślnej aplikacji.](holographic-home.md#default-app-picker)
-- Konta > innych użytkowników: właściciele urządzeń mogą dodawać użytkowników, uaktualniać użytkowników standardowych do właścicieli urządzeń, obniżać właścicieli urządzeń do użytkowników standardowych i usuwać użytkowników.
+- Konta > innych użytkowników: właściciele urządzeń mogą dodawać użytkowników, uaktualniać użytkowników standardowych do właścicieli urządzeń, obniżanie poziomu właścicieli urządzeń do użytkowników standardowych i usuwanie użytkowników.
 - Ułatwienia dostępu: zmiana rozmiaru tekstu i niektórych efektów wizualnych.
 
 **Znane problemy**
-- Wcześniej umieszczone okna Ustawienia zostaną usunięte (patrz uwaga powyżej).
-- Nie można już zmienić nazwy urządzenia za pomocą aplikacji Ustawienia. Administratorzy IT mogą zmieniać nazwy urządzeń przy użyciu szablonu [nazwy urządzenia Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) lub węzła MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
-- Na stronie Ethernet przez cały czas jest przedstawiane wirtualne urządzenie Ethernet ("UsbNcm").
-- Użycie baterii dla nowej Microsoft Edge może nie być dokładne, ze względu na charakter aplikacji klasycznej Win32 obsługiwanej przez warstwę adaptera platformy uniwersalnej systemu Windows (nie przewiduje się wkrótce żadnej poprawki).
+- Wcześniej umieszczone Ustawienia zostaną usunięte (patrz uwaga powyżej).
+- Nie można już zmienić nazwy urządzenia na Ustawienia aplikacji. Administratorzy IT mogą zmieniać nazwy urządzeń za pomocą szablonu nazwy urządzenia Windows [Autopilot for HoloLens 2](hololens2-autopilot.md) lub węzła MDM [DevDetail CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
+- Na stronie Ethernet przez cały czas jest wyświetlane wirtualne urządzenie Ethernet ("UsbNcm").
+- Użycie baterii dla nowej Microsoft Edge może być niedokładne ze względu na jej charakter jako aplikacja komputerowa Win32 obsługiwana przez warstwę karty platformy uniwersalnej systemu Windows (nie przewiduje się wkrótce żadnej poprawki).
 
