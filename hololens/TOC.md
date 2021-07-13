@@ -82,7 +82,7 @@
 ### [Rejestrowanie w środowisku z ograniczeniami adresów MAC Wi-Fi MAC](mac-address-options.md)
 ## Wdrażanie aplikacji
 ### [Omówienie zarządzania aplikacją](app-deploy-overview.md)
-### [Usługa Intune & Portal firmy](app-deploy-intune.md)
+### [Intune & Portal firmy](app-deploy-intune.md)
 ### [Sklep Microsoft dla Firm](app-deploy-store-business.md)
 ### [Pakiet aprowizowania](app-deploy-provisioning-package.md)
 ### [Instalator aplikacji](app-deploy-app-installer.md)
@@ -115,7 +115,7 @@
 ## [HoloLens wersji 2](hololens-release-notes.md)
 ## [Niejawna wersja zapoznawcza dla Microsoft HoloLens](hololens-insider.md)
 ## [Obsługiwane języki](hololens2-language-support.md)
-## [Tworzenie przy użyciu usługi Microsoft Mesh (wersja zapoznawcza)](https://docs.microsoft.com/mesh/overview)
+## [Tworzenie przy użyciu usługi Microsoft Mesh (wersja zapoznawcza)](/mesh/overview)
 ## HoloLens (1. generacja)
 ### Użycie po raz pierwszy
 #### [Informacje HoloLens (1. generacja)](hololens1-hardware.md)
@@ -127,10 +127,10 @@
 #### [Używanie Przeglądarka 3D na HoloLens (1. generacja)](holographic-3d-viewer-beta.md)
 #### [Poruszanie się HoloLens (1. generacja)](hololens1-basic-usage.md)
 #### [Zarządzanie aplikacjami niestandardowymi dla HoloLens](holographic-custom-apps.md)
-#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacja)](hololens1-install-localized.md)
+#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacji)](hololens1-install-localized.md)
 #### [Odblokowywanie Windows Holographic for Business funkcji](hololens1-upgrade-enterprise.md)
 #### [Resetowanie HoloLens (1. generacja)](hololens1-recovery.md)
-### HoloLens zabezpieczeń (1. generacji)
+### HoloLens (1. generacji) Security
 #### [Często zadawane pytania HoloLens zabezpieczeń (1. generacji)](hololens1-faq-security.yml)
 #### [HoloLens (1. generacji) szyfrowanie funkcją BitLocker](hololens1-encryption.md)
 ### [Znane problemy i obejścia dla HoloLens (1. generacji)](hololens-known-issues.md)
