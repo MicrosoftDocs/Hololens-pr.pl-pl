@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens to pierwszy w pełni samodzielny komputer holograficzny do uruchamiania Windows 10. Teraz, wraz z wprowadzeniem urządzenia HoloLens 2, każde urządzenie HoloLens zapewnia możliwości zarządzania gotowe do użycia na rynku, które zostały rozszerzone o niezawodność, zabezpieczenia i skalowalność usług w chmurze i AI firmy Microsoft.
+summary: Microsoft HoloLens to pierwszy w pełni samodzielny komputer holograficzny do uruchamiania Windows 10. Teraz, po wprowadzeniu programu HoloLens 2, każde urządzenie HoloLens zapewnia możliwości zarządzania gotowe do użycia na rynku, które są rozszerzone o niezawodność, zabezpieczenia i skalowalność usług w chmurze i AI firmy Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Strona docelowa dla Microsoft HoloLens.
@@ -11,21 +11,23 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 6c73b6fbad7a2968e1f75b361b2b8a015cb1769c
-  ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 06/25/2021
-  ms.locfileid: "112924319"
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637153"
 landingContent:
-- title: Poznaj urządzenie HoloLens 2
+- title: Poznaj HoloLens 2
   linkLists:
   - linkListType: learn
     links:
-    - text: Informacje o sprzęcie HoloLens 2
-      url: hololens2-hardware.md
-    - text: Porównanie opcji urządzenia HoloLens 2
+    - text: HoloLens 2 możliwości i rozwiązania
+      url: hololens-commercial-features.md
+    - text: HoloLens 2 opcje
       url: hololens2-options.md
+    - text: HoloLens sprzęt 2
+      url: hololens2-hardware.md
   - linkListType: overview
     links:
     - text: Tylko urządzenie
@@ -36,7 +38,7 @@ landingContent:
       url: hololens2-options-industrial-edition.md
     - text: Wersja deweloperska
       url: hololens2-options-dev-edition.md
-    - text: Trimble XR10 z urządzeniem HoloLens 2
+    - text: Trimble XR10 z HoloLens 2
       url: hololens2-options-trimble-xr10-edition.md
 - title: Rozpoczęcie pracy
   linkLists:
@@ -46,23 +48,23 @@ landingContent:
       url: hololens2-setup.md
     - text: Dzienne użycie
       url: holographic-home.md
-- title: Planowanie wdrożenia urządzenia HoloLens 2
+- title: Planowanie wdrożenia HoloLens 2
   linkLists:
   - linkListType: architecture
     links:
     - text: Typowe scenariusze wdrażania
       url: common-scenarios.md
-    - text: Planowanie wdrożenia urządzenia HoloLens 2 w środowisku komercyjnym
+    - text: Planowanie HoloLens 2 w środowisku komercyjnym
       url: hololens-core-components.md
     - text: Rejestracja css rozwiązania Autopilot
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Przewodnik wdrażania — wdrażanie urządzenia HoloLens 2 połączonego z chmurą na dużą skalę przy użyciu usługi Remote Assist
+    - text: Przewodnik wdrażania — wdrażanie w 2 HoloLens z chmurą na dużą skalę przy użyciu usługi Remote Assist
       url: hololens2-cloud-connected-overview.md
     - text: Przewodnik wdrażania — klienci zewnętrzni (połączeni z chmurą)
       url: hololens2-deployment-guide.md
-    - text: Przewodnik wdrażania — wdrażanie urządzenia HoloLens 2 połączonego z firmą za pomocą przewodników usługi Dynamics 365
+    - text: Przewodnik wdrażania — wdrażanie połączonych HoloLens 2 za pomocą przewodników usługi Dynamics 365
       url: hololens2-corp-connected-overview.md
     - text: Przewodnik wdrażania — bezpieczne w trybie offline
       url: hololens-common-scenarios-offline-secure.md
@@ -78,15 +80,15 @@ landingContent:
       url: hololens2-display.md
     - text: Urządzenia implementacji i zarządzane
       url: hololens2-enterprise-troubleshooting.md
-    - text: Zbieranie i używanie informacji diagnostycznych z urządzeń HoloLens
+    - text: Zbieranie i używanie informacji diagnostycznych z HoloLens urządzeń
       url: hololens-diagnostic-logs.md
-    - text: Ponowne uruchamianie, resetowanie lub odzyskiwanie urządzenia HoloLens 2
+    - text: Ponowne uruchamianie, resetowanie lub odzyskiwanie HoloLens 2
       url: hololens-recovery.md
 - title: Zasoby
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Informacje o wersji urządzenia HoloLens 2
+    - text: HoloLens wersji 2
       url: hololens-release-notes.md
     - text: Niejawny program testów w wersji zapoznawcz
       url: hololens-insider.md
@@ -96,7 +98,7 @@ landingContent:
       url: hololens2-support.md
     - text: Wyślij do nas swoją opinię
       url: hololens-feedback.md
-- title: Opracowywanie przy użyciu urządzenia HoloLens 2
+- title: Opracowywanie przy użyciu HoloLens 2
   linkLists:
   - linkListType: how-to-guide
     links:
