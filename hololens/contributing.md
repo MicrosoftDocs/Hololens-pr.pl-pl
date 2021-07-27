@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635674"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659118"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Współtwoowanie dokumentacji HoloLens dokumentacji
 
@@ -53,11 +53,16 @@ Użyj następującego przepływu pracy, aby wprowadzić aktualizacje *istniejąc
 
 1. Przejdź do artykułu, który chcesz edytować, w folderze "mixed-reality-docs".
 
-2. Wybierz przycisk edycji (ikona ołówka) w prawym górnym rogu, co spowoduje automatyczne rozgałęzienie gałęzi jednorazowej poza gałęzią "master".
+2. Wybierz przycisk edycji (ikona ołówka) w prawym górnym rogu.
 
    ![Edytowanie artykułu.](images/editpage.png)
+
+   Spowoduje to automatyczne rozgałęzienie gałęzi jednorazowej poza gałęzią domyślną _master_.
+
+   > [!NOTE]
+   > Ten artykuł zawiera odwołania do _wzorca_, terminu, który nie jest już używany przez firmę Microsoft. Po usunięciu terminu z oprogramowania usuniemy go z tego artykułu.
    
-3. Edytuj zawartość artykułu zgodnie z [tematem "Podstawy markdown".](#markdown-basics)
+3. Edytuj zawartość artykułu zgodnie z podstawowymi ustawieniami [znaczników Markdown.](#markdown-basics)
 
 4. Zaktualizuj metadane w górnej części każdego artykułu:
 
@@ -66,11 +71,11 @@ Użyj następującego przepływu pracy, aby wprowadzić aktualizacje *istniejąc
    * **author:** jeśli jesteś głównym właścicielem strony, dodaj tutaj GitHub alias.
    * **ms.author:** jeśli jesteś głównym właścicielem strony, dodaj tutaj swój alias firmy Microsoft (nie potrzebujesz @microsoft.com tylko aliasu ).
    * **ms.date:** zaktualizuj datę, jeśli dodajesz główną zawartość do strony, ale nie dla poprawek, takich jak wyjaśnienie, formatowanie, gramatyka lub pisownia.
-   * **keywords:** słowa kluczowe wspomagają optymalizację pod kątem wyszukiwarek. Dodaj słowa kluczowe rozdzielone przecinkiem i spacją, które są specyficzne dla Twojego artykułu, ale nie będą interpunkcją po ostatnim sdaniu kluczowym na liście. Nie musisz dodawać globalnych słów kluczowych, które mają zastosowanie do wszystkich artykułów, ponieważ są one zarządzane w innym miejscu. 
+   * **keywords:** słowa kluczowe wspomagają optymalizację pod kątem wyszukiwarek. Dodaj słowa kluczowe rozdzielone przecinkiem i spacją, które są specyficzne dla Twojego artykułu, ale nie interpunkcja po ostatnim sdaniu kluczowym na liście. Nie musisz dodawać globalnych słów kluczowych, które mają zastosowanie do wszystkich artykułów, ponieważ są one zarządzane w innym miejscu. 
    
 5. Po zakończeniu edycji artykułu przewiń w dół i wybierz pozycję **Zaproponuj zmianę pliku.**
 
-6. Na następnej stronie wybierz pozycję **Utwórz żądanie ściągnięć,** aby scalić automatycznie utworzoną gałąź z gałęzią "master".
+6. Na następnej stronie wybierz pozycję Utwórz żądanie **ściągnięć,** aby scalić automatycznie utworzoną gałąź z gałęzią domyślną _master_.
 
 7. Powtórz powyższe kroki dla następnego artykułu, który chcesz edytować.
 
@@ -102,9 +107,12 @@ Jeśli dodasz przekierowanie, pamiętaj również o usunięciu starego pliku.
 
 Użyj następującego przepływu *pracy, aby utworzyć nowe artykuły w* repo dokumentacji za pośrednictwem GitHub w przeglądarce internetowej:
 
-1. Utwórz widelec z gałęzi "master" MicrosoftDocs/mixed-reality (przy użyciu przycisku **Fork** w prawym górnym rogu).
+1. Utwórz widelec z gałęzi domyślnej _master (master)_ dokumentu MicrosoftDocs/rzeczywistości mieszanej przy użyciu przycisku **Fork** (Utwórz widelec) w prawym górnym rogu.
 
-   ![Rozgałęzienie gałęzi głównej.](images/forkbranch.png)
+   ![Rozgałęzienie gałęzi domyślnej, obecnie o nazwie "master".](images/forkbranch.png)
+
+   > [!NOTE]
+   > Ten artykuł zawiera odwołania do _wzorca_, terminu, który nie jest już używany przez firmę Microsoft. Po usunięciu terminu z oprogramowania usuniemy go z tego artykułu.
    
 2. W folderze "mixed-reality-docs" wybierz pozycję **Utwórz nowy plik** w prawym górnym rogu.
 
@@ -129,15 +137,15 @@ Użyj następującego przepływu *pracy, aby utworzyć nowe artykuły w* repo do
    ---
    ```
 
-5. Wypełnij odpowiednie pola metadanych zgodnie z instrukcjami w [powyższej sekcji](#editing-an-existing-article).
+5. Wypełnij odpowiednie pola metadanych zgodnie z wcześniejszym opisem w [artykule Edytowanie istniejącego artykułu.](#editing-an-existing-article)
 
-6. Pisanie zawartości artykułu przy użyciu [podstaw znaczników Markdown.](#markdown-basics)
+6. Pisanie zawartości artykułu przy użyciu podstaw [znaczników Markdown.](#markdown-basics)
 
 7. Dodaj `## See also` sekcję w dolnej części artykułu z linkami do innych odpowiednich artykułów.
 
 8. Po zakończeniu wybierz pozycję **Zat zatwierdzeniu nowego pliku.**
 
-9. Wybierz **pozycję Nowe żądanie** ściągnięcie i scal gałąź "master" twojego widelecu z gałęzią "master" MicrosoftDocs/mixed-reality (upewnij się, że strzałka wskazuje prawidłowy sposób).
+9. Wybierz **pozycję Nowe żądanie ściągnięcie** i scal gałąź master twojego widelec z dokumentami MicrosoftDocs/wzorcem rzeczywistości mieszanej (upewnij się, że strzałka wskazuje poprawne miejsce docelowe).  
 
    ![Tworzenie żądania ściągnnięcia z twojego widelec do dokumentów MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
@@ -150,13 +158,13 @@ Następujące zasoby pomogą Ci dowiedzieć się, jak edytować dokumentację pr
 
 ### <a name="adding-tables"></a>Dodawanie tabel
 
-Ze względu na sposób docs.microsoft.com stylów tabele nie będą mieć obramowań ani stylów niestandardowych, nawet jeśli spróbujesz użyć arkuszy CSS w tekście. Wygląda na to, że będzie działać przez krótki czas, ale ostatecznie platforma będzie odebrać style z tabeli. Dlatego zaplanuj tabele z wyprzedzeniem i zachowaj prostotę. [Oto witryna, która ułatwia tabele markdown.](https://www.tablesgenerator.com/markdown_tables)
+Ze względu na sposób docs.microsoft.com stylów tabele nie będą mieć obramowań ani stylów niestandardowych, nawet jeśli spróbujesz użyć arkuszy CSS w tekście. Wygląda na to, że będzie działać przez krótki czas, ale ostatecznie platforma będzie odebrać style z tabeli. Dlatego zaplanuj tabele z wyprzedzeniem i zachowaj prostotę. Oto witryna, która ułatwia tabele markdown: [Tables Generator]]( https://www.tablesgenerator.com/markdown_tables) .
 
 Rozszerzenie [Docs Markdown dla](/teamblog/docs-extension) usługi Visual Studio Code ułatwia również generowanie tabel, jeśli używasz usługi [Visual Studio Code (zobacz poniżej)](#using-visual-studio-code) do edytowania dokumentacji.
 
 ### <a name="adding-images"></a>Dodawanie obrazów
 
-Musisz przekazać obrazy do folderu "mixed-reality-docs/images" w repocie, a następnie odwołać się do nich odpowiednio w artykule. Obrazy będą automatycznie wyświetlane w pełnym rozmiarze, co oznacza, że duże obrazy wypełnią całą szerokość artykułu. Zalecamy wstępne rozmiarów obrazów przed ich przekazaniem. Zalecana szerokość wynosi od 600 do 700 pikseli, chociaż rozmiar należy odpowiednio w górę lub w dół, jeśli jest to gęsty zrzut ekranu lub część zrzutu ekranu.
+Musisz przekazać obrazy do folderu "mixed-reality-docs/images" w repocie, a następnie odwołać się do nich odpowiednio w artykule. Obrazy będą automatycznie wyświetlane w pełnym rozmiarze, co oznacza, że duże obrazy wypełnią całą szerokość artykułu. Zalecamy wstępne zmiany rozmiaru obrazów przed ich przekazaniem. Zalecana szerokość to od 600 do 700 pikseli, ale rozmiar należy odpowiednio w górę lub w dół, jeśli jest to gęsty zrzut ekranu lub część zrzutu ekranu.
 
 >[!IMPORTANT]
 >Przed scaleniem obrazy można przekazywać tylko do swojego rozdętego repo. Dlatego jeśli planujesz dodawanie obrazów do artykułu, musisz najpierw użyć usługi [Visual Studio Code,](#using-visual-studio-code) aby dodać obrazy do folderu "images" twojego widelecu lub upewnić się, że w przeglądarce internetowej zostały wykonane następujące czynności:
@@ -164,7 +172,7 @@ Musisz przekazać obrazy do folderu "mixed-reality-docs/images" w repocie, a nas
 >1. Forked the MicrosoftDocs/mixed-reality repo (Forked the MicrosoftDocs/mixed-reality repo).
 >2. Zedytował artykuł w twoim widełku.
 >3. Przekazane obrazy, do których odwołujesz się w artykule, do folderu "mixed-reality-docs/images" w twoim widełku.
->4. Utworzono **żądanie ściągnięć** w celu scalenia twojego widelecu z gałęzią "master" MicrosoftDocs/mixed-reality.
+>4. Utworzono **żądanie ściągnięć** w celu scalenia twojego widelecu z gałęzią master MicrosoftDocs/mixed-reality. 
 >
 >Aby dowiedzieć się, jak skonfigurować własne forked repo, postępuj zgodnie z instrukcjami [dotyczącymi tworzenia nowego artykułu.](#creating-a-new-article)
 
@@ -175,7 +183,7 @@ Podczas edytowania GitHub za pośrednictwem przeglądarki  internetowej możesz 
 >[!NOTE]
 >Wyświetlanie podglądu zmian w review.docs.microsoft.com jest dostępne tylko dla pracowników firmy Microsoft
 
-Pracownicy firmy Microsoft: po scaleniu twojego wkładu z gałęzią "master" możesz przejrzeć zawartość, zanim zostanie ona publicznie </hololens?branch=master>. Znajdź swój artykuł, korzystając ze spisu treści w lewej kolumnie.
+Pracownicy firmy Microsoft: po scaleniu twojego wkładu z gałęzią domyślną _master_ możesz przejrzeć zawartość, zanim przejdzie ona publicznie na adres </hololens?branch=master>. Znajdź swój artykuł, korzystając ze spisu treści w lewej kolumnie.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Edytowanie w przeglądarce a edytowanie za pomocą klienta klasycznego
 
@@ -216,7 +224,7 @@ Użyj następującego przepływu pracy, aby wprowadzić zmiany w dokumentacji za
 
 1. Upewnij się, że sklonowane widelec jest aktualny z oficjalnym repo.
 
-   1. W przeglądarce internetowej utwórz żądanie ściągnięcie, aby zsynchronizować ostatnie zmiany od innych współautorów w folderze MicrosoftDocs/"master" rzeczywistości mieszanej do twojego widelecu (upewnij się, że strzałka wskazuje właściwy sposób).
+   1. W przeglądarce internetowej utwórz żądanie ściągnięcie, aby zsynchronizować ostatnie zmiany od innych współautorów w domyślnej gałęzi microsoftdocs/rzeczywistości mieszanej _master_ z twoim widelecem (upewnij się, że strzałka wskazuje poprawną stronę docelową).
       
       ![Synchronizowanie zmian z dokumentu MicrosoftDocs/rzeczywistości mieszanej do twojego widelecu](images/sync-repos.png)
       
@@ -240,7 +248,7 @@ Użyj następującego przepływu pracy, aby wprowadzić zmiany w dokumentacji za
       
       ![Kliknij przycisk synchronizacji](images/sync-back.png)
       
-3. W przeglądarce internetowej utwórz żądanie ściągnięcie, aby zsynchronizować nowe zmiany w twoim widełku z dokumentami MicrosoftDocs/"master" rzeczywistości mieszanej (upewnij się, że strzałka wskazuje prawidłowy sposób).
+3. W przeglądarce internetowej utwórz żądanie ściągnięcie, aby zsynchronizować nowe zmiany w twoim formacie z powrotem z dokumentami MicrosoftDocs/wzorcem rzeczywistości mieszanej _(upewnij_ się, że strzałka wskazuje poprawną stronę docelową).
 
    ![Tworzenie żądania ściągnęcie z twojego widelecu do dokumentu MicrosoftDocs/rzeczywistości mieszanej](images/pr-to-master.png)
 

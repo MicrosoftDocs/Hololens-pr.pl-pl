@@ -13,51 +13,45 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640286"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659560"
 ---
 # <a name="license-requirements"></a>Wymagania licencyjne
 
-## <a name="hololens-2-device-managed"></a>HoloLens 2 (zarządzane)
+## <a name="overview"></a>Omówienie
+Ta strona zawiera ogólne omówienie licencji i kont wymaganych do wdrożenia zarówno zarządzanych, jak i nieza zarządzanych urządzeń HoloLens 2 w organizacji. Zawiera on również informacje dotyczące licencjonowania usługi Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) i [przewodników](#dynamics-365-guides).
 
-[Konto usługi Azure AD](/azure/active-directory/)
+## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 i wymagania dotyczące konta
+
+
+|                   | Zarządzane HoloLens | Niezamażowane HoloLens |
+|-------------------|-----------------|---------------------|
+| **Przypadek użycia biznesowego** | | |
+| [Wdrażanie na urządzeniach połączonych z chmurą — potwierdzenie koncepcji/wdrożenie pilotażowe](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
+| [Wdrażanie wewnątrz sieci organizacji — wdrażanie na dużą skalę](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [Wdrażanie w bezpiecznym środowisku offline](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| **Licencje** | | |
+| Azure Active Directory | ✔️ | |
+| MDM (Intune<sup>1</sup> lub <sup>2</sup>) | ✔️  | |
+| **Konta** |  | |
+| Konto administratora usługi Azure AD | ✔️ |  |
+| Konto użytkownika usługi Azure AD | ✔️ | |
+| [Konto Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Konto lokalne](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1 Automatyczna</sup> [rejestracja podczas](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) początkowej konfiguracji urządzenia, która rejestruje i dołącza Azure Active Directory i umożliwia zarządzanie urządzeniem za pomocą usługi Intune.
+- <sup>2</sup> [Windows rozwiązania Autopilot HoloLens 2](hololens2-autopilot.md) upraszcza aprowizowanie zarówno dla administratorów IT, jak i użytkowników końcowych. Administratorzy IT mogą wstępnie skonfigurować HoloLens 2 zasad, a po pierwszym rozruchu urządzenia będą wdrażane w stanie gotowości do działania bez interakcji z użytkownikiem.
+- <sup>3 To</sup> konto należy [aprowizować](hololens-provisioning.md#provisioning-package-hololens-wizard) z wyprzedzeniem przy użyciu Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
 > Usługi Active Directory (AD) nie można używać do zarządzania HoloLens urządzeniami.
-
-[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) lub innego rozwiązania MDM.
-- [Windows Autopilot for HoloLens 2](hololens2-autopilot.md)— upraszcza aprowizowanie zarówno dla administratorów IT, jak i użytkowników końcowych. Administratorzy IT mogą wstępnie skonfigurować zasady HoloLens 2, a przy pierwszym rozruchu urządzenia zostaną wdrożone w stanie gotowości do działania firmy bez interakcji użytkownika końcowego. 
-
-  > [!NOTE]
-  > Windows Funkcja Autopilot wymaga [](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) skonfigurowania [platformy Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) i automatycznego rejestrowania w celu wdrożenia przepływu rozwiązania Autopilot z niskim poziomem dotyku i wdrażania urządzeń. 
-
-### <a name="business-use-case"></a>Przypadek użycia biznesowego: 
-
-- [Scenariusz wdrażania A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) — wdrożenie weryfikacji koncepcji lub wdrożenia pilotażowego.
-
-- [Scenariusz wdrażania B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) — wdrażanie na dużą skalę.
-
-## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 Tylko urządzenie (nieza zarządzane)
-
-W przypadku korzystania z konta Microsoft (MSA) lub konta lokalnego nie są wymagane żadne dodatkowe licencje dla tych kont.
-
-[Konto lokalne](/windows/security/identity-protection/access-control/local-accounts)
-
-- To konto należy [aprowizować](hololens-provisioning.md#provisioning-package-hololens-wizard) z wyprzedzeniem za pomocą Windows Configuration Designer (WCD).
-
-[Konto Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> Wielu użytkowników nie jest obsługiwanych na urządzeniu przy użyciu jednego z tych kont.
-
-### <a name="business-use-case"></a>Przypadek użycia biznesowego: 
-
-- [Scenariusz wdrażania C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) — wdrożenie w trybie offline lub bezpieczne.
  
+> [!WARNING]
+> Wielu użytkowników nie jest obsługiwanych na urządzeniu przy użyciu konta MSA lub konta lokalnego.
+
 ## <a name="dynamics-365-licensing-and-requirements"></a>Dynamics 365 Licensing and Requirements
 
 ### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
@@ -65,7 +59,7 @@ W przypadku korzystania z konta Microsoft (MSA) lub konta lokalnego nie są wyma
 #### <a name="admin"></a>Administrator
 
 - Konto usługi Azure AD (wymagane do zakupu subskrypcji i przypisywania licencji)
-- [Subskrypcja usługi Remote Assist](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (lub wersja [próbna usługi Remote Assist)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- [Subskrypcja usługi Remote Assist](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (lub [wersja próbna usługi Remote Assist)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
     
 #### <a name="dynamics-365-remote-assist-user"></a>Użytkownik usługi Dynamics 365 Remote Assist
 
@@ -74,7 +68,7 @@ W przypadku korzystania z konta Microsoft (MSA) lub konta lokalnego nie są wyma
 - Licencja usługi Remote Assist 
 
   > [!NOTE]
-  > Microsoft Teams jest w pakiecie z usługą Remote Assist
+  > Microsoft Teams jest dołączony do usługi Remote Assist
 
 - Łączność sieciowa
 
@@ -82,32 +76,32 @@ W przypadku korzystania z konta Microsoft (MSA) lub konta lokalnego nie są wyma
 
 - Konto usługi Azure AD
 
-- Microsoft Teams lub [Teams Freemium.](https://products.office.com/microsoft-teams/free)
+- Microsoft Teams lub [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - Łączność sieciowa
 
-Jeśli planujesz wdrożenie tego scenariusza między [dzierżawami,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)może być potrzebna licencja na bariery informacyjne. Zapoznaj [się z tym artykułem,](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) aby ustalić, czy wymagana jest licencja information barrier.
+Jeśli planujesz wdrożenie tego scenariusza między [dzierżawami,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)może być potrzebna licencja information barriers. Zapoznaj [się z tym artykułem,](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) aby ustalić, czy jest wymagana licencja information barrier.
 
-### <a name="dynamics-365-guides"></a>Dynamics 365 Guides 
+### <a name="dynamics-365-guides"></a>Przewodniki dotyczące usługi Dynamics 365 
 
 #### <a name="admin"></a>Administrator
 
-- Konto usługi Azure AD (wymagane do zakupu subskrypcji i przypisywania licencji)
-- Subskrypcja przewodników usługi Dynamics 365 [lub bezpłatna wersja próbna](/dynamics365/mixed-reality/guides/setup-step-one)
+1. Konto usługi Azure AD (wymagane do zakupu subskrypcji i przypisywania licencji)
+2. Subskrypcja przewodników usługi Dynamics 365 [lub bezpłatna wersja próbna](/dynamics365/mixed-reality/guides/setup-step-one)
 
-#### <a name="guides-author"></a>Tworzenie przewodników
+#### <a name="guides-author"></a>Autor przewodników
 
 1. Konto usługi Azure AD
 1. [Licencja przewodników usługi Dynamics 365](/dynamics365/mixed-reality/guides/requirements)
 1. Aplikacja Dynamics 365 Guides zainstalowana na komputerze pc lub HoloLens
-1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (używane do wyświetlania pulpitu nawigacyjnego analizy)
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (służy do wyświetlania pulpitu nawigacyjnego analizy)
 1. Rola autora (do tworzenia przewodników)
 1. Łączność sieciowa
 
-#### <a name="guides-user"></a>Przewodniki dla użytkowników
+#### <a name="guides-user"></a>Użytkownik przewodników
 
 1. Konto usługi Azure AD
 1. [Licencja przewodników usługi Dynamics 365](/dynamics365/mixed-reality/guides/requirements)
-1. Aplikacja Dynamics 365 Guides zainstalowana na komputerze HoloLens
+1. Aplikacja Dynamics 365 Guides zainstalowana na HoloLens
 1. Rola operatora (do testowania lub używania przewodników)
 1. Łączność sieciowa

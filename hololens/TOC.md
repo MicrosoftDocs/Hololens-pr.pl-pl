@@ -12,7 +12,6 @@
 ### [Wersja deweloperska](hololens2-options-dev-edition.md)
 #### [HoloLens 2 Development Edition : często zadawane pytania](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
-### [Funkcje komercyjne](hololens-commercial-features.md)
 
 # Korzystanie z HoloLens
 ## Użycie po raz pierwszy
@@ -105,17 +104,18 @@
 ## [Urządzenie](hololens-troubleshooting.md)
 ## [Hologramy i interakcje](hololens-faq.md)
 ## [Wyświetlanie](hololens2-display.md)
-## [Urządzenia implementacji i zarządzane](hololens2-enterprise-troubleshooting.md#)
+## [Urządzenia implementacji i urządzenia zarządzane](hololens2-enterprise-troubleshooting.md#)
 ## [Włączanie dzienników diagnostycznych](hololens-diagnostic-logs.md)
 ## [Resetowanie HoloLens 2](hololens-recovery.md)
 
 # Zasoby
+## [Gdzie kupić HoloLens 2](hololens2-purchase.md)
 ## [Opcje wsparcia technicznego i pomocy](hololens2-support.md)
 ## [Żądania pomocy technicznej rozwiązania Autopilot](hololens2-autopilot-registration-support.md)
 ## [HoloLens wersji 2](hololens-release-notes.md)
-## [Niejawna wersja zapoznawcza dla Microsoft HoloLens](hololens-insider.md)
+## [Insider Preview for Microsoft HoloLens](hololens-insider.md)
 ## [Obsługiwane języki](hololens2-language-support.md)
-## [Tworzenie przy użyciu usługi Microsoft Mesh (wersja zapoznawcza)](/mesh/overview)
+## [Opracowywanie za pomocą usługi Microsoft Mesh (wersja zapoznawcza)](/mesh/overview)
 ## HoloLens (1. generacja)
 ### Użycie po raz pierwszy
 #### [Informacje HoloLens (1. generacja)](hololens1-hardware.md)
@@ -123,18 +123,18 @@
 #### [Omówienie użycia podstawowego](hololens1-setup.md)
 #### [Konfigurowanie HoloLens (1. generacja)](hololens1-start.md)
 ### Dzienne użycie
-#### [Korzystanie z HoloLens (1. generacji)](hololens1-clicker.md)
+#### [Używanie HoloLens (1. generacji)](hololens1-clicker.md)
 #### [Używanie Przeglądarka 3D na HoloLens (1. generacja)](holographic-3d-viewer-beta.md)
 #### [Poruszanie się HoloLens (1. generacja)](hololens1-basic-usage.md)
 #### [Zarządzanie aplikacjami niestandardowymi dla HoloLens](holographic-custom-apps.md)
-#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacji)](hololens1-install-localized.md)
-#### [Odblokowywanie Windows Holographic for Business funkcji](hololens1-upgrade-enterprise.md)
+#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacja)](hololens1-install-localized.md)
+#### [Odblokowywanie Windows Holographic for Business zabezpieczeń](hololens1-upgrade-enterprise.md)
 #### [Resetowanie HoloLens (1. generacja)](hololens1-recovery.md)
-### HoloLens (1. generacji) Security
+### HoloLens (1. generacja) Zabezpieczenia
 #### [Często zadawane pytania HoloLens zabezpieczeń (1. generacji)](hololens1-faq-security.yml)
 #### [HoloLens (1. generacji) szyfrowanie funkcją BitLocker](hololens1-encryption.md)
-### [Znane problemy i obejścia dla HoloLens (1. generacji)](hololens-known-issues.md)
-### [HoloLens (1. generacja)](hololens1-release-notes.md)
+### [Znane problemy i obejścia dla HoloLens (1. generacja)](hololens-known-issues.md)
+### [HoloLens wersji (1. generacja)](hololens1-release-notes.md)
 
 # Wyślij do nas swoją opinię
 ## [Daj nam opinię za pośrednictwem Centrum opinii](hololens-feedback.md)

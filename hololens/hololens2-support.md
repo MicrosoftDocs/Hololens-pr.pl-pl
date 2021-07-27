@@ -7,12 +7,12 @@ description: Mixed Reality pomocy technicznej dla małych i dużych klientów ko
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636218"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659101"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Jakie są Mixed Reality pomocy technicznej i pomocy?
 
@@ -71,14 +71,15 @@ Jeśli przesyłasz nowe pytanie do Stack Overflow, użyj co najmniej jednego z n
 
 - Uzyskaj HoloLens programowania 2 od społeczności na stronie [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - Dowiedz się więcej na temat pomocy i obsługi technicznej oraz kondycji usług [rzeczywistości mieszanej platformy Azure](#azure-mixed-reality-services-support)
-- Utwórz wniosek o pomoc techniczną dla aplikacji HoloLens 2 lub programowania immersyjnego zestawu nagłownego w pomocy [technicznej mr](https://aka.ms/mrsupport) 
-- Utwórz wniosek o pomoc techniczną dla HoloLens 2 problemów z urządzeniami, w tym sprzętu, konfiguracji & na stronie [HoloLens 2 device support](https://aka.ms/hlsupport) 
+- Tworzenie wniosku o pomoc techniczną na HoloLens 2 lub programowania immersyjnego zestawu nagłownego w pomocy [technicznej mr](https://aka.ms/mrsupport) 
+- Utwórz wniosek o pomoc techniczną w HoloLens 2 problemów z urządzeniami, w tym sprzętu, konfiguracji & konfiguracji na stronie [HoloLens 2 device support](https://aka.ms/hlsupport) 
 
 
-### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Pomoc z obsługą sklepu komercyjnego dla twojej HoloLens 2
+### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Pomoc techniczna dla sklepu komercyjnego dla Twojej HoloLens 2
 
 - [Zakup HoloLens 2 użyj](https://www.microsoft.com/hololens/buy) tej opcji, aby dowiedzieć się więcej na temat HoloLens 2 cen i opcji
 - Zapoznaj się z listą numerów pomocy technicznej firmy, aby porozmawiać z naszymi współpracownikami pomocy technicznej sklepu komercyjnego, jeśli potrzebujesz pomocy przez telefon
+- W przypadku zakupów spoza Microsoft Store należy odwołać się do tej listy autoryzowanych HoloLens [dwóch odsprzedawców](hololens2-purchase.md) i krajów, w których HoloLens 2 jest dostępny.
 
 ### <a name="commercial-store-support-numbers"></a>Numery pomocy technicznej sklepu komercyjnego
 >[!Note]

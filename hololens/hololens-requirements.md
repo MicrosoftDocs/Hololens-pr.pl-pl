@@ -1,6 +1,6 @@
 ---
 title: Typowe scenariusze wdrażania
-description: Dowiedz się więcej na temat wdrażania i zarządzania HoloLens środowiskach przedsiębiorstw, w tym infrastruktury, Azure Active Directory i zarządzania urządzeniami przenośnymi.
+description: Dowiedz się więcej na temat wdrażania i zarządzania HoloLens w środowiskach przedsiębiorstw, w tym infrastruktury, Azure Active Directory i zarządzania urządzeniami przenośnymi.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -12,99 +12,131 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ccccdcc7d3188919d02eb5855131137415c12d16
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639832"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659067"
 ---
 # <a name="common-deployment-scenarios"></a>Typowe scenariusze wdrażania
 
 ## <a name="overview"></a>Omówienie
 
-Ta strona zawiera ogólne omówienie architektury dla trzech typowych scenariuszy wdrażania i zarządzania Microsoft HoloLens 2 urządzeń w przedsiębiorstwie.
+Ustalenie, jak wdrożyć nowe urządzenie, może być problem przy próbie jej po raz pierwszy. W tym miejscu udostępniamy różne sposoby wdrażania urządzeń Microsoft HoloLens 2 urządzeń w organizacji i zarządzania nimi.
 
-Często sposób zarządzania urządzeniami i uzyskiwania dostępu do zasobów organizacji jest w dużej mierze określany przez już używane czynniki. W oparciu o istniejącą infrastrukturę zachęcamy do przejrzenia wspólnego stylu zarządzania urządzeniami (MDM) w następujących scenariuszach, a następnie przeczytania tematu [Planowanie wdrożeń programu HoloLens 2](hololens-core-components.md) w środowisku komercyjnym, aby określić, który scenariusz odpowiada Twoim potrzebom. Dostępne są również trzy odpowiednie przewodniki do użycia podczas wdrażania.
+Potrzebujesz rozwiązań wdrażanych na dużą skalę. Chcemy Cię tam zabrać. Najpierw omówmy kroki wdrażania urządzeń, w związku z czym hologramów, aby osiągnąć wartość docelowego scenariusza rzeczywistości mieszanej, niezależnie od tego, czy korzystasz ze zdalnej pomocy, przewodników usługi D365, czy utworzonej aplikacji z obsługą usługi rzeczywistości mieszanej platformy Azure.
 
+Być może jesteś twórcą decyzji biznesowych, specjalistą IT lub zespołem ds. innowacji, który chce HoloLens w swojej organizacji. Podczas tworzenia od weryfikacji koncepcji do wdrożenia skalowanego nasze przewodniki wdrażania mają sens HoloLens infrastrukturze IT — niezależnie od tego, jak duże lub małe. Najczęściej spotykane są następujące scenariusze wdrażania:
 
- 1. [Przewodnik wdrażania środowiska połączonego z chmurą](hololens2-cloud-connected-overview.md)
-     1. [Przewodnik wdrażania środowiska połączonego z chmurą (klienci zewnętrzni)](hololens2-deployment-guide.md)
- 1. [Przewodnik wdrażania sieci firmowej](hololens2-corp-connected-overview.md)
- 1. [Przewodnik wdrażania bezpiecznego środowiska w trybie offline](hololens-common-scenarios-offline-secure.md)
+| Scenariusz |Użycie | Kwestie kluczowe |
+|---------|---------|---------|
+| [Scenariusz A: urządzenia połączone z chmurą](hololens2-cloud-connected-overview.md) | Po pierwszym rozpoczęciu wdrażania możesz zacząć od małej ilości danych i wdrożyć jedno urządzenie połączone z chmurą, aby zobaczyć podstawowy proces. | Urządzenia będą połączone z usługami w chmurze i publicznym Internetem. Jest to najbardziej odpowiednie w przypadku przypadków użycia klientów, usług terenowych i weryfikacji koncepcji.|
+| [Scenariusz B: sieć organizacji](hololens2-corp-connected-overview.md) | Podczas wdrażania w środowisku produkcyjnym na dużą skalę może być konieczne zintegrowanie z siecią organizacji. | Urządzenia będą połączone z firmową siecią Wi-Fi. Jest to najbardziej odpowiednie dla użytkowników wewnętrznych lub w środowisku firmowym.|
+| [Scenariusz C: Bezpieczne środowisko w trybie offline](hololens-common-scenarios-offline-secure.md) | Niektóre procesy o znaczeniu krytycznym lub zasady firmowe mogą wymagać użycia środowisk w trybie offline. | Urządzenia będą połączone z wysoce restrykcyjną siecią lub będą wyłącznie urządzeniami w trybie offline. Jest to najbardziej odpowiednie w przypadku środowisk o wysokim stopniu bezpieczeństwa lub ograniczeń łączności z Internetem w obszarach zdalnych. |
 
 ## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>Scenariusz A: wdrażanie na urządzeniach połączonych z chmurą
 
-Ten scenariusz jest porównywalny z wdrażaniem zarządzanych urządzeń przenośnych w firmie. HoloLens 2 jest wdrażany głównie w środowiskach zewnętrznych niż sieć firmowa. Zasoby firmowe nie są dostępne lub mogą być ograniczone za pośrednictwem sieci VPN. 
- * Podstawowe typowe konfiguracje
-   * Wi-Fi są zwykle w pełni otwarte dla Internetu i usług w chmurze.
-   * Azure AD Join with Mobile Zarządzanie urządzeniami (MDM) Auto Enrollment--MDM (Intune) Managed
-   * Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
-     * Obsługiwanych jest jeden lub wielu użytkowników na urządzenie
-   * Różne poziomy konfiguracji blokady urządzeń są stosowane w zależności od konkretnych przypadków użycia, od pełnego otwarcia do kiosku z jedną aplikacją.
-   * Co najmniej jedna aplikacja jest wdrażana za pośrednictwem rozwiązania MDM
+Ten scenariusz jest porównywalny z wdrażaniem zarządzanych urządzeń przenośnych w firmie. HoloLens 2 jest wdrażany głównie w środowiskach zewnętrznych niż sieć firmowa. Zasoby firmowe nie są dostępne lub mogą być ograniczone za pośrednictwem sieci VPN.
 
-* Typowe wyzwania
-   * Określanie, które konfiguracje zarządzania urządzeniami przenośnymi mają być stosowane HoloLens 2 na podstawie wymagań scenariusza.
+[![Diagram scenariusza A](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
-[![Diagram scenariusza ](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+### <a name="when-to-use"></a>Kiedy stosować
 
-W odpowiednim przewodniku po chmurze opisano sposób rejestrowania usługi HoloLens 2 w usłudze zarządzania urządzeniami, stosowania licencji zgodnie z potrzebami i sprawdzania, czy użytkownicy końcowi mogą natychmiast korzystać z usługi Remote Assist podczas konfigurowania urządzenia. Przewodnik Klienci zewnętrzni umożliwia wdrażanie urządzeń w lokacji zdalnej do krótkoterminowego lub długoterminowego użytku zewnętrznego.
+Rozważ ten model wdrażania dla:
 
-> [!div class="nextstepaction"]
-> [Przewodnik wdrażania środowiska połączonego z chmurą](hololens2-cloud-connected-overview.md)
+* Wdrażanie weryfikacji koncepcji, pilotażu i usług terenowych
+* Wdrażanie usługi [Remote Assist](hololens2-options-remote-assist.md)
 
-> [!div class="nextstepaction"]
-> [Przewodnik wdrażania środowiska połączonego z chmurą (klienci zewnętrzni)](hololens2-deployment-guide.md)
+### <a name="basic-common-configurations"></a>Podstawowe typowe konfiguracje
 
-## <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scenariusz B: wdrażanie w sieci organizacji
+* Wi-Fi są zwykle w pełni otwarte dla Internetu i usług w chmurze
+* Azure AD Join with Mobile Zarządzanie urządzeniami (MDM) Auto Enrollment--MDM (Intune) Managed (Azure AD Join with Mobile Zarządzanie urządzeniami (MDM) Auto Enrollment--MDM (Intune) Managed (Azure AD Join with Mobile Zarządzanie urządzeniami (MDM) Auto Enrollment--MDM (Intune) Managed
+* Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
+  * Obsługiwani są pojedynczy lub wielu użytkowników na urządzenie
+* Różne poziomy konfiguracji blokady urządzeń są stosowane na podstawie konkretnych przypadków użycia, od w pełni otwartego do kiosku z pojedynczą aplikacją.
+* Co najmniej jedna aplikacja jest wdrażana za pośrednictwem rozwiązania MDM
 
-Ten scenariusz jest identyczny z klasycznym wdrożeniem dla większości Windows 10 komputerów. HoloLens 2 jest wdrażany głównie w sieci firmowej z dostępem do wewnętrznych zasobów firmy. Usługi internetowe i w chmurze mogą być ograniczone. 
+### <a name="common-challenges"></a>Typowe wyzwania
 
- * Podstawowe typowe konfiguracje
-   * Wi-Fi to wewnętrzna sieć firmowa z dostępem do zasobów wewnętrznych i ograniczonym dostępem do Internetu lub usług w chmurze.
-   * Dołączanie do usługi Azure AD z automatyczną rejestracją w usłudze MDM
-   * Zarządzanie urządzeniami przenośnymi (Intune)
-   * Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
-     * Obsługiwanych jest jeden lub wielu użytkowników na urządzenie
-   * Różne poziomy konfiguracji blokady urządzeń są stosowane w zależności od konkretnych przypadków użycia, od pełnego otwarcia do kiosku z jedną aplikacją.
-   * Co najmniej jedna aplikacja jest wdrażana za pośrednictwem rozwiązania MDM
+* Określanie, które konfiguracje zarządzania urządzeniami przenośnymi mają być stosowane do HoloLens 2 na podstawie wymagań scenariusza
 
- * Typowe wyzwania
-   * HoloLens 2 nie obsługuje lokalnego dołączania do usługi AD ani programu SCCM. Tylko dołączanie do usługi Azure AD za pomocą rozwiązania MDM. Obecnie wiele firm nadal wdraża komputery z systemem Windows 10 w tym scenariuszu jako lokalne urządzenia przyłączone do usługi AD, zarządzane przez usługę System Center Configuration Manager (SCCM) i mogą nie mieć wdrożonej/skonfigurowanej infrastruktury do zarządzania wewnętrznymi urządzeniami Windows 10 za pośrednictwem rozwiązań MDM opartych na chmurze.
-   * Ponieważ HoloLens 2 jest urządzeniem w chmurze, w dużym stopniu opiera się na usługach połączonych z Internetem i w chmurze na temat uwierzytelniania użytkowników, aktualizacji systemu operacyjnego, zarządzania urządzeniami przenośnymi i tak dalej. Podczas nawiązywania połączenia z siecią firmową reguły serwera proxy/zapory najprawdopodobniej trzeba będzie dostosować, aby umożliwić dostęp do serwera HoloLens 2 i aplikacji, które na nim działają.
-   * Połączenia Wi-Fi zwykle wymagają certyfikatów w celu uwierzytelnienia urządzenia lub użytkownika w sieci. Skonfigurowanie wymaganej infrastruktury lub ustawień do wdrażania certyfikatów na Windows 10 za pośrednictwem zarządzania urządzeniami przenośnymi może być trudne.
-
-[![Diagram scenariusza B1 ](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
-
-[![Diagram scenariusza B2 ](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
-
-Odpowiedni przewodnik po sieci firmowej zawiera wskazówki dotyczące rejestrowania usługi HoloLens 2 w istniejącym zarządzaniu urządzeniami, stosowania licencji zgodnie z potrzebami i sprawdzania, czy użytkownicy końcowi mogą korzystać z przewodnika usługi Dynamics 365, a także używania niestandardowych aplikacji biznesowych po skonfigurowaniu urządzenia.
+W odpowiednim przewodniku po chmurze opisano sposób rejestrowania usługi HoloLens 2 w usłudze zarządzania urządzeniami, stosowania licencji zgodnie z potrzebami i sprawdzania, czy użytkownicy końcowi mogą natychmiast korzystać z usługi Remote Assist podczas konfigurowania urządzenia.
 
 > [!div class="nextstepaction"]
-> [Przewodnik wdrażania sieci firmowej](hololens2-corp-connected-overview.md)
+> [Przewodnik wdrażania połączonego z chmurą](hololens2-cloud-connected-overview.md)
+
+Przewodnik Klienci zewnętrzni umożliwia wdrażanie urządzeń w lokacji zdalnej do krótkoterminowego lub długoterminowego użytku zewnętrznego.
+
+> [!div class="nextstepaction"]
+> [Przewodnik wdrażania połączonych z chmurą (klientów zewnętrznych)](hololens2-deployment-guide.md)
+
+## <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scenariusz B: wdrażanie wewnątrz sieci organizacji
+
+Ten scenariusz jest identyczny z klasycznym wdrożeniem dla większości Windows 10 komputerów. HoloLens 2 jest wdrażany do użytku głównie w sieci firmowej z dostępem do wewnętrznych zasobów firmy. Usługi internetowe i w chmurze mogą być ograniczone. 
+
+[![Diagram scenariusza B1](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+
+[![Diagram scenariusza B2](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+### <a name="when-to-use"></a>Kiedy stosować
+
+Rozważ ten model wdrażania dla:
+
+* Użytkownicy wewnętrzni
+* Wdrażanie na dużą skalę (pilotażowa i produkcyjna) w środowisku firmowym
+
+### <a name="basic-common-configurations"></a>Podstawowe typowe konfiguracje
+
+* Wi-Fi to wewnętrzna sieć firmowa z dostępem do zasobów wewnętrznych i ograniczonym dostępem do Internetu lub usług w chmurze.
+* Azure AD Join with MDM Auto Enrollment
+* Zarządzanie urządzeniami przenośnymi (Intune)
+* Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
+  * Obsługiwani są pojedynczy lub wielu użytkowników na urządzenie
+* Różne poziomy konfiguracji blokady urządzeń są stosowane na podstawie konkretnych przypadków użycia, od w pełni otwartego do kiosku z pojedynczą aplikacją.
+* Co najmniej jedna aplikacja jest wdrażana za pośrednictwem rozwiązania MDM
+
+### <a name="common-challenges"></a>Typowe wyzwania
+
+* HoloLens 2 nie obsługuje dołączania do lokalnej usługi AD ani System Center Configuration Manager (SCCM). Tylko dołączanie do usługi Azure AD za pomocą rozwiązania MDM. Obecnie wiele firm nadal wdraża komputery z systemem Windows 10 w tym scenariuszu jako lokalne urządzenia przyłączone do usługi AD, zarządzane przez program SCCM i mogą nie mieć wdrożonej/skonfigurowanej infrastruktury do zarządzania wewnętrznymi urządzeniami Windows 10 za pośrednictwem rozwiązań MDM opartych na chmurze.
+* Ponieważ HoloLens 2 to urządzenie w chmurze, w dużym stopniu opiera się ono na usługach połączonych z Internetem i w chmurze na temat uwierzytelniania użytkowników, aktualizacji systemu operacyjnego, zarządzania urządzeniami przenośnymi i tak dalej. Podczas nawiązywania połączenia z siecią firmową najprawdopodobniej należy dostosować reguły serwera proxy/zapory, aby umożliwić dostęp do usługi HoloLens 2 i aplikacji, które na nim działają.
+* Łączność Wi-Fi zwykle wymaga certyfikatów w celu uwierzytelnienia urządzenia lub użytkownika w sieci. Skonfigurowanie wymaganej infrastruktury lub ustawień do wdrażania certyfikatów na urządzeniach Windows 10 za pośrednictwem zarządzania urządzeniami przenośnymi może być trudne.
+
+Odpowiedni przewodnik po połączeniu firmowym zawiera instrukcji na temat rejestrowania usługi HoloLens 2 w istniejącym zarządzaniu urządzeniami, stosowania licencji zgodnie z potrzebami i sprawdzania, czy użytkownicy końcowi mogą korzystać z przewodnika usługi Dynamics 365, a także używania niestandardowych aplikacji biznesowych po skonfigurowaniu urządzenia.
+
+> [!div class="nextstepaction"]
+> [Przewodnik wdrażania po połączeniu firmowym](hololens2-corp-connected-overview.md)
 
 ## <a name="scenario-c-deploy-in-secure-offline-environment"></a>Scenariusz C: wdrażanie w bezpiecznym środowisku offline
 
-Jest to typowe wdrożenie dla wysoce bezpiecznych lub poufnych lokalizacji. HoloLens 2 jest wdrażany głównie w trybie offline bez dostępu do sieci ani Internetu. 
- * Podstawowe typowe konfiguracje
-   * Wi-Fi jest wyłączona. W razie potrzeby można włączyć łączność z siecią LAN za pośrednictwem portu ETHERNET za pośrednictwem portu USB.
-   * Nie zarządzana.
-   * Konto użytkownika lokalnego do logowania urządzenia.
-     * HoloLens 2 obsługuje tylko jedno konto lokalne.
-   * Różne poziomy konfiguracji blokady urządzeń są stosowane za pośrednictwem pakietów aprowiwizowania na podstawie określonych przypadków użycia. Te konfiguracje są zwykle ograniczone ze względu na wymagania dotyczące bezpiecznego środowiska.
-   * Co najmniej jedna aplikacja jest wdrażana za pośrednictwem pakietu aprowizowania
+Jest to typowe wdrożenie dla wysoce bezpiecznych lub poufnych lokalizacji. HoloLens 2 jest wdrażany do użytku głównie w trybie offline bez dostępu do sieci ani Internetu.
 
- * Typowe wyzwania
-   * Istnieje ograniczony zestaw konfiguracji dostępny za pośrednictwem pakietów aprowizowania
-   * Nie można używać usług w chmurze, co ogranicza możliwości HoloLens 2.
-   * Wyższe koszty administracyjne, ponieważ te urządzenia muszą być konfigurowane, konfigurowane i aktualizowane ręcznie.
+[![Bezpieczny diagram trybu offline 1](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
-[![Bezpieczny diagram trybu offline 1 ](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+### <a name="when-to-use"></a>Kiedy stosować
 
-Odpowiedni bezpieczny przewodnik w trybie offline zawiera instrukcje dotyczące stosowania przykładowego pakietu aprowizowania, który zablokuje HoloLens 2 do użycia w bezpiecznych środowiskach.
+Rozważ ten model wdrażania dla:
+
+* Środowiska o wysokim stopniu bezpieczeństwa, w których dane muszą być przechowywane w domu
+* "Doświadczenia", w których publiczna będzie korzystać z urządzeń
+* Problem z łącznością z Internetem w obszarze zdalnym
+
+### <a name="basic-common-configurations"></a>Podstawowe typowe konfiguracje
+
+* Wi-Fi łączność jest wyłączona. Sieć Ethernet za pośrednictwem portu USB może być włączona dla łączności z siecią LAN, jeśli jest to konieczne
+* Nie zarządzana
+* Konto użytkownika lokalnego do logowania urządzenia
+  * HoloLens 2 obsługuje tylko jedno konto lokalne
+* Różne poziomy konfiguracji blokady urządzeń są stosowane za pośrednictwem pakietów aprowiwizowania na podstawie określonych przypadków użycia. Te konfiguracje są zwykle ograniczone ze względu na wymagania dotyczące bezpiecznego środowiska
+* Co najmniej jedna aplikacja jest wdrażana za pośrednictwem pakietu aprowizowania
+
+### <a name="common-challenges"></a>Typowe wyzwania
+
+* Istnieje ograniczony zestaw konfiguracji dostępnych za pośrednictwem pakietów aprowizowania
+* Nie można używać usług w chmurze, co ogranicza liczbę HoloLens 2.
+* Wyższe koszty administracyjne, ponieważ te urządzenia muszą być konfigurowane, konfigurowane i aktualizowane ręcznie.
+
+Odpowiedni bezpieczny przewodnik w trybie offline zawiera instrukcje stosowania przykładowego pakietu aprowizowania, który zablokuje pakiet HoloLens 2 do użycia w bezpiecznych środowiskach.
 
 > [!div class="nextstepaction"]
 > [Przewodnik wdrażania bezpiecznego środowiska w trybie offline](hololens-common-scenarios-offline-secure.md)
-
-

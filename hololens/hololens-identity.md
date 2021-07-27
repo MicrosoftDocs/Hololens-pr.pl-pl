@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4d959d99b65085aea2a776725abdb36e27b43b81
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1081ed512183592e66e65f2e69323752b822f1c1
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640393"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659186"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Zarządzanie tożsamością użytkownika i logowaniem na HoloLens
 
@@ -45,7 +45,7 @@ Konta połączone z chmurą (Azure AD i MSA) oferują więcej funkcji, ponieważ
 > 1 — Azure AD — wersja Premium logowanie do urządzenia nie jest wymagane. Jest to jednak wymagane w przypadku innych funkcji wdrożenia opartego na chmurze o niskim poziomie dotyku, takich jak rejestracja automatyczna i rozwiązanie Autopilot.
 
 > [!NOTE]
-> 2 — Chociaż urządzenie HoloLens 2 może obsługiwać maksymalnie 64 konta usługi Azure AD, tylko 10 z tych kont może zarejestrować się w uwierzytelnianiu Iris. Jest to zgodne z innymi opcjami uwierzytelniania [biometrycznego dla Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 2 — Chociaż urządzenie HoloLens 2 może obsługiwać maksymalnie 64 konta usługi Azure AD, tylko 31 z tych kont może zarejestrować się w uwierzytelnianiu Iris. Jest to zgodne z innymi opcjami uwierzytelniania [biometrycznego dla Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## <a name="setting-up-users"></a>Konfigurowanie użytkowników
 
@@ -112,34 +112,34 @@ Jednym ze sposobów tworzenia aplikacji dla HoloLens dla komputerów stacjonarny
 
 ### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Czy Windows Hello dla firm są obsługiwane HoloLens (1. generacji)?
 
-Windows Hello for Business (która obsługuje logowanie przy użyciu numeru PIN) jest obsługiwana HoloLens (1. generacji). Aby zezwolić Windows Hello na logowanie przy HoloLens PIN dla firm:
+Windows Hello for Business (która obsługuje logowanie przy użyciu numeru PIN) jest obsługiwana HoloLens (1. generacji). Aby zezwolić Windows Hello numeru PIN dla firm na HoloLens:
 
-1. Urządzenie HoloLens musi być zarządzane [przez rozwiązanie MDM.](hololens-enroll-mdm.md)
+1. Urządzenie HoloLens musi być [zarządzane przez rozwiązanie MDM.](hololens-enroll-mdm.md)
 1. Musisz włączyć Windows Hello dla firm dla urządzenia. (Zobacz[instrukcje dotyczące Microsoft Intune.](/intune/windows-hello))
-1. Na HoloLens użytkownik może następnie skonfigurować numer PIN przy użyciu Ustawienia logowania Dodaj numer  >    >   PIN.
+1. Na HoloLens użytkownik może następnie skonfigurować numer **PIN** przy użyciu Ustawienia logowania Dodaj  >    >   numer PIN.
 
 > [!NOTE]
-> Użytkownicy, którzy logują się przy użyciu konta konto Microsoft mogą również skonfigurować numer PIN Ustawienia  >  **opcje logowania Dodaj** numer  >  **PIN.** Ten numer PIN jest skojarzony [z Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), a nie Windows Hello [for Business.](/windows/security/identity-protection/hello-for-business/hello-overview)
+> Użytkownicy, którzy logują się przy użyciu konta konto Microsoft mogą również skonfigurować numer PIN w Ustawienia  >  **opcje logowania** Dodaj numer  >  **PIN.** Ten numer PIN jest skojarzony [z Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), a Windows Hello [dla firm.](/windows/security/identity-protection/hello-for-business/hello-overview)
 
-### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>Jak zaimplementowano uwierzytelnianie biometryczne irysów w HoloLens 2?
+### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>W jaki sposób uwierzytelnianie biometryczne irysów jest implementowane HoloLens 2?
 
-HoloLens 2 obsługuje uwierzytelnianie irysów. Iris jest oparty na technologii Windows Hello i jest obsługiwany do użytku zarówno przez Azure Active Directory jak i konta Microsoft. Iris jest implementowane tak samo jak inne Windows Hello i osiąga zabezpieczenia biometryczne FAR na 1/100 tys.
+HoloLens 2 obsługuje uwierzytelnianie irysów. Irysy są oparte na Windows Hello technologii i są obsługiwane do użytku zarówno przez Azure Active Directory, jak i konta Microsoft. Iris jest implementowane tak samo jak inne Windows Hello technologii i osiąga zabezpieczenia biometryczne FAR 1/100K.
 
-Zobacz wymagania [biometryczne i specyfikacje dotyczące Windows Hello,](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) aby uzyskać więcej informacji. Dowiedz się więcej [o Windows Hello](/windows-hardware/design/device-experiences/windows-hello) i Windows Hello [for Business.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) 
+Aby uzyskać [więcej informacji,](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) zobacz wymagania i specyfikacje Windows Hello biometryczne. Dowiedz się więcej [o Windows Hello](/windows-hardware/design/device-experiences/windows-hello) i Windows Hello [dla firm.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) 
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>Jak typ konta wpływa na zachowanie logowania?
 
-Jeśli stosujesz zasady logowania, zasady są zawsze przestrzegane. Jeśli nie zastosowano żadnych zasad logowania, są to domyślne zachowania dla każdego typu konta:
+Jeśli stosujesz zasady logowania, zasady są zawsze przestrzegane. Jeśli nie zastosowano żadnych zasad logowania, są to zachowania domyślne dla każdego typu konta:
 
-- **Usługa Azure AD:** domyślnie prosi o  uwierzytelnienie i można go Ustawienia, aby nie prosił już o uwierzytelnienie.
-- **konto Microsoft:** zachowanie blokady różni się, umożliwiając automatyczne odblokowywanie, jednak uwierzytelnianie logowania jest nadal wymagane podczas ponownego uruchamiania.
-- **Konto lokalne:** zawsze pyta o uwierzytelnienie w postaci hasła, których nie można skonfigurować w **Ustawienia**
+- **Azure AD:** prosi o uwierzytelnianie domyślnie i można je Ustawienia **nie** pytać o uwierzytelnianie.
+- **konto Microsoft:** zachowanie blokady różni się, umożliwiając automatyczne odblokowywanie, jednak uwierzytelnianie logowania jest nadal wymagane przy ponownym uruchomieniu.
+- **Konto lokalne:** zawsze pyta o uwierzytelnianie w postaci hasła, których nie można skonfigurować w **Ustawienia**
 
 > [!NOTE]
-> Czasomierze nieaktywności nie są obecnie obsługiwane, co oznacza, że zasady **AllowIdleReturnWithoutPassword** są przestrzegane tylko wtedy, gdy urządzenie przejdzie do trybu StandBy.
+> Czasomierze nieaktywności nie są obecnie obsługiwane, co oznacza, że zasady **AllowIdleReturnWithoutPassword** są przestrzegane tylko wtedy, gdy urządzenie przejdzie w tryb standBy.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 Przeczytaj o wiele więcej na temat ochrony tożsamości użytkowników i uwierzytelniania w [dokumentacji Windows 10 zabezpieczeń i tożsamości.](/windows/security/identity-protection/)
 
-Dowiedz się więcej na temat konfigurowania infrastruktury tożsamości hybrydowej dokładnie z [dokumentacji tożsamości hybrydowej platformy Azure.](/azure/active-directory/hybrid/)
+Dowiedz się więcej na temat konfigurowania infrastruktury tożsamości hybrydowej, zapoznaj się z [dokumentacją tożsamości hybrydowej platformy Azure.](/azure/active-directory/hybrid/)
