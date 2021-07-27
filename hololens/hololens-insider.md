@@ -1,5 +1,5 @@
 ---
-title: Insider Preview for Microsoft HoloLens
+title: Niejawna wersja zapoznawcza dla Microsoft HoloLens
 description: Dowiedz się, jak rozpocząć pracę z kompilacjami niejawnych testerów i przekazać cenną opinię na temat naszej następnej ważnej aktualizacji systemu operacyjnego na HoloLens.
 ms.prod: hololens
 ms.sitesec: library
@@ -16,50 +16,51 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
+ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659203"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114693712"
 ---
-# <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview for Microsoft HoloLens
+# <a name="insider-preview-for-microsoft-hololens"></a>Niejawna wersja zapoznawcza dla Microsoft HoloLens
 
 Witamy w najnowszych kompilacjach insider preview dla HoloLens! Łatwo jest rozpocząć pracę [i przekazać](hololens-insider.md#start-receiving-insider-builds) cenną opinię na temat naszej następnej ważnej aktualizacji systemu operacyjnego na HoloLens.
 
 ## <a name="windows-insider-release-notes"></a>Windows Informacje o wersji dla niejawnych testerów
 
-Z przyjemnością rozpoczynamy lotami po nowych funkcjach, aby ponownie Windows niejawnych testerów. Nowe kompilacje będą dostępne w kanałach Dev i Beta, aby uzyskać najnowsze aktualizacje. Będziemy nadal aktualizować tę stronę w przypadku dodawania kolejnych funkcji i aktualizacji do naszych Windows niejawnych testerów. Przygotuj się do pomieszania tych aktualizacji ze swoją rzeczywistością.
+Z przyjemnością zaczynamy ponownie testować nowe funkcje, aby Windows niejawnych testerów. Nowe kompilacje będą dostępne w kanałach Dev i Beta, aby uzyskać najnowsze aktualizacje. Będziemy aktualizować tę stronę w przypadku dodawania kolejnych funkcji i aktualizacji do naszych Windows niejawnych testerów. Ekscytują i przygotują się do pomieszania tych aktualizacji ze swoją rzeczywistością.
 
 | Cecha                 | Opis                | Użytkownik lub scenariusz | Wprowadzono kompilację |
 |-------------------------|----------------------------|--------------|------------------|
 | [Zmiany WSP dotyczące raportowania HoloLens szczegóły](#csp-changes-for-reporting-hololens-details) | Nowi CSP dla programu do wykonywania zapytań o dane | Administratorzy IT    | 20348.1403                 |
-| [Zasady automatycznego logowania kontrolowane przez CSP](#auto-login-policy-controlled-by-csp) | Służy do automatycznego logowania się do konta | Administratorzy IT | 20348.1405 |
-| [Obsługa plików PFX dla Menedżera certyfikatów](#pfx-file-support-for-certificate-manager) | Dodawanie certyfikatów PFX za pośrednictwem Ustawienia użytkownika | Użytkownik końcowy | 20348.1405 |
+| [Zasady automatycznego logowania kontrolowane przez zasady CSP](#auto-login-policy-controlled-by-csp) | Używane do automatycznego logowania się do konta | Administratorzy IT | 20348.1405 |
+| [Obsługa plików PFX dla Menedżera certyfikatów](#pfx-file-support-for-certificate-manager) | Dodawanie certyfikatów PFX za pomocą interfejsu Ustawienia użytkownika | Użytkownik końcowy | 20348.1405 |
 | [Wyświetlanie zaawansowanego raportu diagnostycznego w Ustawienia na HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Wyświetlanie dzienników diagnostycznych mdm na urządzeniu | Rozwiązywanie problemów | 20348.1405 |
 | [Powiadomienia diagnostyki w trybie offline](#offline-diagnostics-notifications) | Opinie dotyczące zbierania dzienników | Rozwiązywanie problemów | 20348.1405 |
 | [Używaj tylko aplikacji ze sklepu prywatnego tylko dla Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Konfigurowanie aplikacji ze sklepu w celu pokazywania tylko aplikacji z organizacji | Administrator IT | 20348.1408 |
+| [Poprawki i ulepszenia](hololens-insider.md#fixes-and-improvements) | Poprawki i ulepszenia dotyczące HoloLens. | Wszystko | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Zmiany WSP dotyczące raportowania HoloLens szczegóły
 
 - Wprowadzono w kompilacji Windows Insider, 20348.1403
 
-Następujący CSP zostały zaktualizowane o nowe sposoby zgłaszania informacji z HoloLens mobilnych.
+Następujący CSP zostały zaktualizowane o nowe sposoby zgłaszania informacji z HoloLens urządzeń.
 
 #### <a name="devdetail-csp---free-storage"></a>DevDetail CSP — bezpłatne Storage
 
-DevDetail CSP now now also reports free storage space on HoloLens device. Powinno to być w przybliżeniu zgodne z wartością wyświetlaną Ustawienia stronie aplikacji Storage aplikacji. Poniżej znajduje się konkretny węzeł zawierający te informacje.
+DevDetail CSP now also reports free storage space on HoloLens device. Powinno to być w przybliżeniu zgodne z wartością wyświetlaną na Ustawienia aplikacji Storage aplikacji. Poniżej znajduje się konkretny węzeł zawierający te informacje.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (tylko operacja GET)
 
 #### <a name="devicestatus-csp---ssid-and-bssid"></a>DeviceStatus CSP — SSID i BSSID
 
-DeviceStatus CSP now also reports SSID and BSSID of Wi-Fi network which HoloLens is actively connected. Poniżej przedstawiono konkretne węzły zawierające te informacje.
+DeviceStatus CSP teraz raporty SSID i BSSID Wi-Fi sieci, z którą HoloLens jest aktywnie połączony. Poniżej przedstawiono określone węzły zawierające te informacje.
 
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/ adres mac karty *Wi-Fi*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*adres mac* karty Wi-Fi /SSID
 - ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*adres mac* karty Wi-Fi /BSSID
 
-Przykład obiektu blob syncml (dla dostawców mdm) do wykonywania zapytań o identyfikatory sieci
+Przykładowy obiekt blob syncml (dla dostawców mdm) do wykonywania zapytań o identyfikatory sieci
 
 ```xml
 <SyncML>
@@ -79,53 +80,53 @@ Przykład obiektu blob syncml (dla dostawców mdm) do wykonywania zapytań o ide
 </SyncML>
 ```
 
-### <a name="auto-login-policy-controlled-by-csp"></a>Zasady automatycznego logowania kontrolowane przez CSP
+### <a name="auto-login-policy-controlled-by-csp"></a>Zasady automatycznego logowania kontrolowane przez zasady CSP
 
-Ta nowa zasada AutoLogonUser określa, czy użytkownik będzie automatycznie zalogowany. Niektórzy klienci chcą skonfigurować urządzenia, które są powiązane z tożsamością, ale nie chcą mieć żadnego logowania. Imagine urządzenie i natychmiast korzystać z pomocy zdalnej. Możesz też skorzystać z możliwości szybkiej dystrybucji urządzeń HoloLens i umożliwienia użytkownikom końcowy szybszego logowania.
+Ta nowa zasada AutoLogonUser określa, czy użytkownik będzie automatycznie zalogowany. Niektórzy klienci chcą skonfigurować urządzenia, które są powiązane z tożsamością, ale nie chcą mieć żadnego logowania. Imagine urządzenie i natychmiast korzystać ze zdalnej pomocy. Możesz też skorzystać z możliwości szybkiej dystrybucji urządzeń HoloLens i umożliwienia użytkownikom końcowi przyspieszenia logowania.
 
-Jeśli zasady są ustawione na niepustą wartość, określają adres e-mail użytkownika logowania automatycznego. Określony użytkownik musi logować się na urządzeniu co najmniej raz, aby włączyć automatyczne logowanie.
+Gdy zasady są ustawione na wartość niepustą, określają adres e-mail użytkownika logowania automatycznego. Określony użytkownik musi logować się na urządzeniu co najmniej raz, aby włączyć automatyczne logowanie.
 
-OMA-URI nowej wartości `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser` ciągu zasad
+OMA-URI wartości ciągu `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser` nowych zasad
 
-- Użytkownik z tym samym adresem e-mail będzie miał włączone automatyczne logowanie.
+- Użytkownik z tym samym adresem e-mail będzie mieć włączone automatyczne logowanie.
 
-Na urządzeniu, na którym te zasady są skonfigurowane, użytkownik określony w zasadach musi się logować co najmniej raz. Podczas kolejnych ponownych uruchomień urządzenia po pierwszym zalogowaniu określony użytkownik będzie automatycznie zalogowany. Obsługiwany jest tylko jeden użytkownik z automatycznym logowaniem. Po włączeniu automatycznie zalogowanego użytkownika nie będzie można wylogować się ręcznie. Aby logować się jako inny użytkownik, należy najpierw wyłączyć zasady.
+Na urządzeniu, na którym te zasady są skonfigurowane, użytkownik określony w zasadach musi się logować co najmniej raz. Kolejne ponowne uruchomienie urządzenia po pierwszym zalogowaniu spowoduje automatyczne zalogowanie określonego użytkownika. Obsługiwany jest tylko jeden użytkownik z automatycznym logowaniem. Po włączeniu automatycznie zalogowany użytkownik nie będzie mógł wylogować się ręcznie. Aby logować się jako inny użytkownik, należy najpierw wyłączyć zasady.
 
 > [!NOTE]
-> - Niektóre zdarzenia, takie jak główne aktualizacje systemu operacyjnego, mogą wymagać od określonego użytkownika ponownego zalogowania się na urządzeniu w celu wznowienia działania automatycznego logowania. 
-> - Logowanie automatyczne jest obsługiwane tylko w przypadku użytkowników msa i usługi AAD.
+> - Niektóre zdarzenia, takie jak główne aktualizacje systemu operacyjnego, mogą wymagać od określonego użytkownika ponownego zalogowania się na urządzeniu w celu wznowienia zachowania automatycznego logowania. 
+> - Automatyczne logowanie jest obsługiwane tylko dla użytkowników msa i usługi AAD.
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>Obsługa plików PFX dla Menedżera certyfikatów
 
-Wprowadzono w kompilacji Windows Insider 20348.1405. Dodaliśmy obsługę Menedżera [](certificate-manager.md) certyfikatów, aby teraz używać certyfikatów pfx. Gdy użytkownicy **przejdą** do Ustawienia zaktualizują &, a następnie wybierzą pozycję Zainstaluj certyfikat, interfejs użytkownika obsługuje teraz  >    >  plik certyfikatu pfx. 
-Użytkownicy mogą importować certyfikat PFX z kluczem prywatnym do magazynu użytkowników lub magazynu maszynowego.
+Wprowadzono w kompilacji Windows Insider 20348.1405. Dodaliśmy obsługę Menedżera [](certificate-manager.md) certyfikatów, aby teraz używać certyfikatów pfx. Gdy użytkownicy przejdą do **Ustawienia** zaktualizują & certyfikatów zabezpieczeń, a następnie wybierzą pozycję Zainstaluj certyfikat, interfejs użytkownika obsługuje teraz  >    >  plik certyfikatu pfx. 
+Użytkownicy mogą importować certyfikat PFX z kluczem prywatnym do magazynu użytkowników lub magazynu maszyn.
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Wyświetlanie zaawansowanego raportu diagnostycznego w Ustawienia na HoloLens
 
-W przypadku urządzeń zarządzanych podczas rozwiązywania problemów z zachowaniem ważnym krokiem jest potwierdzenie zastosowania oczekiwanej konfiguracji zasad. Wcześniej ta nowa funkcja musiała zostać wyłączona za pośrednictwem rozwiązania MDM lub w pobliżu urządzenia po wyeksportowaniu dzienników diagnostycznych MDM zebranych za pośrednictwem konta usługi Ustawienia Dostęp do miejsca pracy lub nauki, **a** następnie wybranie opcji Eksportuj dzienniki zarządzania i przeglądane na pobliskim  ->    >  komputerze. 
+W przypadku urządzeń zarządzanych podczas rozwiązywania problemów z zachowaniem ważnym krokiem jest potwierdzenie zastosowania oczekiwanej konfiguracji zasad. Wcześniej ta nowa funkcja musiała zostać wyłączona za pośrednictwem rozwiązania MDM lub w pobliżu urządzenia po wyeksportowaniu dzienników diagnostycznych MDM zebranych za pośrednictwem konta **usługi Ustawienia** Dostęp do miejsca pracy lub nauki, a następnie wybierz pozycję Eksportuj dzienniki zarządzania i wyświetl je na pobliskim  ->    >  komputerze. 
 
 Teraz diagnostykę MDM można wyświetlić na urządzeniu przy użyciu przeglądarki Edge. Aby łatwiej wyświetlić raport diagnostyczny MDM, przejdź do strony Dostęp do konta służbowego i wybierz pozycję **Wyświetl zaawansowany raport diagnostyczny.** Spowoduje to wygenerowanie i otwarcie raportu w nowym oknie przeglądarki Edge.
 
-![Wyświetlanie zaawansowanego raportu diagnostycznego w Ustawienia aplikacji.](./images/view-advanced-diagnostic-report.jpg)
+![Wyświetlanie zaawansowanego raportu diagnostycznego Ustawienia aplikacji.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>Powiadomienia diagnostyki w trybie offline
 
-Jest to aktualizacja istniejącej funkcji o nazwie [Diagnostyka w trybie offline.](hololens-diagnostic-logs.md#offline-diagnostics) Wcześniej nie było jasnego wskaźnika dla użytkowników, że wyzwolono kolekcję diagnostyczną lub została ona zakończona.
-Teraz dodane w kompilacjach Windows Insider istnieją dwie formy poufnych opinii na temat diagnostyki w trybie offline. Pierwsze z nich to wyskakujące powiadomienia wyświetlane zarówno podczas uruchamiania, jak i zakończenia zbierania. Będą one wyświetlane, gdy użytkownik jest zalogowany i ma wizualizacje.
+Jest to aktualizacja istniejącej funkcji o nazwie [Diagnostyka w trybie offline.](hololens-diagnostic-logs.md#offline-diagnostics) Wcześniej nie było jasnego wskaźnika dla użytkowników, że wyzwolili kolekcję diagnostyczną lub została ona zakończona.
+Teraz dodano Windows kompilacji niejawnych testerów, istnieją dwie formy informacji zwrotnych dla diagnostyki w trybie offline. Pierwsze to wyskakujące powiadomienia wyświetlane zarówno podczas uruchamiania, jak i zakończenia zbierania. Będą one wyświetlane, gdy użytkownik jest zalogowany i ma wizualizacje.
 
 ![Wyskakujące powiadomienia dotyczące zbierania dzienników.](./images/logcollection1.jpg)
 
-![Wyskakujące wyskakujące powiadomienia po zakończeniu zbierania dzienników.](./images/logcollection2.jpg)
+![Wyskakujące powiadomienia po zakończeniu zbierania dzienników.](./images/logcollection2.jpg)
  
 Ponieważ użytkownicy często używają diagnostyki offline jako mechanizmu rezerwowego zbierania dzienników, gdy nie mają dostępu do ekranu, nie mogą się zalogować lub nadal znajdują się w trybie OOBE, podczas zbierania dzienników będzie również odtwarzany sygnał dźwiękowy. Ten dźwięk będzie odtwarzany oprócz powiadomienia wyskakującego.
 
-Ta nowa funkcja zostanie włączona podczas aktualizacji urządzenia i nie trzeba jej włączać ani zarządzać. W przypadku, gdy nie będzie można wyświetlić ani wysłuchać tej nowej opinii, diagnostyka w trybie offline będzie nadal generowana.
+Ta nowa funkcja zostanie włączona podczas aktualizacji urządzenia i nie trzeba jej włączać ani zarządzać. W przypadku, gdy nie będzie można wyświetlić ani słyszeć tej nowej opinii, diagnostyka w trybie offline będzie nadal generowana.
 
-Mamy nadzieję, że dzięki nowszej dodatku opinii będzie można łatwiej zbierać dane diagnostyczne i szybciej rozwiązywać problemy.
+Mamy nadzieję, że dzięki temu nowszej dodatku opinii zwrotnej łatwiej jest zbierać dane diagnostyczne i szybciej rozwiązywać problemy.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Używaj tylko aplikacji ze sklepu prywatnego dla Microsoft Store
 
-Zasady RequirePrivateStoreOnly zostały włączone dla HoloLens. Te zasady umożliwiają skonfigurowanie Microsoft Store do pokazywania tylko magazynu prywatnego skonfigurowanego dla organizacji. Ograniczenie dostępu tylko do aplikacji, które zostały udostępnione.
+Zasady RequirePrivateStoreOnly zostały włączone dla HoloLens. Te zasady umożliwiają skonfigurowanie Microsoft Store tak, aby wyświetlała tylko sklep prywatny skonfigurowany dla organizacji. Ograniczenie dostępu tylko do aplikacji, które zostały udostępnione.
 
 Dowiedz się więcej o [applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
