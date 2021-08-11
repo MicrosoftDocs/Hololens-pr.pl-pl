@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18dc962b869dafaea9ff9c605eef51fcbb35bfb2
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ad210c9d31d8d7c226345618b6dfabf8457ee2398882935920d7b3217259a644
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664880"
 ---
 # <a name="find-open-and-save-files-on-hololens"></a>Znajdowanie, otwieranie i zapisywanie plików na HoloLens
 
@@ -62,7 +62,7 @@ Możesz również zainstalować aplikację OneDrive [z aplikacji](https://www.mi
 
 ### <a name="onedrive-app"></a>OneDrive aplikacji
 
-[OneDrive](https://onedrive.live.com/) umożliwia dostęp do zdjęć i filmów wideo oraz zarządzanie nimi za pomocą dowolnego urządzenia i dowolnego użytkownika. Aby uzyskać dostęp do zdjęć i wideo przechwyconych na HoloLens, pobierz aplikację OneDrive ze strony Microsoft Store na HoloLens. [](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) Po pobraniu otwórz aplikację OneDrive i wybierz pozycję **Ustawienia** Camera upload (Przekaż za pomocą aparatu) i włącz pozycję Camera upload (Przekaż za pomocą  >   **aparatu).**
+[OneDrive](https://onedrive.live.com/) umożliwia dostęp do zdjęć i filmów wideo oraz zarządzanie nimi za pomocą dowolnego urządzenia i dowolnego użytkownika. Aby uzyskać dostęp do zdjęć i wideo przechwyconych na HoloLens, pobierz aplikację OneDrive [ze](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) strony Microsoft Store na HoloLens. Po pobraniu otwórz aplikację OneDrive i wybierz pozycję **Ustawienia**  >  **Camera upload**(Przekaż za pomocą aparatu) i włącz pozycję Camera upload (Przekaż z **aparatu).**
 
 ### <a name="connect-to-a-pc"></a>Połączenie do komputera
 
@@ -76,7 +76,7 @@ Jeśli aplikacja zapisuje pliki na urządzeniu, możesz użyć tej aplikacji, ab
 
 ### <a name="requesting-files-from-another-app"></a>Żądanie plików z innej aplikacji
 
-Aplikacja może zażądać zapisania pliku lub otwarcia pliku z innej aplikacji przy użyciu [s wyboru plików](/windows/mixed-reality/app-model#file-pickers).
+Aplikacja może poprosić o zapisanie pliku lub otwarcie pliku z innej aplikacji przy użyciu [s wyboru plików](/windows/mixed-reality/app-model#file-pickers).
 
 ### <a name="known-folders"></a>Znane foldery
 

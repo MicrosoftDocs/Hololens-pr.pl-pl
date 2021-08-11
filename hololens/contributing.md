@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665070"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Współtwoowanie dokumentacji HoloLens dokumentacji
 
@@ -71,7 +71,7 @@ Użyj następującego przepływu pracy, aby wprowadzić aktualizacje *istniejąc
    * **author:** jeśli jesteś głównym właścicielem strony, dodaj tutaj GitHub alias.
    * **ms.author:** jeśli jesteś głównym właścicielem strony, dodaj tutaj swój alias firmy Microsoft (nie potrzebujesz @microsoft.com tylko aliasu ).
    * **ms.date:** zaktualizuj datę, jeśli dodajesz główną zawartość do strony, ale nie dla poprawek, takich jak wyjaśnienie, formatowanie, gramatyka lub pisownia.
-   * **keywords:** słowa kluczowe wspomagają optymalizację pod kątem wyszukiwarek. Dodaj słowa kluczowe rozdzielone przecinkiem i spacją, które są specyficzne dla Twojego artykułu, ale nie interpunkcja po ostatnim sdaniu kluczowym na liście. Nie musisz dodawać globalnych słów kluczowych, które mają zastosowanie do wszystkich artykułów, ponieważ są one zarządzane w innym miejscu. 
+   * **keywords:** Słowa kluczowe wspomagają optymalizację pod kątem wyszukiwarek. Dodaj słowa kluczowe rozdzielone przecinkiem i spacją, które są specyficzne dla Twojego artykułu, ale nie będą interpunkcją po ostatnim sdaniu kluczowym na liście. Nie musisz dodawać globalnych słów kluczowych, które mają zastosowanie do wszystkich artykułów, ponieważ są one zarządzane w innym miejscu. 
    
 5. Po zakończeniu edycji artykułu przewiń w dół i wybierz pozycję **Zaproponuj zmianę pliku.**
 
@@ -167,12 +167,12 @@ Rozszerzenie [Docs Markdown dla](/teamblog/docs-extension) usługi Visual Studio
 Musisz przekazać obrazy do folderu "mixed-reality-docs/images" w repocie, a następnie odwołać się do nich odpowiednio w artykule. Obrazy będą automatycznie wyświetlane w pełnym rozmiarze, co oznacza, że duże obrazy wypełnią całą szerokość artykułu. Zalecamy wstępne zmiany rozmiaru obrazów przed ich przekazaniem. Zalecana szerokość to od 600 do 700 pikseli, ale rozmiar należy odpowiednio w górę lub w dół, jeśli jest to gęsty zrzut ekranu lub część zrzutu ekranu.
 
 >[!IMPORTANT]
->Przed scaleniem obrazy można przekazywać tylko do swojego rozdętego repo. Dlatego jeśli planujesz dodawanie obrazów do artykułu, musisz najpierw użyć usługi [Visual Studio Code,](#using-visual-studio-code) aby dodać obrazy do folderu "images" twojego widelecu lub upewnić się, że w przeglądarce internetowej zostały wykonane następujące czynności:
+>Obrazy można przekazywać tylko do rozdętego repo przed scaleniem. Dlatego jeśli planujesz dodawanie obrazów do artykułu, musisz najpierw użyć usługi [Visual Studio Code,](#using-visual-studio-code) aby dodać obrazy do folderu "images" twojego widelecu lub upewnić się, że w przeglądarce internetowej zostały wykonane następujące czynności:
 >
 >1. Forked the MicrosoftDocs/mixed-reality repo (Forked the MicrosoftDocs/mixed-reality repo).
 >2. Zedytował artykuł w twoim widełku.
 >3. Przekazane obrazy, do których odwołujesz się w artykule, do folderu "mixed-reality-docs/images" w twoim widełku.
->4. Utworzono **żądanie ściągnięć** w celu scalenia twojego widelecu z gałęzią master MicrosoftDocs/mixed-reality. 
+>4. Utworzono **żądanie ściągnięcie** w celu scalenia twojego widelecu z gałęzią master MicrosoftDocs/mixed-reality. 
 >
 >Aby dowiedzieć się, jak skonfigurować własne forked repo, postępuj zgodnie z instrukcjami [dotyczącymi tworzenia nowego artykułu.](#creating-a-new-article)
 
@@ -183,7 +183,7 @@ Podczas edytowania GitHub za pośrednictwem przeglądarki  internetowej możesz 
 >[!NOTE]
 >Wyświetlanie podglądu zmian w review.docs.microsoft.com jest dostępne tylko dla pracowników firmy Microsoft
 
-Pracownicy firmy Microsoft: po scaleniu twojego wkładu z gałęzią domyślną _master_ możesz przejrzeć zawartość, zanim przejdzie ona publicznie na adres </hololens?branch=master>. Znajdź swój artykuł, korzystając ze spisu treści w lewej kolumnie.
+Pracownicy firmy Microsoft: po scaleniu zawartości z gałęzią domyślną _master_ możesz przejrzeć zawartość, zanim przejdzie ona publicznie na adres </hololens?branch=master>. Znajdź swój artykuł, korzystając ze spisu treści w lewej kolumnie.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Edytowanie w przeglądarce a edytowanie za pomocą klienta klasycznego
 
@@ -197,7 +197,7 @@ Jeśli nie chcesz zajmować się tymi problemami, użyj klienta klasycznego, tak
 
 ## <a name="using-visual-studio-code"></a>Korzystanie z narzędzia Visual Studio Code
 
-Z przyczyn wymienionych [powyżej możesz](#editing-in-the-browser-vs-editing-with-a-desktop-client)edytować dokumentację za pomocą klienta klasycznego zamiast przeglądarki internetowej. Zalecamy używanie [Visual Studio Code](https://code.visualstudio.com/).
+Z przyczyn wymienionych [powyżej możesz](#editing-in-the-browser-vs-editing-with-a-desktop-client)edytować dokumentację przy użyciu klienta klasycznego zamiast przeglądarki internetowej. Zalecamy używanie [Visual Studio Code](https://code.visualstudio.com/).
 
 ### <a name="setup"></a>Konfigurowanie
 
@@ -213,7 +213,7 @@ Wykonaj następujące kroki, aby skonfigurować Visual Studio Code pracy z tym r
     2. Wpisz "Git: Clone".
     3. Wklej skopiowany adres URL.
     4. Wybierz miejsce zapisania klonu na komputerze.
-    5. Wybierz **pozycję Otwórz repo** w oknie podręcznym.
+    5. W **oknie podręcznym** wybierz pozycję Otwórz repo.
 
 ### <a name="editing-documentation"></a>Edytowanie dokumentacji
 
@@ -224,7 +224,7 @@ Użyj następującego przepływu pracy, aby wprowadzić zmiany w dokumentacji za
 
 1. Upewnij się, że sklonowane widelec jest aktualny z oficjalnym repo.
 
-   1. W przeglądarce internetowej utwórz żądanie ściągnięcie, aby zsynchronizować ostatnie zmiany od innych współautorów w domyślnej gałęzi microsoftdocs/rzeczywistości mieszanej _master_ z twoim widelecem (upewnij się, że strzałka wskazuje poprawną stronę docelową).
+   1. W przeglądarce internetowej utwórz żądanie ściągnięcie, aby zsynchronizować ostatnie zmiany od innych współautorów w domyślnej gałęzi MicrosoftDocs/rzeczywistości mieszanej _master_ z Twoim widelecem (upewnij się, że strzałka wskazuje poprawną stronę docelową).
       
       ![Synchronizowanie zmian z dokumentu MicrosoftDocs/rzeczywistości mieszanej do twojego widelecu](images/sync-repos.png)
       
@@ -242,7 +242,7 @@ Użyj następującego przepływu pracy, aby wprowadzić zmiany w dokumentacji za
       
    3. **Zat zatwierdzanie** wszystkich **zmian w kontroli kodu źródłowego** (po wyświetleniu monitu napisz komunikat zatwierdzenia).
    
-      ![Wybieranie opcji "Zat zatwierdzanie wszystkich" w kontrolce kodu źródłowego](images/source-control-commit.png)
+      ![Wybieranie opcji "Zat zatwierdzanie wszystkich" w kontroli kodu źródłowego](images/source-control-commit.png)
       
    4. Wybierz przycisk **synchronizacji,** aby zsynchronizować zmiany z powrotem do źródła (Twoje widelec na GitHub).
       

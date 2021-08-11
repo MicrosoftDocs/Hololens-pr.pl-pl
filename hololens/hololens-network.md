@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: c2a2fe1a20a4e9baa194b1037ccb6649d324b990
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663097"
 ---
 # <a name="connect-hololens-to-a-network"></a>Połączenie HoloLens do sieci
 
@@ -30,9 +30,9 @@ Przeczytaj więcej na temat [korzystania z HoloLens offline.](hololens-offline.m
 
 Podczas pierwszego korzystania z HoloLens zostaniesz poprowadzenie przez proces nawiązywania połączenia z Wi-Fi siecią. Jeśli podczas instalacji masz problemy z nawiązaniem połączenia Wi-Fi, upewnij się, że sieć jest siecią otwartą, chronioną hasłem lub siecią w witrynie Captive Portal. Upewnij się również, że sieć nie wymaga używania certyfikatu do nawiązywania połączenia. Po zakończeniu instalacji możesz połączyć się z innymi typami sieci Wi-Fi sieci.
 
-Na HoloLens 2 użytkownik może również użyć adaptera [USB-C](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) do sieci Ethernet, aby połączyć się bezpośrednio z Wi-Fi, aby pomóc w konfigurowaniu urządzenia. Po skonfigurowaniu urządzenia użytkownik może nadal korzystać z karty lub może odłączyć urządzenie od karty i połączyć się [z siecią Wi-Fi po skonfigurowaniu.](hololens-network.md#connecting-to-wi-fi-after-setup) 
+Na HoloLens 2 użytkownik może również użyć adaptera [USB-C](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) do sieci Ethernet, aby połączyć się bezpośrednio z Wi-Fi, aby pomóc w konfigurowaniu urządzenia. Po skonfigurowaniu urządzenia użytkownik może nadal korzystać z karty lub może odłączyć urządzenie od karty i połączyć się z [siecią Wi-Fi](hololens-network.md#connecting-to-wi-fi-after-setup)po skonfigurowaniu urządzenia . 
 
-## <a name="connecting-to-wi-fi-after-setup"></a>Nawiązywanie połączenia Wi-Fi po instalacji
+## <a name="connecting-to-wi-fi-after-setup"></a>Nawiązywanie połączenia z Wi-Fi po instalacji
 
 1. Wstępnie sformuj **gest Start** i wybierz **Ustawienia**. Aplikacja Ustawienia zostanie automatycznie umieszczona przed toem.
 1. Wybierz **pozycję Sieć &**  >  **Wi-Fi.** Upewnij się, że sieć Wi-Fi jest włączona. Jeśli nie widzisz swojej sieci, przewiń listę w dół.
@@ -175,7 +175,7 @@ Istnieją trzy sposoby inicjowania obsługi serwerów proxy:
     1. Kliknij pozycję Zapisz i zakończ.
     1. [Zastosuj](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) pakiet aprowizowania do HoloLens.
 
-[Dostawcy CSP](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) znajdują się za wieloma zadaniami i zasadami zarządzania dla Windows 10, zarówno w Microsoft Intune, jak i u dostawców usług mdm firmy Microsoft. Możesz również użyć [Windows Configuration Designer,](/windows/configuration/provisioning-packages/provisioning-install-icd) aby utworzyć pakiet aprowizowania i zastosować go do HoloLens 2. [](/windows/configuration/provisioning-packages/provisioning-packages)
+[Dostawcy CSP](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) znajdują się za wieloma zadaniami i zasadami zarządzania dla Windows 10, zarówno w Microsoft Intune, jak i u dostawców usług MDM innych firm. Możesz również użyć [Windows Configuration Designer,](/windows/configuration/provisioning-packages/provisioning-install-icd) aby utworzyć pakiet aprowizowania i zastosować go do HoloLens 2. [](/windows/configuration/provisioning-packages/provisioning-packages)
 Najbardziej prawdopodobne CSP, które zostaną zastosowane do Twojego HoloLens 2 to:
 
 - [Wi-Fi CSP:](/windows/client-management/mdm/wifi-csp)per-profile Wi-Fi proxy 
@@ -239,7 +239,7 @@ Aby rozpocząć pracę, postępuj zgodnie z dokumentami usługi Intune. Podczas 
 
 [Windows 10 i Windows urządzenia Holographic, aby dodać połączenia sieci VPN przy użyciu usługi Intune.](/mem/intune/configuration/vpn-settings-windows-10)
 
-Gdy wszystko będzie gotowe, pamiętaj o [przypisaniu profilu](/mem/intune/configuration/device-profile-assign).
+Gdy wszystko będzie gotowe, pamiętaj [o przypisaniu profilu](/mem/intune/configuration/device-profile-assign).
 
 ### <a name="vpn-via-3rd-party-mdm-solutions"></a>Sieć VPN za pośrednictwem rozwiązań MDM innych firm
 Przykład połączenia sieci VPN innej firmy:
@@ -277,7 +277,7 @@ Przykład połączenia sieci VPN innej firmy:
       </Add>
 ```
 
-Przykład natywnej sieci VPN ZKEv2:
+Przykład natywnej sieci VPN IKEv2:
 ```xml
       <Add>
         <CmdID>10001</CmdID>
@@ -364,11 +364,11 @@ W zależności od kompilacji urządzeń możesz użyć wbudowanych poleceń gło
 
 ### <a name="by-using-windows-device-portal"></a>Przy użyciu Windows Portal urządzeń
 
-1. W przeglądarce internetowej na komputerze otwórz [portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. W przeglądarce internetowej na komputerze otwórz [portal urządzenia](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Przejdź do **sekcji Sieć.**  
-   W tej sekcji zostanie wyświetlony Adres IP i inne informacje o sieci. Za pomocą tej metody można skopiować i wkleić adres IP na komputerze dewelopera.
+   W tej sekcji zostanie wyświetlony Twój adres IP i inne informacje o sieci. Za pomocą tej metody można skopiować i wkleić adres IP na komputerze dewelopera.
 
-## <a name="change-ip-address-to-static-address"></a>Zmiana adresu IP na adres statyczny
+## <a name="change-ip-address-to-static-address"></a>Zmienianie adresu IP na adres statyczny
 ### <a name="by-using-settings"></a>Przy użyciu Ustawienia
  
 1. Otwórz menu **Start.**
@@ -380,7 +380,7 @@ W zależności od kompilacji urządzeń możesz użyć wbudowanych poleceń gło
 
 ### <a name="by-using-windows-device-portal"></a>Przy użyciu Windows Portal urządzeń
 
-1. W przeglądarce internetowej na komputerze otwórz [portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. W przeglądarce internetowej na komputerze otwórz [portal urządzenia](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Przejdź do **sekcji Sieć.**
 1. Wybierz przycisk **Konfiguracja protokołu IPv4.**
 1. Wybierz **pozycję Użyj następującego adresu IP** i wprowadź odpowiednią konfigurację protokołu TCP/IP.

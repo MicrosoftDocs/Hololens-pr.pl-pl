@@ -13,18 +13,18 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 02496d90f2dee320e62a99e07527f32b7a209a69
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662096"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (1. generacji)
 
 ![Microsoft HoloLens (1. generacja)](images/see-through-400px.jpg)
 
-Microsoft HoloLens (1. generacja) to pierwszy na świecie w pełni nieustały komputer holograficzny. HoloLens ponownie definiuje przetwarzanie osobiste za pośrednictwem holograficznych doświadczeń, aby umożliwić Ci na nowe sposoby. HoloLens łączy najnowocześniejsze światłowody i czujniki, aby dostarczać hologramy 3D przypięte do świata rzeczywistego wokół Ciebie.
+Microsoft HoloLens (1. generacja) to pierwszy na świecie w pełni nieustały komputer holograficzny. HoloLens ponownie definiuje przetwarzanie osobiste za pośrednictwem holograficznych doświadczeń, aby umożliwić Ci dostęp na nowe sposoby. HoloLens łączy najnowocześniejsze światłowody i czujniki, aby dostarczać hologramy 3D przypięte do świata rzeczywistego wokół Ciebie.
 
 ## <a name="hololens-components"></a>HoloLens składników
 
@@ -45,10 +45,10 @@ Twój HoloLens zawiera następujące funkcje:
 Pole HoloLens zawiera następujące elementy:
 
 - **Podkładki nosów**. Wybierz nakładkę na nos, która pasuje do kształtu nosa i pasuje do oczu.
-- **Narzut**. Gdy podczas poruszania się HoloLens, użyj narzutów, aby zachować urządzenie na miejscu. Ponadto jeśli nosisz urządzenie przez dłuższy czas HoloLens, użycie narzutu może sprawić, że urządzenie będzie bardziej wygodne w zużyciu.
+- **Narzut**. Podczas poruszania się po HoloLens użyj narzutów, aby pomóc w zachowaniu urządzenia. Ponadto jeśli nosisz urządzenie przez dłuższy czas HoloLens, użycie narzutu może sprawić, że urządzenie będzie bardziej wygodne w zużyciu.
 - **Kabel mikro USB.** Użyj kabla mikro USB, aby podłączyć urządzenie HoloLens do zasilacza w celu nawiązania połączenia, lub podłącz urządzenie HoloLens do komputera.
 - **Zasilacz**. Podłącza się do gniazda zasilania.
-- **Mikrosieć**. Użyj daszka, aby wyczyścić HoloLens aplikacji.
+- **Mikrofibry .** Użyj daszka, aby wyczyścić HoloLens aplikacji.
 
 >[!TIP]
 >Kliknięcie [jest dostarczany](hololens1-clicker.md) z HoloLens (1. generacji) w oddzielnym polu.
@@ -59,7 +59,7 @@ Zasilacz i kabel USB, który jest podłączony do urządzenia, są najlepszym ob
 
 Szybkość i szybkość ładowania mogą się różnić w zależności od środowiska, w którym działa urządzenie.
 
-Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania baterii, gdy urządzenie jest włączona, musi być podłączone co najmniej do 15 W.
+Aby utrzymać/podwyższyć wartość procentową wewnętrznego naładowania baterii, gdy urządzenie jest włączona, musi być podłączone co najmniej do 15 W.
 
 ## <a name="device-specifications"></a>Specyfikacje urządzeń
 
@@ -147,39 +147,39 @@ Aby zrozumieć środowisko, należy użyć następujących funkcji:
 - Ustawienia
 - Windows Opinie
 - Kalibracja
-- Poznasz gesty
+- Nauka gestów
 
 ## <a name="device-certifications"></a>Certyfikaty urządzeń
 
 ### <a name="safety"></a>Bezpieczeństwo
 
-HoloLens przetestowano i stwierdzono, że są zgodne z podstawowymi wymaganiami w zakresie ochrony wpływu ansi Z87.1, CSA Z94.3 i EN 166.
+HoloLens przetestowano i stwierdzono, że są zgodne z podstawowymi wymaganiami ochrony przed wpływami ansi Z87.1, CSA Z94.3 i EN 166.
 - [Informacje o SAR](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
-## <a name="care-and-cleaning"></a>Pielęgnacja i czyszczenie
+## <a name="care-and-cleaning"></a>Care and cleaning (Pielęgnacja i czyszczenie)
 
-Dokładnie obsługuj HoloLens użytkownika. Aby podnieść, przenosić i dostosowywać HoloLens, użyj ramek &mdash; urządzenia, a nie narzutu. Aby chronić osłodę przed pępkami i odciskami palców oraz unikać ich dotykania. Wielokrotne czyszczenie może uszkodzić osłonę, dlatego należy zadbać o to, aby urządzenie było czyste.
+Dokładnie obsługuj HoloLens użytkownika. Aby podnieść, przenosić i dostosowywać HoloLens, użyj uchwytów &mdash; urządzenia, a nie narzutu. Aby chronić osłodę przed pępkami i odciskami palców oraz unikać ich dotykania. Wielokrotne czyszczenie może uszkodzić osłonę, dlatego staraj się zachować urządzenie w stanie czystym.
 
-Nie używaj żadnych środków czyszczących ani nasypów na HoloLens i nie podlewaj go w water ani nie nakładaj bezpośrednio na nie wody.
+Nie używaj żadnych środków czyszczącego ani nagłoka na HoloLens i nie podlewaj jej w water ani nie nakładaj bezpośrednio do niego wody.
 
-Aby wyczyścić osłonę, usuń wszystkie szmioty przy użyciu pędzla do obiektywów z inowsza lub z kołem do obiektywów w stylu żarówki. Jasno przemknij mikrofibry przy użyciu niewielkiej ilości wody destyfikowanej, a następnie użyj jej do czyszczenia osłodki w ruchu okrężnym.
+Aby wyczyścić szort, usuń wszystkie pączki za pomocą pędzla do obiektywu z kołem do owłosłania w stylu "żarówka". Jasno przeszukaj mikrofibry przy użyciu niewielkiej ilości wody destyfikowanej, a następnie użyj jej do wyczyszczenia funkcji odszyszczanej w ruch okrężny.
 
-Aby wyczyścić pozostałą część urządzenia, w tym pałąk i rąbek urządzenia, użyj nieszlachnitych nawilżenia za pomocą protokołu SOAP i wody. Przed użyciem HoloLens całkowicie schnąć.
+Aby wyczyścić pozostałą część urządzenia, w tym pałąk i rąbki urządzenia, użyj niesprzężenia bez lint, które jest filtrowane za pomocą protokołu SOAP i wody. Przed użyciem HoloLens całkowicie schnąć.
 
-![Obraz, który pokazuje, jak wyczyścić wizjer](images/hololens-cleaning-visor.png)
+![Obraz, na który pokazano, jak wyczyścić wizjer](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>Znajdowanie numeru seryjnego
 
 Numer seryjny urządzeń HoloLens (1. generacji) jest drukowany pod prawym obiektywem.
-1. Przytrzymaj urządzenie przed sobą tak, jakby nosiło się je na głowy. Z urządzeniem skierowanym do przodu i w górę.
-1. Mając obiektyw nadal skierowany do przodu, przerzuć urządzenie do góry do góry w dół, aby zobaczyć do dołu.
+1. Przytrzymaj urządzenie przed sobą tak, jakby było nałożyne na głowy. Z urządzeniem skierowanym do przodu i w górę.
+1. Mając obiektyw nadal skierowany do przodu, odwróć urządzenie do góry w dół, aby zobaczyć do dołu.
 1. Prawy obiektyw będzie teraz po lewej stronie, wydrukowany pod obiektywem na pasie to numer seryjny. 
 
 Numer seryjny można również znaleźć za pośrednictwem podłączonego komputera:
 
 1. Podłączanie urządzenia
 1. Przejdź do tego **komputera w** Eksploratorze plików
-1. Kliknij prawym przyciskiem myszy i **wybierz** pozycję Właściwości HoloLens urządzenia
+1. Kliknij prawym przyciskiem myszy **i wybierz pozycję** Właściwości HoloLens urządzenia
 1. Spowoduje to wyświetlenie numeru serii urządzenia. Jak pokazano na poniższym zrzucie ekranu.
 
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>

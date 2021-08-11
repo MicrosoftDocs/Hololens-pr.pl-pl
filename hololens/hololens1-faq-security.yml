@@ -16,12 +16,12 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637281"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115662651"
 title: Często zadawane pytania HoloLens zabezpieczeń (1. generacji)
 summary: ''
 sections:
@@ -30,13 +30,13 @@ sections:
   - question: >
       Jaki poziom ochrony danych oferuje HoloLens 1?
     answer: >
-      * Zobacz [HoloLens (1. generacji) szyfrowania funkcją BitLocker](hololens1-encryption.md)
+      * Zobacz [HoloLens (1. generacji) Szyfrowanie funkcją BitLocker](hololens1-encryption.md)
   - question: >
       Jakiego typu sieci bezprzewodowej jest używany?
     answer: >
       * 802.11ac i Bluetooth 4.1 LE
   - question: >
-      Jakiego typu architektura została włączona?  Na przykład: wskaż, siatkę, czy coś innego?
+      Jakiego typu architektura została włączona?  Na przykład: wskaż, siatka, czy coś innego?
     answer: >
       * Wi-Fi mogą być używane w trybie infrastruktury do komunikowania się z innymi punktami dostępu bezprzewodowego.
 
@@ -48,27 +48,27 @@ sections:
   - question: >
       Na jakim zakresie częstotliwości i kanałach działa urządzenie i czy można je konfigurować?
     answer: >
-      * Wi-Fi: zakres częstotliwości nie jest konfigurowalny przez użytkownika i zależy od kraju użytkowania. W Usa Wi-Fi kanały 2,4 GHz (1–11) i 5 GHz (36–64, 100–165).
+      * Wi-Fi: zakres częstotliwości nie jest konfigurowalny przez użytkownika i zależy od kraju użytkowania. W USA Wi-Fi kanały 2,4 GHz (1–11) i 5 GHz (36–64, 100–165).
 
       * Bluetooth: Bluetooth standardowego zakresu 2,4–2,48 GHz.
   - question: >
       Czy urządzenie może zezwalać na określone częstotliwości lub blokować je?
     answer: >
-      * Nie jest to kontrolowanie przez użytkownika/urządzenie.
+      * Użytkownik/urządzenie nie może tego kontrolować.
   - question: >
       Jaki jest poziom zasilania zarówno przesyłania, jak i odbierania? Czy można go dostosowywać? Jaki jest zakres operacji?
     answer: >
-      * Nasze standardy testowania emisji można [znaleźć tutaj.](https://fccid.io/C3K1688) Zakres operacji jest w dużym stopniu zależny od punktu dostępu i środowiska, ale jest w przybliżeniu odpowiednikiem innych wysokiej jakości telefonów, tabletów lub komputerów.
+      * Nasze standardy testowania emisji można znaleźć [tutaj.](https://fccid.io/C3K1688) Zakres operacji jest w dużym stopniu zależny od punktu dostępu i środowiska , ale jest w przybliżeniu odpowiednikiem innych telefonów, tabletów lub komputerów wysokiej jakości.
   - question: >
-      Jaki jest cykl/okres istnienia obowiązków w przypadku normalnego działania?
+      Jaki jest cykl/okres istnienia obowiązków dla normalnego działania?
     answer: >
       * 2–3 godz. aktywnego użytkowania i do dwóch tygodni czasu wstrzymania
 
       * Okres istnienia baterii jest niedostępny.
   - question: >
-      Co to jest zachowanie przesyłania i odbierania, gdy narzędzie nie jest w zasięgu?
+      Co to jest zachowanie przesyłania i odbierania, gdy narzędzie nie znajduje się w zasięgu?
     answer: >
-      * HoloLens przesyłać/odbierać zgodnie ze standardowym wzorcem sieci Wi-Fi/Bluetooth sieci. Na granicy zakresu prawdopodobnie zauważysz, że dane wejściowe będą się czekać na całkowite rozłączenia, ale po powrocie do tego zakresu powinny szybko nawiązać ponownie połączenie.
+      * HoloLens przesyłanie/odbieranie jest zgodny ze standardowym wzorcem sieci Wi-Fi/Bluetooth sieci. Na krawędzi jej zakresu prawdopodobnie zauważysz, że dane wejściowe będą się czekać aż do całkowitego rozłączenia, ale po powrocie w zakres powinny szybko się ponownie połączyć.
   - question: >
       Co to jest gęstość wdrożenia na stopę kwadratową?
     answer: >
@@ -84,19 +84,19 @@ sections:
   - question: >
       Częstotliwość aktualizacji systemu operacyjnego — jaka jest częstotliwość aktualizacji systemu operacyjnego dla hl?  Czy istnieje ustawiony harmonogram?  Czy firma Microsoft wydaje poprawki zabezpieczeń w razie potrzeby itp.
     answer: >
-      * Firma Microsoft zapewnia aktualizacje systemu operacyjnego dla HoloLens dokładnie tak samo jak w przypadku Windows 10. Zwykle w ciągu roku istnieją dwie ważne aktualizacje, jedna na wiosnę, a jedna na wiosnę. Ponieważ HoloLens jest urządzeniem Windows, koncepcja aktualizacji jest taka sama jak w przypadku każdego innego Windows urządzenia. Firma Microsoft wydaje poprawki zabezpieczeń zgodnie z potrzebami i stosuje tę samą koncepcję co inne Windows urządzenia.
+      * Firma Microsoft zapewnia aktualizacje systemu operacyjnego HoloLens dokładnie tak samo jak w przypadku Windows 10. Zwykle w ciągu roku są dwie ważne aktualizacje, jedna na wiosnę, a jedna na wiosnę. Ponieważ HoloLens jest urządzeniem Windows, koncepcja aktualizacji jest taka sama jak w przypadku każdego Windows urządzenia. Firma Microsoft wydaje poprawki zabezpieczeń zgodnie z potrzebami i stosuje tę samą koncepcję co w przypadku każdego Windows urządzenia.
   - question: >
-      Wzmacnianie zabezpieczeń systemu operacyjnego — jakie opcje mają na celu wzmacnianie zabezpieczeń systemu operacyjnego?  Czy możemy usunąć lub zamknąć niepotrzebne aplikacje lub usługi?
+      Wzmacnianie zabezpieczeń systemu operacyjnego — jakie opcje są dostępne w celu wzmacniania zabezpieczeń systemu operacyjnego?  Czy możemy usunąć lub zamknąć niepotrzebne aplikacje lub usługi?
     answer: >
-      * HoloLens działa jak smartfon. Jest to porównywalne z innymi nowoczesnymi Windows urządzeniami. HoloLens zarządzać za pomocą Microsoft Intune lub innych nowoczesnych rozwiązań Zarządzanie urządzeniami, takich jak MobileIron, Airwatch lub Soti. Istnieją zasady, które można ustawić w tych systemach zarządzania, aby umieścić zasady zabezpieczeń na urządzeniu i w celu wzmacniania zabezpieczeń urządzenia. Istnieje również możliwość usunięcia niepotrzebnych aplikacji, jeśli jest to potrzebne.
+      * HoloLens działa jak smartfon. Jest to porównywalne z innymi nowoczesnymi Windows urządzeniami. HoloLens zarządzać za pomocą usług Microsoft Intune lub innych nowoczesnych rozwiązań Zarządzanie urządzeniami, takich jak MobileIron, Airwatch lub Soti. Istnieją zasady, które można ustawić w tych systemach zarządzania, aby umieścić zasady zabezpieczeń na urządzeniu i w celu wzmacniania zabezpieczeń urządzenia. Istnieje również możliwość usunięcia niepotrzebnych aplikacji, jeśli jest to potrzebne.
   - question: >
-      W jaki sposób aplikacje będą zarządzane i aktualizowane? Jaka kontrola jest dostępna do zdefiniowania, które aplikacje są ładowane, i proces aktualizacji aplikacji dla aplikacji, które znajdują się w sklepie Microsoft Store?
+      W jaki sposób aplikacje będą zarządzane i aktualizowane? Jaką kontrolę musimy określić, które aplikacje są ładowane, i proces aktualizacji aplikacji dla aplikacji, które znajdują się w sklepie Microsoft Store?
     answer: >
-      * HoloLens pobiera aplikacje tylko za pośrednictwem Windows magazynu. Można instalować tylko pakiety aplikacji Appx, które zostały opracowane z myślą o używaniu HoloLens. Można to zobaczyć na ekranie Microsoft Store z małym logo obok aplikacji, które pokazuje HoloLens urządzenia. Każda kontrola nad zarządzaniem aplikacjami ze sklepu ma również zastosowanie do HoloLens. Możesz użyć koncepcji oficjalnego sklepu lub sklepu dla firm. Aplikacje mogą być ładowane bezpośrednio (ręczny proces ładowania aplikacji na urządzeniu z systemem Windows) lub mogą być zarządzane za pomocą rozwiązania MDM, dzięki czemu aplikacje są automatycznie ściągane ze sklepu w razie potrzeby.
+      * HoloLens pobiera aplikacje tylko za pośrednictwem Windows magazynu. Można zainstalować tylko pakiety aplikacji Appx, które są opracowywane do użytku z HoloLens. Można to zobaczyć w Microsoft Store z małym logo obok aplikacji, które pokazuje HoloLens urządzenia. Każda kontrola nad zarządzaniem aplikacjami ze sklepu ma również zastosowanie do HoloLens. Możesz użyć koncepcji oficjalnego sklepu lub sklepu dla firm. Aplikacje mogą być ładowane bezpośrednio (proces ręcznego ładowania aplikacji na urządzeniu Windows) lub mogą być zarządzane za pośrednictwem rozwiązania MDM, dzięki czemu aplikacje są automatycznie ściągane ze sklepu w razie potrzeby.
   - question: >
       Jaka jest częstotliwość aktualizacji aplikacji w sklepie dla HoloLens?
     answer: >
-      * Ponieważ postępujemy zgodnie z tym samym pojęciem Microsoft Store i ściągania z nich aplikacji, cykl aktualizacji jest określany przez dewelopera aplikacji. Wszystkie opcje zarządzania, które trzeba kontrolować mechanizm aktualizacji w magazynie, mają również HoloLens zarządzania.
+      * Ponieważ postępujemy zgodnie z tym samym pojęciem Microsoft Store aplikacji i ściągania z nich, cykl aktualizacji jest określany przez dewelopera aplikacji. Wszystkie opcje zarządzania, które trzeba kontrolować mechanizm aktualizacji w magazynie, mają również HoloLens zarządzania.
   - question: >
       Czy istnieje możliwość bezpiecznego rozruchu dla HoloLens?
     answer: >
@@ -108,24 +108,24 @@ sections:
   - question: >
       Czy istnieje możliwość kontrolowania lub wyłączania używania portów na urządzeniu?
     answer: >
-      * Urządzenie HoloLens tylko dwa porty (jeden dla słuchawki i jeden do ładowania lub łączenia się z komputerami). Nie ma możliwości wyłączenia portu ze względu na funkcje i odzyskiwanie.
+      * Urządzenie HoloLens tylko dwa porty (jeden do ładowania lub łączenia się z komputerami). Nie ma możliwości wyłączenia portu ze względu na funkcje i odzyskiwanie.
   - question: >
-      Oprogramowanie antywirusowe, wykrywanie punktów końcowych, adresy IP, lista zezwalań kontroli aplikacji — dowolna możliwość uruchamiania oprogramowania antywirusowego, wykrywania punktów końcowych, adresów IP, listy zezwalań kontroli aplikacji itp.
+      Oprogramowanie antywirusowe, wykrywanie punktów końcowych, adresy IP, lista zezwalań kontroli aplikacji — dowolna możliwość uruchamiania programu antywirusowego, wykrywania punktów końcowych, adresów IP, listy zezwalań kontroli aplikacji itp.
     answer: >
-      * Windows Holographic for Business (pakiet komercyjny) obsługuje Windows Defender Smart Screen. Jeśli firma antywirusowa utworzy i opublikuje swoją aplikację na platformie universal Windows Platform, można ją pobrać na HoloLens. Obecnie żadne firmy nie zrobiły tego dla HoloLens.
+      * Windows Holographic for Business (pakiet komercyjny) obsługuje Windows Defender Smart Screen. Jeśli firma antywirusowa utworzy i opublikuje swoją aplikację na platformie universal Windows Platform, można ją pobrać na HoloLens. Obecnie żadne firmy nie wykonały tego HoloLens.
 
       * Zezwalanie na aplikacje jest możliwe przy użyciu sklepu Microsoft Enterprise Store, w którym można wybrać tylko określone aplikacje do pobrania. Ponadto za pomocą rozwiązania MDM można zablokować określone aplikacje, które mogą być uruchamiane, a nawet widoczne na urządzeniu.
   - question: >
-      Czy można poddać je kwarantannie z sieci prod do momentu zaktualizowania urządzenia, jeśli przez dłuższy czas było ono w trybie offline?  Np. Urządzenie było w szufladzie, które nie było zasilane przez okres (sześć miesięcy) i nie otrzymało żadnych aktualizacji, poprawek itp.  Czy podczas próby dołączenia do sieci możemy ją flagować i powiedzieć, że należy zaktualizować ją w innej sieci przed skarżeniami w celu dołączenia do sieci.
+      Czy można poddać je kwarantannie z sieci prod do momentu zaktualizowania urządzenia, jeśli było w trybie offline przez dłuższy czas?  Np. Urządzenie było zasilane z szuflady przez okres (sześć miesięcy) i nie otrzymało żadnych aktualizacji, poprawek itp.  Gdy program próbuje dołączyć do sieci, możemy ją flagować i powiedzieć, że należy zaktualizować ją w innej sieci przed skarży się na dołączenie do sieci.
     answer: >
-      * Jest to coś, co może być zarządzane na poziomie infrastruktury przez rozwiązanie MDM lub serwer lokalnym. Urządzenie może być oflagowane jako niezgodne, jeśli nie spełnia określonej wersji aktualizacji.
+      * Jest to coś, co może być zarządzane na poziomie infrastruktury przez rozwiązanie MDM lub serwer lokalnym. Urządzenie można oflagowyć jako niezgodne, jeśli nie spełnia ono określonej wersji aktualizacji.
   - question: >
-      Czy firma Microsoft obejmuje jakiekolwiek tylne drzwi lub dostęp do usług, które umożliwiają firmie Microsoft łączenie się z urządzeniem w celu udostępniania ekranu lub zdalnej pomocy technicznej w dowolnej chwili?
+      Czy firma Microsoft uwzględnia jakiekolwiek tylne drzwi lub dostęp do usług, które umożliwiają firmie Microsoft łączenie się z urządzeniem w celu udostępniania ekranu lub pomocy zdalnej w dowolnym momencie?
     answer: >
       * Nie
   - question: >
-      Gdy certyfikat PKI jest generowany dla zaufanej komunikacji, chcemy, aby certyfikat został wygenerowany na urządzeniu, aby wiedzieliśmy, że jest on tylko na tym urządzeniu, unikatowy dla tego urządzenia i nie można go wyeksportować ani użyć do personifikacji urządzenia. Czy jest to prawdziwe w HoloLens? Jeśli nie, czy istnieje potencjalne ograniczenie ryzyka?
+      Gdy certyfikat PKI jest generowany dla zaufanej komunikacji, chcemy, aby certyfikat został wygenerowany na urządzeniu, aby wiedzieć, że jest on tylko na tym urządzeniu, unikatowy dla tego urządzenia i nie może zostać wyeksportowany ani użyty do personifikacji urządzenia. Czy jest to prawdziwe w HoloLens? Jeśli nie, to czy istnieje potencjalne ograniczenie ryzyka?
     answer: >-
-      * Na samym urządzeniu jest generowany kod CSR dla SCEP. Usługa Intune i łącznik lokalnego SCEP pomagają zabezpieczyć żądania samodzielnie, dodając i weryfikując ciąg wyzwania wysyłany do klienta.
+      * Csr dla SCEP jest generowany na samym urządzeniu. Usługa Intune i łącznik lokalnego SCEP pomagają zabezpieczyć żądania samodzielnie, dodając i weryfikując ciąg wyzwania wysyłany do klienta.
 
-      * Ponieważ HoloLens (1. generacja i 2. generacja) mają moduł TPM, te certyfikaty będą przechowywane w module TPM i nie będzie można ich wyodrębnić. Ponadto, nawet jeśli można je wyodrębnić, nie można zweryfikować ciągów wyzwania na innym urządzeniu, przez co certyfikaty/klucz nie mogą być używane na różnych urządzeniach.
+      * Ponieważ HoloLens (1. i 2. generacja) mają moduł TPM, te certyfikaty będą przechowywane w module TPM i nie można ich wyodrębnić. Ponadto, nawet jeśli można je wyodrębnić, nie można zweryfikować ciągów wyzwania na innym urządzeniu, przez co certyfikaty/klucz nie mogą być używane na różnych urządzeniach.

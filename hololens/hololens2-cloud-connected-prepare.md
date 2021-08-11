@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f6c2e514024a171661b182a310145e26280e114a1cff65ef5b03b16feae8371a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660161"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Przygotowanie — przewodnik po chmurze
 
@@ -40,9 +40,9 @@ Azure AD to oparta na chmurze usługa katalogowa, która zapewnia zarządzanie t
 
 Pracownicy mogą używać tylko jednego konta do zainicjowania urządzenia, aby&#39;konieczne, aby organizacja kontroluje najpierw, które konto jest włączone. Wybrane konto określi, kto kontroluje urządzenie i wpływa na możliwości zarządzania.
 
-W tym przewodniku wybraliśmy, że dla używanej tożsamości będą używane konta usługi Azure AD lub Azure Active Directory konta. [](/hololens/hololens-identity) Istnieje kilka korzyści związanych z kontami usługi Azure AD, których chcemy użyć, na przykład:
+W tym przewodniku wybraliśmy, że dla [używanej](/hololens/hololens-identity) tożsamości będziemy używać kont usługi Azure AD, a Azure Active Directory kont. Istnieje kilka korzyści związanych z kontami usługi Azure AD, których chcemy użyć, na przykład:
 
-- Pracownicy używają swojego konta usługi Azure AD do rejestrowania urządzenia w usłudze Azure AD i automatycznego rejestrowania go w rozwiązaniu MDM firmy&#39;(Azure AD+MDM — wymaga Azure AD — wersja Premium).
+- Pracownicy używają swojego konta usługi Azure AD do rejestrowania urządzenia w usłudze Azure AD i automatycznego rejestrowania go w rozwiązaniu MDM organizacji&#39;(Azure AD+MDM — wymaga Azure AD — wersja Premium).
 - Konta usługi Azure AD obsługują [logowanie pojedynczy.](/azure/active-directory/manage-apps/what-is-single-sign-on) Gdy użytkownik zalogował się do usługi Remote Assist, jego tożsamość od zalogowaonego użytkownika w usłudze Azure AD zostanie rozpoznana, a użytkownik zostanie zalogowany do aplikacji w celu usprawnienia obsługi.
 - Konta usługi Azure AD mają dodatkowe [opcje uwierzytelniania za](/hololens/hololens-identity) [pośrednictwem Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Oprócz logowania irysów użytkownicy mogą logować się z innego urządzenia lub używać kluczy zabezpieczeń FIDO.
 
@@ -51,18 +51,18 @@ W tym przewodniku wybraliśmy, że dla używanej tożsamości będą używane ko
 Usługa Microsoft [Intune](/mem/intune/fundamentals/what-is-intune), część usługi Enterprise Mobility + Security, to oparty na chmurze system MDM, który zarządza urządzeniami połączonymi z dzierżawą. Podobnie Office 365 usługa Intune używa usługi Azure AD do zarządzania tożsamościami, więc pracownicy używają tych samych poświadczeń do rejestrowania urządzeń w usłudze Intune, których używają do logowania się do Office 365. Usługa Intune obsługuje również urządzenia z innymi systemami operacyjnymi, takimi jak iOS i Android, w celu zapewnienia pełnego rozwiązania MDM. Na potrzeby tego przewodnika skupimy się&#39;usłudze Intune w celu umożliwienia wdrożenia chmury na dużą skalę przy HoloLens 2.
 
 > [!IMPORTANT]
-> Ważne jest, aby mieć aplikacje mobilne Zarządzanie urządzeniami. Jeśli nie masz&#39;go skonfigurować, postępuj zgodnie z tym przewodnikiem i [tematem Rozpoczynanie pracy z usługą Intune.](/mem/intune/fundamentals/free-trial-sign-up)
+> Ważne jest, aby mieć usługę Mobile Zarządzanie urządzeniami. Jeśli nie masz&#39;, postępuj zgodnie z tym przewodnikiem i [tematem Rozpoczynanie pracy z usługą Intune.](/mem/intune/fundamentals/free-trial-sign-up)
 
 > [!NOTE]
-> Wiele systemów MDM obsługuje Windows 10 a większość obsługuje scenariusze wdrażania urządzeń osobistych i firmowych. Dostawcy rozwiązań MDM, którzy Windows 10 Holographic obecnie obejmują: AirWatch, MobileIron i inni. Większość wiodących w branży dostawców rozwiązań MDM obsługuje już integrację z usługą Azure AD. Dostawców rozwiązań MDM, którzy obsługują usługę Azure AD, można znaleźć w [Azure Marketplace](https://azure.microsoft.com/marketplace/).
+> Wiele systemów MDM obsługuje Windows 10 a większość obsługuje scenariusze wdrażania urządzeń osobistych i firmowych. Dostawcy rozwiązań MDM, którzy Windows 10 Holographic obecnie obejmują: AirWatch, MobileIron i inni. Większość wiodących w branży dostawców rozwiązań MDM obsługuje już integrację z usługą Azure AD. Dostawców rozwiązania MDM, którzy obsługują usługę Azure AD, można znaleźć w [Azure Marketplace](https://azure.microsoft.com/marketplace/).
 
 ## <a name="network"></a>Sieć
 
 W tej konfiguracji przewidujemy, że HoloLens 2 urządzenia połączone z Internetem z dowolnej dostępnej otwartej Wi-Fi sieci. Ponieważ użytkownik może wymagać zmiany połączenia sieciowego na podstawie lokalizacji, powinien dowiedzieć się, jak połączyć HoloLens [z siecią Wi-Fi.](/hololens/hololens-network)
 
-W przypadku usługi Dynamics 365 Remote Assist istnieją różne warunki sieciowe, w tym przepustowość, opóźnienie, zakłócenie i utrata pakietów, które mogą mieć wpływ na środowisko połączeń wideo. Chociaż wywołania audio i wideo mogą być możliwe w środowiskach z ograniczoną przepustowością, może wystąpić obniżenie funkcji. W przypadku korzystania z usługi Dynamics 365 Remote Assist HoloLens sieci należy pamiętać o wymaganiach dotyczących sieci:
+W przypadku usługi Dynamics 365 Remote Assist istnieją różne warunki sieciowe, w tym przepustowość, opóźnienie, zakłócenie i utrata pakietów, które mogą mieć wpływ na środowisko połączeń wideo. Chociaż wywołania audio i wideo mogą być możliwe w środowiskach z ograniczoną przepustowością, może wystąpić obniżenie funkcji. W przypadku korzystania z usługi Dynamics 365 Remote Assist HoloLens wymagania dotyczące sieci, które należy mieć na uwadze:
 
-**Minimum:** 1,5 Mb/s w górę/w dół jest wymagane dla połączeń wideo w jakości HD typu "równorzędne" w jakości HD z rozdzielczością HD 1080p przy rozdzielczości 30 pikseli.
+**Minimum:** 1,5 Mb/s w górę/w dół jest wymagane dla równorzędnego wywoływania wideo w jakości HD z rozdzielczością HD 1080p przy rozdzielczości 30 pikseli.
 
 **Optymalne:** W przypadku połączeń wideo w jakości HD typu "peer-to-peer" o rozdzielczości HD 1080p należy spodziewać się 4–5 Mb/s w górę/w dół.
 

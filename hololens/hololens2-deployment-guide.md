@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: acf4b5d730b9a7eee2dedfad2bb3f866931d7455
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 495be858c235931ed591b097e6b5951f7197c3f7a62bd1aaa16bea65a4e3885f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659890"
 ---
 # <a name="deploying-hololens-2-to-external-clients-with-remote-assist"></a>Wdrażanie HoloLens 2 na klientach zewnętrznych przy użyciu funkcji Remote Assist
 
@@ -32,15 +32,15 @@ Ten przewodnik zawiera ogólne zalecenia HoloLens [2](#general-deployment-recomm
 
 ## <a name="scenario-description"></a>Opis scenariusza
 
-Na potrzeby tego dokumentu firma Contoso chce wysłać urządzenie HoloLens 2 do fabryki klienta zewnętrznego do użytku krótkoterminowego lub długoterminowego. Gdy klient potrzebuje pomocy w zakresie obsługi maszyn, zaloguje się do urządzenia z systemem HoloLens 2 przy użyciu poświadczeń dostarczonych przez firmę Contoso i użyje usługi Remote Assist, aby skontaktować się z ekspertami firmy Contoso.
+Na potrzeby tego dokumentu firma Contoso chce wysłać urządzenie HoloLens 2 do fabryki klienta zewnętrznego do użytku krótkoterminowego lub długoterminowego. Gdy klient potrzebuje pomocy dotyczącej maszyn obsługi, zaloguje się do urządzenia z systemem HoloLens 2 przy użyciu poświadczeń dostarczonych przez firmę Contoso i użyje usługi Remote Assist, aby skontaktować się z ekspertami firmy Contoso.
 
-Dowiedz się więcej na temat usługi Remote Assist [tutaj.](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
+Więcej informacji na temat usługi Remote Assist można [uzyskać tutaj.](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
 
 ### <a name="requirements-for-this-scenario"></a>Wymagania dotyczące tego scenariusza
 
 1. [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis)
 1. Aplikacje Menedżer urządzeń — takie jak usługa [Intune](/mem/intune/fundamentals/free-trial-sign-up)
-1. Licencja usługi Remote Assist
+1. Licencja remote assist
     1. [Kup usługę Remote Assist](/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
     1. [Pomoc zdalna w wersji próbnej](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 
@@ -97,7 +97,7 @@ Usługa Remote Assist wyczyści historię czatu po każdej sesji. Jednak histori
 
 W przypadku 2 HoloLens zalecamy:
 
-1. Użyj [najnowszej wersji HoloLens operacyjnego jako](https://aka.ms/hololens2download) kompilacji linii bazowej.
+1. Użyj [najnowszej HoloLens systemu operacyjnego](https://aka.ms/hololens2download) jako kompilacji linii bazowej.
 1. Przypisywanie licencji opartych na użytkownikach lub urządzeniach:
     1. Licencje oparte na użytkownikach i urządzeniach wykonaj następujące kroki:
         1. [Utwórz grupę w UAD i dodaj członków](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) dla HoloLens/RA.
@@ -105,7 +105,7 @@ W przypadku 2 HoloLens zalecamy:
         1. (Opcjonalnie) Grupy docelowe można kierować do zasad zarządzania urządzeniami przenośnymi.
 
 1. Urządzenia powinny być przyłączone do [dzierżawy,](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)automatycznie rejestrowane i konfigurowane za pośrednictwem programu Auto [pilotaż.](/hololens/hololens2-autopilot)
-    1. Należy pamiętać, że pierwszy użytkownik urządzenia będzie właścicielem urządzenia.
+    1. Należy pamiętać, że pierwszy użytkownik na urządzeniu będzie właścicielem urządzenia.
     1. Należy pamiętać, że jeśli urządzenie jest przyłączone do aplikacji AAD, użytkownik, który wykonał sprzężenia, zostanie właścicielem urządzenia.
     1. Aby uzyskać więcej informacji, zobacz [Właściciel urządzenia.](/hololens/security-adminless-os#device-owner)
 1. [Zablokowanie](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) urządzenia przez dzierżawę w celu dołączenia go tylko do dzierżawy.
@@ -123,5 +123,5 @@ W przypadku 2 HoloLens zalecamy:
     1. [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) — co umożliwia automatyczne aktualizacje aplikacji — jest domyślnie włączone. Urządzenie musi być podłączone do zasilania, aby otrzymywać aktualizacje.
 1. [Wyłącz wszystkie strony ustawień z](/hololens/settings-uri-list) wyjątkiem ustawień sieciowych, aby umożliwić użytkownikom łączenie się z sieciami gości w lokacjach klienckich.
 1. [Zarządzanie HoloLens aktualizacji](/hololens/hololens-updates)
-    1. Opcja [kontrolowania aktualizacji systemu operacyjnego lub](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) zezwalania na swobodne przepływy.
+    1. Opcja [kontrolowania aktualizacji systemu operacyjnego](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) lub zezwalania na swobodne przepływy.
 1. [Typowe ograniczenia dotyczące urządzeń.](/hololens/hololens-common-device-restrictions)

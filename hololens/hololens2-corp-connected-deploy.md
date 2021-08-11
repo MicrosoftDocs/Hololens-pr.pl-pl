@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6407517bca9efd02fdaf45a78cba7a215ec05670
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660194"
 ---
-# <a name="deploy---corporate-connected-guide"></a>Wdrażanie — przewodnik po połączeniach firmowych
+# <a name="deploy---corporate-connected-guide"></a>Wdrażanie — przewodnik po połączeniu firmowym
 
-Ważnym elementem każdego wdrożenia jest upewnienie się, że wdrożenie jest prawidłowo skonfigurowane przed testowaniem samodzielnie, aby zapewnić bezproblemowe środowisko użytkownika końcowego.
+Ważnym elementem każdego wdrożenia jest upewnienie się, że wdrożenie jest prawidłowo skonfigurowane przed przetestowaniem go samodzielnie, aby zapewnić bezproblemowe środowisko użytkownika końcowego.
 
 Ponieważ wdrażamy certyfikat usługi Wi-Fi za pośrednictwem zarządzania urządzeniami przenośnymi, musimy początkowo skonfigurować usługę HoloLens i zarejestrować urządzenia w otwartej sieci Wi-Fi lub w sieci, która nie wymaga certyfikatu. Po zakończeniu HoloLens OOBE i rejestracji urządzenie otrzyma certyfikat sieciowy i LOB skonfigurowane wcześniej i będziemy mogli sprawdzić, czy oba urządzenia zostały odebrane przez urządzenie.
 
@@ -45,11 +45,11 @@ Jeśli urządzenie nie znajduje się obecnie w stanie ustawień fabrycznych, ter
 
 5. Po otwarciu strony Mixed Reality Home otwórz ekran menu Start użyciu właśnie poznanych **gestów** Start.
 
-6. Wybierz aplikację **Ustawienia** i wybierz **pozycję System.** Pierwszą informacją, którą zobaczysz, jest nazwa urządzenia, która dla urządzenia z systemem HoloLens 2 będzie hololens, po której następuje ciąg &quot; &quot; sześciu znaków.
+6. Wybierz aplikację **Ustawienia** i wybierz **pozycję System.** Pierwszą informacją, którą zobaczysz, jest nazwa urządzenia, która dla urządzenia z systemem HoloLens 2 to HOLOLENS, po której następuje ciąg &quot; &quot; sześciu znaków.
 
 7. Zanotuj tę nazwę.
 
-    ![HoloLens 2 Ustawienia ekranu](./images/hololens2-settings-about.jpg)
+    ![HoloLens ekranie Ustawienia 2](./images/hololens2-settings-about.jpg)
 
 8. Sprawdź, czy urządzenie zostało pomyślnie przyłączone do usługi Azure AD. Istnieją dwa sposoby:
 
@@ -69,7 +69,7 @@ Jeśli urządzenie nie znajduje się obecnie w stanie ustawień fabrycznych, ter
 
 ## <a name="wi-fi-certificate-validation"></a>Wi-Fi weryfikacji certyfikatu
 
-Do tej pory urządzenie powinno odbierać Wi-Fi certyfikatu. Najprostszą weryfikacją, jaką można wykonać, jest próba nawiązania połączenia Wi-Fi, dla którego&#39;certyfikat. Otwórz aplikację **internetową Ustawienia** przejdź do sieci **&amp; Internet**  ->  **Wi-Fi** i wybierz połączenie Wi-Fi. Po na połączeniu otwórz aplikację Microsoft Edge i upewnij się, że możesz przejść do witryny internetowej.
+Do tej pory urządzenie powinno odbierać Wi-Fi certyfikatu. Najprostszą weryfikacją, jaką można wykonać, jest próba nawiązania połączenia Wi-Fi, dla którego&#39;certyfikat. Otwórz aplikację **internetową Ustawienia** przejdź do sieci **&amp; Internet** Wi-Fi i wybierz połączenie  ->   Wi-Fi. Po na połączeniu otwórz aplikację Microsoft Edge i upewnij się, że możesz przejść do witryny internetowej.
 
 Aby potwierdzić, że certyfikat został odebrany na urządzeniu, możesz użyć [Menedżera certyfikatów](/hololens/certificate-manager).
 

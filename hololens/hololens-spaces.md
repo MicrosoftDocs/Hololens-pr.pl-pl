@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b8bda049f0ef4610dcf0ca6fe81d89dd5a316e3e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d1eef6bdf463aa400504af7b35a0fd2b8e2b44499d6ff7b93e70a2dd5952ef88
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662851"
 ---
 # <a name="map-physical-spaces-with-hololens"></a>Mapowanie przestrzeni fizycznych za pomocą HoloLens
 
@@ -52,7 +52,7 @@ Poniżej znajdują się wskazówki dotyczące tworzenia wspaniałej mapy przestr
 
 ### <a name="understand-the-scenarios-for-the-area"></a>Opis scenariuszy dla obszaru
 
-Ważne jest, aby poświęcać najwięcej czasu na korzystanie z HoloLens, aby mapa była istotna i kompletna. Jeśli na przykład scenariusz użytkownika dla usługi HoloLens obejmuje przejście z punktu A do punktu B, należy przejść przez ścieżkę od dwóch do trzech razy, patrząc we wszystkich kierunkach podczas przenoszenia.  
+Ważne jest, aby poświęcać najwięcej czasu na korzystanie z HoloLens, aby mapa była istotna i kompletna. Jeśli na przykład scenariusz użytkownika dla usługi HoloLens obejmuje przejście z punktu A do punktu B, przekieruj ścieżkę od dwóch do trzech razy, patrząc we wszystkich kierunkach podczas przenoszenia.  
 
 ### <a name="walk-slowly-around-the-space"></a>Powolne poruszanie się po przestrzeni
 
@@ -70,7 +70,7 @@ Nie zapomnij zajrzeć na podłogę podczas mapowania przestrzeni.
 
 ### <a name="cover-key-areas-multiple-times"></a>Wielokrotne osłanianie kluczowych obszarów
 
-Wielokrotne poruszanie się po obszarze pomoże w odebraniu funkcji, które mogą zostać pominięte w pierwszym przewodniku. Aby utworzyć idealną mapę, spróbuj wykonać przechodzenie przez obszar od dwóch do trzech razy.
+Wielokrotne przechodzenie przez obszar pomoże w odebraniu funkcji, które mogą zostać pominięte w pierwszym przewodniku. Aby utworzyć idealną mapę, spróbuj wykonać przechodzenie przez obszar od dwóch do trzech razy.
 
 Jeśli to możliwe, powtarzając te ruchy, spędzaj czas na poruszaniu się po obszarze w jednym kierunku, a następnie zawróć i wrócić do celu.
 
@@ -109,7 +109,7 @@ Istnieją dwie opcje usuwania danych mapy w Ustawienia > **System > Hologramy:**
 - Aby usunąć wszystkie hologramy, wybierz **pozycję Usuń wszystkie hologramy**. To polecenie wyczyści wszystkie dane mapy przechowywane na urządzeniu, a także wszystkie zakotwiczone hologramy. Należy jawnie umieścić wszelkie hologramy. Nie będzie można ponownie odnaleźć wcześniej umieszczonych hologramów.
 
 > [!NOTE]
-> Po usunięciu pobliskich lub wszystkich hologramów HoloLens natychmiast rozpocznie się skanowanie i mapowanie bieżącego miejsca.
+> Po usunięciu pobliskich lub wszystkich hologramów HoloLens natychmiast rozpocznie skanowanie i mapowanie bieżącego miejsca.
 
 ### <a name="wi-fi-data-in-spatial-maps"></a>Wi-Fi danych w mapach przestrzennych
 

@@ -1,6 +1,6 @@
 ---
 title: Wytyczne dotyczące infrastruktury dla HoloLens
-description: Poznaj wytyczne dotyczące infrastruktury dla urządzeń HoloLens, w tym obsługę sieci bezprzewodowej, pomoc zdalną i zarządzanie urządzeniami przenośnymi.
+description: Zapoznaj się z wytycznymi dotyczącymi infrastruktury HoloLens, w tym z obsługą sieci bezprzewodowej, pomocą zdalną i zarządzaniem urządzeniami przenośnymi.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,33 +14,33 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e3f87c524ce0f8af05ec8c92877d46facd962fb4
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664469"
 ---
 # <a name="configure-your-network-for-hololens"></a>Konfigurowanie sieci na HoloLens
 
 Ta część dokumentu będzie wymagać następujących osób:
 
-1. Administrator sieci z uprawnieniami do zmieniania serwera proxy/zapory
+1. Administrator sieci z uprawnieniami do zmiany serwera proxy/zapory
 2. Azure Active Directory Admin
 3. Administrator Menedżer urządzeń urządzeń przenośnych
 
 ## <a name="infrastructure-requirements"></a>Wymagania dotyczące infrastruktury
 
-HoloLens to podstawowe urządzenie przenośne zintegrowane Windows platformą Azure.  Najlepiej sprawdza się w środowiskach komercyjnych z dostępnością sieci bezprzewodowej (Wi-Fi) i dostępem do usługi firmy Microsoft.
+HoloLens to w swojej rdzeniu Windows urządzenia przenośne zintegrowane z platformą Azure.  Najlepiej sprawdza się w środowiskach komercyjnych z dostępnością sieci bezprzewodowej (Wi-Fi) i dostępem do usługi firmy Microsoft.
 
 Krytyczne usługi w chmurze obejmują:
 
 - Azure active directory (Azure AD)
 - Windows Aktualizacja (WU)
 
-Klienci komercyjni będą potrzebować infrastruktury zarządzania mobilnością w przedsiębiorstwie (EMM) lub zarządzania urządzeniami przenośnymi (MDM) w celu zarządzania HoloLens urządzeniami przenośnymi na dużą skalę.  W tym [przewodniku Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) jako przykład, chociaż każdy dostawca z pełną obsługą zasad firmy Microsoft może obsługiwać HoloLens.  Zapytaj dostawcę zarządzania urządzeniami przenośnymi, czy obsługuje HoloLens 2.
+Klienci komercyjni będą potrzebować infrastruktury zarządzania mobilnością w przedsiębiorstwie (EMM) lub zarządzania urządzeniami przenośnymi (MDM), aby zarządzać urządzeniami HoloLens na dużą skalę.  W tym przewodniku [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) przykład, chociaż każdy dostawca z pełną obsługą zasad firmy Microsoft może obsługiwać HoloLens.  Zapytaj dostawcę zarządzania urządzeniami przenośnymi, czy obsługuje HoloLens 2.
 
-HoloLens obsługuje ograniczony zestaw odłączonych od chmury możliwości.
+HoloLens obsługuje ograniczony zestaw odłączonych od chmury rozwiązań.
 
 ### <a name="wireless-network-eap-support"></a>Obsługa protokołu EAP sieci bezprzewodowej
 
@@ -57,18 +57,18 @@ HoloLens obsługuje ograniczony zestaw odłączonych od chmury możliwości.
 
 Upewnij się, [że ta lista](hololens-offline.md) punktów końcowych jest dozwolona w zaporze sieciowej. Umożliwi to prawidłowe HoloLens funkcji.
 
-### <a name="remote-assist-specific-network-requirements"></a>Wymagania dotyczące sieci z określoną usługą Remote Assist
+### <a name="remote-assist-specific-network-requirements"></a>Wymagania dotyczące sieci określonej funkcji Remote Assist
 
 1. Zalecana przepustowość dla optymalnej wydajności usługi Remote Assist to 1,5 Mb/s. Aby uzyskać [dodatkowe informacje, zobacz](/MicrosoftTeams/prepare-network) szczegółowe wymagania dotyczące sieci.
-**(Pamiętaj, że jeśli nie masz szybkości sieci co najmniej 1,5 Mb/s, usługa Remote Assist nadal będzie działać. Jednak jakość może ulec zaochłoce).**
+**(Pamiętaj, że jeśli nie masz sieci o szybkości sieci co najmniej 1,5 Mb/s, funkcja Remote Assist nadal będzie działać. Jakość może jednak ulec chybowi).**
 1. Upewnij się, że te porty i adresy URL są dozwolone w zaporze sieciowej, aby umożliwić Microsoft Teams funkcji. Bądź na bieżąco z [najnowszą listą portów.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 - Dowiedz się więcej o określonych [wymaganiach dotyczących sieci dla usługi Remote Assist.](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements) 
 - Dowiedz się więcej o [tym, jak przygotować sieć organizacji do](/MicrosoftTeams/prepare-network) Microsoft Teams
 
-### <a name="guides-specific-network-requirements"></a>Przewodniki z określonymi wymaganiami sieciowymi
+### <a name="guides-specific-network-requirements"></a>Przewodniki dotyczące określonych wymagań sieciowych
 
-Przewodniki wymagają tylko dostępu do sieci w celu pobrania i używania aplikacji.
+Przewodniki wymagają tylko dostępu sieciowego do pobierania i używania aplikacji.
 
 ## <a name="azure-active-directory-guidance"></a>Azure Active Directory Wskazówki
 
@@ -78,26 +78,26 @@ Przewodniki wymagają tylko dostępu do sieci w celu pobrania i używania aplika
 1. Upewnij się, że masz licencję usługi Azure AD.
 Aby [uzyskać dodatkowe HoloLens, zapoznaj się](hololens-licenses-requirements.md) z wymaganiami licencyjnymi.
 
-1. Jeśli planujesz korzystanie z automatycznego rejestrowania, musisz skonfigurować [rejestrację w usłudze Azure AD.](/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
+1. Jeśli planujesz korzystanie z automatycznego rejestrowania, musisz [skonfigurować rejestrację w usłudze Azure AD.](/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
 
-1. Upewnij się, że użytkownicy Twojej firmy znajdują się w Azure Active Directory (Azure AD).
+1. Upewnij się, że użytkownicy twojej firmy znajdują się w Azure Active Directory (Azure AD).
 Zapoznaj się z [poniższymi instrukcjami](/azure/active-directory/fundamentals/add-users-azure-active-directory) dotyczącymi dodawania użytkowników.
 
-1. Zalecamy, aby użytkownicy, którzy potrzebują podobnych licencji, dodali się do tej samej grupy.
+1. Zalecamy dodanie użytkowników, którzy potrzebują podobnych licencji, do tej samej grupy.
     1. [Tworzenie grupy](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     1. [Dodawanie użytkowników do grup](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
 1. Upewnij się, że użytkownicy (lub grupa użytkowników) firmy mają przypisane niezbędne licencje.
-Jeśli musisz przypisać licencje, postępuj zgodnie z tymi [instrukcjami](/azure/active-directory/fundamentals/license-users-groups).
+Jeśli musisz przypisać licencje, postępuj zgodnie z tymi [instrukcjami.](/azure/active-directory/fundamentals/license-users-groups)
 
 1. Ten krok należy wykonać tylko wtedy, gdy użytkownicy mają zarejestrować swoje urządzenie HoloLens/urządzenie przenośne (dostępne są trzy opcje) Te kroki zapewniają, że użytkownicy w firmie (lub grupa użytkowników) mogą dodawać urządzenia.
-    1. **Opcja 1.** Nadaj wszystkim użytkownikom uprawnienia do dołączania urządzeń do usługi Azure AD.
-**Zaloguj się do Azure Portal jako administrator**  >  **Azure Active Directory**  >  **Urządzenia**  >  **Ustawienia Ustawienia**  >
+    1. **Opcja 1:** Nadaj wszystkim użytkownikom uprawnienia do dołączania urządzeń do usługi Azure AD.
+**Zaloguj się do witryny Azure Portal jako administrator**  >  **Azure Active Directory**  >  **Urządzenia**  >  **Ustawienia Ustawienia**  >
  **Ustaw dla ustawienia Użytkownicy mogą dołączać urządzenia do usługi Azure AD wartość *Wszystkie***
 
-    1. **Opcja 2.** Nadaj wybranym użytkownikom/grupom uprawnienia do dołączania urządzeń do usługi Azure AD Zaloguj się do usługi **Azure Portal** jako administrator urządzenia Azure Active Directory  >    >  **Urządzenia**  >  **Ustawienia**  >
+    1. **Opcja 2:** Nadaj wybranym użytkownikom/grupom uprawnienia do dołączania urządzeń do usługi Azure AD Zaloguj się do usługi Azure Portal jako **administrator**  >  **urządzenia Azure Active Directory**  >  **Urządzenia**  >  **Ustawienia**  >
  **** 
- ![ Ustaw, że użytkownicy mogą dołączać urządzenia do usługi Azure AD do wybranego obrazu wyświetlającego konfigurację urządzeń przyłączone do usługi Azure AD](images/azure-ad-image.png)
+ ![ Ustaw opcję Użytkownicy mogą dołączać urządzenia do usługi Azure AD na wybrany obraz, który pokazuje konfigurację urządzeń przyłączony do usługi Azure AD](images/azure-ad-image.png)
 
     1. **Opcja 3.** Możesz zablokować wszystkim użytkownikom możliwość dołączania swoich urządzeń do domeny. Oznacza to, że wszystkie urządzenia muszą zostać zarejestrowane ręcznie.
 
@@ -110,36 +110,36 @@ Jeśli musisz przypisać licencje, postępuj zgodnie z tymi [instrukcjami](/azur
 
 Bieżące zarządzanie urządzeniami będzie zależeć od infrastruktury zarządzania urządzeniami przenośnymi.  Większość z tych funkcji ma tę samą ogólną funkcjonalność, ale interfejs użytkownika może się znacznie różnić.
 
-1. [Dostawcy CSP (dostawcy usług konfiguracji)](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) umożliwiają tworzenie i wdrażanie ustawień zarządzania dla urządzeń w sieci. Zapoznaj się [z listą HoloLens CSP,](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) aby uzyskać informacje.
+1. [Dostawcy CSP (dostawcy usług konfiguracji)](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) umożliwiają tworzenie i wdrażanie ustawień zarządzania dla urządzeń w sieci. Aby uzyskać [informacje, zobacz listę HoloLens CSP.](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 
 1. [Zasady zgodności](/intune/device-compliance-get-started) to reguły i ustawienia, które urządzenia muszą spełniać, aby zapewnić zgodność w infrastrukturze firmowej. Użyj tych zasad z dostępem warunkowym, aby zablokować dostęp do zasobów firmy dla niezgodnych urządzeń. Na przykład możesz utworzyć zasady wymagające włączenia funkcji Bitlocker.
 
 1. [Utwórz zasady zgodności.](/intune/protect/compliance-policy-create-windows)
 
-1. Dostęp warunkowy zezwala na dostęp urządzeń przenośnych i aplikacji mobilnych do zasobów firmy lub odmówi go. Przydatne mogą być dwa dokumenty: [Planowanie wdrożenia urzędu certyfikacji](/azure/active-directory/conditional-access/plan-conditional-access) i najlepsze [rozwiązania.](/azure/active-directory/conditional-access/best-practices)
+1. Dostęp warunkowy zezwala/nie zezwala na dostęp urządzeń przenośnych i aplikacji mobilnych do zasobów firmy. Przydatne mogą być dwa dokumenty: [Planowanie wdrożenia urzędu certyfikacji](/azure/active-directory/conditional-access/plan-conditional-access) i najlepsze [rozwiązania.](/azure/active-directory/conditional-access/best-practices)
 
-1. [W tym](/intune/fundamentals/windows-holographic-for-business) artykule omówienia narzędzi do zarządzania usługą Intune dla HoloLens.
+1. [W tym artykule](/intune/fundamentals/windows-holographic-for-business) o mowa o narzędziach do zarządzania usługą Intune dla HoloLens.
 
 1. [Tworzenie profilu urządzenia](/intune/configuration/device-profile-create)
 
 ### <a name="manage-updates"></a>Zarządzanie aktualizacjami
 
-Usługa Intune zawiera funkcję o nazwie Pierścienie aktualizacji dla urządzeń Windows 10, w tym HoloLens 2 i HoloLens v1 (z platformą Holographic for Business). Pierścienie aktualizacji obejmują grupę ustawień, które określają, jak i kiedy są instalowane aktualizacje.
+Usługa Intune zawiera funkcję o nazwie Pierścienie aktualizacji dla urządzeń Windows 10, w tym HoloLens 2 i HoloLens v1 (z platformą Holographic for Business). Pierścienie aktualizacji obejmują grupę ustawień, które określają sposób i czas instalowania aktualizacji.
 
-Na przykład możesz utworzyć okno obsługi, aby zainstalować aktualizacje lub wybrać opcję ponownego uruchomienia po zainstalowaniu aktualizacji.  Możesz również wstrzymać aktualizacje na czas nieokreślony do momentu, aż wszystko będzie gotowe do aktualizacji.
+Na przykład możesz utworzyć okno obsługi, aby zainstalować aktualizacje lub wybrać opcję ponownego uruchomienia po zainstalowaniu aktualizacji.  Możesz również wstrzymywać aktualizacje na czas nieokreślony, aż wszystko będzie gotowe do aktualizacji.
 
 Przeczytaj więcej na [temat konfigurowania pierścieni aktualizacji za pomocą usługi Intune.](/intune/windows-update-for-business-configure)
 
 ### <a name="application-management"></a>Zarządzanie aplikacjami
 
-Zarządzanie HoloLens aplikacjami za pomocą:
+Zarządzanie HoloLens aplikacjami za pośrednictwem:
 
 1. Sklepie Microsoft  
   Ten Microsoft Store to najlepszy sposób rozpowszechniania i zużywania aplikacji na HoloLens.  Istnieje doskonały zestaw podstawowych aplikacji HoloLens już dostępnych w sklepie lub możesz [opublikować własny.](/windows/uwp/publish/)  
-  Wszystkie aplikacje w sklepie są publicznie dostępne dla wszystkich, ale jeśli nie jest to akceptowalne, należy wyewidencjonować Microsoft Store dla Firm.  
+  Wszystkie aplikacje w sklepie są publicznie dostępne dla wszystkich, ale jeśli nie jest to akceptowalne, wyewidencjonować Microsoft Store dla Firm.  
 
 1. [Sklep Microsoft dla Firm](/microsoft-store/)  
-  Microsoft Store dla Firm education to magazyn niestandardowy dla środowiska firmowego.  Umożliwia ona korzystanie z Microsoft Store wbudowanych Windows 10 i HoloLens do znajdowanie, pozyskiwanie i rozpowszechnianie aplikacji dla organizacji oraz zarządzanie nimi.  Umożliwia również wdrażanie aplikacji specyficznych dla środowiska komercyjnego, ale nie dla świata.
+  Microsoft Store dla Firm i Edukacja to magazyn niestandardowy dla środowiska firmowego.  Umożliwia ona korzystanie z aplikacji Microsoft Store wbudowanych w Windows 10 i HoloLens do znajdowanie, pozyskiwanie i rozpowszechnianie aplikacji dla organizacji oraz zarządzanie nimi.  Umożliwia również wdrażanie aplikacji specyficznych dla środowiska komercyjnego, ale nie dla świata.
 
 1. Wdrażanie aplikacji i zarządzanie nimi za pośrednictwem usługi Intune lub innego rozwiązania do zarządzania urządzeniami przenośnymi  
   Większość rozwiązań do zarządzania urządzeniami przenośnymi, w tym usługa Intune, umożliwia wdrażanie aplikacji biznesowych bezpośrednio na zestawie zarejestrowanych urządzeń.  Zobacz ten artykuł, aby [zainstalować aplikację usługi Intune.](/intune/apps-deploy)
@@ -151,7 +151,7 @@ Przeczytaj więcej na [temat instalowania aplikacji na HoloLens](hololens-instal
 
 ### <a name="certificates"></a>Certyfikaty
 
-Certyfikaty można rozpowszechniać za pośrednictwem dostawcy rozwiązania MDM. Jeśli firma wymaga certyfikatów, usługa Intune obsługuje certyfikaty PKCS, PFX i SCEP. Ważne jest, aby zrozumieć, który certyfikat jest odpowiedni dla Twojej firmy. Zapoznaj się z [dokumentacją konfiguracji certyfikatów,](/intune/protect/certificates-configure) aby ustalić, który certyfikat jest dla Ciebie najlepszy. Jeśli zamierzasz używać certyfikatów do uwierzytelniania HoloLens, plik PFX lub SCEP może być odpowiedni dla Ciebie.
+Certyfikaty można dystrybuować za pośrednictwem dostawcy zarządzania urządzeniami przenośnymi. Jeśli firma wymaga certyfikatów, usługa Intune obsługuje certyfikaty PKCS, PFX i SCEP. Ważne jest, aby zrozumieć, który certyfikat jest odpowiedni dla Twojej firmy. Zapoznaj się z [dokumentacją konfiguracji certyfikatów,](/intune/protect/certificates-configure) aby określić, który certyfikat jest dla Ciebie najlepszy. Jeśli zamierzasz używać certyfikatów do uwierzytelniania HoloLens, plik PFX lub SCEP może być odpowiedni dla Ciebie.
 
 Zapoznaj się z poniższymi krokami korzystania z [SCEP.](/intune/protect/certificates-profile-scep)
 

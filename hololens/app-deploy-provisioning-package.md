@@ -14,18 +14,18 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5aa554f9e7fdc09c3112b628e0978ac3332bc57d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2cb497d850ff7ba2de66f69e8ec53e6dd36b773cc13d01b038def8d539e3b0c1
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665220"
 ---
 # <a name="provisioning-package"></a>Pakiet aprowizowania
 
 Pakiety aprowizowania mogą służyć do przygotowywania i konfigurowania urządzeń w środowisku bez dostępu do zarządzania punktami końcowymi. Można je również wdrożyć na urządzeniu niezależnie od tożsamości użytkownika, stanu rejestracji, podczas procesu OOBE (Out of Box Experience) lub przez zastosowanie pakietu aprowizowania podczas [instalacji.](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)
 
-## <a name="provisioning-packages-considerations"></a>Zagadnienia dotyczące pakietów aprowiwizowania:
+## <a name="provisioning-packages-considerations"></a>Zagadnienia dotyczące aprowowania pakietów:
 
 * Aplikacje niepublicznie dostępne
 * Tylko ładowanie boczne USB
@@ -40,11 +40,11 @@ Aby poznać podstawy tworzenia pakietu aprowizowania dla urządzeń HoloLens, od
 
 ## <a name="setup"></a>Konfigurowanie
 
-W [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) należy wykonać cztery kroki.
+W [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) należy wykonać następujące cztery kroki.
 
 1. Ustaw pozycję ApplicationManagement/AllowAllTrustedApps na wartość "Yes". Zobacz: [ApplicationManagement/AllowAllTrustedApps.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-2. Przejdź do **pola UniversalAppInstall**  >  **UserContextAppLicense i wprowadź** wartość **PackageFamilyName.** Zobacz [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall). Zobacz też: [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+2. Przejdź do **pola UniversalAppInstall**  >  **UserContextAppLicense i** wprowadź wartość **PackageFamilyName.** Zobacz [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall). Zobacz też: [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
 
    Możesz użyć Portal urządzeń na urządzeniu, na które już zainstalowano aplikację. Odwiedź stronę Aplikacje i spójrz na wiersz PackageRelativeID, wszystkie informacje przed "!" To twoja **nazwa_pakietu_pakietu.**
 

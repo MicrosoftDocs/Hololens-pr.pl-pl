@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665628"
 ---
 # <a name="page-settings-visibility"></a>Widoczność Ustawienia stron
 
-Jedną z funkcji, które można zarządzać HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub aby to zrobić dla wszystkich stron z wyjątkiem określonych.
+Jedną z funkcji, które można zarządzać HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub na korzystanie z nich dla wszystkich stron z wyjątkiem określonych.
 
 > [!NOTE]
 > Ta funkcja jest dostępna tylko na [platformie Windows Holographic w wersji 20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub wyższej dla urządzeń HoloLens 2. Upewnij się, że urządzenia, dla których zamierzasz używać tej funkcji, zostały zaktualizowane.
@@ -49,7 +49,7 @@ Są to wartości konfiguracji, które zostaną dostarczone do usługi Intune:
 Można określić wiele stron, oddzielając je średnikami, a listę typowych stron można znaleźć poniżej.
 
 1. Utwórz zasady **niestandardowe.**
-1. Podczas ustawiania wartości **OMA-URI** wprowadź w pełni zakresowy adres URI. Na przykład: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
+1. Podczas ustawiania wartości **OMA-URI** wprowadź w pełni ograniczony adres URI. Na przykład: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
 1. Podczas wybierania danych wybierz **pozycję** Ciąg
 1. Podczas określania **wartości** skorzystaj z powyższych wskazówek. Na przykład: **`showonly:network-wifi;network-proxy;bluetooth`** lub **`hide:reset`** 
 > [!IMPORTANT]
@@ -121,7 +121,7 @@ HoloLens i Windows 10 mają różne opcje wyboru stron w Ustawienia aplikacji. N
 | Ogólne <sup>2</sup>             | `privacy-general`       |
 | Personalizacja & pisma odręcznego <sup>2</sup>             | `privacy-speechtyping`       |
 | Lokalizacja                 | `privacy-location`                    |
-| Obsługa wiadomości                | `privacy-messaging`                   |
+| Obsługa komunikatów                | `privacy-messaging`                   |
 | Mikrofon               | `privacy-microphone`                  |
 | Ruch <sup>2</sup>               | `privacy-motion`                  |
 | Powiadomienia            | `privacy-notifications`               |

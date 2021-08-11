@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 548f484043f2b1cb62ce0e0cfb6450a956d412b3
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659953"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 Rozwiązywanie problemów z wyświetlaniem
 
@@ -40,7 +40,7 @@ Aby zapewnić najwyższą jakość wizualną hologramów prezentowanych na ekran
 ### <a name="how-to-use-display-color-calibration"></a>Jak używać kolorowania wyświetlania
 1. Uruchom aplikację **Ustawienia** i przejdź do **tematu System > Nawigowanie.**
 1. W **obszarze Wyświetl odwzorowanie kolorów** wybierz przycisk **Uruchom, aby wyświetlić kolor.**
-1. Rozpocznie się środowisko kolorowania wyświetlania, które będzie zachęcało do upewninia się, że twoja wizja znajduje się we właściwej pozycji.
+1. Zostanie wyeksjonowane środowisko kolorowania ekranu, w przypadku których będzie można upewnić się, że twoja wizja znajduje się we właściwej pozycji.
 1. Po zakończeniu pracy z oknami dialogowymi instrukcji ekran zostanie automatycznie wygaszony do 30% jasność.
     > [!TIP]
     > Jeśli masz problemy z wyświetlaniem wygaszanej sceny w środowisku, możesz ręcznie dostosować poziom jasność HoloLens 2 przy użyciu przycisków jasność po lewej stronie urządzenia.
@@ -52,7 +52,7 @@ Aby zapewnić najwyższą jakość wizualną hologramów prezentowanych na ekran
 1. Jeśli nie chcesz wprowadzać zmian, wybierz przycisk Anuluj & **zakończ,** a zmiany zostaną przywrócone
 
 > [!TIP]
-> Poniżej podano kilka przydatnych wskazówek, które należy mieć na uwadze podczas korzystania z ustawienia odwzorowania kolorów:
+> Poniżej podano kilka przydatnych wskazówek, które należy mieć na uwadze podczas korzystania z ustawienia wyznaczania koloru wyświetlania:
 > - Zawsze, gdy chcesz, możesz ponownie Ustawienia wyświetlania kolorów
 > - Jeśli każda osoba na urządzeniu wcześniej użyła tego ustawienia do zmiany profilów kolorów, data/godzina ostatniej zmiany zostanie odzwierciedlona na Ustawienia kolorów
 > - Po uruchomieniu ponownego kolorowania wyświetlania profil kolorów, który został wcześniej zapisany, zostanie wyróżniony, a profil 0 nie będzie wyświetlany (ponieważ profil 0 reprezentuje oryginalny profil koloru wyświetlania)
@@ -67,9 +67,9 @@ Jeśli nie masz niezadowolenia z niestandardowego profilu kolorów zapisanego w 
 
 ### <a name="top-display-color-calibration-known-issues"></a>Znane problemy związane z kolorami w górnej części ekranu
 
-- Na stronie Ustawienia ciąg stanu, który informuje o tym, kiedy profil kolorów został ostatnio zmieniony, będzie aktualny do momentu ponownego załadowania tej strony Ustawienia 
-    - **Obejście:** Wybierz inną Ustawienia, a następnie ponownie wybierz stronę Wynisz.
-- Jeśli urządzenie HoloLens 2 przejdzie w stan uśpienia podczas korzystania z kolorowania, zostanie później wznowione do domu rzeczywistości mieszanej, a poziom jasność ekranu nadal będzie wygaszony.
+- Na stronie Ustawienia ciąg stanu, który informuje o tym, kiedy ostatnio zmieniono profil kolorów, będzie nieaktywny do momentu ponownego załadowania tej strony Ustawienia 
+    - **Obejście:** Wybierz inną Ustawienia, a następnie ponownie wybierz stronę Wylicja.
+- Jeśli urządzenie HoloLens 2 przejdzie w stan uśpienia podczas korzystania z kolorowania na ekranie, zostanie później wznowione do domu rzeczywistości mieszanej, a poziom jasność ekranu będzie nadal wygaszony.
 - Może być konieczne kilkukrotnie naciśnięcie przycisków jasność po lewej stronie urządzenia w górę/w dół, zanim będą działać zgodnie z oczekiwaniami.
 - Lokalizacja nie jest ukończona dla wszystkich rynków
 
@@ -83,7 +83,7 @@ Czasami na ekranie HoloLens 2 będą wyświetlane różne wzorce w lewym dolnym 
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>Dlaczego nie mogę zrobić dokładnego zdjęcia mojego HoloLens 2?
 
-Ekran HoloLens 2 jest przeznaczony do wyświetlania przez ludzkie oko. Urządzenie ma aktywny system korekcji kolorów, który dostosowuje się do oczu użytkownika. W porównaniu do ludzkiego oka, aparaty widzą środowiska inaczej i poniżej to pewne czynniki, które mogą mieć wpływ na wszelkie niespójności między tym, co przechwycił aparat, a tym, co widzi użytkownik.
+Ekran HoloLens 2 jest przeznaczony do wyświetlania przez ludzkie oko. Urządzenie ma aktywny system korekcji kolorów, który dostosowuje się do oczu użytkownika. W porównaniu do ludzkiego oka, aparaty widzą środowiska inaczej i poniżej to pewne czynniki, które mogą mieć wpływ na niespójność między tym, co przechwycił aparat, a tym, co widzi użytkownik.
 
 * **Położenie oka.** Ekran HoloLens 2 został zaprojektowany specjalnie z myślą o położeniu oka użytkownika. W HoloLens 2 wykorzystuje technologię śledzenia wzroku, aby dostosować się do pozycji oka użytkownika. Aparat, który jest nieprawidłowo pozycjonowany o kilka milimetrów, może prowadzić do zniekształcenia obrazu. Dokładne pozycjonowanie za pomocą aparatu jest trudne i musi odpowiadać dokładnej lokalizacji i odciążenia oka, dla którego urządzenie wykonuje korektę kolorów.
 * **Ruch oczu.** Ekran dostosowuje się do ruchu oka użytkownika w celu dostosowania kolorów. To, co jest wyświetlane na ekranie, może się różnić w zależności od tego, czy użytkownik patrzy na środek, krawędź lub róg ekranu. W najlepszym przypadku przechwytywanie pojedynczego obrazu może pokazywać tylko wygląd ekranu dla osi, która pasuje do kierunku spojrzenia oczu.
@@ -92,26 +92,26 @@ Ekran HoloLens 2 jest przeznaczony do wyświetlania przez ludzkie oko. Urządzen
 * **Rozmiar aparatu fotograficznego.** Rozmiar aparatu musi być co najmniej 3 mm, aby można było przechwycić dokładny obraz. Kamery do telefonów komórkowych z małymi okularami integrują światło z mniejszego obszaru niż ludzkie oko. Urządzenie stosuje korektę kolorów dla wzorców obserwowanych przez większe pierścienie. W przypadku małych łydek wzorce równomierności są ostrzejsze i pozostają widoczne pomimo korekt kolorów stosowanych przez system.
 * **Kamery na wejściu.** Źrenicy węzła kamery powinny mieć co najmniej 3 mm w celu przechwycenia dokładnego obrazu. W przeciwnym razie aparat przechwyci pewne wzorce wysokiej częstotliwości, które nie są widoczne dla oka. Położenie źrenicy wejściowej musi być przed kamerą i umieszczone w odległości odciążenia oka, aby uniknąć wprowadzenia aberracji i innych wariacji do przechwyconego obrazu.
 * **Położenie kamery.** Kamery spełniające wymagania dotyczące wyświetlania ekranu HoloLens 2 są większe i trudno jest ustawić aparat wystarczająco blisko ekranu HoloLens 2, aby zaobserwować poprawiony kolor obrazu. Jeśli aparat znajduje się w niewłaściwym miejscu, korekta kolorów może negatywnie wpłynąć na przechwytywanie HoloLens 2.
-* **Korekta obrazu.** Typowe cyfrowe aparaty fotograficzne i smartfony stosują krzywą reprodukcyjną (TRC), która zwiększa kontrast i kolor, aby zapewnić lepsze wyniki. Po zastosowaniu do HoloLens 2 ta krzywa tonu wzmacnia nieujedności.
+* **Korekta obrazu.** Typowe cyfrowe aparaty fotograficzne i smartfony stosują krzywą reprodukcyjną (TRC), która zwiększa kontrast i kolor, aby zapewnić lepsze wyniki. Po zastosowaniu do ekranu HoloLens 2 ta krzywa tonu wzmacnia nieujedności.
 
-Jak już ująliśmy, wyspecjalizowane kamery przemysłowe mogą przechwytywać reprezentatywne obrazy z ekranu HoloLens 2. Niestety smartfony, smartfony, konsumenci i profesjonalne aparaty fotograficzne nie przechwytują obrazów, które pasują do tego, co użytkownik zobaczy na ekranie HoloLens 2.
+Jednak specjalistyczne kamery przemysłowe nadal mogą przechwytywać reprezentatywne obrazy z ekranu HoloLens 2. Niestety smartfony, smartfony, konsumenci i profesjonalne aparaty fotograficzne nie przechwytują obrazów, które pasują do tego, co użytkownik zobaczy na ekranie HoloLens 2.
 
 ### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>Co robi wzrok, aby wyświetlić jakość obrazu?
 
-Ekran HoloLens 2 aktywnie koloruje obrazy na podstawie położenia oczu użytkownika. [Pomiar wzroku](hololens-calibration.md) zapewnia dwa ważne dane wejściowe: (1) odległość międzywęzową użytkownika (IPD) i (2) kierunek, w jakim patrzy każde oko. Bez układu wzrokowego system domyślnie ma nominalną pozycję oka bez ruchu oczu. Różnica między aktywną korektą kolorów a żadną korektą zależy od fizjologii użytkownika. Na przykład użytkownicy, którzy mają ten sam adres IPD co domyślna wartość systemowa, zobaczą mniej ulepszeń korekty kolorów. Użytkownicy, którzy mają znacznie węższy lub szerszy adres IPD niż domyślny system, zobaczą więcej zmian w obrazie wyświetlanym.
+Ekran HoloLens 2 aktywnie koloruje obrazy na podstawie położenia oczu użytkownika. [Pomiar wzroku](hololens-calibration.md) zapewnia dwa ważne dane wejściowe: (1) odległość międzywęzową użytkownika (IPD) i (2) kierunek, w jakim patrzy każde oko. Bez układu wzrokowego system domyślnie ma nominalną pozycję oka bez ruchu oczu. Różnica między aktywną korektą kolorów a żadną korektą zależy od fizjologii użytkownika. Na przykład użytkownicy, którzy mają ten sam adres IPD co domyślna wartość systemowa, zobaczą mniej ulepszeń korekty kolorów. Użytkownicy, którzy mają znacznie węższy lub szerszy zakres adresów IPD niż wartość domyślna systemu, zobaczą więcej zmian w obrazie wyświetlanym.
 
 Pamiętaj, że nowa funkcja w Windows Holographic w wersji [20H2](hololens-release-notes.md#windows-holographic-version-20h2) rozpocznie automatyczne [wykrywanie pozycji oka.](hololens-calibration.md#auto-eye-position-support) 
 
 ### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>Jakie są różnice między wyświetlaniem HoloLens (1. generacja) i HoloLens 2?
 
-Wśród żądań, które klienci podali firmie Microsoft po HoloLens 1, było (1) zwiększenie pola widzenia i (2) zwiększenie jasność. Rozwój technologii umożliwił firmie Microsoft tworzenie falowodów, które podwajały obszar pola widzenia i tworzyć projektory światła z ekranem, który jest maksymalnie trzy razy jaśniejszy. Sprzęt ustawia punkt odniesienia dla kilku kompromisów w zakresie jakości obrazu wyświetlanego: (1) pola widzenia, (2) jasność i (3) jednolity kolor. Dalszy postęp technologiczny umożliwia ulepszenia we wszystkich obszarach bez poświęcania innego obszaru. W międzyczasie istniejąca technologia określa limity dostępne dla tych kompromisów.
+Wśród żądań, które klienci podali firmie Microsoft po HoloLens 1, było (1) zwiększenie pola widzenia i (2) zwiększenie jasność. Rozwój technologii umożliwił firmie Microsoft tworzenie falowodów, które podwajały obszar pola widzenia i tworzyć projektory światła z ekranem, który jest maksymalnie trzy razy jaśniejszy. Sprzęt ustawia punkt odniesienia dla kilku kompromisów w zakresie jakości obrazu wyświetlanego: (1) pola widzenia, (2) jasność i (3) jednolity kolor. Dalszy postęp technologiczny umożliwia ulepszenia we wszystkich obszarach bez poświęcania innego obszaru. W międzyczasie istniejąca technologia ustawia limity dostępne dla tych kompromisów.
 
 ### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>Jakie ulepszenia zostaną wprowadzone, które poprawią HoloLens 2 obrazów?
 
 Mamy wiele badań w toku w celu poprawy jakości obrazu, jednak w nadchodzących aktualizacjach powinny pojawić się następujące obszary:
 
 * **Automatyczne położenie oka.** Ta funkcja umożliwi w tle procedury odcłaniania oczu. Użytkownicy nie będą już musieli uruchamiać korekcji oczu, aby aktywna korekta kolorów działała. Zamiast tego będzie działać.
-* **Ulepszenia kolorów kolorów.** Ta aktualizacja koncentruje się na wartościach kolorów ciemniejszych (na przykład ciemnoszarych). W tej chwili kolory wygaszacza odbierają czerwony ton. Ten problem występuje również, gdy cały ekran jest wygaszony — cały ekran przejmuje czerwone kolory. Ten problem jest wynikiem zbyt dużej aktywności w kanale koloru czerwonego dla tych ciemniejszych kolorów. Scharakteryzowaliśmy krzywe nachylne promienia promieniowego w tych bardziej wygaszanych kolorach i pracujemy nad zaoferacją procedury ujednania użytkownika. Wynikiem będzie większa dokładność kolorów w całym spektrum jasność. Nie zmieni to wyglądu białych tła przy pełnej jasności. Nadal zalecamy używanie wzorców projektowych w trybie ciemnym w aplikacjach.
+* **Ulepszenia kolorów kolorów.** Ta aktualizacja koncentruje się na wartościach kolorów ciemniejszych (na przykład ciemnoszarych). W tej chwili kolory wygaszacza odbierają czerwony ton. Ten problem występuje również wtedy, gdy cały ekran jest wygaszony — cały ekran przejmuje czerwone kolory. Ten problem jest wynikiem zbyt dużej aktywności w kanale koloru czerwonego dla tych ciemniejszych kolorów. Scharakteryzowaliśmy krzywe krzywych promieniowych w tych wygaszaczach kolorów i pracujemy nad zaoferacją procedury ujednania użytkownika. Wynikiem będzie większa dokładność kolorów w całym spektrum jasność. Nie zmieni to wyglądu białych tła przy pełnej jasności. Nadal zalecamy używanie wzorców projektowych w trybie ciemnym w aplikacjach.
 * **Tryb odczytu.** Deweloperzy aplikacji mogą realizować kompromis między polem widzenia wyświetlania, aby uzyskać wyższą rozdzielczość kątową. Deweloperzy aplikacji mogą przesłonić macierz projekcji, aby zawartość została wyrenderowana w rozdzielczości rysowania ekranu. Ta funkcja powoduje zmniejszenie pola widzenia o 30% i odpowiednie zwiększenie rozdzielczości kątowej. Trwają prace nad wprowadzeniem tej możliwości do zestawu [narzędzi Mixed Reality Toolkit.](https://github.com/Microsoft/MixedRealityToolkit-Unity) Jeśli jest dostępny, tryb odczytu będzie działać w HoloLens systemu operacyjnego 2 — nie jest zależny od aktualizacji systemu operacyjnego.
 
 Aktualizacje systemu operacyjnego są dostarczane automatycznie. Możesz również przetestować wczesne wersje ulepszeń oprogramowania za pośrednictwem programu insider preview.

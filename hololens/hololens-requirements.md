@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659067"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662907"
 ---
 # <a name="common-deployment-scenarios"></a>Typowe scenariusze wdrażania
 
@@ -25,7 +25,7 @@ ms.locfileid: "114659067"
 
 Ustalenie, jak wdrożyć nowe urządzenie, może być problem przy próbie jej po raz pierwszy. W tym miejscu udostępniamy różne sposoby wdrażania urządzeń Microsoft HoloLens 2 urządzeń w organizacji i zarządzania nimi.
 
-Potrzebujesz rozwiązań wdrażanych na dużą skalę. Chcemy Cię tam zabrać. Najpierw omówmy kroki wdrażania urządzeń, w związku z czym hologramów, aby osiągnąć wartość docelowego scenariusza rzeczywistości mieszanej, niezależnie od tego, czy korzystasz ze zdalnej pomocy, przewodników usługi D365, czy utworzonej aplikacji z obsługą usługi rzeczywistości mieszanej platformy Azure.
+Potrzebujesz rozwiązań wdrażanych na dużą skalę. Chcemy Cię tam zabrać. Najpierw omówmy kroki wdrażania urządzeń, w związku z tym hologramów, aby osiągnąć wartość docelowego scenariusza rzeczywistości mieszanej, niezależnie od tego, czy korzystasz ze zdalnej pomocy, przewodników usługi D365, czy utworzonej aplikacji z obsługą usługi rzeczywistości mieszanej platformy Azure.
 
 Być może jesteś twórcą decyzji biznesowych, specjalistą IT lub zespołem ds. innowacji, który chce HoloLens w swojej organizacji. Podczas tworzenia od weryfikacji koncepcji do wdrożenia skalowanego nasze przewodniki wdrażania mają sens HoloLens infrastrukturze IT — niezależnie od tego, jak duże lub małe. Najczęściej spotykane są następujące scenariusze wdrażania:
 
@@ -39,11 +39,11 @@ Być może jesteś twórcą decyzji biznesowych, specjalistą IT lub zespołem d
 
 Ten scenariusz jest porównywalny z wdrażaniem zarządzanych urządzeń przenośnych w firmie. HoloLens 2 jest wdrażany głównie w środowiskach zewnętrznych niż sieć firmowa. Zasoby firmowe nie są dostępne lub mogą być ograniczone za pośrednictwem sieci VPN.
 
-[![Diagram scenariusza A](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+[![Scenariusz A diagramu](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ### <a name="when-to-use"></a>Kiedy stosować
 
-Rozważ ten model wdrażania dla:
+Rozważmy ten model wdrażania dla:
 
 * Wdrażanie weryfikacji koncepcji, pilotażu i usług terenowych
 * Wdrażanie usługi [Remote Assist](hololens2-options-remote-assist.md)
@@ -81,7 +81,7 @@ Ten scenariusz jest identyczny z klasycznym wdrożeniem dla większości Windows
 
 ### <a name="when-to-use"></a>Kiedy stosować
 
-Rozważ ten model wdrażania dla:
+Rozważmy ten model wdrażania dla:
 
 * Użytkownicy wewnętrzni
 * Wdrażanie na dużą skalę (pilotażowa i produkcyjna) w środowisku firmowym
@@ -115,7 +115,7 @@ Jest to typowe wdrożenie dla wysoce bezpiecznych lub poufnych lokalizacji. Holo
 
 ### <a name="when-to-use"></a>Kiedy stosować
 
-Rozważ ten model wdrażania dla:
+Rozważmy ten model wdrażania dla:
 
 * Środowiska o wysokim stopniu bezpieczeństwa, w których dane muszą być przechowywane w domu
 * "Doświadczenia", w których publiczna będzie korzystać z urządzeń

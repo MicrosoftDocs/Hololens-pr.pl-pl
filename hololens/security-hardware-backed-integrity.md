@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 037f9325555244314518c81d7814bf983c345af6
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: de12231b87c028ed9d8ca785a5b351fc4cb1c6fd8dbe304e4baaccd6803c5f6a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665407"
 ---
 # <a name="hardware-backed-integrity-and-runtime-attestation"></a>Sprzętowa integralność i zaświadczenia środowiska uruchomieniowego
 
@@ -37,11 +37,11 @@ Moduł Trusted Platform Module (TPM) to wyspecjalizowany mikroukład na urządze
 
 Celem większości cyberataków jest utrzymanie stałego dostępu do urządzenia. W przypadku cyberprzestępczości utrzymywanie tej trwałości umożliwia urządzeniu z naruszonym Windows dołączenie do botnetu, sprzedawanie dostępu do urządzenia lub innym niegroźnym użytkownikom albo umożliwia wielokrotne kradzieży danych. W świecie ataków ukierunkowanych trwałość jest niezbędna do pomyślnego ataku cybernetycznego — zarówno na urządzeniu, jak i (najczęściej) w całej sieci.  
 
-W rzeczywistości ukierunkowane ataki są uznawane za "zaawansowane trwałe zagrożenia", ponieważ ich strategiczna potrzeba utrzymania dostępu do docelowego urządzenia lub sieci. Z tego powodu Windows Holographic for Business obronę przed trwałością absolutnie kluczową i używa technologii ochrony przed trwałością, aby zapewnić klientom ironiczne obietnice bezpieczeństwa.
+W rzeczywistości ukierunkowane ataki są uznawane za "zaawansowane trwałe zagrożenia", ponieważ ich strategiczna potrzeba utrzymania dostępu do docelowego urządzenia lub sieci. Z tego powodu Windows Holographic for Business obronę przed trwałością, która jest absolutnie kluczowa, i używa technologii antytrwałej, aby zapewnić klientom ironiczne obietnice bezpieczeństwa.
 
 ### <a name="secure-boot"></a>Bezpieczny rozruch
 
-HoloLens 2 wymusza bezpieczny rozruch Extensible Firmware Interface (UEFI) ujednoliconego rozruchu we wszystkich podstawowych stanach systemu operacyjnego. Interfejs UEFI uruchamia tylko zaufane platformy firmy Microsoft, co gwarantuje, że cały łańcuch rozruchu jest weryfikowany pod Windows jest zawsze uruchamiany z zastosowanymi do niego prawidłowymi zasadami zabezpieczeń. HoloLens 2 nie zabezpiecza rozruchu, aby wyłączyć, ani nie zezwala na 3 innych firm modułu ładującego rozruchu.
+HoloLens 2 wymusza ujednolicony Extensible Firmware Interface (UEFI) bezpieczny rozruch we wszystkich podstawowych stanach systemu operacyjnego. Interfejs UEFI uruchamia tylko zaufane platformy firmy Microsoft, co zapewnia, że cały łańcuch rozruchu jest weryfikowany pod Windows zawsze uruchamia się z zastosowanymi do niego prawidłowymi zasadami zabezpieczeń. HoloLens 2 nie zabezpiecza rozruchu, aby wyłączyć, ani nie zezwala na 3 innych firm modułu ładującego rozruchu.
 
 > [!Tip]
 > Dowiedz się więcej na temat [bezpiecznego rozruchu.](/windows-hardware/design/device-experiences/oem-secure-boot)

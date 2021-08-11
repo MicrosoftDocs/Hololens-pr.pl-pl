@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ed2d5134a6bc5952063f7dc5dc5d0e31db972b08
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f4fc79b7f51933418cdda8368c6b4b070e854dd0978754647ce864075c772cfd
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665543"
 ---
 # <a name="admin-less-operating-system"></a>System operacyjny bez uprawnień administratora
 
@@ -28,7 +28,7 @@ Te możliwości aplikacji nadal mają trzywarstwowy model klasyfikacji:
   * Z ograniczeniami
   * Windows
 
-Windows mogą również korzystać z piaskownicy AppContainer za pośrednictwem ujścia systemu. Aby dowiedzieć się więcej o platformie uniwersalnej Windows (UWP), zobacz [dokumentację platformy UWP.](/windows/uwp/) Ponadto składniki usługi Windows z większymi potrzebami redukcji uprawnień (takie jak strony zawartości przeglądarki lub parsery) korzystają z piaskownicy Less Privileged AppContainer (LPAC), która odcięła dostęp do zestawu zasobów dostępnych dla wszystkich aplikacji AppContainer.
+Windows mogą również korzystać z piaskownicy AppContainer za pośrednictwem UAPS systemu. Aby dowiedzieć się więcej o platformie uniwersalnej Windows (UWP), zobacz [dokumentację platformy UWP.](/windows/uwp/) Ponadto składniki usługi Windows z większymi potrzebami redukcji uprawnień (takie jak strony zawartości przeglądarki lub parsery) korzystają z piaskownicy Less Privileged AppContainer (LPAC), która odcięła dostęp do zestawu zasobów dostępnych dla wszystkich aplikacji AppContainer.
 
 ## <a name="device-owner"></a>Właściciel urządzenia
 
@@ -37,7 +37,7 @@ Ponadto wykonywanie określonych operacji na całym urządzeniu, takich jak doł
 > [!IMPORTANT]
 >W przypadku użytkowników usługi Azure AD wyjątkiem od tej reguły jest to, że jeśli urządzenie jest przyłączone do usługi Azure AD za pośrednictwem rozwiązania Autopilot lub rejestracji zbiorczej w usłudze Azure AD, która korzysta z nie rzeczywistego użytkownika. W takim przypadku pierwszy użytkownik usługi AAD, który ma zalogować się na urządzeniu, może nie zostać automatycznie właścicielem urządzenia, chyba że ma przypisaną rolę "administrator globalny" lub "administrator urządzenia" w Azure Portal. Aby uzyskać więcej informacji, zobacz uwaga poniżej.  
 
-  * Gdy użytkownik ma zostać właścicielem z witryny Ustawienia użytkownika przez innego właściciela urządzenia.
+  * Gdy użytkownik ma zostać właścicielem z witryny Ustawienia przez innego właściciela urządzenia.
   * Jeśli właściciel urządzenia nie jest już dostępny (opuszcza firmę), a urządzenie jest przyłączone do usługi Azure AD, administrator dzierżawy może zmienić właściciela urządzenia na nowego użytkownika w usłudze Azure Portal. Administratorzy globalni i administratorzy urządzeń dzierżawy usługi Azure AD są niejawnie zalogowani jako właściciele na urządzeniu bez konieczności poprzednich kroków.  
 
  Administratorzy IT mogą zarządzać tym, do jakich aplikacji mogą uzyskać dostęp za [pośrednictwem zasad](/windows/client-management/mdm/policy-csp-privacy) ochrony prywatności. 

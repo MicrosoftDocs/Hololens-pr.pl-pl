@@ -14,26 +14,26 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 074fffc8350dd6deb876a19320397674bcac3e46
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4ceaa1a741ec63153cd9112d04547165b46b0fa72c32ee7f9580f15368a2f88
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665456"
 ---
 # <a name="limiting-password-use"></a>Ograniczanie użycia hasła
 
-Obecnie większość systemów komputerowych wykorzystuje poświadczenia użytkownika jako podstawę zabezpieczeń, co czyni je zależnym od haseł wielokrotnego użytku utworzonych przez użytkownika. W rezultacie hasła stają się również najczęstszą przyczyną naruszeń zabezpieczeń konta i danych. Na przykład hasła mogą zostać przechwycone podczas transmisji lub kradzieży serwera (przez wyłudzanie informacji lub ataki z atakiem rozsyłania haseł) i naruszone w celu uzyskania dostępu do konta użytkownika.
+Obecnie większość systemów komputerowych wykorzystuje poświadczenia użytkownika jako podstawę zabezpieczeń, co czyni je zależnym od haseł wielokrotnego użytku utworzonych przez użytkownika. W rezultacie hasła stają się również najczęstszą przyczyną naruszeń zabezpieczeń konta i danych. Na przykład hasła mogą zostać przechwycone podczas transmisji lub kradzieży serwera (przez wyłudzanie informacji lub ataki z atakiem typu "rozsyłanie hasła") i naruszone w celu uzyskania dostępu do konta użytkownika.
 
-Aby zwiększyć bezpieczeństwo i ochronę kont, system HoloLens 2 ma możliwość włączenia silnych, sprzętowych poświadczeń "bez hasła" (w tym Windows Hello) do logowania urządzeń, co zapewnia bezproblemowy dostęp do chmury firmy Microsoft.
+Aby zwiększyć bezpieczeństwo i ochronę kont, system HoloLens 2 ma możliwość włączenia silnych, sprzętowych poświadczeń bez hasła (w tym Windows Hello) do logowania się na urządzeniu, co zapewnia bezproblemowy dostęp do chmury firmy Microsoft.
 
 ## <a name="signing-in-from-another-device"></a>Logowanie z innego urządzenia
 
 HoloLens 2 oferuje opcje zdalnego logowania urządzeń dla kont służbowych usługi Azure Active Directory podczas początkowej konfiguracji urządzenia i logowania użytkowników, aby ograniczyć potrzebę wpisywania złożonych haseł i zminimalizować potrzebę haseł jako poświadczeń. Użytkownicy i organizacje, które używają kart inteligentnych do uwierzytelniania, mają trudności z używaniem tych poświadczeń na urządzeniach takich jak HoloLens 2, a często organizacje opracowują skomplikowane systemy i kosztowne procesy, aby rozwiązać problem. Aby rozwiązać ten problem, usługa Azure AD oferuje dwie opcje logowania bez hasła HoloLens 2.
 
-Pierwsza metoda uwierzytelniania korzysta z nowych możliwości w aplikacji Microsoft Authenticator w celu zapewnienia uwierzytelniania opartego na kluczach, które umożliwia poświadczenie użytkownika powiązane z urządzeniem. Po włączeniu w dzierżawie przez administratora podczas konfigurowania urządzenia HoloLens zostanie wyświetlony komunikat z informacją o naciśnięciu numeru w aplikacji. Aby kontynuować, muszą oni dopasować numer w aplikacji wystawcy uwierzytelnienia, wybrać pozycję Zatwierdź, podać numer PIN lub uwierzytelnianie biometryczne i HoloLens konfiguracji. Opisano to bardziej szczegółowo w te [tematach logowania bez hasła.](/azure/active-directory/authentication/howto-authentication-passwordless-phone)
+Pierwsza metoda uwierzytelniania opiera się na nowych możliwościach w aplikacji Microsoft Authenticator w celu zapewnienia uwierzytelniania opartego na kluczach, które umożliwia poświadczenie użytkownika powiązane z urządzeniem. Po włączeniu w dzierżawie przez administratora podczas konfigurowania urządzenia HoloLens zostanie wyświetlony komunikat z informacją o naciśnięciu numeru w aplikacji. Następnie muszą dopasować numer w aplikacji wystawcy uwierzytelnienia, wybrać pozycję Zatwierdź, podać numer PIN lub uwierzytelnianie biometryczne i pełne HoloLens konfiguracji, aby kontynuować. Opisano to bardziej szczegółowo w te [tematach logowania bez hasła.](/azure/active-directory/authentication/howto-authentication-passwordless-phone)
 
-Drugi to przepływ kodu urządzenia, który jest intuicyjny dla użytkowników i nie wymaga dodatkowej infrastruktury.  To zdalne zachowanie logowania opiera się na innym zaufanym urządzeniu, które obsługuje preferowany mechanizm uwierzytelniania w organizacji, a po zakończeniu tokeny są wystawiane z powrotem do usługi HoloLens w celu ukończenia konfiguracji logowania lub urządzenia. Kroki tego przepływu są następujące:
+Drugi to przepływ kodu urządzenia, który jest intuicyjny dla użytkowników i nie wymaga dodatkowej infrastruktury.  To zdalne zachowanie logowania opiera się na innym zaufanym urządzeniu, które obsługuje preferowany mechanizm uwierzytelniania organizacji, a po zakończeniu tokeny są wystawiane z powrotem do usługi HoloLens w celu ukończenia logowania lub konfiguracji urządzenia. Kroki w tym przepływie są następujące:
 
   1. Użytkownik przechodzący przez początkową konfigurację urządzenia lub przepływy logowania w ramach OOBE ma link "Zaloguj się z innego urządzenia" i naciska go. Powoduje to zainicjowanie sesji logowania zdalnego.
   1. Następnie zostanie pokazana strona sondowania zawierająca krótki identyfikator URI (), który wskazuje punkt końcowy uwierzytelniania urządzenia usługi [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) Azure AD Secure Token Service (STS). Użytkownik jest również prezentowany z kodem raz, który jest bezpiecznie generowany w chmurze i ma maksymalny okres istnienia 15 minut. Oprócz generowania kodu usługa Azure AD tworzy również zaszyfrowaną sesję po zainicjowaniu żądania logowania zdalnego w poprzednim kroku, a razem do zatwierdzenia żądania zdalnego logowania jest używany kod i URI.
@@ -46,7 +46,7 @@ Algorytmy generowania kodu i szyfrowania używane w tym przepływie są zgodne z
 
 ## <a name="device-sign-in-with-windows-hello"></a>Logowanie urządzenia przy użyciu Windows Hello
 
-[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) oferuje opcje bez hasła wbudowane bezpośrednio w system operacyjny, które pozwalają użytkownikom logować się do urządzenia przy użyciu irysów lub numeru PIN. Numer PIN jest zawsze dostępny jako poświadczenie i jest wymagany do konfiguracji urządzenia, natomiast irys jest opcjonalny i można go pominąć. Użytkownicy mogą logować się do urządzeń HoloLens przy użyciu osobistego konto Microsoft lub Azure Active Directory konta służbowego bez [wprowadzania hasła.  ](/azure/active-directory/authentication/concept-authentication-passwordless) Takie opcje zapewniają użytkownikom szybki, bezpieczny dostęp do pełnego Windows, aplikacji, danych, witryn internetowych i usług. Strategia firmy Microsoft mająca na celu środowisko bez hasła jest szczegółowo szczegółowo opisane tutaj.
+[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) oferuje opcje bez hasła wbudowane bezpośrednio w system operacyjny, które pozwalają użytkownikom logować się do urządzenia przy użyciu irysów lub numeru PIN. Numer PIN jest zawsze dostępny jako poświadczenie i jest wymagany do konfiguracji urządzenia, natomiast irys jest opcjonalny i można go pominąć. Użytkownicy mogą logować się do urządzeń HoloLens przy użyciu osobistego konto Microsoft lub Azure Active Directory konta służbowego bez [wprowadzania hasła.  ](/azure/active-directory/authentication/concept-authentication-passwordless) Takie opcje zapewniają użytkownikom szybki, bezpieczny dostęp do pełnego Windows, aplikacji, danych, witryn internetowych i usług. Strategia firmy Microsoft mająca na celu środowisko bez hasła jest tutaj szczegółowo opisywna.
 
 Po utworzeniu Windows Hello ustanawiana jest zaufana relacja z dostawcą tożsamości i tworzona jest asymetryczna para kluczy do uwierzytelniania. Gest Windows Hello (taki jak irys lub numer PIN) zapewnia entropię do odszyfrowywania klucza prywatnego z mikroukładu Trusted Platform Module (TPM) urządzenia. Ten klucz prywatny jest następnie używany do podpisywania żądań wysyłanych do serwera uwierzytelniania, a po pomyślnym uwierzytelnieniu użytkownik uzyskuje dostęp do poczty e-mail, zdjęć i innych ustawień konta.
 
@@ -81,7 +81,7 @@ HoloLens 2 można używać poświadczeń użytkownika bez hasła (takich jak klu
 > [!Note]
 > Specyfikacje [WebAuthn](https://www.w3.org/TR/webauthn/) i FIDO2 [CTAP2](https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html) są implementowane w usługach. Podpisane metadane określone przez webauthn i FIDO2 zawierają informacje — na przykład informacje o tym, czy użytkownik był obecny — i weryfikują uwierzytelnianie za pomocą gestu lokalnego.
 
-Podobnie jak Windows Hello, gdy użytkownik tworzy i rejestruje poświadczenia FIDO2, urządzenie (HoloLens 2 lub klucz zabezpieczeń FIDO2) generuje klucz prywatny i publiczny na urządzeniu. Klucz prywatny jest bezpiecznie przechowywany na urządzeniu i może być używany tylko po odblokowaniu przy użyciu lokalnego gestu, takiego jak biometria lub numer PIN. Gdy klucz prywatny jest przechowywany, klucz publiczny jest wysyłany do systemu konto Microsoft w chmurze i rejestrowany przy użyciu skojarzonego konta użytkownika.
+Podobnie jak Windows Hello, gdy użytkownik tworzy i rejestruje poświadczenia FIDO2, urządzenie (klucz zabezpieczeń HoloLens 2 lub FIDO2) generuje na urządzeniu klucz prywatny i publiczny. Klucz prywatny jest bezpiecznie przechowywany na urządzeniu i może być używany tylko po odblokowaniu przy użyciu lokalnego gestu, takiego jak biometria lub numer PIN. Gdy klucz prywatny jest przechowywany, klucz publiczny jest wysyłany do systemu konto Microsoft w chmurze i rejestrowany przy użyciu skojarzonego konta użytkownika.
 
 Po zalogowaniu się przy użyciu konta MSA i konta usługi Azure AD system wysyła wygenerowany numer lub zmienną danych do urządzenia HoloLens 2 lub FIDO2. Urządzenie HoloLens 2 lub używa klucza prywatnego do podpisania identyfikacji. Podpisana identyfikacja i metadane są wysyłane z powrotem do systemu konto Microsoft i weryfikowane przy użyciu klucza publicznego.
 
@@ -107,7 +107,7 @@ Usługi MSA i Azure AD są jednymi z pierwszych baz danych, które obsługują u
 
 Aby uzyskać więcej informacji na temat używania protokołu WebAuthn z aplikacjami i/lub zestawami SDK, przejdź do tematu [WebAuthn APIs for password-less authentication on Windows 10](/windows/security/identity-protection/hello-for-business/webauthnapis)(Interfejsy API protokołu WebAuthn służące do uwierzytelniania bez hasła w Windows 10 .
 
-HoloLens 2 obsługuje urządzenia zabezpieczeń FIDO2, które są implementowane w celu specyfikacji i spełnienia wymagań wymienionych na Azure Active Directory logowania bez hasła — klucze zabezpieczeń [FIDO2](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) powinny być obsługiwane.
+HoloLens 2 obsługuje urządzenia zabezpieczeń FIDO2, które są implementowane w celu specyfikacji i spełnienia wymagań wymienionych w te Azure Active Directory logowania bez hasła — klucze zabezpieczeń [FIDO2](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) powinny być obsługiwane.
 
 ## <a name="local-accounts"></a>Konta lokalne
 
@@ -115,4 +115,4 @@ Dla wdrożeń w trybie offline można skonfigurować jedno konto lokalne. Konta 
 
 Więcej szczegółowych informacji na HoloLens użytkowników można znaleźć w te [HoloLens Identity](hololens-identity.md).
 
-Administratorzy IT dostosowują, czy użytkownik może używać konta MSA do uwierzytelniania połączeń i usług niezwiązanych z pocztą e-mail za pośrednictwem [programu AllowMicrosoftAccountConnection.](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection) Aby uzyskać informacje na temat zasad konfiguracji haseł, zasad nienadmiernych i zasad ekranu blokady, zobacz [Temat Device Lock .](/windows/client-management/mdm/policy-csp-devicelock)
+Administratorzy IT dostosowują, czy użytkownik może używać konta MSA do uwierzytelniania połączeń i usług niezwiązanych z pocztą e-mail za pośrednictwem [programu AllowMicrosoftAccountConnection.](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection) Aby uzyskać informacje na temat zasad konfiguracji haseł, zasad idling i zasad ekranu blokady, zobacz [Temat Device Lock (Blokowanie urządzeń).](/windows/client-management/mdm/policy-csp-devicelock)

@@ -1,7 +1,7 @@
 ---
 title: Przewodnik wdrażania — wdrożenie w 2 HoloLens połączone z chmurą na dużą skalę przy użyciu usługi Remote Assist — konfigurowanie
 description: Dowiedz się, jak skonfigurować konfiguracje w celu rejestrowania urządzeń HoloLens za pośrednictwem sieci połączonej z chmurą na dużą skalę przy użyciu usługi Remote Assist.
-keywords: HoloLens, zarządzanie, połączone z chmurą, remote assist, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
+keywords: HoloLens, zarządzanie, połączone z chmurą, Remote Assist, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eb96f1cdc799551297c0373268e8cc8f35c6bd06
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 8e6999157c6f5a396812df26f748c771581b61d63709918abb2ae45063810ef8
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660563"
 ---
 # <a name="configure---cloud-connected-guide"></a>Konfigurowanie — przewodnik po chmurze
 

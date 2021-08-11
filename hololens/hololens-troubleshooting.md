@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemy, usterka, rozwiązywanie problemów, poprawka, pomoc, obsługa techniczna, HoloLens, emulator
-ms.openlocfilehash: b07514e73e43d267aa856c0fb9a256448e565000
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662857"
 ---
 # <a name="device-troubleshooting"></a>Rozwiązywanie problemów z urządzeniami
 
@@ -43,7 +43,7 @@ W tym artykule opisano sposób rozwiązywania kilku typowych HoloLens problemów
 - [HoloLens nie odpowiada lub nie można uruchomić](#hololens-is-unresponsive-or-wont-start)
 - [Błąd "Mała ilość miejsca na dysku"](#low-disk-space-error)
 - [Niepowodzenie awarii](#calibration-fails)
-- [Nie można się zalogować, ponieważ HoloLens wcześniej została ustawiona dla kogoś innego](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
+- [Nie można się zalogować, ponieważ mój HoloLens wcześniej został ustawiony dla kogoś innego](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
 - [Unity nie działa](#unity-isnt-working)
 - [Windows Portal urządzeń nie działa prawidłowo](#windows-device-portal-isnt-working-correctly)
 - [HoloLens Emulator nie działa](#the-hololens-emulator-isnt-working)
@@ -82,9 +82,9 @@ Aby szybko ponownie uruchomić urządzenie na platformie Windows Holographic, w 
 
 [Powrót do listy](#list)
 
-## <a name="auto-login-asks-for-log-in"></a>Automatyczne logowanie prosi o zalogowanie
+## <a name="auto-login-asks-for-log-in"></a>Automatyczne logowanie wymaga zalogowania
 
-Urządzenie HoloLens 2 można skonfigurować do automatycznego logowania się za pośrednictwem opcji logowania kont usługi **Ustawienia —**> i w obszarze Wymagane ustawienie wartości  ->    ->    **Nigdy.** Niektórzy użytkownicy mogą być zobowiązani do zalogowania się na urządzeniu ponownie podczas aktualizowania urządzenia przy użyciu znacznie dużej aktualizacji, takiej jak aktualizacja funkcji. Jest to znany **problem.**
+Urządzenie HoloLens 2 można skonfigurować do automatycznego logowania się za pośrednictwem opcji logowania kont usługi **Ustawienia —**> i w obszarze Wymagane ustawienie wartości  ->    ->    **Nigdy.** Niektórzy użytkownicy mogą wymagać zalogowania się na urządzeniu ponownie podczas aktualizowania urządzenia przy użyciu znacznie dużej aktualizacji, takiej jak aktualizacja funkcji. Jest to znany **problem.**
 
 Przykład sytuacji, w których może się to zdarzyć:
 
@@ -150,27 +150,27 @@ Niektórzy klienci odkryli, że podczas próby przekazania lub pobrania plików 
 
 To obejście, które ma zastosowanie w równym Wi-Fi i UsbNcm, polega na wyłączeniu opcji "wymagane" w obszarze "Połączenie SSL". W tym celu przejdź do Portal urządzeń **System** i wybierz **stronę Preferencje.** W sekcji **Zabezpieczenia urządzenia znajdź** opcję Połączenie **SSL** i usuń zaznaczenie pola wyboru, aby wyłączyć **opcję Wymagane.**
 
-Użytkownik powinien wtedy przejść do strony http://, https:// (adres IP), a funkcje, takie jak przekazywanie i pobieranie plików, będą działać.
+Następnie użytkownik powinien przejść do strony http://, a nie https:// (adres IP), a funkcje, takie jak przekazywanie i pobieranie plików, będą działać.
 
 [Powrót do listy](#list)
 
-## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Niebieski ekran po wywrzeniu z wersji zapoznawczej niejawnego programu testów na urządzeniu z flashem kompilacji niejawnego testera
+## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Niebieski ekran po wywrzeniu z niejawnego programu testów w wersji zapoznawczej na urządzeniu flashowym za pomocą kompilacji niejawnego programu testów
 
-Jest to problem, który ma wpływ na użytkowników, którzy byli w kompilacji niejawnego testera w wersji zapoznawczej, przekrzywilili swój program HoloLens 2 przy użyciu nowej kompilacji niejawnego programu w wersji zapoznawczej, a następnie nie zakodują się w programie insider. Jest to znany **problem.**
+Jest to problem, który ma wpływ na użytkowników, którzy byli w kompilacji niejawnego programu testów w wersji zapoznawczej, przeszli do wersji HoloLens 2 przy użyciu nowej kompilacji w wersji zapoznawczej niejawnego programu testów, a następnie nie są zarejestrowani w programie niejawnego programu testów. Jest to znany **problem.**
 
 Nie ma to wpływu na:
 - Użytkownicy, którzy nie są zarejestrowani w programie Windows Insider 
 - Wewnętrznych:
     - Jeśli urządzenie zostało zarejestrowane od kompilacji niejawnych testerów w wersji 18362.x
-    - Jeśli flashował kompilację 19041.x podpisaną przez niejawnego testera I pozostał zarejestrowany w programie insider
+    - Jeśli flashował kompilację 19041.x podpisaną przez niejawnego testera I został zarejestrowany w programie niejawnego programu testów
 
 Pomiń: 
-- Unikanie problemu 
-    - Flashuj kompilację, która nie jest niejawnym testerem. Jedna z regularnych comiesięcznych aktualizacji.
-    - Stay on Insider Preview
+- Unikaj problemu 
+    - Flashuj kompilację bez niejawnych testerów. Jedna z regularnych comiesięcznych aktualizacji.
+    - Bądź na testach w wersji zapoznawczej
 - Reflash urządzenia
 
-    1. Ręcznie HoloLens [2 w](hololens-recovery.md) tryb flashowania przez całkowite zasilanie bez połączenia. Następnie przy przytrzymaniu przycisku Regulacji głośności naciśnij przycisk Zasilania.
+    1. Ręcznie HoloLens [2 w](hololens-recovery.md) tryb flashowania przez całkowite zasilanie bez połączenia. Następnie przytrzymaniu przycisku Volume up naciśnij przycisk Zasilania.
     
     1. Połączenie na komputer i otwórz program Advanced Recovery Companion.
     
@@ -180,26 +180,26 @@ Pomiń:
 
 ## <a name="onedrive-doesnt-automatically-upload-pictures"></a>OneDrive nie przekaże automatycznie obrazów
 
-Aplikacja OneDrive dla aplikacji HoloLens nie obsługuje automatycznego przekazywania z aparatu dla kont służbowych. Jest to znany **problem.**
+Aplikacja OneDrive dla aplikacji HoloLens nie obsługuje automatycznego przekazywania aparatu dla kont służbowych. Jest to znany **problem.**
 
 Obejścia:
 
-- Jeśli jest to możliwe dla Twojej firmy, automatyczne przekazywanie z aparatu jest obsługiwane na kontach Microsoft konsumentów. Możesz zalogować się do konta konto Microsoft konta służbowego (aplikacja OneDrive obsługuje logowanie podwójne). Z poziomu konto Microsoft w OneDrive można włączyć automatyczne przekazywanie z kamery w tle.
+- Jeśli jest to możliwe dla Twojej firmy, automatyczne przekazywanie aparatów jest obsługiwane na kontach Microsoft użytkowników. Możesz zalogować się do konta konto Microsoft konta służbowego (aplikacja OneDrive obsługuje logowanie podwójne). Z poziomu konto Microsoft w OneDrive można włączyć automatyczne przekazywanie z kamery w tle.
 
-- Jeśli nie możesz bezpiecznie użyć konta konto Microsoft do automatycznego przekazywania zdjęć, możesz ręcznie przekazać zdjęcia na konto służbowe z aplikacji OneDrive aplikacji. W tym celu upewnij się, że zalogowano się do konta służbowego w OneDrive aplikacji. Wybierz przycisk **+** i wybierz pozycję **Upload**. Znajdź zdjęcia lub filmy wideo, które chcesz przekazać, przechodząc do > **Camera Roll**. Wybierz zdjęcia lub wideo, które chcesz przekazać, a następnie wybierz **przycisk** Otwórz.
+- Jeśli nie możesz bezpiecznie użyć konta konto Microsoft do automatycznego przekazywania zdjęć, możesz ręcznie przekazać zdjęcia na konto służbowe z OneDrive aplikacji. W tym celu upewnij się, że zalogowano się na koncie służbowym w OneDrive aplikacji. Wybierz przycisk **+** i wybierz pozycję **Upload**. Znajdź zdjęcia lub wideo, które chcesz przekazać, przechodząc do tematu **Pictures > Camera Roll (Obrazy** i > camera Roll). Wybierz zdjęcia lub wideo, które chcesz przekazać, a następnie wybierz **przycisk** Otwórz.
 
 [Powrót do listy](#list)
 
 ## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens nie odpowiada lub nie można uruchomić
 
-Jeśli twój HoloLens się nie uruchamia:
+Jeśli twój HoloLens nie zostanie uruchomić:
 
-- Jeśli diody LED obok przycisku zasilania nie zaczną się oświetlać lub tylko jedna dioda LED miga na krótko, może być konieczne [HoloLens.](hololens2-charging.md#charging-the-device)
-- Jeśli dioda LED zabłyśnie po naciśnięciu przycisku zasilania, ale nie widzisz niczego na ekranach, wykonaj twarde [zresetowanie urządzenia.](hololens-recovery.md#hard-reset-procedure)
+- Jeśli diody LED obok przycisku zasilania nie zaczną się migać lub tylko jedna dioda LED miga, może być konieczne [HoloLens.](hololens2-charging.md#charging-the-device)
+- Jeśli diody LED są wyświetlane po naciśnięciu przycisku zasilania, ale na ekranie nie widać niczego, wykonaj twarde [resetowanie urządzenia.](hololens-recovery.md#hard-reset-procedure)
 
-Jeśli twój HoloLens jest zamrożony lub nie odpowiada:
+Jeśli twoja HoloLens jest zamrożona lub nie odpowiada:
 
-- Wyłącz urządzenie HoloLens naciskając przycisk zasilania, aż wszystkie pięć diod LED wyłączy się lub przez 15 sekund, jeśli diody LED nie będą odpowiadać. Aby uruchomić HoloLens, ponownie naciśnij przycisk zasilania.
+- Wyłącz urządzenie HoloLens naciskając przycisk zasilania, aż wszystkie pięć diod LED wyłączy się lub na 15 sekund, jeśli diody LED nie będą odpowiadać. Aby uruchomić HoloLens, ponownie naciśnij przycisk zasilania.
 
 Jeśli te kroki nie działają, możesz spróbować odzyskać urządzenie z systemem [HoloLens 2](hololens-recovery.md) lub HoloLens [(1. generacji).](hololens1-recovery.md)
 
@@ -207,7 +207,7 @@ Jeśli te kroki nie działają, możesz spróbować odzyskać urządzenie z syst
 
 ## <a name="low-disk-space-error"></a>Błąd "Mała ilość miejsca na dysku"
 
-Konieczne będzie wolne miejsce do magazynowania, wykonując co najmniej jedną z następujących czynności:
+Konieczne będzie wolne miejsce do magazynowania, wykonując jedną lub więcej z następujących czynności:
 
 - Usuń niektóre nieużywane spacje. Przejdź do **Ustawienia**  >  **System**  >  **Spaces,** wybierz miejsce, które nie jest już **potrzebne,** a następnie wybierz pozycję Usuń .
 - Usuń niektóre z umieszczonych hologramów.
@@ -218,27 +218,27 @@ Konieczne będzie wolne miejsce do magazynowania, wykonując co najmniej jedną 
 
 ## <a name="calibration-fails"></a>Niepowodzenie awarii
 
-Większość osób powinna pracować, ale istnieją przypadki, w których nie powiodło się to.
+Większość osób powinna pracować, ale istnieją przypadki, w których niepowodzeniem.
   
 Niektóre potencjalne przyczyny niepowodzenia awarii to:
 
-- Rozpraszanie uwagi i niesąsiadowanie po docelowych celach
-- Zanieczyszczona lub porysowana osłona urządzenia lub urządzenie nie jest prawidłowo pozycjonowane
+- Rozpraszanie uwagi i niesłanianie celów docelowych
+- Zanieczyszczona lub zadrzewiona osłona urządzenia lub urządzenie nie jest prawidłowo pozycjonowane
 - Zanieczyszczone lub porysowane okulary
-- Niektóre typy obiektywów i okularów kontaktowych (kolorowe obiektywy kontaktowe, niektóre torysowe obiektywy kontaktowe, okulary blokujące ir ir, niektóre okulary przeciwsłoneczne, okulary przeciwsłoneczne lub podobne)
+- Niektóre typy obiektywów i okularów kontaktowych (kolorowe obiektywy kontaktowe, niektóre toryczne obiektywy kontaktowe, okulary blokujące ir IR, niektóre okulary przeciwsłoneczne, okulary przeciwsłoneczne lub podobne)
 - Bardziej wymawiane nagie i niektóre rozszerzenia ukośników
 - Zarost lub grube ramki okularów, jeśli blokują one wzrok urządzenia
-- Niektóre fizjologia, warunki oczu lub operacje oczu, takie jak wąskie oczy, długie ukośniki, amblyopia, nystagmus, niektóre przypadki lasik lub inne operacje oczu
+- Niektóre fizjologia, warunki wzrokowe lub operacje oczu, takie jak wąskie oczy, długie ukośniki, amblyopia, nystagmus, niektóre przypadki LASIK lub inne operacje skoków oczu
 
 Jeśli próba nie powiedzie się, spróbuj:
 
-- Czyszczenie urządzenia
+- Czyszczenie aplikacji do czyszczenia urządzenia
 - Czyszczenie okularów
 - Wypychanie wizjora urządzenia tak blisko oczu, jak to możliwe
-- Przenoszenie obiektów w ośledla poza drogę (takich jak zarost)
-- Włączanie światła w pomieszczeniu lub wyprowadzanie się z bezpośredniego światła
+- Przenoszenie obiektów w osłodę poza drogę (na przykład zarostu)
+- Włączanie światła w pomieszczeniu lub wyprowadzanie bezpośredniego światła
 
-Jeśli wszystkie wytyczne zostały przestrzegane, a nadal brakuje wskazówek, można wyłączyć monit o iniekcja w Ustawienia. Ponadto daj nam znać, składając opinię w [Centrum opinii](hololens-feedback.md).
+Jeśli wszystkie wytyczne są nadal nieudane, można wyłączyć monit o monit o Ustawienia. Daj nam znać, klikając opinię w [Centrum opinii](hololens-feedback.md).
 
 Zobacz również powiązane informacje dotyczące [rozwiązywania problemów z kolorem obrazu lub jasność.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
@@ -248,25 +248,25 @@ Ustawienie adresu IPD nie ma zastosowania HoloLens 2, ponieważ pozycje oka są 
 
 ## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>Nie można się zalogować, ponieważ HoloLens wcześniej została ustawiona dla kogoś innego
 
-Urządzenie można [przesłonić w tryb **flashowania i**](hololens-recovery.md#clean-reflash-the-device) użyć narzędzia Advanced Recovery Companion w celu odzyskania urządzenia.
+Możesz [przełożyć urządzenie w tryb **flashowania i**](hololens-recovery.md#clean-reflash-the-device) użyć narzędzia Advanced Recovery Companion w celu odzyskania urządzenia.
 
 [Powrót do listy](#list)
 
 
 ## <a name="unity-isnt-working"></a>Unity nie działa
 
-- Zobacz [Instalowanie narzędzi dla](/windows/mixed-reality/install-the-tools) najbardziej aktualnej wersji aparatu Unity zalecanej do HoloLens projektowania.
+- Zobacz [Install the tools for](/windows/mixed-reality/install-the-tools) the most-to-date version of Unity recommended for HoloLens development (Instalowanie narzędzi dla najbardziej aktualnej wersji aparatu Unity zalecanej do HoloLens aplikacji).
 - Znane problemy z platformą Unity HoloLens Technical Preview są udokumentowane na [forach HoloLens Unity.](https://forum.unity3d.com/threads/known-issues.394627/)
 
 [Powrót do listy](#list)
 
 ## <a name="windows-device-portal-isnt-working-correctly"></a>Windows Portal urządzeń nie działa prawidłowo
 
-- Funkcja podglądu na żywo w Mixed Reality przechwytywania danych może mieć kilka sekund opóźnienia.
+- Funkcja podglądu na żywo w Mixed Reality przechwytywania danych może mieć opóźnienie kilku sekund.
 
-- Na stronie Wirtualne dane wejściowe kontrolki Gest i Przewiń w sekcji Gesty wirtualne nie działają. Ich użycie nie będzie mieć żadnego efektu. Klawiatura wirtualna na wirtualnej stronie wejściowej działa poprawnie.
+- Na stronie Wirtualne dane wejściowe kontrolki Gest i Przewijanie w sekcji Gesty wirtualne nie działają. Ich użycie nie będzie mieć żadnego efektu. Klawiatura wirtualna na stronie wirtualnych danych wejściowych działa poprawnie.
 
-- Po włączeniu trybu dewelopera Ustawienia może mieć kilka sekund, zanim Portal urządzeń przełącznik zostanie włączony.
+- Po włączeniu trybu dewelopera w Ustawienia może mieć kilka sekund, zanim Portal urządzeń przełącznik zostanie włączony.
 
 [Powrót do listy](#list)
 
@@ -275,15 +275,15 @@ Urządzenie można [przesłonić w tryb **flashowania i**](hololens-recovery.md#
 Informacje o emulatorze HoloLens znajdują się w naszej dokumentacji dla deweloperów.  Przeczytaj więcej na [temat rozwiązywania problemów z HoloLens emulatorem.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)
 
 
-- Nie wszystkie aplikacje w Microsoft Store są zgodne z emulatorem. Na przykład w emulatorze nie można odtwarzać fragmentów i Young Conker.
+- Nie wszystkie aplikacje w Microsoft Store są zgodne z emulatorem. Na przykład w emulatorze nie można odtwarzać fragmentów Ani Younga Conkera.
 - Nie można używać kamery internetowej komputera w Emulator.
-- Funkcja podglądu na żywo Windows Portal urządzeń nie działa z emulatorem. Nadal możesz przechwytywać Mixed Reality wideo i obrazy.
+- Funkcja podglądu na żywo Windows Portal urządzeń nie działa z emulatorem. Nadal można przechwytywać Mixed Reality wideo i obrazy.
 
 [Powrót do listy](#list)
 
 ## <a name="voice-commands-arent-working"></a>Polecenia głosowe nie działają
 
-Jeśli Cortana nie odpowiada na polecenia głosowe, upewnij się, że Cortana włączona. Na liście Wszystkie aplikacje wybierz **pozycję** Cortana  >  **Menu**  >  **Ustawienia,** aby wprowadzić  >   zmiany. Aby dowiedzieć się więcej na temat tego, co możesz powiedzieć, zobacz Używanie głosu [z](hololens-cortana.md)HoloLens.
+Jeśli Cortana nie odpowiada na polecenia głosowe, upewnij się, że Cortana włączona. Na liście Wszystkie aplikacje wybierz **pozycję** Cortana  >  **Menu**  >  **Ustawienia,** aby wprowadzić  >   zmiany. Aby dowiedzieć się więcej na temat tego, co możesz powiedzieć, zobacz Używanie głosu [z HoloLens](hololens-cortana.md).
 
 Na HoloLens (1. generacji) wbudowanej funkcji rozpoznawania mowy nie można skonfigurować. Jest ona zawsze włączona. Na HoloLens 2 możesz wybrać, czy podczas konfigurowania urządzenia włączyć zarówno rozpoznawanie mowy, jak i Cortana mowę.
 
@@ -295,7 +295,7 @@ Jeśli urządzenie HoloLens 2 nie odpowiada na Twój głos, upewnij się, że fu
 
 Aby upewnić się HoloLens, że twoje ręce będą widać, musisz zachować je w ramce gestu.  Strona Mixed Reality home udostępnia opinię, która informuje o tym, kiedy są śledzone twoje ręce.  Opinie są inne w różnych wersjach HoloLens:
 - Na HoloLens (1. generacja) kursor spojrzenia zmienia się z kropki na pierścień
-- Na HoloLens 2, gdy ręka jest blisko planszy, pojawia się kursor w zasięgu ręki, a promienia ręki, gdy plansze są dalej
+- Na HoloLens 2, gdy ręka znajduje się blisko planszy, pojawia się kursor w zasięgu ręki, a promienia ręki, gdy plansze są dalej
 
 Wiele aplikacji immersywnych ma wzorce wejściowe podobne do Mixed Reality Home.  Dowiedz się więcej o używaniu danych wejściowych ręcznie [HoloLens (1. generacji)](hololens1-basic-usage.md#use-hololens-with-your-hands) [i HoloLens 2.](hololens2-basic-usage.md#the-hand-tracking-frame)
 
@@ -309,7 +309,7 @@ Jeśli twoje urządzenie ma odciski palców lub smekty, użyj mikrofibry czyszcz
 
 Oto kilka rzeczy, które należy wypróbować, jeśli nie można połączyć komputera HoloLens z Wi-Fi siecią:
 
-- Upewnij się, Wi-Fi jest włączona. Aby to sprawdzić, użyj gestu Start, a następnie wybierz **Ustawienia**  >  **Sieci &amp;**  >  **Wi-Fi.** Jeśli Wi-Fi jest wł., spróbuj wyłączyć ją, a następnie ponownie wł.
+- Upewnij się, Wi-Fi jest włączona. Aby to sprawdzić, użyj gestu Start, a następnie wybierz **Ustawienia**  >  **Sieci &amp;**  >  **Wi-Fi.** Jeśli Wi-Fi jest wł., spróbuj go wyłączyć, a następnie ponownie wł.
 - Umieść komputer bliżej routera lub punktu dostępu.
 - Uruchom ponownie Wi-Fi, a następnie [uruchom ponownie HoloLens](hololens-recovery.md). Spróbuj ponownie nałączyć połączenie.
 - Jeśli żadna z tych czynności nie działa, upewnij się, że router korzysta z najnowszego oprogramowania układowego. Te informacje można znaleźć w witrynie internetowej producenta.

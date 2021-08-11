@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664056"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Niejawna wersja zapoznawcza dla Microsoft HoloLens
 
@@ -39,7 +39,7 @@ Z przyjemnością zaczynamy ponownie testować nowe funkcje, aby Windows niejawn
 | [Wyświetlanie zaawansowanego raportu diagnostycznego w Ustawienia na HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Wyświetlanie dzienników diagnostycznych mdm na urządzeniu | Rozwiązywanie problemów | 20348.1405 |
 | [Powiadomienia diagnostyki w trybie offline](#offline-diagnostics-notifications) | Opinie dotyczące zbierania dzienników | Rozwiązywanie problemów | 20348.1405 |
 | [Używaj tylko aplikacji ze sklepu prywatnego tylko dla Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Konfigurowanie aplikacji ze sklepu w celu pokazywania tylko aplikacji z organizacji | Administrator IT | 20348.1408 |
-| [Ulepszenia zbierania dzienników magazynu o niskim poziomie](#low-storage-log-collection-improvements) | Ulepszenia scenariuszy zbierania dzienników w sytuacjach niskiego poziomu magazynowania. | Administrator IT | 20348.1412 |
+| [Ulepszenia zbierania dzienników o niskim poziomie magazynu](#low-storage-log-collection-improvements) | Ulepszenia scenariuszy zbierania dzienników w sytuacjach niskiego poziomu magazynowania. | Administrator IT | 20348.1412 |
 | [Poprawki i ulepszenia](hololens-insider.md#fixes-and-improvements) | Poprawki i ulepszenia dotyczące HoloLens. | Wszystko | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Zmiany WSP dotyczące raportowania HoloLens szczegóły
@@ -123,63 +123,63 @@ Ponieważ użytkownicy często używają diagnostyki offline jako mechanizmu rez
 
 Ta nowa funkcja zostanie włączona podczas aktualizacji urządzenia i nie trzeba jej włączać ani zarządzać. W przypadku, gdy nie będzie można wyświetlić ani słyszeć tej nowej opinii, diagnostyka w trybie offline będzie nadal generowana.
 
-Mamy nadzieję, że dzięki temu nowszej dodatku opinii zwrotnej łatwiej jest zbierać dane diagnostyczne i szybciej rozwiązywać problemy.
+Mamy nadzieję, że dzięki temu nowszej dodatku opinii będzie łatwiej zbierać dane diagnostyczne i szybciej rozwiązywać problemy.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Używaj tylko aplikacji ze sklepu prywatnego dla Microsoft Store
 
-Zasady RequirePrivateStoreOnly zostały włączone dla HoloLens. Te zasady umożliwiają skonfigurowanie Microsoft Store tak, aby wyświetlała tylko sklep prywatny skonfigurowany dla organizacji. Ograniczenie dostępu tylko do aplikacji, które zostały udostępnione.
+Zasady RequirePrivateStoreOnly zostały włączone dla HoloLens. Te zasady umożliwiają skonfigurowanie Microsoft Store do pokazywania tylko magazynu prywatnego skonfigurowanego dla organizacji. Ograniczenie dostępu tylko do aplikacji, które zostały udostępnione.
 
-Dowiedz się więcej o [applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+Dowiedz się więcej [o applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
-### <a name="low-storage-log-collection-improvements"></a>Ulepszenia zbierania dzienników magazynu o niskim poziomie
+### <a name="low-storage-log-collection-improvements"></a>Ulepszenia zbierania dzienników magazynu o niskiej wydajności
 
-W scenariuszach, w których podczas zbierania dzienników diagnostycznych na urządzeniu wydaje się być mało miejsca na dysku, zostanie utworzony dodatkowy raportStorageDiagnostics.zip **o** nazwie . Próg niskiego poziomu magazynu jest określany automatycznie przez Windows [magazynu](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+W scenariuszach, w których wydaje się, że w przypadku zbierania dzienników diagnostycznych na urządzeniu jest mało miejsca na dysku, zostanie utworzony dodatkowy raportStorageDiagnostics.zip **o** nazwie . Próg małej pojemności magazynu jest określany automatycznie przez Windows [magazynu.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
 
 ### <a name="fixes-and-improvements"></a>Poprawki i ulepszenia
 
-- Rozwiązano znany problem z Portal urządzeń, który nie wyświetlał monitu [o pobranie zablokowanych plików.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Rozwiązano znany problem z Portal urządzeń w którym nie było [monitu o pobranie zablokowanych plików.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Rozwiązano [znany problem z Portal urządzeń podczas przekazywania i pobierania.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Rozwiązuje problemy związane z raportowaniem właściwości zgodności z HoloLens urządzeń; Do wyzwolenia poprawnego raportowania w kompilacjach niejawnych testerów może być wymagany ponowny rozruch.  
-- Zaktualizowano wersję w polu usługi Remote Assist, która jest instalowana na nowych urządzeniach flash.
+- Zaktualizowano wersję w polu usługi Remote Assist zainstalowaną na nowych urządzeniach flash.
 
-## <a name="start-receiving-insider-builds"></a>Rozpoczynanie otrzymywania kompilacji niejawnych testerów
+## <a name="start-receiving-insider-builds"></a>Rozpoczynanie odbierania kompilacji niejawnych testerów
 
 > [!NOTE]
-> Jeśli ostatnio nie zaktualizowano, uruchom ponownie urządzenie, aby zaktualizować stan i pobrać najnowszą kompilację.
+> Jeśli ostatnio nie zaktualizowano aplikacji, uruchom ponownie urządzenie, aby zaktualizować stan i pobrać najnowszą kompilację.
 > - Polecenie głosowe "Reboot device" (Uruchom ponownie urządzenie) działa dobrze. 
 > - Możesz również wybrać przycisk ponownego uruchamiania w Ustawienia/Windows niejawny program testów.
 >
-> Na zadurze wystąpiła usterka, która może spowodować powrót na tory.
+> Wystąpiła usterka w zakańcach, która może cię napotkać, co spowoduje powrót do śledzenia.
 
-Na urządzeniu HoloLens 2 przejdź do Ustawienia  >  **Update & Security**  >  **Windows niejawny program testów** i wybierz pozycję **Wprowadzenie.** Połącz konto użyte do zarejestrowania się jako Windows Insider.
+Na urządzeniu HoloLens 2 przejdź do usługi **Ustawienia**  >  **Update & Security**  >  **Windows niejawny program testów** i wybierz **pozycję Wprowadzenie.** Połącz konto, które było używane do zarejestrowania się jako Windows Insider.
 
-Windows niejawny tester jest teraz przenoszący się do kanałów. Szybki **pierścień** stanie się kanałem **dewelopera,** powolny pierścień  stanie się kanał beta , **a** pierścień wersji zapoznawczej stanie się kanałem wersji **zapoznawczej.**  Oto jak wygląda to mapowanie:
+Windows niejawny program testów jest teraz przenoszący się do kanałów. Szybki **pierścień** stanie się kanałem **dewelopera,** pierścień Wolny stanie  się **kanał beta,** a pierścień wersji zapoznawczej zostanie kanałem wersji  **zapoznawczej.** Oto jak wygląda to mapowanie:
 
 ![Windows Wyjaśnienie kanałów niejawnych testerów](images/WindowsInsiderChannels.png)
 
-Aby uzyskać więcej informacji, zobacz [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) (Wprowadzenie do kanałów niejawnych testerów) Windows Blogi.
-Następnie wybierz pozycję **Aktywne opracowywanie** Windows, wybierz, czy chcesz otrzymywać kanał **dewelopera,** czy kanał beta **kompilacje,** i przejrzyj warunki programu.
-Wybierz **pozycję Potwierdź > uruchom ponownie teraz,** aby zakończyć. Po ponownym uruchomieniu urządzenia przejdź do Ustawienia > **Update & Security > Sprawdź** aktualizacje w celu uzyskania najnowszej kompilacji.
+Aby uzyskać więcej informacji, zobacz Introducing Windows Insider Channels (Wprowadzenie do [kanałów niejawnych testerów)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) Windows Blogi.
+Następnie wybierz **pozycję Active development of Windows**, wybierz, czy chcesz otrzymywać kanał **dewelopera,** czy kanał beta kompilacje, i przejrzyj warunki programu. 
+Wybierz **pozycję > uruchom ponownie teraz,** aby zakończyć. Po ponownym uruchomieniu urządzenia przejdź do Ustawienia > **Update & Security > Sprawdź** aktualizacje, aby pobrać najnowszą kompilację.
 
 ### <a name="update-error-0x80070490-work-around"></a>Błąd aktualizacji 0x80070490 omięcie
 
-Jeśli wystąpi błąd aktualizacji 0x80070490 podczas aktualizowania w kanale dewelopera lub wersji beta, spróbuj wykonać następujące krótkoterminowe czynności. Obejmuje to przeniesienie kanału dla niejawnych testerów, pobranie aktualizacji, a następnie przeniesienie kanału niejawnego testera z powrotem.
+Jeśli wystąpi błąd aktualizacji 0x80070490 podczas aktualizowania w kanale dewelopera lub wersji beta, spróbuj wykonać poniższe krótkoterminowe czynności. Obejmuje to przeniesienie kanału niejawnego testera, pobranie aktualizacji, a następnie przeniesienie kanału niejawnego testera z powrotem.
 
 #### <a name="stage-one---release-preview"></a>Etap pierwszy — wersja zapoznawcza
 
-1.  Ustawienia, Zaktualizuj zabezpieczenia &, Windows niejawny program testów wybierz **pozycję Kanał wersji zapoznawczej wersji zapoznawczej.**
+1.  Ustawienia, Zaktualizuj zabezpieczenia &, Windows niejawny program testów wybierz pozycję **Kanał wersji zapoznawczej.**
 
 2.  Ustawienia, Update & Security, Windows Update, **Check for updates**. Po aktualizacji przejdź do etapu 2.
 
 #### <a name="stage-two---dev-channel"></a>Etap drugi — kanał dewelopera
 
-1. Ustawienia zaktualizuj zabezpieczenia &, Windows niejawny program testów pozycję **Kanał deweloperów.**
+1. Ustawienia, Zaktualizuj & Security, Windows niejawny program testów pozycję Kanał **deweloperów.**
 
 2. Ustawienia, Update & Security, Windows Update, **Check for updates**.
 
 ## <a name="ffu-download-and-flash-directions"></a>Wskazówki dotyczące pobierania i flasha ffu
 
-Aby przetestować przy użyciu ffu z podpisem lotu, musisz najpierw odblokować urządzenie podczas lotu przed flashem podpisanego lotu ffu.
+Aby przetestować przy użyciu podpisanego lotu ffu, musisz najpierw odblokować urządzenie przed flashingiem podpisanego lotu ffu.
 
 1. Na komputerze:
     1. Pobierz ffu na komputer ze strony [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
@@ -188,34 +188,34 @@ Aby przetestować przy użyciu ffu z podpisem lotu, musisz najpierw odblokować 
     
 1. Na HoloLens — Flight Unlock: **otwórz** Ustawienia  >  **Update & Security**  >  **Windows niejawny program testów** następnie zarejestruj się i uruchom ponownie urządzenie.
 
-1. Flash FFU — teraz możesz flashć ffu ze podpisanym lotem przy użyciu usługi ARC.
+1. Flash FFU — teraz możesz flashowane ffu z podpisem lotu przy użyciu usługi ARC.
 
-### <a name="provide-feedback-and-report-issues"></a>Opinie i zgłaszanie problemów
+### <a name="provide-feedback-and-report-issues"></a>Zgłaszanie opinii i zgłaszanie problemów
 
-Użyj aplikacji [Centrum opinii aplikacji na](hololens-feedback.md) HoloLens, aby przekazać opinię i zgłosić problemy. Użycie Centrum opinii zapewnia, że wszystkie niezbędne informacje diagnostyczne są uwzględniane, aby ułatwić naszym inżynierom szybkie debugowanie i rozwiązywanie problemu.  Problemy z chińskim i japońskim wersją HoloLens powinny być zgłaszane w ten sam sposób.
+Użyj aplikacji [Centrum opinii na swoim](hololens-feedback.md) HoloLens, aby przekazać opinię i zgłosić problemy. Użycie Centrum opinii zapewnia, że wszystkie niezbędne informacje diagnostyczne są uwzględniane, aby pomóc naszym inżynierom szybko debugować i rozwiązywać problem.  Problemy z chińskim i japońskim wersją HoloLens powinny być zgłaszane w ten sam sposób.
 
 > [!NOTE]
 > Pamiętaj, aby zaakceptować monit z pytaniem, Centrum opinii chcesz uzyskać dostęp  do folderu Dokumenty (po wyświetleniu monitu wybierz pozycję Tak).
 
 ## <a name="note-for-developers"></a>Uwaga dla deweloperów
 
-Zachęcamy i zachęcamy do wypróbowania tworzenia aplikacji przy użyciu kompilacji niejawnych testerów HoloLens.  Zapoznaj się z [HoloLens dla deweloperów,](https://developer.microsoft.com/windows/mixed-reality/development) aby rozpocząć pracę. Te same instrukcje działają z kompilacjami niejawnych testerów HoloLens.  Możesz użyć tych samych kompilacji aparatu Unity i Visual Studio, których już używasz do HoloLens kompilowania.
+Zachęcamy i zachęcamy do wypróbowania tworzenia aplikacji przy użyciu kompilacji niejawnych testerów HoloLens.  Zapoznaj się z [dokumentacją HoloLens Developer,](https://developer.microsoft.com/windows/mixed-reality/development) aby rozpocząć pracę. Te same instrukcje działają z kompilacjami niejawnych testerów HoloLens.  Możesz użyć tych samych kompilacji aparatu Unity i Visual Studio, których już używasz do HoloLens tworzenia aplikacji.
 
-## <a name="stop-receiving-insider-builds"></a>Zatrzymywanie otrzymywania kompilacji niejawnych testerów
+## <a name="stop-receiving-insider-builds"></a>Zatrzymywanie odbierania kompilacji niejawnych testerów
 
-Jeśli nie chcesz już otrzymywać kompilacji systemu Windows Holographic dla niejawnych testerów, możesz zrezygnować z uruchamiania [](hololens-recovery.md) kompilacji produkcyjnej na platformie HoloLens lub odzyskać urządzenie przy użyciu zaawansowanego pomocnika odzyskiwania, aby odzyskać urządzenie do wersji systemu Windows Holographic innego niż niejawny program.
+Jeśli nie chcesz już otrzymywać kompilacji systemu Windows Holographic dla niejawnych testerów, możesz zrezygnować z używania kompilacji produkcyjnej na platformie HoloLens lub odzyskać urządzenie za pomocą narzędzia Advanced Recovery Companion, aby odzyskać urządzenie do wersji systemu Windows Holographic, która nie jest niejawnym testerem. [](hololens-recovery.md)
 
 > [!CAUTION]
-> Istnieje znany problem, w którym użytkownicy, którzy nie rejestrują się w kompilacjach insider preview po ręcznej ponownej instalacji nowej kompilacji w wersji zapoznawczej, będą mieli niebieski ekran. Następnie muszą ręcznie odzyskać urządzenie. Aby uzyskać szczegółowe informacje na temat tego problemu, zobacz więcej informacji na temat tego [znanego problemu.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Istnieje znany problem, w którym użytkownicy, którzy wyrejestrować się z kompilacji insider preview po ręcznej ponownej instalacji nowej kompilacji w wersji zapoznawczej, zobaczą niebieski ekran. Następnie muszą ręcznie odzyskać urządzenie. Aby uzyskać szczegółowe informacje na temat tego, czy problem może mieć wpływ, zobacz więcej informacji na temat tego [znanego problemu.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-Aby sprawdzić, czy HoloLens kompilacji produkcyjnej:
+Aby sprawdzić, czy HoloLens jest uruchomiona kompilacja produkcyjna:
 
 1. Przejdź do **Ustawienia > System > informacje** i znajdź numer kompilacji.
 
-1. [Zobacz informacje o wersji dla numerów kompilacji produkcyjnych.](hololens-release-notes.md)
+1. [Zobacz informacje o wersji, aby uzyskać numery kompilacji produkcyjnej.](hololens-release-notes.md)
 
 Aby zrezygnować z kompilacji niejawnych testerów:
 
-1. Na stronie HoloLens kompilacji produkcyjnej przejdź do usługi **Ustawienia > Update & Security > Windows niejawny program testów** i wybierz pozycję Zatrzymaj kompilacje **niejawnych testerów.**
+1. W przypadku HoloLens kompilacji produkcyjnej przejdź do usługi **Ustawienia > Update & Security > Windows niejawny program testów** i wybierz pozycję Zatrzymaj kompilacje niejawnych **testerów.**
 
 1. Postępuj zgodnie z instrukcjami, aby zrezygnować z urządzenia.

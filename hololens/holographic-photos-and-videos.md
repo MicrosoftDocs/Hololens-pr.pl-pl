@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 54e9959c03b69db39ff2738e5d4f41f9740ae562b38e8d85998521a4733edad7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635963"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664863"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Tworzenie zdjęć i wideo rzeczywistości mieszanej
 
@@ -39,7 +39,7 @@ Istnieje kilka sposobów, aby zrobić zdjęcie rzeczywistości mieszanej na Holo
 
 ### <a name="hardware-buttons-to-take-photos"></a>Przyciski sprzętowe do robić zdjęcia
 
-Aby zrobić szybkie zdjęcie bieżącego widoku, naciśnij jednocześnie przyciski regulacji głośności w górę i w dół.  Jest to trochę tak jak HoloLens zrzutu ekranu lub ekranu wydruku.
+Aby zrobić szybkie zdjęcie bieżącego widoku, naciśnij jednocześnie przyciski regulacji głośności w górę i regulacji głośności.  Przypomina to nieco HoloLens zrzutu ekranu lub ekranu wydruku.
 
 - [Lokalizacje przycisków na HoloLens 2](hololens2-hardware.md)
 - [Lokalizacje przycisków na HoloLens (1. generacja)](hololens1-hardware.md#hololens-components)
@@ -76,7 +76,7 @@ Najszybszym sposobem na nagrania wideo jest  jednoczesne  naciśnięcie i przytr
 
 W HoloLens 2, wersja 2004 (i nowsze) powiedz: "Rozpocznij nagrywanie". Aby zatrzymać nagrywanie, powiedz "Stop recording" (Zatrzymaj nagrywanie).
 
-Na HoloLens (1. generacji) lub HoloLens 2, wersja 1903, powiedz: "Hej, Cortana, rozpocznij nagrywanie". Aby zatrzymać nagrywanie, powiedz "Hej, Cortana zatrzymaj nagrywanie".
+Na HoloLens (1. generacji) lub HoloLens 2, wersja 1903, powiedzmy: "Hey Cortana, start recording". Aby zatrzymać nagrywanie, powiedz "Hej, Cortana zatrzymaj nagrywanie".
 
 ### <a name="start-menu-to-record-videos"></a>menu Start do nagrywania filmów wideo
 
@@ -92,7 +92,7 @@ Aby zatrzymać nagrywanie, użyj gestu Start i wybierz wyróżnione **ikonę Wid
 
 W czasie rzeczywistym możesz udostępniać HoloLens w czasie rzeczywistym znajomym i współpracownikom. Dostępnych jest kilka metod:
 
-1. Nawiązywanie połączenia z Miracast z włączoną obsługą urządzenia lub adaptera w celu obejrzenia go na ekranie TV.
+1. Nawiązywanie połączenia Miracast z włączoną obsługą urządzenia lub adaptera w celu obejrzenia go na ekranie TV.
 1. Używanie [Windows Portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal) do obserwowania na komputerze
 1. Używanie aplikacji [Microsoft HoloLens do obserwowania](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) na komputerze.
 1. Wdrażanie aplikacji [Microsoft Dynamics 365 Remote Assist,](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) która umożliwia pracownikom pracującym przy pierwszej linii przesyłanie strumieniowe tego, co widzą, do zdalnego eksperta. Zdalny ekspert może następnie prowadzić pracowników na pierwszej linii słownie lub przez adnotacje w ich świecie.
@@ -102,7 +102,7 @@ W czasie rzeczywistym możesz udostępniać HoloLens w czasie rzeczywistym znajo
 
 ### <a name="stream-video-with-miracast"></a>Przesyłanie strumieniowe wideo za pomocą Miracast
 
-Użyj gestu Start, aby przejść do **menu Start,** a następnie wybierz **ikonę Połączenie** menu. Z wyświetlonego selektora wybierz Miracast lub kartę sieciową, z którą chcesz nawiązać połączenie.
+Użyj gestu Uruchom, aby przejść do **menu Start,** a następnie wybierz **ikonę Połączenie** menu. Z wyświetlonego selektora wybierz Miracast z włączoną obsługą połączenia lub kartę sieciową, z którą chcesz nawiązać połączenie.
 
 Aby zatrzymać udostępnianie, użyj gestu Start i wybierz wyróżniony **Połączenie** ikony. Ponieważ przesyłano strumieniowo, żadne dane nie zostaną zapisane na urządzeniu.
 
@@ -111,7 +111,7 @@ Aby zatrzymać udostępnianie, użyj gestu Start i wybierz wyróżniony **Połą
 
 ### <a name="real-time-video-with-windows-device-portal"></a>Wideo w czasie rzeczywistym z Windows Portal urządzeń
 
-Ponieważ udostępnianie za pośrednictwem Windows Portal urządzeń wymaga, aby tryb dewelopera był włączony na platformie HoloLens, postępuj zgodnie z instrukcjami w naszej dokumentacji dla deweloperów, aby skonfigurować tryb dewelopera i nawigować po [Windows Portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal).
+Udostępnianie za pośrednictwem usługi Windows Portal urządzeń wymaga, aby tryb dewelopera był włączony na platformie HoloLens, dlatego postępuj zgodnie z instrukcjami w naszej dokumentacji dla deweloperów, aby skonfigurować tryb dewelopera i nawigować po [Windows Portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal).
 
 ### <a name="microsoft-hololens-companion-app"></a>Microsoft HoloLens aplikacji towarzyszącej
 
@@ -121,11 +121,11 @@ Po skonfigurowaniu aplikacji przy użyciu HoloLens wybierz opcję **Transmisja s
 
 ## <a name="view-your-mixed-reality-photos-and-videos"></a>Wyświetlanie zdjęć i wideo rzeczywistości mieszanej
 
-Zdjęcia i filmy wideo rzeczywistości mieszanej są zapisywane w "aparacie roll" urządzenia. Zawartość tego folderu na ekranie możesz przeglądać na ekranie HoloLens za pomocą aplikacji Eksplorator plików (przejdź do folderu Obrazy > **roll aparatu).**
+Zdjęcia i filmy wideo rzeczywistości mieszanej są zapisywane w aplikacji "Camera Roll" urządzenia. Zawartość tego folderu na ekranie możesz przeglądać na ekranie HoloLens aplikacji Eksplorator plików (przejdź do folderu Obrazy > **Camera Roll**).
 
 Możesz również wyświetlać zdjęcia i filmy wideo rzeczywistości mieszanej w aplikacji Zdjęcia, która jest wstępnie zainstalowana na HoloLens. Aby przypiąć zdjęcie na świecie, wybierz je w aplikacji Zdjęcia, a następnie wybierz pozycję **Umieść w świecie mieszanym.** Po umieszczeniu zdjęcia można je przenosić po całym świecie.
 
-Aby wyświetlać [i/lub](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) zapisywać zdjęcia i wideo rzeczywistości mieszanej na komputerze podłączonym do usługi HoloLens, możesz użyć usługi Windows Portal urządzeń lub usługi Eksplorator plików za pośrednictwem usługi [MTP.](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens)
+Aby wyświetlić i/lub zapisać zdjęcia i wideo rzeczywistości mieszanej na komputerze podłączonym do usługi HoloLens, możesz użyć usługi [Windows Portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) lub interfejsu Eksplorator plików za pośrednictwem usługi [MTP.](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens)
 
 ### <a name="use-file-explorer-to-get-your-pictures-videos-and-files"></a>Użyj Eksplorator plików, aby pobrać swoje obrazy, wideo i pliki
 
@@ -140,40 +140,40 @@ Podobnie jak w przypadku innych urządzeń przenośnych, podłącz urządzenie H
 Porady:
 - Jeśli nie widzisz żadnych plików, upewnij się, że logujesz się do HoloLens, aby umożliwić dostęp do danych.
 - Możesz pobrać inne pliki w innych folderach, takie jak [pliki diagnostyczne,](hololens-diagnostic-logs.md#offline-diagnostics) z folderu Dokumenty.
-- Z Eksplorator plików na komputerze możesz wybrać pozycję Właściwości urządzenia, aby wyświetlić Windows wersji systemu operacyjnego Holographic (wersja oprogramowania układowego), numer seryjny urządzenia i procent naładowania baterii.
+- Z Eksplorator plików na komputerze możesz wybrać pozycję Właściwości urządzenia, aby wyświetlić Windows wersji systemu operacyjnego Holographic (wersja oprogramowania układowego), numer seryjny urządzenia i procent baterii.
 - Jeśli Twoja organizacja użyła rozwiązania MDM do wyłączenia [połączenia Connectivity/AllowUSBConnection,](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) nie będzie można nawiązać połączenia z urządzeniem.
 
 ## <a name="share-your-mixed-reality-photos-and-videos"></a>Udostępnianie zdjęć i filmów wideo rzeczywistości mieszanej
 
 Przed Windows Holographic w wersji [21H1](hololens-release-notes.md#windows-holographic-version-21h1)po przechwyceniu zdjęcia lub wideo rzeczywistości mieszanej zostanie wyświetlony podgląd. Wybierz **ikonę Udostępnij** nad podglądem, aby wyświetlić asystenta udostępniania. W tym miejscu możesz wybrać punkt końcowy, do którego chcesz udostępnić to zdjęcie lub wideo.
 
-W Windows Holographic w wersji 21H1 po przechwyceniu zdjęcia lub wideo rzeczywistości mieszanej zostanie wyświetlony podgląd. Wybierz **ikonę Udostępnij** nad podglądem, aby wyświetlić asystenta udostępniania. W tym miejscu możesz wybrać punkt końcowy (Mail, OneDrive itp.), do którego chcesz udostępnić to zdjęcie lub wideo. Możesz również włączyć udostępnianie HoloLens pobliskim urządzeniem, przechodząc do folderu **Ustawienia -> System -> Shared Experiences**. Aby uzyskać więcej informacji, przeczytaj [temat Udostępnianie rzeczy pobliskim urządzeniem w Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+W Windows Holographic w wersji 21H1 po przechwyceniu zdjęcia lub wideo rzeczywistości mieszanej zostanie wyświetlony podgląd. Wybierz **ikonę Udostępnij** nad podglądem, aby wyświetlić asystenta udostępniania. W tym miejscu możesz wybrać punkt końcowy (Mail, OneDrive itp.), do którego chcesz udostępnić to zdjęcie lub wideo. Możesz również włączyć udostępnianie HoloLens z pobliskimi urządzeniami, przechodząc do folderu **Ustawienia -> System -> Shared Experiences**. Aby uzyskać więcej informacji, przeczytaj [temat Udostępnianie rzeczy pobliskim urządzeniem w Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
 > [!TIP] 
-> Możesz również udostępniać zdjęcia i filmy wideo rzeczywistości mieszanej z OneDrive, automatycznie przesyłając zdjęcia i filmy wideo rzeczywistości mieszanej. Otwórz aplikację OneDrive na stronie HoloLens i zaloguj się przy użyciu osobistego **[konta konto Microsoft](https://account.microsoft.com)**, jeśli jeszcze tego nie zrobić. Wybierz **ikonę Ustawienia** i wybierz pozycję **Przekaż aparat.** Włącz przekazywanie z aparatu. Zdjęcia i filmy wideo rzeczywistości mieszanej będą teraz przekazywane do OneDrive przy każdym uruchomieniu aplikacji na HoloLens.
+> Możesz również udostępniać zdjęcia i filmy wideo rzeczywistości mieszanej z OneDrive, automatycznie przesyłając zdjęcia i wideo rzeczywistości mieszanej. Otwórz aplikację OneDrive na stronie HoloLens i zaloguj się przy użyciu osobistego **[konta konto Microsoft](https://account.microsoft.com)**, jeśli jeszcze tego nie zostało. Wybierz **ikonę Ustawienia** i wybierz pozycję **Przekaż z aparatu.** Włącz przekazywanie z aparatu. Zdjęcia i filmy wideo rzeczywistości mieszanej będą teraz przekazywane do OneDrive przy każdym uruchomieniu aplikacji na HoloLens.
 
 > [!NOTE]
-> Przekazywanie z aparatu można włączyć OneDrive tylko wtedy, gdy zalogowano się do OneDrive przy użyciu konta konto Microsoft. W przypadku skonfigurowania HoloLens przy użyciu konta służbowego możesz dodać osobisty konto Microsoft aplikacji OneDrive, aby włączyć tę funkcję.
+> Przekazywanie z aparatu można włączyć OneDrive tylko wtedy, gdy zalogowano się do OneDrive przy użyciu konta konto Microsoft. Jeśli skonfigurujemy HoloLens przy użyciu konta służbowego, możesz dodać osobisty konto Microsoft aplikacji OneDrive, aby włączyć tę funkcję.
 
 ## <a name="limitations-of-mixed-reality-capture"></a>Ograniczenia przechwytywania rzeczywistości mieszanej
 
 - Podczas przechwytywania rzeczywistości mieszanej szybkość klatek HoloLens do 30 Hz.
-- Rozdzielczość zdjęć i wideo może ulec skróceniu, jeśli kamera do zdjęć/wideo jest już zajęta przez inną aplikację, podczas transmisji strumieniowej na żywo lub gdy zasoby systemowe są niskie.
+- Rozdzielczość zdjęć i wideo może ulec skróceniu, jeśli aparat fotograficzny/wideo jest już w użyciu przez inną aplikację, podczas transmisji strumieniowej na żywo lub gdy zasoby systemowe są niskie.
 
 ### <a name="maximum-recording-length"></a>Maksymalna długość rejestrowania
 
-Na HoloLens urządzeniach przed Windows Holographic w wersji 20H2 filmy wideo zarejestrowane na urządzeniu były ograniczone do maksymalnej długości pięciu minut.
+Na HoloLens 2 urządzeniach przed Windows Holographic w wersji 20H2 filmy wideo zarejestrowane na urządzeniu były ograniczone do maksymalnej długości pięciu minut.
 
-Dzięki opiniom klientów zwiększyliśmy długość rejestrowania przechwytywania [rzeczywistości mieszanej.](holographic-photos-and-videos.md) Przechwytywanie rzeczywistości mieszanej domyślnie nie będzie już ograniczone do 5 minut, ale zamiast tego obliczy maksymalną długość rejestrowania na podstawie dostępnego miejsca na dysku. Urządzenie oszacowa maksymalny czas trwania rejestrowania wideo na podstawie dostępnego miejsca na dysku do 80% całkowitego miejsca na dysku.
+Dzięki opiniom klientów zwiększyliśmy długość rejestrowania przechwytywania rzeczywistości [mieszanej.](holographic-photos-and-videos.md) Przechwytywanie rzeczywistości mieszanej nie będzie już domyślnie ograniczone do 5 minut, ale zamiast tego obliczy maksymalną długość rejestrowania na podstawie dostępnego miejsca na dysku. Urządzenie oszacowa maksymalny czas trwania nagrywania wideo na podstawie dostępnego miejsca na dysku do 80% całkowitego miejsca na dysku.
 
 > [!NOTE]
-> W HoloLens będzie używać domyślnej długości rejestrowania wideo (5 minut), jeśli wystąpi jedna z następujących sytuacji:
-> - Szacowany maksymalny czas rejestrowania jest mniejszy niż domyślne 5 minut.
+> W HoloLens będzie używać domyślnej długości nagrywania wideo (5 minut), jeśli wystąpi jedna z następujących sytuacji:
+> - Szacowany maksymalny czas trwania rejestrowania jest mniejszy niż domyślne 5 minut.
 > - Dostępne miejsce na dysku jest mniejsza niż 20% całkowitego miejsca na dysku.
 
 ## <a name="default-file-format-and-resolution"></a>Domyślny format i rozdzielczość pliku
 
-### <a name="default-photo-format-and-resolution"></a>Domyślny format i rozdzielczość zdjęcia
+### <a name="default-photo-format-and-resolution"></a>Domyślny format i rozdzielczość zdjęć
 
 |  Urządzenie  |  Format  |  Wewnętrzny  |  Rozwiązanie  |
 |----------|----------|----------|----------|

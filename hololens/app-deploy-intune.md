@@ -17,14 +17,14 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665254"
 ---
-# <a name="intune--company-portal"></a>Usługa Intune & Portal firmy
+# <a name="intune--company-portal"></a>Intune & Portal firmy
 
 Usługa Mobile Zarządzanie urządzeniami (MDM) umożliwia wdrażanie własnych aplikacji niestandardowych za pośrednictwem usługi [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) bezpośrednio na urządzeniach HoloLens mobilnych. Microsoft Intune to usługa chmurowa, której głównym celem jest zarządzanie urządzeniami mobilnymi (MDM, mobile device management) i zarządzanie aplikacjami mobilnymi (MAM, mobile application management). Usługa Intune jest zawarta w pakiecie [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) firmy Microsoft i pozwala użytkownikom na wydajną pracę przy zachowaniu ochrony danych organizacji. Aby dowiedzieć się więcej o usłudze Intune, przeczytaj [Co to jest usługa Intune.](/mem/intune/fundamentals/what-is-intune)
 

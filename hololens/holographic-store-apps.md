@@ -15,18 +15,18 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: bbbc60decb74942bd7930afb04297f78df33028a
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664795"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Znajdowanie, instalowanie i odinstalowywanie aplikacji z Microsoft Store
 
-Ta Microsoft Store to źródło dla aplikacji i gier, które działają z HoloLens. Po przejść do sklepu na HoloLens zostaną na nim uruchomione wszystkie aplikacje, które tam zobaczysz.
+Ta Microsoft Store to źródło dla aplikacji i gier, które działają z HoloLens. Po przejdź do sklepu na HoloLens zostaną w nim uruchomione wszystkie aplikacje, które tam zobaczysz.
 
-Aplikacje w HoloLens używać widoku 2D lub widoku holograficznego. Aplikacje, które używają widoku 2D, wyglądają jak okna i mogą być rozmieszone wokół Ciebie. Aplikacje, które korzystają z widoku holograficznego, otaczają Cię i stają się jedyną zobaczysz.
+Aplikacje w HoloLens używają widoku 2D lub widoku holograficznego. Aplikacje, które używają widoku 2D, wyglądają jak okna i mogą być rozmieszone wokół Ciebie. Aplikacje, które korzystają z widoku holograficznego, otaczają Cię i stają się jedyną zobaczysz.
 
 HoloLens obsługuje wiele istniejących aplikacji z Microsoft Store, a nowe aplikacje opracowane specjalnie dla HoloLens.  Ten artykuł koncentruje się na aplikacjach holograficznych z Microsoft Store.
 
@@ -95,11 +95,11 @@ Aby zaktualizować aplikację zainstalowaną z Microsoft Store, możesz ją zakt
 > [!NOTE]
 > Jeśli aplikacje na urządzeniu zostały dystrybuowane przez organizację, można je zaktualizować za pomocą tych samych metod zarządzania aplikacjami komercyjnymi. Jeśli dotyczy to Twojej sytuacji, przeczytaj więcej za pośrednictwem [naszego o omówienie wdrażania aplikacji komercyjnych.](app-deploy-overview.md)
 >
-> Jeśli chcesz zaktualizować aplikację niestandardową, która została załadowana lub wdrożona w sposób sideload, musisz użyć tej samej metody ze zaktualizowaną wersją aplikacji. Aby dowiedzieć się więcej na temat instalowania i uruchamiania aplikacji niestandardowych, przeczytaj [niestandardowe aplikacje holograficzne.](holographic-custom-apps.md)
+> Jeśli chcesz zaktualizować aplikację niestandardową, która została załadowana lub wdrożona od nowa, musisz użyć tej samej metody ze zaktualizowaną wersją aplikacji. Aby dowiedzieć się więcej na temat instalowania i uruchamiania aplikacji niestandardowych, przeczytaj [niestandardowe aplikacje holograficzne.](holographic-custom-apps.md)
 
 ## <a name="uninstall-apps"></a>Odinstaluj aplikacje
 
-Istnieją trzy sposoby odinstalowywania aplikacji. Aplikacje można odinstalować za pośrednictwem Microsoft Store, menu Start lub z Ustawienia. 
+Istnieją trzy sposoby odinstalowania aplikacji. Aplikacje można odinstalować za pośrednictwem Microsoft Store, menu Start lub z Ustawienia. 
 
 > [!WARNING]
 > Nie można odinstalować aplikacji systemowej ani samej Microsoft Store samodzielnie.

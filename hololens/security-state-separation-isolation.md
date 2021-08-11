@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0487ea49c706c753f4dfca7da7daa499d1715e9f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 18c30b4edd649c088f71e479a401c8b286ddfd592f57a5659c3c15b3ec9c854f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665373"
 ---
 # <a name="state-separation-and-isolation"></a>Separacja i izolacja stanu
 
@@ -39,7 +39,7 @@ Separacja stanu w HoloLens 2 znacznie zwiększa bezpieczeństwo i użyteczność
 
 ### <a name="state-separation-states"></a>Stany separacji stanów
 
-Separacja stanu zapewnia, że system operacyjny może zostać zmieniony tylko przez składniki zaufanych urządzeń firmy Microsoft i tylko stan wysokiej wartości może być zachowywany po ponownym uruchomieniu; inny stan systemu istnieje tylko przez czas trwania sesji rozruchu i jest odrzucany po ponownym uruchomieniu. Oddzielenie stanu szybko przywraca urządzenie do stanu fabrycznego. Windows Holographic for Business można podzielić na następujące odrębne kategorie:
+Separacja stanu zapewnia, że system operacyjny może zostać zmieniony tylko przez składniki zaufanego urządzenia firmy Microsoft i tylko stan wysokiej wartości może być utrwalany po ponownym uruchomieniu; inny stan systemu istnieje tylko przez czas trwania sesji rozruchu i jest odrzucany po ponownym uruchomieniu. Oddzielenie stanu szybko przywraca urządzenie do stanu fabrycznego. Windows Holographic for Business można podzielić na następujące odrębne kategorie:
   * Podstawowy system operacyjny — stan nietrwale
   * Dane systemu operacyjnego — stan, który można zmienić 
   * Dane użytkownika — stan, który można zmienić
@@ -64,7 +64,7 @@ Należy pamiętać, że pliki wykonywalne i dane, które można zmieniać w czas
   * Połączenie sieciowe Wi-Fi uzyskuje dostęp do sieci zapamiętyowanych przez urządzenie danych i skojarzonych haseł połączeń.
   * Zrzuty awaryjne, w tym ustawienia, dzienniki.
   * Sterowniki pobrane na żądanie dla nowo odnalezionych urządzeń.
-Stan o wysokiej wartości, który można zmienić na HoloLens 2, znajduje się w lokalizacji zabezpieczeń danych systemu operacyjnego jako plik zapisany na dysku lub w gałęzi rejestru utrwalonego.
+Stan o wysokiej wartości, który można zmienić na HoloLens 2, znajduje się w lokalizacji zabezpieczeń danych systemu operacyjnego jako plik zapisany na dysku lub w utrwalonej gałęzi rejestru.
 
 #### <a name="user-data"></a>Dane użytkowników
 

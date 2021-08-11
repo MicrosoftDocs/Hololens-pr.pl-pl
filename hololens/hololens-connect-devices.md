@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664293"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Połączenie do Bluetooth i USB-C
 
@@ -32,12 +32,12 @@ HoloLens 2 obsługuje następujące klasy Bluetooth urządzeń:
 - Urządzenia wyjściowe audio (A2DP)
 
 HoloLens 2 obsługuje następujące interfejsy BLUETOOTH API:
-- Serwer [](/windows/uwp/devices-sensors/gatt-server) i klient [ZOI](/windows/uwp/devices-sensors/gatt-client)
+- Serwer [](/windows/uwp/devices-sensors/gatt-server) i [klient](/windows/uwp/devices-sensors/gatt-client) ZUS
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
 > Może być trzeba zainstalować odpowiednie aplikacje towarzyszące z Microsoft Store, aby w rzeczywistości korzystać z urządzeń HID i THE.
 
-HoloLens (1. generacji) obsługuje następujące klasy urządzeń Bluetooth:
+HoloLens (1. generacja) obsługuje następujące klasy Bluetooth urządzeń:
 
 - Mysz
 - Klawiatura
@@ -50,7 +50,7 @@ HoloLens (1. generacji) obsługuje następujące klasy urządzeń Bluetooth:
 
 1. Włącz klawiaturę lub mysz, aby było możliwe do odnajdywania. Aby dowiedzieć się, jak sprawić, aby urządzenie było wykrywalne, poszukaj informacji na urządzeniu (lub w jego dokumentacji) lub odwiedź witrynę internetową producenta.
 
-1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do opcji **Start**, a następnie wybierz pozycję **Ustawienia**.
+1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do **startu**, a następnie wybierz **pozycję Ustawienia**.
 
 1. Wybierz **pozycję** Urządzenia i upewnij się, Bluetooth jest wł.  
 
@@ -62,13 +62,13 @@ Ta procedura wyłącza składniki RF przycisku radiowego Bluetooth i wyłącza w
 
 1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do strony Start **,** a następnie wybrać pozycję Ustawienia  >  **Urządzenia.**
 
-1. Przenieś przełącznik suwaka dla **Bluetooth** w **położenie** Wyłączone.
+1. Przenieś przełącznik suwaka dla **Bluetooth** do **pozycji** Wyłączone.
 
 ## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Połączenie USB-C
 
 HoloLens 2 obsługuje następujące klasy urządzeń USB-C:
 
-- Urządzenia pamięci masowej (takie jak dyski miniatur)
+- Urządzenia pamięci masowej (takie jak dyski miniatury)
 - Karty Ethernet (w tym karty Ethernet i ładowanie)
 - Adaptery usb-C-to-3.5mm do cyfrowych audio
 - Cyfrowe zestawy audio USB-C (w tym adaptery nagłowne i ładowanie)
@@ -89,7 +89,7 @@ HoloLens 2 obsługuje następujące klasy urządzeń USB-C:
 > [!NOTE]
 > Nie można używać mikrofonów zewnętrznych w kompilacjach wcześniejszych niż Windows Holographic w wersji [21H1](hololens-release-notes.md#windows-holographic-version-21h1) lub wyższej. 
 
-Użytkownicy mogą wybierać zewnętrzne mikrofony podłączone do dysku USB C przy użyciu **panelu Ustawień** dźwięku. Mikrofony USB-C mogą służyć do wywoływania, nagrywania itp.
+Użytkownicy mogą wybierać zewnętrzne mikrofony podłączone do portu USB C przy użyciu **panelu Ustawień** dźwięku. Mikrofony USB-C mogą służyć do wywoływania, nagrywania itp.
 
 Otwórz aplikację **Ustawienia** wybierz **pozycję Dźwięk**  >  **systemowy.**
 
@@ -100,7 +100,7 @@ Otwórz aplikację **Ustawienia** wybierz **pozycję Dźwięk**  >  **systemowy.
 >
 > Następnie użyj listy rozwijanej, aby ustawić zewnętrzny mikrofon jako **domyślny lub** domyślny **dla komunikacji.** Wybranie **opcji** Domyślne oznacza, że zewnętrzny mikrofon będzie używany wszędzie.
 >
-> Wybranie **opcji Domyślna** komunikacja oznacza, że mikrofon zewnętrzny będzie używany w uchęce Zdalnej pomocy i innych aplikacjach komunikacyjnych, ale macierz mikrofonu HoloLens nadal może być używana do innych zadań.
+> Wybranie **opcji Domyślna** komunikacja oznacza, że mikrofon zewnętrzny będzie używany w uchęce Zdalnej pomocy i w innych aplikacjach komunikacyjnych, ale HoloLens macierz mikrofonu może być nadal używana do innych zadań.
 
 ![Zarządzanie urządzeniami dźwiękowymi](images/usbc-mic-2.png)
 
@@ -110,7 +110,7 @@ Otwórz aplikację **Ustawienia** wybierz **pozycję Dźwięk**  >  **systemowy.
 
 #### <a name="what-about-bluetooth-microphone-support"></a>A co z Bluetooth mikrofonu?
 
-Niestety, Bluetooth mikrofony nadal nie są obecnie obsługiwane w HoloLens 2.
+Niestety mikrofony Bluetooth nadal nie są obecnie obsługiwane na urządzeniach HoloLens 2.
 
 ### <a name="usb-c-hubs"></a>Koncentratory USB-C
 

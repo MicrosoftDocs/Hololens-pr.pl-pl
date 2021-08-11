@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 43162389eae82bc09135c62acd40d71048d14db1
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664328"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planowanie HoloLens 2 w środowisku komercyjnym
 
@@ -54,12 +54,12 @@ Dowiedz się więcej o podstawowych usługach infrastruktury wymaganych do obsł
 
 ## <a name="configure"></a>Konfigurowanie
 
-Użyj usługi Intune i rozwiązania Autopilot jako rozwiązań o niskim poziomie dotyku do rejestrowania i konfigurowania HoloLens 2 w dzierżawie usługi Azure AD i rozwiązaniu MDM organizacji.
+Użyj usługi Intune i rozwiązania Autopilot jako rozwiązań o niskim poziomie dotyku do rejestrowania i konfigurowania usługi HoloLens 2 w dzierżawie usługi Azure AD i rozwiązaniu MDM organizacji.
 
 | Składnik | Opis |
 |-----------|------------|
 | [Automatyczne rejestrowanie](hololens-enroll-mdm.md#auto-enrollment-in-mdm) | Po początkowym zalogowaniu urządzenia automatycznie rejestrują się w usłudze Azure AD i rejestrują się w usłudze MDM  |
-| [Licencje aplikacji](hololens2-cloud-connected-configure.md#application-licenses)| Można stosować do użytkowników, grup użytkowników lub grup urządzeń  |
+| [Licencje aplikacji](hololens2-cloud-connected-configure.md#application-licenses)| Można je stosować do użytkowników, grup użytkowników lub grup urządzeń  |
 | [Użytkownicy i grupy platformy Azure](hololens2-cloud-connected-configure.md#azure-users-and-groups) | Ułatwia przypisywanie konfiguracji i licencji dla HoloLens 2  |
 
 ## <a name="deploy"></a>Wdróż

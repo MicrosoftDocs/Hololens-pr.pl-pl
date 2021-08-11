@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: 36991d62da91011b807dfb9ff52ab16eadac8bc7
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663945"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Znane problemy dotyczące HoloLens (1. generacja)
 
@@ -27,7 +27,7 @@ Poniżej znajduje się bieżąca lista znanych problemów dotyczących HoloLens 
 
 >[!NOTE]
 > - Jeśli odkryjesz problem, który nie blokuje, zgłoś go na urządzeniu HoloLens za [pośrednictwem Centrum opinii](hololens-feedback.md).
-> - Jeśli problem, który występuje, blokuje Cię, oprócz zgłaszania opinii, prosimy [o zgłoszenie do pomocy technicznej](https://aka.ms/hlsupport).
+> - Jeśli problem, który występuje, blokuje Cię, oprócz zgłaszania opinii, prosimy [o zgłoszenie do pomocy technicznej.](https://aka.ms/hlsupport)
 
 
 - [Znane problemy dla wszystkich HoloLens generacji](#known-issues-for-all-hololens-generations)
@@ -67,7 +67,7 @@ Obejścia:
 
 Visual Studio program VS 2019 w wersji 16.2, który zawiera poprawkę tego problemu. Zalecamy zaktualizowanie do najnowszej wersji, aby uniknąć wystąpienia tego błędu.
 
-Główna przyczyna problemu: dotyczy to użytkowników, którzy używali programu Visual Studio 2015 lub wczesnych wersji programu Visual Studio 2017 do wdrażania i debugowania aplikacji na ich HoloLens, a następnie używali najnowszych wersji programu Visual Studio 2017 lub Visual Studio 2019 z tym samym HoloLens. Nowsze wersje składnika Visual Studio nową wersję składnika, ale pliki ze starszej wersji są pozostawiane na urządzeniu, co powoduje niepowodzenie nowszej wersji.  Powoduje to następujący komunikat o błędzie: DEP0100: Upewnij się, że urządzenie docelowe ma włączony tryb dewelopera. Nie można uzyskać licencji dewelopera z \<ip\> powodu błędu 80004005.
+Główna przyczyna problemu: dotyczy to użytkowników, którzy używali programu Visual Studio 2015 lub wczesnych wersji programu Visual Studio 2017 do wdrażania i debugowania aplikacji na ich HoloLens, a następnie używali najnowszych wersji programu Visual Studio 2017 lub Visual Studio 2019 z tym samym HoloLens. Nowsze wersje składnika Visual Studio nową wersję składnika, ale pliki ze starszej wersji są pozostawiane na urządzeniu, co powoduje niepowodzenie nowszej wersji.  Powoduje to następujący komunikat o błędzie: DEP0100: Upewnij się, że urządzenie docelowe ma włączony tryb dewelopera. Nie można uzyskać licencji dewelopera na program \<ip\> z powodu błędu 80004005.
 
 #### <a name="workaround"></a>Obejście
 
@@ -96,7 +96,7 @@ Nasz zespół obecnie pracuje nad poprawek. W międzyczasie możesz wykonać nas
 
 1. Przejdź do katalogu C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 i zmień filtr na Wszystkie pliki **( \* . \* )**.
 
-1. Wybierz obie SirepClient.dll i SshClient.dll, a następnie wybierz **pozycję Dodaj.**
+1. Wybierz obie SirepClient.dll i SshClient.dll, a następnie wybierz pozycję **Dodaj.**
 
 1. Znajdź i wybierz oba pliki w Eksplorator rozwiązań (powinny znajdować się u dołu  listy plików),  a następnie zmień opcję Kopiuj do katalogu wyjściowego w oknie Właściwości na Kopiuj **zawsze**.
 
@@ -134,15 +134,15 @@ Będziemy dostarczać dalsze aktualizacje, gdy staną się dostępne.
 > [!NOTE]
 > Ostatnia aktualizacja: 4/2 o 10:00 — problem rozwiązany.
 
-Mogą wystąpić problemy podczas próby uruchomienia aplikacji Microsoft Store na HoloLens. Ustaliliśmy, że problem występuje, gdy aktualizacje aplikacji w tle wdrażają nowszą wersję pakietów struktury w określonych sekwencjach, podczas gdy co najmniej jedna z aplikacji zależnych nadal działa. W takim przypadku automatyczna aktualizacja aplikacji dostarczała nową wersję programu .NET Native Framework (w wersji od 10.0.25531 do 10.0.27413), co spowodowało, że uruchomione aplikacje nie były poprawnie aktualizowane dla wszystkich uruchomionych aplikacji, które zużywają poprzednią wersję struktury.  Przepływ aktualizacji struktury jest następujący:
+Podczas próby uruchomienia aplikacji i aplikacji w Microsoft Store na HoloLens mogą wystąpić problemy. Ustaliliśmy, że problem występuje, gdy aktualizacje aplikacji w tle wdrażają nowszą wersję pakietów struktury w określonych sekwencjach, podczas gdy co najmniej jedna z aplikacji zależnych nadal działa. W takim przypadku automatyczna aktualizacja aplikacji dostarczała nową wersję programu .NET Native Framework (w wersji od 10.0.25531 do 10.0.27413), co spowodowało, że uruchomione aplikacje nie były poprawnie aktualizowane dla wszystkich uruchomionych aplikacji, które zużywają poprzednią wersję struktury.  Przepływ aktualizacji struktury jest następujący:
 
 1. Nowy pakiet struktury jest pobierany ze sklepu i instalowany.
 
-1. Wszystkie aplikacje użyciu starszej struktury są "aktualizowane" w celu używania nowszej wersji.
+1. Wszystkie aplikacje korzystania ze starszej struktury są "aktualizowane" w celu używania nowszej wersji.
 
 Jeśli krok 2 zostanie przerwany przed ukończeniem, uruchomienie wszystkich aplikacji, dla których nie zarejestrowano nowszej struktury, z menu Start zakończy się niepowodzeniem.  Uważamy, że ten HoloLens może mieć wpływ na dowolną aplikację w HoloLens aplikacji.
 
-Niektórzy użytkownicy zgłaszali, że zamknięcie zawieszonych aplikacji i uruchomienie innych aplikacji, takich jak Centrum opinii, Przeglądarka 3D lub Zdjęcia, rozwiązuje problem dla nich — jednak nie działa to przez 100% czasu.
+Niektórzy użytkownicy zgłaszali, że zamknięcie zawieszonych aplikacji i uruchomienie innych aplikacji, takich jak Centrum opinii, Przeglądarka 3D lub Zdjęcia, rozwiązuje problem — jednak nie działa to przez 100% czasu.
 
 Główną przyczyną tego problemu nie była sama aktualizacja, ale usterka systemu operacyjnego, która powodowała nieprawidłową obsługę aktualizacji struktury .NET Native. Z zadowoleniem ogłaszamy, że zidentyfikowano poprawkę i wydaliśmy aktualizację (system operacyjny w wersji 17763.380) zawierającą poprawkę.  
 
@@ -152,11 +152,11 @@ Aby sprawdzić, czy urządzenie może podjąć aktualizację:
 
 1. Wybierz **pozycję Sprawdź aktualizacje.**
 
-1. Jeśli jest dostępna aktualizacja do wersji 17763.380, zaktualizuj tę kompilację, aby otrzymać poprawkę dla błędu zawieszania się aplikacji.
+1. Jeśli jest dostępna aktualizacja do wersji 17763.380, zaktualizuj tę kompilację, aby otrzymać poprawkę dla błędu Zawieszanie aplikacji.
 
 1. Po zaktualizowaniu do tej wersji systemu operacyjnego aplikacje powinny działać zgodnie z oczekiwaniami.
 
-Ponadto, podobnie jak w przypadku każdego HoloLens operacyjnego, obraz FFU został opublikowany w [Centrum pobierania Microsoft.](https://aka.ms/hololensdownload/10.0.17763.380)
+Ponadto, podobnie jak w przypadku każdej HoloLens systemu operacyjnego, obraz FFU został opublikowany w [Centrum pobierania Microsoft.](https://aka.ms/hololensdownload/10.0.17763.380)
 
 Jeśli nie chcesz przyjmować aktualizacji, 29.03.29 wydaliśmy nową wersję aplikacji platformy Microsoft Store platformy uniwersalnej systemu Windows. Po zaktualizowaniu wersji sklepu:
 
@@ -166,17 +166,17 @@ Jeśli nie chcesz przyjmować aktualizacji, 29.03.29 wydaliśmy nową wersję ap
 1. Jeśli nadal nie można go uruchomić, naciśnij i przytrzymaj ikonę uszkodzonej aplikacji, a następnie wybierz pozycję Odinstaluj.
 1. Zainstaluj ponownie te aplikacje ze sklepu.
 
-Jeśli nadal nie można załadować aplikacji na urządzeniu, możesz załadować bezpośrednio wersję programu .NET Native Framework i środowiska uruchomieniowego za pośrednictwem Centrum pobierania, wykonać następujące czynności:
+Jeśli urządzenie nadal nie może ładować aplikacji, możesz załadować bezpośrednio wersję programu .NET Native Framework i środowiska uruchomieniowego za pośrednictwem Centrum pobierania, wykonać następujące czynności:
 
 1. Pobierz ten [plik zip](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) z Centrum pobierania Microsoft. Rozpakowanie spowoduje skomplikowanie dwóch plików.  Microsoft .NET.Native.Runtime.1.7.appx i Microsoft .NET.Native.Framework.1.7.appx.
 
 1. Sprawdź, czy twoje urządzenie zostało odblokowane.  Jeśli nie zostało to jeszcze zrobione, zobacz [Using the Windows Portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal) (Używanie Windows Portal urządzeń, aby uzyskać instrukcje.
 
-1. Następnie chcesz uzyskać dostęp do Windows Portal urządzeń. Zaleca się, aby to zrobić za pośrednictwem portu USB, wpisując http://127.0.0.1:10080 je w przeglądarce.
+1. Następnie chcesz uzyskać dostęp do Windows Portal urządzeń. Zaleca się, aby to zrobić za pośrednictwem portu USB, wpisując je http://127.0.0.1:10080 w przeglądarce.
 
 1. Po zakończeniu Windows Portal urządzeń musimy "załadować bezpośrednio" dwa pobrane pliki. W tym celu należy przejść w dół na lewym pasku bocznym, aż do sekcji Aplikacje **i** wybrać pozycję **Aplikacje.**
 
-1. Zostanie wyświetlony ekran podobny do poniższego.  Chcesz przejść do sekcji Instalowanie  aplikacji i przejść do miejsca, w którym zostały rozpakowane te dwa pliki APPX. Można to zrobić tylko jeden raz na raz, więc po wybraniu pierwszej z nich kliknij pozycję "Przejdź" w sekcji Wdrażanie. Następnie zrób to dla drugiego pliku APPX.
+1. Zostanie wyświetlony ekran podobny do poniższego.  Chcesz przejść do sekcji Install **App** (Zainstaluj aplikację) i przejść do miejsca, w którym zostały rozpakowane te dwa pliki APPX. Można to zrobić tylko jeden raz na raz, więc po wybraniu pierwszej z nich kliknij pozycję "Przejdź" w sekcji Wdrażanie. Następnie zrób to dla drugiego pliku APPX.
 
    ![Windows Portal urządzeń zainstalować Side-Loaded aplikacji](images/20190322-DevicePortal.png)
 
@@ -192,7 +192,7 @@ Dziękujemy za cierpliwość, ponieważ przeszliśmy przez proces rozwiązania t
 
 ### <a name="visual-studio"></a>Visual Studio
 
-- Zobacz [Instalowanie narzędzi,](/windows/mixed-reality/install-the-tools) aby uzyskać najnowszą wersję pakietu Visual Studio zalecaną do HoloLens deweloperskie.
+- Zobacz [Instalowanie narzędzi,](/windows/mixed-reality/install-the-tools) aby uzyskać najnowszą wersję pakietu Visual Studio zalecaną do HoloLens tworzenia aplikacji.
 
 - Podczas wdrażania aplikacji z usługi Visual Studio do usługi HoloLens może zostać wyświetlony błąd: Nie można wykonać żądanej operacji na pliku z otwartą sekcją mapowana **przez użytkownika. (Wyjątek od HRESULT: 0x800704C8)**. Jeśli tak się stanie, spróbuj ponownie, aby wdrożenie na ogół zakończyło się pomyślnie.
 
@@ -206,5 +206,5 @@ Dziękujemy za cierpliwość, ponieważ przeszliśmy przez proces rozwiązania t
 
 - Jeśli ponownie uruchomisz urządzenie HoloLens, gdy kontroler sieci bezprzewodowej Xbox jest podłączony, kontroler nie zostanie automatycznie ponownie połączony z HoloLens. Światło przycisku Prowadnica będzie wolno migać, aż kontroler wyłączy się po 3 minutach. Aby od razu ponownie połączyć kontroler, wyłącz kontroler, przytrzymując przycisk Przewodnik do momentu wyłączenia światła. Ponowne włączenie kontrolera spowoduje ponowne nawiązanie połączenia z HoloLens.
 
-- Jeśli urządzenie HoloLens w stanie wstrzymania, gdy kontroler bezprzewodowy Xbox jest podłączony, wszelkie dane wejściowe na kontrolerze wznowią HoloLens. Można temu zapobiec, wyłączając kontroler po jego użyciu.
+- Jeśli urządzenie HoloLens w stanie wstrzymania, gdy kontroler sieci bezprzewodowej Xbox jest podłączony, wszelkie dane wejściowe na kontrolerze wznowią HoloLens. Możesz temu zapobiec, wyłączając kontroler po jego użyciu.
 
