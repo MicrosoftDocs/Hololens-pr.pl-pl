@@ -1,6 +1,6 @@
 ---
-title: Obsługiwane języki dla urządzenia HoloLens 2
-description: Poznaj wszystkie języki, które obsługuje urządzenie HoloLens 2, zmieniając układy klawiatury i aktualizując język wyświetlania systemu Windows.
+title: Obsługiwane języki dla HoloLens 2
+description: Dowiedz się więcej o wszystkich językach HoloLens 2, zmienianiu układów klawiatury i aktualizowaniu Windows wyświetlania.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -17,16 +17,16 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 32f4cce668b2f8a483dbef3f4b41a0ceb8267dcc202f2be9d32ecec4061d0c21
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659581"
 ---
-# <a name="supported-languages-for-hololens-2"></a>Obsługiwane języki dla urządzenia HoloLens 2
+# <a name="supported-languages-for-hololens-2"></a>Obsługiwane języki dla HoloLens 2
 
-Urządzenie HoloLens 2 jest zlokalizowane w następujących językach. Funkcje lokalizacji obejmują polecenia mowy i dyktowanie, układy klawiatury i rozpoznawanie OCR w aplikacjach.
+HoloLens 2 jest zlokalizowany w następujących językach. Funkcje lokalizacji obejmują polecenia mowy i dyktowanie, układy klawiatury i rozpoznawanie OCR w aplikacjach.
 
 - Chiński uproszczony (Chiny)
 - Angielski (Australia)
@@ -40,13 +40,13 @@ Urządzenie HoloLens 2 jest zlokalizowane w następujących językach. Funkcje l
 - Japoński (Japonia)
 - hiszpański (Hiszpania)
 
-Urządzenie HoloLens 2 obsługuje również następujące języki. Ta obsługa nie obejmuje jednak poleceń mowy ani funkcji dyktowania.
+HoloLens 2 obsługuje również następujące języki. Ta obsługa nie obejmuje jednak poleceń mowy ani funkcji dyktowania.
 
 - Chiński tradycyjny (Tajwan i Hongkong)
 - Niderlandzki (Holandia)
 - Koreański (Korea)
 
-Niektóre funkcje urządzenia HoloLens 2 używają języka wyświetlania systemu Windows. Język wyświetlania systemu Windows ma wpływ na następujące ustawienia systemu Windows i aplikacji, które obsługują lokalizacji:
+Niektóre funkcje programu HoloLens 2 używają Windows wyświetlania. Język wyświetlania Windows ma wpływ na następujące ustawienia dla Windows i dla aplikacji, które obsługują lokalizacja:
 
 - Język tekstu interfejsu użytkownika.
 - Język mowy.
@@ -54,29 +54,29 @@ Niektóre funkcje urządzenia HoloLens 2 używają języka wyświetlania systemu
 
 ## <a name="change-the-language-or-keyboard-layout"></a>Zmienianie układu języka lub klawiatury
 
-Proces konfiguracji konfiguruje urządzenie HoloLens dla określonego regionu i języka. Tę konfigurację można zmienić przy użyciu sekcji & **języka czasowego** w **sekcji Ustawienia**.
+Proces konfiguracji konfiguruje konfigurację HoloLens dla określonego regionu i języka. Tę konfigurację można zmienić przy użyciu sekcji **& czasu w** Ustawienia . 
 
 > [!NOTE]  
-> Język mowy i dyktowania zależy od języka wyświetlania systemu Windows (i jest taki sam jak).
+> Język mowy i dyktowania zależy od (i jest taki sam jak) Windows języka wyświetlania.
 
-### <a name="to-change-the-windows-display-language"></a>Aby zmienić język wyświetlania systemu Windows
+### <a name="to-change-the-windows-display-language"></a>Aby zmienić Windows wyświetlania
 
-1. Otwórz menu **Start,** a następnie wybierz **pozycję Ustawienia**  >  **Czas i język**  >  **Język**.
-2. Wybierz **pozycję Język wyświetlania systemu Windows,** a następnie wybierz język.  
+1. Otwórz menu **Start,** a następnie wybierz pozycję **Ustawienia**  >  **time and language**  >  **Language**.
+2. Wybierz **Windows wyświetlania,** a następnie wybierz język.  
 
 Jeśli obsługiwanego języka, którego szukasz, nie ma w menu, wykonaj następujące kroki:  
 
 1. W **obszarze Preferowane języki** wybierz pozycję Dodaj **język**.
 2. Znajdź i dodaj język.
-3. Ponownie wybierz menu **Języka wyświetlania systemu Windows,** a następnie wybierz język dodany w poprzednim kroku.
+3. Wybierz ponownie **Windows wyświetlany język,** a następnie wybierz język dodany w poprzednim kroku.
 
 ### <a name="to-change-the-keyboard-layout"></a>Aby zmienić układ klawiatury
 
-Aby dodać lub usunąć układ klawiatury, otwórz menu **Start,** a następnie wybierz pozycję Ustawienia Czas &  >  **języku**  >  **Klawiatura**.
+Aby dodać lub usunąć układ klawiatury, otwórz menu **Start,** a następnie wybierz Ustawienia  >  **Time &**  >  **klawiatury.**
 
-Jeśli urządzenie HoloLens ma więcej niż jeden układ klawiatury, użyj **klawisza Układ,** aby przełączać się między nimi. Klawisz **Układ** znajduje się w prawym dolnym rogu klawiatury ekranowej.
+Jeśli układ HoloLens więcej niż jeden układ klawiatury, użyj **klawisza Układ,** aby się między nimi przełączać. Klawisz **Układ** znajduje się w prawym dolnym rogu klawiatury ekranowej.
 
 > [!NOTE]  
-> Klawiatura ekranowa może używać edytora metody wprowadzania danych (IME) do wprowadzania znaków w językach, takich jak japoński. Jednak urządzenie HoloLens nie obsługuje zewnętrznych klawiatur Bluetooth, które używają funkcji IME.
+> Klawiatura ekranowa może używać edytora metody wprowadzania danych (IME) do wprowadzania znaków w językach, takich jak japoński. Jednak HoloLens obsługuje zewnętrznych klawiatur Bluetooth, które używają IME.
 >  
 > Gdy używasz IME razem z klawiaturą ekranową, możesz nadal używać klawiatury Bluetooth do pisania w języku angielskim. Aby przełączać się między klawiaturami, naciśnij przycisk znaku tyldy ( **~** ).

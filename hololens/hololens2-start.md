@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659425"
 ---
 # <a name="set-up-your-hololens-2"></a>Konfigurowanie aplikacji HoloLens 2
 
@@ -74,13 +74,13 @@ Zostanie pojawi się przycisk z logo firmy Microsoft. Naciśnij przycisk , a Hol
 
         <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
-        Po połyceniu hologramy będą wyświetlane prawidłowo nawet wtedy, gdy wizjer przesuwa się w łb. Informacje o lokalizacji są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Aby uzyskać więcej informacji, zobacz [Dane dotyczące pomięć i zabezpieczenia](hololens-calibration.md#calibration-data-and-security).
+        Po połyceniu hologramy będą wyświetlane prawidłowo nawet wtedy, gdy dasz w łące. Informacje o lokalizacji są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Aby uzyskać więcej informacji, zobacz [Temat Dane dotyczące pomięć i zabezpieczenia](hololens-calibration.md#calibration-data-and-security).
 
         <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. Połączenie z Internetem (wybierz Wi-Fi lub połączenie Ethernet).
 
-     HoloLens automatycznie ustawia strefę czasową na podstawie informacji uzyskanych z Wi-Fi sieci. Po zakończeniu instalacji możesz zmienić strefę czasową przy użyciu Ustawienia aplikacji.
+     HoloLens automatycznie ustawia strefę czasową na podstawie informacji uzyskanych Wi-Fi sieci. Po zakończeniu instalacji możesz zmienić strefę czasową przy użyciu Ustawienia aplikacji.
 
     ![Łączenie z siecią Wi-Fi](images/11-network.png)
 

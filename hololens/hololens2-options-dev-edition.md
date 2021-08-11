@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658872"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -74,7 +74,7 @@ Wybierz aparat, pobierz narzędzia i wyłącz klawiaturę. Witamy w Mixed Realit
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 |     [Rozpoczynanie projektowania i tworzenia prototypów](/windows/mixed-reality/design/design)         |     Rozpocznij swoją przygodę z projektowaniem aplikacji Mixed Reality w podstawowych pojęciach, modelach interakcji i elementach środowiska użytkownika.     |
 |     [Rozpocznij tworzenie aplikacji dla Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Wybierz aparat, pobierz narzędzia, dodaj podstawowe bloki konstrukcyjne i rozpocznij tworzenie już dziś.                                  |
-|     [Eksplorowanie Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Twórz atrakcyjne immersywne środowiska z Azure Remote Rendering i usługą Azure Spatial Anchors.                                 |
+|     [Eksplorowanie Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Twórz atrakcyjne immersywne środowiska z Azure Remote Rendering usługami Azure Spatial Anchors.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Dodatkowe zasoby w wersji Developer Edition
 
@@ -82,7 +82,7 @@ Wybierz aparat, pobierz narzędzia i wyłącz klawiaturę. Witamy w Mixed Realit
 - [Pamiętaj, aby zainstalować narzędzia do HoloLens deweloperskie.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Dowiedz się więcej o tworzeniu aplikacji dla HoloLens 2 za pomocą aparatu Unity.](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
 - [Dowiedz się, jak połączyć platformę MRTK z platformą Unity.](/windows/mixed-reality/develop/unity/mrtk-getting-started)
-- [Dowiedz się, jak wdrażać aplikacje wbudowane.](app-deploy-overview.md)
+- [Dowiedz się, jak wdrożyć aplikacje wbudowane.](app-deploy-overview.md)
 - [Zapoznaj się ze wszystkimi możliwościami Mixed Reality.](/windows/mixed-reality/)
 - [Dowiedz się więcej o tworzeniu aplikacji dla HoloLens 2 za pomocą unreal.](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Spracuj się ze swoimi innymi deweloperami w naszym kanale Slack dla deweloperów holodevelopers.](https://holodevelopersslack.azurewebsites.net/)

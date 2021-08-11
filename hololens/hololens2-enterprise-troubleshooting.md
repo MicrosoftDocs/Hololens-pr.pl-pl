@@ -12,19 +12,19 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f038cbf58b6dfaef0395a1ea5b406cce23e4e3fe0464c6bfc1162518f9caf3ff
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659772"
 ---
 # <a name="troubleshooting-implementation-and-managed-devices"></a>Rozwiązywanie problemów z implementacją i urządzeniami zarządzanymi 
 
 W tym artykule opisano sposób rozwiązywania kilku problemów lub odpowiadania na pytania dotyczące implementacji i zarządzania HoloLens 2.
 
 >[!IMPORTANT]
-> Przed rozpoczęciem procedury rozwiązywania problemów upewnij się, że urządzenie jest obciążane od **20 do 40%** pojemności baterii, jeśli jest to możliwe. Wskaźniki [naładowania baterii znajdujące](hololens2-setup.md#lights-that-indicate-the-battery-level) się pod przyciskiem zasilania to szybki sposób na sprawdzenie pojemności baterii bez logowania się do urządzenia.
+> Przed rozpoczęciem procedury rozwiązywania problemów upewnij się, że urządzenie jest obciążane od **20 do 40%** pojemności baterii, jeśli jest to możliwe. Wskaźniki [naładowania baterii](hololens2-setup.md#lights-that-indicate-the-battery-level) znajdujące się pod przyciskiem zasilania to szybki sposób sprawdzenia pojemności baterii bez logowania się do urządzenia.
 
 
 <a id="list"></a>
@@ -39,12 +39,12 @@ W tym artykule opisano sposób rozwiązywania kilku problemów lub odpowiadania 
 ## <a name="eap-troubleshooting"></a>Rozwiązywanie problemów z protokołu EAP
 1. Sprawdź, Wi-Fi profil ma odpowiednie ustawienia:
     - Typ protokołu EAP jest poprawnie skonfigurowany, typowe typy protokołu EAP: EAP-TLS (13), EAP-TTLS (21) i PEAP (25).
-    - Wi-Fi SSID jest właściwa i pasuje do ciągu HEX.
-    - W przypadku protokołu EAP-TLS wartość TrustedRootCA zawiera skrót SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji serwera. Na Windows pc "certutil.exe -dump cert_file_name" będzie wyświetlać ciąg skrótu SHA-1 certyfikatu.
+    - Wi-Fi SSID jest po prawej stronie i jest dorównanany ciągiem HEX.
+    - W przypadku protokołu EAP-TLS wartość TrustedRootCA zawiera skrót SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji serwera. Na Windows "certutil.exe - zrzutu cert_file_name" polecenie spowoduje pokazanie ciągu skrótu SHA-1 certyfikatu.
 2. Zbierz przechwytywanie pakietów sieciowych w dziennikach punktu dostępu, kontrolera lub serwera usługi AAA, aby dowiedzieć się, gdzie sesja protokołu EAP kończy się niepowodzeniem.
-    - Jeśli tożsamość EAP dostarczana przez HoloLens jest oczekiwana, sprawdź, czy tożsamość została poprawnie aprowizowana za pośrednictwem profilu Wi-Fi certyfikatu klienta.
+    - Jeśli tożsamość EAP zapewniana przez usługę HoloLens jest oczekiwana, sprawdź, czy tożsamość została poprawnie aprowizowana za pośrednictwem profilu Wi-Fi lub certyfikatu klienta.
     - Jeśli serwer odrzuci HoloLens klienta, sprawdź, czy wymagany certyfikat klienta został aprowowany na urządzeniu.
-    - Jeśli HoloLens certyfikat serwera, sprawdź, czy certyfikat głównego urzędu certyfikacji serwera został aprowowany na HoloLens.
+    - Jeśli HoloLens serwera, sprawdź, czy certyfikat głównego urzędu certyfikacji serwera został aprowowany na HoloLens.
 3. Jeśli profil przedsiębiorstwa jest aprowowany za pośrednictwem Wi-Fi aprowizowania, rozważ zastosowanie pakietu aprowizowania na komputerze Windows 10 PC. Jeśli na komputerze nie powiedzie się Windows 10, postępuj zgodnie z Windows rozwiązywania problemów z uwierzytelnianiem klienta 802.1X.
 4. Prześlij nam opinię za pośrednictwem Centrum opinii.
 
@@ -52,14 +52,14 @@ W tym artykule opisano sposób rozwiązywania kilku problemów lub odpowiadania 
 
 ## <a name="wi-fi-troubleshooting"></a>Wi-Fi rozwiązywania problemów
 
-Oto kilka rzeczy, które należy wypróbować, jeśli nie można połączyć HoloLens z Wi-Fi siecią:
+Oto kilka rzeczy, które należy wypróbować, jeśli nie można połączyć komputera HoloLens z Wi-Fi siecią:
 
-1. Upewnij się, Wi-Fi jest włączona. Aby to sprawdzić, użyj gestu Uruchom, a następnie wybierz pozycję Ustawienia > Network & Internet > Wi-Fi. Jeśli Wi-Fi jest wł., spróbuj go wyłączyć, a następnie ponownie wł.
+1. Upewnij się, Wi-Fi jest włączona. Aby to sprawdzić, użyj gestu Start, a następnie wybierz Ustawienia > Sieci & Internet > Wi-Fi. Jeśli Wi-Fi jest wł., spróbuj wyłączyć ją, a następnie ponownie wł.
 2. Umieść komputer bliżej routera lub punktu dostępu.
 3. Uruchom ponownie Wi-Fi, a następnie uruchom ponownie HoloLens. Spróbuj ponownie nałączyć połączenie.
 4. Jeśli żadna z tych czynności nie działa, upewnij się, że router korzysta z najnowszego oprogramowania układowego. Te informacje można znaleźć w witrynie internetowej producenta.
 
-Po zalogowaniu się do konta przedsiębiorstwa lub organizacji na urządzeniu może również zostać stosowane zasady usługi Mobile Zarządzanie urządzeniami (MDM), jeśli zasady zostały skonfigurowane przez administratora IT.
+Po zalogowaniu się do konta firmowego lub organizacyjnego na urządzeniu może ono również stosować zasady usługi Mobile Zarządzanie urządzeniami (MDM), jeśli zasady zostały skonfigurowane przez administratora IT.
 
 [Powrót do listy](#list)
 
@@ -67,7 +67,7 @@ Po zalogowaniu się do konta przedsiębiorstwa lub organizacji na urządzeniu mo
 Jeśli problemy z siecią są przeszkodą dla pomyślnego wdrożenia i używania programu HoloLens 2 w organizacji, skonfiguruj program Fiddler i/lub Wireshark, aby przechwytywać i analizować ruch HTTP/HTTPS. 
 
 ### <a name="configure-fiddler-to-capture-http-traffic"></a>Konfigurowanie programu Fiddler do przechwytywania ruchu HTTP
-Program Fiddler to internetowy serwer proxy debugowania, który służy do rozwiązywania problemów z protokołu HTTP(S). Przechwytuje każde żądanie HTTP, które komputer wykonuje, i rejestruje wszystkie skojarzone z nim dane. Odkrywanie problemów z uwierzytelnianiem użytkowników końcowych dla aplikacji HTTPS zwiększa produktywność i wydajność dla docelowych HoloLens 2 przypadków użycia. 
+Fiddler to internetowy serwer proxy debugowania, który służy do rozwiązywania problemów z protokołu HTTP(S). Przechwytuje każde żądanie HTTP, które komputer wykonuje i rejestruje wszystkie skojarzone z nim dane. Odkrywanie problemów z uwierzytelnianiem użytkowników końcowych w aplikacjach HTTPS zwiększa produktywność i wydajność dla docelowych HoloLens 2 przypadków użycia. 
 
 #### <a name="prerequisites"></a>Wymagania wstępne
  
@@ -76,21 +76,21 @@ Program Fiddler to internetowy serwer proxy debugowania, który służy do rozwi
 
 #### <a name="install-and-configure-fiddler"></a>Instalowanie i konfigurowanie programu Fiddler
 
-1. Na komputerze — zainstaluj [i](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) uruchom program Fiddler.  
-1. Na komputerze — skonfiguruj program Fiddler tak, aby zezwalał komputerom zdalnym na nawiązywanie połączenia.
-    1. Przejdź do fiddler Ustawienia -> Connections
-    1. Zwróć uwagę na port nasłuchiwania dla programu Fiddler (wartość domyślna to 8866)
-    1. Zaznacz pole wyboru Zezwalaj komputerom zdalnym na nawiązywanie połączeń
+1. Na komputerze — [zainstaluj i](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) uruchom program Fiddler.  
+1. Na komputerze — skonfiguruj program Fiddler, aby umożliwić komputerom zdalnym łączenie się.
+    1. Przejdź do połączenia Ustawienia -> Fiddler
+    1. Zwróć uwagę na port nasłuchiwania programu Fiddler (wartość domyślna to 8866)
+    1. Zaznacz pole wyboru Zezwalaj komputerom zdalnym na łączenie się
     1. Klikanie pozycji Zapisz.
 3. Na komputerze HoloLens 2 — skonfiguruj program Fiddler jako serwer proxy<sup>1:</sup>
-    1. Otwórz okno menu Start i wybierz pozycję Ustawienia
+    1. Otwórz menu Start i wybierz pozycję Ustawienia
     1. Wybierz pozycję Sieć & Internet, a następnie pozycję Serwer proxy w menu po lewej stronie
-    1. Przewiń w dół do ręcznej konfiguracji serwera proxy i przełącz ustawienie Użyj serwera proxy na Wł.
+    1. Przewiń w dół do ustawienia Ręczne konfigurowanie serwera proxy i przełącz ustawienie Użyj serwera proxy na Wł.
     1. Wprowadź adres IP komputera, na którym zainstalowano program Fiddler
     1. Wprowadź numer portu zanotowyny powyżej (wartość domyślna to 8866)
     1. Klikanie pozycji Zapisz.
 
-<sup>1</sup> W przypadku kompilacji 20279.1006+ (niejawni testerzy i nadchodzące wydanie) użyj następujących kroków, aby skonfigurować serwer proxy:
+<sup>1</sup> W przypadku kompilacji 20279.1006+ (niejawni testerzy i nadchodzące wydanie) skonfiguruj serwer proxy za pomocą następujących kroków:
 1. Otwórz menu Start i przejdź do strony właściwości Wi-Fi sieci wirtualnej 
 1. Przewiń w dół do serwera proxy
 1. Zmiana na konfigurację ręczną
@@ -101,24 +101,24 @@ Program Fiddler to internetowy serwer proxy debugowania, który służy do rozwi
 #### <a name="decrypt-https-traffic-from-hololens-2"></a>Odszyfrowywanie ruchu HTTPS z HoloLens 2
 
 1. Na komputerze — wyeksportuj certyfikat fiddler.
-    1. Przejdź do strony Fiddler Ustawienia -> HTTPS i rozwiń Ustawienia
+    1. Przejdź do opcji Fiddler Ustawienia -> HTTPS i rozwiń opcje Zaawansowane Ustawienia
     2. Kliknij pozycję Eksportuj certyfikat fiddler. Spowoduje to zapisanie na pulpicie
     3. Przenieś certyfikat do folderu Pobrane na komputerze HoloLens 2
 
 2.  Na komputerze HoloLens 2 — zaimportuj certyfikat fiddler.
     1. Przejdź do Ustawienia -> Update i Security -> Certificates
     2. Kliknij pozycję Zainstaluj certyfikat, przejdź do folderu Pobrane i wybierz certyfikat programu Fiddler.
-    3. Zmień lokalizację magazynu na Komputer lokalny
-    4. Zmienianie magazynu certyfikatów na główny
+    3. Zmień lokalizację magazynu na komputer lokalny
+    4. Zmień magazyn certyfikatów na główny
     5. Wybierz pozycję Zainstaluj
     6. Upewnij się, że certyfikat jest pokazywany na liście certyfikatów. Jeśli nie, powtórz powyższe kroki
 
 #### <a name="inspect-https-sessions"></a>Inspekcja sesji HTTP(S)
 
-Na komputerze program Fiddler będzie wyświetlać HoloLens http(S) na żywo w wersji 2. Panel Inspektorzy w programie Fiddler może wyświetlać żądania/odpowiedzi HTTP(S) w różnych widokach — na przykład widok "Nieprzetworzone" wyświetla nieprzetworzone żądanie lub odpowiedź w postaci zwykłego tekstu. 
+Na komputerze program Fiddler pokaże HoloLens na żywo sesji HTTP(S) programu Fiddler. Panel Inspektorzy w programie Fiddler może wyświetlać żądania/odpowiedzi HTTP(S) w różnych widokach — na przykład widok "Nieprzetworzone" przedstawia nieprzetworzone żądanie lub odpowiedź w postaci zwykłego tekstu. 
 
-### <a name="configure-wireshark-to-capture-network-traffic"></a>Konfigurowanie aplikacji Wireshark do przechwytywania ruchu sieciowego
-Wireshark to analizator protokołu sieciowego, który służy do sprawdzania ruchu TCP/UDP z i do urządzeń HoloLens 2. Dzięki temu można łatwo określić, jaki ruch jest przekraczany przez sieć do sieci HoloLens 2, jaka jest jej część, jak często występuje opóźnienie między określonymi przeskokami itd.
+### <a name="configure-wireshark-to-capture-network-traffic"></a>Konfigurowanie w programie Wireshark przechwytywania ruchu sieciowego
+Wireshark to analizator protokołu sieciowego, który służy do sprawdzania ruchu TCP/UDP z i do urządzeń HoloLens 2. Ułatwia to określenie, jaki ruch sieciowy przekracza sieć do sieci HoloLens 2, jaka jest jej część, jak często występuje opóźnienie między określonymi przeskokami itd.
 
 #### <a name="prerequisites"></a>Wymagania wstępne:
 - Komputer musi mieć dostęp do Internetu i obsługiwać udostępnianie Internetu za pośrednictwem Wi-Fi
