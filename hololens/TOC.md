@@ -3,26 +3,26 @@
 # Omówienie urządzenia
 ## [Informacje HoloLens 2](hololens2-hardware.md)
 ## [Co może HoloLens 2?](hololens-commercial-features.md)
-## Odnajdywanie HoloLens 2 wersji
+## Odnajdywanie HoloLens 2
 ### [Porównanie HoloLens 2 opcji](hololens2-options.md)
 ### [Wersja tylko dla urządzeń](hololens2-options-device-only.md)
 ### [Wersja Remote Assist](hololens2-options-remote-assist.md)
-### [Wersja przemysłowe](hololens2-options-industrial-edition.md)
-#### [HoloLens 2 Industrial Edition : często zadawane pytania](hololens2-industrial-edition-faq.md)
+### [Wersja industrialna](hololens2-options-industrial-edition.md)
+#### [HoloLens często zadawanych pytania na HoloLens wersji przemysłowej 2](hololens2-industrial-edition-faq.md)
 ### [Wersja deweloperska](hololens2-options-dev-edition.md)
 #### [HoloLens 2 Development Edition : często zadawane pytania](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Korzystanie z HoloLens
 ## Użycie po raz pierwszy
-### [Przygotuj swój HoloLens 2 do użycia](hololens2-setup.md)
+### [Przygotuj swoją HoloLens 2 do użycia](hololens2-setup.md)
 ### [Konfigurowanie aplikacji HoloLens 2](hololens2-start.md)
 ### [Więcej informacji o urządzeniu HoloLens 2](hololens2-basic-usage.md)
-### [Aktualizacja HoloLens](hololens-update-hololens.md)
+### [Aktualizowanie HoloLens](hololens-update-hololens.md)
 ## Dzienne użycie
 ### Nawigowanie po interfejsie Windows Holographic
 #### [Korzystanie z domu menu Start rzeczywistości mieszanej](holographic-home.md)
-#### [Korzystanie z głosu w celu obsługi HoloLens](hololens-cortana.md)
+#### [Używanie głosu do obsługi HoloLens](hololens-cortana.md)
 #### [Znajdowanie, otwieranie i zapisywanie plików na HoloLens](holographic-data.md)
 #### [Tworzenie zdjęć i wideo rzeczywistości mieszanej](holographic-photos-and-videos.md)
 #### [Nowa Ustawienia aplikacji](hololens-new-settings.md)
@@ -30,15 +30,16 @@
 ### Zarządzanie aplikacjami
 #### [Znajdowanie, instalowanie i odinstalowywanie aplikacji](holographic-store-apps.md)
 #### [Zarządzanie aplikacjami niestandardowymi dla HoloLens 2](hololens2-holographic-custom-apps.md)
-### Holoogramy i umieszczanie w przestrzeni
+### Optyka hologramu i umieszczanie w przestrzeni
 #### [Poprawianie jakości i komfortu wizualizacji](hololens-calibration.md)
 #### [Mapowanie przestrzeni fizycznych za pomocą HoloLens](hololens-spaces.md)
 #### [HoloLens uwagi dotyczące środowiska](hololens-environment-considerations.md)
+#### [Przenoszenie platform](hololens2-moving-platform.md)
 ### Połączenie swój HoloLens 2
 #### [Połączenie HoloLens do sieci](hololens-network.md)
 #### [Połączenie do Bluetooth i USB-C](hololens-connect-devices.md)
 #### [Połączenie do sieci komórkowej i 5G](hololens-cellular.md)
-### [HoloLens 2 baterii i ładowanie](hololens2-charging.md)
+### [HoloLens 2 baterii i ładowania](hololens2-charging.md)
 ### [HoloLens często zadawane pytania na HoloLens dopasowania i komfortu](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 — często zadawane pytania dotyczące czyszczenia](hololens2-maintenance.md)
 
@@ -52,7 +53,7 @@
 #### [Ustaw opcję](hololens2-cloud-connected-configure.md)
 #### [Wdrażanie](hololens2-cloud-connected-deploy.md)
 #### [Obsługa](hololens2-cloud-connected-maintain.md)
-#### [Przewodnik wdrażania środowiska połączonego z chmurą (klientów zewnętrznych)](hololens2-deployment-guide.md)
+#### [Przewodnik wdrażania środowiska połączonego z chmurą (klienci zewnętrzni)](hololens2-deployment-guide.md)
 ### Przewodnik wdrażania sieci firmowej
 #### [Omówienie](hololens2-corp-connected-overview.md)
 #### [Przygotowywanie](hololens2-corp-connected-prepare.md)
@@ -70,20 +71,20 @@
 ### [Separacja i izolacja stanu](security-state-separation-isolation.md)
 ### [System operacyjny bez uprawnień administratora ](security-adminless-os.md)
 ### [Ograniczanie użycia hasła](security-limiting-password-use.md)
-### [Sprzętowe zaświadczenia dotyczące zabezpieczeń i środowiska uruchomieniowego](security-hardware-backed-integrity.md)
+### [Sprzętowe atestowanie zabezpieczeń i środowiska uruchomieniowego](security-hardware-backed-integrity.md)
 ### [Szyfrowanie i ochrona danych](security-encryption-data-protection.md)
 ### [Bezpieczeństwo sieci](security-network-security.md)
 ### [Inżynieria zabezpieczeń ](security-engineering.md)
 ### [HoloLens 2 Zasady zachowania poufności informacji](hololens2-compliance.md)
 ## Zarządzanie urządzeniami
-### [Zarządzanie urządzeniami przenośnymi przy użyciu HoloLens zarządzania urządzeniami przenośnymi](hololens-mdm-configure.md)
+### [Zarządzanie urządzeniami przenośnymi przy HoloLens zarządzania urządzeniami przenośnymi](hololens-mdm-configure.md)
 ## Rejestrowanie urządzenia
 ### [Rejestrowanie HoloLens zarządzania urządzeniami przenośnymi](hololens-enroll-mdm.md)
 ### [Windows Autopilot dla urządzenia HoloLens 2](hololens2-autopilot.md) 
 ### [Rejestrowanie w środowisku z ograniczeniami adresów MAC Wi-Fi MAC](mac-address-options.md)
 ## Wdrażanie aplikacji
 ### [Omówienie zarządzania aplikacją](app-deploy-overview.md)
-### [Usługa Intune & Portal firmy](app-deploy-intune.md)
+### [Intune & Portal firmy](app-deploy-intune.md)
 ### [Sklep Microsoft dla Firm](app-deploy-store-business.md)
 ### [Pakiet aprowizowania](app-deploy-provisioning-package.md)
 ### [Instalator aplikacji](app-deploy-app-installer.md)
@@ -97,7 +98,7 @@
 ### [Adres Ustawienia CSP i URI dla HoloLens](settings-uri-list.md)
 ## Łączność & sieciowa
 ### [Konfigurowanie sieci na HoloLens](hololens-commercial-infrastructure.md)
-### [Przygotowywanie certyfikatów i profilów sieciowych dla HoloLens 2](hololens-certificates-network.md)
+### [Przygotowywanie certyfikatów i profilów sieciowych do HoloLens 2](hololens-certificates-network.md)
 ### [Zarządzanie punktami końcowymi połączenia dla HoloLens](hololens-offline.md)
 ### [Menedżer certyfikatów](certificate-manager.md)
 ## [Zarządzanie HoloLens aktualizacji](hololens-updates.md)
@@ -106,7 +107,7 @@
 ## [Urządzenie](hololens-troubleshooting.md)
 ## [Hologramy i interakcje](hololens-faq.md)
 ## [Wyświetlanie](hololens2-display.md)
-## [Urządzenia implementacji i zarządzane](hololens2-enterprise-troubleshooting.md#)
+## [Urządzenia implementacji i urządzenia zarządzane](hololens2-enterprise-troubleshooting.md#)
 ## [Włączanie dzienników diagnostycznych](hololens-diagnostic-logs.md)
 ## [Resetowanie HoloLens 2](hololens-recovery.md)
 
@@ -115,27 +116,27 @@
 ## [Opcje wsparcia technicznego i pomocy](hololens2-support.md)
 ## [Żądania pomocy technicznej rozwiązania Autopilot](hololens2-autopilot-registration-support.md)
 ## [HoloLens wersji 2](hololens-release-notes.md)
-## [Niejawna wersja zapoznawcza dla Microsoft HoloLens](hololens-insider.md)
+## [Insider Preview for Microsoft HoloLens](hololens-insider.md)
 ## [Obsługiwane języki](hololens2-language-support.md)
-## [Tworzenie przy użyciu usługi Microsoft Mesh (wersja zapoznawcza)](/mesh/overview)
+## [Opracowywanie za pomocą usługi Microsoft Mesh (wersja zapoznawcza)](/mesh/overview)
 ## HoloLens (1. generacja)
 ### Użycie po raz pierwszy
 #### [Informacje HoloLens (1. generacja)](hololens1-hardware.md)
 #### [HoloLens (1. generacja) dopasowanie i komfort](hololens1-fit-comfort-faq.md)
 #### [Omówienie użycia podstawowego](hololens1-setup.md)
-#### [Konfigurowanie HoloLens (1. generacja)](hololens1-start.md)
+#### [Konfigurowanie aplikacji HoloLens (1. generacja)](hololens1-start.md)
 ### Dzienne użycie
-#### [Korzystanie z HoloLens (1. generacji)](hololens1-clicker.md)
+#### [Używanie HoloLens (1. generacji)](hololens1-clicker.md)
 #### [Używanie Przeglądarka 3D na HoloLens (1. generacja)](holographic-3d-viewer-beta.md)
 #### [Poruszanie się HoloLens (1. generacja)](hololens1-basic-usage.md)
 #### [Zarządzanie aplikacjami niestandardowymi dla HoloLens](holographic-custom-apps.md)
-#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacji)](hololens1-install-localized.md)
-#### [Odblokowywanie Windows Holographic for Business funkcji](hololens1-upgrade-enterprise.md)
+#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacja)](hololens1-install-localized.md)
+#### [Odblokowywanie Windows Holographic for Business zabezpieczeń](hololens1-upgrade-enterprise.md)
 #### [Resetowanie HoloLens (1. generacja)](hololens1-recovery.md)
-### HoloLens (1. generacji) Security
-#### [Często zadawane pytania HoloLens zabezpieczeń (1. generacji)](hololens1-faq-security.yml)
+### HoloLens (1. generacja) Zabezpieczenia
+#### [Często zadawane pytania HoloLens zabezpieczeń (pierwszej generacji)](hololens1-faq-security.yml)
 #### [HoloLens (1. generacji) szyfrowanie funkcją BitLocker](hololens1-encryption.md)
-### [Znane problemy i obejścia dla HoloLens (1. generacji)](hololens-known-issues.md)
+### [Znane problemy i obejścia dla HoloLens (1. generacja)](hololens-known-issues.md)
 ### [HoloLens wersji (1. generacji)](hololens1-release-notes.md)
 
 # Wyślij do nas swoją opinię
