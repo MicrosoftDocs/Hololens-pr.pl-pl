@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 04/01/2021
+ms.date: 08/19/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 3ccb9d0f7175a358262c39c76d364aee464c5469
+ms.sourcegitcommit: e2a3e85882b7c594d73d08fbd7ae85856d22f8c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858581"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "122213914"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview for Microsoft HoloLens
 
@@ -34,7 +34,7 @@ Z przyjemnością zaczynamy ponownie testować nowe funkcje, aby Windows niejawn
 | Cecha                 | Opis                | Użytkownik lub scenariusz | Wprowadzono kompilację |
 |-------------------------|----------------------------|--------------|------------------|
 | [Zmiany WSP dotyczące raportowania HoloLens szczegóły](#csp-changes-for-reporting-hololens-details) | Nowi CSP dla programu do wykonywania zapytań o dane | Administratorzy IT    | 20348.1403                 |
-| [Zasady automatycznego logowania kontrolowane przez zasady CSP](#auto-login-policy-controlled-by-csp) | Używane do automatycznego logowania się do konta | Administratorzy IT | 20348.1405 |
+| [Zasady automatycznego logowania kontrolowane przez program CSP](#auto-login-policy-controlled-by-csp) | Używane do automatycznego logowania się do konta | Administratorzy IT | 20348.1405 |
 | [Ulepszone wykrywanie ponownego uruchamiania aktualizacji i powiadomienia](#improved-update-restart-detection-and-notifications) | Nowe włączone policys and UX for updates (Nowe włączone policys and UX for updates). | Administratorzy IT | 20348.1405 |
 | [Obsługa plików PFX dla Menedżera certyfikatów](#pfx-file-support-for-certificate-manager) | Dodawanie certyfikatów PFX za pomocą interfejsu Ustawienia użytkownika | Użytkownik końcowy | 20348.1405 |
 | [Inteligentne ponawianie próby aktualizacji aplikacji](#smart-retry-for-app-updates) | Umożliwia administratorom IT zaplanowanie ponownych prób aktualizacji aplikacji. | Administratorzy IT | 20348.1405 |
@@ -42,7 +42,7 @@ Z przyjemnością zaczynamy ponownie testować nowe funkcje, aby Windows niejawn
 | [Powiadomienia diagnostyki w trybie offline](#offline-diagnostics-notifications) | Opinie dotyczące zbierania dzienników | Rozwiązywanie problemów | 20348.1405 |
 | [Używaj tylko aplikacji ze sklepu prywatnego tylko dla Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Konfigurowanie aplikacji ze sklepu w celu pokazywania tylko aplikacji z organizacji | Administrator IT | 20348.1408 |
 | [Ulepszenia zbierania dzienników magazynu o niskim poziomie](#low-storage-log-collection-improvements) | Ulepszenia scenariuszy zbierania dzienników w sytuacjach niskiego poziomu magazynowania. | Administrator IT | 20348.1412 |
-| [Przenoszenie trybu platformy](#moving-platform-mode) | Wprowadzono tryb przenoszenia platformy w wersji beta, który po skonfigurowaniu umożliwia korzystanie z wersji HoloLens 2 w dużych kamiejach z ruchem o niskiej dynamice. | Wszystko | 20348.1411 |
+| [Przenoszenie trybu platformy](#moving-platform-mode) | Wprowadzono tryb przenoszenia platformy w wersji beta, który po skonfigurowaniu umożliwia korzystanie z wersji HoloLens 2 w dużych jednostkach kamiejowych, w których występuje ruch o niskiej dynamice. | Wszystko | 20348.1411 |
 | [Poprawki i ulepszenia](#fixes-and-improvements) | Poprawki i ulepszenia dotyczące HoloLens. | Wszystko | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Zmiany WSP dotyczące raportowania HoloLens szczegóły
@@ -53,7 +53,7 @@ Następujący CSP zostały zaktualizowane o nowe sposoby zgłaszania informacji 
 
 #### <a name="devdetail-csp---free-storage"></a>DevDetail CSP — bezpłatne Storage
 
-DevDetail CSP now also reports free storage space on HoloLens device. Powinno to być w przybliżeniu zgodne z wartością wyświetlaną na Ustawienia aplikacji Storage aplikacji. Poniżej znajduje się konkretny węzeł zawierający te informacje.
+DevDetail CSP now also reports free storage space on HoloLens device. Powinno to być w przybliżeniu zgodne z wartością wyświetlaną Ustawienia aplikacji Storage aplikacji. Poniżej znajduje się konkretny węzeł zawierający te informacje.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (tylko operacja GET)
 
@@ -86,7 +86,7 @@ Przykładowy obiekt blob syncml (dla dostawców mdm) do wykonywania zapytań o i
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Zasady automatycznego logowania kontrolowane przez zasady CSP
 
-Ta nowa zasada AutoLogonUser określa, czy użytkownik będzie automatycznie zalogowany. Niektórzy klienci chcą skonfigurować urządzenia, które są powiązane z tożsamością, ale nie chcą mieć żadnego logowania. Imagine urządzenie i natychmiast korzystać ze zdalnej pomocy. Możesz też skorzystać z możliwości szybkiej dystrybucji urządzeń HoloLens i umożliwienia użytkownikom końcowi przyspieszenia logowania.
+Ta nowa zasada AutoLogonUser określa, czy użytkownik będzie automatycznie zalogowany. Niektórzy klienci chcą skonfigurować urządzenia, które są powiązane z tożsamością, ale nie chcą mieć żadnego logowania. Imagine urządzenie i natychmiast korzystać ze zdalnej pomocy. Możesz też skorzystać z możliwości szybkiej dystrybucji urządzeń HoloLens i umożliwienia użytkownikom końcowego przyspieszenia logowania.
 
 Gdy zasady są ustawione na wartość niepustą, określają adres e-mail użytkownika logowania automatycznego. Określony użytkownik musi logować się na urządzeniu co najmniej raz, aby włączyć automatyczne logowanie.
 
@@ -119,7 +119,7 @@ Dodano następujące zasady aktualizacji:
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>Obsługa plików PFX dla Menedżera certyfikatów
 
-Wprowadzono w kompilacji Windows Insider 20348.1405. Dodaliśmy obsługę Menedżera [](certificate-manager.md) certyfikatów, aby teraz używać certyfikatów pfx. Gdy użytkownicy **przejdą** do Ustawienia zaktualizują & zabezpieczeń, a następnie wybierzą pozycję Zainstaluj certyfikat, interfejs użytkownika obsługuje teraz  >    >  plik certyfikatu  pfx.
+Wprowadzono w kompilacji Windows Insider 20348.1405. Dodaliśmy obsługę Menedżera [](certificate-manager.md) certyfikatów, aby teraz używać certyfikatów pfx. Gdy użytkownicy **przejdą** do Ustawienia  >  **zaktualizują &,** a następnie wybierzą pozycję Zainstaluj certyfikat, interfejs użytkownika obsługuje teraz  >  plik certyfikatu pfx. 
 Użytkownicy mogą importować certyfikat PFX z kluczem prywatnym do magazynu użytkowników lub magazynu maszynowego.
 
 ### <a name="smart-retry-for-app-updates"></a>Inteligentne ponawianie próby aktualizacji aplikacji
@@ -137,7 +137,7 @@ Teraz diagnostykę MDM można wyświetlić na urządzeniu przy użyciu przegląd
 ### <a name="offline-diagnostics-notifications"></a>Powiadomienia diagnostyki w trybie offline
 
 Jest to aktualizacja istniejącej funkcji o nazwie [Diagnostyka w trybie offline.](hololens-diagnostic-logs.md#offline-diagnostics) Wcześniej nie było wyraźnego wskaźnika dla użytkowników, że wyzwolono kolekcję diagnostyczną lub została ona zakończona.
-Teraz dodane w kompilacjach Windows Insider istnieją dwie formy wymiany opinii na temat diagnostyki w trybie offline. Pierwsze z nich to wyskakujące powiadomienia wyświetlane zarówno podczas uruchamiania, jak i zakończenia zbierania. Będą one wyświetlane, gdy użytkownik jest zalogowany i ma wizualizacje.
+Teraz dodane w kompilacjach Windows Insider istnieją dwie formy poufnych opinii na temat diagnostyki w trybie offline. Pierwsze z nich to wyskakujące powiadomienia wyświetlane zarówno podczas uruchamiania, jak i zakończenia zbierania. Będą one wyświetlane, gdy użytkownik jest zalogowany i ma wizualizacje.
 
 ![Wyskakujące powiadomienia dotyczące zbierania dzienników.](./images/logcollection1.jpg)
 
@@ -149,15 +149,15 @@ Ta nowa funkcja zostanie włączona podczas aktualizacji urządzenia i nie trzeb
 
 Mamy nadzieję, że dzięki temu nowszej dodatku opinii będzie łatwiej zbierać dane diagnostyczne i szybciej rozwiązywać problemy.
 
-### <a name="use-only-private-store-apps-for-microsoft-store"></a>Używaj tylko aplikacji ze sklepu prywatnego dla Microsoft Store
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>Używaj tylko prywatnych aplikacji ze sklepu Microsoft Store
 
-Zasady RequirePrivateStoreOnly zostały włączone dla HoloLens. Te zasady umożliwiają skonfigurowanie Microsoft Store do pokazywania tylko sklepu prywatnego skonfigurowanego dla organizacji. Ograniczenie dostępu tylko do aplikacji, które zostały udostępnione.
+Zasady RequirePrivateStoreOnly zostały włączone dla HoloLens. Te zasady umożliwiają skonfigurowanie Microsoft Store tak, aby wyświetlała tylko sklep prywatny skonfigurowany dla twojej organizacji. Ograniczenie dostępu tylko do aplikacji, które zostały udostępnione.
 
 Dowiedz się więcej o [applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
 ### <a name="low-storage-log-collection-improvements"></a>Ulepszenia zbierania dzienników magazynu o niskiej wydajności
 
-W scenariuszach, w których podczas zbierania dzienników diagnostycznych na urządzeniu wydaje się być mało miejsca na dysku, zostanie utworzony dodatkowy raportStorageDiagnostics.zip **o** nazwie . Próg małej pojemności magazynu jest określany automatycznie przez Windows [magazynu.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
+W scenariuszach, w których wydaje się, że w przypadku zbierania dzienników diagnostycznych na urządzeniu jest mało miejsca na dysku, zostanie utworzony dodatkowy raportStorageDiagnostics.zip **o** nazwie . Próg małej pojemności magazynu jest określany automatycznie przez Windows [magazynu.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
 
 ### <a name="moving-platform-mode"></a>Przenoszenie trybu platformy
 
@@ -224,14 +224,14 @@ Aby przetestować przy użyciu podpisanego lotu ffu, musisz najpierw odblokować
 
 ### <a name="provide-feedback-and-report-issues"></a>Zgłaszanie opinii i zgłaszanie problemów
 
-Użyj aplikacji [Centrum opinii aplikacji na](hololens-feedback.md) swoim HoloLens, aby przekazać opinię i zgłosić problemy. Użycie Centrum opinii gwarantuje, że wszystkie niezbędne informacje diagnostyczne będą uwzględniane, aby pomóc naszym inżynierom szybko debugować i rozwiązywać problem.  Problemy z chińskim i japońskim wersją HoloLens powinny być zgłaszane w ten sam sposób.
+Użyj aplikacji [Centrum opinii aplikacji na](hololens-feedback.md) swoim HoloLens, aby przekazać opinię i zgłosić problemy. Użycie Centrum opinii zapewnia, że wszystkie niezbędne informacje diagnostyczne są uwzględniane, aby pomóc naszym inżynierom szybko debugować i rozwiązywać problem.  Problemy z chińskim i japońskim wersją HoloLens powinny być zgłaszane w ten sam sposób.
 
 > [!NOTE]
-> Pamiętaj, aby zaakceptować monit z pytaniem, czy chcesz uzyskać Centrum opinii  do folderu Dokumenty (po wyświetleniu monitu wybierz pozycję Tak).
+> Pamiętaj, aby zaakceptować monit z pytaniem, czy chcesz Centrum opinii dostępu  do folderu Dokumenty (po wyświetleniu monitu wybierz pozycję Tak).
 
 ## <a name="note-for-developers"></a>Uwaga dla deweloperów
 
-Zachęcamy i zachęcamy do wypróbowania tworzenia aplikacji przy użyciu kompilacji niejawnych testerów HoloLens.  Zapoznaj się z [dokumentacją HoloLens Developer,](https://developer.microsoft.com/windows/mixed-reality/development) aby rozpocząć pracę. Te same instrukcje działają z kompilacjami niejawnych testerów HoloLens.  Możesz użyć tych samych kompilacji aparatu Unity i Visual Studio, których już używasz do HoloLens tworzenia aplikacji.
+Zachęcamy i zachęcamy do wypróbowania tworzenia aplikacji przy użyciu kompilacji niejawnych testerów HoloLens.  Zapoznaj się z [dokumentacją HoloLens Developer,](https://developer.microsoft.com/windows/mixed-reality/development) aby rozpocząć pracę. Te same instrukcje działają z kompilacjami niejawnych testerów HoloLens.  Możesz użyć tych samych kompilacji aparatu Unity i Visual Studio które są już HoloLens tworzenia aplikacji.
 
 ## <a name="stop-receiving-insider-builds"></a>Zatrzymywanie odbierania kompilacji niejawnych testerów
 
@@ -248,6 +248,6 @@ Aby sprawdzić, czy HoloLens jest uruchomiona kompilacja produkcyjna:
 
 Aby zrezygnować z kompilacji niejawnych testerów:
 
-1. Na stronie HoloLens kompilacji produkcyjnej przejdź do usługi **Ustawienia > Update & Security > Windows niejawny program testów** i wybierz pozycję **Zatrzymaj kompilacje niejawnych testerów.**
+1. W przypadku HoloLens kompilacji produkcyjnej przejdź do usługi **Ustawienia > Update & Security > Windows niejawny program testów** i wybierz pozycję **Zatrzymaj kompilacje niejawnych testerów.**
 
 1. Postępuj zgodnie z instrukcjami, aby zrezygnować z urządzenia.
