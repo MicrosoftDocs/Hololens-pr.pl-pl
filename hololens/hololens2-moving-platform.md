@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64aaf726fab27c997eea26208f17daae4fa3179d
-ms.sourcegitcommit: 938fa78e1b6c59626e12399c9babc277eb30c29c
+ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
+ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122448709"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122610140"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Przenoszenie trybu platformy na platformach o niskim ruchu dynamicznym
 
-W **kompilacji Insider Build 20348.1411** dodaliśmy obsługę wersji beta śledzenia na platformach ruchu o niskiej dynamice na platformach w wersji HoloLens 2. Po zainstalowaniu kompilacji i włączeniu trybu przenoszenia platformy będzie można używać urządzenia HoloLens 2 w wcześniej niedostępnych środowiskach, takich jak duże statku i duże statku. Obecnie funkcja jest ukierunkowana na włączanie tylko tych konkretnych ruchomych platform. Chociaż nic nie uniemożliwia próby użycia tej funkcji w innych środowiskach, ta funkcja koncentruje się najpierw na dodawaniu obsługi tych środowisk.
+W **kompilacji Insider Build 20348.1411** dodaliśmy obsługę wersji beta śledzenia na platformach ruchu o niskiej dynamice na platformach w wersji HoloLens 2. Po zainstalowaniu kompilacji i włączeniu przenoszenia trybu platformy będzie można używać urządzenia HoloLens 2 w wcześniej niedostępnych środowiskach, takich jak duże statku i duże statku. Obecnie funkcja jest ukierunkowana na włączanie tylko tych konkretnych ruchomych platform. Chociaż nic nie uniemożliwia próby użycia tej funkcji w innych środowiskach, ta funkcja koncentruje się najpierw na dodawaniu obsługi tych środowisk.
 
 > [!NOTE]
 > Ta funkcja jest obecnie dostępna tylko za [pośrednictwem Windows niejawnych testerów.](hololens-insider.md)
@@ -53,7 +53,7 @@ Chociaż tryb przenoszenia platformy został opracowany w celu inteligentnej obs
 ### <a name="known-limitations"></a>Znane ograniczenia
 
 - Jedynymi obsługiwanymi środowiskami dla trybu przenoszenia platformy (MPM, Moving Platform Mode) są duże jednostki z ruchami o niskiej dynamice. Innymi słowy, wiele typowych środowisk/sytuacji nie jest jeszcze obsługiwanych ze względu na ich ruch o wysokiej częstotliwości oraz wysokie poziomy przyspieszenia i [procesów .](https://en.wikipedia.org/wiki/Jerk_(physics))  Na przykład: samoloty, pociągi, samochody, rowery, busy, małe wypożyczalnie, windy itp.
-- Hologramy nieco się nie pochylić, gdy program MPM jest włączony, szczególnie w przypadku korzystania z wody w cieku.
+- Hologramy nieco się nie pochylić, gdy funkcja MPM jest włączona, szczególnie w przypadku korzystania z wody w cieku.
 - Nic nie uniemożliwia użytkownikom korzystania z mpm w nieobsługiwanych środowiskach, jednak użytkownicy mogą wystąpić niepożądane skutki uboczne, jeśli urządzenie jest w stanie utrzymać śledzenie w nieobsługiwanym miejscu. Na przykład w przypadku aplikacji MPM użytkownicy mogą korzystać z windy podczas zmiany podłogi, ale wcześniej było to niemożliwe. Niestety, chociaż program MPM umożliwia urządzeniu utrzymanie śledzenia, obecnie nie obsługuje zarządzania mapami. Użytkownicy zobaczą, że zmiana podłogi w windzie spowoduje, że urządzenie będzie mylić górne i niższe podłogi oraz negatywnie wpłynąć na jakość mapy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
@@ -69,11 +69,11 @@ Obsługa wersji beta dla przenoszenia trybu platformy wymaga tylko kilku wymaga�
 
 ## <a name="enabling-moving-platform-mode"></a>Włączanie trybu przenoszenia platformy
 
-Aby włączyć tryb Przenoszenia platformy, najpierw [włącz Portal urządzeń](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+Aby włączyć tryb Przenoszenie platformy, najpierw [włącz Portal urządzeń](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Wybierz pozycję **System** accordion w menu po lewej stronie
 
-   ![Pierwszy obraz](.\images\moving-platform-1z.png)
+   ![Pierwszy obraz](.\images\moving-platform-1w.png)
 
 2. Wybierz stronę **Przenoszenie trybu platformy** i zaznacz pole wyboru **Tryb** przenoszenia platformy
 
@@ -81,7 +81,7 @@ Aby włączyć tryb Przenoszenia platformy, najpierw [włącz Portal urządzeń]
 
 3. Po wyświetleniu monitu z ostrzeżeniem wybierz przycisk **OK**
 
-   ![Trzeci obraz](.\images\moving-platform-3z.png)
+   ![Trzeci obraz](.\images\moving-platform-3w.png)
 
 4. Uruchom ponownie urządzenie, co można wykonać za pomocą menu Portal urządzeń **Power** w prawym górnym rogu lub za pomocą następującego polecenia głosowego Uruchom ponownie urządzenie i wybierz &quot; pozycję &quot; &quot; &quot; Tak.
 
