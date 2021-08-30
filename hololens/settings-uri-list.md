@@ -1,6 +1,6 @@
 ---
 title: Widoczność Ustawienia stron
-description: Bądź na bieżąco z naszą listą obsługiwanych interfejsów URI dla elementów PageVisibilityList i Przewodnika na HoloLens rzeczywistości mieszanej.
+description: Bądź na bieżąco z naszą listą obsługiwanych URI dla elementów PageVisibilityList i Guide on HoloLens rzeczywistości mieszanej.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665628"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190433"
 ---
 # <a name="page-settings-visibility"></a>Widoczność Ustawienia stron
 
-Jedną z funkcji, które można zarządzać HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub na korzystanie z nich dla wszystkich stron z wyjątkiem określonych.
+Jedną z funkcji, które można zarządzać HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub aby to zrobić dla wszystkich stron z wyjątkiem określonych.
 
 > [!NOTE]
 > Ta funkcja jest dostępna tylko na [platformie Windows Holographic w wersji 20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub wyższej dla urządzeń HoloLens 2. Upewnij się, że urządzenia, dla których zamierzasz używać tej funkcji, zostały zaktualizowane.
@@ -53,7 +53,7 @@ Można określić wiele stron, oddzielając je średnikami, a listę typowych st
 1. Podczas wybierania danych wybierz **pozycję** Ciąg
 1. Podczas określania **wartości** skorzystaj z powyższych wskazówek. Na przykład: **`showonly:network-wifi;network-proxy;bluetooth`** lub **`hide:reset`** 
 > [!IMPORTANT]
-> Pamiętaj, aby przypisać niestandardową konfigurację urządzenia do grupy, w która ma być urządzenie. Jeśli ten krok nie zostanie wykonany, zasady zostaną wypchniętą, ale nie zostaną zastosowane.
+> Pamiętaj, aby przypisać niestandardową konfigurację urządzenia do grupy, w która ma się znaleźć urządzenie. Jeśli ten krok nie zostanie wykonany, zasady zostaną wypchniętą, ale nie zostaną zastosowane.
 
 Zobacz [HoloLens mdm,](hololens-mdm-configure.md) aby uzyskać więcej informacji na temat grup i konfiguracji urządzeń usługi Intune.
 
@@ -74,13 +74,13 @@ Aby uzyskać szczegółowe informacje na temat tworzenia i stosowania pakietu ap
 
 Niezależnie od wybranej metody urządzenie powinno teraz otrzymywać zmiany, a użytkownikom zostaną przedstawione następujące Ustawienia App.
 
-![Zrzut ekranu przedstawiający modyfikację godzin aktywnego Ustawienia aplikacji](images/hololens-page-visibility-list.jpg)
+![Zrzut ekranu przedstawiający aktywne godziny modyfikacji w Ustawienia aplikacji.](images/hololens-page-visibility-list.jpg)
 
 Aby skonfigurować Ustawienia aplikacji do pokazywania lub ukrywania własnych wybranych stron, przyjrzyj się dostępnym w Ustawienia URI HoloLens.
 
 ## <a name="settings-uris"></a>Ustawienia Identyfikatory uri
 
-HoloLens i Windows 10 mają różne opcje wyboru stron w Ustawienia aplikacji. Na tej stronie znajdziesz tylko ustawienia, które istnieją w HoloLens.
+HoloLens urządzenia i Windows 10 mają różne opcje wyboru stron w Ustawienia aplikacji. Na tej stronie znajdziesz tylko ustawienia istniejące na HoloLens.
 
 ### <a name="accounts"></a>Konta
 | Strona Ustawienia           | URI                                            |
@@ -157,7 +157,7 @@ HoloLens i Windows 10 mają różne opcje wyboru stron w Ustawienia aplikacji. N
 | Powiadomienia & akcje  | `notifications`          |
 | Udostępnione doświadczenia | `crossdevice` 
 | Dźwięk <sup>2</sup>           | `sound`<br>|
-| Dźwięk > aplikacji i preferencja urządzenia <sup>2</sup>           | `apps-volume`<br>|
+| Ustawienia > aplikacji i preferencje urządzenia <sup>2</sup>           | `apps-volume`<br>|
 | Zarządzanie > dźwięku <sup>2</sup>           | `sound-devices`<br>|
 | Storage            | `storagesense`           |
 | Storage > Konfigurowanie usługi Storage Sense <sup>2</sup>           | `storagepolicies`<br>|
@@ -182,11 +182,11 @@ HoloLens i Windows 10 mają różne opcje wyboru stron w Ustawienia aplikacji. N
 | Windows Aktualizacja — sprawdzanie aktualizacji | `windowsupdate-action`          |
 
 
-- <sup>1</sup> — w przypadku wersji wcześniejszych niż Windows Holographic, wersja 21H1, następujące  dwa interfejsy URI w rzeczywistości nie przejdą do stron Opcje zaawansowane **ani** Opcje. Będą blokować lub wyświetlać tylko główną stronę Windows Aktualizacji.
+- <sup>1</sup> — w przypadku wersji wcześniejszych niż Windows Holographic, wersja 21H1, następujące dwa  interfejsy URI w rzeczywistości nie przejdą do stron Opcje **zaawansowane** ani Opcje. Będą blokować lub wyświetlać tylko główną stronę Windows Update.
   -  windowsupdate-options
   -  windowsupdate-restartoptions
 
 - <sup>2</sup> — dostępne w Windows Holographic 21H1 lub wyższej.
 
 
-Aby uzyskać pełną listę Windows 10 Ustawienia URI, odwiedź [dokumentację ustawień uruchamiania.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+Pełną listę URI Windows 10 Ustawienia można znaleźć w [dokumentacji ustawień uruchamiania.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

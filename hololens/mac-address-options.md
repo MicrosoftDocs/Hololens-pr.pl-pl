@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665590"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189532"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Enterprise Rejestrowanie urządzeń HoloLens w środowisku z ograniczeniami adresów MAC Wi-Fi MAC
 
@@ -47,14 +47,14 @@ Istnieje wiele sposobów, aby poprawić tę sytuację, w zależności od infrast
 
 | Rozwiązanie | Korzyści | Wymagania |
 | --- | --- | --- |
-| Pakiet aprowizowania z adapterem Ethernet | Ulepsza środowisko OOBE i umożliwia szybsze środowisko techników. | HoloLens adapter USB-C Hub + Ethernet, a technik będzie nadal musiał wchodzić w interakcje z urządzeniem na potrzeby przechwytywania adresów MAC i finalizacji OOBE |
-| Autopilot z rejestracją w usłudze Intune za pośrednictwem sieci Ethernet | Jest to jednoetapowe połączenie i rejestracja urządzenia w środowisku klienta. Przechwytywanie adresów MAC można ukończyć bez konieczności interakcji z urządzeniem | Usługa Intune włączona dla dzierżawy usługi AAD klienta i HoloLens adapter Ethernet USB-C |
+| Pakiet aprowizowania z adapterem Ethernet | Ulepsza środowisko OOBE i umożliwia szybsze środowisko techników. | HoloLens adapter USB-C Hub + Ethernet, a technik będzie nadal musiał wchodzić w interakcje z urządzeniem w celu przechwytywania adresów MAC i finalizacji OOBE |
+| Autopilot z rejestracją w usłudze Intune za pośrednictwem sieci Ethernet | Jest to jednoetapowe połączenie i rejestracja urządzenia w środowisku klienta. Przechwytywanie adresów MAC można ukończyć bez konieczności interakcji z urządzeniem | Usługa Intune włączona dla dzierżawy usługi AAD klienta i HoloLens adaptera Ethernet USB-C |
 | Automatyczne raportowanie adresów MAC | Gdy urządzenia są zarejestrowane w dzierżawie usługi Intune, skrypt może zgłosić adres MAC technikowi. | Polecenia cmdlet programu PowerShell w usłudze Intune |
 
 ## <a name="provisioning-package-with-ethernet-adaptor"></a>Pakiet aprowizowania z adapterem Ethernet
 
 > [!NOTE] 
-> Jeśli sieć przewodowa podlega również ograniczeniom mac, adres MAC adaptera USB-C Hub + Ethernet również musi być wstępnie zatwierdzony. Należy zachować ostrożność podczas pracy z tą kartą, ponieważ umożliwi to dostęp do sieci z innych urządzeń.
+> Jeśli sieć przewodowa podlega również ograniczeniom mac, adres MAC adaptera USB-C Hub + Ethernet również musi być wstępnie zatwierdzony. Należy zachować ostrożność przy użyciu tej karty, ponieważ umożliwi to dostęp do sieci z innych urządzeń.
 
 ### <a name="requirements"></a>Wymagania
 
@@ -120,19 +120,19 @@ Wymagane będą dodatkowe wymagania wstępne, jak podano poniżej:
 
 3. Urządzenie powinno automatycznie łączyć się z Internetem podczas OOBE za pośrednictwem adaptera Ethernet. Powinien wykrywać konfigurację rozwiązania Autopilot i automatycznie rejestrować się w usługach Azure AD i Intune.
 
-4. Urządzenie zastosuje wymagane certyfikaty usługi Wi-Fi i inną konfigurację zgodnie z potrzebami za pośrednictwem usługi Intune.
+4. Urządzenie zastosuje wymagane certyfikaty Wi-Fi i inną konfigurację zgodnie z potrzebami za pośrednictwem usługi Intune.
 
 5. Po zakończeniu technik może załadować portal usługi Intune (Endpoint Manager) i przejść do strony właściwości urządzenia na stronie Strona główna **-> Devices -> DeviceName -> Hardware**.
 
 6. Adres Wi-Fi MAC będzie widoczny w portalu usługi Intune.
 
-   ![Adres MAC za pośrednictwem usługi Intune](images/mac-address-intune.jpg)
+   ![Adres MAC za pośrednictwem usługi Intune.](images/mac-address-intune.jpg)
 
 7. Technik doda ten adres MAC jako dozwolone urządzenie.
 
 ### <a name="benefits"></a>Korzyści
 
-Pozwoli to na "odsłoń" środowisko wdrażania dla technika, dzięki którym urządzenie będzie można przejść od skrzynki do zarejestrowania w usługach Azure AD i Intune bez konieczności noszenia urządzenia lub ręcznej interakcji ze środowiskiem HoloLens intune.
+Pozwoli to na "odsłoń" środowisko wdrażania dla technika, dzięki którym urządzenie będzie możliwe od skrzynki do zarejestrowania w usługach Azure AD i Intune bez konieczności noszenia urządzenia lub ręcznej interakcji ze środowiskiem HoloLens intune.
 
 ## <a name="reporting-of-mac-addresses-to-the-technician"></a>Raportowanie adresów MAC technikowi
 
@@ -155,8 +155,8 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 Spowoduje to zwrócenie nazwy i adresu MAC wszystkich urządzeń HoloLens zarejestrowanych w ciągu ostatnich 30 dni.
 
-![Adres MAC za pośrednictwem programu PowerShell](images/mac-address-powershell.jpg)
+![Adres MAC za pośrednictwem programu PowerShell.](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>Proces
 
-Po zakończeniu rejestracji w usłudze Intune technik uruchamia powyższy skrypt, aby pobrać adres MAC.
+Po zakończeniu rejestracji w usłudze Intune technik uruchamia powyższy skrypt w celu pobrania adresu MAC.

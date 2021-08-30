@@ -4,61 +4,61 @@ description: Dowiedz się, jak skonfigurować i połączyć się z Internetem za
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
 ms.author: mazeller
-keywords: HoloLens, Wi-Fi, bezprzewodowe, Internet, ip, adres IP
+keywords: HoloLens, sieć Wi-Fi, sieć bezprzewodowa, Internet, adres IP, adres IP
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663097"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189107"
 ---
 # <a name="connect-hololens-to-a-network"></a>Połączenie HoloLens do sieci
 
-Aby wykonać większość czynności na HoloLens, musisz mieć połączenie z siecią. HoloLens zawiera przycisk radiowy 2x2 Wi-Fi z możliwością 802.11ac i podłączanie go do sieci jest podobny do łączenia urządzenia Windows 10 Desktop lub Mobile z siecią Wi-Fi. Ten przewodnik pomoże Ci:
+Aby wykonać większość czynności na HoloLens, musisz mieć połączenie z siecią. HoloLens urządzenie radiowe 802.11ac, 2x2 Wi-Fi i podłączanie go do sieci jest podobne do łączenia urządzenia Windows 10 Desktop lub Mobile z siecią Wi-Fi siecią. Ten przewodnik pomoże Ci:
 
-- Połączenie do sieci przy użyciu sieci Wi-Fi lub tylko HoloLens 2, Wi-Fi direct lub Ethernet przez USB-C
+- Połączenie z siecią przy użyciu sieci Wi-Fi lub tylko HoloLens 2, Wi-Fi bezpośrednio lub Ethernet przez USB-C
 - Wyłączanie i ponowne włączanie Wi-Fi
 
 Przeczytaj więcej na temat [korzystania z HoloLens offline.](hololens-offline.md)
 
 ## <a name="connecting-for-the-first-time"></a>Nawiązywanie połączenia po raz pierwszy
 
-Podczas pierwszego korzystania z HoloLens zostaniesz poprowadzenie przez proces nawiązywania połączenia z Wi-Fi siecią. Jeśli podczas instalacji masz problemy z nawiązaniem połączenia Wi-Fi, upewnij się, że sieć jest siecią otwartą, chronioną hasłem lub siecią w witrynie Captive Portal. Upewnij się również, że sieć nie wymaga używania certyfikatu do nawiązywania połączenia. Po zakończeniu instalacji możesz połączyć się z innymi typami sieci Wi-Fi sieci.
+Przy pierwszym użyciu urządzenia HoloLens zostaniesz pokierować przez proces nawiązywania połączenia z Wi-Fi siecią. Jeśli masz problemy z nawiązaniem połączenia Wi-Fi podczas instalacji, upewnij się, że sieć jest otwartą siecią chronioną hasłem lub siecią w witrynie Captive Portal. Upewnij się również, że sieć nie wymaga użycia certyfikatu do nawiązania połączenia. Po zakończeniu instalacji możesz połączyć się z innymi typami sieci Wi-Fi sieci.
 
-Na HoloLens 2 użytkownik może również użyć adaptera [USB-C](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) do sieci Ethernet, aby połączyć się bezpośrednio z Wi-Fi, aby pomóc w konfigurowaniu urządzenia. Po skonfigurowaniu urządzenia użytkownik może nadal korzystać z karty lub może odłączyć urządzenie od karty i połączyć się z [siecią Wi-Fi](hololens-network.md#connecting-to-wi-fi-after-setup)po skonfigurowaniu urządzenia . 
+Na HoloLens 2 użytkownik może również użyć adaptera [USB-C](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) do sieci Ethernet, aby połączyć się bezpośrednio z Wi-Fi, aby pomóc w konfigurowaniu urządzenia. Po skonfigurowaniu urządzenia użytkownik może nadal korzystać z karty lub może odłączyć urządzenie od karty i połączyć się z [siecią Wi-Fi po skonfigurowaniu.](hololens-network.md#connecting-to-wi-fi-after-setup) 
 
-## <a name="connecting-to-wi-fi-after-setup"></a>Nawiązywanie połączenia z Wi-Fi po instalacji
+## <a name="connecting-to-wi-fi-after-setup"></a>Nawiązywanie połączenia Wi-Fi po instalacji
 
-1. Wstępnie sformuj **gest Start** i wybierz **Ustawienia**. Aplikacja Ustawienia zostanie automatycznie umieszczona przed toem.
+1. Wstępnie sformuj **gest Start** i wybierz **Ustawienia**. Aplikacja Ustawienia zostanie automatycznie umieszczona przed Tomem.
 1. Wybierz **pozycję Sieć &**  >  **Wi-Fi.** Upewnij się, że sieć Wi-Fi jest włączona. Jeśli nie widzisz swojej sieci, przewiń listę w dół.
 1. Wybierz sieć, a następnie wybierz pozycję **Połączenie**.
-1. Jeśli zostanie wyświetlony monit o hasło sieciowe, wpisz je, a następnie wybierz przycisk **Dalej.**
+1. Jeśli zostanie wyświetlony monit o hasło sieci, wpisz je, a następnie wybierz przycisk **Dalej.**
 
-![HoloLens Wi-Fi ustawień](./images/hololens-2-wifi-settings.jpg)
+![HoloLens Wi-Fi ustawienia.](./images/hololens-2-wifi-settings.jpg)
 
-Aby potwierdzić, że masz połączenie z Wi-Fi siecią, sprawdź stan Wi-Fi menu **Start:**
+Aby potwierdzić, że masz połączenie z Wi-Fi siecią, sprawdź stan Wi-Fi w menu **Start:**
 
 1. Otwórz menu **Start.**
-1. Sprawdź, czy w lewym górnym rogu menu **Start** Wi-Fi stan. Zostaną wyświetlone Wi-Fi i SSID połączonej sieci.
+1. W lewym górnym rogu menu **Start** sprawdź stan Wi-Fi startowego. Zostanie pokazany stan Wi-Fi i SSID podłączonej sieci.
 
 > [!TIP]
 > Jeśli Wi-Fi jest niedostępny, możesz również połączyć się z sieciami [komórkowymi i 5G.](hololens-cellular.md)
 
 > [!IMPORTANT]
-> Domyślnie użytkownicy nie mogą dostosować zachowania roamingu usługi Wi-Fi dla usługi HoloLens 2 — jedynym sposobem odświeżania listy Wi-Fi jest przełączenie przełącznika Wi-Fi Wyłączone i **Wł.**. Zapobiega to wielu problemom, takim jak to, że urządzenie może pozostać "zablokowane" w ap, gdy będzie poza zakresem.
+> Domyślnie użytkownicy nie mogą dostosować Wi-Fi mobilnego działania usługi HoloLens 2 — jedynym sposobem odświeżania listy Wi-Fi jest przełączenie przełącznika Wi-Fi Wyłączone i **Wł.**. Zapobiega to wielu problemom, takim jak to, że urządzenie może pozostać "zablokowane" dla ap, gdy będzie poza zakresem.
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>Połączenie HoloLens do Enterprise Wi-Fi Sieci
 
-Enterprise Wi-Fi używają protokołu EAP (Extensible Authentication Protocol) do uwierzytelniania Wi-Fi połączeń. HoloLens Enterprise Wi-Fi można skonfigurować za pomocą rozwiązania MDM lub pakietu aprowizowania utworzonego przez [program Windows Configuration Designer.](/windows/configuration/provisioning-packages/provisioning-packages)
+Enterprise Wi-Fi używają protokołu uwierzytelniania extensible Authentication Protocol (EAP) do uwierzytelniania Wi-Fi sieci. HoloLens Enterprise Wi-Fi można skonfigurować za pomocą rozwiązania MDM lub pakietu aprowizowania utworzonego przez Windows [Configuration Designer.](/windows/configuration/provisioning-packages/provisioning-packages)
 
-Aby Microsoft Intune urządzenia zarządzanego, zapoznaj się z instrukcjami dotyczącymi konfiguracji usługi [Intune.](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)
+Aby Microsoft Intune zarządzanego, zapoznaj się z instrukcjami dotyczącymi konfiguracji w usłudze [Intune.](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)
 
-Aby utworzyć pakiet Wi-Fi aprowizowania w UCD, wymagany jest wstępnie skonfigurowany Wi-Fi .xml aprowizowania. Oto przykładowy profil Wi-Fi dla WPA2-Enterprise z uwierzytelnianiem EAP-TLS:
+Aby utworzyć pakiet Wi-Fi aprowizowania w UCD, wymagany jest wstępnie Wi-Fi pliku .xml aprowizowania. Oto przykładowy profil Wi-Fi dla WPA2-Enterprise z uwierzytelnianiem EAP-TLS:
 
 ``` xml
 <?xml version="1.0"?> 
@@ -124,27 +124,27 @@ W zależności od typu protokołu EAP może być konieczne aprowizowania certyfi
 
 Dodatkowe zasoby:
 
-- Schemat WLANv1Profile: [[MS-GPWL]: profil bezprzewodowej sieci LAN w wersji 1 | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- Schemat WLANv1Profile: [[MS-GPWL]: profil sieci bezprzewodowej LAN v1 schematu | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - Schemat protokołu EAP-TLS: [[MS-GPWL]: Schemat protokołu TLS protokołu EAP firmy Microsoft | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-Jeśli masz [problemy](hololens2-enterprise-troubleshooting.md#) z nawiązaniem połączenia z siecią Wi-Fi, zapoznaj się ze stroną Rozwiązywanie problemów.
+Jeśli masz [problemy z nawiązaniem](hololens2-enterprise-troubleshooting.md#) połączenia z siecią Wi-Fi, sprawdź stronę Rozwiązywanie problemów.
 
 ## <a name="configure-network-proxy"></a>Konfigurowanie serwera proxy sieci
 
-Ta sekcja obejmuje serwer proxy sieci dla HoloLens systemu operacyjnego i aplikacji platformy uniwersalnej systemu Windows (UWP) przy użyciu Windows stosu HTTP. Aplikacje korzystające z Windows stosu HTTP mogą mieć własną konfigurację i obsługę serwera proxy. 
+Ta sekcja obejmuje serwer proxy sieci dla HoloLens systemu operacyjnego i aplikacji platformy uniwersalnej Windows (UWP) przy użyciu Windows stosu HTTP. Aplikacje korzystające z Windows stosu HTTP mogą mieć własną konfigurację i obsługę serwera proxy. 
 
 ### <a name="proxy-configurations"></a>Konfiguracje serwera proxy 
 
-- Skrypt automatycznej konfiguracji serwera proxy (PAC): plik [PAC](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (otwiera witrynę firmy spoza firmy Microsoft) zawiera funkcję języka JavaScript FindProxyForURL(adres URL, host). 
+- Skrypt automatycznej konfiguracji serwera proxy (PAC): plik [PAC](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (otwiera witrynę firmy spoza firmy Microsoft) zawiera funkcję Języka JavaScript FindProxyForURL(adres URL, host). 
 - Statyczny serwer proxy: w postaci Serwer:Port.  
-- Protokół autowykrywania serwera proxy sieci Web (WPAD): podaj adres URL pliku konfiguracji serwera proxy za pośrednictwem protokołu DHCP lub DNS. 
+- Protokół automatycznego odnajdywania serwera proxy sieci Web (WPAD): podaj adres URL pliku konfiguracji serwera proxy za pośrednictwem protokołu DHCP lub DNS. 
 
 ### <a name="proxy-provisioning-methods"></a>Metody aprowizowania serwera proxy 
 Istnieją trzy sposoby inicjowania obsługi serwerów proxy:
 
  
 
-1.  **Ustawienia Interfejsu użytkownika:** 
+1.  **Ustawienia INTERFEJSU UŻYTKOWNIKA:** 
     1. Serwer proxy dla użytkownika (20H2 lub starsze):
         1. Otwórz menu Start i wybierz pozycję Ustawienia.
         2. Wybierz pozycję Sieć & Internet, a następnie pozycję Serwer proxy w menu po lewej stronie.
@@ -153,7 +153,7 @@ Istnieją trzy sposoby inicjowania obsługi serwerów proxy:
         5. Wprowadź numer portu.
         6. Kliknij pozycję Zapisz.
       1. Serwer proxy sieci Wi-Fi (21H1 lub wyższy):
-          1. Otwórz menu Start i przejdź do Wi-Fi właściwości sieci.
+          1. Otwórz menu Start i przejdź do strony Wi-Fi sieci wirtualnej.
           1. Przewiń w dół do serwera proxy
           1. Zmiana na konfigurację ręczną
           1. Wprowadź adres IP serwera proxy.
@@ -161,40 +161,40 @@ Istnieją trzy sposoby inicjowania obsługi serwerów proxy:
           1. Kliknij przycisk Zastosuj.
         
  2. **Zarządzanie urządzeniami przenośnymi** 
-     1. Intune — użyj tych [kroków, aby](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) skonfigurować serwer proxy w usłudze Intune. Musisz przewinąć w dół sekcji.
-     1. Inne rozwiązania MDM innych firm — użyj sieci [Wi-Fi CSP.](/windows/client-management/mdm/wifi-csp)
+     1. Intune — użyj tych [kroków, aby](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) skonfigurować serwer proxy w usłudze Intune. Musisz przewinąć do dołu sekcji.
+     1. Inne rozwiązania MDM innych firm — użyj usługi [CSP sieci Wi-Fi.](/windows/client-management/mdm/wifi-csp)
 
-3. **PPKG** 
+3. **PpKG** 
     1. Otwórz Windows Configuration Designer
-    1. Kliknij pozycję Advanced Provisioning (Aprowizowanie zaawansowane), wprowadź nazwę nowej Project a następnie kliknij przycisk Next (Dalej).
+    1. Kliknij pozycję Advanced Provisioning (Aprowizowanie zaawansowane), wprowadź nazwę nowej Project kliknij przycisk Next (Dalej).
     1. Wybierz Windows Holographic (HoloLens 2) i kliknij przycisk Dalej.
     1. Zaimportuj ppkg (opcjonalnie) i kliknij przycisk Zakończ.
-    1. Rozwiń w Ustawienia -> profile łączności -> WLAN -> proxy sieci WLAN.
+    1. Rozwiń w Ustawienia -> łączność profilów -> sieci WLAN -> proxy sieci WLAN.
     1. Wprowadź wartość SSID sieci Wi-Fi i kliknij przycisk Dodaj.
-    1. Wybierz sieć Wi-Fi sieci w oknie po lewej stronie i wprowadź odpowiednie dostosowania. Włączone dostosowania będą wyświetlane pogrubioną czcionką w menu po lewej stronie.
+    1. Wybierz sieć Wi-Fi w oknie po lewej stronie i wprowadź żądane dostosowania. Włączone dostosowania będą wyświetlane pogrubioną czcionką w menu po lewej stronie.
     1. Kliknij pozycję Zapisz i zakończ.
     1. [Zastosuj](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) pakiet aprowizowania do HoloLens.
 
-[Dostawcy CSP](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) znajdują się za wieloma zadaniami i zasadami zarządzania dla Windows 10, zarówno w Microsoft Intune, jak i u dostawców usług MDM innych firm. Możesz również użyć [Windows Configuration Designer,](/windows/configuration/provisioning-packages/provisioning-install-icd) aby utworzyć pakiet aprowizowania i zastosować go do HoloLens 2. [](/windows/configuration/provisioning-packages/provisioning-packages)
-Najbardziej prawdopodobne CSP, które zostaną zastosowane do Twojego HoloLens 2 to:
+[Dostawcy CSP](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) są za wieloma zadaniami zarządzania i zasadami dla Windows 10, zarówno w Microsoft Intune, jak i u dostawców usług MDM innych firm. Możesz również użyć [Windows Configuration Designer,](/windows/configuration/provisioning-packages/provisioning-install-icd) aby utworzyć pakiet aprowizowania i zastosować go do HoloLens 2. [](/windows/configuration/provisioning-packages/provisioning-packages)
+Najbardziej prawdopodobne są CSP, które zostaną zastosowane do Twojego HoloLens 2:
 
-- [Wi-Fi CSP:](/windows/client-management/mdm/wifi-csp)per-profile Wi-Fi proxy 
+- [WiFi CSP:](/windows/client-management/mdm/wifi-csp)per-profile Wi-Fi proxy 
 
-[Inni CSP obsługiwani na HoloLens urządzeniach](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+[Inni CSP obsługiwani na HoloLens urządzeń](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 
 
 
 
 ## <a name="vpn"></a>VPN
-Połączenie sieci VPN może pomóc zapewnić bezpieczniejsze połączenie i dostęp do sieci firmowej i Internetu. HoloLens 2 obsługuje wbudowanego klienta sieci VPN i wtyczkę sieci VPN platformy uniwersalnej systemu Windows Platform (UWP). 
+Połączenie sieci VPN może pomóc zapewnić bezpieczniejsze połączenie i dostęp do sieci firmowej i Internetu. HoloLens 2 obsługuje wbudowanego klienta sieci VPN i wtyczkę sieci VPN Windows Platform (UWP). 
 
 Obsługiwane wbudowane protokoły sieci VPN:
 - IKEv2
 - L2TP
 - PPTP
 
-Jeśli certyfikat jest używany do uwierzytelniania wbudowanego klienta sieci VPN, wymagany certyfikat klienta należy dodać do magazynu certyfikatów użytkownika. Aby sprawdzić, czy wtyczka sieci VPN innej firmy obsługuje usługę HoloLens 2, przejdź do sklepu, aby zlokalizować aplikację sieci VPN i sprawdzić, czy usługa HoloLens jest wymieniona jako obsługiwane urządzenie, a na stronie Wymagania systemowe aplikacja obsługuje architekturę ARM lub ARM64. HoloLens obsługuje tylko aplikacje platformy Windows Platform dla sieci VPN innych firm.
+Jeśli certyfikat jest używany do uwierzytelniania wbudowanego klienta sieci VPN, wymagany certyfikat klienta należy dodać do magazynu certyfikatów użytkownika. Aby sprawdzić, czy wtyczka sieci VPN innej firmy obsługuje usługę HoloLens 2, przejdź do strony Sklep, aby zlokalizować aplikację sieci VPN i sprawdzić, czy usługa HoloLens jest wymieniona jako obsługiwane urządzenie, a na stronie Wymagania systemowe aplikacja obsługuje architekturę ARM lub ARM64. HoloLens obsługuje tylko aplikacje platformy Windows Platform dla sieci VPN innych firm.
 
  Sieć VPN może być zarządzana przez rozwiązanie MDM za [pośrednictwem sieci Ustawienia/AllowVPN](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)i ustawiana za pośrednictwem [zasad Vpnv2-csp.](/windows/client-management/mdm/vpnv2-csp)
 
@@ -202,7 +202,7 @@ Dowiedz się więcej na [temat konfigurowania sieci VPN](https://support.microso
 
 ### <a name="vpn-via-ui"></a>Sieć VPN za pośrednictwem interfejsu użytkownika
 
-Sieć VPN nie jest domyślnie włączona, ale można ją włączyć ręcznie, otwierając aplikację Ustawienia **i** przechodząc do opcji Sieć & **Internet -> VPN.**
+Sieć VPN nie jest domyślnie włączona, ale można ją włączyć ręcznie, otwierając aplikację Ustawienia **i** przechodząc do opcji Sieć & Internet **> VPN.**
 1. Wybierz dostawcę sieci VPN.
 1. Utwórz nazwę połączenia. 
 1. Wprowadź nazwę lub adres serwera.
@@ -211,7 +211,7 @@ Sieć VPN nie jest domyślnie włączona, ale można ją włączyć ręcznie, ot
 1. Opcjonalnie dodaj nazwę użytkownika i hasło.
 1. Zastosuj ustawienia sieci VPN. 
 
-![HoloLens Ustawienia sieci VPN](./images/vpn-settings-ui.jpg)
+![HoloLens Ustawienia sieci VPN.](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>Zestaw sieci VPN za pośrednictwem pakietu aprowizowania
 
@@ -219,17 +219,17 @@ Sieć VPN nie jest domyślnie włączona, ale można ją włączyć ręcznie, ot
 > W naszym Windows Holographic w wersji 20H2 rozwiązaliśmy problem z konfiguracją serwera proxy dla połączenia sieci VPN. Rozważ uaktualnienie urządzeń do tej kompilacji, jeśli zamierzasz używać tego przepływu.
 
 1. Uruchom Windows Configuration Designer.
-1. Kliknij **pozycję Aprowizuj HoloLens,** a następnie wybierz pozycję urządzenie docelowe i **pozycję Dalej.**
+1. Kliknij **pozycję Aprowizuj HoloLens** urządzeń, a następnie wybierz pozycję urządzenie docelowe i pozycję **Dalej.**
 1. Wprowadź nazwę i ścieżkę pakietu.
 1. Kliknij **pozycję Przełącz do edytora zaawansowanego.**
-1. Otwórz **ustawienia środowiska**  ->  **uruchomieniowego ŁącznośćProfile VPN**  ->    ->  **VPNUstawienia**.
+1. Otwórz **ustawienia środowiska**  ->  **uruchomieniowego ConnectivityProfiles**  ->  **VPN**  ->  **VPNUstawienia**.
 1. Konfigurowanie pliku VPNProfileName
 1. Wybierz pozycję ProfileType: **Native** **lub Third Party**.
     1. W przypadku profilu macierzystego wybierz **pozycję NativeProtocolType,** a następnie skonfiguruj serwer, zasady routingu, typ uwierzytelniania i inne ustawienia.
     1. W przypadku profilu "Innej firmy" skonfiguruj adres URL serwera, nazwę rodziny pakietów aplikacji sieci VPN (tylko 3 wstępnie zdefiniowane) i konfiguracje niestandardowe.
 1. Wyeksportuj pakiet.
 1. Połączenie swój HoloLens i skopiuj plik ppkg na urządzenie. 
-1. Na HoloLens sieci VPN zastosuj ppkg sieci VPN, otwierając pakiet menu Start i wybierając pozycję **Ustawienia**  ->  **Account**  ->  **Access work or school** Add or remove  ->  **provisioning package** -> Select your VPN package (Dodaj lub usuń pakiet aprowizowania — > wybierz pakiet sieci VPN).
+1. Na HoloLens sieci VPN zastosuj ppkg sieci VPN, otwierając pakiet menu Start i wybierając pozycję **Ustawienia**  ->  **Account**  ->  **Access work or school** Add or remove  ->  **provisioning package** -> Select your VPN package (Dodaj lub usuń pakiet aprowizowania —> Wybierz pakiet sieci VPN).
 
 
 ### <a name="setting-up-vpn-via-intune"></a>Konfigurowanie sieci VPN za pośrednictwem usługi Intune
@@ -237,9 +237,9 @@ Aby rozpocząć pracę, postępuj zgodnie z dokumentami usługi Intune. Podczas 
 
 [Utwórz profile sieci VPN w celu nawiązania połączenia z serwerami sieci VPN w usłudze Intune.](/mem/intune/configuration/vpn-settings-configure)
 
-[Windows 10 i Windows urządzenia Holographic, aby dodać połączenia sieci VPN przy użyciu usługi Intune.](/mem/intune/configuration/vpn-settings-windows-10)
+[Windows 10 i Windows urządzenia Holographic,](/mem/intune/configuration/vpn-settings-windows-10)aby dodać połączenia sieci VPN przy użyciu usługi Intune.
 
-Gdy wszystko będzie gotowe, pamiętaj [o przypisaniu profilu](/mem/intune/configuration/device-profile-assign).
+Gdy wszystko będzie gotowe, [pamiętaj o przypisaniu profilu](/mem/intune/configuration/device-profile-assign).
 
 ### <a name="vpn-via-3rd-party-mdm-solutions"></a>Sieć VPN za pośrednictwem rozwiązań MDM innych firm
 Przykład połączenia sieci VPN innej firmy:
@@ -277,7 +277,7 @@ Przykład połączenia sieci VPN innej firmy:
       </Add>
 ```
 
-Przykład natywnej sieci VPN IKEv2:
+Przykład natywnej sieci VPN ZKEv2:
 ```xml
       <Add>
         <CmdID>10001</CmdID>
@@ -336,12 +336,12 @@ Przykład natywnej sieci VPN IKEv2:
 ### <a name="using-the-settings-app-on-hololens"></a>Używanie aplikacji Ustawienia na HoloLens
 
 1. Otwórz menu **Start.**
-1. Wybierz aplikację **Ustawienia** **startową** lub z listy **Wszystkie** aplikacje po prawej stronie menu **Start.** Aplikacja **Ustawienia** zostanie automatycznie umieszczona przed Tomem.
+1. Wybierz aplikację **Ustawienia** **startową lub** z listy **Wszystkie** aplikacje po prawej stronie menu **Start.** Aplikacja **Ustawienia** zostanie automatycznie umieszczona przed Tomem.
 1. Wybierz **pozycję Sieć & Internet.**
-1. Wybierz przełącznik Wi-Fi suwaka, aby przenieść go do **pozycji** Wyłączone. Spowoduje to wyłączenie składników RF przycisku radiowego Wi-Fi i wyłączenie wszystkich Wi-Fi funkcji HoloLens.
+1. Wybierz przełącznik Wi-Fi suwaka, aby przenieść go do **pozycji Wyłączone.** Spowoduje to wyłączenie składników RF przycisku radiowego Wi-Fi i wyłączenie wszystkich Wi-Fi na HoloLens.
 
     > [!WARNING]
-    > Po wyłączeniu Wi-Fi radiowego HoloLens automatyczne ładowanie przestrzeni nie [będzie możliwe.](hololens-spaces.md)
+    > Po wyłączeniu Wi-Fi radiowego HoloLens nie będzie można automatycznie załadować [spacji.](hololens-spaces.md)
 
 1. Przesuń przełącznik suwaka  do pozycji Wł., aby włączyć przycisk radiowy Wi-Fi i przywrócić Wi-Fi na Microsoft HoloLens. Wybrany stan Wi-Fi radiowego **(Wł.** lub **Wył.)** będzie zachowywany po ponownym uruchomieniu.
 
@@ -350,11 +350,11 @@ Przykład natywnej sieci VPN IKEv2:
 ### <a name="by-using-the-settings-app"></a>Przy użyciu Ustawienia aplikacji
 
 1. Otwórz menu **Start.**
-1. Wybierz aplikację **Ustawienia** **startową** lub z listy **Wszystkie** aplikacje po prawej stronie menu **Start.** Aplikacja **Ustawienia** zostanie automatycznie umieszczona przed Tomem.
+1. Wybierz aplikację **Ustawienia** **startową lub** z listy **Wszystkie** aplikacje po prawej stronie menu **Start.** Aplikacja **Ustawienia** zostanie automatycznie umieszczona przed Tomem.
 1. Wybierz **pozycję Sieć & Internet.**
-1. Przewiń w dół do listy dostępnych sieci Wi-Fi i wybierz pozycję **Właściwości sprzętu.**
+1. Przewiń w dół poniżej listy dostępnych sieci Wi-Fi i wybierz pozycję **Właściwości sprzętu.**
 
-    ![Właściwości sprzętu w Wi-Fi konfiguracji](./images/wifi-hololens-hwdetails.jpg)
+    ![Właściwości sprzętu w Wi-Fi ustawień.](./images/wifi-hololens-hwdetails.jpg)
 
    Adres IP zostanie wyświetlony obok adresu **IPv4.**
 
@@ -364,23 +364,23 @@ W zależności od kompilacji urządzeń możesz użyć wbudowanych poleceń gło
 
 ### <a name="by-using-windows-device-portal"></a>Przy użyciu Windows Portal urządzeń
 
-1. W przeglądarce internetowej na komputerze otwórz [portal urządzenia](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. W przeglądarce internetowej na komputerze otwórz [portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Przejdź do **sekcji Sieć.**  
-   W tej sekcji zostanie wyświetlony Twój adres IP i inne informacje o sieci. Za pomocą tej metody można skopiować i wkleić adres IP na komputerze dewelopera.
+   W tej sekcji zostanie wyświetlony Adres IP i inne informacje o sieci. Za pomocą tej metody można skopiować i wkleić adres IP na komputerze dewelopera.
 
-## <a name="change-ip-address-to-static-address"></a>Zmienianie adresu IP na adres statyczny
+## <a name="change-ip-address-to-static-address"></a>Zmiana adresu IP na adres statyczny
 ### <a name="by-using-settings"></a>Przy użyciu Ustawienia
  
 1. Otwórz menu **Start.**
-1. Wybierz aplikację **Ustawienia** **startową** lub z listy **Wszystkie** aplikacje po prawej stronie menu **Start.** Aplikacja **Ustawienia** zostanie automatycznie umieszczona przed Tomem.
+1. Wybierz aplikację **Ustawienia** **startową lub** z listy **Wszystkie** aplikacje po prawej stronie menu **Start.** Aplikacja **Ustawienia** zostanie automatycznie umieszczona przed Tomem.
 1. Wybierz **pozycję Sieć & Internet.**
-1. Przewiń w dół do listy dostępnych sieci Wi-Fi i wybierz pozycję **Właściwości sprzętu.**
+1. Przewiń w dół poniżej listy dostępnych sieci Wi-Fi i wybierz pozycję **Właściwości sprzętu.**
 1. W **oknie Edytowanie ustawień adresu IP** zmień pierwsze pole na **Ręczne.**
 1. Wprowadź żądaną konfigurację adresu IP w pozostałych polach, a następnie kliknij przycisk **Zapisz.**
 
 ### <a name="by-using-windows-device-portal"></a>Przy użyciu Windows Portal urządzeń
 
-1. W przeglądarce internetowej na komputerze otwórz [portal urządzenia](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. W przeglądarce internetowej na komputerze otwórz [portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Przejdź do **sekcji Sieć.**
 1. Wybierz przycisk **Konfiguracja protokołu IPv4.**
 1. Wybierz **pozycję Użyj następującego adresu IP** i wprowadź odpowiednią konfigurację protokołu TCP/IP.

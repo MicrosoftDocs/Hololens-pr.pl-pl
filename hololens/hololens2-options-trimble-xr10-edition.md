@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7bf6896ee14b730e7c8f7f6c38e6a3c4279555429fb17f5b30a0c866123a3712
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6c2c6c10232fb8f1817dddabebaf207e51d35d7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658854"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190314"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>Trimble XR10 z HoloLens 2
 
@@ -29,13 +29,13 @@ Urządzenia Trimble XR10 z HoloLens 2 zostały stworzone z myślą o pracownikac
 
 Trimble XR10 z HoloLens 2 to pierwsze urządzenie utworzone za pomocą Microsoft HoloLens Customization Program. Urządzenie integruje maszynę wirtualną HoloLens 2 w twardej czapece, aby utworzyć rozwiązanie rzeczywistości mieszanej z pierwszym poziomem bezpieczeństwa.
 
-![Trimble SKU](./images/trimble-ed.png)
+![Trimble SKU.](./images/trimble-ed.png)
 
-Zobacz więcej na temat [trimblera XR10.](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)
+Zobacz więcej na temat [trimble xr10.](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)
 
 ## <a name="next-steps"></a>Następne kroki
 
-1. Zacznij od razu korzystać z aplikacji Mixed Reality i nawigować Windows 10 na ekranie HoloLens — zapoznaj się z aplikacją **Wskazówki,** aby uzyskać praktyczne samouczki dotyczące interakcji za pomocą rąk. Użyj gestu uruchamiania, aby przejść do przycisku Start lub powiedzieć "Go to Start" (Przejdź do startu) i Wskazówki.
+1. Zacznij od razu korzystać z aplikacji Mixed Reality i nawigować po aplikacji Windows 10 na ekranie HoloLens — zapoznaj się z aplikacją **Wskazówki,** aby uzyskać praktyczne samouczki dotyczące interakcji za pomocą rąk. Użyj gestu uruchamiania, aby przejść do przycisku Start lub powiedzieć "Go to Start" (Przejdź do startu) i Wskazówki.
 1. Kliknij poniżej, aby kontynuować czytanie o HoloLens 2.
 
 > [!div class="nextstepaction"]

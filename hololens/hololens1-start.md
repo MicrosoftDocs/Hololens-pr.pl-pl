@@ -11,26 +11,26 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9e09ba1a022428b098392464e5cd2abf84911bd6a86d8e699036b8fc4f91470a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661864"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189872"
 ---
-# <a name="set-up-your-hololens-1st-gen"></a>Konfigurowanie HoloLens (1. generacja)
+# <a name="set-up-your-hololens-1st-gen"></a>Konfigurowanie aplikacji HoloLens (1. generacja)
 
-Przy pierwszym włączeniu urządzenia HoloLens użytkownik zostanie pokierowany przez proces skalibrowania urządzenia, konfigurowania urządzenia i logowania.  W tym artykule o HoloLens (1. generacji) pierwszego uruchomienia i konfiguracji.
+Przy pierwszym włączeniu urządzenia HoloLens użytkownik zostanie pokierowany przez proces skalibrowania urządzenia, konfigurowania urządzenia i logowania.  W tym artykule oswęgamy HoloLens (1. generacji) pierwszego uruchomienia i konfiguracji.
 
-W następnej sekcji dowiesz się, jak pracować z HoloLens i korzystać z hologramów. Aby przejść do tego artykułu, zobacz Wprowadzenie do HoloLens [(1. generacja).](hololens1-basic-usage.md)
+W następnej sekcji dowiesz się, jak pracować z HoloLens hologramami. Aby przejść do tego artykułu, zobacz Wprowadzenie do HoloLens [(1. generacja).](hololens1-basic-usage.md)
 
 ## <a name="before-you-start"></a>Przed rozpoczęciem
 
 Przed rozpoczęciem upewnij się, że są dostępne następujące elementy:
 
-**Połączenie Wi-Fi .** Aby ją skonfigurować, musisz połączyć HoloLens siecią Wi-Fi siecią. Przy pierwszym połączeniu będzie potrzebna otwarta sieć chroniona hasłem, która nie wymaga przechodzenia do witryny internetowej ani używania certyfikatów do nawiązywania połączenia. [Dowiedz się więcej o witrynach internetowych, HoloLens korzystają z usługi](hololens-offline.md).
+**Połączenie Wi-Fi .** Aby je skonfigurować, musisz połączyć HoloLens z Wi-Fi siecią. Przy pierwszym połączeniu będzie potrzebna otwarta sieć chroniona hasłem, która nie wymaga przechodzenia do witryny internetowej ani używania certyfikatów do nawiązywania połączenia. [Dowiedz się więcej o witrynach internetowych, HoloLens korzystają z usługi](hololens-offline.md).
 
-**Konto konto Microsoft lub konto służbowe.** Musisz również użyć konta konto Microsoft (lub konta służbowego, jeśli Twoja organizacja jest właścicielem urządzenia), aby zalogować się do HoloLens. Jeśli nie masz bezpłatnej konto Microsoft przejdź do account.microsoft.com [i](https://account.microsoft.com) skonfiguruj go bezpłatnie.
+**Konto konto Microsoft lub konto służbowe.** Musisz również użyć konta konto Microsoft (lub konta służbowego, jeśli Twoja organizacja jest właścicielem urządzenia), aby zalogować się do HoloLens. Jeśli nie masz bezpłatnej konto Microsoft przejdź do account.microsoft.com [i](https://account.microsoft.com) skonfiguruj je bezpłatnie.
 
 **Bezpieczna, dobrze oświetlona przestrzeń bez zagrożeń związanych z trippingiem.** [Informacje o kondycji i bezpieczeństwie.](https://go.microsoft.com/fwlink/p/?LinkId=746661)
 
@@ -47,27 +47,27 @@ Przy pierwszym uruchomieniu aplikacji HoloLens pierwszym zadaniem jest skonfigur
 
 1. Połączenie do Internetu (HoloLens do wybrania Wi-Fi sieci).
 
-1. Zaloguj się do konta użytkownika. Wybieraj **między właścicielem jest** moja praca lub **szkoła, a ja jestem jego właścicielem.**
+1. Zaloguj się do konta użytkownika. Wybieraj **między właścicielem jest** moja praca lub szkoła, a ja jestem jego **właścicielem.**
     - Jeśli wybierzesz pozycję My work or school owns it (Moja praca lub szkoła jest jego **właścicielem),** zaloguj się przy użyciu konta usługi Azure AD. Jeśli Twoja organizacja korzysta z Azure AD — wersja Premium i skonfigurowała automatyczną rejestrację mdm, HoloLens automatycznie rejestruje się w uścibce MDM. Jeśli Twoja organizacja nie korzysta z usługi Azure AD — wersja Premium, automatyczna rejestracja mdm nie jest dostępna, dlatego konieczne będzie ręczne zarejestrowanie HoloLens [zarządzania urządzeniami.](hololens-enroll-mdm.md#different-ways-to-enroll) Aby zalogować się do urządzenia po raz pierwszy przy użyciu konta służbowego, wykonaj następujące kroki:
         1. Wprowadź informacje o koncie organizacyjnym.
         1. Zaakceptuj zasady zachowania poufności informacji.
         1. Zaloguj się przy użyciu poświadczeń usługi Azure AD. Może to spowodować przekierowanie do strony logowania organizacji.
         1. Kontynuuj konfigurowanie urządzenia.
-    - Jeśli wybierzesz **pozycję I own it (Jestem właścicielem),** zaloguj się przy użyciu konto Microsoft. Po zakończeniu instalacji możesz ręcznie zarejestrować urządzenie w [u HoloLens zarządzania urządzeniami.](hololens-enroll-mdm.md#different-ways-to-enroll)
-        1. Wprowadź informacje konto Microsoft użytkownika.
+    - Jeśli wybierzesz **pozycję I own it (Jestem właścicielem),** zaloguj się przy użyciu konto Microsoft. Po zakończeniu instalacji możesz ręcznie zarejestrować urządzenie [w HoloLens zarządzania urządzeniami.](hololens-enroll-mdm.md#different-ways-to-enroll)
+        1. Wprowadź konto Microsoft danych.
         1. Wprowadź hasło. Jeśli Twoja konto Microsoft wymaga [weryfikacji dwuetapowej (2FA),](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)ukończ proces weryfikacji.
 
-1. Urządzenie ustawia strefę czasową na podstawie informacji uzyskiwanych z Wi-Fi sieci.
+1. Urządzenie ustawia strefę czasową na podstawie informacji, które uzyskuje z Wi-Fi sieci.
 
 ## <a name="calibration"></a>Kalibracja
 
-Po Cortana przedstawimy kolejny krok konfiguracji. Aby uzyskać najlepsze HoloLens środowisko pracy, należy ukończyć proces konserwacji podczas instalacji.
+Po Cortana przedstawimy kolejny krok konfiguracji. Aby uzyskać najlepsze HoloLens środowisko, należy ukończyć proces procesów konfiguracyjnych.
 
-HoloLens (1. generacja) używa odległości między źrenicy [](https://en.wikipedia.org/wiki/Interpupillary_distance)(ipd lub odległość międzypoczelniowa), aby hologramów było jasne i łatwe w interakcjach. Jeśli adres IPD jest nieprawidłowy, hologramy mogą wydawać się niestabilne lub w nieprawidłowej odległości.
+HoloLens (1. generacja) używa odległości między źrenicy (ipd lub odległość międzypoczelniowa), aby hologramów było jasne i łatwe w interakcjach. [](https://en.wikipedia.org/wiki/Interpupillary_distance) Jeśli adres IPD jest nieprawidłowy, hologramy mogą wydawać się niestabilne lub w nieprawidłowej odległości.
 
-Podczas ciąży HoloLens, aby wyrównać palcem serią sześciu obiektów docelowych na oko. HoloLens używa tego procesu do ustawienia poprawnego adresu IPD dla oczu. Jeśli trzeba zaktualizować lub dostosować strefę dla nowego użytkownika, nowy użytkownik może uruchomić aplikację Namów poza konfiguracją.
+Podczas ciąży HoloLens, aby wyrównać palcem z serią sześciu obiektów docelowych na oko. HoloLens używa tego procesu do ustawienia poprawnego adresu IPD dla oczu. Jeśli trzeba zaktualizować lub dostosować strefę dla nowego użytkownika, nowy użytkownik może uruchomić aplikację Namów poza konfiguracją.
 
-![Ekran wyrównywania linii papilarnych usługi IPD w drugim kroku](./images/ipd-finger-alignment-300px.jpg)
+![Ekran wyrównywania linii papilarnych IPD w drugim kroku.](./images/ipd-finger-alignment-300px.jpg)
 
 *Ekran wyrównywania linii papilarnych usługi IPD w drugim kroku*
 

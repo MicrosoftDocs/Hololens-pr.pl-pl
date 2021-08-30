@@ -7,12 +7,12 @@ description: Mixed Reality pomocy technicznej dla małych i dużych klientów ko
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658767"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190450"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Jakie są Mixed Reality pomocy technicznej i pomocy?
 
@@ -71,15 +71,15 @@ Jeśli przesyłasz nowe pytanie do Stack Overflow, użyj co najmniej jednego z n
 
 - Uzyskaj HoloLens programowania 2 od społeczności na stronie [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - Dowiedz się więcej na temat pomocy i obsługi technicznej oraz kondycji usług [rzeczywistości mieszanej platformy Azure](#azure-mixed-reality-services-support)
-- Tworzenie wniosku o pomoc techniczną na HoloLens 2 lub programowania immersyjnego zestawu nagłownego w pomocy [technicznej mr](https://aka.ms/mrsupport) 
-- Utwórz wniosek o pomoc techniczną w HoloLens 2 problemów z urządzeniami, w tym sprzętu, konfiguracji & konfiguracji na stronie [HoloLens 2 device support](https://aka.ms/hlsupport) 
+- Utwórz wniosek o pomoc techniczną na HoloLens 2 lub programowania immersyjnego zestawu nagłownego w pomocy [technicznej mr](https://aka.ms/mrsupport) 
+- Utwórz wniosek o pomoc techniczną dla HoloLens 2 problemów z urządzeniami, w tym sprzętu, konfiguracji & na stronie [HoloLens 2 device support](https://aka.ms/hlsupport) 
 
 
-### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Pomoc techniczna dla sklepu komercyjnego dla Twojej HoloLens 2
+### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Pomoc w przypadku obsługi sklepu komercyjnego HoloLens 2
 
 - [Zakup HoloLens 2 użyj](https://www.microsoft.com/hololens/buy) tej opcji, aby dowiedzieć się więcej na temat HoloLens 2 cen i opcji
 - Zapoznaj się z listą numerów pomocy technicznej firmy, aby porozmawiać z naszymi współpracownikami pomocy technicznej sklepu komercyjnego, jeśli potrzebujesz pomocy przez telefon
-- W przypadku zakupów spoza Microsoft Store należy odwołać się do tej listy autoryzowanych HoloLens [dwóch odsprzedawców](hololens2-purchase.md) i krajów, w których HoloLens 2 jest dostępny.
+- W przypadku zakupów spoza Microsoft Store należy odwołać się do tej listy autoryzowanych HoloLens [2](hololens2-purchase.md) odsprzedawców i krajów, w których jest HoloLens 2.
 
 ### <a name="commercial-store-support-numbers"></a>Numery pomocy technicznej sklepu komercyjnego
 >[!Note]
@@ -106,55 +106,55 @@ Jeśli przesyłasz nowe pytanie do Stack Overflow, użyj co najmniej jednego z n
 | Finlandia | +358 800526136 |    Mon to Pt, 09:00–18:00 |
 | Portugalia |    +351 800600087 |    Mon to Pt, 09:00–18:00 |
 | USA |  866-425-4709 |  Mon to Pt, 6:00–18:00, PST |
-| Kanada |  877-345-2661 |  Mon to Pt, 6:00–18:00, PST |
-| Chiny |   400-805-6783 |  Od mon do pt, od 9:00 do 18:00 |
-| Japonia |   0120-03-5241 |  Mon–Pt, 9:00–17:30 |
-| Australia |   1800-217-709 |  Od mon do pt, od 8:00 do 20:00 |
-| Singapur |   1800 622-1816 | Od mon do pt, od 8:30 do 17:30 |
-| Nowa Zelandia | 0800 471 640 |  Od mon do pt, od 8:00 do 18:00 |
+| Kanada |  877-345-2661 |  Mon–Pt, 6:00–18:00, PST |
+| Chiny |   400-805-6783 |  Pon–Pt, od 9:00 do 18:00 |
+| Japonia |   0120-03-5241 |  Mon–Pt, od 9:00 do 17:30 |
+| Australia |   1800-217-709 |  Pon–Pt, od 8:00 do 20:00 |
+| Singapur |   1800 622-1816 | Mon–Pt, 8:30–17:30 |
+| Nowa Zelandia | 0800 471 640 |  Mon–Pt, od 8:00 do 18:00 |
 
 >[!IMPORTANT]
->Jeśli potrzebujesz pełnej faktury VAT, należy skontaktować się bezpośrednio z zespołem sklepu pomocy technicznej firmy Commercial i nie kupować urządzenia w trybie online. Wszystkie zakupy dokonane w trybie online otrzymają tylko uproszczoną fakturę VAT, której nie można później edytować.
+>Jeśli potrzebujesz pełnej faktury VAT, musisz skontaktować się bezpośrednio z zespołem sklepu komercyjniego pomocy technicznej i nie kupować urządzenia w trybie online. Wszystkie zakupy dokonane w trybie online otrzymają tylko uproszczoną fakturę VAT, której nie można później edytować.
 
 ## <a name="azure-mixed-reality-services-support"></a>Obsługa usług rzeczywistości mieszanej platformy Azure
 
-### <a name="open-an-azure-portal-technical-support-ticket"></a>Otwieranie biletu pomocy Azure Portal technicznej
+### <a name="open-an-azure-portal-technical-support-ticket"></a>Otwórz bilet pomocy Azure Portal technicznej
 
-Aby otworzyć bilet pomocy technicznej na stronie Azure Portal azure Spatial Anchors, Azure Object Anchors lub Azure Remote Rendering:
+Aby otworzyć bilet pomocy technicznej na stronie Azure Portal usługi Azure Spatial Anchors, Azure Object Anchors lub Azure Remote Rendering:
 
 1. Po [otwarciu Azure Portal](https://azure.microsoft.com/account/) wybierz ikonę pomocy na górnym pasku menu, a następnie wybierz przycisk **Pomoc i obsługa** techniczna.
 
-   ![Azure Portal pomocy i obsługi technicznej](../hololens/images/azure-help-support.png)
+   ![Azure Portal pomoc i obsługa techniczna.](../hololens/images/azure-help-support.png)
 
 2. Po otwarciu strony Pomoc i obsługa techniczna wybierz **pozycję + Nowy wniosek o pomoc techniczną.**
 
-   ![Azure Portal nowy wniosek o pomoc techniczną](../hololens/images/azure-help-support2.png)
+   ![Azure Portal nowy wniosek o pomoc techniczną.](../hololens/images/azure-help-support2.png)
 
-3. Podczas wypełniania pól biletu pomocy technicznej:
+3. Wypełniając pola biletu pomocy technicznej:
 
     + Typ wydania: Techniczne
     + Usługa: Azure Spatial Anchors, Azure Remote Rendering lub Azure Object Anchors
 
-    ![Azure Portal biletu pomocy technicznej](../hololens/images/azure-help-support3.png)
+    ![Azure Portal pola biletu pomocy technicznej.](../hololens/images/azure-help-support3.png)
 
     1. Kliknij **przycisk Dalej: Rozwiązania** w dolnej części strony, aby dodać więcej szczegółów, aby poinformować nas o problemie.
 
     2. Wypełnij formularz tak dokładnie i szczegółowo, jak to możliwe, wraz z preferowanym sposobem dotarcia do Ciebie.
 
-    3. Przejrzyj wszystkie informacje, które zostały wypełnione w poprzednich sekcjach, a teraz prześlij wniosek o pomoc techniczną.
+    3. Przejrzyj wszystkie informacje wypełnione w poprzednich sekcjach, a teraz prześlij wniosek o pomoc techniczną.
 
-### <a name="provide-documentation-content-feedback"></a>Opinie na temat zawartości dokumentacji
+### <a name="provide-documentation-content-feedback"></a>Opinie dotyczące zawartości dokumentacji
 
-W dolnej części każdego artykułu o zawartości można otworzyć problem z GitHub i przekazać opinię na temat zawartości w dowolnym repozytorium dokumentacji rzeczywistości mieszanej. 
+W dolnej części każdego artykułu o zawartości jest możliwość otwarcia problemu i GitHub opinii na temat zawartości w dowolnym repozytorium dokumentacji rzeczywistości mieszanej. 
 
 ### <a name="provide-product-feedback"></a>Przekazywanie opinii dotyczących produktów
 
 >[!Note]
->Przekazywanie opinii to doskonały sposób, aby twój głos został wysłuchany, ale opinia nie jest sposobem na otrzymanie odpowiedzi. Centrum opinii można połączyć z innymi opcjami pomocy technicznej.
+>Przekazywanie opinii to doskonały sposób, aby twój głos został wysłuchany, ale opinia nie jest sposobem otrzymywania odpowiedzi. Centrum opinii można połączyć z innymi opcjami pomocy technicznej.
 
 Aby przekazać opinię, udostępnić pomysł lub sugestie dotyczące usług rzeczywistości mieszanej firmy Microsoft lub zagłosować na pomysły przesłane przez inne osoby, odwiedź stronę: 
 
-- [HoloLens 2 Opinie o produkcie](/hololens/hololens-feedback)
+- [HoloLens 2 Opinii o produkcie](/hololens/hololens-feedback)
 - [Opinie o produkcie aplikacji Microsoft Mesh](/hololens/hololens-feedback)
 - [Azure Remote Rendering opinii](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Opinie Spatial Anchors azure](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
@@ -162,7 +162,7 @@ Aby przekazać opinię, udostępnić pomysł lub sugestie dotyczące usług rzec
 ### <a name="faqs--troubleshooting"></a>Często zadawane pytania dotyczące & rozwiązywania problemów
 
 - HoloLens 2, zobacz stronę [rozwiązywania HoloLens problemów](../hololens/hololens-troubleshooting.md)
-- Windows Mixed Reality zobacz stronę [często zadawanych](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) pytań
+- Windows Mixed Reality, zobacz stronę [często zadawanych](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) pytań
 - Azure Remote Rendering, zobacz stronę [często zadawanych](/azure/remote-rendering/resources/troubleshoot) pytań
 - Azure Spatial Anchors, zobacz stronę [często zadawanych](/azure/spatial-anchors/spatial-anchor-faq) pytań
 - Azure Object Anchors, zobacz stronę [często zadawanych](/azure/object-anchors/faq) pytań

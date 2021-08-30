@@ -13,20 +13,20 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401137"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190331"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Wdrażanie połączonych z chmurą HoloLens 2 na klientach zewnętrznych
 
-Ten przewodnik stanowi uzupełnienie przewodnika wdrażania [połączonego z chmurą.](hololens2-cloud-connected-overview.md) Jest on używany w sytuacjach, w których organizacja chce wysyłać urządzenia HoloLens 2 do obiektu klienta zewnętrznego do użytku krótkoterminowego lub długoterminowego. Klient zewnętrzny zaloguje się do urządzenia HoloLens 2 przy użyciu poświadczeń dostarczonych przez organizację i użyje usługi [Remote Assist,](/dynamics365/mixed-reality/remote-assist/ra-overview) aby skontaktować się z ekspertami. Ten przewodnik zawiera ogólne [HoloLens 2](#general-deployment-recommendations) zalecenia dotyczące wdrażania, które mają zastosowanie [](#common-external-client-deployment-concerns) do większości scenariuszy wdrażania programu HoloLens 2 zewnętrznych i typowe problemy, które klienci mają podczas wdrażania usługi Remote Assist do użytku zewnętrznego. 
+Ten przewodnik stanowi uzupełnienie przewodnika wdrażania [połączonego z chmurą.](hololens2-cloud-connected-overview.md) Jest on używany w sytuacjach, w których organizacja chce wysyłać HoloLens 2 urządzenia do obiektu klienta zewnętrznego w celu krótko- lub długoterminowego użycia. Klient zewnętrzny zaloguje się do urządzenia HoloLens 2 przy użyciu poświadczeń dostarczonych przez organizację i użyje usługi [Remote Assist,](/dynamics365/mixed-reality/remote-assist/ra-overview) aby skontaktować się z ekspertami. Ten przewodnik zawiera ogólne [HoloLens 2](#general-deployment-recommendations) zalecenia dotyczące wdrażania, które mają zastosowanie [](#common-external-client-deployment-concerns) do większości scenariuszy wdrażania programu HoloLens 2 zewnętrznych i typowe problemy, które klienci mają podczas wdrażania usługi Remote Assist do użytku zewnętrznego. 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-W przewodniku wdrażania połączonym z chmurą należy wdrożyć następującą infrastrukturę w celu zewnętrznego wdrożenia HoloLens 2. [](hololens2-cloud-connected-overview.md)
+W przewodniku wdrażania połączonym z chmurą należy wdrożyć następującą infrastrukturę, aby wdrożyć HoloLens 2 zewnętrznie. [](hololens2-cloud-connected-overview.md)
 
 - Dołączanie do usługi Azure AD z automatyczną rejestracją w usłudze MDM — zarządzane przez rozwiązanie MDM (Intune)
 - Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
@@ -70,7 +70,7 @@ Zalecamy następujące kroki w przypadku wdrożenia HoloLens 2:
 
 1. Wyłącz następujące (opcjonalne) możliwości:
     1. Możliwość ustawienia urządzenia w tryb dewelopera w [tym miejscu.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-    1. Możliwość podłączenia urządzenia HoloLens z komputerem w celu skopiowania [daty, wyłącz port USB.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
+    1. Możliwość podłączenia urządzenia HoloLens z komputerem w celu skopiowania daty [wyłącz port USB.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
        > [!NOTE]
         > Jeśli nie chcesz wyłączać portu USB, ale chcesz mieć możliwość zastosowania pakietu aprowizowania do urządzenia przy użyciu portu USB, postępuj zgodnie z instrukcjami dotyczącymi sposobu zezwalania na instalację [pakietu aprowizowania.](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 
@@ -78,7 +78,7 @@ Zalecamy następujące kroki w przypadku wdrożenia HoloLens 2:
 1. Zaktualizuj usługę Remote Assist do najnowszej wersji w ramach instalacji. Rozważ następujące dwie opcje:
     1. Przejdź do Windows **Microsoft Store --> Remote Assist --> i Zaktualizuj aplikację.**
     1. [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) — co umożliwia automatyczne aktualizacje aplikacji — jest domyślnie włączone. Urządzenie musi być podłączone do zasilania, aby otrzymywać aktualizacje.
-1. [Wyłącz wszystkie strony ustawień z](/hololens/settings-uri-list) wyjątkiem ustawień sieciowych, aby umożliwić użytkownikom łączenie się z sieciami gościa w lokacjach klienckich.
+1. [Wyłącz wszystkie strony ustawień z](/hololens/settings-uri-list) wyjątkiem ustawień sieciowych, aby umożliwić użytkownikom łączenie się z sieciami gości w lokacjach klienckich.
 1. [Zarządzanie HoloLens aktualizacjami](/hololens/hololens-updates)
     1. Opcja [kontrolowania aktualizacji systemu operacyjnego](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) lub zezwalania na swobodne przepływy.
 1. Ustaw [typowe ograniczenia dotyczące urządzeń.](/hololens/hololens-common-device-restrictions)
@@ -95,10 +95,10 @@ Teraz klienci zewnętrzni są gotowi do korzystania z HoloLens 2.
 
 ### <a name="ensure-that-external-clients-cant-communicate-with-one-another"></a>Upewnij się, że klienci zewnętrzni nie mogą komunikować się ze sobą
 
-Zdalne HoloLens do HoloLens nie są obsługiwane. Klienci mogą wyszukiwać, ale nie mogą komunikować się ze sobą. [Bariery informacyjne w Microsoft 365](/microsoft-365/compliance/information-barriers) mogą jeszcze bardziej ograniczyć możliwości wyszukiwania i wywołania klienta. Inną opcją jest użycie [Microsoft Teams wyszukiwania w katalogu o zakresie.](/MicrosoftTeams/teams-scoped-directory-search)
+Zdalne HoloLens do HoloLens nie są obsługiwane. Klienci mogą wyszukiwać, ale nie mogą komunikować się ze sobą. [Bariery informacyjne w Microsoft 365](/microsoft-365/compliance/information-barriers) mogą dodatkowo ograniczać możliwości wyszukiwania i wywołania klienta. Inną opcją jest użycie [Microsoft Teams wyszukiwania w katalogu o zakresie .](/MicrosoftTeams/teams-scoped-directory-search)
 
  > [!NOTE]
-> Ponieważ logowanie pojedyncze jest włączone, ważne jest, aby wyłączyć przeglądarkę przy użyciu Windows Defender [Application Control (WDAC).](/hololens/windows-defender-application-control-wdac) Jeśli klient zewnętrzny otworzy przeglądarkę i użyje internetowej wersji Teams, klient będzie miał dostęp do twojej historii czatu.
+> Ponieważ logowanie pojedyncze jest włączone, ważne jest, aby wyłączyć przeglądarkę przy użyciu Windows Defender [Application Control (WDAC).](/hololens/windows-defender-application-control-wdac) Jeśli klient zewnętrzny otworzy przeglądarkę i użyje wersji internetowej usługi Teams, klient będzie miał dostęp do historii czatu.
 
 ### <a name="ensure-that-clients-wont-have-access-to-company-resources"></a>Upewnij się, że klienci nie będą mieć dostępu do zasobów firmy
 
@@ -106,15 +106,15 @@ Istnieją dwie opcje, które należy wziąć pod uwagę.
 
 Pierwszą opcją jest podejście wielowarstwowe:
 
-1. Przypisz tylko licencje, których wymaga użytkownik. Jeśli nie przypiszesz kont OneDrive, Outlook, SharePoint, Yammer itp., użytkownik nie będzie miał dostępu do tych zasobów. Jedyną licencją, która będzie potrzebna użytkownikom, są licencje usługi Remote Assist, Intune i AAD, aby rozpocząć.
-1. Blokuj aplikacje (takie jak poczta e-mail), do których klienci nie mają mieć dostępu (zobacz [Aplikacje są ukryte lub ograniczone).](#apps are hidden or restricted)
+1. Przypisz tylko licencje wymagane przez użytkownika. Jeśli nie przypiszesz kont OneDrive, Outlook, SharePoint, Yammer itp., użytkownik nie będzie miał dostępu do tych zasobów. Jedyną licencją, która będzie potrzebna użytkownikom, są licencje usługi Remote Assist, Intune i AAD, aby rozpocząć.
+1. Blokuj aplikacje (takie jak poczta e-mail), do których klienci nie mają mieć dostępu (zobacz Aplikacje [są ukryte lub ograniczone).](#apps are hidden or restricted)
 1. Nie udostępniaj klientom nazw użytkowników ani haseł. Aby zalogować się do HoloLens 2, wymagana jest wiadomość e-mail i numeryczny numer PIN.
 
 Drugą opcją jest utworzenie oddzielnej dzierżawy hostowania klientów (zobacz obraz 1.1).
 
 **Obraz 1.1**
 
-![Obraz dzierżawy usługi](./images/hololens-service-tenant-image.png)
+![Obraz dzierżawy usługi.](./images/hololens-service-tenant-image.png)
 
 ### <a name="hidden-or-restricted-apps"></a>Aplikacje ukryte lub z ograniczeniami
 
@@ -129,7 +129,7 @@ Drugą opcją jest utworzenie oddzielnej dzierżawy hostowania klientów (zobacz
 
 ### <a name="ensure-that-clients-wont-have-access-to-chat-history"></a>Upewnij się, że klienci nie będą mieć dostępu do historii czatu
 
-Funkcja Remote Assist wyczyści historię czatu po każdej sesji. Jednak historia czatów będzie dostępna dla Microsoft Teams użytkowników.
+Funkcja Remote Assist wyczyści historię czatu po każdej sesji. Jednak historia czatu będzie dostępna dla Microsoft Teams użytkowników.
 
 > [!NOTE]
 > Ponieważ logowanie pojedyncze jest włączone, ważne jest, aby wyłączyć przeglądarkę przy użyciu Windows Defender [Application Control (WDAC).](/hololens/windows-defender-application-control-wdac)  Jeśli klient zewnętrzny otworzy przeglądarkę i użyje wersji internetowej usługi Teams, klient będzie miał dostęp do historii połączeń/czatów.

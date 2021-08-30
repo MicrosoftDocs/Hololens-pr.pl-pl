@@ -12,26 +12,26 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659425"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189770"
 ---
 # <a name="set-up-your-hololens-2"></a>Konfigurowanie aplikacji HoloLens 2
 
-Przy pierwszym włączeniu urządzenia HoloLens zostaniesz pokierowany przez proces konfigurowania urządzenia, logowania się przy użyciu konta użytkownika i HoloLens skalibrowania danych.  Ta sekcja zawiera 2 początkowe HoloLens 2.
+Przy pierwszym włączeniu urządzenia HoloLens zostaniesz pokierowany przez proces konfigurowania urządzenia, logowania się przy użyciu konta użytkownika i HoloLens danych.  Ta sekcja zawiera 2 początkowe HoloLens 2.
 
-W następnej sekcji dowiesz się, jak pracować z HoloLens hologramami. Aby przejść do tego artykułu, zobacz Getting around HoloLens 2 (Poruszanie [się po HoloLens 2).](hololens2-basic-usage.md)
+W następnej sekcji dowiesz się, jak pracować z HoloLens hologramami. Aby przejść do tego artykułu, zobacz Getting around HoloLens 2 (Poruszanie się [po HoloLens 2).](hololens2-basic-usage.md)
 
 ## <a name="before-you-start"></a>Przed rozpoczęciem
 
 Przed rozpoczęciem upewnij się, że są dostępne następujące elementy:
 
-**Połączenie sieciowe**. Aby ją skonfigurować, HoloLens połączenie z siecią. W HoloLens 2 można nawiązać połączenie z siecią Wi-Fi lub za pomocą sieci Ethernet (potrzebny jest adapter USB C-to-Ethernet). Przy pierwszym połączeniu będzie potrzebna otwarta sieć chroniona hasłem, która nie wymaga przechodzenia do witryny internetowej ani używania certyfikatów do nawiązywania połączenia. [Dowiedz się więcej o witrynach internetowych, HoloLens korzystają z usługi](hololens-offline.md).
+**Połączenie sieciowe**. W celu skonfigurowania połączenia HoloLens siecią. W HoloLens 2 można nawiązać połączenie za pomocą interfejsu Wi-Fi lub ethernet (potrzebny będzie adapter USB C-to-Ethernet). Przy pierwszym połączeniu będzie potrzebna otwarta sieć chroniona hasłem, która nie wymaga przechodzenia do witryny internetowej ani używania certyfikatów do nawiązywania połączenia. [Dowiedz się więcej o witrynach internetowych, HoloLens korzystają z usługi](hololens-offline.md).
 
-**W konto Microsoft**. Musisz również zalogować się do aplikacji HoloLens przy użyciu konta konto Microsoft (lub przy użyciu konta służbowego, jeśli organizacja jest właścicielem urządzenia). Jeśli nie masz bezpłatnej konto Microsoft, przejdź do account.microsoft.com [i](https://account.microsoft.com) skonfiguruj go bezpłatnie.
+**W konto Microsoft**. Musisz również zalogować się do konta HoloLens przy użyciu konta konto Microsoft (lub przy użyciu konta służbowego, jeśli organizacja jest właścicielem urządzenia). Jeśli nie masz bezpłatnej konto Microsoft, przejdź do account.microsoft.com [i](https://account.microsoft.com) skonfiguruj go bezpłatnie.
 
 **Bezpieczna, dobrze oświetlona przestrzeń bez zagrożeń związanych z trippingiem.** [Informacje o kondycji i bezpieczeństwie.](https://go.microsoft.com/fwlink/p/?LinkId=746661)
 
@@ -39,7 +39,7 @@ Przed rozpoczęciem upewnij się, że są dostępne następujące elementy:
 
 ## <a name="set-up-windows"></a>Instalowanie systemu Windows
 
-Przy pierwszym uruchomieniu aplikacji HoloLens 2 pierwszym zadaniem jest skonfigurowanie Windows Holographic.  Po uruchomieniu aplikacji HoloLens muzyka i logo firmy Microsoft.
+Przy pierwszym uruchomieniu komputera HoloLens 2 pierwszym zadaniem jest skonfigurowanie Windows Holographic.  Po uruchomieniu aplikacji HoloLens muzyka i logo firmy Microsoft.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
 
@@ -74,33 +74,33 @@ Zostanie pojawi się przycisk z logo firmy Microsoft. Naciśnij przycisk , a Hol
 
         <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
-        Po połyceniu hologramy będą wyświetlane prawidłowo nawet wtedy, gdy dasz w łące. Informacje o lokalizacji są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Aby uzyskać więcej informacji, zobacz [Temat Dane dotyczące pomięć i zabezpieczenia](hololens-calibration.md#calibration-data-and-security).
+        Po połyceniu hologramy będą wyświetlane prawidłowo nawet wtedy, gdy wizjer przesuwa się w łb. Informacje o opadach są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Aby uzyskać więcej informacji, zobacz [Dane dotyczące pomięć i zabezpieczenia](hololens-calibration.md#calibration-data-and-security).
 
         <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
-1. Połączenie z Internetem (wybierz Wi-Fi lub połączenie Ethernet).
+1. Połączenie z Internetem (wybierz pozycję Wi-Fi lub połączenie Ethernet).
 
-     HoloLens automatycznie ustawia strefę czasową na podstawie informacji uzyskanych Wi-Fi sieci. Po zakończeniu instalacji możesz zmienić strefę czasową przy użyciu Ustawienia aplikacji.
+     HoloLens automatycznie ustawia strefę czasową na podstawie informacji uzyskanych z Wi-Fi wirtualnej. Po zakończeniu instalacji możesz zmienić strefę czasową przy użyciu Ustawienia aplikacji.
 
-    ![Łączenie z siecią Wi-Fi](images/11-network.png)
+    ![Połączenie do sieci Wi-Fi.](images/11-network.png)
 
     > [!NOTE] 
-    > Jeśli po zakończeniu kroku Wi-Fi trzeba przełączyć się do innej sieci podczas nadal  w konfiguracji, możesz jednocześnie nacisnąć przyciski Regulacji głośności i Zasilanie, aby powrócić do tego kroku, jeśli używasz systemu operacyjnego w wersji z października 2019 r. lub nowszej.  W przypadku wcześniejszych wersji [](hololens-recovery.md) może być konieczne zresetowanie urządzenia lub jego ponowne uruchomienie w lokalizacji, w której sieć Wi-Fi nie jest dostępna, aby uniemożliwić automatyczne nawiązywanie połączenia.
+    > Jeśli po zakończeniu kroku Wi-Fi konieczne będzie przełączenie się do innej sieci podczas  nadal w  konfiguracji, możesz jednocześnie nacisnąć przyciski Regulacji głośności i Zasilanie, aby powrócić do tego kroku, jeśli używasz systemu operacyjnego w wersji z października 2019 r. lub nowszej. W przypadku wcześniejszych wersji [](hololens-recovery.md) może być konieczne zresetowanie urządzenia lub jego ponowne uruchomienie w lokalizacji, w której sieć Wi-Fi nie jest dostępna, aby uniemożliwić automatyczne nawiązywanie połączenia.
     > 
-    > Należy również pamiętać, że HoloLens instalacji ma limit czasu poświadczeń o dwóch minutach. Nazwę użytkownika/hasło należy wprowadzić w ciągu dwóch minut. W przeciwnym razie pole nazwy użytkownika zostanie automatycznie wyczyszone.
+    > Należy również pamiętać, że HoloLens instalacji istnieje limit czasu poświadczeń o dwóch minutach. Nazwę użytkownika/hasło należy wprowadzić w ciągu dwóch minut. W przeciwnym razie pole nazwy użytkownika zostanie automatycznie wyczyszone.
 
 1. HoloLens 2 wyszuka i zastosuje profil rozwiązania Autopilot, jeśli istnieje. Na tym ekranie nie jest potrzebna żadna akcja.
  
-    ![Wyszukiwanie profilów rozwiązania Autopilot](images/autopilot-profile-search.png) 
+    ![Wyszukiwanie profilów rozwiązania Autopilot.](images/autopilot-profile-search.png) 
 
 1. Kliknij **przycisk Akceptuj** na ekranie licencjonowania.
 
-    ![Windows licencji](images/windows-license-agreement.png)
+    ![Windows umowy licencyjnej.](images/windows-license-agreement.png)
 
-1. Zaloguj się do konta użytkownika. Wybierz między **właścicielem jest moja praca lub** szkoła, a **właścicielem jest moja .**
+1. Zaloguj się do konta użytkownika. Wybierz między **właścicielem jest moja praca lub** szkoła, a **właścicielem jest .**
 
-    ![Ustawianie użytkownika](images/13-device-owner.png)
-    - Po wybraniu opcji **My work or school owns it**(Moja praca lub szkoła jest jego właścicielem) zaloguj się przy użyciu konta usługi Azure AD. Jeśli Twoja organizacja korzysta z Azure AD — wersja Premium i skonfigurowała automatyczną rejestrację w HoloLens MDM, program HoloLens automatycznie. Jeśli Twoja organizacja nie korzysta z Azure AD — wersja Premium, automatyczna rejestracja w uciekierach MDM nie jest dostępna. W takim przypadku należy ręcznie zarejestrować [usługę HoloLens zarządzania urządzeniami.](hololens-enroll-mdm.md#different-ways-to-enroll)
+    ![Ustaw użytkownika.](images/13-device-owner.png)
+    - Po wybraniu opcji **My work or school owns it**(Moja praca lub szkoła jest jego właścicielem) zaloguj się przy użyciu konta usługi Azure AD. Jeśli Twoja organizacja korzysta z Azure AD — wersja Premium i skonfigurowała automatyczną rejestrację w HoloLens MDM, program HoloLens automatycznie. Jeśli Twoja organizacja nie używa usługi Azure AD — wersja Premium, automatyczna rejestracja w uciekierach mdm nie jest dostępna. W takim przypadku należy ręcznie zarejestrować [usługę HoloLens zarządzania urządzeniami.](hololens-enroll-mdm.md#different-ways-to-enroll)
 
         1. Wprowadź informacje o koncie organizacyjnym.
         1. Zaakceptuj zasady zachowania poufności informacji i umowę licencyjną użytkownika końcowego.
@@ -109,7 +109,7 @@ Zostanie pojawi się przycisk z logo firmy Microsoft. Naciśnij przycisk , a Hol
 
     - Po wybraniu opcji **I own it (Jestem** właścicielem) zaloguj się przy użyciu konto Microsoft. Po zakończeniu instalacji można ręcznie zarejestrować program [HoloLens zarządzania urządzeniami.](hololens-enroll-mdm.md#different-ways-to-enroll)
 
-        1. Wprowadź informacje konto Microsoft danych.
+        1. Wprowadź informacje konto Microsoft użytkownika.
         2. Wprowadź hasło. Jeśli Twoja konto Microsoft wymaga [weryfikacji dwuetapowej (2FA),](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)ukończ proces weryfikacji.
 
         
@@ -123,11 +123,11 @@ Zostanie pojawi się przycisk z logo firmy Microsoft. Naciśnij przycisk , a Hol
   
 1. Skonfigurujesz numer PIN, aby zalogować się do urządzenia. Ten numer PIN jest specyficzny dla urządzenia. 
 
-    ![Konfigurowanie Windows Hello](images/setup-windows-hello.png)
+    ![Skonfiguruj Windows Hello.](images/setup-windows-hello.png)
 
-    ![Konfigurowanie Windows Hello PIN](images/windows-hello-pin.png)
+    ![Skonfiguruj Windows Hello PIN.](images/windows-hello-pin.png)
 
-    ![Windows Hello Instalacja powiodła się](images/windows-hello-successful.png) 
+    ![Windows Hello Instalacja powiodła się.](images/windows-hello-successful.png) 
 
     
 1. Wybierz, czy włączyć mowę na HoloLens 2.
@@ -155,7 +155,7 @@ Zostanie pojawi się przycisk z logo firmy Microsoft. Naciśnij przycisk , a Hol
 
 ## <a name="next-steps"></a>Następne kroki
 
-1. Zacznij od razu korzystać z aplikacji Mixed Reality i nawigować po Windows 10 na komputerze HoloLens — zapoznaj się z aplikacją **Wskazówki,** aby uzyskać praktyczne samouczki dotyczące interakcji za pomocą rąk. Użyj gestu uruchamiania, aby przejść do przycisku Start lub powiedzieć "Przejdź do startu", a następnie wybierz pozycję Wskazówki.
+1. Zacznij od razu korzystać z aplikacji Mixed Reality i nawigować po Windows 10 na komputerze HoloLens — zapoznaj się z aplikacją **Wskazówki,** aby uzyskać praktyczne samouczki dotyczące interakcji za pomocą rąk. Użyj gestu uruchamiania, aby przejść do strony Start lub powiedzieć "Przejdź do startu", a następnie wybierz pozycję Wskazówki.
 
 1. Kliknij poniżej, aby kontynuować czytanie na temat HoloLens 2.
 
