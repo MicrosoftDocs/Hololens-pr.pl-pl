@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189090"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428536"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Połączenie do Bluetooth i USB-C
 
@@ -32,7 +32,7 @@ HoloLens 2 obsługuje następujące klasy urządzeń Bluetooth:
 - Urządzenia wyjściowe audio (A2DP)
 
 HoloLens 2 obsługuje następujące interfejsy BLUETOOTH API:
-- Serwer [](/windows/uwp/devices-sensors/gatt-server) i [klient](/windows/uwp/devices-sensors/gatt-client) DNS
+- Serwer [](/windows/uwp/devices-sensors/gatt-server) i [klient](/windows/uwp/devices-sensors/gatt-client) DHCP
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
 > Może być trzeba zainstalować odpowiednie aplikacje towarzyszące z Microsoft Store, aby w rzeczywistości korzystać z urządzeń HID i THE.
@@ -44,15 +44,15 @@ HoloLens (1. generacji) obsługuje następujące klasy urządzeń Bluetooth:
 - [HoloLens (1. generacja)](hololens1-clicker.md)
 
 > [!NOTE]
-> Inne typy urządzeń Bluetooth, takie jak głośniki, zestawy nagłowne, smartfony i konsoli do gier, mogą być wyświetlane jako dostępne w HoloLens ustawień. Jednak te urządzenia nie są obsługiwane na urządzeniach HoloLens (1. generacji). Aby uzyskać więcej informacji, [zobacz HoloLens Ustawienia lista urządzeń jako dostępnych, ale urządzenia nie działają.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
+> Inne typy urządzeń Bluetooth, takie jak głośniki, zestawy nagłowne, smartfony i konsoli do gier, mogą być wyświetlane jako dostępne w HoloLens ustawień. Jednak te urządzenia nie są obsługiwane na urządzeniach HoloLens (1. generacji). Aby uzyskać więcej informacji, zobacz HoloLens Ustawienia lista urządzeń [jako dostępnych, ale urządzenia nie działają.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Parowanie Bluetooth klawiatury lub myszy
 
 1. Włącz klawiaturę lub mysz, aby było możliwe do odnajdywania. Aby dowiedzieć się, jak sprawić, aby urządzenie było wykrywalne, poszukaj informacji na urządzeniu (lub w jego dokumentacji) lub odwiedź witrynę internetową producenta.
 
-1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do opcji **Start**, a następnie wybierz **pozycję Ustawienia**.
+1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do opcji **Start**, a następnie wybierz pozycję **Ustawienia**.
 
-1. Wybierz **pozycję Urządzenia** i upewnij się, Bluetooth jest wł.  
+1. Wybierz **pozycję** Urządzenia i upewnij się, Bluetooth jest wł.  
 
 1. Po wyświetleniu nazwy urządzenia wybierz pozycję **Sparuj**, a następnie postępuj zgodnie z instrukcjami.
 
@@ -60,9 +60,9 @@ HoloLens (1. generacji) obsługuje następujące klasy urządzeń Bluetooth:
 
 Ta procedura wyłącza składniki RF przycisku radiowego Bluetooth i wyłącza wszystkie Bluetooth na Microsoft HoloLens.
 
-1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do opcji Start **,** a następnie wybierz pozycję Ustawienia  >  **Urządzenia.**
+1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do strony **Start,** a następnie wybierz pozycję Ustawienia  >  **Urządzenia.**
 
-1. Przesuń przełącznik suwaka dla **Bluetooth** do **pozycji** Wyłączone.
+1. Przesuń przełącznik suwaka dla **Bluetooth** do **pozycji Wyłączone.**
 
 ## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Połączenie USB-C
 
@@ -70,7 +70,7 @@ HoloLens 2 obsługuje następujące klasy urządzeń USB-C:
 
 - Urządzenia pamięci masowej (takie jak dyski kciuka)
 - Karty Ethernet (w tym ethernet i ładowanie)
-- Adaptery audio usb-C-do-3,5 mm
+- Adaptery audio usb-C-do-3,5mm
 - Cyfrowe zestawy nagłowne USB-C (w tym adaptery zestawów nagłownych i ładowanie)
 - Zewnętrzne mikrofony USB-C ([Windows Holographic, wersja 21H1](hololens-release-notes.md#windows-holographic-version-21h1) lub nowsza)
 - Mysz przewodowa
@@ -79,7 +79,7 @@ HoloLens 2 obsługuje następujące klasy urządzeń USB-C:
 
 
 > [!NOTE]
-> W odpowiedzi na opinie klientów włączyliśmy ograniczoną obsługę łączności komórkowej bezpośrednio z siecią HoloLens za pośrednictwem portu USB-C. Zobacz [Połączenie do sieci komórkowej i 5G,](hololens-cellular.md) aby uzyskać więcej informacji.
+> W odpowiedzi na opinie klientów włączyliśmy ograniczoną obsługę łączności komórkowej związanej bezpośrednio z siecią HoloLens za pośrednictwem portu USB-C. Zobacz [Połączenie do sieci komórkowej i 5G,](hololens-cellular.md) aby uzyskać więcej informacji.
 
 ### <a name="usb-c-external-microphone-support"></a>Obsługa mikrofonu zewnętrznego USB-C
 
@@ -87,11 +87,11 @@ HoloLens 2 obsługuje następujące klasy urządzeń USB-C:
 > Podłączanie **mikrofonu USB nie spowoduje automatycznego ustawienia go jako urządzenia wejściowego.** Podczas podłączania zestawu mikrofonów USB C użytkownicy będą obserwowali, że dźwięk telefonu komórkowego zostanie automatycznie przekierowany do mikrofonu, ale system operacyjny HoloLens określa priorytet wewnętrznej macierzy mikrofonu nad każdym innym urządzeniem wejściowym. **Aby użyć mikrofonu USB-C, wykonaj poniższe kroki.**
 
 > [!NOTE]
-> Mikrofony zewnętrzne nie mogą być używane w kompilacjach przed Windows Holographic w wersji [21H1](hololens-release-notes.md#windows-holographic-version-21h1) lub wyższej. 
+> Nie można używać zewnętrznych mikrofonów w kompilacjach przed Windows Holographic w wersji [21H1](hololens-release-notes.md#windows-holographic-version-21h1) lub wyższej. 
 
 Użytkownicy mogą wybierać zewnętrzne mikrofony podłączone do portu USB C przy użyciu **panelu Ustawień** dźwięku. Mikrofony USB-C mogą służyć do wywoływania, nagrywania itp.
 
-Otwórz aplikację **Ustawienia** wybierz **pozycję Dźwięk**  >  **systemowy.**
+Otwórz aplikację **Ustawienia** i wybierz **pozycję Dźwięk**  >  **systemowy.**
 
 ![Dźwięk Ustawienia.](images/usbc-mic-1.jpg)
 
@@ -110,11 +110,11 @@ Otwórz aplikację **Ustawienia** wybierz **pozycję Dźwięk**  >  **systemowy.
 
 #### <a name="what-about-bluetooth-microphone-support"></a>Co z obsługą Bluetooth mikrofonu?
 
-Niestety, Bluetooth mikrofony nie są obecnie obsługiwane na HoloLens 2.
+Niestety, Bluetooth mikrofony nadal nie są obecnie obsługiwane na HoloLens 2.
 
 ### <a name="usb-c-hubs"></a>Koncentratory USB-C
 
-Niektórzy użytkownicy mogą wymagać połączenia wielu urządzeń jednocześnie. W przypadku użytkowników, którzy chcą używać mikrofonu [USB-C](#usb-c-external-microphone-support) wraz z innym połączonym urządzeniem, koncentratory USB-C mogą pasować do potrzeb klienta. Firma Microsoft nie przetestowała tych urządzeń ani nie możemy zalecić żadnych określonych marek.
+Niektórzy użytkownicy mogą wymagać połączenia wielu urządzeń jednocześnie. W przypadku użytkowników, którzy chcą używać mikrofonu [USB-C](#usb-c-external-microphone-support) wraz z innym połączonym urządzeniem, koncentratory USB-C mogą być dopasowane do potrzeb klienta. Firma Microsoft nie przetestowała tych urządzeń ani nie możemy zalecić żadnych określonych marek.
 
 **Wymagania dotyczące koncentratora USB-C i podłączonych urządzeń:**
 

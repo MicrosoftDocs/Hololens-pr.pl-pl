@@ -1,44 +1,46 @@
 ---
-title: Windows Defender Kontrola aplikacji — WDAC
-description: Omówienie tego, czym Windows Defender jest kontrola aplikacji i jak za jej pomocą zarządzać urządzeniami HoloLens rzeczywistości mieszanej.
+title: Windows Defender Kontrola aplikacji (WDAC)
+description: Omówienie funkcji Windows Defender Application Control i sposobu używania jej do zarządzania HoloLens rzeczywistości mieszanej.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/26/2020
+ms.date: 9/3/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665560"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427335"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Kontrola aplikacji — WDAC
 
-Funkcja WDAC umożliwia administratorowi IT skonfigurowanie urządzeń tak, aby blokowały uruchamianie aplikacji na urządzeniach. Różni się to od metod ograniczeń urządzenia, takich jak tryb kiosku, w którym użytkownik jest prezentowany z interfejsem użytkownika, który ukrywa aplikacje na urządzeniu, ale można je nadal uruchomiać. Podczas implementowania usługi WDAC aplikacje są nadal widoczne na liście Wszystkie aplikacje, ale wDAC zatrzymuje te aplikacje i procesy mogą być uruchomione przez użytkownika urządzenia.
+## <a name="overview"></a>Omówienie
+
+Funkcja WDAC umożliwia skonfigurowanie HoloLens blokowania uruchamiania aplikacji. Różni się on od trybu kiosku, w którym interfejs użytkownika ukrywa aplikacje, ale nadal można je uruchomiać. Za pomocą usługi WDAC można wyświetlić aplikacje, ale nie można ich uruchomić.
+
+> [!NOTE]
+> Gdy użytkownicy końcowi spróbują uruchomić aplikację zablokowaną przez usługi WDAC na HoloLens, nie zostaną powiadomieni o tym, że nie mogą uruchomić aplikacji.
 
 Do urządzenia można przypisać więcej niż jedną zasady WDAC. Jeśli w systemie ustawiono wiele zasad WDAC, zostaną one wprowadzone w najbardziej restrykcyjnych zasadach. 
 
-> [!NOTE]
-> Gdy użytkownicy końcowi spróbują uruchomić aplikację zablokowaną przez centrum WDAC, na HoloLens nie otrzymają powiadomienia o tym, że nie mogą uruchomić tej aplikacji.
-
 Poniżej przedstawiono przewodnik dla użytkowników, aby dowiedzieć się, jak używać funkcji [WDAC i Windows PowerShell](/mem/intune/configuration/custom-profile-hololens)do zezwalania na aplikacje lub blokowania ich na urządzeniach z systemem HoloLens 2 przy użyciu usługi Microsoft Intune .
 
-Gdy użytkownicy wyszukują aplikacje zainstalowane na komputerze Windows 10 pc przy użyciu pierwszego przykładowego kroku, może być konieczne kilka prób zawężenia wyników.
+Gdy użytkownicy wyszukują aplikacje zainstalowane na komputerze Windows 10 przy użyciu pierwszego przykładowego kroku, może być konieczne kilka prób zawężenia wyników.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
 ``` 
 
-Jeśli nie znasz pełnej nazwy pakietu, być może trzeba będzie kilka razy uruchomić "Get-AppxPackage -name \* YourGueGuess", aby \* go znaleźć. Następnie po uruchomieniu nazwy uruchom "$package 1 = Get-AppxPackage -name Actual.PackageName"
+Jeśli nie znasz pełnej nazwy pakietu, być może trzeba będzie kilka razy uruchomić "Get-AppxPackage -name \* YourKowaćGuess", aby \* go znaleźć. Następnie po uruchomieniu nazwy uruchom "$package 1 = Get-AppxPackage -name Actual.PackageName"
 
-Na przykład uruchomienie następującego ciągu dla Microsoft Edge zwróci więcej niż jeden wynik, ale z tej listy można zidentyfikować, że pełna nazwa, która jest potrzebna, to Microsoft.MicrosoftEdge.
+Na przykład uruchomienie następującego kodu dla Microsoft Edge zwróci więcej niż jeden wynik, ale z tej listy można zidentyfikować, że pełna nazwa, która jest potrzebna, to Microsoft.MicrosoftEdge.
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -46,7 +48,7 @@ Get-AppxPackage -name *edge*
 
 ## <a name="package-family-names-for-apps-on-hololens"></a>Nazwy rodzin pakietów dla aplikacji na HoloLens
 
-W przewodniku połączonym powyżej możesz ręcznie edytować newPolicy.xml i dodawać reguły dla aplikacji, które są instalowane tylko na HoloLens z nazwami rodzin pakietów. Czasami istnieją aplikacje, których można użyć, które nie znajdują się na komputerze stacjonarnym, które chcesz dodać do zasad.
+W powyższym przewodniku można ręcznie edytować i newPolicy.xml dla aplikacji, które są instalowane tylko na HoloLens z nazwami rodzin pakietów. Czasami istnieją aplikacje, których możesz użyć, które nie znajdują się na komputerze stacjonarnym, które chcesz dodać do zasad.
 
 Poniżej znajduje się lista najczęściej używanych i używanych In-Box dla HoloLens 2.
 
@@ -73,7 +75,7 @@ Poniżej znajduje się lista najczęściej używanych i używanych In-Box dla Ho
 
 ### <a name="how-to-find-a-package-family-name"></a>Jak znaleźć nazwę rodziny pakietów
 
-Jeśli aplikacji nie ma na tej liście, użytkownik może użyć usługi Portal urządzeń połączonej z urządzeniem HoloLens 2, na których zainstalowano aplikację, w celu określenia wartości PackageRelativeID, a następnie uzyskania wartości PackageFamilyName.
+Jeśli aplikacja nie znajduje się na tej liście, użytkownik może użyć usługi Portal urządzeń połączonej z urządzeniem HoloLens 2, na których zainstalowano aplikację, aby określić identyfikator PackageRelativeID, a następnie pobrać element PackageFamilyName.
 
 1. Zainstaluj aplikację na urządzeniu HoloLens 2. 
 1. Otwórz Ustawienia -> Updates & Security -> Dla deweloperów i włącz tryb **dewelopera,** a następnie **portal urządzeń.** 
@@ -81,6 +83,5 @@ Jeśli aplikacji nie ma na tej liście, użytkownik może użyć usługi Portal 
 1. Po Portal urządzeń przejdź do widoków, a **następnie** **wybierz pozycję Aplikacje.** 
 1. Na panelu Zainstalowane aplikacje wybierz zainstalowaną aplikację przy użyciu listy rozwijanej. 
 1. Znajdź packageRelativeID. 
-1. Skopiuj znaki aplikacji przed znakiem !. Będzie to Twoja nazwa PackageFamilyName.
-
+1. Skopiuj znaki aplikacji przed `!` znakiem , które będą twoimi znakami PackageFamilyName.
 

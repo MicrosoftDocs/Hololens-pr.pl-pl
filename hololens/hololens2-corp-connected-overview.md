@@ -1,5 +1,5 @@
 ---
-title: Przewodnik wdrażania — połączone z HoloLens 2 z usługą Dynamics 365 — przewodniki — omówienie
+title: Przewodnik wdrażania — połączone z HoloLens 2 przewodniki usługi Dynamics 365 — omówienie
 description: Dowiedz się, jak zarejestrować HoloLens 2 urządzenia za pomocą przewodników usługi Dynamics 365 za pośrednictwem firmowej sieci połączonej.
 keywords: HoloLens, zarządzanie, połączenia firmowe, przewodniki usługi Dynamics 365, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
 author: joyjaz
@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190178"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427434"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Przewodnik wdrażania — przewodniki dotyczące HoloLens 2 z usługą Dynamics 365 — omówienie
 
@@ -33,7 +33,7 @@ Powinna być już w tym miejscu następująca infrastruktura:
 - Wi-Fi
     - Wewnętrzna sieć firmowa z dostępem do zasobów wewnętrznych i ograniczonym dostępem do Internetu lub usług w chmurze
     - Uwierzytelnianie certyfikatu opartego na urządzeniach.
-- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment (Wymagane są subskrypcje[usługi Azure AD P1)](/azure/active-directory/fundamentals/active-directory-whatis)
+- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment (Azure AD P1 subscription needed) (Dołączanie do usługi Azure AD za pomocą automatycznej rejestracji w usłudze MDM ([potrzebna jest subskrypcja usługi Azure AD P1)](/azure/active-directory/fundamentals/active-directory-whatis)
 - Zarządzanie urządzeniami przenośnymi (Intune)
     - Co najmniej jedna aplikacja jest wdrażana za pośrednictwem rozwiązania MDM.
 - Sieć 
@@ -41,7 +41,7 @@ Powinna być już w tym miejscu następująca infrastruktura:
     - Konfiguracja serwera proxy
 - Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
     - Obsługiwana jest jedna lub wielu użytkowników na urządzenie.
-- Różne poziomy konfiguracji blokady urządzenia stosowanych na podstawie konkretnych przypadków użycia, od w pełni otwartego do kiosku z jedną aplikacją.
+- Różne poziomy konfiguracji blokady urządzeń stosowanych na podstawie konkretnych przypadków użycia, od w pełni otwartego do kiosku z jedną aplikacją.
 
 ## <a name="guides-licensing-and-requirements"></a>[Licencjonowanie przewodników i wymagania](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 

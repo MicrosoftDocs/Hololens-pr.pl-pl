@@ -17,20 +17,20 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665254"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428475"
 ---
 # <a name="intune--company-portal"></a>Intune & Portal firmy
 
-Usługa Mobile Zarządzanie urządzeniami (MDM) umożliwia wdrażanie własnych aplikacji niestandardowych za pośrednictwem usługi [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) bezpośrednio na urządzeniach HoloLens mobilnych. Microsoft Intune to usługa chmurowa, której głównym celem jest zarządzanie urządzeniami mobilnymi (MDM, mobile device management) i zarządzanie aplikacjami mobilnymi (MAM, mobile application management). Usługa Intune jest zawarta w pakiecie [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) firmy Microsoft i pozwala użytkownikom na wydajną pracę przy zachowaniu ochrony danych organizacji. Aby dowiedzieć się więcej o usłudze Intune, przeczytaj [Co to jest usługa Intune.](/mem/intune/fundamentals/what-is-intune)
+Usługa Mobile Zarządzanie urządzeniami (MDM) umożliwia wdrażanie własnych aplikacji niestandardowych za pośrednictwem usługi [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) bezpośrednio na HoloLens urządzeniach. Microsoft Intune to usługa chmurowa, której głównym celem jest zarządzanie urządzeniami mobilnymi (MDM, mobile device management) i zarządzanie aplikacjami mobilnymi (MAM, mobile application management). Usługa Intune jest zawarta w pakiecie [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) firmy Microsoft i pozwala użytkownikom na wydajną pracę przy zachowaniu ochrony danych organizacji. Aby dowiedzieć się więcej o usłudze Intune, przeczytaj [Co to jest usługa Intune.](/mem/intune/fundamentals/what-is-intune)
 
 ## <a name="setup"></a>Konfigurowanie
 
-1. Upload aplikację do aplikacji biznesowej lub przekaż aplikację niestandardową do dzierżawy usługi Intune. Zobacz też: [Enterprise zarządzania aplikacją.](/windows/client-management/mdm/enterprise-app-management)
+1. Upload aplikację do aplikacji biznesowej lub przekaż aplikację niestandardową do dzierżawy usługi Intune. Zobacz też: [zarządzanie Enterprise aplikacji.](/windows/client-management/mdm/enterprise-app-management)
 
 2. [Przypisz aplikację do grupy](/mem/intune/apps/apps-deploy). W zależności od wybranego typu przypisania aplikacja może zostać dostarczona automatycznie lub może być łatwo ściągnięta, jeśli masz wybór aplikacji.
 

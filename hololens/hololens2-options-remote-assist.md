@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 24fefeb941fd75e4f6a6b18fbfd8a1c80a7bbf54dcdee233c6513338b44f9ab5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658791"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428133"
 ---
-# <a name="hololens-2-with-remote-assist"></a>HoloLens 2 z usługą Remote Assist
+# <a name="hololens-2-with-remote-assist"></a>HoloLens 2 za pomocą funkcji Remote Assist
 
-Pierwszego dnia możesz rozpocząć pracę z HoloLens 2 i ostateczną aplikacją komunikacji rzeczywistości mieszanej firmy Microsoft dostępną razem. Pomóż całej firmie pracować wydajniej i wprowadzać innowacje z większą celą. Poznaj teraz rzeczywistość mieszaną z usługą Dynamics 365 i rozwiązaniami od partnerów branżowych.
+Pierwszego dnia możesz rozpocząć pracę z HoloLens 2 i ostateczną aplikacją komunikacji rzeczywistości mieszanej firmy Microsoft dostępną razem. Pomóż całej firmie pracować wydajniej i wprowadzać innowacje z większą celową wydajnością. Poznaj teraz rzeczywistość mieszaną z usługą Dynamics 365 i rozwiązaniami od partnerów branżowych.
 
 ## <a name="learn-about-hololens-2-with-remote-assist"></a>Dowiedz się więcej o HoloLens 2 za pomocą usługi Remote Assist
 - Możesz używać tych urządzeń w środowisku komercyjnym dla swojej firmy. Zamów tyle, ile potrzebujesz!
@@ -33,7 +33,7 @@ Pierwszego dnia możesz rozpocząć pracę z HoloLens 2 i ostateczną aplikacją
 
 ## <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>Oto co należy zrobić w przypadku wersji HoloLens 2 z usługą Dynamics 365 Remote Assist
 
-Utworzono konkretny przewodnik ułatwiający wdrażanie urządzeń HoloLens na dużą skalę. Przewodnik zawiera konfigurację end-to-end dla Azure Active Directory do sprawdzania poprawności zdalnego wywołania pomocy. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem wdrażania — HoloLens 2 z [usługą Remote Assist.](hololens2-cloud-connected-overview.md)
+Utworzono konkretny przewodnik ułatwiający wdrażanie HoloLens na dużą skalę. Przewodnik zawiera konfigurację end-to-end dla Azure Active Directory do sprawdzania poprawności wywołania funkcji Remote Assist. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem wdrażania — HoloLens 2 z [usługą Remote Assist.](hololens2-cloud-connected-overview.md)
 
 | Punkt kontrolny  | Wynik                                |
 |-------------|----------------------------------------|
@@ -44,7 +44,7 @@ Utworzono konkretny przewodnik ułatwiający wdrażanie urządzeń HoloLens na d
 
 ## <a name="next-steps"></a>Następne kroki
 
-1. Zacznij od razu korzystać z aplikacji Mixed Reality i nawigować po Windows 10 na komputerze HoloLens — zapoznaj się z aplikacją **Wskazówki,** aby uzyskać praktyczne samouczki dotyczące interakcji za pomocą rąk. Użyj gestu uruchamiania, aby przejść do przycisku Start lub powiedzieć "Przejdź do startu", a następnie wybierz pozycję Wskazówki.
+1. Zacznij od razu wchodzić w interakcje z Mixed Reality i nawigować po Windows 10 na komputerze HoloLens — zapoznaj się z aplikacją **Wskazówki,** aby uzyskać praktyczne samouczki dotyczące interakcji za pomocą rąk. Użyj gestu uruchamiania, aby przejść do przycisku Start lub powiedzieć "Przejdź do startu", a następnie wybierz Wskazówki.
 1. Kliknij poniżej, aby kontynuować czytanie na temat HoloLens 2.
 
 > [!div class="nextstepaction"]

@@ -1,6 +1,6 @@
 ---
 title: Instalowanie zlokalizowanych wersji HoloLens
-description: Dowiedz się, jak zainstalować zlokalizowane wersje programu HoloLens (1. generacji), w tym chińskie i japońskie.
+description: Dowiedz się, jak zainstalować zlokalizowane wersje HoloLens (1. generacji), w tym chińskie i japońskie.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,30 +13,30 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: fe29e4ed611f86764f0db576b1a8794fa0ceec3047cadd26f502209faadea8b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661793"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427732"
 ---
 # <a name="install-localized-versions-of-hololens-1st-gen"></a>Instalowanie zlokalizowanych wersji HoloLens (1. generacja)
 
-Aby przełączyć się do chińskiej lub japońskiej wersji programu HoloLens, należy pobrać kompilację dla języka na komputerze przy użyciu narzędzia Windows Device Recovery Tool (WDRT), a następnie zainstalować ją na komputerze HoloLens.
+Aby przełączyć się do chińskiej lub japońskiej wersji programu HoloLens, należy użyć narzędzia Windows Device Recovery Tool (WDRT), aby pobrać kompilację dla języka na komputerze, a następnie zainstalować ją na komputerze HoloLens.
 
 > [!IMPORTANT]
-> Zainstalowanie kompilacji języka chińskiego lub japońskiego przy użyciu programu WDRT HoloLens usunięcie istniejących danych, takich jak pliki i ustawienia osobiste, z HoloLens. 
+> Zainstalowanie kompilacji języka chińskiego lub japońskiego przy użyciu usługi WDRT HoloLens usunięcie istniejących danych, takich jak pliki i ustawienia osobiste, z HoloLens. 
 
 1. Na komputerze pobierz i zainstaluj narzędzie [Windows Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379)
-1. Pobierz pakiet dla języka, którego chcesz użyć na komputerze: [chiński uproszczony](https://aka.ms/hololensdownload-ch) lub [japoński.](https://aka.ms/hololensdownload-jp)
-1. Po zakończeniu pobierania wybierz **pozycję** Eksplorator plików Pliki do  >  **pobrania.** Kliknij prawym przyciskiem myszy właśnie pobrany folder, a następnie wybierz polecenie **Wyodrębnij** wszystkie wyodrębnij,  >   aby go rozpakować.
+1. Pobierz pakiet dla języka, którego chcesz użyć na komputer: [chiński uproszczony](https://aka.ms/hololensdownload-ch) lub [japoński.](https://aka.ms/hololensdownload-jp)
+1. Po zakończeniu pobierania wybierz pozycję **Pobierz Eksplorator plików**  >  **pobierania.** Kliknij prawym przyciskiem myszy właśnie pobrany folder, a następnie wybierz polecenie **Wyodrębnij** wszystko,  >   aby go rozpakować.
 1. Połączenie urządzenie HoloLens do komputera przy użyciu dostarczonego kabla mikro USB. (Nawet jeśli używasz innych kabli do łączenia urządzenia HoloLens, ten z nich działa najlepiej).
 1. Po tym, jak narzędzie automatycznie wykryje HoloLens, wybierz kafelek Microsoft HoloLens aplikacji.
 1. Na następnym ekranie wybierz opcję **Ręczne** wybieranie pakietu i wybierz plik instalacyjny, który znajduje się w folderze rozpakowanym   w kroku 4. (Poszukaj pliku z rozszerzeniem ".ffu". 
 1. Wybierz **pozycję Zainstaluj oprogramowanie** i postępuj zgodnie z instrukcjami. 
 1. Po zainstalowaniu kompilacji automatycznie HoloLens instalacji. Umieść urządzenie i postępuj zgodnie z instrukcjami konfiguracji. 
 
-Po zakończeniu instalacji przejdź do usługi **Ustawienia** Update & Security Windows niejawny program testów i sprawdź, czy skonfigurowano odbieranie najnowszych kompilacji w wersji  >    >  zapoznawczej. Podobnie jak w przypadku kompilacji angielskiej wersji zapoznawczej, Windows niejawny program testów zapewnia, że wersje chińskie i japońskie HoloLens są aktualne dzięki najnowszym kompilacjom w wersji zapoznawczej.
+Po zakończeniu instalacji przejdź do usługi **Ustawienia** Update & Security Windows niejawny program testów i sprawdź, czy skonfigurowano odbieranie najnowszych kompilacji w wersji  >    >  zapoznawczej. Podobnie jak w przypadku kompilacji w wersji zapoznawczej w języku angielskim, Windows niejawny program testów wersja zapoznawcza zapewnia, że wersje chińskie i japońskie HoloLens są aktualne dzięki najnowszym kompilacjom w wersji zapoznawczej.
 
 > [!NOTE]
 >  

@@ -16,31 +16,31 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d1eef6bdf463aa400504af7b35a0fd2b8e2b44499d6ff7b93e70a2dd5952ef88
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b8bda049f0ef4610dcf0ca6fe81d89dd5a316e3e
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662851"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427083"
 ---
 # <a name="map-physical-spaces-with-hololens"></a>Mapowanie przestrzeni fizycznych za pomocą HoloLens
 
 HoloLens łączy hologramy ze światem fizycznym. Aby to zrobić, HoloLens poznać świat fizyczny wokół Ciebie i zapamiętać, gdzie umieszczasz hologramy w tej przestrzeni.
 
-W czasie HoloLens tworzy mapę *przestrzenną* środowiska, które widział.  HoloLens aktualizuje mapę w przypadku zmiany środowiska. Tak długo, jak użytkownik jest zalogowany i urządzenie jest włączone, HoloLens tworzy i aktualizuje mapy przestrzenne. Jeśli urządzenie jest wstrzymywane lub zużywane przy użyciu kamer wskazywanych w przestrzeni, HoloLens próbuje zamapować obszar. Chociaż HoloLens uczy się przestrzeni w naturalny sposób, istnieją sposoby, dzięki którym można HoloLens szybciej i wydajniej mapować przestrzeń.  
+W czasie HoloLens tworzy mapę *przestrzenną* środowiska, które widział.  HoloLens aktualizuje mapę w przypadku zmiany środowiska. Tak długo, jak użytkownik jest zalogowany i urządzenie jest włączone, HoloLens tworzy i aktualizuje mapy przestrzenne. Jeśli urządzenie jest wstrzymywane lub zużywane przy użyciu kamer wskazywanych w przestrzeni, HoloLens próbuje zamapować obszar. Chociaż HoloLens uczy się kosmosu w naturalny sposób, istnieją sposoby, dzięki którym HoloLens szybciej i wydajniej mapować przestrzeń.  
 
 > [!NOTE]
-> Jeśli urządzenie HoloLens nie może zamapować przestrzeni lub nie jest nachylić, może HoloLens tryb ograniczony. W trybie ograniczonym nie będzie można umieszczać hologramów w okolicy.
+> Jeśli urządzenie HoloLens nie może zamapować twojej przestrzeni lub jest poza jej HoloLens może przejść w tryb ograniczony. W trybie ograniczonym nie będzie można umieszczać hologramów w okolicy.
 
 W tym artykule wyjaśniono, HoloLens obszarów mapy, jak poprawić mapowanie przestrzenne i jak zarządzać danymi przestrzennych, które HoloLens dane.
 
 ## <a name="choosing-and-setting-up-and-your-space"></a>Wybieranie i konfigurowanie miejsca
 
-Funkcje w środowisku mogą utrudniać HoloLens interpretacji spacji. Poziomy światła, materiały w przestrzeni, układ obiektów i inne mogą mieć wpływ na sposób mapowania HoloLens obszaru.
+Funkcje w środowisku mogą utrudniać HoloLens interpretacji przestrzeni. Poziomy światła, materiały w przestrzeni, układ obiektów i inne mogą mieć wpływ HoloLens mapowania obszaru.
 
-HoloLens działa najlepiej w niektórych rodzajach środowisk. Aby utworzyć najlepszą mapę przestrzenną, wybierz pomieszczenie z odpowiednim oświetleniem i dużą ilością miejsca. Unikaj ciemnych przestrzeni i pomieszczeń, które mają dużo ciemnych, cykanych lub przezroczystych powierzchni (na przykład dublowanych lub gauzy).
+HoloLens działa najlepiej w niektórych rodzajach środowisk. Aby utworzyć najlepszą mapę przestrzenną, wybierz pomieszczenie z odpowiednim jasnym i dużą ilością miejsca. Unikaj ciemnych przestrzeni i pomieszczeń, które mają dużo ciemnych, cykanych lub przezroczystych powierzchni (na przykład dublowanych lub gauzy).
 
-HoloLens jest zoptymalizowany do użytku w pomieszczeniu. Mapowanie przestrzenne działa również najlepiej, Wi-Fi jest włączone, chociaż nie musi być połączone z siecią. HoloLens uzyskać dostęp do Wi-Fi dostępu, nawet jeśli nie są połączone ani uwierzytelnione. HoloLens nie zmienia tego, czy punkty dostępu są połączone z Internetem, czy tylko intranet/lokalne.
+HoloLens jest zoptymalizowany do użytku w pomieszczeniu. Mapowanie przestrzenne działa również najlepiej, Wi-Fi jest włączone, chociaż nie musi być połączone z siecią. HoloLens uzyskać Wi-Fi dostępu, nawet jeśli nie są połączone ani uwierzytelnione. HoloLens nie zmienia tego, czy punkty dostępu są połączone z Internetem, czy tylko intranet/lokalne.
 
 Używaj tylko HoloLens w bezpiecznych miejscach bez zagrożeń związanych z trippingiem. [Więcej informacji na temat bezpieczeństwa.](https://support.microsoft.com/help/4023454/safety-information)
 
@@ -62,7 +62,7 @@ Płynne ruchy ułatwiają również HoloLens mapy.
 
 ### <a name="look-in-all-directions"></a>Spójrz we wszystkich kierunkach
 
-Przyglądanie się obszarowi podczas mapowania zapewnia HoloLens danych na temat tego, gdzie punkty są względem siebie względne.  
+Przyglądanie się obszarowi podczas mapowania zapewnia HoloLens więcej danych na temat tego, gdzie punkty są względem siebie względne.  
 
 Jeśli na przykład nie poszukasz, HoloLens może nie wiedzieć, gdzie znajduje się limit w pomieszczeniu.  
 
@@ -76,7 +76,7 @@ Jeśli to możliwe, powtarzając te ruchy, spędzaj czas na poruszaniu się po o
 
 ### <a name="take-your-time-mapping-the-area"></a>Mapowanie obszaru w czasie
 
-Pełne mapowanie HoloLens dostosowanie się do jej otoczenia może potrwać od 15 do 20 minut. Jeśli masz miejsce, w którym planujesz często używać HoloLens, późniejsze mapowanie obszaru może zapobiec problemom.  
+Pełne mapowanie i dostosowanie się do jej otoczenia może potrwać od 15 HoloLens 20 minut. Jeśli masz miejsce, w którym planujesz często używać HoloLens, późniejsze z góry mapowanie obszaru może zapobiec problemom.  
 
 ## <a name="possible-errors-in-the-spatial-map"></a>Możliwe błędy na mapie przestrzennej
 
@@ -104,7 +104,7 @@ Istnieją dwie opcje usuwania danych mapy w Ustawienia > **System > Hologramy:**
    > [!NOTE]
    > Hologramy "W pobliżu" to hologramy zakotwiczone w tej samej sekcji mapy w bieżącej przestrzeni.
 
-   Można na przykład użyć tej opcji, aby wyczyścić dane mapy związane z pracą bez wpływu na żadne dane mapy dotyczące domu.
+   Można na przykład użyć tej opcji, aby wyczyścić dane mapy związane z pracą bez wpływu na jakiekolwiek dane mapy dotyczące domu.
 
 - Aby usunąć wszystkie hologramy, wybierz **pozycję Usuń wszystkie hologramy**. To polecenie wyczyści wszystkie dane mapy przechowywane na urządzeniu, a także wszystkie zakotwiczone hologramy. Należy jawnie umieścić wszelkie hologramy. Nie będzie można ponownie odnaleźć wcześniej umieszczonych hologramów.
 
@@ -115,7 +115,7 @@ Istnieją dwie opcje usuwania danych mapy w Ustawienia > **System > Hologramy:**
 
 HoloLens przechowuje Wi-Fi, aby ułatwić korelowanie lokalizacji hologramów i sekcji map przechowywanych w bazie HoloLens znanych miejsc. Informacje o Wi-Fi są niedostępne dla użytkowników i nie są wysyłane do firmy Microsoft przy użyciu chmury ani telemetrii.
 
-Tak długo, Wi-Fi jest włączona, HoloLens dane mapy są skorelowane z pobliskimi Wi-Fi dostępu. Nie ma różnicy w zachowaniu tego, czy sieć jest połączona, czy po prostu wykryto w pobliżu. Jeśli Wi-Fi jest wyłączona, HoloLens nadal przeszukiwać miejsce. Jednak HoloLens musi przeszukiwać więcej danych mapy w bazie danych spacji i może potrzebować więcej czasu na znalezienie hologramów. Bez informacji Wi-Fi, HoloLens musi porównać aktywne skanowania ze wszystkimi kotwicami hologramów i sekcjami mapy przechowywanymi na urządzeniu, aby zlokalizować poprawną część mapy.
+Tak długo, Wi-Fi jest włączona, HoloLens dane mapy są korelowane z pobliskimi Wi-Fi dostępu. Nie ma różnicy w zachowaniu tego, czy sieć jest połączona, czy po prostu wykryto w pobliżu. Jeśli Wi-Fi jest wyłączona, HoloLens nadal przeszukiwać miejsce. Jednak HoloLens musi przeszukiwać więcej danych mapy w bazie danych spacji i może potrzebować więcej czasu na znalezienie hologramów. Bez informacji Wi-Fi, HoloLens musi porównać aktywne skanowania ze wszystkimi kotwicami hologramów i sekcjami mapy przechowywanymi na urządzeniu, aby zlokalizować poprawną część mapy.
 
 ## <a name="related-topics"></a>Powiązane tematy
 

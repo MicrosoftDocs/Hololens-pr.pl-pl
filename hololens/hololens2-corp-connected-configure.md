@@ -1,6 +1,6 @@
 ---
-title: Przewodnik wdrażania — przewodniki usługi Dynamics 365 HoloLens 2 połączone z firmową siecią — konfigurowanie
-description: Dowiedz się, jak skonfigurować konfiguracje w celu wdrożenia HoloLens 2 urządzeń za pośrednictwem firmowej sieci połączonej za pomocą przewodników usługi Dynamics 365.
+title: Przewodnik wdrażania — przewodnik po HoloLens 2 z usługą Dynamics 365 — konfigurowanie
+description: Dowiedz się, jak skonfigurować konfiguracje w celu wdrażania HoloLens 2 za pośrednictwem firmowej połączonej sieci za pomocą przewodników usługi Dynamics 365.
 keywords: HoloLens, zarządzanie, połączenie firmowe, przewodniki usługi Dynamics 365, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
 author: joyjaz
 ms.author: v-jjaswinski
@@ -14,22 +14,22 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660192"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427422"
 ---
-# <a name="configure---corporate-connected-guide"></a>Konfigurowanie — przewodnik po połączeniu firmowym
+# <a name="configure---corporate-connected-guide"></a>Konfigurowanie — przewodnik po połączeniach firmowych
 
 ## <a name="azure-users-and-groups"></a>Użytkownicy i grupy platformy Azure
 
-Platforma Azure i usługa Intune tego rozszerzenia wykorzystują użytkowników i grupy do przypisywania konfiguracji i licencji. Aby można było zweryfikować ten przepływ wdrażania i sprawdzić, czy można utworzyć i obsługiwać przewodnik,&#39;będzie potrzebne konto użytkownika.
+Platforma Azure i usługa Intune tego rozszerzenia używa użytkowników i grup do przypisywania konfiguracji i licencji. Aby zweryfikować ten przepływ wdrażania i sprawdzić, czy można utworzyć i obsługiwać przewodnik, musisz&#39;konto użytkownika.
 
 Możemy utworzyć jedną grupę użytkowników specjalnie do przypisywania licencji.
 
-Jeśli nie masz&#39;jeszcze dostępu do dwóch kont usługi Azure AD w grupie użytkowników, możesz użyć; Poniżej znajdują się przewodniki Szybki start dotyczące:
+Jeśli nie&#39;jeszcze dostępu do dwóch kont usługi Azure AD w grupie użytkowników, możesz użyć funkcji . Poniżej znajdują się przewodniki Szybki start dotyczące:
 
 - [Jak utworzyć użytkownika](/mem/intune/fundamentals/quickstart-create-user)
 - [Jak utworzyć grupę](/mem/intune/fundamentals/quickstart-create-group)
@@ -38,15 +38,15 @@ Jeśli nie masz&#39;jeszcze dostępu do dwóch kont usługi Azure AD w grupie u�
 
 ## <a name="auto-enrollment-on-hololens-2"></a>Automatyczne rejestrowanie w HoloLens 2
 
-Aby zapewnić bezproblemowe i bezproblemowe środowisko, warto skonfigurować funkcję Azure Active Directory Join (AADJ) i automatyczne rejestrowanie w usłudze Intune dla urządzeń z systemem HoloLens 2. Umożliwia to użytkownikom wprowadzanie poświadczeń logowania organizacji podczas OOBE oraz automatyczne rejestrowanie w usłudze Azure AD i rejestrowanie urządzenia w usłudze MDM.
+Aby zapewnić bezproblemowe i bezproblemowe środowisko, można skonfigurować dołączanie do usługi Azure Active Directory (AADJ) i automatyczne rejestrowanie w usłudze Intune dla urządzeń z systemem HoloLens 2. Umożliwia to użytkownikom wprowadzanie poświadczeń logowania organizacji podczas OOBE oraz automatyczne rejestrowanie w usłudze Azure AD i rejestrowanie urządzenia w usłudze MDM.
 
-Korzystając z [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), możemy wybierać usługi i nawigować po kilku stronach do momentu wybrania opcji Pobierz Premium wersji próbnej. Możesz zauważyć, że istnieje Azure Active Directory — wersja Premium 1 i 2 — dla automatycznej rejestracji P1 jest wystarczająca. Możemy wybrać usługę Intune, wybrać zakres użytkownika dla automatycznej rejestracji, a następnie wybrać grupę, która została wcześniej utworzona.
+Korzystając z [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), możemy wybierać usługi i nawigować po kilku stronach, dopóki nie wybierzemy opcji Pobierz Premium wersji próbnej. Możesz zauważyć, że istnieje Azure Active Directory — wersja Premium 1 i 2 — dla automatycznego rejestrowania P1 jest wystarczająca. Możemy wybrać usługę Intune, wybrać zakres użytkownika dla automatycznej rejestracji, a następnie wybrać grupę, która została wcześniej utworzona.
 
-Aby uzyskać szczegółowe informacje i zapoznać się z instrukcjami, przeczytaj przewodnik [dotyczący włączania automatycznej rejestracji w usłudze Intune.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
+Aby uzyskać szczegółowe informacje i instrukcje, przeczytaj przewodnik [dotyczący włączania automatycznej rejestracji w usłudze Intune.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
 ## <a name="corporate-wi-fi-connectivity"></a>Łączność Wi-Fi firmowa
 
-Połączenia Wi-Fi firmowe często wymagają uwierzytelniania opartego na certyfikatach dla klientów korzystających z HoloLens 2. Takie certyfikaty należy wdrożyć przy użyciu infrastruktury certyfikatów prosty protokół rejestrowania certyfikatów (SCEP) lub PKCS (Public Key Cryptography Standard) zintegrowanej z rozwiązaniem MDM. Wdrażanie profilów Wi-Fi, certyfikatów i ustawień serwera proxy przy użyciu usługi Intune zapewnia bezproblemowe środowisko dla użytkowników końcowych.
+Połączenia Wi-Fi firmowe często wymagają uwierzytelniania opartego na certyfikatach dla klientów korzystających HoloLens 2. Takie certyfikaty należy wdrożyć przy użyciu infrastruktury certyfikatów prosty protokół rejestrowania certyfikatów (SCEP) lub PKCS (Public Key Cryptography Standard) zintegrowanej z rozwiązaniem MDM. Wdrażanie profilów Wi-Fi, certyfikatów i ustawień serwera proxy przy użyciu usługi Intune zapewnia bezproblemowe środowisko dla użytkowników końcowych.
  
 ### <a name="deploy-certificates-and-wi-fi-profiles"></a>Wdrażanie certyfikatów i Wi-Fi profilów
 
@@ -63,59 +63,59 @@ Aby wdrożyć certyfikaty i profile za pośrednictwem Microsoft Endpoint Manager
     > **Profile certyfikatów bez daty wygaśnięcia nie zostaną wdrożone.**
 
     > [!Note]
-    > Ponieważ urządzenie HoloLens 2 jest uznawane za urządzenie udostępnione, tj. wielu użytkowników na urządzenie, zaleca się wdrożenie certyfikatów urządzeń zamiast certyfikatów użytkowników na Wi-Fi uwierzytelniania, jeśli jest to możliwe.
+    > Ponieważ urządzenie HoloLens 2 jest uznawane za urządzenie udostępnione, tj. wielu użytkowników na urządzenie, zaleca się wdrożenie certyfikatów urządzeń zamiast certyfikatów użytkownika na Wi-Fi uwierzytelniania, jeśli jest to możliwe.
 
 3. Utwórz profil dla firmowej sieci Wi-Fi sieci (zobacz [Ustawienia sieci Wi-Fi](/intune/wi-fi-settings-windows)dla urządzeń Windows 10 i nowszych). W profilu Wi-Fi można wybrać opcję użycia ustawień serwera proxy w organizacji.
 
     Dostępne opcje:
     - **Brak**: nie są konfigurowane żadne ustawienia serwera proxy.
-    - **Ręcznie skonfiguruj:** wprowadź adres IP serwera **proxy** i **jego numer portu**.
+    - **Ręcznie skonfiguruj :** wprowadź adres **IP serwera proxy** i jego numer **portu**.
     - **Skonfiguruj automatycznie**: wprowadź adres URL wskazujący skrypt automatycznej konfiguracji serwera proxy (PAC). Na przykład wprowadź *http://proxy.contoso.com/proxy.pac* .
 
     Aby uzyskać więcej informacji na temat plików PAC, zobacz [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (Plik automatycznej konfiguracji serwera proxy (PAC)). Zostanie otwarta witryna nienależąca do firmy Microsoft.
  
     > [!Note]
-    > Zaleca się, aby profil Wi-Fi był przypisywany do grup urządzeń, a nie do grup użytkowników tam, gdzie jest to możliwe.
+    > Zaleca się, aby profil Wi-Fi był przypisany do grup urządzeń, a nie grup użytkowników, jeśli jest to możliwe.
      
     > [!Tip]
-    > Możesz również wyeksportować profil profilu Wi-Fi z komputera Windows 10 w sieci firmowej. Ten eksport tworzy plik XML ze wszystkimi bieżącymi ustawieniami. Następnie zaimportuj ten plik do usługi Intune i użyj go jako Wi-Fi profilu dla HoloLens 2 urządzeń. Zobacz [Eksportowanie i importowanie ustawień sieci Wi-Fi dla urządzeń z systemem Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > Możesz również wyeksportować profil profilu Wi-Fi z komputera Windows 10 w sieci firmowej. Ten eksport tworzy plik XML ze wszystkimi bieżącymi ustawieniami. Następnie zaimportuj ten plik do usługi Intune i użyj go jako profilu Wi-Fi dla urządzeń HoloLens 2. Zobacz [Eksportowanie i importowanie ustawień sieci Wi-Fi dla urządzeń z systemem Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 1.  [Przypisz](/mem/intune/configuration/device-profile-assign) profile urządzeń do HoloLens urządzeń.
 
 2.  [Monitorowanie](/mem/intune/configuration/device-profile-monitor) profilów urządzeń w usłudze Intune.
 
-Jeśli występują problemy z profilami zarządzania Wi-Fi, informacje na temat rozwiązywania [Wi-Fi konfiguracji urządzeń w usłudze Intune.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
+Jeśli występują problemy z profilami Wi-Fi, informacje można Wi-Fi rozwiązywanie problemów z profilami konfiguracji [urządzeń w usłudze Intune.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
 
-## <a name="troubleshooting-external-internet-access-when-corp-connected"></a>Rozwiązywanie problemów z zewnętrznym dostępem do Internetu w przypadku połączenia z firmą
-Gdy usługi próbują nie przechodzić przez ustawiony serwer proxy, mogą próbować nawiązać połączenie za pośrednictwem zapory. Aby rozwiązać te problemy, możesz dodać listę punktów końcowych specyficznych dla reguł zapory.
+## <a name="troubleshooting-external-internet-access-when-corp-connected"></a>Rozwiązywanie problemów z zewnętrznym dostępem do Internetu w przypadku połączenia firmy Corp
+Gdy usługi próbują nie przechodzić przez ustawiony serwer proxy, mogą próbować nawiązać połączenie za pośrednictwem zapory. Aby rozwiązać te problemy, możesz dodać listę specyficznych dla punktu końcowego reguł zapory.
 
 Jeśli blokujesz się na portach zapory, włącz niektóre typowe [punkty końcowe](/hololens/hololens-offline) dla HoloLens.
 
-Możesz również włączyć porty specyficzne dla przewodników: [adresy URL dostępne z](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)Internetu wymagane do połączenia z Microsoft Dynamics CRM Online .
+Możesz również włączyć określone porty prowadnic: adresy URL dostępne z Internetu [wymagane do łączności](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)z Microsoft Dynamics CRM Online .
 
 ## <a name="app-deployment"></a>Wdrażanie aplikacji
 
 Wdrażanie aplikacji LOB za pośrednictwem rozwiązania MDM to metoda, która jest łatwa do skalowania i może być automatycznie wdrażana na urządzeniach po zarejestrowaniu w utworzonej grupie.
 
-Jeśli nadal opracowujesz aplikacje lub jeszcze ich nie masz, możesz użyć przykładowej aplikacji centrum przykładów MRTK. Ta przykładowa aplikacja jest gotowa do użycia i nie wymaga użycia aparatu Unity ani Visual Studio. [Pobierz przykładową aplikację MRTK Examples](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App).
+Jeśli nadal opracowujesz aplikacje lub jeszcze ich nie masz, możesz użyć przykładowej aplikacji centrum przykładów mrtk. Ta przykładowa aplikacja jest gotowa do użycia i nie wymaga użycia aparatu Unity ani Visual Studio. [Pobierz przykładową aplikację MRTK Examples](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App).
 
-Jeśli wolisz korzystać z własnej aplikacji lub interesuje Cię tworzenie aplikacji dla Mixed Reality, możesz zapoznać się z naszą dokumentacją Mixed Reality [dewelopera.](/windows/mixed-reality/design/design)
+Jeśli wolisz używać własnej aplikacji lub interesuje Cię tworzenie aplikacji dla Mixed Reality, możesz zapoznać się z naszą dokumentacją Mixed Reality [dewelopera.](/windows/mixed-reality/design/design)
 
 > [!NOTE]
-> Wymagania systemowe dla HoloLens są oparte na architekturze kompilacji aplikacji. HoloLens 2 korzystają z architektury ARM. Podczas tworzenia aplikacji w Visual Studio upewnij się, że wybrano właściwą architekturę dla urządzenia i uwzględnij wszystkie wymagane zależności.
+> Wymagania systemowe dla HoloLens są oparte na architekturze kompilacji aplikacji. HoloLens 2 używają architektury ARM. Podczas tworzenia aplikacji w Visual Studio upewnij się, że wybrano właściwą architekturę dla urządzenia i dołączyć wszystkie wymagane zależności.
 
 > [!IMPORTANT]
-> Podczas wdrażania aplikacji LOB ważne jest również przekazanie certyfikatu do usługi Intune i przypisanie go do tej samej grupy, która jest przeznaczona do korzystania z aplikacji, lub nie zostanie poprawnie zainstalowany.
+> Podczas wdrażania aplikacji LOB ważne jest również przekazanie certyfikatu do usługi Intune i przypisanie go do tej samej grupy, która jest przeznaczona do korzystania z aplikacji lub nie zostanie poprawnie zainstalowany.
 
 ### <a name="upload-and-assign-the-app"></a>Upload i przypisywanie aplikacji
 
 1. Przejdź do centrum [administracyjnego MEM.](https://endpoint.microsoft.com/#home)
 
-2. Wybierz **pozycję**  ->  **Wszystkie aplikacje** i wybierz **przycisk +** Dodaj.
+2. Wybierz **pozycję**  ->  **Wszystkie aplikacje** i wybierz **przycisk + Dodaj.**
 
-3. Poniżej opcji Inne wybierz pozycję Aplikacja **biznesowa**. Kliknij **pozycję wybierz pozycję**.
+3. Poniżej opcji Inne wybierz pozycję Aplikacja **biznesowa.** Kliknij **pozycję Wybierz**.
 
-4. Wybierz plik pakietu aplikacji, jest to plik APPXBUNDLE. W naszym przypadku aplikacja to _MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle._
+4. Wybierz plik pakietu aplikacji, czyli plik APPXBUNDLE lub w naszym przypadku jest to aplikacja _MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle._
 
 5. Zostaniesz powiadomiony o brakujących zależnościach. W tym przypadku musimy przekazać plik _Microsoft.VCLibs.ARM.14.00.appx._ Wyszukaj go w **obszarze Wybierz plik**.
 
@@ -137,26 +137,26 @@ Aby móc korzystać z przewodników usługi Dynamics 365, należy wykonać pewne
 
 Aby ktoś mógł korzystać z przewodników, musi użyć konta usługi Azure AD, które zostało wcześniej ustawione w tym przewodniku.
 
-Musisz również przypisać licencję przewodniki usługi Dynamics 365 do utworzonego użytkownika. Zrobisz to z centrum administracyjne platformy Microsoft 365 [.](https://admin.microsoft.com/AdminPortal/Home) Przypisz również licencję do podstawowego konta platformy Azure.
+Musisz również przypisać licencję przewodników usługi Dynamics 365 do utworzonego użytkownika. Zrobisz to z centrum administracyjne platformy Microsoft 365 [.](https://admin.microsoft.com/AdminPortal/Home) Przypisz również licencję do podstawowego konta platformy Azure.
 
 Postępuj [zgodnie z tym krótkim przewodnikiem](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) ze zdjęciami, aby uzyskać instrukcje krok po kroku dotyczące stosowania licencji aplikacji.
 
 ### <a name="set-up-the-dataverse"></a>Konfigurowanie aplikacji Dataverse
 
-Aby skonfigurować [środowisko produkcyjne,](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) należy spełnić dwa wymagania wstępne. Musisz mieć rolę [**Administratora**](/power-platform/admin/database-security)  systemu i musisz mieć licencję usługi [**Power Apps (lub**](/power-platform/admin/signup-question-and-answer) licencję przewodników usługi [**Dynamics 365,**](/dynamics365/mixed-reality/guides/setup-step-one) która zawiera licencję Power Apps). Jeśli w tym przewodniku utworzono usługę Azure AD, spełnione są wymagania dotyczące roli administratora systemu. W poprzednim kroku przypisaliśmy również licencję przewodnika.
+Aby skonfigurować [środowisko produkcyjne,](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) należy spełnić dwa wymagania wstępne. Musisz mieć rolę [**Administratora**](/power-platform/admin/database-security)  systemu i musisz mieć licencję [**usługi Power Apps**](/power-platform/admin/signup-question-and-answer) (lub licencję przewodników usługi [**Dynamics 365,**](/dynamics365/mixed-reality/guides/setup-step-one) która zawiera licencję Power Apps). Jeśli w tym przewodniku utworzono usługę Azure AD, spełniasz wymagania dotyczące roli dla administratora systemu. W poprzednim kroku przypisaliśmy również licencję przewodnika.
 
-W tym przewodniku o [tworzeniu środowiska usługi Microsoft Dataverse:](/dynamics365/mixed-reality/guides/setup-step-two)
+W tym przewodniku o [tworzeniu środowiska Microsoft Dataverse:](/dynamics365/mixed-reality/guides/setup-step-two)
 
 1. Rozpocznij od utworzenia [centrum administracyjne platformy Power Platform](https://admin.powerplatform.microsoft.com/environments) i utworzenia nowego środowiska.
-2. Podczas tworzenia **nowego środowiska** dla ustawienia **Typ**&#39;wybierz pozycję **Produkcja.**
-3. Ważne jest, aby przełączyć ustawienie **Utwórz bazę danych dla tego środowiska?**  na **tak.**
+2. Podczas tworzenia **nowego środowiska** dla ustawienia **Typ** wybierz&#39;**produkcyjne.**
+3. Ważne jest, aby włączyć przełącznik **Tworzenie bazy danych dla tego środowiska?**  na **tak.**
 4. W  **oknie dialogowym**  Dodawanie bazy danych ustaw opcję  **Włącz aplikacje usługi Dynamics 365**  na  **wartość Tak.**
 
-Należy zwiększyć maksymalny rozmiar plików elementów w danychverse. Zwiększenie maksymalnego rozmiaru pliku umożliwi przekazywanie większych modeli 3D lub plików wideo, które będą później w przewodnikach. Postępuj zgodnie z krótkim [przewodnikiem, aby zmienić maksymalny rozmiar pliku przekazywania.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
+Należy zwiększyć maksymalny rozmiar plików elementów w danychverse. Zwiększenie maksymalnego rozmiaru pliku umożliwi przekazanie większych modeli 3D lub plików wideo, które będą później dostępne w przewodnikach. Postępuj zgodnie z krótkim [przewodnikiem, aby zmienić maksymalny rozmiar pliku przekazywania.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
 
 Na koniec należy zainstalować [i skonfigurować rozwiązanie](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). Na [centrum administracyjne platformy Power Platform](https://admin.powerplatform.microsoft.com/environments)wybierz pozycję **Zasoby** \& gt;  **Aplikacje usługi Dynamics 365**, wybierz pozycję **Przewodniki usługi Dynamics 365** na liście, a następnie wybierz pozycję **Zainstaluj.**  
 
-Aby móc [korzystać z](/dynamics365/mixed-reality/guides/assign-role) aplikacji, musisz dodać rolę zabezpieczeń Przewodniki.
+Aby móc [korzystać z aplikacji,](/dynamics365/mixed-reality/guides/assign-role) musisz dodać rolę zabezpieczeń Przewodniki.
 
 ### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Tworzenie przewodnika testowego na komputerze za pomocą tworzenia
 
@@ -168,13 +168,13 @@ Jeśli chcesz rozpocząć naukę tworzenia dla przewodników, zacznij tutaj od o
 
 ## <a name="optional-kiosk-mode"></a>Opcjonalnie: tryb kiosku
 
-Tryb kiosku to tryb, który umożliwia administratorowi IT skonfigurowanie interfejsu użytkownika menu Start tak, aby wyświetlał tylko jedną aplikację lub wybrane aplikacje. Kiosk można również zastosować do określonych użytkowników, grup lub na poziomie urządzenia. w niektórych przypadkach należy wykluczyć niektórych użytkowników z kiosku i nadal zezwalać im na dostęp do zwykłego menu Start.
+Tryb kiosku to tryb, który umożliwia administratorowi IT skonfigurowanie interfejsu użytkownika menu Start tak, aby wyświetlał tylko jedną aplikację lub wybrane aplikacje. Kiosk może być również stosowany do określonych użytkowników, grup lub na poziomie urządzenia; w niektórych przypadkach wykluczanie niektórych użytkowników z kiosku nadal zezwala im na dostęp do zwykłego menu Start.
 
 Tryb kiosku ma wiele różnych zmiennych, zarówno w zakresie, jak i konfiguracjach, które można ustawić, a także metody wdrażania kiosku w HoloLens. Ze względu na wszystkie te zmienne tryb  kiosku jest pozostawiany jako opcjonalny w tym przewodniku i nie zostanie ponownie poprawiony. Jeśli uważasz, że masz potrzebę ograniczenia dostępnych aplikacji do użytkowników lub chcesz dowiedzieć się więcej, możesz dowiedzieć się, jak skonfigurować usługę [HoloLens jako kiosk.](/hololens/hololens-kiosk)
 
 ## <a name="optional-wdac"></a>Opcjonalnie: WDAC
 
-Funkcja WDAC umożliwia administratorowi IT skonfigurowanie urządzeń tak, aby blokowały uruchamianie aplikacji na urządzeniach. Różni się to od metod ograniczeń urządzenia, takich jak tryb kiosku, w którym użytkownik jest prezentowany z interfejsem użytkownika, który ukrywa aplikacje na urządzeniu, ale można je nadal uruchomiać. Podczas implementowania usługi WDAC aplikacje są nadal widoczne na liście Wszystkie aplikacje, ale wDAC zatrzymuje te aplikacje i procesy nie mogą być uruchomione przez użytkownika urządzenia.
+Funkcja WDAC umożliwia administratorowi IT skonfigurowanie urządzeń tak, aby blokowały uruchamianie aplikacji na urządzeniach. Różni się to od metod ograniczeń urządzenia, takich jak tryb kiosku, w którym użytkownik jest prezentowany z interfejsem użytkownika, który ukrywa aplikacje na urządzeniu, ale można je nadal uruchomiać. Podczas implementowania usługi WDAC aplikacje są nadal widoczne na liście Wszystkie aplikacje, ale wDAC zatrzymuje te aplikacje i procesy mogą być uruchomione przez użytkownika urządzenia.
 
 Aby uzyskać więcej informacji, skorzystaj z funkcji WDAC i Windows PowerShell do zezwalania na aplikacje lub blokowania ich na [urządzeniach HoloLens 2](/mem/intune/configuration/custom-profile-hololens)z Microsoft Intune .
 

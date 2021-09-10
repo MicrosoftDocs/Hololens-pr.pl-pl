@@ -18,24 +18,24 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662939"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427773"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Zarządzanie punktami końcowymi połączenia dla HoloLens
 
 Niektóre HoloLens, aplikacje i powiązane usługi przesyłły dane do punktów końcowych sieci firmy Microsoft. W tym artykule wymieniono różne punkty końcowe i adresy URL, które muszą być dozwolone w konfiguracji sieci (np. serwer proxy lub zapora), aby te składniki mogły być funkcjonalne.    
 
-## <a name="near-offline-setup"></a>Konfiguracja niemal offline
+## <a name="near-offline-setup"></a>Konfiguracja niemal w trybie offline
 
-HoloLens obsługuje ograniczony zestaw środowisk w trybie offline dla klientów, którzy mają ograniczenia środowiska sieciowego. Jednak HoloLens musi przejść przez początkowe skonfigurowanie urządzenia i należy włączyć następujące adresy URL:
+HoloLens obsługuje ograniczony zestaw środowisk w trybie offline dla klientów, którzy mają ograniczenia środowiska sieciowego. Jednak HoloLens musi przejść przez początkowe skonfigurowanie urządzenia i włączyć następujące adresy URL:
 
 | Przeznaczenie | Adres URL |
 |------|------|
-| IdPS (Identyfikatory TOŻSAMOŚCI) | https://sdx.microsoft.com/frx/idps |
+| ZISP | https://sdx.microsoft.com/frx/idps |
 | [NCSI](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
@@ -59,7 +59,7 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 |                                                     | client.wns.windows.com                                              |
 |                                                     | crl.microsoft.com/pki/crl/*                                         |
 |                                                     | ctldl.windowsupdate.com                                             |
-|                                                     | *Displaycatalog.mp.microsoft.com                                    |
+|                                                     | *displaycatalog.mp.microsoft.com                                    |
 |                                                     | dm3p.wns.windows.com                                                |
 |                                                     | *microsoft.com/pkiops/*                                             |
 |                                                     | ocsp.digicert.com/*                                                 |
@@ -70,7 +70,7 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 |                                                     | crl.microsoft.com/pki/crl/*                                         |
 |                                                     | ocsp.digicert.com/*                                                 |
 |                                                     | https://www.microsoft.com/pkiops/*                                          |
-| Cortana i wyszukiwanie                                  | store-images.*microsoft.com                                         |
+| Cortana wyszukiwania                                  | store-images.*microsoft.com                                         |
 |                                                     | www.bing.com/client                                                 |
 |                                                     | www.bing.com                                                        |
 |                                                     | www.bing.com/proactive                                              |
@@ -96,13 +96,13 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 | Konto Microsoft                                   | login.msa.akadns6.net                                               |
 |                                                     | us.configsvc1.live.com.akadns.net                                   |
 | Microsoft Edge                                      | iecvlist.microsoft.com                                              |
-| Usługa przekierowywania linków do przodu firmy Microsoft (FWLink) | go.microsoft.com                                                    |
+| Usługa przekierowania linków do przodu firmy Microsoft (FWLink) | go.microsoft.com                                                    |
 | Sklepie Microsoft                                     | *.wns.windows.com                                                   |
 |                                                     | storecatalogrevocation.storequality.microsoft.com                   |
 |                                                     | img-prod-cms-rt-microsoft-com*                                      |
 |                                                     | store-images.microsoft.com                                          |
 |                                                     | .md.mp.microsoft.com                                                |
-|                                                     | *Displaycatalog.mp.microsoft.com                                    |
+|                                                     | *displaycatalog.mp.microsoft.com                                    |
 |                                                     | pti.store.microsoft.com                                             |
 |                                                     | storeedgefd.dsx.mp.microsoft.com                                    |
 |                                                     | markets.books.microsoft.com                                         |
@@ -166,4 +166,4 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 
 ## <a name="hololens-limitations"></a>HoloLens ograniczenia
 
-Po skonfigurowaniu HoloLens można jej używać bez połączenia Wi-Fi, ale aplikacje korzystające z połączeń internetowych będą mieć ograniczone możliwości w przypadku korzystania z HoloLens offline.
+Po skonfigurowaniu HoloLens można używać go bez połączenia Wi-Fi, ale aplikacje korzystające z połączeń internetowych będą mieć ograniczone możliwości podczas korzystania z HoloLens offline.

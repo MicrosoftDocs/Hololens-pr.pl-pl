@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190076"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427178"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Poruszanie się HoloLens (1. generacja)
 
-Chcesz zasiądlić do świata hologramów? Oto kilka informacji, które mogą rozpocząć pracę.
+Chcesz zaetapić się w świecie hologramów? Oto kilka informacji, które mogą rozpocząć pracę.
 
 Ten przewodnik zawiera wprowadzenie do rzeczywistości mieszanej, gesty interakcji z hologramami oraz wprowadzenie do Windows Holographic.
 
@@ -31,28 +31,28 @@ Ten przewodnik zawiera wprowadzenie do rzeczywistości mieszanej, gesty interakc
 
 Na HoloLens hologramy łączą się ze środowiskiem fizycznym, aby wyglądać i brzmieć tak, jakby były częścią Twojego świata. Nawet wtedy, gdy wokół Ciebie znajdują się hologramy, możesz nadal widzieć swoje otoczenia, swobodnie poruszać się i wchodzić w interakcje z innymi osobami i obiektami. Nazywamy to środowisko "rzeczywistością mieszaną".
 
-Ramka holograficzna umieszcza hologramów w miejscach, w których wzrok jest najbardziej wrażliwy na szczegóły, a obiektywy do widzenia pozostawiają twoje peryferyjne widzenie nienadzorowane. Za pomocą dźwięku przestrzennego można wskazać hologram, nawet jeśli jest za Toem. A ponieważ HoloLens uczy się i rozumie Twoje środowisko, możesz umieszczać hologramy na rzeczywistych obiektach i wokół tych obiektów — a także korzystać z aplikacji i gier. W związku z tym postać w grze może usiąść na Twoim komputerze lub roboty kosmiczne mogą [wywalić się ze swoich ścian.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
+Ramka holograficzna umieszcza hologramów w miejscach, w których wzrok jest najbardziej wrażliwy na szczegóły, a obiektywy do widzenia pozostawiają twoje peryferyjne widzenie nienadzorowane. Dźwięk przestrzenny pozwala wskazać hologram, nawet jeśli jest za Toem. A ponieważ HoloLens uczy się i rozumie Twoje środowisko, możesz umieszczać hologramy na rzeczywistych obiektach i wokół tych obiektów — a także korzystać z aplikacji i gier. Dlatego postać w grze może usiąść na Twoim komputerze lub roboty kosmiczne mogą [wywalić się ze ścian](https://www.microsoft.com/store/apps/9nblggh5fv3j).
 
-## <a name="use-hololens-with-your-hands"></a>Korzystanie HoloLens z rąk
+## <a name="use-hololens-with-your-hands"></a>Używaj HoloLens rąk
 
 Poruszanie się HoloLens jest bardzo podobne do korzystania z telefonu inteligentnego. Możesz używać rąk do manipulowania oknami holograficznmi, menu i przyciskami.  Zamiast nakreślać, klikać lub naciskać, użyjesz spojrzenia, głosu i gestów, aby wybrać aplikacje i hologramy oraz HoloLens. [](hololens-cortana.md)
 
 Jeśli znasz te podstawowe interakcje, poruszanie się po HoloLens będzie bardzo proste.
 
-Gdy użyjesz swojego konta, po raz pierwszy użyjemy HoloLens. W menu Start znajduje się również samouczek dotyczący **gestów** — poszukaj aplikacji Gesty nauczenia się.
+Gdy użyjesz swojego konta, po raz pierwszy użyjesz HoloLens. W menu Start znajduje się również samouczek dotyczący **gestów** — poszukaj aplikacji Gesty nauczenia się.
 
-### <a name="the-hand-tracking-frame"></a>Ramka śledzenia ręcznego
+### <a name="the-hand-tracking-frame"></a>Ramka do śledzenia rąk
 
-HoloLens czujników, które mogą zobaczyć kilka metrów po obu stronach. Gdy używasz rąk, musisz przechowywać je wewnątrz tej ramki lub HoloLens ich nie zobaczy. Podczas poruszania się ramka przesuwa się wraz z toem.  
+HoloLens czujników, które mogą zobaczyć kilka metrów po obu stronach. Gdy używasz rąk, musisz przechowywać je wewnątrz tej ramki lub HoloLens nie będą je widzieć. Podczas poruszania się ramka przesuwa się wraz z toem.  
 
-![Obraz, który HoloLens ramkę do śledzenia rąk.](./images/hololens-2-gesture-frame.png)
+![Obraz, który HoloLens ramkę śledzenia ręcznego.](./images/hololens-2-gesture-frame.png)
 
-### <a name="open-the-start-menu-with-bloom"></a>Otwórz okno menu Start za pomocą blooma
+### <a name="open-the-start-menu-with-bloom"></a>Otwórz okno menu Start z bloomem
 
 Aby otworzyć menu **Start:**
 
 1. Przytrzymaj rękę przed sobą, aby była w ramce gestu.
-1. Bloom: przyjmij ze sobą wszystko, a następnie otwórz rękę.
+1. Bloom: przyjmij ze sobą wszystkie swoje kciuki, a następnie otwórz rękę.
   ![Animacja, która pokazuje gest Blooma.](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Wybieranie hologramów za pomocą spojrzenia i naciśnięcia w powietrzu
@@ -78,16 +78,16 @@ Zainstalowane aplikacje znajdziesz w chmurze menu Start więcej aplikacji dla Ho
 
 Otwórz menu **Start** i wybierz aplikację.
 
-Korzystanie z aplikacji na HoloLens jest nieco inne niż na komputerze: niektóre aplikacje używają widoku 2D i wyglądają jak inne Windows aplikacji. Inne aplikacje (aplikacje immersyjne) używają widoku 3D, a po ich uruchomieniu stają się jedyną aplikacją, która cię wyświetla.
+Korzystanie z aplikacji na HoloLens jest nieco inne niż na komputerze: niektóre aplikacje używają widoku 2D i wyglądają jak inne Windows aplikacji. Inne aplikacje (aplikacje immersyjne) używają widoku 3D, a po ich uruchomieniu stają się jedyną aplikacją, która jest dostępna.
 
-Gdy umieścisz okno aplikacji lub uruchamianie aplikacji, pozostanie ona umieszczana do momentu jej usunięcia. Te hologramy można przenosić lub zmieniać ich rozmiary w domu rzeczywistości mieszanej w dowolnym momencie.
+Gdy umieścisz okno aplikacji lub uruchamianie aplikacji, pozostanie ona umieszczana do momentu jej usunięcia. Te hologramy można przenosić lub zmieniać ich rozmiar w domu rzeczywistości mieszanej w dowolnym momencie.
 
 ## <a name="move-resize-and-rotate-apps"></a>Przenoszenie, zmienianie rozmiaru i obracanie aplikacji
 
 Przenoszenie i zmienianie rozmiaru aplikacji na HoloLens działa nieco inaczej niż na komputerze. Zamiast przeciągać aplikację, użyjesz spojrzenia wraz z gestem [lub](https://support.microsoft.com/help/12644/hololens-use-gestures) [kliknięciem](hololens1-clicker.md). Możesz również obrócić okno aplikacji w przestrzeni 3D.
 
 > [!TIP]
-> Rozmieszczanie aplikacji przy użyciu głosu — spojrz na aplikację i powiedz "Face me", "Bigger" lub "Smaller". Możesz też Cortana aplikację: powiedz "Hey Cortana, move app \* *name \** here".
+> Zmiana rozmieszczenia aplikacji przy użyciu głosu — spojrz na aplikację i powiedz "Face me", "Bigger" (Większe) lub "Smaller" (Mniejsze). Możesz też Cortana aplikację: powiedz "Hey Cortana, move \* *app name \** here".
 
 ### <a name="move-an-app"></a>Przenoszenie aplikacji
 
@@ -98,7 +98,7 @@ Spojrz na aplikację (na pasku tytułu okna aplikacji), a następnie wykonaj jed
 - Wybierz **pozycję Dostosuj,** kliknij i przytrzymaj kliknięcie, a następnie przesuń ręka w celu ustawienia pozycji aplikacji. Zwolnij kliknięcie, a następnie wybierz pozycję **Gotowe.**
 
 > [!TIP]
-> Jeśli porzuć aplikacje podczas ich przenoszenia, pamiętaj, aby przytrzymać rękę w ramce gestu, podążanie za nimi za spojrzeniem.
+> Jeśli porzuć aplikacje podczas przenoszenia, pamiętaj, aby mieć rękę w ramce gestu, podążanie za nimi za spojrzeniem.
 
 ### <a name="resize-an-app"></a>Zmienianie rozmiaru aplikacji
 
@@ -113,13 +113,13 @@ Zaglądaj na aplikację, a następnie wykonaj jedną z następujących czynnośc
 
 ### <a name="rotate-an-app"></a>Obracanie aplikacji
 
-Spojrz na aplikację i naciśnij i przytrzymaj obiema rękami, aby ją wybrać. Obracaj aplikację, utrzymując jedną rękę na stałym poziomie i przesuwając wokół siebie drugą. Gdy wszystko będzie gotowe, podnieś oba podniesienie wskaźnika.
+Spojrz na aplikację i naciśnij i przytrzymaj obiema rękami, aby ją wybrać. Obracaj aplikację, zachowując jedną rękę na stałym poziomie, a drugą wokół siebie. Gdy wszystko będzie gotowe, podnieś oba podniesienie wskaźnika.
 
 ### <a name="scroll-content-in-an-app-window"></a>Przewijanie zawartości w oknie aplikacji
 
 Spojrzenie na zawartość okna aplikacji. Naciśnij i przytrzymaj, a następnie przesuń nieco w górę lub w dół, aby przewinąć zawartość.
 
-## <a name="meet-the-hololens-1st-gen-clicker"></a>Poznaj HoloLens (1. generacji) Clicker
+## <a name="meet-the-hololens-1st-gen-clicker"></a>Poznaj HoloLens (1. generacji)
 
 Kliknięcie [HoloLens (1. generacji)](hololens1-clicker.md) zapewnia inny sposób interakcji z hologramami. [Sparuj](hololens-connect-devices.md) ją z HoloLens, a następnie używaj jej razem ze swoim spojrzeniem, aby wybierać, przewijać i nie tylko.
 
@@ -127,7 +127,7 @@ Kliknięcie [HoloLens (1. generacji)](hololens1-clicker.md) zapewnia inny sposó
 
 Gratulacje! Wszystko jest gotowe do użycia HoloLens (1. generacji).
 
-Teraz możesz skonfigurować konfigurację HoloLens (1. generacji) w celu spełnienia określonych potrzeb.
+Teraz możesz skonfigurować HoloLens (1. generacja) w celu spełnienia określonych potrzeb.
 
 [Połączenie bluetooth, takie jak mysz i klawiatura](hololens-connect-devices.md)
 
@@ -137,7 +137,7 @@ Teraz możesz skonfigurować konfigurację HoloLens (1. generacji) w celu spełn
 
 Jeśli nie widzisz hologramów umieszczonych podczas korzystania z HoloLens, oto kilka rzeczy do wypróbowania:
 
-- Pamiętaj, aby zaglądać we właściwy obszar. Hologramy pozostają w &mdash; miejscu, w którym je opuściliśmy.
+- Pamiętaj, aby zaglądać we właściwy obszar. Hologramy pozostają w miejscu, &mdash; w którym je opuścisz.
 - Upewnij się, że znajdujesz się w dobrze oświetlonym pomieszczeniu bez wielu bezpośrednich wpływów.
-- Czekać. Jeśli HoloLens może rozpoznać twoją przestrzeń, ponowne pojawienie się wcześniej umieszczonych hologramów może potrwać do minuty.
-- Jeśli problem będzie się powtarzać, możesz wyczyścić dane magazynu Hologramy w programie **Ustawienia** System Hologramy, a następnie ponownie umieścić hologramów w domu rzeczywistości  >    >  mieszanej.
+- Czekać. Jeśli HoloLens rozeznanie przestrzeni, ponowne pojawienie się wcześniej umieszczonych hologramów może potrwać do minuty.
+- Jeśli problem będzie się powtarzać, możesz wyczyścić dane magazynu usługi Hologramy w programie **Ustawienia** System Hologramy, a następnie ponownie umieścić hologramy w domu rzeczywistości  >    >  mieszanej.

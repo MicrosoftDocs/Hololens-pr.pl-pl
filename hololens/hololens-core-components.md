@@ -13,11 +13,11 @@ ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188903"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428420"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planowanie HoloLens 2 w środowisku komercyjnym
 
@@ -26,14 +26,14 @@ ms.locfileid: "123188903"
 > [!NOTE]
 > To omówienie ma na celu pomoc specjalistom IT w zrozumieniu kwestii, które należy wziąć pod uwagę podczas wdrażania Microsoft HoloLens 2 urządzeń w organizacji. Aby uzyskać informacje o użytkownikach końcowych urządzeń, zobacz [Get your HoloLens 2 ready to use](hololens2-setup.md) to get started (Przygotuj urządzenie do użycia w celu rozpoczęcia pracy).
 
-HoloLens 2 działa na platformie Windows 10 Holographic która zapewnia organizacjom niezawodne, elastyczne, wbudowane technologie zarządzania urządzeniami przenośnymi i aplikacją. Windows 10 Holographic obsługuje zarządzanie całym cyklem życia urządzeń, aby zapewnić firmom kontrolę nad ich urządzeniami, danymi i aplikacjami. Usługę HoloLens 2 można łatwo włączyć do standardowych rozwiązań w zakresie cyklu życia, od rejestracji urządzeń, konfiguracji i zarządzania aplikacją po konserwację i wycofanie przy użyciu kompleksowego rozwiązania do zarządzania urządzeniami przenośnymi.
+HoloLens 2 działa na platformie Windows 10 Holographic która zapewnia organizacjom niezawodne, elastyczne, wbudowane technologie zarządzania urządzeniami przenośnymi i aplikacją. Windows 10 Holographic obsługuje zarządzanie całym cyklem życia urządzeń, aby zapewnić firmom kontrolę nad ich urządzeniami, danymi i aplikacjami. Rozwiązanie HoloLens 2 można łatwo włączyć do standardowych rozwiązań w zakresie cyklu życia, od rejestracji urządzeń, konfiguracji i zarządzania aplikacją po konserwację i wycofanie przy użyciu kompleksowego rozwiązania do zarządzania urządzeniami przenośnymi.
 
 Poniższe kroki i wideo mogą pomóc w sposobie wdrożenia HoloLens 2 w organizacji.
 
 | &nbsp; | &nbsp; |
 |--|--|
 | ![Krok 1.](images/1green.png)| <br/> **[Typowe scenariusze wdrażania:](hololens-requirements.md)** Poznaj scenariusze wdrażania i poznaj podstawowe składniki potrzebne do wdrożenia HoloLens 2 urządzeń. |
-| ![Krok 2.](images/2green.png)| <br/> **[Przygotowanie:](#prepare)** zapoznaj się z podstawowymi elementami infrastruktury potrzebnymi do HoloLens 2. |
+| ![Krok 2.](images/2green.png)| <br/> **[Przygotowanie:](#prepare)** zapoznaj się z podstawowymi elementami infrastruktury wymaganymi HoloLens 2. |
 | ![Krok 3.](images/3green.png) | <br/> **[Konfigurowanie:](#configure)** dowiedz się, jak skonfigurować podstawowe składniki dla wdrożenia opartego na chmurze. |
 | ![Krok 4.](images/4green.png) | <br/> **[Wdrażanie:](#deploy)** dowiedz się, jak wdrażać urządzenia oraz bezpiecznie i wydajnie dystrybuować aplikacje. |
 | ![Krok 5.](images/5green.png) | <br/> **[Obsługa:](#maintain)** dowiedz się, co jest potrzebne do prawidłowego utrzymania stanu urządzeń z systemem HoloLens 2 i zapewnienia zgodności z zasadami firmowym. |
@@ -54,7 +54,7 @@ Dowiedz się więcej o podstawowych usługach infrastruktury wymaganych do obsł
 
 ## <a name="configure"></a>Konfigurowanie
 
-Użyj usługi Intune i rozwiązania Autopilot jako rozwiązań o niskim poziomie dotyku do rejestrowania i konfigurowania usługi HoloLens 2 w dzierżawie usługi Azure AD i rozwiązaniu MDM organizacji.
+Użyj usługi Intune i rozwiązania Autopilot jako rozwiązań o niskim poziomie dotyku do rejestrowania i konfigurowania HoloLens 2 w dzierżawie usługi Azure AD i rozwiązaniu MDM organizacji.
 
 | Składnik | Opis |
 |-----------|------------|
@@ -74,9 +74,9 @@ Rozdystrybuuj HoloLens 2 urządzenia i zweryfikuj ich konfigurację.
 
 ## <a name="maintain"></a>Obsługa
 
-Użyj Windows Update dla Firm wraz z systemem MDM lub Microsoft Store, aby aktualizować swoją flotę HoloLens 2 i aplikacji.
+Użyj Windows Update for Business wraz z systemem MDM lub Microsoft Store, aby zapewnić aktualizowanie floty HoloLens 2 i aplikacji.
 
 | Składnik | Opis |
 |-----------|------------|
 | [Aktualizacja HoloLens 2](hololens-updates.md) | Konfigurowanie aktualizacji zgodnie z potrzebami za pomocą Windows Updates for Business |
-| [Aktualizowanie aplikacji](app-deploy-overview.md) | Konfigurowanie za pomocą systemu MDM lub Microsoft Store
+| [Aktualizowanie aplikacji](app-deploy-overview.md) | Konfigurowanie za pośrednictwem systemu MDM lub Microsoft Store

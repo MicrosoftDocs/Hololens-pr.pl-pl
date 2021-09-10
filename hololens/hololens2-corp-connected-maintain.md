@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2649e370e98747562591c031b8ae262674c831e071f4ef228557dda66d2dc768
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660270"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428775"
 ---
 # <a name="maintain---corporate-connected-guide"></a>Obsługa — przewodnik po połączeniach firmowych
 
@@ -29,13 +29,13 @@ Firma Microsoft zaprojektowała usługę Windows Update dla Firm, aby zapewnić 
 
 Jedną z popularnych metod zarządzania aktualizacjami jest odroczenie funkcji o 30 dni. Dzięki temu administratorzy mogą aktualizować i wyświetlać nowe funkcje w wersji zapoznawczej, uzyskując wiedzę z pierwszej ręki i informując personel pomocy technicznej o wszelkich nowych zmianach.
 
-Dowiedz się, [jak zarządzać aktualizacjami](/hololens/hololens-updates)HoloLens, w tym zaplanowanymi dniami, zaplanowaną godziną i ustawianiem aktywnych godzin na urządzeniu, aby aktualizować je poza godzinami pracy.
+Dowiedz się, [jak zarządzać HoloLens,](/hololens/hololens-updates)w tym zaplanowanych dni, zaplanowanej godziny i ustawiania aktywnych godzin na urządzeniu, dzięki czemu będą aktualizowane poza godzinami pracy.
 
 ## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>Jak zaktualizować przewodniki usługi Dynamics 365 (i inne aplikacje ze sklepu)
 
 Przewodniki usługi Dynamics 365 to In-Box, które można aktualizować za pośrednictwem Microsoft Store aplikacji. Wszystkie aplikacje pobierane za pośrednictwem Microsoft Store można zaktualizować za pośrednictwem Microsoft Store [aplikacji](/hololens/holographic-store-apps#update-apps) ręcznie.
 
-## <a name="how-to-update-lob-apps"></a>Jak aktualizować aplikacje LOB
+## <a name="how-to-update-lob-apps"></a>Jak zaktualizować aplikacje LOB
 
 Aplikacje LOB można aktualizować w taki sam sposób, jak zostały dodane do usługi Intune. Aplikacje można zaktualizować w usłudze Intune, przesyłając nową aplikację o wyższym numerze wersji do istniejącej konfiguracji aplikacji. Gdy urządzenie zostanie zsynchronizowane z usługą Intune, zauważy, że istnieje nowsza wersja aplikacji, a nowsza aplikacja zostanie pobrana i zastąpi starą.
 
@@ -52,11 +52,11 @@ Po pomyślnym zarejestrowaniu urządzenia możesz teraz przygotować się do wdr
 
 Jeśli masz już aplikację LOB, możesz wdrożyć aplikację za pośrednictwem [rozwiązania MDM.](/hololens/app-deploy-intune) Jeśli wolisz inną metodę, zapoznaj się z omówieniem wdrażania aplikacji dla usługi [HoloLens 2,](/hololens/app-deploy-overview) aby dowiedzieć się więcej na temat metod wdrażania aplikacji LOB na urządzeniach.
 
-Jeśli nie masz jeszcze czasu na utworzenie własnej aplikacji LOB lub nadal jesteś w trakcie tworzenia, zapoznaj się z naszymi dokumentami programistyczną rzeczywistości mieszanej, aby rozpocząć projektowanie i [tworzenie prototypów,](/windows/mixed-reality/design/design) lub poznaj podstawowe pojęcia, aby rozpocząć tworzenie rzeczywistości [mieszanej.](/windows/mixed-reality/discover/get-started-with-mr)
+Jeśli nie masz jeszcze czasu na utworzenie własnej aplikacji LOB lub nadal trwa proces tworzenia, zapoznaj się z naszymi dokumentami programistyczną rzeczywistości mieszanej, aby rozpocząć projektowanie i [tworzenie prototypów,](/windows/mixed-reality/design/design) lub poznaj podstawowe pojęcia, aby rozpocząć tworzenie rzeczywistości [mieszanej.](/windows/mixed-reality/discover/get-started-with-mr)
 
 ## <a name="support-plan"></a>Plan pomocy technicznej
 
-Plan pomocy technicznej jest doskonałym rozwiązaniem. Przydatne jest przeszkolenie kogoś lub grupy w zakresie rozwiązywania problemów z procesem rejestracji na urządzeniach HoloLens, a także ogólnego użycia urządzenia HoloLens w organizacji. Aby umożliwić użytkownikom szybsze rozwiązanie ich problemów, sugerujemy, aby proces eskalacji był obsługiwany w sposób podobny do tego:
+Plan pomocy technicznej jest doskonałym rozwiązaniem. Przydatne jest wytrenowanie osoby lub grupy na potrzeby rozwiązywania problemów z procesem rejestracji na urządzeniach HoloLens oraz ogólnego użycia urządzenia HoloLens w organizacji. Aby umożliwić użytkownikom szybsze rozwiązanie ich problemów, sugerujemy, aby proces eskalacji był obsługiwany w sposób podobny do tego:
 
 1. Pomoc techniczna.
 2. Twój HoloLens ekspertów
@@ -65,7 +65,7 @@ Plan pomocy technicznej jest doskonałym rozwiązaniem. Przydatne jest przeszkol
 
 ## <a name="device-management"></a>Zarządzanie urządzeniami
 
-W tym przewodniku omówienia konfigurowania usługi Mobile Zarządzanie urządzeniami (MDM) i używanego do konfigurowania niektórych konfiguracji urządzeń i stosowania ustawień w celu umożliwienia dostępu w zakresie certyfikatów Wi-Fi i serwera proxy. Jednak rozwiązania MDM można również używać do stosowania ograniczeń urządzenia za pośrednictwem CSP i zasad.
+W tym przewodniku omówienia konfigurowania usługi Mobile Zarządzanie urządzeniami (MDM) i wykorzystano ją do skonfigurowania niektórych konfiguracji urządzeń i zastosowania ustawień w celu umożliwienia dostępu w zakresie certyfikatów Wi-Fi i serwera proxy. Jednak rozwiązania MDM można również używać do stosowania ograniczeń urządzenia za pośrednictwem CSP i zasad.
 
 W wielu przypadkach urządzenia mogą mieć ograniczenia łączności, takie jak Bluetooth sieci VPN, USB, a nawet wyłączenie dostępu do aparatu lub mikrofonu. Jeśli którekolwiek z tych zainteresowań Cię interesuje, zachęcamy do przeczytania naszej strony [typowych ograniczeń dotyczących urządzeń](/hololens/hololens-common-device-restrictions).
 
@@ -75,7 +75,7 @@ Istnieją inne, bardziej złożone ograniczenia dotyczące urządzeń, których 
 - Użyj [trybu kiosku,](/hololens/hololens-kiosk) aby ograniczyć interfejs użytkownika prezentowany użytkownikom na urządzeniu. Możesz ustawić kioski tak, aby wyświetlały pojedynczą aplikację lub wiele aplikacji przy użyciu niestandardowej strony startowej. Kioski mogą również przedstawiać różne środowisko różnym użytkownikom.
 - [Windows kontroli aplikacji (WDAC),](/hololens/windows-defender-application-control-wdac) aby całkowicie nie uruchamiać określonych aplikacji lub procesów.
 
-Jeśli chcesz dowiedzieć się więcej o dodatkowych metodach zarządzania urządzeniami lub ograniczeniach dotyczących urządzeń, skorzystaj z następnego kroku i przeczytaj nasz [Zarządzanie urządzeniami Omówienie.](/hololens/hololens-csp-policy-overview)
+Jeśli chcesz dowiedzieć się więcej o dodatkowych metodach zarządzania urządzeniami lub ograniczeniach dotyczących urządzeń, skorzystaj z następnego kroku i zapoznaj się z Zarządzanie urządzeniami [Omówienie.](/hololens/hololens-csp-policy-overview)
 
 
 

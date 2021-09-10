@@ -1,5 +1,5 @@
 ---
-title: Przewodnik wdrażania — wdrożenie w 2 HoloLens połączone z chmurą na dużą skalę przy użyciu usługi Remote Assist — konfigurowanie
+title: Przewodnik wdrażania — wdrożenie w 2. HoloLens połączone z chmurą na dużą skalę przy użyciu usługi Remote Assist — konfigurowanie
 description: Dowiedz się, jak skonfigurować konfiguracje w celu rejestrowania urządzeń HoloLens za pośrednictwem sieci połączonej z chmurą na dużą skalę przy użyciu usługi Remote Assist.
 keywords: HoloLens, zarządzanie, połączone z chmurą, Remote Assist, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6999157c6f5a396812df26f748c771581b61d63709918abb2ae45063810ef8
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: eb96f1cdc799551297c0373268e8cc8f35c6bd06
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660563"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427076"
 ---
 # <a name="configure---cloud-connected-guide"></a>Konfigurowanie — przewodnik po chmurze
 
@@ -36,11 +36,11 @@ Jeśli nie masz&#39;jeszcze dostępu do dwóch kont usługi Azure AD w grupie u�
 - [Jak utworzyć użytkownika](/mem/intune/fundamentals/quickstart-create-user)
 - [Jak utworzyć grupę](/mem/intune/fundamentals/quickstart-create-group)
 - [Dodawanie użytkowników do grupy —](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) dodawanie utworzonych użytkowników w celu utworzenia grupy
-- [Konfigurowanie usługi Azure AD w celu umożliwienia grupie użytkowników](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) dołączania urządzeń — upewnij się, że nowa grupa użytkowników ma uprawnienia do rejestrowania urządzeń w usłudze Azure AD
+- [Konfigurowanie usługi Azure AD w celu umożliwienia](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) grupie użytkowników dołączania urządzeń — upewnij się, że nowa grupa użytkowników ma uprawnienia do rejestrowania urządzeń w usłudze Azure AD
 
 ## <a name="auto-enrollment-on-hololens-2"></a>Automatyczne rejestrowanie w HoloLens 2
 
-Aby zapewnić bezproblemowe i bezproblemowe środowisko, warto skonfigurować funkcję Azure Active Directory Join (AADJ) i automatyczne rejestrowanie w usłudze Intune dla urządzeń z systemem HoloLens 2. Umożliwi to użytkownikom wprowadzanie poświadczeń logowania organizacji podczas OOBE oraz automatyczne rejestrowanie w usłudze Azure AD i rejestrowanie urządzenia w usłudze MDM.
+Aby zapewnić bezproblemowe i bezproblemowe środowisko, należy skonfigurować funkcję Azure Active Directory Join (AADJ) i automatyczne rejestrowanie w usłudze Intune dla urządzeń z systemem HoloLens 2. Umożliwi to użytkownikom wprowadzanie poświadczeń logowania organizacji podczas OOBE oraz automatyczne rejestrowanie w usłudze Azure AD i rejestrowanie urządzenia w usłudze MDM.
 
 Korzystając z [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), możemy wybierać usługi i nawigować po kilku stronach do momentu wybrania opcji Pobierz Premium wersji próbnej. Możesz zauważyć, że istnieje Azure Active Directory — wersja Premium 1 i 2, dla automatycznej rejestracji P1 jest wystarczająca. Możemy wybrać usługę Intune, wybrać zakres użytkownika dla automatycznej rejestracji, a następnie wybrać wcześniej utworzoną grupę.
 

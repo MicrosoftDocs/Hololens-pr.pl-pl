@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0256ae24733fac7eb80a634edc78a33fcc1538d3d4a1db3c9b50fc01893c74
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 1c043b721590e8245f694b3e4f6e5b6ce57f1ecf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665424"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427588"
 ---
 # <a name="security-engineering"></a>Inżynieria zabezpieczeń
 
@@ -30,8 +30,8 @@ Firma Microsoft ma kilka zasobów i zespołów poświęconych optymalizacji prot
 
 ## <a name="updates-and-patches"></a>Aktualizacje i poprawki
 
-Aktualizacje zabezpieczeń i poprawki zostaną wydane w drugi wtorek każdego miesiąca. Aby zrozumieć kryteria używane przez firmę Microsoft do oceny następnych kroków w przypadku zgłoszonej luki w zabezpieczeniach, zobacz stronę security [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria)(Kryteria obsługi zabezpieczeń) Centrum zabezpieczeń firmy Microsoft firmy Microsoft. 
+Aktualizacje zabezpieczeń i poprawki zostaną wydane w drugi wtorek każdego miesiąca. Aby zrozumieć kryteria używane przez firmę Microsoft do oceny następnych kroków w przypadku zgłoszonej luki w zabezpieczeniach, zobacz stronę Centrum zabezpieczeń firmy Microsoft [Security Servicing Criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria)(Kryteria obsługi zabezpieczeń). 
 
-Aby uzyskać wskazówki dotyczące zarządzania aktualizacjami HoloLens 2 za pośrednictwem rozwiązania MDM, zobacz [Zarządzanie HoloLens aktualizacjami.](hololens-updates.md) Czas aktualizacji systemu operacyjnego dla HoloLens 2 jest taki Windows 10; W ciągu roku są dostępne dwie aktualizacje, jedna na wiosnę, a druga na wiosnę. Aby uzyskać więcej informacji na temat sposobu zabezpieczania urządzeń podczas aktualizacji systemu operacyjnego, zobacz [State separation and isolation (Separacja i izolacja stanu).](security-state-separation-isolation.md) 
+Aby uzyskać wskazówki dotyczące zarządzania HoloLens 2 za pomocą rozwiązania MDM, zobacz [Zarządzanie HoloLens aktualizacjami.](hololens-updates.md) Czas aktualizacji systemu operacyjnego dla HoloLens 2 odpowiada Windows 10; W ciągu roku są dostępne dwie aktualizacje, jedna na wiosnę, a druga na wiosnę. Aby uzyskać więcej informacji na temat sposobu zabezpieczania urządzeń podczas aktualizacji systemu operacyjnego, zobacz [State separation and isolation (Separacja i izolacja stanu).](security-state-separation-isolation.md) 
 
 Administratorzy IT mogą dowiedzieć się więcej na temat zasad aktualizacji na stronie [Policy CSP - Update](/windows/client-management/mdm/policy-csp-update). 

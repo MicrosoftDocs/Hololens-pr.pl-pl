@@ -1,6 +1,6 @@
 ---
 title: HoloLens omówienie zabezpieczeń
-description: Wprowadzenie do przeglądu zabezpieczeń dla urządzeń HoloLens rzeczywistości mieszanej.
+description: Wprowadzenie do przeglądu zabezpieczeń dla urządzeń rzeczywistości HoloLens rzeczywistości mieszanej.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5e65cd542cc1090a7744c0041d57f1e13d3ca0c67b15f81a515f8e3040438aca
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665644"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427451"
 ---
 # <a name="security-overview"></a>Omówienie zabezpieczeń
 
@@ -26,4 +26,4 @@ Aby sprostać wyzwaniom związanym z nowoczesnym krajobrazem zagrożeń i powią
 
 W HoloLens 2 firmy i klienci mają naprawdę nowoczesny, najnowocześniejszy system operacyjny z silną, wbudowaną platformą zabezpieczeń. Ten współczesny system operacyjny umożliwia deweloperom projektowanie, tworzenie i dostarczanie aplikacji przy użyciu wyjątkowej strategii zabezpieczeń, aby skutecznie zapobiegać złożonemu krajobrazowi zagrożeń i powiązanym z nim zagrożeniom. 
 
-W poniższych rozdziałach poświęconych bezpieczeństwu przedstawiono przegląd ewoluujących zabezpieczeń Windows HoloLens 2, dzięki którym deweloperzy mogą tworzyć bardziej skuteczne i bezpieczne aplikacje o wysokiej wydajności. W tych sekcjach opisano Windows HoloLens zabezpieczeń systemu operacyjnego 2, jego bezpieczne lokalizacje oraz powiązane funkcje i mechanizmy zabezpieczeń.
+W poniższych rozdziałach poświęconych bezpieczeństwu przedstawiono omówienie rozwijających się zabezpieczeń Windows HoloLens 2, które umożliwiają deweloperom tworzenie bardziej skutecznych i bezpiecznych aplikacji o wysokiej wydajności. W tych sekcjach opisano Windows HoloLens zabezpieczeń systemu operacyjnego 2, jego bezpieczne lokalizacje oraz powiązane funkcje i mechanizmy zabezpieczeń.

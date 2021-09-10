@@ -15,17 +15,17 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189447"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427276"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 — często zadawane pytania dotyczące czyszczenia
 
 > [!IMPORTANT]  
-> Firma Microsoft nie może ujednać skuteczności żadnego z produktów wywołujących w przypadku ataku na choroby, takie jak COVID-19. Zapoznaj się ze wskazówkami lokalnego urzędu zdrowia publicznego, aby dowiedzieć się, jak zapewnić bezpieczeństwo przed potencjalną iniekcją.  
+> Firma Microsoft nie może ujednosić skuteczności żadnego z produktów, które są czynnikami wywołującymi, podczas walk z naręczami, takimi jak COVID-19. Zapoznaj się ze wskazówkami lokalnego urzędu zdrowia publicznego, aby dowiedzieć się, jak zapewnić bezpieczeństwo przed potencjalną iniekcją.  
 
 ## <a name="hololens-2-use-and-care"></a>HoloLens 2 Użycie i ostrożność
 
@@ -35,60 +35,60 @@ ms.locfileid: "123189447"
 
 **Aby wyczyścić urządzenie**
 
-1. Usuń wszystkie z nich przy użyciu suchej mikrofibry bez lint, aby wyczyścić powierzchnię urządzenia.
+1. Usuń dowolny z nich, używając suchej mikrofibry bez lint, aby wyczyścić powierzchnię urządzenia.
 
-   ![Czyszczenie podczas przytrzymywania z panelu do przechowanie.](images/hl2-cleaning.png)
+   ![Wyczyść przytrzymując z przeglądarki.](images/hl2-cleaning.png)
 
-2. Lightly moi za pomocą medycznego "70%" izopropylu, a następnie użyj przeszytej łydki, aby wyczyścić powierzchnię urządzenia.
+2. Jasno nawilżyć zębodło przy użyciu medycznego "70%" izopropylu, a następnie użyć nawilżenia, aby wyczyścić powierzchnię urządzenia.
 
-3. Pozwól urządzeniu całkowicie schnąć.
+3. Pozwól urządzeniu całkowicie wyschnąć.
 
-**Aby wyczyścić nakładkę do przechwę**
+**Aby wyczyścić nakładkę do przeglądarki**
 
-1. Użyj wody i zjedz nawilgotego soapu, aby naimować go, a następnie użyj przeszytej nawilżenia w celu wyczyszczenia brow padu.
-1. Zajmij się całkowicie wyschnięciam przeglądarki.
+1. Użyj wody i nawilżenia go, a następnie nawilżenia go za pomocą przeszytego browa.
+1. Pozwól, aby nakładka do przechłonięcia całkowicie się wyschła.
 
 ## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>Czy do czyszczenia HoloLens obiektywu można użyć dowolnego czyszczenia obiektywu?
 
-Nie. Środki czyszczące obiektywy mogą być chłone na przyszycie. Aby wyczyścić wizjer, wykonaj następujące kroki:  
+Nie. Środki czyszczące obiektywy mogą być dosyłane do pępków w oszołomie. Aby wyczyścić wizjer, wykonaj następujące kroki:  
 
-1. Usuń wszystkie pączki za pomocą suchej mikrofibry bez lint, aby wyczyścić osłonę.
-1. Lightly moi za pomocą medycznego "70%" izopropylu, a następnie wymazuje z osłodę.
-1. Pozwól, aby oszławka całkowicie wyschła.
+1. Usuń wszystkie jagody, używając suchej mikrofibry bez lint, aby wyczyścić osłodę.
+1. Jasno nawilżyć go przy użyciu medycznego "70%" izopropylu, a następnie wymazać daszek.
+1. Niech da się całkowicie wyschnąć.
 
-## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Czy można użyć czyszczenia w celu wyczyszczenia urządzenia?
+## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Czy mogę wyczyścić urządzenie za pomocą czyszczenia?
 
-Tak, jeśli czyszczenia nie zawierają wypaczania. Aby wyczyścić powierzchnię na powierzchniach, można użyć czyszczenia bez [HoloLens czyszczenia.](#hololens-2-use-and-care)  
-
-> [!CAUTION]  
-> Unikaj używania czyszczenia odcierania, które zawiera odciek, aby wyczyścić HoloLens powierzchni. W krytycznych sytuacjach, gdy nic innego nie jest dostępne, dopuszczalne jest używanie czyszczenia odszybego. Jednak odtwórz może uszkodzić HoloLens lub inne powierzchnie.
-
-## <a name="can-i-use-alcohol-to-clean-the-device"></a>Czy mogę użyć wody do oczyszczenia urządzenia?
-
-Tak. Możesz użyć rozwiązania o wartości "70%" ipropylu i wody, aby wyczyścić twarde powierzchnie urządzenia, w tym osłonę. Lightly moi za pomocą połączenia składników izopropylowych i wody, a następnie przecieraj powierzchnię urządzenia
-
-## <a name="is-the-brow-pad-replaceable"></a>Czy nakładka do przechwęć jest wymierna?
-
-Tak. Nakładka do przegłysu jest dołączona magnetyczne do urządzenia. Aby go odłączyć, należy odłączyć go od pałąka. Aby go zastąpić, przyciągnij go z powrotem na miejsce.
-
-![Usuń lub zamień nakładkę do brew.](images/hololens2-remove-browpad.png)
-
-## <a name="how-can-i-clean-the-brow-pad"></a>Jak wyczyścić nakładkę do przechwęć?
-
-Aby wyczyścić nakładkę do przechłania, wyczyść ją przy użyciu przeszytej wody i przeszytego protokołu SOAP. Przed użyciem ponownie zajmij się całkowicie wyschnięciam przeglądarki.
-
-## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Czy do czydzenia urządzenia można użyć światła ULTRAVIOLET (ULTRAVIOLET)?
-
-Przy użyciu diody LED FILTRC, która działa na poziomie natężenia 265nm o natężeniu 0,5–0,6 mW/cm<sup>2,</sup>i która nie emituje ozonu, można użyć do odczyszczenia urządzenia HoloLens2. Postępuj zgodnie ze specyfikacjami producenta na temat obsługi i czasu narażenia.
+Tak, jeśli czyszczenia nie zawierają czyszczenia. Czyszczenia nieszalizujące można użyć w celu [ujednowienia](#hololens-2-use-and-care)czyszczenia HoloLens powierzchni.  
 
 > [!CAUTION]  
-> Wysokie poziomy narażenia NASA-A i LAMP-B mogą obniżyć jakość wyświetlania urządzenia i uszkodzić osłonę. Przesłonić na nasłoneczenia na nasłoneczenia NASad-A i LAMP-B ma następujące skutki, uporządkowane w zależności od czasu trwania i natężenia narażenia:
+> Należy unikać czyszczenia odmówień, które zawiera odciek do czyszczenia HoloLens powierzchni. Dopuszczalne jest używanie czyszczenia wyczyszczacza w krytycznych sytuacjach, gdy nic innego nie jest dostępne. Jednak odszybnianie może uszkodzić HoloLens lub inne powierzchnie.
+
+## <a name="can-i-use-alcohol-to-clean-the-device"></a>Czy do czyszczenia urządzenia można użyć ich do czyszczenia?
+
+Tak. Możesz użyć rozwiązania "70%" izopropylu i wody, aby wyczyścić twarde powierzchnie urządzenia, w tym osłonę. Lightly moiste the water by using a mix of isopropyl water and then wipe wipe the surface of the device
+
+## <a name="is-the-brow-pad-replaceable"></a>Czy nakładka do brew jest wymieńna?
+
+Tak. Nakładka do brew jest magnetycznego dołączona do urządzenia. Aby go odłączyć, odciągnij go od pałąka. Aby go zastąpić, przyciągnij go z powrotem na miejsce.
+
+![Usuń lub zamień nakładkę na brew.](images/hololens2-remove-browpad.png)
+
+## <a name="how-can-i-clean-the-brow-pad"></a>Jak wyczyścić nakładkę do brew?
+
+Aby wyczyścić nakładkę do przechrania, wyczyść ją przy użyciu przeszytej wody i nasypowego protokołu SOAP. Przed użyciem ponownie zajmij się całkowicie wyschnięciam przeglądarki.
+
+## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Czy do czydzenia urządzenia można użyć światła ultraviolet (LAMP)?
+
+Irracyjność FILTRC przy użyciu diody LED FILTRC lub odfiltrowanych źródeł światła FILTRC, która działa na poziomie natężenia 0,5–0,6 mW/cm2 i nie emituje ozonu, może służyć do czyszczenia HoloLens 2. Postępuj zgodnie ze specyfikacjami producenta na temat obsługi i czasu narażenia.
+
+> [!CAUTION]  
+> Wysokie poziomy narażenia NA KONTAKT-A i LAMP-B mogą obniżyć jakość wyświetlania urządzenia i uszkodzić osłonę. Zbytnie narażenie na nasłoneczenia NASA a i NASA ma następujące skutki, uporządkowane w kolejności czasu trwania i natężenia narażenia:
 >  
 > 1. Zamknięcie przeglądarki i urządzenia stają się bezbarwne.
-> 1. Usterki są wyświetlane w antyodbiciach (AR) w oszycie i w oknach czujników.
-> 1. Usterki są wyświetlane w podstawowych materiałach oszybka i w oknach czujników.
+> 1. Defekty są wyświetlane w antyodbiciach (AR) na ośledlach i oknach czujników.
+> 1. Defekty pojawiają się w materiałach podstawowych szyby i w oknach czujników.
 > 1. Wydajność wyświetlania spada.
 
-## <a name="is-the-rear-pad-replaceable"></a>Czy tylnej podkładki można wymień?
+## <a name="is-the-rear-pad-replaceable"></a>Czy tylny panel jest wymieńny?
 
 Nie.

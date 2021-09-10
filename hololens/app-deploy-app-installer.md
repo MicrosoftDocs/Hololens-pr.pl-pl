@@ -1,5 +1,5 @@
 ---
-title: Jak ładować bezpośrednio i instalować aplikacje za pomocą HoloLens 2 Instalator aplikacji
+title: Jak ładować bezpośrednio i instalować aplikacje za pośrednictwem HoloLens 2 Instalator aplikacji
 description: Dowiedz się, jak instalować aplikacje i rozwiązywać problemy z aplikacjami za pomocą instalatora aplikacji oraz ładować bezpośrednio i instalować aplikacje za pośrednictwem interfejsu użytkownika.
 keywords: zarządzanie aplikacją, aplikacja, hololens, instalator aplikacji
 author: evmill
@@ -15,18 +15,18 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188920"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427668"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Instalowanie aplikacji na HoloLens 2 za pośrednictwem Instalator aplikacji
 
 > [!NOTE]
-> Ta funkcja została dostępna na Windows [Holographic w wersji 20H2 — aktualizacja z grudnia 2020 r.](hololens-release-notes.md). Upewnij się, że [urządzenie zostało zaktualizowane w](hololens-update-hololens.md) celu korzystania z tej funkcji.
+> Ta funkcja została dostępna na Windows Holographic w wersji [20H2 — aktualizacja z grudnia 2020 r.](hololens-release-notes.md). Upewnij się, że [urządzenie zostało zaktualizowane w](hololens-update-hololens.md) celu korzystania z tej funkcji.
 
-Dodaliśmy **nową funkcję (Instalator aplikacji),** która umożliwia bezproblemowe instalowanie aplikacji na urządzeniach HoloLens 2. Ta funkcja będzie domyślnie **włączona dla urządzeń niezamaniowych.** Aby zapobiec przerwom w działaniu przedsiębiorstw, instalator aplikacji nie będzie w tej chwili dostępny dla **zarządzanych** urządzeń.  
+Dodaliśmy **nową funkcję (Instalator aplikacji),** aby umożliwić bezproblemowe instalowanie aplikacji na urządzeniach HoloLens 2. Ta funkcja będzie domyślnie **włączona dla urządzeń niezamaniowych.** Aby zapobiec przerwom w działaniu przedsiębiorstw, instalator aplikacji nie będzie w tej chwili dostępny dla **zarządzanych** urządzeń.  
 
 Urządzenie jest uznawane za "zarządzane", **jeśli** spełnione są dowolne z następujących czynności:
 
@@ -34,7 +34,7 @@ Urządzenie jest uznawane za "zarządzane", **jeśli** spełnione są dowolne z 
 - Skonfigurowano przy użyciu [pakietu aprowiwizowania](hololens-provisioning.md)
 - Tożsamość [użytkownika to](hololens-identity.md) usługa Azure AD
 
-Teraz możesz instalować aplikacje bez konieczności włączania trybu dewelopera ani korzystania z Portal urządzeń.  Pobierz (za pośrednictwem portu USB lub za pośrednictwem Microsoft Edge) pakiet Appx na urządzenie i przejdź do pakietu Appx w Eksplorator plików, aby zostać wyświetlony monit o rozpocznienie instalacji.  Alternatywnie [zainicjuj instalację ze strony internetowej](/windows/msix/app-installer/installing-windows10-apps-web). Podobnie jak w przypadku aplikacji instalowanych z usługi Microsoft Store lub ładowania bezpośrednio przy użyciu funkcji wdrażania [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) aplikacji LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) rozwiązania MDM, aplikacje muszą być podpisane cyfrowo za pomocą narzędzia podpisywania, a certyfikat używany do podpisywania musi być zaufany przez urządzenie HoloLens, zanim będzie można wdrożyć aplikację.
+Teraz możesz instalować aplikacje bez konieczności włączania trybu dewelopera ani korzystania z Portal urządzeń.  Pobierz (za pośrednictwem portu USB lub za pośrednictwem Microsoft Edge) pakiet Appx na urządzenie i przejdź do pakietu Appx w Eksplorator plików, aby zostać poproszony o rozpocznienie instalacji.  Alternatywnie [zainicjuj instalację ze strony internetowej](/windows/msix/app-installer/installing-windows10-apps-web). Podobnie jak w przypadku aplikacji instalowanych z usługi Microsoft Store lub ładowania bezpośrednio przy użyciu funkcji wdrażania [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) aplikacji LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) rozwiązania MDM, aplikacje muszą być podpisane cyfrowo za pomocą narzędzia podpisywania, a certyfikat używany do podpisywania musi być zaufany przez urządzenie HoloLens, zanim będzie można wdrożyć aplikację.
 
 ## <a name="requirements"></a>Wymagania
 
@@ -50,7 +50,7 @@ Aplikacje instalowane za pomocą tej metody muszą być podpisane cyfrowo. Do po
 
 - Jak podpisywać aplikacje [przy użyciu narzędzia do podpisywania.](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
-**Opcje certyfikatów:**
+**Opcje certyfikatu:**
 
 - [Lista zaufanych urzędu certyfikacji MS](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
 
@@ -63,13 +63,13 @@ Aplikacje instalowane za pomocą tej metody muszą być podpisane cyfrowo. Do po
 ## <a name="installation-method"></a>Metoda instalacji
 
 1. Sprawdź, czy urządzenie nie jest uznawane za zarządzane.
-1. Sprawdź, czy urządzenie HoloLens 2 jest włączone i że użytkownik jest zalogowany.
+1. Sprawdź, czy urządzenie HoloLens 2 jest włączone i że się zalogowano.
 1. Na komputerze przejdź do aplikacji niestandardowej i skopiuj plik yourapp.appxbundle do folderu yourdevicename\Internal Storage\Downloads.
     Po zakończeniu kopiowania pliku możesz rozłączyć urządzenie i zakończyć instalację później.
 1. Na urządzeniu HoloLens 2 Otwórz **menu Start,** wybierz pozycję **Wszystkie aplikacje** i uruchom **Eksplorator plików** aplikację.
 1. Przejdź do folderu Pobrane. W lewym panelu aplikacji może być najpierw konieczne wybranie opcji **To urządzenie,** a następnie przejście do sekcji Pliki do pobrania.
 1. Wybierz plik yourapp.appxbundle.
-1. Zostanie Instalator aplikacji uruchomieniu. Wybierz przycisk **Zainstaluj,** aby zainstalować aplikację.
+1. Zostanie Instalator aplikacji. Wybierz przycisk **Zainstaluj,** aby zainstalować aplikację.
 
 Zainstalowana aplikacja zostanie automatycznie uruchamiana po zakończeniu instalacji.
 
@@ -77,7 +77,7 @@ Zainstalowana aplikacja zostanie automatycznie uruchamiana po zakończeniu insta
 
 ### <a name="troubleshooting-installs"></a>Rozwiązywanie problemów z instalacjami
 
-Jeśli instalacja aplikacji nie powiodła się, sprawdź następujące kwestie, aby rozwiązać problemy:
+Jeśli instalacja aplikacji nie powiodła się, zapoznaj się z następującymi tematami, aby rozwiązać problemy:
 
 - Twoja aplikacja jest kompilacją master lub kompilacją wydania.
 - Urządzenie zostanie zaktualizowane do kompilacji, na której ta funkcja jest dostępna.
@@ -86,7 +86,7 @@ Jeśli instalacja aplikacji nie powiodła się, sprawdź następujące kwestie, 
 
 ## <a name="web-installer"></a>Instalator sieci Web
 
-Użytkownicy mogą instalować aplikację bezpośrednio z serwera internetowego. Ten przepływ korzysta z tych Instalator aplikacji w połączeniu z łatwą metodą pobierania i instalowania dystrybucji.
+Użytkownicy mogą instalować aplikację bezpośrednio z serwera internetowego. Ten przepływ korzysta z Instalator aplikacji w połączeniu z łatwą metodą pobierania i instalowania dystrybucji.
 
 ### <a name="how-to-set-up-web-install"></a>Jak skonfigurować instalację internetową:
 
@@ -98,7 +98,7 @@ Użytkownicy mogą instalować aplikację bezpośrednio z serwera internetowego.
 1. Użytkownik odbiera i instaluje certyfikat na urządzeniu przy użyciu metody wybranej wcześniej.
 1. Użytkownik odwiedzi adres URL utworzony w powyższym kroku.
 
-Aplikacja zostanie teraz instalowana na urządzeniu. Aby znaleźć aplikację, otwórz menu Start **i** wybierz przycisk **Wszystkie aplikacje,** aby znaleźć aplikację.
+Aplikacja zostanie teraz instalowana na urządzeniu. Aby znaleźć aplikację, otwórz menu Start **i** **wybierz** Wszystkie aplikacje, aby znaleźć aplikację.
 
 - Aby uzyskać więcej pomocy dotyczącej rozwiązywania problemów z metodą instalacji instalatora aplikacji, odwiedź [stronę rozwiązywanie problemów z instalatorem aplikacji.](/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 
