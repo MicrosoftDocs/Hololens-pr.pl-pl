@@ -1,7 +1,7 @@
 ---
 title: często zadawane pytania dotyczące HoloLens 2 Industrial Edition
 description: Często zadawane pytania dotyczące wersji HoloLens 2 Industrial Edition
-keywords: HoloLens 2 opcje zakupu, HoloLens, Industrial Edition
+keywords: HoloLens 2 opcje zakupu, opcje HoloLens, Industrial Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -15,47 +15,47 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 0ac7228e4af807d709d218942c50a9b110a419c1
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036399"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 — często zadawane pytania dotyczące wersji przemysłowej
 
 ![Wersja industrialna używana w czystym pomieszczeniu.](./images/industrial-sku-with-remote-assist.png)
 
-## <a name="hololens-2-industrial-edition-benefits"></a>HoloLens 2 Industrial Edition Benefits
+## <a name="hololens-2-industrial-edition-benefits"></a>HoloLens 2 Korzyści z wersji przemysłowej
 
 ### <a name="what-benefits-does-hololens-2-industrial-edition-2-include"></a>Jakie korzyści daje HoloLens 2 Industrial Edition 2?
 
-Wersja HoloLens 2 Industrial Edition została zaprojektowana w celu rozwiązywania problemów klientów przemysłowych w czystych środowiskach i pomagania w bezpieczeństwie operacyjnym w tych środowiskach. Została zaprojektowana i przetestowana pod kątem zgodności z czystym pomieszczeniem, wewnętrznych certyfikatów bezpieczeństwa i wspierana przez jeszcze bardziej niezawodny program pomocy technicznej.
+Wersja HoloLens 2 Industrial Edition została zaprojektowana w celu rozwiązywania problemów dla klientów przemysłowych w czystych środowiskach i pomagania w bezpieczeństwie operacyjnym w tych środowiskach. Została zaprojektowana i przetestowana pod kątem zgodności z czystym pomieszczeniem, wewnętrznych certyfikatów bezpieczeństwa i wspierana przez jeszcze bardziej niezawodny program pomocy technicznej.
 
-Użycie wersji HoloLens 2 Industrial Edition w tych środowiskach znacznie zmniejsza podróżowanie do i z obszarów czystego pomieszczenia oraz zmniejsza ogólne koszty pracy. Możliwość fizycznego zajmowania małego miejsca w czystym pomieszczeniu i nadal mieć dostęp do dowolnej dokumentacji/ całej dokumentacji i poziomu wiedzy spowoduje obniżenie kosztów pracy.
+Dzięki użyciu HoloLens 2 Industrial Edition w tych środowiskach znacznie zmniejsza się podróż do i z obszarów czystego pomieszczenia oraz zmniejsza ogólne koszty pracy. Możliwość fizycznego zajmowania małego miejsca w czystym pomieszczeniu i nadal mieć dostęp do dowolnej dokumentacji/ całej dokumentacji i poziomu wiedzy spowoduje obniżenie kosztów pracy.
 
 ### <a name="what-clean-room-environments-does-hololens-2-industrial-edition-support"></a>Jakie środowiska czystego pomieszczenia obsługuje HoloLens 2 Industrial Edition?
 
-HoloLens 2 Industrial Edition obsługuje środowiska podlegających regulacjom, które mają rygorystyczne wymagania i spełniają standardy emisji cząstek dla czystych pomieszczeń w standardach ISO 14644-1 Class 5.
+HoloLens 2 Industrial Edition obsługuje środowiska podlegające regulacjom, które mają rygorystyczne wymagania i spełniają standardy emisji dwutlenku węgla dla czystych pomieszczeń iso 14644-1 klasy 5.
 
 Aby uzyskać więcej informacji, przeczytaj więcej na temat standardu [ISO 14644-1](https://www.iso.org/standard/53394.html) (Airborne Clean nieczystości klasy w cleanrooms and clean zones).
 
 ### <a name="does-hololens-2-industrial-edition-meet-requirements-for-intrinsic-safety"></a>Czy HoloLens 2 Industrial Edition spełnia wymagania dotyczące bezpieczeństwa wewnętrznego?
 
-Wersja HoloLens 2 Industrial Edition jest certyfikowana do użycia w środowiskach HAZLOC klas I, 2-grup A, B, C i D UL, w których mogą istnieć gazy, gazy lub płyny.
+Wersja HoloLens 2 Industrial Edition jest certyfikowana do użycia w środowiskach HAZLOC klas I, 2-grup A, B, C i D UL, w których mogą istnieć pąki, nasypki lub płyny.
 
 Aby uzyskać więcej informacji, przeczytaj o [certyfikatach UL.](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search)
 
 ### <a name="does-the-hololens-2-industrial-edition-hold-an-atex-certification"></a>Czy HoloLens 2 Industrial Edition ma certyfikat ATEX?
 
-Nie. W HoloLens 2 Industrial Edition nie ma certyfikatu ATEX. Wersja HoloLens 2 Industrial Edition posiada certyfikat US/CAN Class I, Division 2-Groups A, B, C i D.
+Nie. System HoloLens 2 Industrial Edition nie ma certyfikatu ATEX. Wersja HoloLens 2 Industrial Edition posiada certyfikat US/CAN Class I, Division 2-Groups A, B, C i D.
 
 ### <a name="can-the-device-be-used-in-semiconductor-and-pharmaceutical-environments"></a>Czy urządzenie może być używane w środowiskach leków i leków?
 
 Tak. Wersja HoloLens 2 Industrial Edition została zaprojektowana z uwzględnieniem tych kwestii dotyczących środowiska HoloLens. Certyfikaty dotyczące czystych pomieszczeń i bezpieczeństwa operacyjnego są gotowe do użycia w tych środowiskach.
 
-### <a name="what-is-the-hololens-2-industrial-edition-warranty"></a>Jaka jest gwarancja na wersję HoloLens 2 Industrial Edition?
+### <a name="what-is-the-hololens-2-industrial-edition-warranty"></a>Jaka jest gwarancja na HoloLens 2 Industrial Edition?
 
-W HoloLens 2 Industrial Edition są objęte 2-letnią gwarancją i programem szybkiego zastępowania.
+W HoloLens 2 Industrial Edition są objęte 2-letnią gwarancją i programem do szybkiego wymiany.
 
 Odwiedź tę stronę, aby [znaleźć HoloLens informacji o gwarancji.](https://support.microsoft.com/warranty)
 
@@ -68,7 +68,7 @@ Oprócz 2-letniego gwarancji system HoloLens 2 Industrial Edition obejmuje progr
 
 ### <a name="can-i-purchase-replacement-parts-for-hololens-2-industrial-edition"></a>Czy mogę kupić części zastępcze dla HoloLens 2 Industrial Edition?
 
-Części zastępcze i naprawy nie są obsługiwane w przypadku HoloLens 2 Industrial Edition. Jeśli potrzebujesz wymiany, skorzystaj z naszego szybkiego programu zastępczego dla wersji HoloLens 2 Industrial Edition.
+Części zastępcze i naprawy nie są obsługiwane w HoloLens 2 Industrial Edition. Jeśli potrzebujesz wymiany, skorzystaj z naszego szybkiego programu zastępczego dla wersji HoloLens 2 Industrial Edition.
 
 ### <a name="is-the-carrying-case-clean-room-approved"></a>Czy pomieszczenie do przewoszczenia jest zatwierdzane?
 

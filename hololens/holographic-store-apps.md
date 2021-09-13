@@ -1,6 +1,6 @@
 ---
 title: Znajdowanie, instalowanie i odinstalowywanie aplikacji
-description: Aplikacja Microsoft Store źródło aplikacji i gier, które działają z HoloLens.  Dowiedz się więcej na temat znajdowania, instalowania i odinstalowywania aplikacji holograficznych.
+description: Ta Microsoft Store źródło aplikacji i gier, które działają z HoloLens.  Dowiedz się więcej na temat znajdowania, instalowania i odinstalowywania aplikacji holograficznych.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
 ms.date: 9/7/2021
@@ -16,17 +16,17 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 3442da500e7554d7f97db2178cbaceeecad143ac
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427616"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036065"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Znajdowanie, instalowanie i odinstalowywanie aplikacji z Microsoft Store
 
-Ten Microsoft Store to źródło dla aplikacji i gier, które działają z HoloLens. Po przejdź do sklepu na HoloLens zostaną w nim uruchomione wszystkie aplikacje, które tam zobaczysz.
+Ten Microsoft Store to źródło dla aplikacji i gier, które działają z HoloLens. Po przejdź do sklepu na HoloLens zostaną uruchomione na nim wszystkie aplikacje, które tam zobaczysz.
 
-Aplikacje w HoloLens używać widoku 2D lub widoku holograficznego. Aplikacje, które używają widoku 2D, wyglądają jak okna i mogą być rozmieszone wokół Ciebie. Aplikacje, które korzystają z widoku holograficznego, otaczają Cię i stają się jedyną zobaczysz.
+Aplikacje w HoloLens używają widoku 2D lub widoku holograficznego. Aplikacje, które używają widoku 2D, wyglądają jak okna i mogą być rozmieszone wokół Ciebie. Aplikacje, które korzystają z widoku holograficznego, otaczają Cię i stają się jedyną zobaczysz.
 
 HoloLens obsługuje wiele istniejących aplikacji z Microsoft Store, a nowe aplikacje opracowane specjalnie dla HoloLens.  Ten artykuł koncentruje się na aplikacjach holograficznych z Microsoft Store.
 
@@ -62,7 +62,7 @@ Aby pobrać aplikacje, musisz zalogować się przy użyciu konto Microsoft. Niek
 > Konto, za pomocą Microsoft Store nie musi być takie samo jak konto, za pomocą których się zalogowano. Jeśli używasz konta służbowego na koncie usługi HoloLens może być konieczne zalogowanie się przy użyciu konta osobistego w aplikacji ze sklepu, aby dokonać zakupu.
 
 > [!TIP]
-> Aby skonfigurować formę płatności, przejdź do usługi [account.microsoft.com](https://account.microsoft.com/) i wybierz pozycję Rozliczenia & **Opcje** płatności  >    >  **Dodaj opcję płatności.**
+> Aby skonfigurować formę płatności, przejdź do usługi  [account.microsoft.com](https://account.microsoft.com/) i wybierz pozycję Rozliczenia & Opcje płatności  >    >  **Dodaj opcję płatności.**
 
 1. Aby otworzyć menu [ **Start,**](holographic-home.md)wykonaj gest [Start](/hololens/hololens2-basic-usage#start-gesture) lub gest [Blooma](hololens1-basic-usage.md) HoloLens (1. generacja).
 

@@ -1,6 +1,6 @@
 ---
 title: HoloLens Szyfrowanie funkcją BitLocker
-description: Dowiedz się, jak włączyć szyfrowanie urządzenia za pomocą funkcji BitLocker w celu ochrony plików przechowywanych na urządzeniach HoloLens rzeczywistości mieszanej.
+description: Dowiedz się, jak włączyć szyfrowanie urządzeń funkcją BitLocker w celu ochrony plików przechowywanych na urządzeniach HoloLens rzeczywistości mieszanej.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,11 +14,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033781"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (1. generacji) szyfrowanie funkcją BitLocker
 
@@ -46,7 +46,7 @@ Aby uzyskać instrukcje dotyczące innych narzędzi MDM, zapoznaj się z dokumen
 
 Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration Designer, które stosuje określoną konfigurację do urządzenia. 
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Tworzenie pakietu aprowizowania, który uaktualnia Windows Holographic Edition i włącza szyfrowanie
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Tworzenie pakietu aprowizowania, który uaktualnia wersję Windows Holographic i włącza szyfrowanie
 
 1. [Utwórz pakiet aprowizowania dla HoloLens.](hololens-provisioning.md)
 1. Przejdź do **opcji Ustawienia środowiska**  >  **uruchomieniowego**  >  **Zabezpieczenia zasad** i wybierz pozycję **WymagajUrządzajSzyfruj.**
@@ -73,7 +73,7 @@ Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration 
     > [!TIP]
     > Możesz wprowadzić zmiany w istniejących pakietach i zmienić numer wersji, aby zaktualizować wcześniej zastosowane pakiety.
 
-1. Na stronie Wybierz szczegóły zabezpieczeń dla pakietu **aprowizowania** kliknij przycisk **Dalej.**
+1. Na stronie **Wybierz szczegóły zabezpieczeń dla pakietu aprowizowania** kliknij przycisk **Dalej.**
 1. Kliknij **przycisk** Dalej, aby określić lokalizację wyjściową, w której ma przejść pakiet aprowizowania po jego s zbudowaniu. Domyślnie program Windows ICD używa folderu projektu jako lokalizacji wyjściowej.
 
     Opcjonalnie możesz kliknąć przycisk Przeglądaj, aby zmienić domyślną lokalizację wyjściową.
@@ -84,7 +84,7 @@ Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration 
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Zastosuj pakiet aprowizowania do HoloLens
 
-1. Połączenie urządzenie za pośrednictwem portu USB na komputer i uruchom urządzenie, ale nie kontynuuj pracy po stronie dopasowania początkowego procesu konfiguracji (pierwsza strona z niebieskim polem). 
+1. Połączenie urządzenie za pośrednictwem portu USB na komputer i uruchom urządzenie, ale nie przeszukaj strony dopasowania początkowego procesu konfiguracji (pierwsza strona z niebieskim polem). 
 1. Naciśnij krótko i zwolnij przyciski **Volume Down** i **Power** jednocześnie.
 1. HoloLens będzie wyświetlane jako urządzenie w Eksplorator plików na komputerze.
 1. W Eksplorator plików przeciągnij i upuść pakiet aprowizowania (ppkg) do magazynu urządzenia.
@@ -93,7 +93,7 @@ Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration 
 1. Zobaczysz, czy pakiet został zastosowany pomyślnie, czy nie. Jeśli to się nie powiedzie, możesz naprawić pakiet i spróbować ponownie. Jeśli to się powiodło, przejdź do konfiguracji urządzenia.
 
 > [!NOTE]
-> Jeśli urządzenie zostało zakupione przed sierpniem 2016 r., musisz zalogować się do urządzenia przy użyciu usługi konto Microsoft, pobrać najnowszą aktualizację systemu operacyjnego, a następnie zresetować system operacyjny, aby zastosować pakiet aprowizowania.
+> Jeśli urządzenie zostało zakupione przed sierpniem 2016 r., musisz zalogować się do urządzenia przy użyciu usługi konto Microsoft, pobrać najnowszą aktualizację systemu operacyjnego, a następnie zresetować system operacyjny w celu zastosowania pakietu aprowizowania.
 
 ## <a name="verify-device-encryption"></a>Weryfikowanie szyfrowania urządzenia
 

@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032982"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Typowe scenariusze — bezpieczne HoloLens w trybie offline 2
 
@@ -106,13 +106,13 @@ Tworzenie bezpiecznego pakietu aprowizowania konfiguracji
 
    ![HoloLens 2 ARC.](images/arc_warning.png)
 
-1. Poczekaj, aż narzędzie ARC ukończy instalację HoloLens systemu operacyjnego 2.
-1. Po zakończeniu instalacji urządzenia i jego powrocie z powrotem przejdź z komputera do folderu Eksplorator plików i skopiuj wcześniej zapisany plik PPKG do folderu urządzenia.
+1. Poczekaj, aż narzędzie ARC ukończy instalację systemu HoloLens 2.
+1. Po zakończeniu instalacji i powrocie urządzenia do systemu przejdź z komputera do folderu Eksplorator plików i skopiuj wcześniej zapisany plik PPKG do folderu urządzenia.
 
    > [!div class="mx-imgBorder"]
    > ![Plik PPKG na komputerze w Eksplorator plików oknie.](images/offline-secure-file-explorer.png)
 
-1. Na ekranie HoloLens 2 naciśnij następujące kombi przycisku, aby uruchomić pakiet aprowizowania: Naciśnij jednocześnie pozycję Volume **Down** (Wolumin w dół) i **Power Button (Przycisk** zasilania).
+1. Na HoloLens 2 naciśnij następujące kombi przycisku, aby uruchomić pakiet aprowizowania: Naciśnij jednocześnie pozycję Volume **Down** (Wolumin w dół) i **Power Button (Przycisk** zasilania).
 1. Zostanie wyświetlony monit o zastosowanie pakietu aprowizowania, wybierz pozycję **Potwierdź**
 1. Po zakończeniu pakietu aprowizowania wybierz przycisk **OK.**
 1. Następnie powinien zostać wyświetlony monit o zalogowanie się na urządzeniu przy użyciu udostępnionego konta lokalnego i hasła.

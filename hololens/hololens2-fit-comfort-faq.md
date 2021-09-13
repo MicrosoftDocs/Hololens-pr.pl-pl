@@ -14,13 +14,13 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036439"
 ---
-# <a name="hololens-2-fit-and-comfort-frequently-asked-questions"></a>HoloLens 2 dopasowania i komfortu często zadawane pytania
+# <a name="hololens-2-fit-and-comfort-frequently-asked-questions"></a>HoloLens często zadawane pytania dotyczące dopasowania i komfortu 2
 
 Poniżej znajdują się porady dotyczące tego, jak zachować wygodę i jak najlepiej korzystać z HoloLens.
 
@@ -33,7 +33,7 @@ Poniżej znajdują się porady dotyczące tego, jak zachować wygodę i jak najl
 
 ## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>Występują problemy podczas korzystania z urządzenia. Co mam zrobić?
 
-Jeśli poczujesz się dobrze, zrób sobie przerwę, aż poczujesz się lepiej. Spróbuj posieć w dobrze oświetlonym pomieszczeniu i na trochę się odpoczywać. Następnym razem, gdy użyjesz HoloLens, spróbuj użyć go na krótszy okres.
+Jeśli poczujesz się dobrze, zrób sobie przerwę, aż poczujesz się lepiej. Spróbuj posieć w dobrze oświetlonym pomieszczeniu i na trochę się odpoczywać. Gdy następnym razem użyjesz HoloLens, spróbuj użyć go na krótszy czas.
 
 Aby uzyskać więcej informacji, zobacz [Health and safety on HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661)(Kondycja i HoloLens ).
 
@@ -54,7 +54,7 @@ Zobacz kroki rozwiązywania HoloLens [2.](hololens2-display.md)
 
 ## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>Urządzenie wysuwa się w dół, gdy go używasz, lub muszę zbyt mocno przytrzymać pałąk, aby zapewnić bezpieczeństwo
 
-Narzut może pomóc w zabezpiecz HoloLens na głowy, szczególnie w przypadku, gdy dużo się poruszasz. Zajmij się też odejściem od pałąka. [Dowiedz się, jak z niego korzystać.](hololens2-setup.md#adjust-fit)
+Narzut może pomóc w HoloLens bezpieczeństwa głowy, szczególnie w przypadku, gdy dużo się poruszasz. Zajmij się też odejściem od pałąka. [Dowiedz się, jak z niego korzystać.](hololens2-setup.md#adjust-fit)
 
 Możesz również poeksperymentować z pozycjonowaniem pałąka w zależności od rozmiaru i kształtu głowy. W celu zmiany położenia głowy może być konieczne przesunięcie go w górę lub w &mdash; dół.
 

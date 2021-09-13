@@ -17,11 +17,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9474774b47858003cc11363a5f325f589b0732ab
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033903"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Konfigurowanie HoloLens przy użyciu pakietu aprowizowania
 
@@ -88,20 +88,20 @@ Użyj narzędzia Windows Configuration Designer, aby utworzyć pakiet aprowizowa
 ### <a name="configure-settings"></a>Konfigurowanie ustawień
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Przejdź do pliku licencji enterprise i wybierz go, aby uaktualnić HoloLens wersji.</br></br>Możesz również przełączyć opcję <strong>Tak</strong> lub <strong>Nie,</strong> aby ukryć części pierwszego doświadczenia.</br></br>Aby skonfigurować urządzenie bez konieczności łączenia się z siecią Wi-Fi, przełącz ustawienie Pomiń Wi-Fi <strong>na</strong> <strong>wartość Wł.</strong></br></br>Wybierz region i strefę czasową, w których będzie używane urządzenie. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Przejdź do pliku licencji enterprise i wybierz go, aby uaktualnić HoloLens wersji.</br></br>Możesz również przełączyć opcję <strong>Tak</strong> lub <strong>Nie,</strong> aby ukryć części pierwszego doświadczenia.</br></br>Aby skonfigurować urządzenie bez konieczności łączenia się z siecią Wi-Fi, przełącz ustawienie Pomiń Wi-Fi <strong>na</strong> <strong>wartość Wł.</strong>.</br></br>Wybierz region i strefę czasową, w których będzie używane urządzenie. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>W tej sekcji można wprowadzić szczegóły sieci Wi-Fi sieci bezprzewodowej, z które urządzenie powinno automatycznie nawiązać połączenie. W tym celu <strong></strong>wybierz pozycję Wł., wprowadź wartość SSID, typ sieci (<strong>Otwórz</strong> lub <strong>WPA2-Personal</strong>) i (jeśli <strong>WPA2-Personal</strong>) hasło sieci bezprzewodowej.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Możesz zarejestrować urządzenie w Azure Active Directory lub utworzyć konto lokalne na urządzeniu</br></br>Przed skonfigurowaniem zbiorczej rejestracji w usłudze Azure AD za pomocą kreatora Windows Configuration Designer skonfiguruj dołączanie do usługi <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD w organizacji.</a> Ustawienie <strong>maksymalnej liczby urządzeń na</strong> użytkownika w dzierżawie usługi Azure AD określa, ile razy można użyć tokenu zbiorczego, który można uzyskać w kreatorze. Aby zarejestrować urządzenie w usłudze Azure AD, wybierz tę opcję i wprowadź przyjazną nazwę tokenu zbiorczego, który otrzymasz za pomocą kreatora. Ustaw datę wygaśnięcia tokenu (maksymalnie 30 dni od daty uzyskania tokenu). Wybierz <strong>pozycję Pobierz token zbiorczy.</strong> W <strong>oknie&#39;możesz</strong> się zalogować wprowadź konto z uprawnieniami do dołączania urządzenia do usługi Azure AD, a następnie hasło. Wybierz <strong>pozycję Zaakceptuj,</strong> aby Windows projektantowi konfiguracji niezbędne uprawnienia. </br></br>Aby utworzyć konto lokalne, wybierz tę opcję i wprowadź nazwę użytkownika i hasło. </br></br><strong>Ważne:</strong> <br />(Tylko Windows 10 w wersji 1607) Jeśli tworzysz konto lokalne w pakiecie aprowizowania, musisz zmienić hasło przy użyciu aplikacji <strong>Ustawienia</strong> co 42 dni. Jeśli hasło nie zostanie zmienione w tym okresie, konto może zostać zablokowane i nie będzie można się zalogować.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Możesz zarejestrować urządzenie w Azure Active Directory lub utworzyć na urządzeniu konto lokalne</br></br>Przed skonfigurowaniem rejestracji zbiorczej w usłudze Azure AD za pomocą kreatora Windows Configuration Designer skonfiguruj dołączanie do usługi <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD w organizacji.</a> Ustawienie <strong>maksymalnej liczby urządzeń na</strong> użytkownika w dzierżawie usługi Azure AD określa, ile razy można użyć tokenu zbiorczego, który można uzyskać w kreatorze. Aby zarejestrować urządzenie w usłudze Azure AD, wybierz tę opcję i wprowadź przyjazną nazwę tokenu zbiorczego, który otrzymasz za pomocą kreatora. Ustaw datę wygaśnięcia tokenu (maksymalnie 30 dni od daty uzyskania tokenu). Wybierz <strong>pozycję Pobierz token zbiorczy.</strong> W <strong>oknie&#39;możesz</strong> się zalogować wprowadź konto z uprawnieniami do dołączania urządzenia do usługi Azure AD, a następnie hasło. Wybierz <strong>pozycję Zaakceptuj,</strong> aby Windows projektantowi konfiguracji niezbędne uprawnienia. </br></br>Aby utworzyć konto lokalne, wybierz tę opcję i wprowadź nazwę użytkownika i hasło. </br></br><strong>Ważne:</strong> <br />(Tylko Windows 10 w wersji 1607) Jeśli tworzysz konto lokalne w pakiecie aprowizowania, musisz zmienić hasło przy użyciu aplikacji <strong>Ustawienia</strong> co 42 dni. Jeśli hasło nie zostanie zmienione w tym okresie, konto może zostać zablokowane i nie będzie można się zalogować.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Aby aprowizować urządzenie przy użyciu certyfikatu, kliknij <strong>pozycję Dodaj certyfikat.</strong> Wprowadź nazwę certyfikatu, a następnie przejdź do i wybierz certyfikat, który ma być używany.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
 <tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Przełącz opcję <strong>Tak</strong> lub <strong>Nie,</strong> aby włączyć tryb dewelopera na HoloLens. <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Dowiedz się więcej o trybie dewelopera.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Nie należy ustawiać hasła w celu ochrony pakietu aprowizowania. Jeśli pakiet aprowizowania jest chroniony hasłem, aprowizowanie urządzenia HoloLens nie powiedzie się.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Nie należy ustawiać hasła w celu ochrony pakietu aprowizowania. Jeśli pakiet aprowizowania jest chroniony hasłem, aprowizowanie HoloLens nie powiedzie się.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz.** Trwa to tylko kilka sekund. Podczas budowanych pakietów lokalizacja, w której jest przechowywany pakiet, jest wyświetlana jako hiperlink w dolnej części strony.
 
-### <a name="3-create-a-provisioning-package-for-hololens-by-using-advanced-provisioning"></a>3. Tworzenie pakietu aprowizowania dla HoloLens za pomocą zaawansowanej aprowrowi
+### <a name="3-create-a-provisioning-package-for-hololens-by-using-advanced-provisioning"></a>3. Tworzenie pakietu aprowizowania dla usługi HoloLens za pomocą zaawansowanej aprowrowi
 
 > [!NOTE]
-> Pakiet aprowizowania,  który tworzysz w zaawansowanej aprowiwizowania, nie musi zawierać licencji uaktualnienia wersji, aby program Windows Holographic for Business został pomyślnie HoloLens (1. generacji). [Zobacz więcej informacji na Windows Holographic for Business dla HoloLens (1. generacji).](hololens1-upgrade-enterprise.md)
+> Pakiet aprowizowania,  który tworzysz w zaawansowanej aprowiwizowania, nie musi zawierać licencji uaktualnienia wersji, aby Windows Holographic for Business pomyślnie zastosować do HoloLens (1. generacji). [Zobacz więcej informacji na Windows Holographic for Business for HoloLens (1. generacja).](hololens1-upgrade-enterprise.md)
 
 1. Na stronie Windows Configuration Designer wybierz pozycję **Aprowizowanie zaawansowane.**
 2. W **oknie Enter project details** (Wprowadź szczegóły projektu) określ nazwę projektu i lokalizację projektu. Opcjonalnie wprowadź krótki opis, aby opisać projekt.
@@ -152,9 +152,9 @@ Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz.** Trwa to tylko kilka s
 
 ## <a name="apply-a-provisioning-package-to-hololens-during-setup"></a>Stosowanie pakietu aprowizowania do pakietu HoloLens podczas instalacji
 
-HoloLens urządzenia z systemem Windows Holographic w wersji 2004 lub kompilacji [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) lub nowszej mogą używać dysku USB w celu zastosowania pakietu aprowizowania. Po prostu skopiuj plik ppkg do katalogu głównego dysku USB. Pakiety aprowizowania będą stosowane tylko wtedy, gdy są w katalogu głównym dysku USB. Wiele pakietów aprowizowania będzie stosowanych sekwencyjnie.
+HoloLens 2 urządzenia na platformie Windows Holographic w wersji 2004 lub [kompilacji 19041.1103](hololens-release-notes.md#windows-holographic-version-2004) lub nowszej mogą używać dysku USB do stosowania pakietu aprowizowania. Po prostu skopiuj plik ppkg do katalogu głównego dysku USB. Pakiety aprowizowania będą stosowane tylko wtedy, gdy są w katalogu głównym dysku USB. Wiele pakietów aprowizowania będzie stosowanych sekwencyjnie.
 
-HoloLens 2 urządzenia na Windows Holographic w wersji [20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub nowszej mają nowsze funkcje ułatwiające usprawnienie i uproszczenie tego procesu, dzięki czemu jest on automatyczny. Zapoznaj się z następującymi sekcjami:
+HoloLens 2 na Windows Holographic w wersji [20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub nowszej mają nowsze funkcje ułatwiające usprawnienie i uproszczenie tego procesu, dzięki czemu jest on automatyczny. Zapoznaj się z następującymi sekcjami:
 
 - [Automatyczne uruchamianie aprowizowania z dysku USB](hololens-provisioning.md#auto-launch-provisioning-from-usb)
 - [Automatyczne potwierdzanie pakietów aprowizowania w OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
@@ -162,7 +162,7 @@ HoloLens 2 urządzenia na Windows Holographic w wersji [20H2](hololens-release-n
 
 1. Użyj kabla USB, aby podłączyć urządzenie do komputera (lub dysku USB HoloLens 2, jak wspomniano powyżej), a następnie uruchom urządzenie. Nie przechodz po **stronie pierwszego wejdą w interakcję momentu** OOBE.
     - Na HoloLens (1. generacji) ta strona zawiera niebieskie pole.
-    - Na HoloLens 2 ta strona zawiera łańcingbird.
+    - Na HoloLens 2 na tej stronie znajduje się kolekt "domingbird".
 
 2. Naciśnij krótko i zwolnij przyciski **Volume Down** i **Power** jednocześnie.
 
@@ -200,7 +200,7 @@ Gdy pojawi się ekran główny inicjowania obsługi administracyjnej, program OO
 ### <a name="automatic-provisioning-without-using-ui"></a>Automatyczne aprowizowanie bez użycia interfejsu użytkownika
 - Połączone procesy automatyczne w celu zmniejszenia interakcji z urządzeniami w celu aprowacji. 
 
-Dzięki połączeniu automatycznego uruchamiania aprowizowania z urządzeń USB i automatycznego potwierdzenia pakietów aprowizowania użytkownik może automatycznie aprowizować urządzenia z systemem HoloLens 2 bez użycia interfejsu użytkownika urządzenia, a nawet jego nazwy. Możesz nadal używać tego samego dysku USB i pakietu aprowizowania dla wielu urządzeń. Jest to przydatne w przypadku wdrażania wielu urządzeń jednocześnie w tym samym obszarze. 
+Dzięki połączeniu automatycznego uruchamiania aprowizowania z urządzeń USB i automatycznego potwierdzenia pakietów aprowizowania użytkownik może automatycznie aprowizować urządzenia HoloLens 2 bez użycia interfejsu użytkownika urządzenia, a nawet jego nazwy. Możesz nadal używać tego samego dysku USB i pakietu aprowizowania dla wielu urządzeń. Jest to przydatne w przypadku wdrażania wielu urządzeń jednocześnie w tym samym obszarze. 
 
 1. [Utwórz pakiet aprowizowania przy](hololens-provisioning.md) [użyciu Windows Configuration Designer.](https://www.microsoft.com/store/productId/9NBLGGH4TX22) 
 1. Skopiuj pakiet na dysk pamięci MASOWEJ USB.
@@ -215,11 +215,11 @@ Urządzenie jest teraz skonfigurowane i będzie na ekranie Aprowowanie powiodło
 ## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>Stosowanie/usuwanie pakietu aprowizowania do usługi HoloLens po instalacji
 
 > [!NOTE]
-> Te kroki dotyczą wszystkich urządzeń HoloLens 2 i HoloLens (1. generacji) na urządzeniach Windows Holographic w wersji 1809 lub nowszej.
+> Te kroki mają zastosowanie do wszystkich urządzeń HoloLens 2 i HoloLens (1. generacji) na Windows Holographic w wersji 1809 lub nowszej.
 
 Na komputerze wykonaj następujące kroki:
 1. Utwórz pakiet aprowizowania zgodnie z opisem w tece Create a provisioning package for HoloLens using the HoloLens wizard (Tworzenie pakietu aprowizowania dla usługi [HoloLens pomocą kreatora HoloLens administracyjnego).](hololens-provisioning.md)
-2. Połączenie HoloLens podłącz urządzenie do komputera przy użyciu kabla USB. HoloLens urządzenie jest Eksplorator plików na komputerze.
+2. Połączenie HoloLens podłącz urządzenie do komputera za pomocą kabla USB. HoloLens urządzenie jest Eksplorator plików na komputerze.
 3. Przeciągnij i upuść pakiet aprowizowania do folderu Documents na HoloLens.
 
 Na ekranie HoloLens wykonaj następujące kroki:
@@ -233,7 +233,7 @@ Po zastosowaniu pakietu zostanie on wyświetlona na liście **Zainstalowane paki
 
 Pakiety aprowizowania korzystają z dostawców usług konfiguracji (CSP). Jeśli nie znasz dostawców CSP, zobacz [Introduction to configuration service providers (CSP) for IT pros (Wprowadzenie](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)do dostawców usług konfiguracji dla specjalistów IT).
 
-W programie Windows Configuration Designer podczas tworzenia pakietu aprowizowania dla systemu  Windows Holographic ustawienia w sekcji Dostępne dostosowania są oparte na ustawieniach CSP obsługiwanych na platformie [Windows Holographic.](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) W poniższej tabeli opisano ustawienia, które można skonfigurować dla HoloLens.
+W programie Windows Configuration Designer podczas tworzenia pakietu aprowizowania dla systemu  Windows Holographic ustawienia w sekcji Dostępne dostosowania są oparte na ustawieniach CSP obsługiwanych w systemie [Windows Holographic.](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) W poniższej tabeli opisano ustawienia, które można skonfigurować dla HoloLens.
 
 ![Typowe ustawienia środowiska uruchomieniowego dla HoloLens.](images/icd-settings.png)
 

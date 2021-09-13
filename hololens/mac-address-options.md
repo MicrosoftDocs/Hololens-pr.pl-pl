@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036586"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Enterprise Rejestrowanie urządzeń HoloLens w środowisku z ograniczeniami adresów MAC Wi-Fi MAC
 
@@ -47,7 +47,7 @@ Istnieje wiele sposobów na poprawienie tej sytuacji, w zależności od infrastr
 
 | Rozwiązanie | Korzyści | Wymagania |
 | --- | --- | --- |
-| Pakiet aprowizowania z adapterem Ethernet | Ulepsza środowisko OOBE i umożliwia szybsze środowisko techników. | HoloLens zgodny adapter USB-C Hub + Ethernet, a technik nadal będzie musiał wchodzić w interakcje z urządzeniem na potrzeby przechwytywania maców i finalizacji OOBE |
+| Pakiet aprowizowania z adapterem Ethernet | Ulepsza środowisko OOBE i umożliwia szybsze środowisko techników. | HoloLens zgodny adapter USB-C Hub + Ethernet, a technik nadal będzie musiał wchodzić w interakcję z urządzeniem na potrzeby przechwytywania MAC i finalizacji OOBE |
 | Funkcja Autopilot z rejestracją w usłudze Intune za pośrednictwem sieci Ethernet | Jest to jednoetapowe połączenie i rejestracja urządzenia w środowisku klienta. Przechwytywanie danych MAC można ukończyć bez konieczności interakcji z urządzeniem | Usługa Intune włączona dla dzierżawy usługi AAD klienta i HoloLens adaptera Ethernet USB-C |
 | Automatyczne raportowanie adresów MAC | Gdy urządzenia są zarejestrowane w dzierżawie usługi Intune, skrypt może zgłosić adres MAC technikowi. | Polecenia cmdlet programu PowerShell w usłudze Intune |
 
@@ -139,7 +139,7 @@ Pozwoli to na "odebranie" środowiska wdrażania dla technika, dzięki którym u
 ### <a name="requirements"></a>Wymagania
 
 - Autoryzacja polecenia "Intune Graph PowerShell" względem dzierżawy klienta
-- Instalacja programu Intune Graph PowerShell na maszynie techników.
+- Instalacja programu PowerShell Graph Intune na maszynie techników.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Dostęp do odczytu do elementów "Urządzenia zarządzane" usługi Intune. (Operator pomocy technicznej lub powyższy albo rola niestandardowa)
 
@@ -159,4 +159,4 @@ Spowoduje to zwrócenie nazwy i adresu MAC wszystkich urządzeń HoloLens zareje
 
 ### <a name="process"></a>Proces
 
-Po zakończeniu rejestracji w usłudze Intune technik uruchamia powyższy skrypt w celu pobrania adresu MAC.
+Po zakończeniu rejestracji w usłudze Intune technik uruchamia powyższy skrypt, aby pobrać adres MAC.

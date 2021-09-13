@@ -1,6 +1,6 @@
 ---
 title: HoloLens informacji referencyjnych dotyczących kiosku
-description: Informacje i przykłady dla kiosków na HoloLens urządzeniach.
+description: Informacje i przykłady dotyczące kiosków HoloLens urządzeń.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033206"
 ---
 # <a name="hololens-kiosk-reference-information"></a>HoloLens Informacje referencyjne dotyczące kiosku
 
@@ -28,7 +28,7 @@ Ta strona zawiera przydatne informacje dotyczące konfigurowania HoloLens trybu 
 
 Aby uzyskać ogólne informacje na temat wybierania aplikacji kiosku, zobacz Wytyczne dotyczące wybierania aplikacji do przypisanego dostępu [(tryb kiosku).](/windows/configuration/guidelines-for-assigned-access-app)
 
-Jeśli używasz systemu mobile Zarządzanie urządzeniami (MDM) lub pakietu aprowizowania do konfigurowania trybu kiosku, użyj dostawcy usług konfiguracji [AssignedAccess (CSP)](/windows/client-management/mdm/assignedaccess-csp) do określenia aplikacji. Program CSP używa [identyfikatorów modelu użytkownika aplikacji (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) do identyfikowania aplikacji. W poniższej tabeli wymieniono identyfikatory AUMID niektórych aplikacji, których można używać w kiosku z wieloma aplikacjami.
+Jeśli używasz systemu mobile Zarządzanie urządzeniami (MDM) lub pakietu aprowizowania do konfigurowania trybu kiosku, do określenia aplikacji użyj dostawcy usług konfiguracji [AssignedAccess (CSP).](/windows/client-management/mdm/assignedaccess-csp) Program CSP używa [identyfikatorów modelu użytkownika aplikacji (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) do identyfikowania aplikacji. W poniższej tabeli wymieniono identyfikatory AUMID niektórych aplikacji, których można używać w kiosku z wieloma aplikacjami.
 
 <a id="aumids"></a>
 

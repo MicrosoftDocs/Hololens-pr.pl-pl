@@ -14,11 +14,11 @@ ms.localizationpriority: high
 keywords: Autopilota
 manager: sekerawa
 ms.openlocfilehash: c71716778ebd536d3aecd2a34c9929c8b2f76d98
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036474"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot dla urządzenia HoloLens 2
 
@@ -26,16 +26,16 @@ ms.locfileid: "124427410"
 
 W przypadku wdrażania na dużą skalę zalecamy rozpoczęcie pracy z rozwiązaniem Windows Autopilot. Jest ona uznawana za "mały dotyk", ponieważ znacznie upraszcza konfigurowanie HoloLens zarówno dla it, jak i dla użytkowników końcowych. 
 
-Na wysokim poziomie administrator IT zazwyczaj tworzy konfiguracje gotowe do użycia w firmie i rejestruje 2 HoloLens w portalach MDM. Gdy HoloLens 2 uruchamiają się przy użyciu gotowego do użycia interfejsu użytkownika (OOBE, out-of-box experience) i łączą się z Internetem, konfiguracje gotowe do pracy dla zarejestrowanego urządzenia z systemem HoloLens 2 są automatycznie pobierane i stosowane, aby przygotować urządzenie do pracy bez żadnej interwencji użytkownika.
+Na wysokim poziomie administrator IT zazwyczaj tworzy konfiguracje gotowe do użycia w firmie i rejestruje 2 urządzenia HoloLens portalach MDM. Gdy HoloLens 2 uruchamiają się przy użyciu gotowego do użycia środowisko OOBE (out-of-box experience) i łączą się z Internetem, konfiguracje gotowe do użycia w firmie dla zarejestrowanego urządzenia z systemem HoloLens 2 są automatycznie pobierane i stosowane, aby przygotować urządzenie do pracy bez żadnej interwencji użytkownika.
 
 Aby uzyskać więcej informacji, zobacz Omówienie rozwiązania [Windows Autopilot | Microsoft Docs](/mem/autopilot/windows-autopilot) artykułu.
 
 ## <a name="supported-autopilot-scenario-on-hololens-2"></a>Obsługiwany scenariusz rozwiązania Autopilot w HoloLens 2
 
 > [!NOTE]
-> Konfiguracja rozwiązania Autopilot dla HoloLens w Microsoft Endpoint Manager przechodzi z publicznej **wersji zapoznawczej** do **wersji ogólnie dostępnej.** Wszyscy dzierżawcy będą mogli skonfigurować funkcję Autopilot w centrum administracyjnym MEM.
+> Konfiguracja rozwiązania Autopilot dla HoloLens w Microsoft Endpoint Manager przechodzi z publicznej **wersji zapoznawczej** do **wersji ogólnodostępnej.** Wszyscy dzierżawcy będą mogli skonfigurować funkcję Autopilot w centrum administracyjnym MEM.
 
-Począwszy od Windows Holographic w wersji 2004, system HoloLens 2 obsługuje tryb samodzielnego wdrażania rozwiązania Windows [Autopilot](/mem/autopilot/self-deploying) z programem Microsoft Intune (rozwiązania MDM innych firm nie są obsługiwane). Ta konfiguracja zmniejsza narzut na zarządzanie zapasami, koszty praktycznego przygotowywania urządzeń i rozmów z pomocą techniczną od pracowników podczas procesu konfiguracji. Dowiedz się więcej z [dokumentacji rozwiązania Windows Autopilot.](/mem/autopilot/windows-autopilot)
+Począwszy od Windows Holographic w wersji 2004, system HoloLens 2 obsługuje tryb samodzielnego wdrażania rozwiązania Windows [Autopilot](/mem/autopilot/self-deploying) z programem Microsoft Intune (rozwiązania MDM innych firm nie są obsługiwane). Ta konfiguracja zmniejsza narzut na zarządzanie zapasami, koszty praktycznego przygotowywania urządzeń i rozmów z pomocą techniczną od pracowników podczas procesu konfiguracji. Dowiedz się więcej z [dokumentacji Windows rozwiązania Autopilot.](/mem/autopilot/windows-autopilot)
 
 Podobnie jak w przypadku urządzeń Surface, zaleca się, aby klienci współpracowali z firmą Microsoft [Dostawca rozwiązań w chmurze](https://partner.microsoft.com/cloud-solution-provider) (odsprzedawcą lub dystrybutorem), aby zarejestrować urządzenia w usłudze Autopilot za pośrednictwem Partner Center.
 
@@ -71,7 +71,7 @@ Wykonaj poniższe kroki, aby skonfigurować środowisko:
 
 ### <a name="1-review-requirements-for-windows-autopilot-for-hololens-2"></a>1. Przegląd wymagań dotyczących rozwiązania Windows Autopilot dla HoloLens 2
 
-#### <a name="review-the-following-sections-of-the-windows-autopilot-requirements-article"></a>Zapoznaj się z następującymi sekcjami artykułu Windows wymagań rozwiązania Autopilot:
+#### <a name="review-the-following-sections-of-the-windows-autopilot-requirements-article"></a>Zapoznaj się z następującymi sekcjami artykułu Windows wymagania rozwiązania Autopilot:
 
 - [Wymagania dotyczące sieci](/mem/autopilot/networking-requirements)  
 - [Wymagania dotyczące licencjonowania](/mem/autopilot/licensing-requirements)  
@@ -79,11 +79,11 @@ Wykonaj poniższe kroki, aby skonfigurować środowisko:
 
 **Zapoznaj się z [sekcją "Wymagania"](/windows/deployment/windows-autopilot/self-deploying#requirements)artykułu Windows trybie Self-Deploying Autopilot.** Środowisko musi spełniać te wymagania i standardowe wymagania Windows rozwiązania Autopilot. Nie musisz przeglądać sekcji "Krok po kroku" i "Walidacja" artykułu. Procedury w dalszej części tego artykułu zawierają odpowiednie kroki, które są specyficzne dla HoloLens.
 
-Upewnij się, że urządzenia nie są jeszcze członkami usługi Azure AD i nie są zarejestrowane w usłudze Intune (ani w innym systemie MDM). Proces samodzielnego wdrażania rozwiązania Autopilot kończy te kroki. Aby upewnić się, że wszystkie informacje dotyczące urządzenia  są czyszczone, sprawdź strony Urządzenia w portalach usługi Azure AD i Intune. Konwertowanie wszystkich urządzeń docelowych na funkcję Autopilot" nie jest obecnie HoloLens na urządzeniach docelowych. 
+Upewnij się, że urządzenia nie są jeszcze członkami usługi Azure AD i nie są zarejestrowane w usłudze Intune (ani w innym systemie MDM). Proces samodzielnego wdrażania rozwiązania Autopilot kończy te kroki. Aby upewnić się, że wszystkie informacje dotyczące urządzenia  są czyszczone, sprawdź strony Urządzenia w portalach usługi Azure AD i Intune. Konwertowanie wszystkich urządzeń docelowych na funkcję Autopilot" nie jest obecnie HoloLens na komputerze. 
 
 #### <a name="review-hololens-os-requirements"></a>Przejrzyj HoloLens systemu operacyjnego:
 
-Aby potwierdzić wersję kompilacji na urządzeniu lub odszukaj ukośnik do najnowszego systemu operacyjnego, użyj narzędzia [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) i instrukcji reflash naszych [urządzeń.](hololens-recovery.md) Urządzenia dostarczane do końca września 2020 r. mają wstępnie Windows Holographic w wersji 1903. Skontaktuj się ze sprzedawcą, aby upewnić się, że urządzenia gotowe do rozwiązania Autopilot są dostarczane do Ciebie.
+Aby potwierdzić wersję kompilacji na urządzeniu lub odszukaj ukośnik do najnowszego systemu operacyjnego, użyj narzędzia [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) i instrukcji reflash naszych [urządzeń.](hololens-recovery.md) Urządzenia dostarczane do końca września 2020 r. mają Windows systemu Holographic w wersji 1903. Skontaktuj się ze sprzedawcą, aby upewnić się, że urządzenia gotowe do rozwiązania Autopilot są dostarczane do Ciebie.
 
  Minimalna wersja systemu operacyjnego | Obsługiwana funkcja | Uwagi 
  ------ | ------ | ------  
@@ -92,13 +92,13 @@ Aby potwierdzić wersję kompilacji na urządzeniu lub odszukaj ukośnik do najn
 
 ### <a name="2-enable-automatic-mdm-enrollment"></a>2. Włącz automatyczną rejestrację mdm:
 
-Aby rozwiązanie Autopilot powiodło się, należy włączyć automatyczną rejestrację MDM w Azure Portal. Umożliwi to rejestrowanie urządzenia bez użytkownika.
+Aby rozwiązanie Autopilot zakończyło się pomyślnie, należy włączyć automatyczne rejestrowanie mdm w Azure Portal. Umożliwi to rejestrowanie urządzenia bez użytkownika.
 
 Zapoznaj się z następującym krótkim przewodnikiem na temat włączania automatycznego rejestrowania w u [rozwiązaniach MDM](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) lub przewodnikiem Szybki [start](/mem/intune/enrollment/quickstart-setup-auto-enrollment) dotyczący automatycznego rejestrowania, aby uzyskać jeszcze więcej informacji na temat konfiguracja.
 
 ### <a name="3-ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>3. Upewnij się, że rejestracja mdm nie jest blokowana dla Windows mdm.
 
-Aby funkcja Autopilot zakończyła się powodzeniem, musisz upewnić się, że twoje urządzenia HoloLens mogą być rejestrowane. Ponieważ HoloLens jest uznawana za Windows, nie trzeba będzie mieć żadnych ograniczeń rejestracji, które mogłyby zablokować wdrożenie. [Przejrzyj tę listę ograniczeń i](/mem/intune/enrollment/enrollment-restrictions-set) upewnij się, że będziesz mieć możliwość rejestrowania urządzeń.
+Aby funkcja Autopilot zakończyła się powodzeniem, musisz upewnić się, że twoje urządzenia HoloLens mogą być rejestrowane. Ponieważ HoloLens jest uznawane za Windows, nie trzeba będzie mieć żadnych ograniczeń rejestracji, które mogłyby zablokować wdrożenie. [Przejrzyj tę listę ograniczeń i](/mem/intune/enrollment/enrollment-restrictions-set) upewnij się, że będziesz mieć możliwość rejestrowania urządzeń.
 
 ### <a name="4-register-devices-in-windows-autopilot"></a>4. Rejestrowanie urządzeń w programie Windows Autopilot
 
@@ -285,46 +285,46 @@ Gdy węzeł RequireNetworkInOOBE dla węzła RequireNetworkInOOBE dzierżawcy Te
 
 #### <a name="how-to-set-this-using-intune"></a>Jak to ustawić przy użyciu usługi Intune? 
 1. Utwórz niestandardowy profil konfiguracji urządzenia OMA URI i określ wartość true dla węzła RequireNetworkInOOBE, jak pokazano poniżej.
-Wartość OMA-URI powinna być ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+Wartość OMA-URI powinna mieć wartość ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
    > ![Ustawianie blokady czasowej za pośrednictwem OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Utwórz grupę i przypisz profil konfiguracji urządzenia do tej grupy urządzeń.
 
-1. Zsynchronizuj HoloLens 2 urządzeń w grupie utworzonej w poprzednim kroku.  
+1. Dokonaj synchronizacji HoloLens 2 urządzenia w grupie utworzonej w poprzednim kroku i wyzwolij synchronizację.  
 
-Sprawdź w portalu usługi Intune, czy konfiguracja urządzenia została pomyślnie zastosowana. Gdy ta konfiguracja urządzenia zostanie pomyślnie stosowana na urządzeniu HoloLens 2, efekty ustawienia TenantLockdown będą aktywne.
+Sprawdź w portalu usługi Intune, czy konfiguracja urządzenia została pomyślnie zastosowana. Po pomyślnym zastosowaniem tej konfiguracji urządzenia na HoloLens 2 efekty ustawienia TenantLockdown będą aktywne.
 
-#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>Jak unset TenantLockdown requireNetworkInOOBE w usłudze HoloLens 2 przy użyciu usługi Intune?
+#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>Jak w usłudze Intune w usłudze Intune HoloLens 2 HoloLens TenantLockdown?
 
 1. Usuń HoloLens 2 z grupy urządzeń, do której wcześniej przypisano utworzoną powyżej konfigurację urządzenia.
 
-1. Utwórz niestandardowy profil konfiguracji urządzenia oparty na URI OMA i określ wartość false dla wartości RequireNetworkInOOBE, jak pokazano poniżej.
-Wartość OMA-URI powinna być ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+1. Utwórz niestandardowy profil konfiguracji urządzenia oparty na adresie URI OMA i określ wartość false dla właściwości RequireNetworkInOOBE, jak pokazano poniżej.
+Wartość OMA-URI powinna mieć wartość ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
    > ![Zrzut ekranu przedstawiający ustawianie wartości false dla ustawienia RequireNetworkInOOBE za pośrednictwem adresu URI OMA w usłudze Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Utwórz grupę i przypisz profil konfiguracji urządzenia do tej grupy urządzeń. 
 
-1. Zsynchronizuj HoloLens 2 urządzeń w grupie utworzonej w poprzednim kroku.
+1. Dokonaj synchronizacji HoloLens 2 urządzenia w grupie utworzonej w poprzednim kroku i wyzwolij synchronizację.
 
-Sprawdź w portalu usługi Intune, czy konfiguracja urządzenia została pomyślnie zastosowana. Gdy ta konfiguracja urządzenia zostanie pomyślnie stosowana na urządzeniu HoloLens 2, skutki ustawienia TenantLockdown będą nieaktywne.
+Sprawdź w portalu usługi Intune, czy konfiguracja urządzenia została pomyślnie zastosowana. Po pomyślnym zastosowaniem tej konfiguracji urządzenia na urządzeniu HoloLens 2 efekty ustawienia TenantLockdown będą nieaktywne.
 
-#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>Co się stanie podczas OOBE, jeśli profil rozwiązania Autopilot zostanie nieprzypisane na HoloLens po tym, jak ustawienie TenantLockdown miało wartość true? 
-OOBE będzie czekać przez czas nieokreślony na pobranie profilu rozwiązania Autopilot i zostanie wyświetlone następujące okno dialogowe. Aby usunąć skutki ustawienia TenantLockdown, urządzenie musi najpierw zostać zarejestrowane w pierwotnej dzierżawie przy użyciu rozwiązania Autopilot, a opcja RequireNetworkInOOBE musi zostać nieskonsorowana zgodnie z opisem w poprzednim kroku przed usunięciem ograniczeń wprowadzonych przez program TenantLockdown CSP.
+#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>Co się stanie podczas OOBE, jeśli profil rozwiązania Autopilot zostanie nieprzypisane na HoloLens gdy ustawienie TenantLockdown zostanie ustawione na wartość true? 
+Funkcja OOBE będzie przez czas nieokreślona czekać na pobranie profilu rozwiązania Autopilot. Zostanie wyświetlone następujące okno dialogowe. Aby usunąć skutki blokady dzierżawy, urządzenie musi zostać najpierw zarejestrowane w pierwotnej dzierżawie przy użyciu rozwiązania Autopilot, a opcja RequireNetworkInOOBE musi zostać nieskonkcedyowana zgodnie z opisem w poprzednim kroku przed usunięciem ograniczeń wprowadzonych przez usługę TenantLockdown CSP.
 
-![Widok na urządzeniu dla sytuacji, gdy zasady są wymuszane na urządzeniu.](images/hololens-autopilot-lockdown.png)
+![Widok w urządzeniu dla sytuacji, gdy zasady są wymuszane na urządzeniu.](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>Znane problemy & ograniczeń
+## <a name="known-issues--limitations"></a>Znane problemy & ograniczenia
 
-- Badamy problem, który powoduje, że instalacja aplikacji opartej na kontekście urządzenia skonfigurowana w ramach programu MEM nie ma zastosowania do HoloLens. [Dowiedz się więcej na temat instalacji kontekstu urządzenia i kontekstu użytkownika.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
-- Podczas konfigurowania rozwiązania Autopilot za pośrednictwem sieci Wi-Fi może wystąpić wystąpienie, w którym profil rozwiązania Autopilot nie zostanie pobrany po pierwszym nawiązaniu połączenia internetowego. W takim przypadku zostanie przedstawiona umowa licencyjna użytkownika oprogramowania (EULA), a użytkownik będzie mieć możliwość kontynuowania pracy z konfiguracją bez rozwiązania Autopilot. Aby ponowić próbę skonfigurowania rozwiązania Autopilot, umieść urządzenie w trybie uśpienia, a następnie uruchom je, lub uruchom ponownie urządzenie i spróbuj ponownie.
+- Badamy problem, który powoduje, że instalacja aplikacji opartej na kontekście urządzenia skonfigurowana w programie MEM nie ma zastosowania do HoloLens. [Dowiedz się więcej na temat instalacji kontekstu urządzenia i kontekstu użytkownika.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+- Podczas konfigurowania rozwiązania Autopilot za pośrednictwem sieci Wi-Fi może wystąpić wystąpienie, w którym profil rozwiązania Autopilot nie zostanie pobrany po pierwszym nawiązaniu połączenia internetowego. W takim przypadku zostanie przedstawiona umowa licencyjna użytkownika oprogramowania (EULA) i użytkownik będzie mieć możliwość kontynuowania pracy z konfiguracją bez rozwiązania Autopilot. Aby ponowić próbę skonfigurowania rozwiązania Autopilot, umieść urządzenie w stanie uśpienia, a następnie uruchom je ponownie lub uruchom ponownie urządzenie i spróbuj ponownie.
 
 ### <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Następujące artykuły mogą być przydatne, jeśli chcesz dowiedzieć się więcej i rozwiązać problemy z rozwiązaniem Autopilot, jednak te artykuły są oparte na programie Windows 10 Desktop i nie wszystkie informacje mogą dotyczyć HoloLens:
+Następujące artykuły mogą być przydatnym zasobem, aby dowiedzieć się więcej i rozwiązać problemy z rozwiązaniem Autopilot, jednak te artykuły są oparte na programie Windows 10 Desktop i nie wszystkie informacje mogą mieć zastosowanie do HoloLens:
 
 - [Windows Autopilot — znane problemy](/mem/autopilot/known-issues)
 - [Rozwiązywanie problemów dotyczących rejestrowania urządzeń z systemem Windows w usłudze Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
@@ -335,11 +335,11 @@ Następujące artykuły mogą być przydatne, jeśli chcesz dowiedzieć się wi�
 Aby przekazać opinię lub zgłosić problemy, użyj jednej z następujących metod:
 
 - Aby uzyskać pomoc techniczną w zakresie rejestracji urządzeń, skontaktuj się z odsprzedawcą lub dystrybutorem.
-- W przypadku ogólnych zapytań pomocy technicznej dotyczących rozwiązania Windows Autopilot lub problemów, takich jak przypisania profilów, tworzenie grup lub kontrolki portalu MEM, skontaktuj się z Microsoft Endpoint Manager [pomocy technicznej](/mem/get-support)  
-- Jeśli urządzenie zostało zarejestrowane w usłudze Autopilot, a profil jest przypisany w portalu MEM, skontaktuj się z działem pomocy technicznej HoloLens [(zobacz](/hololens/) kartę "Pomoc techniczna"). Otwórz bilet pomocy technicznej i, jeśli ma to zastosowanie, dołącz zrzuty ekranu i dzienniki, przechwytując dzienniki diagnostyczne w trybie [offline](hololens-diagnostic-logs.md#offline-diagnostics) podczas procesu OOBE (out-of-box-experience).
-- Aby zgłosić problem z urządzenia, użyj aplikacji Centrum opinii aplikacji na HoloLens. W Centrum opinii wybierz **kategorię Enterprise**  >  **Zarządzanie urządzeniami.**
+- W przypadku ogólnych zapytań pomocy technicznej dotyczących rozwiązania Windows Autopilot lub problemów, takich jak przypisania profilów, tworzenie grup lub kontrolki portalu MEM, skontaktuj się z [Microsoft Endpoint Manager pomocy technicznej](/mem/get-support)  
+- Jeśli urządzenie jest zarejestrowane w usłudze Autopilot, a profil jest przypisany w portalu MEM, skontaktuj się z HoloLens [pomocą](/hololens/) techniczną (zobacz kartę "Pomoc techniczna"). Otwórz bilet pomocy technicznej i, jeśli ma to [](hololens-diagnostic-logs.md#offline-diagnostics) zastosowanie, dołącz zrzuty ekranu i dzienniki, przechwytując dzienniki diagnostyczne offline podczas procesu OOBE (out-of-box-experience).
+- Aby zgłosić problem z urządzenia, użyj Centrum opinii aplikacji na HoloLens. W Centrum opinii wybierz **kategorię Enterprise**  >  **Urządzenia do zarządzania.**
 - Aby przekazać ogólną opinię na temat rozwiązania Autopilot HoloLens, możesz przesłać tę [ankietę](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)
 
 ## <a name="delete-autopilot-devices"></a>Usuwanie urządzeń rozwiązania Autopilot
 
-Możesz nie chcieć już używać urządzenia do korzystania z rozwiązania Autopilot lub rejestrować urządzenia w innej dzierżawie. Jeśli chcesz to zrobić, przeczytaj, jak usunąć urządzenia [rozwiązania Autopilot.](/mem/autopilot/add-devices#delete-autopilot-devices)
+Być może nie chcesz już używać urządzenia dla rozwiązania Autopilot lub rejestrować urządzenia w innej dzierżawie. Jeśli chcesz to zrobić, przeczytaj, jak usunąć [urządzenia rozwiązania Autopilot.](/mem/autopilot/add-devices#delete-autopilot-devices)

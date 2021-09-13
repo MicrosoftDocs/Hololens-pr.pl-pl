@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 Prywatność i ochrona danych
+title: HoloLens 2 Ochrona prywatności i danych
 description: Dokumentacja dotycząca ochrony prywatności
 keywords: HoloLens, RODO, prywatność, dane osobowe, ochrona danych
 author: golish
@@ -15,24 +15,24 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 74f74645a3fc1282f48cb7ce0f6f722979c91b04
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033297"
 ---
-# <a name="hololens-2-privacy-and-data-protection"></a>HoloLens 2 Prywatność i ochrona danych
+# <a name="hololens-2-privacy-and-data-protection"></a>HoloLens 2 Ochrona prywatności i danych
 
-Jednym z podstawowych elementów RODO jest "ochrona danych przez projekt". Ta koncepcja ma zastosowanie szczególnie do urządzeń przenośnych, takich jak HoloLens 2, ze względu na przenośność, nieograniczone połączenia internetowe i otwarte kanały komunikacyjne. W związku z tym zabezpieczenia usługi [](/hololens/security-architecture) HoloLens 2 zostały przeprojektowane w celu zapewnienia zaawansowanej, innowacyjnej ochrony prywatności i zabezpieczeń, w tym zarówno podejścia firmy Microsoft do prywatności, jak i przepisów [RODO.](https://privacy.microsoft.com/)
+Jednym z podstawowych elementów RODO jest "ochrona danych przez projekt". Ta koncepcja ma zastosowanie szczególnie do urządzeń przenośnych, takich jak HoloLens 2, ze względu na przenośność, nieograniczone połączenia internetowe i otwarte kanały komunikacyjne. W związku z tym zabezpieczenia usługi HoloLens [](/hololens/security-architecture) 2 zostały przeprojektowane w celu zapewnienia zaawansowanych, innowacyjnych zabezpieczeń i ochrony prywatności, w sposób end-to-end, uwzględniając zarówno podejście firmy Microsoft do prywatności, jak i przepisów [RODO.](https://privacy.microsoft.com/)
 
  >[!NOTE]
 > Ten dokument nie dotyczy HoloLens (1. generacji).
 
 ## <a name="privacy-overview"></a>Omówienie ochrony prywatności
 
-HoloLens 2 to samodzielny komputer Windows z systemem Windows Holographic, który uruchamia aplikacje i rozwiązania w immersywnym środowisku rzeczywistości mieszanej. Może służyć jako bezpieczne urządzenie w trybie offline lub wdrażane jako urządzenie [zarządzane w](/mem/intune/fundamentals/windows-holographic-for-business) organizacji. Zapoznaj się z poniższymi linkami, aby dowiedzieć się, jak HoloLens 2 i firma Microsoft chroni Twoje dane:
+HoloLens 2 to samodzielny komputer Windows z systemem Windows Holographic, który uruchamia aplikacje i rozwiązania w immersywnym środowisku rzeczywistości mieszanej. Może służyć jako bezpieczne urządzenie w trybie offline lub wdrażane jako urządzenie [zarządzane w](/mem/intune/fundamentals/windows-holographic-for-business) organizacji. Zapoznaj się z poniższymi linkami, aby dowiedzieć się, w jaki sposób HoloLens 2 i firma Microsoft chroni Twoje dane:
 
-1. [Zasady zachowania poufności informacji firmy Microsoft — HoloLens](https://privacy.microsoft.com/privacystatement) — **rozwiń** sekcję Enterprise i dewelopera w menu nawigacji po lewej stronie, a następnie wybierz pozycję Enterprise oprogramowania i urządzeń **dla deweloperów.** Przejdź do **sekcji HoloLens.**
+1. [Zasady zachowania poufności informacji firmy Microsoft HoloLens](https://privacy.microsoft.com/privacystatement) — rozwiń sekcję **Enterprise** i dewelopera w menu nawigacji po lewej stronie, a następnie wybierz pozycję **Enterprise oprogramowania** i urządzeń dla deweloperów. Przejdź do **HoloLens** sekcji.
 2. [Windows 10 i Usługi online](https://privacy.microsoft.com/windows10privacy)
 3. [Windows 10 & privacy compliance Guide (Przewodnik zgodności z zasadami zachowania poufności informacji)](/windows/privacy/windows-10-and-privacy-compliance)
 4. [Prywatność i dane osobowe w usłudze Intune](/mem/intune/protect/privacy-personal-data)
@@ -45,14 +45,14 @@ Ponadto zapora Windows Defender zapewnia krytyczne funkcje w celu zabezpieczenia
 Dowiedz się więcej o zabezpieczeniach i architekturze HoloLens [2.](/hololens/security-architecture)
 
 ## <a name="os-security"></a>Zabezpieczenia systemu operacyjnego
-Aktualizacje są wykonywane automatycznie (domyślnie), dzięki czemu HoloLens 2 jest zawsze aktualne z najnowszą Windows holograficzną i zainstalowanymi aplikacjami. Zobacz następujące informacje, aby dowiedzieć się więcej na temat sposobu bezpiecznego zaprojektowania naszego systemu operacyjnego:
+Aktualizacje są wykonywane automatycznie (domyślnie), dzięki czemu HoloLens 2 są zawsze aktualne z najnowszą Windows Holographic i zainstalowanymi aplikacjami. Zobacz następujące informacje, aby dowiedzieć się więcej na temat sposobu bezpiecznego zaprojektowania naszego systemu operacyjnego:
 
 1. [Separacja i izolacja stanu](/hololens/security-state-separation-isolation)
 1. [System operacyjny bez uprawnień administratora](/hololens/security-adminless-os)
 1. [Ograniczanie użycia hasła](/hololens/security-limiting-password-use)
 
 ## <a name="physical-security"></a>Zabezpieczenia fizyczne
-HoloLens 2 ma pamięć flash chronioną przez [szyfrowanie funkcją BitLocker.](/hololens/security-encryption-data-protection) Urządzenie i jego dane lokalne mogą być [](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) flashowane w trybie offline przy użyciu zaawansowanego pomocnika odzyskiwania lub zdalnie czyszowane za pośrednictwem rozwiązania MDM, jeśli zostało wdrożone jako urządzenie zarządzane.
+HoloLens 2 ma pamięć flash chronioną przez [szyfrowanie funkcją BitLocker.](/hololens/security-encryption-data-protection) Urządzenie i jego dane lokalne można flashować [](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) w trybie offline za pomocą zaawansowanego pomocnika odzyskiwania lub zdalnie wyczyścić za pośrednictwem rozwiązania MDM, jeśli zostało ono wdrożone jako urządzenie zarządzane.
 
 ## <a name="data-protection"></a>Ochrona danych
 Windows są uruchamiane automatycznie (domyślnie), a integracja z platformą [Azure](/hololens/security-encryption-data-protection#Azure-integration) chroni dane pomiędzy sobą a chmurą.
@@ -64,4 +64,4 @@ Udostępnianie danych diagnostycznych firmie Microsoft może zostać ręcznie sk
 > [!Important]
 > Dzienniki diagnostyczne urządzeń zawierają dane osobowe, takie jak procesy lub aplikacje, które użytkownik uruchamia podczas typowych operacji. Jeśli wielu użytkowników współużytkuje urządzenie z systemem HoloLens (na przykład użytkownicy logują się na tym samym urządzeniu przy użyciu różnych kont usługi Microsoft Azure Active Directory (Azure AD), dzienniki diagnostyczne mogą zawierać informacje osobowe dotyczące wielu użytkowników.
 
-Istnieje kilka [metod zbierania i zasad przechowywania danych w](/hololens/hololens-diagnostic-logs) celu zbierania danych diagnostycznych z HoloLens 2.  Aby uzyskać więcej informacji na temat sposobu zbierania i przetwarzania danych diagnostycznych przez firmę [Microsoft,](https://privacy.microsoft.com/privacystatement) zobacz Oświadczenie o ochronie prywatności firmy Microsoft — diagnostyka — rozwiń Windows **w** menu nawigacji po lewej stronie i wybierz pozycję **Diagnostyka.** Przejdź do sekcji **Diagnostyka.**
+Istnieje kilka [metod zbierania i zasad przechowywania danych w](/hololens/hololens-diagnostic-logs) celu zbierania danych diagnostycznych z HoloLens 2.  Aby uzyskać więcej informacji na temat sposobu zbierania i przetwarzania danych diagnostycznych przez firmę [Microsoft,](https://privacy.microsoft.com/privacystatement) zobacz Oświadczenie o ochronie prywatności firmy Microsoft **— diagnostyka —** rozwiń Windows w menu nawigacji po lewej stronie i wybierz pozycję **Diagnostyka.** Przejdź do sekcji **Diagnostyka.**

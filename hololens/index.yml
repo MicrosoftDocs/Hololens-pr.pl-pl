@@ -12,11 +12,11 @@ metadata:
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
   ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/10/2021
-  ms.locfileid: "124427599"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126033917"
 landingContent:
 - title: Poznaj HoloLens 2
   linkLists:
@@ -60,7 +60,7 @@ landingContent:
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Przewodnik wdrażania — wdrażanie w 2 HoloLens z chmurą na dużą skalę przy użyciu usługi Remote Assist
+    - text: Przewodnik wdrażania — wdrażanie w 2 HoloLens z chmurą na dużą skalę za pomocą usługi Remote Assist
       url: hololens2-cloud-connected-overview.md
     - text: Przewodnik wdrażania — klienci zewnętrzni (połączeni z chmurą)
       url: hololens2-deployment-guide.md

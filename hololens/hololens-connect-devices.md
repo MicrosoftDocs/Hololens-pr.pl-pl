@@ -1,5 +1,5 @@
 ---
-title: Połączenie do Bluetooth i USB-C
+title: Połączenie do Bluetooth i usb-C
 description: Rozpoczynanie nawiązywania połączenia z Bluetooth i urządzeniami USB-C oraz akcesoriami z urządzeń HoloLens rzeczywistości mieszanej.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
@@ -14,17 +14,17 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428536"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036024"
 ---
-# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Połączenie do Bluetooth i USB-C
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Połączenie do Bluetooth i usb-C
 
 ## <a name="pair-bluetooth-devices"></a>Parowanie Bluetooth urządzeń
 
-HoloLens 2 obsługuje następujące klasy urządzeń Bluetooth:
+HoloLens 2 obsługuje następujące klasy urządzeń Bluetooth urządzeń:
 
 - [HID:](/windows-hardware/drivers/hid/)
     - Mysz
@@ -32,10 +32,10 @@ HoloLens 2 obsługuje następujące klasy urządzeń Bluetooth:
 - Urządzenia wyjściowe audio (A2DP)
 
 HoloLens 2 obsługuje następujące interfejsy BLUETOOTH API:
-- Serwer [](/windows/uwp/devices-sensors/gatt-server) i [klient](/windows/uwp/devices-sensors/gatt-client) DHCP
+- Serwer [](/windows/uwp/devices-sensors/gatt-server) i [klient](/windows/uwp/devices-sensors/gatt-client) DNS
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
-> Może być trzeba zainstalować odpowiednie aplikacje towarzyszące z Microsoft Store, aby w rzeczywistości korzystać z urządzeń HID i THE.
+> Może być trzeba zainstalować odpowiednie aplikacje towarzyszące z Microsoft Store, aby w rzeczywistości używać urządzeń HID iINSTALOWAĆ.
 
 HoloLens (1. generacji) obsługuje następujące klasy urządzeń Bluetooth:
 
@@ -44,13 +44,13 @@ HoloLens (1. generacji) obsługuje następujące klasy urządzeń Bluetooth:
 - [HoloLens (1. generacja)](hololens1-clicker.md)
 
 > [!NOTE]
-> Inne typy urządzeń Bluetooth, takie jak głośniki, zestawy nagłowne, smartfony i konsoli do gier, mogą być wyświetlane jako dostępne w HoloLens ustawień. Jednak te urządzenia nie są obsługiwane na urządzeniach HoloLens (1. generacji). Aby uzyskać więcej informacji, zobacz HoloLens Ustawienia lista urządzeń [jako dostępnych, ale urządzenia nie działają.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
+> Inne typy urządzeń Bluetooth, takie jak głośniki, zestawy nagłowne, smartfony i konsoli do gier, mogą być wyświetlane jako dostępne w HoloLens ustawień. Jednak te urządzenia nie są obsługiwane na urządzeniach HoloLens (1. generacji). Aby uzyskać więcej informacji, [zobacz HoloLens Ustawienia lista urządzeń jako dostępnych, ale urządzenia nie działają.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Parowanie Bluetooth klawiatury lub myszy
 
 1. Włącz klawiaturę lub mysz, aby było możliwe do odnajdywania. Aby dowiedzieć się, jak sprawić, aby urządzenie było wykrywalne, poszukaj informacji na urządzeniu (lub w jego dokumentacji) lub odwiedź witrynę internetową producenta.
 
-1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do opcji **Start**, a następnie wybierz pozycję **Ustawienia**.
+1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do opcji **Start**, a następnie wybierz **pozycję Ustawienia**.
 
 1. Wybierz **pozycję** Urządzenia i upewnij się, Bluetooth jest wł.  
 
@@ -60,9 +60,9 @@ HoloLens (1. generacji) obsługuje następujące klasy urządzeń Bluetooth:
 
 Ta procedura wyłącza składniki RF przycisku radiowego Bluetooth i wyłącza wszystkie Bluetooth na Microsoft HoloLens.
 
-1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do strony **Start,** a następnie wybierz pozycję Ustawienia  >  **Urządzenia.**
+1. Użyj gestu Blooma (HoloLens (1. generacja)) lub gestu uruchamiania (HoloLens 2), aby przejść do opcji **Start**, a następnie wybierz pozycję Ustawienia  >  **Urządzenia.**
 
-1. Przesuń przełącznik suwaka dla **Bluetooth** do **pozycji Wyłączone.**
+1. Przesuń przełącznik suwaka dla **Bluetooth** do **pozycji** Wyłączone.
 
 ## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Połączenie USB-C
 
@@ -70,7 +70,7 @@ HoloLens 2 obsługuje następujące klasy urządzeń USB-C:
 
 - Urządzenia pamięci masowej (takie jak dyski kciuka)
 - Karty Ethernet (w tym ethernet i ładowanie)
-- Adaptery audio usb-C-do-3,5mm
+- Adaptery audio usb-C-do-3,5 mm
 - Cyfrowe zestawy nagłowne USB-C (w tym adaptery zestawów nagłownych i ładowanie)
 - Zewnętrzne mikrofony USB-C ([Windows Holographic, wersja 21H1](hololens-release-notes.md#windows-holographic-version-21h1) lub nowsza)
 - Mysz przewodowa
@@ -79,7 +79,7 @@ HoloLens 2 obsługuje następujące klasy urządzeń USB-C:
 
 
 > [!NOTE]
-> W odpowiedzi na opinie klientów włączyliśmy ograniczoną obsługę łączności komórkowej związanej bezpośrednio z siecią HoloLens za pośrednictwem portu USB-C. Zobacz [Połączenie do sieci komórkowej i 5G,](hololens-cellular.md) aby uzyskać więcej informacji.
+> W odpowiedzi na opinie klientów włączyliśmy ograniczoną obsługę łączności komórkowej związanej bezpośrednio z siecią HoloLens za pośrednictwem portu USB-C. Aby uzyskać Połączenie, zobacz Połączenie do sieci komórkowej i [sieci 5G.](hololens-cellular.md)
 
 ### <a name="usb-c-external-microphone-support"></a>Obsługa mikrofonu zewnętrznego USB-C
 

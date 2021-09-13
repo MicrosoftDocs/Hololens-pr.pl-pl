@@ -13,18 +13,18 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033619"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Odblokowywanie Windows Holographic for Business funkcji
 
 > [!IMPORTANT]
 > Ta strona dotyczy tylko HoloLens pierwszej generacji.
 
-Microsoft HoloLens jest dostępna w wersji *Development Edition*, która działa z platformą Windows Holographic (edycję systemu Windows 10 zaprojektowaną dla systemu HoloLens) oraz w pakiecie [Commercial Suite,](hololens-commercial-features.md)który udostępnia dodatkowe funkcje przeznaczone dla firm.
+Microsoft HoloLens jest dostępna w wersji *Development Edition*, która działa z platformą Windows Holographic (edycją systemu Windows 10 zaprojektowaną dla systemu HoloLens) oraz w pakiecie [Commercial Suite](hololens-commercial-features.md), który udostępnia dodatkowe funkcje przeznaczone dla firm.
 
 Po zakupie pakietu Commercial Suite otrzymasz licencję, która uaktualnia platformę Windows Holographic do Windows Holographic for Business. Tę licencję można zastosować do urządzenia przy użyciu dostawcy zarządzania urządzeniami przenośnymi [(MDM)](#edition-upgrade-by-using-mdm) organizacji lub pakietu [aprowizowania.](#edition-upgrade-by-using-a-provisioning-package)
 
@@ -33,9 +33,9 @@ Po zakupie pakietu Commercial Suite otrzymasz licencję, która uaktualnia platf
 
 ## <a name="edition-upgrade-by-using-mdm"></a>Uaktualnianie wersji przy użyciu rozwiązania MDM
 
-Licencja przedsiębiorstwa może być stosowana przez dowolnego dostawcę rozwiązania MDM, który obsługuje dostawcę usług konfiguracji [(CSP) systemu WindowsLicensing.](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) Najnowsza wersja interfejsu API zarządzania urządzeniami przenośnymi firmy Microsoft będzie obsługiwać usługę WindowsLicensing CSP.
+Licencję przedsiębiorstwa może stosować dowolny dostawca mdm obsługujący dostawcę usług konfiguracji [(CSP) systemu WindowsLicensing.](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) Najnowsza wersja interfejsu API zarządzania urządzeniami przenośnymi firmy Microsoft będzie obsługiwać usługę WindowsLicensing CSP.
 
-Aby uzyskać instrukcje krok po kroku dotyczące uaktualniania HoloLens przy użyciu programu Microsoft Intune, zobacz Uaktualnianie urządzeń z systemem [Windows Holographic do Windows Holographic for Business](/intune/holographic-upgrade).
+Aby uzyskać instrukcje krok po kroku dotyczące uaktualniania HoloLens przy użyciu programu Microsoft Intune, zobacz Uaktualnianie urządzeń z systemem [Windows Holographic](/intune/holographic-upgrade)do Windows Holographic for Business .
 
  W przypadku innych dostawców zarządzania urządzeniami przenośnymi konkretne kroki konfigurowania i wdrażania zasad mogą się różnić.
 
@@ -50,7 +50,7 @@ Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration 
 
     ![Uaktualnij wydanie z wybranym ustawieniem licencji.](images/icd1.png)
 
-1. Znajdź plik licencji XML, który został podany podczas zakupu pakietu komercyjnego.
+1. Znajdź plik licencji XML dostarczony podczas zakupu pakietu komercyjnego.
 
     > [!NOTE]
     > W [pakiecie aprowizowania można skonfigurować dodatkowe ustawienia.](hololens-provisioning.md)
@@ -64,7 +64,7 @@ Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration 
 
 1. W menu **Eksportuj** wybierz pozycję **Pakiet aprowizowania.**
 
-1. Zmień **opcję Właściciel** na Administrator **IT**, która ustawia pierwszeństwo tego pakietu aprowizowania na wyższą niż inne zastosowane do tego urządzenia z różnych źródeł, a następnie wybierz pozycję **Dalej.**
+1. Zmień **ustawienie Właściciel** na Administrator **IT**, które ustawia pierwszeństwo tego pakietu aprowizowania na wyższe niż inne zastosowane do tego urządzenia z różnych źródeł, a następnie wybierz przycisk **Dalej.**
 
 1. Ustaw wartość dla wersji **pakietu**.
 
@@ -73,7 +73,7 @@ Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration 
 
 1. Na stronie Select security details for the provisioning package (Wybierz szczegóły zabezpieczeń **dla pakietu aprowizowania)** wybierz **pozycję Next (Dalej).**
 
-1. Wybierz **przycisk** Dalej, aby określić lokalizację wyjściową, w której pakiet aprowizowania ma być przekierowyny po jego sbudowaną zawartość. Domyślnie program Windows ICD używa folderu projektu jako lokalizacji wyjściowej.
+1. Wybierz **przycisk** Dalej, aby określić lokalizację wyjściową, w której ma zostać sbudowaną zawartość pakietu aprowizowania. Domyślnie program Windows ICD używa folderu projektu jako lokalizacji wyjściowej.
 
     Opcjonalnie możesz wybrać pozycję **Przeglądaj,** aby zmienić domyślną lokalizację wyjściową.
 
@@ -92,7 +92,7 @@ Pakiety aprowizowania to pliki utworzone przez narzędzie Windows Configuration 
 
 1. W Eksplorator plików przeciągnij i upuść pakiet aprowizowania (ppkg) do magazynu urządzenia.
 
-1. Chociaż HoloLens nadal znajduje się na **stronie** dopasowania, naciśnij krótko i zwolnij przyciski **Volume Down** i **Power** jednocześnie.
+1. Chociaż HoloLens nadal znajduje się na stronie **dopasowania,** naciśnij krótko  i ponownie zwolnij przyciski **Regulacji** głośności i Zasilania.
 
 1. HoloLens pytanie, czy ufasz pakietowi i chcesz go zastosować. Upewnij się, że pakiet jest zaufany.
 

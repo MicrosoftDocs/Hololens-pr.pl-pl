@@ -1,7 +1,7 @@
 ---
-title: Przewodnik wdrażania — połączone z HoloLens 2 przewodniki usługi Dynamics 365 — omówienie
-description: Dowiedz się, jak zarejestrować HoloLens 2 urządzenia za pomocą przewodników usługi Dynamics 365 za pośrednictwem firmowej sieci połączonej.
-keywords: HoloLens, zarządzanie, połączenia firmowe, przewodniki usługi Dynamics 365, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
+title: Przewodnik wdrażania — połączone z HoloLens 2 z usługą Dynamics 365 — omówienie
+description: Dowiedz się, jak zarejestrować HoloLens 2 urządzenia za pomocą przewodników usługi Dynamics 365 za pośrednictwem firmowej połączonej sieci.
+keywords: HoloLens, zarządzanie, połączenie firmowe, przewodniki usługi Dynamics 365, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -15,25 +15,25 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427434"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033421"
 ---
-# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Przewodnik wdrażania — przewodniki dotyczące HoloLens 2 z usługą Dynamics 365 — omówienie
+# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Przewodnik wdrażania — przewodnik po HoloLens 2 z usługą Dynamics 365 — omówienie
 
-Ten przewodnik pomoże specjalistom IT w planowaniu i wdrażaniu urządzeń Microsoft HoloLens 2 za pomocą przewodników usługi Dynamics 365 (przewodników) w organizacji. Ten przewodnik jest doskonały dla wdrożeń pilotażowych i produkcyjnych i jest podobny do scenariusza B: wdrażanie wewnątrz [sieci organizacji.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) Po przetestowaniu weryfikacji koncepcji skorzystaj z tego przewodnika, aby przejść dalej dzięki integracji HoloLens z twoją organizacją.
+Ten przewodnik pomoże specjalistom IT w planowaniu i wdrażaniu urządzeń Microsoft HoloLens 2 przy użyciu przewodników (przewodników) usługi Dynamics 365 w organizacji. Ten przewodnik jest doskonały dla wdrożeń pilotażowych i produkcyjnych i jest podobny do scenariusza B: wdrażanie wewnątrz przewodnika sieci [organizacji.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) Po przetestowaniu weryfikacji koncepcji skorzystaj z tego przewodnika, aby przejść dalej z integracją HoloLens z twoją organizacją.
 
 W tym przewodniku opisano sposób rejestrowania urządzeń w istniejącym zarządzaniu urządzeniami, stosowania licencji zgodnie z potrzebami i sprawdzania, czy użytkownicy końcowi mogą korzystać z przewodnika usługi Dynamics 365, a także jak korzystać z niestandardowych aplikacji biznesowych po skonfigurowaniu urządzenia. 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Powinna być już w tym miejscu następująca infrastruktura:
+Następująca infrastruktura powinna już być na miejscu:
 - Wi-Fi
     - Wewnętrzna sieć firmowa z dostępem do zasobów wewnętrznych i ograniczonym dostępem do Internetu lub usług w chmurze
-    - Uwierzytelnianie certyfikatu opartego na urządzeniach.
-- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment (Azure AD P1 subscription needed) (Dołączanie do usługi Azure AD za pomocą automatycznej rejestracji w usłudze MDM ([potrzebna jest subskrypcja usługi Azure AD P1)](/azure/active-directory/fundamentals/active-directory-whatis)
+    - Uwierzytelnianie certyfikatu oparte na urządzeniach.
+- Azure Active Directory (Azure AD) join with MDM Auto Enrollment[(Potrzebna subskrypcja usługi Azure AD P1)](/azure/active-directory/fundamentals/active-directory-whatis)
 - Zarządzanie urządzeniami przenośnymi (Intune)
     - Co najmniej jedna aplikacja jest wdrażana za pośrednictwem rozwiązania MDM.
 - Sieć 
@@ -41,39 +41,39 @@ Powinna być już w tym miejscu następująca infrastruktura:
     - Konfiguracja serwera proxy
 - Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
     - Obsługiwana jest jedna lub wielu użytkowników na urządzenie.
-- Różne poziomy konfiguracji blokady urządzeń stosowanych na podstawie konkretnych przypadków użycia, od w pełni otwartego do kiosku z jedną aplikacją.
+- Różne poziomy konfiguracji blokady urządzeń stosowane w zależności od konkretnych przypadków użycia, od całkowitego otwarcia do kiosku z jedną aplikacją.
 
-## <a name="guides-licensing-and-requirements"></a>[Licencjonowanie przewodników i wymagania](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+## <a name="guides-licensing-and-requirements"></a>[Licencjonowanie i wymagania przewodników](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 
 - Konto usługi Azure AD
-- Dynamics 365 Prowadzi aplikacje na komputerach pc i HoloLens
+- Dynamics 365 Prowadzi aplikacje na komputerze i HoloLens
 - Subskrypcja przewodników usługi Dynamics 365
-    - Microsoft Dataverse (dołączone)
+    - Microsoft Dataverse (w zestawie)
     - Power Apps (dołączone)
 - Power BI Desktop
 - Łączność sieciowa
 
-[![Diagram sieciowy połączony z firmami, etap 1. ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![Diagram sieci połączonej firmy, etap 1. ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![Diagram sieci połączony z firmami, etap 2. ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![Diagram sieci połączonej firmy, etap 2. ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ## <a name="in-this-guide-you-will"></a>Ten przewodnik zawiera informacje na temat:
 ### <a name="prepare"></a>Przygotowywanie
 > [!div class="checklist"]
->- [Poznaj podstawowe informacje o infrastrukturze dla HoloLens 2 urządzeń.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [Dowiedz się więcej na temat podstawowych informacji o infrastrukturze HoloLens 2 urządzeń.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Dowiedz się więcej o usłudze Azure AD i skonfiguruj ją, jeśli jej nie masz.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Dowiedz się więcej na temat zarządzania tożsamościami i sposobu najlepszego skonfigurowania kont usługi Azure AD.](hololens2-corp-connected-prepare.md#identity-management)
 >- [Dowiedz się więcej o usłudze MDM i skonfiguruj usługę Intune, jeśli jeszcze jej nie masz.](hololens2-corp-connected-prepare.md#mobile-device-management)
 >- [Zapoznaj się z siecią Wi-Fi opartą na certyfikatach.](hololens2-corp-connected-prepare.md#certificates)
 >- [Zapoznaj się z serwerem proxy.](hololens2-corp-connected-prepare.md#proxy)
->- [Dowiedz się, jak używać aplikacji biznesowych.](hololens2-corp-connected-prepare.md#line-of-business-apps)
->- [Dowiedz się więcej na temat sposobu korzystania z przewodników w organizacji.](hololens2-corp-connected-prepare.md#guides-playbook)
+>- [Dowiedz się, jak można używać aplikacji biznesowych.](hololens2-corp-connected-prepare.md#line-of-business-apps)
+>- [Dowiedz się więcej na temat sposobu korzystania z przewodników dla swojej organizacji.](hololens2-corp-connected-prepare.md#guides-playbook)
 ### <a name="configure"></a>Konfigurowanie
 > [!div class="checklist"]
 >- [Jak tworzyć użytkowników i grupy.](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [Jak skonfigurować rejestrację automatyczną.](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
->- [Jak skonfigurować certyfikaty Wi-Fi profilów dla firmowej Wi-Fi łączności.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [Upload i przypisywanie pakietów aplikacji biznesowych.](hololens2-corp-connected-configure.md#app-deployment)
+>- [Jak skonfigurować certyfikaty Wi-Fi profilów dla łączności Wi-Fi firmowej.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
+>- [Upload i przypisywanie pakietów aplikacji biznesowych( LOB).](hololens2-corp-connected-configure.md#app-deployment)
 >- [Konfigurowanie przewodników usługi Dynamics 365.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [Jak skonfigurować tryb kiosku (opcjonalnie).](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [Jak skonfigurować usługę WDAC (opcjonalnie).](hololens2-corp-connected-configure.md#optional-wdac)

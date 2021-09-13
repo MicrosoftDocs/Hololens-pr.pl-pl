@@ -16,17 +16,17 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427057"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033281"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Tworzenie zdjęć i wideo rzeczywistości mieszanej
 
 HoloLens zapewnia użytkownikom środowisko łączenia świata rzeczywistego ze światem cyfrowym.  Funkcja przechwytywania rzeczywistości mieszanej (MRC, mixed reality capture) umożliwia przechwytywanie tego doświadczenia jako zdjęcia lub wideo albo udostępnianie tego, co widzisz innym osobom w czasie rzeczywistym.
 
-Przechwytywanie rzeczywistości mieszanej używa punktu widzenia pierwszej osoby, aby inne osoby widziały hologramy, gdy je widzisz. W przypadku punktu widzenia osoby trzeciej użyj [widoku chybnego](/windows/mixed-reality/spectator-view). Widok zdumień jest szczególnie przydatny w przypadku pokazów.
+Przechwytywanie rzeczywistości mieszanej używa punktu widzenia pierwszej osoby, aby inne osoby widziały hologramów, gdy je widzisz. W przypadku punktu widzenia osoby trzeciej użyj [widoku chybnego](/windows/mixed-reality/spectator-view). Widok zdumień jest szczególnie przydatny w przypadku pokazów.
 
 Chociaż udostępnianie filmów wideo znajomym i współpracownikom jest zabawne, filmy wideo mogą również pomóc w nauczenie innych osób korzystania z aplikacji lub komunikowania problemów z aplikacjami i doświadczeniami.
 
@@ -39,19 +39,19 @@ Istnieje kilka sposobów, aby zrobić zdjęcie rzeczywistości mieszanej na Holo
 
 ### <a name="hardware-buttons-to-take-photos"></a>Przyciski sprzętowe do robić zdjęcia
 
-Aby zrobić szybkie zdjęcie bieżącego widoku, naciśnij jednocześnie przyciski regulacji głośności i regulacji głośności.  Przypomina to nieco wersję HoloLens zrzutu ekranu lub ekranu wydruku.
+Aby zrobić szybkie zdjęcie bieżącego widoku, naciśnij jednocześnie przyciski regulacji głośności i regulacji głośności.  Jest to nieco podobne do HoloLens zrzutu ekranu lub ekranu wydruku.
 
 - [Lokalizacje przycisków na HoloLens 2](hololens2-hardware.md)
 - [Lokalizacje przycisków na HoloLens (1. generacja)](hololens1-hardware.md#hololens-components)
 
 > [!NOTE]
-> **Przytrzymanie przycisków regulacji głośności** i **regulacji** głośności przez trzy sekundy spowoduje rozpoczęcie nagrywania wideo zamiast zrobienia zdjęcia. Aby zatrzymać nagrywanie, naciśnij jednocześnie przyciski **regulacji głośności** i **regulacji** głośności.
+> **Przytrzymanie przycisków regulacji głośności** i regulacji **głośności** przez trzy sekundy spowoduje rozpoczęcie nagrywania wideo zamiast zrobienia zdjęcia. Aby zatrzymać nagrywanie, naciśnij jednocześnie przyciski **regulacji głośności** i **regulacji** głośności.
 
 ### <a name="voice-commands-to-take-photos"></a>Polecenia głosowe do robić zdjęcia
 
-Na HoloLens 2, wersja 2004 (lub nowsza), powiedz: "Zrób zdjęcie".
+Na HoloLens 2, wersja 2004 (lub nowsza), powiedzmy: "Zrób zdjęcie".
 
-Na HoloLens (1. generacji) lub HoloLens 2, wersja 1903, na przykład: "Hej Cortana, zrób zdjęcie".
+Na HoloLens (1. generacja) lub HoloLens 2, wersja 1903, powiedzmy: "Hej Cortana, zrób zdjęcie".
 
 ### <a name="start-menu-to-take-photos"></a>menu Start robić zdjęcia
 
@@ -70,13 +70,13 @@ Istnieje kilka sposobów na nagraniu wideo rzeczywistości mieszanej na HoloLens
 Najszybszym sposobem na nagrania wideo jest  jednoczesne  naciśnięcie i przytrzymanie przycisków regulacji głośności i regulacji głośności do momentu, gdy rozpocznie się odliczanie do trzech sekund. Aby zatrzymać nagrywanie, naciśnij oba przyciski jednocześnie.
 
 > [!NOTE]
-> Szybkie naciśnięcie **przycisków regulacji głośności i** regulacji głośności w tym samym czasie spowoduje zdjęcie zamiast nagrywania wideo. 
+> Szybkie naciskanie **przycisków regulacji głośności** i regulacji głośności w tym samym czasie spowoduje zdjęcie zamiast nagrywania wideo. 
 
 ### <a name="voice-to-record-videos"></a>Głos do nagrywania wideo
 
-Na HoloLens 2, wersja 2004 (lub nowsza), powiedz: "Rozpocznij nagrywanie". Aby zatrzymać nagrywanie, powiedz "Zatrzymaj nagrywanie".
+Na HoloLens 2, wersja 2004 (i nowsze), powiedz: "Rozpocznij nagrywanie". Aby zatrzymać nagrywanie, powiedz "Zatrzymaj nagrywanie".
 
-Na HoloLens (1. generacji) lub HoloLens 2, w wersji 1903, powiedzmy: "Hej Cortana, rozpocznij nagrywanie". Aby zatrzymać nagrywanie, powiedz "Hej Cortana, zatrzymaj nagrywanie".
+Na HoloLens (1. generacji) lub HoloLens 2, wersja 1903, powiedz: "Hej, Cortana, rozpocznij nagrywanie". Aby zatrzymać nagrywanie, powiedz "Hej Cortana, zatrzymaj nagrywanie".
 
 ### <a name="start-menu-to-record-videos"></a>menu Start do nagrywania wideo
 
@@ -86,32 +86,32 @@ Aby zatrzymać nagrywanie, użyj gestu Rozpocznij i wybierz wyróżnione **ikon�
 
 > [!NOTE]
 > **Dotyczy tylko HoloLens (1. generacji)**  
-> W [Aktualizacja systemu Windows 10 z października 2018](/windows/mixed-reality/release-notes-october-2018) sposób, w jaki gest Start i przycisk Windows zachowują się HoloLens (1. generacja). Przed aktualizacją gest Start lub przycisk Windows zatrzymały nagrywanie wideo. Jednak po aktualizacji gest Start lub przycisk Windows otwiera menu **Start** (lub **menu** szybkich akcji w aplikacji immersyjnej), z którego można wybrać wyróżnione ikonę wideo, aby zatrzymać nagrywanie. 
+> W [Aktualizacja systemu Windows 10 z października 2018](/windows/mixed-reality/release-notes-october-2018) sposób, w jaki gest Start i przycisk Windows zachowują się HoloLens (1. generacja). Przed aktualizacją gest Start lub przycisk Windows zatrzymały nagrywanie wideo. Jednak po aktualizacji gest Start lub przycisk Windows otwiera menu **Start** (lub **menu** szybkich akcji, jeśli jesteś w aplikacji  immersyjnej), z którego możesz wybrać wyróżnione ikonę wideo, aby zatrzymać nagrywanie.
 
 ## <a name="share-what-you-see-in-real-time"></a>Udostępnianie tego, co widzisz w czasie rzeczywistym
 
-W czasie rzeczywistym możesz udostępniać to, co widzisz HoloLens ze znajomymi i współpracownikami. Dostępnych jest kilka metod:
+W czasie rzeczywistym możesz udostępniać to, co widzisz HoloLens, znajomym i współpracownikom. Dostępnych jest kilka metod:
 
-1. Nawiązywanie połączenia z Miracast z włączoną obsługą urządzenia lub adaptera w celu obejrzenia na ekranie tv.
+1. Nawiązywanie połączenia z Miracast z włączoną obsługą urządzenia lub adaptera w celu obserwowania na ekranie tv.
 1. Używanie [Windows Portal urządzeń](/windows/mixed-reality/using-the-windows-device-portal) do obserwowania na komputerze
 1. Używanie aplikacji [Microsoft HoloLens do obserwowania](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) na komputerze.
 1. Wdrażanie aplikacji [Microsoft Dynamics 365 Remote Assist,](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) która umożliwia pracownikom pierwszej linii przesyłanie strumieniowe tego, co widzą, do zdalnego eksperta. Zdalny ekspert może następnie prowadzić proces roboczy pierwszej linii ustnie lub przez adnotacje w ich świecie.
 
 > [!NOTE]
-> Udostępnianie tego, co widzisz za Windows Portal urządzeń lub Microsoft HoloLens, wymaga, aby HoloLens w [trybie dewelopera.](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)
+> Udostępnianie tego, co widzisz za Windows Portal urządzeń Microsoft HoloLens aplikacji towarzyszącej, wymaga, HoloLens być w [trybie dewelopera.](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)
 
 ### <a name="stream-video-with-miracast"></a>Przesyłanie strumieniowe wideo za pomocą Miracast
 
 Użyj gestu Rozpocznij, aby przejść do menu **Start,** a następnie wybierz **ikonę Połączenie** menu. Z wyświetlonego selektora wybierz Miracast lub kartę sieciową, z którą chcesz nawiązać połączenie.
 
-Aby zatrzymać udostępnianie, użyj gestu Rozpocznij i wybierz wyróżniony **Połączenie** ikony. Ponieważ przesyłano strumieniowo, żadne dane nie zostaną zapisane na urządzeniu.
+Aby zatrzymać udostępnianie, użyj gestu Start i wybierz wyróżniony **Połączenie** ikony. Ponieważ przesyłano strumieniowo, żadne dane nie zostaną zapisane na urządzeniu.
 
 > [!NOTE]
 > Miracast została włączona na HoloLens (1. generacji), począwszy od [Aktualizacja systemu Windows 10 z października 2018](/windows/mixed-reality/release-notes-october-2018).
 
 ### <a name="real-time-video-with-windows-device-portal"></a>Wideo w czasie rzeczywistym z Windows Portal urządzeń
 
-Ponieważ udostępnianie za pośrednictwem Windows Portal urządzeń wymaga włączonego trybu dewelopera na platformie HoloLens, postępuj zgodnie z instrukcjami w naszej dokumentacji dla deweloperów, aby skonfigurować tryb dewelopera i nawigować po [Windows Portal urządzeń.](/windows/mixed-reality/using-the-windows-device-portal)
+Ponieważ udostępnianie za pośrednictwem Windows Portal urządzeń wymaga, aby tryb dewelopera był włączony na platformie HoloLens, postępuj zgodnie z instrukcjami w naszej dokumentacji dla deweloperów, aby skonfigurować tryb dewelopera i nawigować po [Windows Portal urządzeń.](/windows/mixed-reality/using-the-windows-device-portal)
 
 ### <a name="microsoft-hololens-companion-app"></a>Microsoft HoloLens aplikacji towarzyszącej
 
@@ -147,33 +147,33 @@ Porady:
 
 Przed Windows Holographic w wersji [21H1](hololens-release-notes.md#windows-holographic-version-21h1)po przechwyceniu zdjęcia lub wideo rzeczywistości mieszanej zostanie wyświetlony podgląd. Wybierz **ikonę Udostępnij** nad podglądem, aby wyświetlić asystenta udostępniania. W tym miejscu możesz wybrać punkt końcowy, do którego chcesz udostępnić to zdjęcie lub wideo.
 
-W Windows Holographic w wersji 21H1 po przechwyceniu zdjęcia lub wideo rzeczywistości mieszanej zostanie wyświetlony podgląd. Wybierz **ikonę Udostępnij** nad podglądem, aby wyświetlić asystenta udostępniania. W tym miejscu możesz wybrać punkt końcowy (Mail, OneDrive itp.), w którym chcesz udostępnić to zdjęcie lub wideo. Możesz również włączyć udostępnianie HoloLens z pobliskimi urządzeniami, przechodząc do folderu **Ustawienia -> System -> Shared Experiences**. Aby uzyskać więcej informacji, przeczytaj [temat Udostępnianie rzeczy pobliskim urządzeniem w Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+W Windows Holographic w wersji 21H1 po przechwyceniu zdjęcia lub wideo rzeczywistości mieszanej zostanie wyświetlony podgląd. Wybierz **ikonę Udostępnij** nad podglądem, aby wyświetlić asystenta udostępniania. W tym miejscu możesz wybrać punkt końcowy (Mail, OneDrive itp.), w którym chcesz udostępnić to zdjęcie lub wideo. Możesz również włączyć udostępnianie HoloLens pobliskim urządzeniem, przechodząc do folderu **Ustawienia -> System -> Shared Experiences**. Aby uzyskać więcej informacji, przeczytaj [Udostępnianie rzeczy pobliskim urządzeniem w Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
 > [!TIP] 
-> Możesz również udostępniać zdjęcia i filmy wideo rzeczywistości mieszanej z OneDrive, automatycznie przesyłając zdjęcia i wideo rzeczywistości mieszanej. Otwórz aplikację OneDrive na stronie HoloLens i zaloguj się przy użyciu osobistego **[konta konto Microsoft](https://account.microsoft.com)**, jeśli jeszcze tego nie zostało. Wybierz **ikonę Ustawienia** i wybierz pozycję **Przekaż z aparatu.** Włącz przekazywanie z aparatu. Zdjęcia i filmy wideo rzeczywistości mieszanej będą teraz przekazywane do OneDrive przy każdym uruchomieniu aplikacji na HoloLens.
+> Możesz również udostępniać zdjęcia i filmy wideo rzeczywistości mieszanej z OneDrive, automatycznie przesyłając zdjęcia i filmy wideo rzeczywistości mieszanej. Otwórz aplikację OneDrive na stronie HoloLens i zaloguj się przy użyciu osobistego **[konta konto Microsoft](https://account.microsoft.com)**, jeśli jeszcze tego nie zrobić. Wybierz **ikonę Ustawienia** i wybierz pozycję **Przekaż aparat.** Włącz przekazywanie z aparatu. Zdjęcia i filmy wideo rzeczywistości mieszanej będą teraz przekazywane do OneDrive przy każdym uruchomieniu aplikacji na HoloLens.
 
 > [!NOTE]
-> Przekazywanie z aparatu można włączyć OneDrive tylko wtedy, gdy zalogowano się do OneDrive przy użyciu konta konto Microsoft. Jeśli skonfigurujemy HoloLens przy użyciu konta służbowego, możesz dodać osobisty konto Microsoft aplikacji OneDrive, aby włączyć tę funkcję.
+> Przekazywanie z aparatu można włączyć OneDrive tylko wtedy, gdy zalogowano się do OneDrive przy użyciu konta konto Microsoft. W przypadku skonfigurowania HoloLens przy użyciu konta służbowego możesz dodać osobisty konto Microsoft aplikacji OneDrive, aby włączyć tę funkcję.
 
 ## <a name="limitations-of-mixed-reality-capture"></a>Ograniczenia przechwytywania rzeczywistości mieszanej
 
-- Podczas korzystania z przechwytywania rzeczywistości mieszanej szybkość klatek HoloLens do 30 Hz.
-- Rozdzielczość zdjęć i wideo może ulec skróceniu, jeśli aparat fotograficzny/wideo jest już w użyciu przez inną aplikację, podczas transmisji strumieniowej na żywo lub gdy zasoby systemowe są niskie.
+- Podczas przechwytywania rzeczywistości mieszanej szybkość klatek HoloLens do 30 Hz.
+- Rozdzielczość zdjęć i wideo może ulec skróceniu, jeśli aparat do zdjęć/wideo jest już w użyciu przez inną aplikację, podczas transmisji strumieniowej na żywo lub gdy zasoby systemowe są niskie.
 
 ### <a name="maximum-recording-length"></a>Maksymalna długość rejestrowania
 
-Na HoloLens 2 urządzeniach przed Windows Holographic w wersji 20H2 filmy wideo zarejestrowane na urządzeniu były ograniczone do maksymalnej długości pięciu minut.
+Na HoloLens urządzeniach przed Windows Holographic w wersji 20H2 filmy wideo zarejestrowane na urządzeniu były ograniczone do maksymalnej długości pięciu minut.
 
-Dzięki opiniom klientów zwiększyliśmy długość rejestrowania przechwytywania rzeczywistości [mieszanej.](holographic-photos-and-videos.md) Przechwytywanie rzeczywistości mieszanej nie będzie już domyślnie ograniczone do 5 minut, ale zamiast tego obliczy maksymalną długość rejestrowania na podstawie dostępnego miejsca na dysku. Urządzenie oszacowa maksymalny czas trwania nagrywania wideo na podstawie dostępnego miejsca na dysku do 80% całkowitego miejsca na dysku.
+Dzięki opiniom klientów zwiększyliśmy długość rejestrowania przechwytywania [rzeczywistości mieszanej.](holographic-photos-and-videos.md) Przechwytywanie rzeczywistości mieszanej nie będzie domyślnie ograniczone do 5 minut, ale zamiast tego obliczy maksymalną długość rejestrowania na podstawie dostępnego miejsca na dysku. Urządzenie oszacowa maksymalny czas trwania rejestrowania wideo na podstawie dostępnego miejsca na dysku do 80% całkowitego miejsca na dysku.
 
 > [!NOTE]
 > W HoloLens będzie używać domyślnej długości rejestrowania wideo (5 minut), jeśli wystąpi jedna z następujących sytuacji:
-> - Szacowany maksymalny czas trwania rejestrowania jest mniejszy niż domyślne 5 minut.
+> - Szacowany maksymalny czas rejestrowania jest mniejszy niż domyślne 5 minut.
 > - Dostępne miejsce na dysku jest mniejsza niż 20% całkowitego miejsca na dysku.
 
 ## <a name="default-file-format-and-resolution"></a>Domyślny format i rozdzielczość pliku
 
-### <a name="default-photo-format-and-resolution"></a>Domyślny format i rozdzielczość zdjęć
+### <a name="default-photo-format-and-resolution"></a>Domyślny format i rozdzielczość zdjęcia
 
 |  Urządzenie  |  Format  |  Wewnętrzny  |  Rozwiązanie  |
 |----------|----------|----------|----------|

@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427386"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036053"
 ---
 # <a name="configure-your-network-for-hololens"></a>Konfigurowanie sieci na HoloLens
 
@@ -151,14 +151,14 @@ Przeczytaj więcej na [temat instalowania aplikacji na HoloLens](hololens-instal
 
 ### <a name="certificates"></a>Certyfikaty
 
-Certyfikaty można dystrybuować za pośrednictwem dostawcy zarządzania urządzeniami przenośnymi. Jeśli firma wymaga certyfikatów, usługa Intune obsługuje certyfikaty PKCS, PFX i SCEP. Ważne jest, aby zrozumieć, który certyfikat jest odpowiedni dla Twojej firmy. Zapoznaj się z [dokumentacją konfiguracji certyfikatów,](/intune/protect/certificates-configure) aby określić, który certyfikat jest dla Ciebie najlepszy. Jeśli zamierzasz używać certyfikatów do uwierzytelniania HoloLens, plik PFX lub SCEP może być odpowiedni dla Ciebie.
+Certyfikaty można dystrybuować za pośrednictwem dostawcy zarządzania urządzeniami przenośnymi. Jeśli firma wymaga certyfikatów, usługa Intune obsługuje certyfikaty PKCS, PFX i SCEP. Ważne jest, aby zrozumieć, który certyfikat jest odpowiedni dla Twojej firmy. Zapoznaj się z [dokumentacją konfiguracji certyfikatów,](/intune/protect/certificates-configure) aby określić, który certyfikat jest dla Ciebie najlepszy. Jeśli zamierzasz używać certyfikatów do uwierzytelniania HoloLens, plik PFX lub SCEP może być dla Ciebie odpowiedni.
 
 Zapoznaj się z poniższymi krokami korzystania z [SCEP.](/intune/protect/certificates-profile-scep)
 
 ### <a name="how-to-upgrade-to-holographics-for-business-commercial-suite"></a>Jak uaktualnić do pakietu Holographics for Business Commercial Suite
 
 > [!NOTE]
-> Windows Holographics for Business (pakiet komercyjny) jest przeznaczony tylko dla HoloLens pierwszej generacji. Profil nie zostanie zastosowany do urządzeń HoloLens 2.
+> Windows Urządzenia Holographics for Business (pakiet komercyjny) są przeznaczone HoloLens pierwszej generacji. Profil nie zostanie zastosowany do HoloLens 2.
 
 Wskazówki dotyczące uaktualniania do pakietu komercyjnego można znaleźć w dokumentacji [uaktualnienia holograficznego.](/intune/configuration/holographic-upgrade)
 
@@ -168,23 +168,23 @@ Wskazówki dotyczące uaktualniania do pakietu komercyjnego można znaleźć w d
 
 1. Sprawdzanie ustawień aplikacji
     1. Zaloguj się do konta Microsoft Store Business
-    1. **Zarządzanie > Produktami i usługami > Apps and Software > Wybierz aplikację, którą chcesz zsynchronizować z > Private Store Availability > Wybierz pozycję "Wszyscy" lub "Określone grupy"**
+    1. **Zarządzanie > produktami i usługami > Apps and Software > Wybierz aplikację, którą chcesz zsynchronizować z dostępnością sklepu prywatnego >, > wybierz pozycję "Wszyscy" lub "Określone grupy"**
         >[!NOTE]
-        >Jeśli nie widzisz chętnych aplikacji, musisz "pobrać" aplikację, wyszukując aplikację w sklepie. **Kliknij pasek "Wyszukaj"** w prawym górnym rogu, > wpisz nazwę aplikacji, > kliknij aplikację, > pozycję "Pobierz".
-    1. Jeśli nie widzisz aplikacji w usłudze **Intune > Client Apps > Apps,** może być ponownie trzeba [zsynchronizować](/intune/apps/windows-store-for-business#synchronize-apps) aplikacje.
+        >Jeśli nie widzisz chcieć aplikacji, musisz "pobrać" aplikację, wyszukując aplikację w sklepie. **Kliknij pasek "Wyszukaj"** w prawym górnym rogu, > wpisz nazwę aplikacji, > kliknij aplikację, > pozycję "Pobierz".
+    1. Jeśli nie widzisz aplikacji w usłudze **Intune > Client Apps > Apps,** może być trzeba ponownie [zsynchronizować](/intune/apps/windows-store-for-business#synchronize-apps) aplikacje.
 
 1. [Tworzenie profilu urządzenia dla trybu kiosku](/intune/configuration/kiosk-settings#create-the-profile)
 
 > [!NOTE]
 > Różnych użytkowników można skonfigurować tak, aby mieli różne środowisko trybu kiosku, używając "Azure AD" jako "typu logowania użytkownika". Jednak ta opcja jest dostępna tylko w trybie kiosku z wieloma aplikacjami. Tryb kiosku z wieloma aplikacjami będzie działać tylko z jedną aplikacją, a także z wieloma aplikacjami.
 
-![Obraz, który przedstawia konfigurację trybu kiosku w usłudze Intune.](images/aad-kioskmode.png)
+![Obraz, który pokazuje konfigurację trybu kiosku w usłudze Intune.](images/aad-kioskmode.png)
 
-W przypadku innych usług MDM zapoznaj się z dokumentacją dostawcy, aby uzyskać instrukcje. Zapoznaj się z [HoloLens kiosku,](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) jeśli chcesz użyć ustawienia niestandardowego i pełnej konfiguracji XML w celu skonfigurowania kiosku w usłudze MDM.
+W przypadku innych usług MDM zapoznaj się z dokumentacją dostawcy, aby uzyskać instrukcje. Zapoznaj się z [HoloLens dotyczącymi kiosku,](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) jeśli chcesz użyć ustawienia niestandardowego i pełnej konfiguracji XML w celu skonfigurowania kiosku w usłudze MDM.
 
 ## <a name="certificates-and-authentication"></a>Certyfikaty i uwierzytelnianie
 
-Certyfikaty można wdrażać za pośrednictwem rozwiązania MDM (zobacz sekcję "certyfikaty" w [sekcji MDM).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) Certyfikaty można również wdrażać na HoloLens przez aprowizowanie pakietów. Aby uzyskać dodatkowe HoloLens, zobacz [HoloLens Provisioning](hololens-provisioning.md) (Aprowizowanie).
+Certyfikaty można wdrażać za pośrednictwem rozwiązania MDM (zobacz sekcję "certyfikaty" w [sekcji MDM](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). Certyfikaty można również wdrażać na HoloLens przez aprowizowanie pakietów. Aby uzyskać dodatkowe HoloLens, zobacz [HoloLens Provisioning](hololens-provisioning.md) (Aprowizowanie).
 
 ### <a name="additional-intune-quick-links"></a>Dodatkowe szybkie linki do usługi Intune
 

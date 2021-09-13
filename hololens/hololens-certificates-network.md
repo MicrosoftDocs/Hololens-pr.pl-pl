@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428318"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036059"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Przygotowywanie certyfikatów i profilów sieciowych dla HoloLens 2
 

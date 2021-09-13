@@ -13,38 +13,38 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036434"
 ---
 # <a name="about-hololens-2"></a>Informacje HoloLens 2
 
 ![HoloLens 2 widok boczny.](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 jest nieukońcowany komputer holograficzny.  Uściśliła podróż obliczeń holograficznych rozpoczętą przez firmę HoloLens (1. generacja), aby zapewnić wygodniejsze i bardziej immersyjne środowisko w połączeniu z większej liczby opcji współpracy w rzeczywistości mieszanej. HoloLens 2 działa w systemie [Windows Holographic OS](hololens-release-notes.md)opartym na "smaku" platformy Windows 10, która zapewnia użytkownikom, administratorom i deweloperom niezawodną, wydajne i bezpieczne platformy. 
+Microsoft HoloLens 2 jest komputerem holograficznym.  Uściśliła podróż obliczeń holograficznych rozpoczętą przez firmę HoloLens (1. generacja), aby zapewnić wygodniejsze i immersywne środowisko połączone z większą możliwością współpracy w rzeczywistości mieszanej. HoloLens 2 działa w systemie [Windows Holographic OS](hololens-release-notes.md)opartym na "smaku" platformy Windows 10, która zapewnia użytkownikom, administratorom i deweloperom niezawodną, wydajne i bezpieczne platformy. 
 
 > [!NOTE]
-> Ostatnie ogłoszenie Windows 11 dotyczyło głównie wersji Windows. W maju [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) 2021 r. niedawno uruchomiliśmy dużą aktualizację systemu operacyjnego do wersji HoloLens 2. Pracujemy nad nadchodzącym wydaniem, bazując na opiniach klientów na tę aktualizację.
+> Najnowsze Windows 11 dotyczyło wersji pc Windows. W maju [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) 2021 r. niedawno uruchomiliśmy dużą aktualizację systemu operacyjnego do wersji HoloLens 2. Pracujemy nad nadchodzącym wydaniem na podstawie opinii klientów na temat tej aktualizacji.
 
 Konto użytkownika jest wymagane do korzystania z HoloLens 2.
 
 ## <a name="hololens-components"></a>HoloLens składników
 
-- **Visor .** Zawiera czujniki HoloLens i ekrany. Możesz obrócić wizjer w górę podczas noszenia HoloLens.
-- **Headband**. Aby umieścić na HoloLens, użyj kółka korekty, aby rozwinąć pałąk. Po HoloLens dokręć koło korekty, obracając w prawo, aż pasek będzie wygodny.
-- **Przyciski jasność**. Podczas noszenia HoloLens przyciski jasność znajdują się po lewej stronie oszołomienia w pobliżu twojej daszki.
-- **Przyciski regulacji głośności**. Po HoloLens przycisków regulacji głośności znajdują się po prawej stronie oszołomu w pobliżu jego daszka.
-- **Przycisk zasilania**. Podczas noszenia HoloLens przycisk zasilania znajduje się po prawej stronie tylnej zewnętrznej okładki.
-- **Port USB-C.** Podczas noszenia HoloLens port USB-C znajduje się po prawej stronie zewnętrznej okładki pod przyciskiem Zasilania.
+- **Visor .** Zawiera czujniki HoloLens i ekrany. Możesz obrócić oszławkę w górę podczas noszenia HoloLens.
+- **Pałąk .** Aby umieścić na HoloLens, rozwiń pałąk za pomocą kółka korekty. Po HoloLens odciągaj koło korekty, obracając w prawo, aż pałąk będzie wygodny.
+- **Przyciski jasność**. Podczas noszenia HoloLens przyciski światła znajdują się po lewej stronie ochłody w pobliżu swojej daszki.
+- **Przyciski regulacji głośności**. Po HoloLens przycisków regulacji głośności znajdują się po prawej stronie przyszycie w pobliżu miejsu.
+- **Przycisk zasilania**. Po HoloLens przycisk zasilania znajduje się po prawej stronie tylnej zewnętrznej okładki.
+- **Port USB-C.** Podczas noszenia HoloLens port USB-C znajduje się po prawej stronie zewnętrznej zewnętrznej okładki poniżej przycisku zasilania.
 
 ## <a name="in-the-box"></a>W polu
 
-- **[Brow pad](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. W razie potrzeby możesz usunąć i zamienić nakładkę na brew.
-- **[Narzut](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Gdy podczas poruszania się HoloLens, użyj narzutów, aby pomóc w zachowaniu urządzenia. Podczas noszenia HoloLens przez dłuższy czas obciążenie może sprawić, że urządzenie będzie bardziej wygodne w zużyciu.
-- **[Usb-C i kabel](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. Zasilacz podłącza się do gniazda zasilania. Użyj kabla USB-C, aby podłączyć HoloLens do zasilacza w celu nawiązania połączenia lub HoloLens z komputerem.
-- **Mikrofibry.** Użyj , aby wyczyścić HoloLens użytkownika.
+- **[Brow pad](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. W razie potrzeby możesz usunąć i zastąpić nakładkę do przechwęć.
+- **[Narzut](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Gdy podczas poruszania się po HoloLens, użyj narzutu, aby zachować urządzenie na miejscu. W przypadku noszenia HoloLens przez dłuższy czas narzut może sprawić, że urządzenie będzie bardziej wygodne do zużycia.
+- **[Usb-C i kabel](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. Zasilacz podłącza się do gniazda zasilania. Za pomocą kabla USB-C podłącz urządzenie HoloLens do zasilacza w celu nawiązania połączenia lub HoloLens z komputerem.
+- **Mikrosieć**. Użyj , aby wyczyścić HoloLens użytkownika.
 
 ### <a name="power-supply-details"></a>Szczegóły zasilacza
 
@@ -52,7 +52,7 @@ Zasilacz i kabel USB, który jest podłączony do urządzenia, są najlepszym ob
 
 Szybkość i szybkość ładowania mogą się różnić w zależności od środowiska, w którym działa urządzenie.
 
-Aby utrzymać/podwyższyć wartość procentową wewnętrznego naładowania baterii, gdy urządzenie jest włączona, musi być podłączone co najmniej do 15 W.
+Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania baterii, gdy urządzenie jest włączona, musi być podłączone co najmniej do 15 W.
 
 ## <a name="device-specifications"></a>Specyfikacje urządzeń
 
@@ -60,8 +60,8 @@ Aby utrzymać/podwyższyć wartość procentową wewnętrznego naładowania bate
 
 |   | &nbsp; |
 |---|---|
-| **Optyka** | Widzące obiektywy holograficzne (waveguides) |
-| **Rozdzielczość holograficzna** | 2 tys. silników lekkich 3:2 |
+| **Optyka** | Obiektywy holograficzne (waveguides) |
+| **Rozdzielczość holograficzna** | Żarówki 2k 3:2 |
 | **Gęstość holograficzna** | >2,5 tys. radianów (punkty światła na radian) |
 | **Renderowanie oparte na oku** | Optymalizacja wyświetlania dla pozycji oka 3D |
 
@@ -71,14 +71,14 @@ Aby utrzymać/podwyższyć wartość procentową wewnętrznego naładowania bate
 |---|---|
 | **Śledzenie głowy** | 4 widoczne jasne kamery |
 | **Śledzenie wzroku** | 2 kamery na podczerwień (IR) |
-| **Głębokość** | Czujnik głębokości czasu lotu 1 MP |
+| **Głębokość** | Czujnik głębokości czasu lotu (1 MP) |
 | **Inertial measurement unit (IMU)** | Akcelerometr, gyroscope, akcelerometr |
-| **Aparat fotograficzny** | 8 mp stills, wideo 1080p30 |
+| **Aparat fotograficzny** | 8 MP stills, wideo 1080p30 |
 
-![HoloLens 2 Czujniki.](images/hololens2-front-view.png)
+![HoloLens 2 Sensors.](images/hololens2-front-view.png)
 
 > [!NOTE]
-> Nie zakrywaj żadnych czujników, które są wywoływane na obrazie. Kamery do śledzenia głowy mają bardzo szerokie fov, nic nie powinno być wokół nich oprócz ich nie osłaniania.
+> Nie zakrywaj żadnych czujników, które są wywoływane na zdjęciu. Kamery do śledzenia głowy mają bardzo szerokie możliwości fov i nie powinny być wokół nich poza ich pokryciem.
 
 ### <a name="audio-and-speech"></a>Dźwięk i mowa
 
@@ -91,23 +91,23 @@ Aby utrzymać/podwyższyć wartość procentową wewnętrznego naładowania bate
 
 |   | &nbsp; |
 |---|---|
-| **System na mikroukładzie** | Szczegółowe informacje o platformie obliczeniowej [Naus](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) 850 |
+| **System na mikroukładzie** | Szczegóły dotyczące platformy obliczeniowej z procesorami 850 [w](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) chmurze |
 | **Jednostka przetwarzania holograficznego** | Niestandardowa jednostka przetwarzania holograficznego drugiej generacji |
-| **Pamięć** | SystemOWY pamięć DRAM 4 GB LPDDR4x |
+| **Pamięć** | SystemOWY pamięci DRAM 4 GB LPDDR4x |
 | **Storage** | UFS 2.1 64 GB |
 | **Wi-Fi** | 802.11ac 2x2 |
 | **Bluetooth** | 5.0 |
-| **USB** | USB, typ C DRP |
+| **USB** | DRP typu C USB |
 
 ### <a name="power"></a>Zasilanie
 
 |   | &nbsp; |
 |---|---|
-| **Baterii** | 2–3 godziny aktywnego użytkowania. Do dwóch tygodni czasu wstrzymania. |
+| **Baterii** | Aktywne użycie przez 2–3 godziny. Do dwóch tygodni czasu wstrzymania. |
 | **Technologia baterii** | [Litowych](https://www.microsoft.com/download/details.aspx?id=43388) |
-| **Zachowanie dotyczące naliowania opłat** | W pełni funkcjonalne podczas ładowania |
-| **Typ chłodzenia** | Chłodzony pasywnie (bez wentylatorów) |
-| **Rysowanie zasilania** | Aby utrzymać/podwyższyć wartość procentową wewnętrznego naładowania baterii, gdy urządzenie jest włączona, musi być podłączone co najmniej do 15 W. |
+| **Zachowanie na ładowaniu** | W pełni funkcjonalne podczas ładowania |
+| **Typ chłodzenia** | Pasywnie ochłodzoną (bez wentylatorów) |
+| **Rysowanie zasilania** | Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania baterii, gdy urządzenie jest włączona, musi być podłączone co najmniej do 15 W. |
 
 ### <a name="fit"></a>Dopasowanie
 
@@ -200,7 +200,7 @@ Numer seryjny dla HoloLens 2 urządzeń jest drukowany pod osłoną.
 
 1. Podnieś daszek urządzenia w górę.
 1. Przyjrzyj się w pobliżu przeglądarki.
-1. Numer seryjny można znaleźć w pobliżu chętnych.
+1. Numer seryjny można znaleźć w pobliżu nasyłania.
 
    <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
@@ -216,7 +216,7 @@ Numer seryjny można również znaleźć za pośrednictwem podłączonego komput
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Porównanie HoloLens 2](hololens2-options.md)
+> [Porównanie HoloLens 2 wersji](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 > [Konfigurowanie i uruchamianie aplikacji HoloLens 2](hololens2-setup.md)

@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Kontrola aplikacji (WDAC)
-description: Omówienie funkcji Windows Defender Application Control i sposobu używania jej do zarządzania HoloLens rzeczywistości mieszanej.
+description: Omówienie funkcji Windows Defender Application Control i sposobu używania jej do zarządzania urządzeniami HoloLens rzeczywistości mieszanej.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,17 +13,17 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033942"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Kontrola aplikacji — WDAC
 
 ## <a name="overview"></a>Omówienie
 
-Funkcja WDAC umożliwia skonfigurowanie HoloLens blokowania uruchamiania aplikacji. Różni się on od trybu kiosku, w którym interfejs użytkownika ukrywa aplikacje, ale nadal można je uruchomiać. Za pomocą usługi WDAC można wyświetlić aplikacje, ale nie można ich uruchomić.
+Funkcja WDAC umożliwia skonfigurowanie HoloLens blokowania uruchamiania aplikacji. Różni się on od trybu kiosku, w którym interfejs użytkownika ukrywa aplikacje, ale nadal można je uruchomiać. Za pomocą usługi WDAC można zobaczyć aplikacje, ale nie można ich uruchomić.
 
 > [!NOTE]
 > Gdy użytkownicy końcowi spróbują uruchomić aplikację zablokowaną przez usługi WDAC na HoloLens, nie zostaną powiadomieni o tym, że nie mogą uruchomić aplikacji.
@@ -32,13 +32,13 @@ Do urządzenia można przypisać więcej niż jedną zasady WDAC. Jeśli w syste
 
 Poniżej przedstawiono przewodnik dla użytkowników, aby dowiedzieć się, jak używać funkcji [WDAC i Windows PowerShell](/mem/intune/configuration/custom-profile-hololens)do zezwalania na aplikacje lub blokowania ich na urządzeniach z systemem HoloLens 2 przy użyciu usługi Microsoft Intune .
 
-Gdy użytkownicy wyszukują aplikacje zainstalowane na komputerze Windows 10 przy użyciu pierwszego przykładowego kroku, może być konieczne kilka prób zawężenia wyników.
+Gdy użytkownicy wyszukują aplikacje zainstalowane na komputerze Windows 10 pc przy użyciu pierwszego przykładowego kroku, może być konieczne kilka prób zawężenia wyników.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
 ``` 
 
-Jeśli nie znasz pełnej nazwy pakietu, być może trzeba będzie kilka razy uruchomić "Get-AppxPackage -name \* YourKowaćGuess", aby \* go znaleźć. Następnie po uruchomieniu nazwy uruchom "$package 1 = Get-AppxPackage -name Actual.PackageName"
+Jeśli nie znasz pełnej nazwy pakietu, być może trzeba będzie kilka razy uruchomić "Get-AppxPackage -name \* YourGueGuess", aby \* go znaleźć. Następnie po uruchomieniu nazwy uruchom "$package 1 = Get-AppxPackage -name Actual.PackageName"
 
 Na przykład uruchomienie następującego kodu dla Microsoft Edge zwróci więcej niż jeden wynik, ale z tej listy można zidentyfikować, że pełna nazwa, która jest potrzebna, to Microsoft.MicrosoftEdge.
 
@@ -48,7 +48,7 @@ Get-AppxPackage -name *edge*
 
 ## <a name="package-family-names-for-apps-on-hololens"></a>Nazwy rodzin pakietów dla aplikacji na HoloLens
 
-W powyższym przewodniku można ręcznie edytować i newPolicy.xml dla aplikacji, które są instalowane tylko na HoloLens z nazwami rodzin pakietów. Czasami istnieją aplikacje, których możesz użyć, które nie znajdują się na komputerze stacjonarnym, które chcesz dodać do zasad.
+W przewodniku połączonym powyżej można ręcznie edytować newPolicy.xml i dodawać reguły dla aplikacji, które są instalowane tylko na HoloLens z nazwami rodzin pakietów. Czasami istnieją aplikacje, których możesz użyć, które nie znajdują się na komputerze stacjonarnym, które chcesz dodać do zasad.
 
 Poniżej znajduje się lista najczęściej używanych i używanych In-Box dla HoloLens 2.
 

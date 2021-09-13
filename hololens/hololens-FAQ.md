@@ -19,11 +19,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ae44ae1d9a2e088a1ef746f4e929e8fae73880bf
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033094"
 ---
 # <a name="holograms-and-interactions-troubleshooting"></a>Hologramy i interakcje dotyczące rozwiązywania problemów
 
@@ -42,7 +42,7 @@ Aby uzyskać porady dotyczące sposobu noszenia HoloLens, zobacz [Dostosowywanie
 - [Nie można utworzyć nowych spacji](#new-spaces-cant-be-created)
 - [Nie można zidentyfikować ani załadować spacji](#spaces-cant-be-identified-or-loaded)
 - [Jak mogę usunąć wszystkie spacje?](#how-do-i-delete-all-spaces)
-- [Hologramy nie wygląda dobrze lub są poruszane](#holograms-dont-look-right-or-are-moving-around)
+- [Hologramy nie wyglądają dobrze lub są poruszane](#holograms-dont-look-right-or-are-moving-around)
 - [Komunikat "Znajdowanie miejsca"](#finding-your-space-message)
 - [Oczekiwane hologramy nie są wyświetlane w moim miejscu](#expected-holograms-arent-showing-in-my-space)
 - [Nie można umieszczać hologramów ani zobaczyć wcześniej umieszczonych hologramów](#cant-place-holograms-or-see-previously-placed-holograms)
@@ -60,7 +60,7 @@ Najbardziej prawdopodobnym problemem jest mała ilość miejsca do magazynowania
 
 ## <a name="spaces-cant-be-identified-or-loaded"></a>Nie można zidentyfikować ani załadować spacji
 
-Jeśli twoja HoloLens nie może zidentyfikować i załadować miejsca, w których się znajdujesz, sprawdź następujące czynniki:
+Jeśli HoloLens nie może zidentyfikować i załadować miejsca, w których się znajdujesz, sprawdź następujące czynniki:
 
 - Upewnij się, że masz połączenie z Wi-Fi
 - Upewnij się, że w pomieszczeniu jest dużo światła
@@ -76,7 +76,7 @@ Możesz również ręcznie załadować miejsce lub zarządzać przestrzeniami, p
 
 [Powrót do listy](#list)
 
-## <a name="holograms-dont-look-right-or-are-moving-around"></a>Hologramy nie wyglądają dobrze lub są poruszane
+## <a name="holograms-dont-look-right-or-are-moving-around"></a>Hologramy nie wygląda dobrze lub są poruszane
 
 Jeśli Twoje hologramy nie wyglądają dobrze (na przykład są nieświeżące lub potrząsają albo na ich górze widać czarne poprawki), wypróbuj jedną z tych poprawek:
 
@@ -91,7 +91,7 @@ Jeśli nadal występują problemy, spróbuj ponownie uruchamiać aplikację w 20
 
 ## <a name="finding-your-space-message"></a>Komunikat "Znajdowanie miejsca"
 
-Gdy HoloLens się lub ładuje miejsce, może zostać wyświetlony krótki komunikat "Znajdowanie miejsca". Jeśli ten komunikat będzie wyświetlany przez więcej niż kilka sekund, pod ekranem zostanie wyświetlony inny komunikat menu Start "Nadal szukasz miejsca".
+Gdy HoloLens lub ładuje miejsce, może zostać wyświetlony krótki komunikat "Znajdowanie przestrzeni". Jeśli ten komunikat będzie wyświetlany przez więcej niż kilka sekund, w obszarze menu Start zostanie wyświetlony inny komunikat "Nadal szukasz miejsca".
 
 Te komunikaty oznaczają, HoloLens ma problemy z mapowaniem przestrzeni. W takim przypadku możesz otwierać aplikacje, ale nie możesz umieszczać hologramów w swoim środowisku.
 
@@ -124,9 +124,9 @@ Jeśli HoloLens nie można zamapować ani załadować miejsca, zostanie ona w tr
 - Umieść w odległości od jednego do trzech metrów od miejsca, w którym próbujesz umieścić hologram.
 - Nie umieszczaj hologramów na czarnych powierzchniach ani na powierzchniach z odbicia.
 - Upewnij się, że masz połączenie z Wi-Fi siecią. Jeśli nie masz połączenia z siecią Wi-Fi, HoloLens nie będzie w stanie zidentyfikować ani załadować znanego miejsca.
-- Aby można było ponownie HoloLens obszarów, warto poekskanować pomieszczenia. Aby zobaczyć, co zostało już zeskanowane, naciśnij w powietrzu, aby wyświetlić grafikę siatki mapowania.
+- Aby można było ponownie HoloLens skanować okolicy, należy poćwędki. Aby zobaczyć, co zostało już zeskanowane, naciśnij w powietrzu, aby wyświetlić grafikę siatki mapowania.
 - Jeśli musisz utworzyć nowe miejsce, połącz się z siecią Wi-Fi, a następnie uruchom ponownie HoloLens.
-- Aby sprawdzić, czy jest aktywne poprawne miejsce lub aby ręcznie załadować miejsce, przejdź do tematu **Ustawienia**  >  **System**  >  **Spaces**.
+- Aby sprawdzić, czy jest aktywne poprawne miejsce lub aby ręcznie załadować miejsce, przejdź do Ustawienia  >  **System**  >  **Spaces**.
 - Jeśli załadowane jest odpowiednie miejsce i nadal występują problemy, może to być uszkodzone. Aby rozwiązać ten problem, wybierz miejsce, a następnie wybierz pozycję **Usuń**. Po usunięciu przestrzeni HoloLens mapować otaczający obszar i utworzyć nową przestrzeń.
 
 [Powrót do listy](#list)
@@ -145,37 +145,37 @@ Hologramy mogą być również blokowane lub zamknięte innymi hologramami lub o
 
 ## <a name="holograms-are-appearing-on-the-other-side-of-a-wall"></a>Hologramy są wyświetlane po drugiej stronie ściany
 
-Jeśli jesteś bardzo blisko ściany lub jeśli HoloLens nie zeskanowała jeszcze ściany, możesz zobaczyć hologramy, które znajdują się w następnym pomieszczeniu. Aby przeskanować tablicę, odstaj od jednego do trzech metrów od ściany i spojrz na nie.
+Jeśli znajdujesz się bardzo blisko ściany lub jeśli HoloLens nie została jeszcze zeskanowana, możesz zobaczyć hologramy, które znajdują się w następnym pomieszczeniu. Aby przeskanować ścianę, odstaj od jednej do trzech metrów od ściany i spojrz na nie.
 
-Czarny lub odbicia obiekt (na przykład czarną sofę lub chłodziarkę z chłodziarkami z chłodziarkami z chłodziarki) w pobliżu ściany może spowodować problemy, HoloLens spróbuje przeskanować ściany. Jeśli istnieje taki obiekt, przeskanuj drugą stronę ściany.
+Czarny lub odbicia obiekt (na przykład czarna tapczana lub lodówka ze zesłone) w pobliżu ściany może powodować problemy, HoloLens próbuje przeskanować ściany. Jeśli istnieje taki obiekt, zeskanuj drugą stronę ściany.
 
 [Powrót do listy](#list)
 
-## <a name="after-placing-a-hologram-on-a-wall-it-seems-to-float"></a>Po umieszczeniu hologramu na ścianie wydaje się on zmiennoprzecinkowy
+## <a name="after-placing-a-hologram-on-a-wall-it-seems-to-float"></a>Po umieszczeniu hologramu na ścianie wydaje się, że ma on zmiennoprzecinkowy
 
-Hologram, który umieszczasz na ścianie, zazwyczaj wygląda jak cal lub tak daleko od ściany. Jeśli wydaje się, że znajduje się ona dalej, wypróbuj co najmniej jedną z następujących poprawek:
+Hologram, który umieszczasz na ścianie, zazwyczaj wygląda jak cal lub tak daleko od ściany. Jeśli wydaje się, że znajduje się on dalej, wypróbuj co najmniej jedną z następujących poprawek:
 
-- Gdy umieszczasz hologram na ścianie, odstaj od jednego do trzech metrów od ściany i odstaj na prostą ściany.
-- Naciśnij w powietrzu ściany, aby ujawnić grafikę siatki mapowania. Upewnij się, że siatka jest wyrównana z ścianą. Jeśli tak się nie stanie, usuń hologram, ponownie przeskanuj ściany, a następnie spróbuj ponownie.
-- Jeśli problem będzie się powtarzać, uruchom aplikację Wyliczy. Znajdziesz go w programie **Ustawienia**  >  **System**  >  **Utilities**.
+- Gdy umieszczasz hologram na ścianie, odstaj od jednego do trzech metrów od ściany i twarzą w prostą ścianę.
+- Naciśnij w powietrzu ściany, aby ujawnić grafikę siatki mapowania. Upewnij się, że siatka jest wyrównana do ściany. Jeśli tak się nie stanie, usuń hologram, ponownie skanuj ściany, a następnie spróbuj ponownie.
+- Jeśli problem będzie się powtarzać, uruchom aplikację Pomiń. Znajdziesz go w narzędziu **Ustawienia**  >    >  **systemowego**.
 
 [Powrót do listy](#list)
 
 ## <a name="apps-appear-too-close-after-moving-them"></a>Aplikacje są wyświetlane zbyt blisko po przeniesieniu
 
-Spróbuj pomiązyć i zaglądać do obszaru, w którym umieszczasz aplikację, tak aby HoloLens przeskanować obszar pod różnymi kątami. [Pomocne może być również wyczyszczenie](hololens1-hardware.md#care-and-cleaning) urządzenia.
+Spróbuj pochylić się i zaglądać do obszaru, w którym umieszczasz aplikację, tak aby HoloLens obszar z różnych kątów. [Pomocne może być również](hololens1-hardware.md#care-and-cleaning) czyszczenie urządzenia.
 
 [Powrót do listy](#list)
 
 ## <a name="reporting-issues-with-unstable-or-inexact-holograms"></a>Zgłaszanie problemów z niestabilnymi lub nieakcyjnie hologramami
  
-1. Nagraj [i Przechwytywanie rzeczywistości mieszanej wideo](holographic-photos-and-videos.md#capture-a-mixed-reality-video) o problemie. Ten film wideo można później przekazać za pośrednictwem Centrum opinii jako dołączony plik.  
-1. Włącz pełną telemetrię za **pośrednictwem aplikacji Ustawienia** - > **Privacy** Diagnostics & i w obszarze Opcjonalne dane diagnostyczne upewnij się, że przełącznik jest  ->   **wł.** 
-1. Uzyskaj najnowsze poprawki dotyczące skali i stabilności hologramów, aktualizując system [operacyjny Windows Holographic (20H2 lub wyższy).](hololens-release-notes.md#windows-holographic-version-20h2) Po aktualizacji wykonaj następujące czynności:
-    1. Usuń wszystkie Hologramy za pomocą **Ustawienia** app -> **System** Hologramy -> następnie wybierz pozycję Usuń wszystkie  ->   **hologramy** i zacznij od nowej mapy.
-    1. Utwórz nową mapę przestrzeni, nosząc HoloLens i przechodząc po pomieszczeniu oraz patrząc na wszystkie obszary i powierzchnie w przestrzeni. Zrób to przez 2–3 minuty.
-    1. Wykonaj czynności z adresu IPD. Przejdź do **Ustawienia**  >  **Narzędzia**  >  **systemowe**. W **obszarze Podniesieć** wybierz **pozycję Otwórz drukarkę.**
-    1. Ponownie przetestuj scenariusz i sprawdź, czy nadal będzie się powtarzać.
+1. Nagraj i [Przechwytywanie rzeczywistości mieszanej wideo](holographic-photos-and-videos.md#capture-a-mixed-reality-video) o problemie. Ten film wideo można później przekazać za pośrednictwem Centrum opinii jako dołączony plik.  
+1. Włączanie pełnej telemetrii za **pośrednictwem aplikacji Ustawienia** — > Privacy Diagnostics & i w obszarze Opcjonalne dane diagnostyczne upewnij się, że przełącznik jest   ->   ustawiony na **wartość Wł.** 
+1. Uzyskaj najnowsze poprawki dotyczące skalowania i stabilności hologramów, aktualizując system [operacyjny Windows Holographic (20H2 lub wyższy).](hololens-release-notes.md#windows-holographic-version-20h2) Po zaktualizowaniu wykonaj następujące czynności:
+    1. Usuń wszystkie Hologramy za pomocą **Ustawienia** -> **System** Hologramy -> następnie wybierz pozycję Usuń wszystkie  ->   **hologramy** i zacznij od nowej mapy.
+    1. Utwórz nową mapę swojej przestrzeni, nosząc HoloLens i przechodząc przez pomieszczenie oraz przyglądając się wszystkim obszarom i powierzchniom w przestrzeni. Zrób to przez 2–3 minuty.
+    1. Wykonywanie nacjonaliracji adresów IPD. Przejdź do **Ustawienia**  >  **narzędzi**  >  **systemowych**. W **obszarze Przegnieć** wybierz pozycję **Open Przegnieć.**
+    1. Przetestuj ponownie scenariusz i sprawdź, czy nadal będzie się powtarzać.
 1. Jeśli aktualizacja nie rozwiąże problemu, Centrum opinii [problem](hololens-feedback.md). Po przesłaniu opinii możesz użyć  przycisku Udostępnij, aby utworzyć łatwy do udostępnienia link, który można wysłać podczas kontaktowania się z pomocą techniczną.
 
 [Powrót do listy](#list)

@@ -14,15 +14,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036578"
 ---
 # <a name="page-settings-visibility"></a>Widoczność Ustawienia strony
 
-Jedną z funkcji, które można zarządzać dla urządzeń HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub na ich użycie dla wszystkich stron z wyjątkiem określonych.
+Jedną z funkcji, które można zarządzać HoloLens, jest użycie zasad [Ustawienia/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) w celu ograniczenia stron widocznych w Ustawienia aplikacji. PageVisibilityList to zasady, które umożliwiają administratorom IT uniemożliwić widoczność lub dostępność określonych stron w aplikacji System Ustawienia lub na ich użycie dla wszystkich stron z wyjątkiem określonych.
 
 > [!NOTE]
 > Ta funkcja jest dostępna tylko w Windows Holographic w wersji [20H2](hololens-release-notes.md#windows-holographic-version-20h2) lub wyższej dla urządzeń HoloLens 2. Upewnij się, że urządzenia, dla których zamierzasz używać tej funkcji, zostały zaktualizowane.
@@ -69,14 +69,14 @@ Są to wartości konfiguracji, które zostaną określone w programie Windows Co
 1. Wprowadź ciąg: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Wyeksportuj pakiet aprowizowania.
 1. Zastosuj pakiet do urządzenia.
-Aby uzyskać szczegółowe informacje na temat tworzenia i stosowania pakietu aprowizowania, odwiedź [stronę HoloLens aprowizowania.](hololens-provisioning.md)
+Aby uzyskać szczegółowe informacje na temat tworzenia i stosowania pakietu aprowizowania, odwiedź [HoloLens aprowizowania.](hololens-provisioning.md)
 
 
-Niezależnie od wybranej metody urządzenie powinno teraz otrzymywać zmiany, a użytkownikom zostanie wyświetlony następujący Ustawienia App.
+Niezależnie od wybranej metody urządzenie powinno teraz otrzymywać zmiany, a użytkownikom zostaną przedstawione następujące Ustawienia App.
 
 ![Zrzut ekranu przedstawiający modyfikację godzin aktywnego Ustawienia aplikacji.](images/hololens-page-visibility-list.jpg)
 
-Aby skonfigurować Ustawienia aplikacji do pokazywania lub ukrywania własnych wybranych stron, przyjrzyj się dostępnym Ustawienia URI HoloLens.
+Aby skonfigurować Ustawienia aplikacji do pokazywania lub ukrywania własnych wybranych stron, przyjrzyj się Ustawienia URI dostępnym na HoloLens.
 
 ## <a name="settings-uris"></a>Ustawienia Identyfikatory uri
 
@@ -93,7 +93,7 @@ HoloLens i Windows 10 mają różne strony w aplikacji Ustawienia aplikacji. Na 
 | Strona Ustawienia | URI                          |
 |---------------|------------------------------|
 | Funkcje & <sup>2</sup>     | `appsfeatures` <br> |
-| Aplikacje & funkcje > opcje zaawansowane <sup>2</sup>     | `appsfeatures-app` <br> |
+| Funkcje & aplikacji > opcje zaawansowane <sup>2</sup>     | `appsfeatures-app` <br> |
 | Funkcje & aplikacji > offline Mapy <sup>2</sup>     | `maps-maps` <br> |
 | Aplikacje & funkcje > offline Mapy > Pobierz mapy <sup>2</sup>     | `maps-downloadmaps` <br> |
 
@@ -153,16 +153,16 @@ HoloLens i Windows 10 mają różne strony w aplikacji Ustawienia aplikacji. Na 
 | Bateria <sup>2</sup>           | `batterysaver-settings`<br>|
 | Kolory             | `colors`<br>`personalization-colors` |
 | Hologramy <sup>2</sup>  |  `holograms`  |
-| <sup>Przebłyski 2</sup> |  `calibration` |
+| <sup>2.</sup> |  `calibration` |
 | Powiadomienia & akcje  | `notifications`          |
 | Udostępnione doświadczenia | `crossdevice` 
 | Dźwięk <sup>2</sup>           | `sound`<br>|
 | Dźwięk > aplikacji i preferencja urządzenia <sup>2</sup>           | `apps-volume`<br>|
-| Zarządzanie > dźwięku <sup>2</sup>           | `sound-devices`<br>|
+| Zarządzanie urządzeniami > dźwięku <sup>2</sup>           | `sound-devices`<br>|
 | Storage            | `storagesense`           |
-| Storage > Konfigurowanie usługi Storage Sense <sup>2</sup>           | `storagepolicies`<br>|
+| Storage > konfigurowanie usługi Storage Sense <sup>2</sup>           | `storagepolicies`<br>|
 
-### <a name="time--language"></a>Język & czasu
+### <a name="time--language"></a>Time & Language
 | Strona Ustawienia | URI                                           |
 |---------------|-----------------------------------------------|
 | Data & <sup>2</sup> | `dateandtime`                  |
@@ -176,17 +176,17 @@ HoloLens i Windows 10 mają różne strony w aplikacji Ustawienia aplikacji. Na 
 | Strona Ustawienia                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Opcje zaawansowane                    | `windowsupdate-options`         |
-| Resetowanie & Recovery <sup>2</sup>      | `reset`         |
+| Resetowanie & odzyskiwania <sup>2</sup>      | `reset`         |
 | Niejawny program testów systemu Windows               | `windowsinsider` <br>`windowsinsider-optin`          |
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
-| Windows Aktualizacja — sprawdzanie aktualizacji | `windowsupdate-action`          |
+| Windows Aktualizacja — sprawdzanie, czy są dostępne aktualizacje | `windowsupdate-action`          |
 
 
-- <sup>1</sup> — w przypadku wersji wcześniejszych niż Windows Holographic, wersja 21H1, następujące  dwa interfejsy URI nie przejdą do stron Opcje **zaawansowane** ani Opcje. Spowoduje to zablokowanie lub pokazanie tylko głównej Windows aktualizacji.
+- <sup>1</sup> — W przypadku wersji starszych niż Windows Holographic, wersja 21H1, następujące  dwa interfejsy URI w rzeczywistości nie przejdą do stron Opcje **zaawansowane** ani Opcje. Będą blokować lub wyświetlać tylko główną stronę Windows Aktualizacji.
   -  windowsupdate-options
   -  windowsupdate-restartoptions
 
 - <sup>2</sup> — dostępne w Windows Holographic 21H1 lub wyższej.
 
 
-Aby uzyskać pełną listę Windows 10 Ustawienia URI, odwiedź [dokumentację ustawień uruchamiania.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+Aby uzyskać pełną listę Windows 10 Ustawienia, zapoznaj się z [dokumentacją ustawień uruchamiania.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

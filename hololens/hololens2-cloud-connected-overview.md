@@ -1,7 +1,7 @@
 ---
 title: Omówienie usługi Remote Assist połączonej z HoloLens 2 w chmurze
 description: Dowiedz się, jak zarejestrować HoloLens 2 urządzenia za pośrednictwem sieci połączonej z chmurą przy użyciu usługi Dynamics 365 Remote Assist.
-keywords: HoloLens, zarządzanie, połączone z chmurą, Remote Assist, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
+keywords: HoloLens, zarządzanie, połączone z chmurą, remote assist, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -15,13 +15,13 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428066"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033522"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Przewodnik wdrażania — połączone z chmurą HoloLens 2 z usługą Remote Assist — omówienie
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Przewodnik wdrażania — połączenia z chmurą HoloLens 2 z usługą Remote Assist — omówienie
 
 Ten przewodnik pomoże specjalistom IT w planowaniu i wdrażaniu Microsoft HoloLens 2 urządzeń za pomocą usługi Remote Assist w organizacji. Będzie to model wdrożeń weryfikacji koncepcji w organizacji w różnych HoloLens 2 przypadkach użycia. Konfiguracja jest podobna do scenariusza [A: wdrażanie na urządzeniach podłączonych do chmury.](common-scenarios.md#scenario-a) 
 
@@ -33,7 +33,7 @@ Należy wdrożyć następującą infrastrukturę w celu wdrożenia HoloLens 2. J
 
 Jest to konfiguracja podobna do scenariusza [A: wdrażanie](/hololens/common-scenarios#scenario-a)na urządzeniach podłączonych do chmury, co jest dobrą opcją w przypadku wielu wdrożeń weryfikacji koncepcji, które obejmują:
 
-- Wi-Fi sieci są zwykle w pełni otwarte dla usług internetowych i w chmurze
+- Wi-Fi są zwykle w pełni otwarte dla Internetu i usług w chmurze
 - Dołączanie do usługi Azure AD za pomocą automatycznej rejestracji w usłudze MDM — zarządzane przez rozwiązanie MDM (Intune)
 - Użytkownicy logują się przy użyciu własnego konta firmowego (Azure AD)
     - Obsługiwanych jest jeden lub wielu użytkowników na urządzenie.
@@ -86,7 +86,7 @@ Skonfiguruj:
 Wdrażanie:
 
 > [!div class="checklist"]
-> - [Skonfiguruj swoją HoloLens 2 i zweryfikuj rejestrację.](hololens2-cloud-connected-deploy.md#enrollment-validation)
+> - [Skonfiguruj urządzenie w HoloLens 2 i zweryfikuj rejestrację.](hololens2-cloud-connected-deploy.md#enrollment-validation)
 > - [Sprawdź, czy można wykonać wywołanie funkcji Remote Assist.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
 Utrzymania:

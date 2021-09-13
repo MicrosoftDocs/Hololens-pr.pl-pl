@@ -1,5 +1,5 @@
 ---
-title: Przewodnik wdrażania — połączone z HoloLens 2 przewodniki usługi Dynamics 365 — przygotowanie
+title: Przewodnik wdrażania — przewodniki dotyczące HoloLens 2 połączone z usługą Dynamics 365 — przygotowanie
 description: Dowiedz się, jak przygotować się do rejestracji urządzeń HoloLens 2 za pośrednictwem firmowej sieci połączonej za pomocą przewodników usługi Dynamics 365.
 keywords: HoloLens, zarządzanie, połączenia firmowe, przewodniki usługi Dynamics 365, AAD, Azure AD, MDM, Mobile Zarządzanie urządzeniami
 author: joyjaz
@@ -15,21 +15,21 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428129"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033414"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Przygotowanie — przewodnik po połączeniu firmowym
 ## <a name="infrastructure-essentials"></a>Podstawowe informacje o infrastrukturze
 Zarówno w przypadku scenariuszy wdrażania osobistego, jak i firmowego system zarządzania urządzeniami przenośnymi (MDM, Mobile Zarządzanie urządzeniami) jest podstawową infrastrukturą wymaganą do wdrażania urządzeń Windows 10 i zarządzania nimi, szczególnie HoloLens 2. Subskrypcja [Azure AD — wersja Premium jest](/azure/active-directory/fundamentals/active-directory-get-started-premium) zalecana jako dostawca tożsamości i wymagana do obsługi niektórych funkcji. 
 
 > [!NOTE]
-> Mimo że HoloLens 2 jest wdrażana i zarządzana jak urządzenie przenośne, jest ona zwykle używana jako urządzenie udostępnione wielu użytkownikom.
+> Mimo że HoloLens 2 jest wdrażany i zarządzany jak urządzenie przenośne, jest zwykle używany jako urządzenie udostępnione wielu użytkownikom.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
-Azure AD to oparta na chmurze usługa katalogowa, która zapewnia zarządzanie tożsamościami i dostępem. Organizacje używające usługi Microsoft Office 365 lub Intune już używają usługi Azure AD, która ma trzy wersje: Bezpłatna, Premium P1 i Premium P2 (zobacz [Azure Active Directory wersje).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Wszystkie wersje obsługują rejestrację urządzeń w usłudze Azure AD, ale Premium P1 jest wymagany do włączenia automatycznej rejestracji w usłudze MDM, której będziemy używać w dalszej części tego przewodnika.
+Azure AD to oparta na chmurze usługa katalogowa, która zapewnia zarządzanie tożsamościami i dostępem. Organizacje używające usługi Microsoft Office 365 lub Intune już używają usługi Azure AD, która ma trzy wersje: Bezpłatna, Premium P1 i Premium P2 (zobacz [Azure Active Directory wersje).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Wszystkie wersje obsługują rejestrację urządzeń w usłudze Azure AD, ale Premium P1 jest wymagana do włączenia automatycznej rejestracji w usłudze MDM, której będziemy używać w dalszej części tego przewodnika.
 > [!Important]
 > Bardzo ważne jest, aby usługa Azure AD była HoloLens, które nie obsługują lokalnego dołączania do usługi AD. Jeśli nie masz jeszcze usługi Azure AD, postępuj zgodnie z instrukcjami, aby rozpocząć pracę i utworzyć nową dzierżawę w [usłudze Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
@@ -37,7 +37,7 @@ Azure AD to oparta na chmurze usługa katalogowa, która zapewnia zarządzanie t
 W tym przewodniku używana [tożsamość](/hololens/hololens-identity) będzie kontami usługi Azure AD. Istnieje kilka korzyści dla kont usługi Azure AD, takich jak:
 
 - Pracownicy rejestrują urządzenie w usłudze Azure AD przy użyciu konta usługi Azure AD i mogą automatycznie rejestrować je w rozwiązaniu MDM organizacji (Azure AD+MDM — wymaga Azure AD — wersja Premium [subskrypcji).](/azure/active-directory/fundamentals/active-directory-get-started-premium)
-- Konta usługi Azure AD mają dodatkowe [opcje uwierzytelniania za](/hololens/hololens-identity) [pośrednictwem Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Oprócz logowania irysów użytkownicy mogą logować się z innego urządzenia lub używać kluczy zabezpieczeń FIDO.
+- Konta usługi Azure AD mają dodatkowe [opcje uwierzytelniania](/hololens/hololens-identity) za [pośrednictwem Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Oprócz logowania irysów użytkownicy mogą logować się z innego urządzenia lub używać kluczy zabezpieczeń FIDO.
 
 > [!WARNING] 
 > Pracownicy mogą używać tylko jednego konta do zainicjowania urządzenia, dlatego konieczne jest, aby organizacja kontroluje, które **konto jest włączone w pierwszej kolejności.** Wybrane konto określi, kto kontroluje urządzenie i wpływa na możliwości zarządzania.
@@ -51,7 +51,7 @@ Microsoft Intune, część usługi Enterprise Mobility + Security, to oparty na 
 > Aby można było korzystać z przewodników, wymagane jest konto usługi Azure AD.
 
 > [!Note] 
-> Wiele systemów MDM obsługuje Windows 10 i większość scenariuszy wdrażania urządzeń osobistych i firmowych. Dostawcy rozwiązań MDM, którzy obsługują Windows 10 Holographic to: AirWatch, MobileIron i inni. Większość wiodących w branży dostawców rozwiązań MDM obsługuje już integrację z usługą Azure AD. Najbardziej aktualną listę dostawców rozwiązań MDM, którzy obsługują usługę Azure AD, można znaleźć w [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
+> Wiele systemów MDM obsługuje Windows 10 a większość obsługuje scenariusze wdrażania urządzeń osobistych i firmowych. Dostawcy rozwiązań MDM, którzy obsługują Windows 10 Holographic to: AirWatch, MobileIron i inni. Większość wiodących w branży dostawców rozwiązań MDM obsługuje już integrację z usługą Azure AD. Najbardziej aktualną listę dostawców rozwiązań MDM, którzy obsługują usługę Azure AD, można znaleźć w [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
 
 ## <a name="network-access"></a>Dostęp sieciowy 
 Dynamics 365 Guides to aplikacja oparta na chmurze. Jeśli administrator sieci ma listę zatwierdzeń, może być konieczne dodanie adresów IP i/lub punktów końcowych, które są wymagane do nawiązania połączenia z serwerami usługi Dynamics 365. [Dowiedz się więcej o odblokowywaniu adresów IP i adresów URL.](/power-platform/admin/online-requirements#ip-addresses-and-urls)
@@ -59,7 +59,7 @@ Dynamics 365 Guides to aplikacja oparta na chmurze. Jeśli administrator sieci m
 ## <a name="certificates"></a>Certyfikaty
 Certyfikaty pomagają zwiększyć bezpieczeństwo, zapewniając uwierzytelnianie konta, uwierzytelnianie Wi-Fi, szyfrowanie sieci VPN i szyfrowanie SSL zawartości internetowej. Mimo że administratorzy mogą zarządzać certyfikatami na urządzeniach ręcznie za pomocą pakietów aprowizacji, najlepszym rozwiązaniem jest użycie systemu MDM do zarządzania tymi certyfikatami przez cały cykl ich życia — od rejestracji po odnawianie i odwoływanie. 
 
-System MDM może automatycznie wdrożyć te certyfikaty w magazynach certyfikatów urządzeń po ich zarejestrowaniu (o ile system MDM obsługuje standard **prosty protokół rejestrowania certyfikatów (SCEP)** lub **Public Key Cryptography Standards #12 (PKCS #12)**). [Dowiedz się więcej o typach certyfikatów i profilach, których używasz z Microsoft Intune](/mem/intune/protect/certificates-configure). Rozwiązanie MDM może również wysyłać zapytania o zarejestrowane certyfikaty klienta i usuwać je lub wyzwalać nowe żądanie rejestracji przed wygaśnięciem bieżącego certyfikatu.
+System MDM może automatycznie wdrożyć te certyfikaty w magazynach certyfikatów urządzeń po ich zarejestrowaniu (o ile system MDM obsługuje standard **prosty protokół rejestrowania certyfikatów (SCEP)** lub **Public Key Cryptography Standards #12 (PKCS #12).** [Dowiedz się więcej o typach certyfikatów i profilach, których używasz z Microsoft Intune](/mem/intune/protect/certificates-configure). Rozwiązanie MDM może również wysyłać zapytania o zarejestrowane certyfikaty klienta i usuwać je lub wyzwalać nowe żądanie rejestracji przed wygaśnięciem bieżącego certyfikatu.
 
 Jeśli twoje systemy MDM są już skonfigurowane dla certyfikatów, odwołuj się do informacji o przygotowywaniu certyfikatów i profilów sieciowych dla programu [HoloLens 2,](/hololens/hololens-certificates-network) aby rozpocząć wdrażanie certyfikatów i profilów dla urządzeń z systemem HoloLens 2.
 
@@ -83,14 +83,14 @@ Jeśli twoja infrastruktura już obsługuje profil [](/mem/intune/protect/certif
 Usługa Intune obsługuje również korzystanie z certyfikatów pary kluczy prywatnych i publicznych (PKCS). Aby [uzyskać więcej informacji,](/mem/intune/protect/certificates-pfx-configure) skorzystaj z Microsoft Intune certyfikatów kluczy prywatnych i publicznych w programie .
 
 ## <a name="proxy"></a>Serwer proxy
-Większość firmowych sieci intranetowych korzysta z serwera proxy do zarządzania ruchem zewnętrznym. Za HoloLens 2 można skonfigurować serwer proxy dla połączeń ethernet, Wi-Fi i VPN.
+Większość firmowych sieci intranetowych korzysta z serwera proxy do zarządzania ruchem zewnętrznym. Za HoloLens 2 można skonfigurować serwer proxy dla połączeń ethernet, Wi-Fi sieci VPN.
 
-Istnieje kilka różnych typów serwera proxy i sposobów konfigurowania serwera proxy. Na potrzeby tego przewodnika wybieramy serwer **proxy sieci Wi-Fi,** ustawiamy go za pośrednictwem adresu URL PAC i wdrażamy za pośrednictwem rozwiązania MDM. Jest to związane z zaletami automatycznego wdrażania za pośrednictwem zarządzania urządzeniami przenośnymi, aktualizowania pliku PAC zamiast używania konfiguracji serwer:port, a na koniec używania serwera proxy usługi Wi-Fi do konfigurowania serwera proxy do stosowania tylko do pojedynczego połączenia Wi-Fi, co pozwala nadal używać urządzeń w przypadku połączenia w innej lokalizacji.
+Istnieje kilka różnych typów serwera proxy i sposobów konfigurowania serwera proxy. Na potrzeby tego przewodnika wybieramy serwer **proxy sieci Wi-Fi,** ustawiamy go za pośrednictwem adresu URL PAC i wdrażamy za pośrednictwem rozwiązania MDM. Jest to związane z zaletami automatycznego wdrażania za pośrednictwem zarządzania urządzeniami przenośnymi, aktualizowania pliku PAC zamiast używania konfiguracji serwera:portu, a na koniec używania serwera proxy usługi Wi-Fi w celu skonfigurowania serwera proxy do stosowania tylko do jednego połączenia Wi-Fi, co pozwala nadal używać urządzeń w przypadku połączenia w innej lokalizacji.
 
 Aby uzyskać więcej informacji na temat ustawień serwera proxy dla usługi Windows 10, zobacz Create a Wi-Fi profile for devices in Microsoft Intune - Azure (Tworzenie profilu Wi-Fi dla urządzeń w [usłudze Microsoft Intune — Azure).](/mem/intune/configuration/wi-fi-settings-configure)
 
 ## <a name="line-of-business-apps"></a>Aplikacje biznesowe 
-Chociaż kilka aplikacji można zainstalować za pośrednictwem Microsoft Store, prawdopodobnie masz własną aplikację niestandardową utworzoną specjalnie do użycia w rzeczywistości mieszanej. Te aplikacje niestandardowe dystrybuowane w całej organizacji dla Twojej firmy są nazywane aplikacjami biznesowymi (LOB).
+Chociaż kilka aplikacji można zainstalować za pośrednictwem Microsoft Store, prawdopodobnie masz własną aplikację niestandardową, która została utworzona specjalnie do użycia w rzeczywistości mieszanej. Te aplikacje niestandardowe dystrybuowane w całej organizacji dla Twojej firmy są nazywane aplikacjami biznesowymi (LOB).
   
 Istnieje wiele sposobów wdrażania aplikacji na HoloLens 2 urządzeniach. Aplikacje można wdrażać bezpośrednio za pośrednictwem rozwiązania MDM, Microsoft Store dla Firm (MSfB) lub ładować bezpośrednio za pośrednictwem pakietu aprowizowania. Na potrzeby tego przewodnika będziemy wdrażać aplikacje za pośrednictwem rozwiązania MDM, korzystając z wymaganej instalacji aplikacji. Umożliwi to automatyczne pobranie aplikacji LOB na urządzenia HoloLens po zakończeniu rejestracji.
 
@@ -99,7 +99,7 @@ Dla osób, które nie mają własnych aplikacji LOB, udostępnimy przykładową 
 Więcej szczegółów dotyczących wdrażania aplikacji można znaleźć na stronie [Zarządzanie aplikacją: Omówienie.](/hololens/app-deploy-overview)
 
 > [!NOTE]
-> HoloLens 2 obsługuje uruchamianie tylko aplikacji ARM64 platformy UWP.
+> HoloLens 2 obsługuje uruchamianie tylko aplikacji UWP ARM64.
 
 ## <a name="guides-playbook"></a>Podręcznik przewodników
 Przewodniki wykorzystują środowisko Microsoft Dataverse jako magazyn danych dla aplikacji Przewodniki. Ważne jest, aby zrozumieć, jak środowisko Dataverse współdziała z aplikacjami przewodników i twoją dzierżawą. W tym przewodniku nie opisano sposobu zarządzania obiektem dataverse, ale zapoznaj się z podstawowymi pojęciami wdrażania przewodników usługi [Dynamics 365 — Dynamics 365 Mixed Reality](/dynamics365/mixed-reality/guides/admin-deployment-playbook).

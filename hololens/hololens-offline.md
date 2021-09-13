@@ -19,11 +19,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427773"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036522"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Zarządzanie punktami końcowymi połączenia dla HoloLens
 
@@ -31,7 +31,7 @@ Niektóre HoloLens, aplikacje i powiązane usługi przesyłły dane do punktów 
 
 ## <a name="near-offline-setup"></a>Konfiguracja niemal w trybie offline
 
-HoloLens obsługuje ograniczony zestaw środowisk w trybie offline dla klientów, którzy mają ograniczenia środowiska sieciowego. Jednak HoloLens musi przejść przez początkowe skonfigurowanie urządzenia i włączyć następujące adresy URL:
+HoloLens obsługuje ograniczony zestaw środowisk w trybie offline dla klientów, którzy mają ograniczenia środowiska sieciowego. Jednak HoloLens połączenie sieciowe musi przejść przez początkowe skonfigurowanie urządzenia i należy włączyć następujące adresy URL:
 
 | Przeznaczenie | Adres URL |
 |------|------|
@@ -41,7 +41,7 @@ HoloLens obsługuje ograniczony zestaw środowisk w trybie offline dla klientów
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
 | AAD Pin | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
 | MSA | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
-| Przypięcie do msa | https://account.live.com/msangc?fl=enroll |
+| Przypięcie msa | https://account.live.com/msangc?fl=enroll |
 
 ## <a name="endpoint-configuration"></a>Konfiguracja punktu końcowego
 
@@ -54,7 +54,7 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 |                                                     | ris-prod-atm.trafficmanager.net                                     |
 |                                                     | validation-v2.sls.trafficmanager.net                                |
 | Uwierzytelnianie wieloskładnikowe w usłudze Azure AD                | https://secure.aadcdn.microsoftonline-p.com                         |
-| Konfiguracja usługi Intune i zarządzania urządzeniami przenośnymi                       | activation-v2.sls.microsoft.com/*                                   |
+| Konfiguracje usługi Intune i zarządzania urządzeniami przenośnymi                       | activation-v2.sls.microsoft.com/*                                   |
 |                                                     | cdn.onenote.net                                                     |
 |                                                     | client.wns.windows.com                                              |
 |                                                     | crl.microsoft.com/pki/crl/*                                         |
@@ -124,14 +124,14 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 | OneDrive                                            | g.live.com/1rewlive5skydrive/*                                      |
 |                                                     | msagfx.live.com                                                     |
 |                                                     | oneclient.sfx.ms                                                    |
-| Aplikacja Photos                                          | evoke-windowsservices-tas.msedge.net                                |
+| Aplikacja Do zdjęć                                          | evoke-windowsservices-tas.msedge.net                                |
 | Ustawienia                                            | cy2.settings.data.microsoft.com.akadns.net                          |
 |                                                     | settings.data.microsoft.com                                         |
 |                                                     | settings-win.data.microsoft.com                                     |
 | Windows Defender                                    | wdcp.microsoft.com                                                  |
 |                                                     | definitionupdates.microsoft.com                                     |
 |                                                     | go.microsoft.com                                                    |
-|                                                     | *smartscreen.microsoft.com                                          |
+|                                                     | *Smartscreen.microsoft.com                                          |
 |                                                     | smartscreen-sn3p.smartscreen.microsoft.com                          |
 |                                                     | unitedstates.smartscreen-prod.microsoft.com                         |
 | W centrum uwagi Windows                                   | *.search.msn.com                                                    |
@@ -152,12 +152,12 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 ## <a name="references"></a>Odwołania
 
 > [!NOTE]
-> W przypadku wdrażania usługi Remote Assist usługi D365 należy włączyć punkty końcowe wymienione dla usług SharePoint Online i OneDrive dla Firm w adresach URL Office 365 i zakresach adresów [IP.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
+> W przypadku wdrażania usługi Remote Assist usługi D365 należy włączyć punkty końcowe wymienione dla usług SharePoint Online i OneDrive dla Firm w zakresach adresów URL Office 365 i [IP.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
-- [Konfigurowanie Windows danych diagnostycznych w organizacji](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
+- [Konfigurowanie Windows diagnostycznych w organizacji](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - [Zarządzanie punktami końcowymi połączenia dla Windows 10 Enterprise, wersja 1903](/windows/privacy/manage-windows-1903-endpoints)
 - [Zarządzanie połączeniami Windows 10 składników systemu operacyjnego do usługi firmy Microsoft](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Zarządzanie połączeniami z Windows 10 systemu operacyjnego do programu usługi firmy Microsoft przy użyciu Microsoft Intune MDM Server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Zarządzanie połączeniami z Windows 10 systemu operacyjnego do usługi usługi firmy Microsoft przy użyciu Microsoft Intune MDM Server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 - [Przepustowość i wymagania dotyczące konfiguracji sieci usługi Intune](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
 - [Punkty końcowe sieci dla usługi Microsoft Intune](/intune/fundamentals/intune-endpoints)
 - [Adresy URL i zakresy adresów IP usługi Office 365](/office365/enterprise/urls-and-ip-address-ranges)
@@ -166,4 +166,4 @@ Oprócz powyższej listy, aby w pełni wykorzystać możliwości HoloLens, w kon
 
 ## <a name="hololens-limitations"></a>HoloLens ograniczenia
 
-Po skonfigurowaniu HoloLens można używać go bez połączenia Wi-Fi, ale aplikacje korzystające z połączeń internetowych będą mieć ograniczone możliwości podczas korzystania z HoloLens offline.
+Po skonfigurowaniu HoloLens można używać go bez połączenia Wi-Fi, ale aplikacje korzystające z połączeń internetowych będą mieć ograniczone możliwości podczas korzystania z usługi HoloLens offline.

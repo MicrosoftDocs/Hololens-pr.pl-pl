@@ -17,33 +17,33 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
-ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: aef0bfd8672464eb71d147eeffa3e0ea245dbbd0
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427206"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036054"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 i rozwiązania
 
 ## <a name="why-hololens"></a>Dlaczego HoloLens?
 
-Dzięki HoloLens 2 i Mixed Reality, teraz pracownicy mogą współpracować bez granic, działać z precyzją i zwiększyć produktywność.
+Dzięki HoloLens 2 i Mixed Reality pracownicy mogą teraz współpracować bez granic, działać z precyzją i zwiększyć produktywność.
 
-Współpraca bez granic i precyzyjne działanie w celu zwiększenia produktywności pracowników dzięki aplikacjom rzeczywistości mieszanej w HoloLens 2. Nie wykonuj angażowania w górę, wolnej rąk dłużej i bardziej wygodnie dzięki wbudowanym poleceń głosowych, śledzeniu okiem i zakotwiczeniu na całym świecie w celu ciągłego skoncentrowania się na bezpiecznym kończenie zadań bez błędów. Połączenie współpracownikami w czasie rzeczywistym i współpracują ze sobą na obszernej kanwie holograficznej nakładanej w środowisku fizycznym, aby szybko rozwiązywać problemy w miejscu pracy. Zapewnianie zwrotu z inwestycji (ROI) od razu po użyciu niezawodnego ekosystemu aplikacji, które są obsługiwane z zabezpieczeniami, niezawodnością i skalowalnością firmy Microsoft.  
+Współpraca bez granic i precyzyjne działanie w celu zwiększenia produktywności pracowników dzięki aplikacjom rzeczywistości mieszanej na HoloLens 2. Nie wykonuj angażowania w górę, wolnej rąk dłużej i bardziej wygodnie dzięki wbudowanym poleceń głosowych, śledzeniu okiem i zakotwiczeniu na całym świecie w celu ciągłego skoncentrowania się na bezpiecznym kończenie zadań bez błędów. Połączenie współpracownikami w czasie rzeczywistym i współpracują ze sobą na obszernej kanwie holograficznej nakładanej w środowisku fizycznym, aby szybko rozwiązywać problemy w miejscu pracy. Zapewnianie zwrotu z inwestycji (ROI) od razu po użyciu niezawodnego ekosystemu aplikacji, które są obsługiwane z zabezpieczeniami, niezawodnością i skalowalnością firmy Microsoft.  
 
 Mamy nadzieję, że ten artykuł zainspiruje Cię do przemyślenia wszystkich sposobów, w jakie rzeczywistość mieszana (MR) będzie korzystne dla Twojej firmy.
 
 ## <a name="hololens-2-capabilities"></a>HoloLens 2
 
-Co sprawia, że HoloLens 2 jest tak zaawansowany?
+Co sprawia, że HoloLens 2 są tak zaawansowane?
 
 | Cecha | Opis |
 |---------|-------------|
 | Zakotwiczenie na świecie | Kotwicone hologramy pozostają dokładnie na miejscu. HoloLens 2 rozumie obszar roboczy. W związku z tym zawartość cyfrowa jest utrwalana w czasie — zakotwiczona na obiektach lub powierzchniach, w których pracujesz. |
 | Śledzenie rąk | Dotyk, osłanianie i przesuwanie hologramów w sposób naturalny. HoloLens 2 dostosowuje się do rąk, aby uzyskać nowe, nowe zadowolenie z interakcji. |
 | Śledzenie wzroku | Korzystaj z nowego poziomu kontekstu i zrozumienia przez ludzi. HoloLens 2 rozumie dokładnie, gdzie się znajdujesz, dzięki czemu może zrozumieć Twoją intencję i dostosować hologramy do oczu w czasie rzeczywistym. |
-| Włączony głos | Wbudowane polecenia głosowe umożliwiają szybkie nawigowanie po HoloLens 2, gdy ręce są zajęte przez zadanie. |
+| Włączony głos | Wbudowane polecenia głosowe umożliwiają szybkie nawigowanie po HoloLens 2, gdy ręce są zajęte zadaniem. |
 | Ergonomiczne | HoloLens 2 jest lekki (3,28 kg), który zawiera system dopasowania do wybierania w celu obsługi rozszerzonego użycia. |
 | Duże foV | Rozwiń kanwę holograficzną z dużymi ekranami w polu widzenia o wysokiej rozdzielczości. |
 | Swobodne | Poruszaj się swobodnie bez przewodów i pakietów zewnętrznych, aby rozpocząć pracę. |
@@ -77,7 +77,7 @@ Co sprawia, że HoloLens 2 jest tak zaawansowany?
     :::column-end:::
     :::column span="2":::
         ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Firma Sheba Medical Center korzysta z usług firmy Microsoft HoloLens do szkolenia rezydatorów.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        HoloLens na usługę szkolenia medycznego w czasie kryzysu.
+        Pracownicy w Centrum medycznym Sheba używali usługi HoloLens do trenowania personelu medycznego i innych pracowników pomocy technicznej przy użyciu urządzeń regeneratorów, które zostały wdrożone przez setki osób podczas pandemii COVID-19.
     :::column-end:::
 :::row-end:::
 
@@ -88,7 +88,7 @@ Co sprawia, że HoloLens 2 jest tak zaawansowany?
         [<img src="images/zf-group.jpg" alt="ZF Group" width=350px>](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
     :::column-end:::
     :::column span="2":::
-        ### <a name="zf-builds-agile-facility-at-gray-court-with-microsoft-365-improves-operational-equipment-efficiency"></a>[ZF tworzy elastyczny obiekt w Gray Court z Microsoft 365, zwiększa wydajność sprzętu operacyjnego.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+        ### <a name="zf-builds-agile-facility-at-gray-court-with-microsoft-365-improves-operational-equipment-efficiency"></a>[ZF tworzy elastyczny obiekt w Gray Court za Microsoft 365, zwiększa wydajność sprzętu operacyjnego.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
         W przypadku grupy ZF Microsoft 365 pracownikom udostępnianie wiedzy, rozwiązywanie problemów i komunikowanie się w czasie rzeczywistym. 
     :::column-end:::
 :::row-end:::
@@ -129,20 +129,20 @@ HoloLens 2 zawiera funkcje, które ułatwiają organizacjom zarządzanie urządz
 Zarządzanie logowaniem użytkowników końcowych | [**Tożsamość**](hololens-identity.md) | HoloLens 2 obsługuje kilka rodzajów tożsamości użytkowników — Azure Active Directory (AAD), konto Microsoft (MSA) i konta lokalne.  |
 | Szyfrowanie danych użytkownika | [**Bezpieczeństwo danych**](security-encryption-data-protection.md) | Szyfrowanie danych funkcją BitLocker jest włączone na HoloLens 2 w celu zapewnienia tego samego poziomu zabezpieczeń co inne Windows urządzenia. | 
 Zarządzanie HoloLens w organizacji | [**Zarządzanie urządzeniami przenośnymi**](hololens-mdm-configure.md) | Zarządzaj ustawieniami, wybierz aplikacje do zainstalowania i ustawienia konfiguracji zabezpieczeń dostosowanych do potrzeb twojej organizacji na wielu urządzeniach z HoloLens 2 z centralnej lokalizacji. | 
-|Minimalizowanie czasu instalacji dla nowych użytkowników i urządzeń | [**Autopilota**](hololens2-autopilot.md) | Skonfiguruj środowisko out-of-box experience (OOBE) w programie Microsoft Endpoint Manager i umożliwiaj użytkownikom końcowych przygotowanie urządzeń do użytku biznesowego przy niewielkiej interakcji lub bez interakcji. |  
+|Minimalizowanie czasu instalacji dla nowych użytkowników i urządzeń | [**Autopilota**](hololens2-autopilot.md) | Skonfiguruj środowisko out-of-box experience (OOBE) w programie Microsoft Endpoint Manager i włącz użytkownikom końcowego możliwość przygotowania urządzeń do użytku biznesowego bez interakcji lub z niewielkimi interakcjami. |  
 | Kontrolowanie aktualizacji systemu operacyjnego dla urządzeń | [**Windows Update dla firm**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Aktualizacja dla firm zapewnia kontrolowane aktualizacje systemu operacyjnego dla urządzeń i obsługę kanału obsługi długoterminowej. |  
 | Zezwalaj na pobranie określonych aplikacji i aplikacji LOB |[**Zarządzanie aplikacją**](app-deploy-overview.md) | Wybierz sposób dystrybucji i kontrolowania aplikacji dla wybranych grup użytkowników HoloLens 2 użytkowników. | 
 | Pokazywanie lub ukrywanie określonych aplikacji w menu Start |[**Tryb kiosku**](hololens-kiosk.md) | Skonfiguruj HoloLens 2 do działania jako urządzenie o stałym przeznacie do użycia w pokazach aplikacji lub dedykowanych aplikacjach biznesowych. 
 | Zabezpieczanie środowiska przez blokowanie aplikacji | [**WDAC**](windows-defender-application-control-wdac.md) | Windows Defender Kontrola aplikacji (WDAC) blokuje możliwość uruchomiania aplikacji i procesów przez użytkownika urządzenia.
-| Zarządzanie zabezpieczeniami urządzeń przy użyciu reguł dla aplikacji i procesów | [**Zasady (CSP)**](hololens-csp-policy-overview.md) | Administratorzy IT mogą definiować i implementować ustawienia zasad przy użyciu istniejącej listy obsługiwanych CSP zasad w HoloLens 2. |  
+| Zarządzanie zabezpieczeniami urządzeń przy użyciu reguł dla aplikacji i procesów | [**Zasady (CSP)**](hololens-csp-policy-overview.md) | Administratorzy IT mogą definiować i implementować ustawienia zasad przy użyciu istniejącej listy obsługiwanych CSP zasad na HoloLens 2. |  
 | Zarządzanie tym, jak urządzenie łączy się z Internetem | [**Sieć i łączność**](hololens-certificates-network.md) | Użyj uwierzytelniania opartego na certyfikatach, aby uzyskać dostęp do sieci Wi-Fi, sieci VPN lub zasobów wewnętrznych. | 
-| Udostępnianie urządzenia wielu użytkownikom | [**Ekran dostosowany automatycznie**](hololens-calibration.md#auto-eye-position-support) | HoloLens ekrany z 2 ekranami są automatycznie dostosowywane za pomocą funkcji automatycznego rozsyłania okiem (AEP, Auto Eye Position), co eliminuje konieczność ręcznego uruchamiania procesu ponownego przetwarzania, gdy urządzenie jest współużytkowane [przez użytkowników.](hololens-multiple-users.md) |
+| Udostępnianie urządzenia wielu użytkownikom | [**Ekran dostosowany automatycznie**](hololens-calibration.md#auto-eye-position-support) | HoloLens ekrany z 2 ekranami są automatycznie dostosowywane za pomocą funkcji automatycznego rozsyłania okiem (AEP, Auto Eye Position), eliminując konieczność ręcznego uruchamiania procesu ponownego przetwarzania, gdy urządzenie jest współużytkowane [przez użytkowników.](hololens-multiple-users.md) |
 
 Dowiedz się więcej [o wymaganiach dotyczących](hololens-licenses-requirements.md) licencjonowania dla powyższych rozwiązań.
 
 ## <a name="next-steps"></a>Następne kroki
 > [!div class="nextstepaction"]
-> [Eksplorowanie HoloLens 2](hololens2-options.md)
+> [Eksplorowanie HoloLens 2 opcji](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 >[Planowanie HoloLens 2](hololens-requirements.md) 

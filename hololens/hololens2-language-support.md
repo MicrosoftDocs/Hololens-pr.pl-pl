@@ -18,11 +18,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033361"
 ---
 # <a name="supported-languages-for-hololens-2"></a>Obsługiwane języki dla HoloLens 2
 
@@ -46,7 +46,7 @@ HoloLens 2 obsługuje również następujące języki. Ta obsługa nie obejmuje 
 - Niderlandzki (Holandia)
 - Koreański (Korea)
 
-Niektóre funkcje programu HoloLens 2 używają Windows wyświetlania. Język wyświetlania Windows ma wpływ na następujące ustawienia dla Windows i dla aplikacji, które obsługują lokalizacji:
+Niektóre funkcje programu HoloLens 2 używają Windows wyświetlania. Język wyświetlania Windows ma wpływ na następujące ustawienia dla Windows i dla aplikacji, które obsługują lokalizacja:
 
 - Język tekstu interfejsu użytkownika.
 - Język mowy.
@@ -54,21 +54,21 @@ Niektóre funkcje programu HoloLens 2 używają Windows wyświetlania. Język wy
 
 ## <a name="change-the-language-or-keyboard-layout"></a>Zmienianie układu języka lub klawiatury
 
-Proces konfiguracji konfiguruje HoloLens dla określonego regionu i języka. Tę konfigurację można zmienić, korzystając z sekcji **& języka Ustawienia** . 
+Proces konfiguracji konfiguruje konfigurację HoloLens dla określonego regionu i języka. Tę konfigurację można zmienić przy użyciu sekcji **& czasu** w **Ustawienia**.
 
 > [!NOTE]  
-> Język mowy i dyktowania zależy od (i jest taki sam jak) Windows język wyświetlania.
+> Język mowy i dyktowania zależy od (i jest taki sam jak) Windows języku wyświetlania.
 
 ### <a name="to-change-the-windows-display-language"></a>Aby zmienić Windows wyświetlania
 
-1. Otwórz menu **Start,** a następnie wybierz pozycję **Ustawienia**  >  **i**  >  **język.**
+1. Otwórz menu **Start,** a następnie wybierz pozycję **Ustawienia**  >  **języka i**  >  **czasu.**
 2. Wybierz **Windows wyświetlania,** a następnie wybierz język.  
 
 Jeśli obsługiwanego języka, którego szukasz, nie ma w menu, wykonaj następujące kroki:  
 
 1. W **obszarze Preferowane języki** wybierz pozycję Dodaj **język**.
 2. Znajdź i dodaj język.
-3. Wybierz ponownie **Windows wyświetlanie języka,** a następnie wybierz język dodany w poprzednim kroku.
+3. Wybierz ponownie **Windows wyświetlany język,** a następnie wybierz język dodany w poprzednim kroku.
 
 ### <a name="to-change-the-keyboard-layout"></a>Aby zmienić układ klawiatury
 
@@ -79,4 +79,4 @@ Jeśli twój HoloLens ma więcej niż jeden układ klawiatury, użyj **klawisza 
 > [!NOTE]  
 > Klawiatura ekranowa może używać edytora metod wejściowych (IME) do wprowadzania znaków w językach, takich jak japoński. Jednak HoloLens nie obsługuje zewnętrznych klawiatur Bluetooth, które używają IME.
 >  
-> Podczas korzystania z funkcji IME razem z klawiaturą ekranową można nadal używać klawiatury Bluetooth do pisania w języku angielskim. Aby przełączać się między klawiaturami, naciśnij przycisk znaku tyldy ( **~** ).
+> Podczas korzystania z funkcji IME wraz z klawiaturą ekranową można nadal używać klawiatury Bluetooth do wpisywania w języku angielskim. Aby przełączać się między klawiaturami, naciśnij przycisk znaku tyldy ( **~** ).
