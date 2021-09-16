@@ -1,6 +1,6 @@
 ---
 title: Poprawianie jakości i komfortu wizualizacji
-description: Dowiedz się, jak skalibrować odległość między przeglądarkami (IPD, interpupily distance distance) w celu poprawy jakości wizualizacji na HoloLens urządzeń.
+description: Dowiedz się, jak skalibrować odległość międzypobiegową (IPD) w celu poprawy jakości wizualizacji na HoloLens urządzeniach.
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: jego wygląd, komfort, wizualizacje, jakość, ipd, HoloLens, Windows Mixed Reality, zestawy VR
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036041"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833560"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Poprawianie jakości i komfortu wizualizacji
 
@@ -37,12 +37,11 @@ HoloLens 2 monituje użytkownika o skalibrowanie urządzenia w następujących o
 - Użytkownik wcześniej zrezygnował z procesu procesowego
 - Proces odszukania nie powieść się, gdy użytkownik użył urządzenia
 - Użytkownik usunął swoje profile profilów profilów profilów profilów
-- Urządzenie jest wyłączane i ponownie stosowane, a każda z powyższych sytuacji ma zastosowanie 
-
+- Urządzenie jest wyłączane i ponownie stosowane, a każda z powyższych okoliczności ma zastosowanie 
 
 ![Monit o dostosowanie do oczu.](./images/07-et-adjust-for-your-eyes.png)
 
-W trakcie tego procesu przyjrzymy się zestawowi celów (gemom). Jest w porządku, jeśli migasz podczas ciąży, ale spróbujesz skupić się na gemach, a nie na innych obiektach w pomieszczeniu.  Skupienie się na tych HoloLens pozwala dowiedzieć się więcej o pozycji wzrokowej w celu renderowania świata holograficznego.
+W trakcie tego procesu przyjrzymy się zestawowi celów (gemom). Jest w porządku, jeśli migasz podczas ciąży, ale spróbujesz skupić się na gemach, a nie na innych obiektach w pomieszczeniu.  Skupienie się na tych HoloLens pozwala HoloLens o pozycji wzrokowej w celu renderowania świata holograficznego.
 
 ![Monit o monitowanie użytkownika o utrzymanie głowy w miejscu i obserwowanie kropek przy oku.](./images/07-et-hold-head-still.png)
 
@@ -60,7 +59,7 @@ Wielu użytkowników może współużytkować urządzenie HoloLens 2, bez potrze
 
 ### <a name="manually-starting-the-calibration-process"></a>Ręczne uruchamianie procesu procesowego
 
-1. Użyj gestu uruchamiania, aby otworzyć [**menu Start**](hololens2-basic-usage.md#start-gesture).
+1. Użyj gestu uruchamiania, aby [**otworzyć menu Start**](hololens2-basic-usage.md#start-gesture).
 1. Jeśli aplikacja Ustawienia nie jest przypięta do opcji **Uruchom,** wybierz **pozycję Wszystkie aplikacje.**
 1. Wybierz **Ustawienia** pozycję , a następnie wybierz **pozycję System**  >  **Wybieg** z  >    >  **okiem.**
 
@@ -74,7 +73,7 @@ W HoloLens 2 położenia oczu umożliwiają dokładne pozycjonowanie hologramów
 
 Istnieje kilka zmian zachowania systemu za pomocą funkcji automatycznego rozsyłania okiem, gdy użytkownik nieskalowany umieszcza urządzenie. W tym kontekście użytkownik nieskalibrowany odwołuje się do osoby, która wcześniej nie przechodziła przez proces śledzenia oczu na urządzeniu.
 
-| Aktywna aplikacja | Wcześniejsze zachowanie | Zachowanie z Windows Holographic, wersja 20H2 Update |
+| Aktywna aplikacja | Wcześniejsze zachowanie | Zachowanie z Windows Holographic, aktualizacja w wersji 20H2 |
 |:-------------------|:-----------------|:-----------------------------------|
 | Aplikacja bez obsługi spojrzenia lub powłoka Holographic Shell |Zostanie wyświetlone okno dialogowe monitu o śledzenie oczu. | Monit nie jest wyświetlany. |
 | Aplikacja z obsługą spojrzenia | Zostanie wyświetlone okno dialogowe monitu o śledzenie oczu. | Monit o śledzenie oczu jest wyświetlany tylko wtedy, gdy aplikacja uzyskuje dostęp do strumienia oczu. |
@@ -83,11 +82,11 @@ Jeśli użytkownik przechodzi z aplikacji bez włączonego spojrzenia do aplikac
 
 Wszystkie inne zachowania systemu będą podobne do zachowania bieżącego użytkownika, który nie ma aktywnego śledzenia wzroku. Na przykład gest One-handed Start nie zostanie włączony. Nie będzie żadnych zmian w zakresie out-of-box-experience na potrzeby konfiguracji początkowej.
 
-W przypadku doświadczeń, które wymagają danych o oku lub precyzyjnego pozycjonowania hologramu, zalecamy użytkownikom nieskalicznym uruchamianie śledzenia oczu. Jest on dostępny z monitu o śledzenie wzroku lub przez uruchomienie aplikacji Ustawienia z menu Start, a następnie wybranie pozycji **System > Namysłowy > Eye >** Wystartuj z okiem.
+W przypadku doświadczeń, które wymagają danych o oku lub precyzyjnego pozycjonowania hologramu, zalecamy użytkownikom nieskalicznym uruchamianie śledzenia oczu. Jest on dostępny z monitu o śledzenie wzroku lub przez uruchomienie aplikacji Ustawienia z menu Start, a następnie wybranie pozycji **System > Namysłowy > Eye W > ystartuj** z okiem.
 
 #### <a name="deferred-calibration-prompt"></a>Monit o odroczone monity o odroczone monity
 
-W przypadku ustawienia pozycji automatycznego oka okno dialogowe monitu o śledzenie wzroku jest odroczone do momentu, gdy aplikacja zażąda danych aplikacji Eye Gaze. Dzięki temu użytkownik nie będzie monitować, gdy aktywna aplikacja nie wymaga spojrzenia. Jeśli aplikacja wymaga danych spojrzenia, a bieżący użytkownik nie jest skalibrowany, zostanie wyświetlony monit o monit o monit. To zachowanie może służyć do wyświetlania monitu o śledzenie wzroku w odpowiednim czasie dla tego doświadczenia. Ta metoda jest zalecana z następujących powodów
+W przypadku ustawienia pozycji automatycznego oka okno dialogowe monitu o śledzenie wzroku jest odroczone do momentu, gdy aplikacja zażąda danych aplikacji Eye Gaze. Dzięki temu użytkownik nie będzie monitować, gdy aktywna aplikacja nie wymaga spojrzenia. Jeśli aplikacja wymaga danych spojrzenia, a bieżący użytkownik nie jest skalibrowany, zostanie wyświetlony monit o monit o monit. To zachowanie może służyć do wyświetlania monitu o śledzenie wzroku w odpowiednim czasie dla tego doświadczenia. Ta metoda jest zalecana z następujących powodów:
 
 1.  Okno dialogowe monitu o śledzenie oczu udostępnia użytkownikowi szczegółowe informacje na temat tego, dlaczego śledzenie oczu jest potrzebne.
 2.  Przedstawia użytkownikowi sposób odrzucania skalibrowania oczu.
@@ -96,24 +95,31 @@ Jeśli użytkownik zdecyduje się na uruchomienie aplikacji Eye Tracking Trackin
 
 ### <a name="calibration-data-and-security"></a>Dane i zabezpieczenia na przekłoszcie
 
-Informacje o lokalizacji są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Nie ma danych o tym, kto bez przerwy użył urządzenia. Oznacza to, że nowi użytkownicy otrzymają monit o skalibrowanie wizualizacji, gdy korzystają z urządzenia po raz pierwszy, oraz użytkownicy, którzy zrezygnują z wcześniejszego ustawienia lub jeśli nie powiodło się to.
+Informacje o lokalizacji są przechowywane lokalnie na urządzeniu i nie są skojarzone z żadnymi informacjami o koncie. Nie ma danych o tym, kto bez przerwy użył urządzenia. Oznacza to, że nowi użytkownicy otrzymają monit o skalibrowanie wizualizacji podczas korzystania z urządzenia po raz pierwszy, a użytkownicy, którzy zrezygnują z wcześniejszej pracy lub jeśli nie udało się jej odchonić.
 
 Urządzenie może lokalnie przechowywać maksymalnie 50 profilów profilów profilów profilów profilów. Po osiągnięciu tej liczby urządzenie automatycznie usunie najstarszy nieużywany profil.
 
-Informacje o prywatności można zawsze usunąć z urządzenia w **programie Ustawienia**  >  **Privacy**  >  **Eye Tracker.**  
+Informacje o prywatności można zawsze usunąć z urządzenia w Ustawienia  >  **Privacy**  >  **Eye Tracker.**  
 
 ### <a name="disable-calibration"></a>Wyłączanie ustawienia
 
-Monit o monit monitu o monit można również wyłączyć, wykonać następujące czynności:
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>Zachowanie wzroku na HoloLens 2 kompilacjach 20H2 i nowsze
 
-1. Wybierz **pozycję Ustawienia**  >    >  **systemowego**.
-1. Wyłącz , gdy nowa osoba używa tego **HoloLens, automatycznie pytaj** o uruchomienie wzroku .
+Od wersji 20H2 systemu Windows Holographic jest już dostępna obsługa funkcji Auto [Eye Position.](hololens-release-notes.md#auto-eye-position-support) Monit o monit monitu jest wyświetlany automatycznie tylko wtedy, gdy używasz aplikacji z włączoną obsługą funkcji Eye Tracking.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>Wyłączanie funkcji eye w HoloLens 2 starszych kompilacji
+
+Można przerzucić przełącznik Ustawienia na zestawie nagłownym, aby wyłączyć odcięcie, ale jego stan może nie być łatwy do określenia. Została ona usunięta i zastąpiona przez funkcję [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support), która odmówi ustawienia nachylić podczas zapewniania korekty kolorów i ustawienia hologramów.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>Wyłączanie oku na HoloLens (1. generacja)
+
+W [HoloLens (1. generacji)](#calibrating-your-hololens-1st-gen)można wyłączyć monit o wzrok, wykonać następujące czynności:
+
+1. Wybierz **Ustawienia**  >    >  **systemowego**.
+1. Wyłącz , **gdy nowa osoba używa tego HoloLens, automatycznie pytaj** o uruchomienie wzroku .
 
    > [!IMPORTANT]
    > To ustawienie może niekorzystnie wpłynąć na jakość i komfort renderowania hologramów.  Po włączeniu tego ustawienia funkcje zależne od śledzenia wzroku (np. przewijania tekstu) nie będą już działać w aplikacjach immersywnych.
-
-> [!NOTE]
-> Przełącznik Ustawienia został usunięty od wersji Windows Holographic w wersji 20H2 z wywłaszkiem obsługi automatycznego [położenia oka](hololens-release-notes.md#auto-eye-position-support). Monit o monit monitu będzie wyświetlany automatycznie tylko wtedy, gdy użytkownik nieskalowany korzysta z aplikacji z obsługą funkcji Eye Tracking.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 technologii śledzenia wzroku
 
@@ -125,11 +131,11 @@ HoloLens śledząc miejsce w czasie rzeczywistym, aplikacje śledzące wzrok. Je
 
 ## <a name="calibrating-your-hololens-1st-gen"></a>Skalibrowanie HoloLens (1. generacja)
 
-HoloLens (1. generacja) dostosowuje wyświetlanie hologramów zgodnie z [odległością międzypobiegową](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Jeśli adres IPD nie jest dokładny, hologramy mogą wydawać się niestabilne lub z nieprawidłową odległością. Jakość wizualizacji można poprawić, skalibrując urządzenie do odległości międzyobsychowej (IPD).
+HoloLens (1. generacja) dostosowuje wyświetlanie hologramów zgodnie z [odległością międzypołędową](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Jeśli adres IPD nie jest dokładny, hologramy mogą wydawać się niestabilne lub z nieprawidłową odległością. Jakość wizualizacji można poprawić, skalibrując urządzenie do odległości międzyobsychowej (IPD).
 
-Po skonfigurowaniu urządzenia HoloLens (1. generacji) monituje o skalibrowanie wizualizacji po Cortana się. Zaleca się ukończenie kroku pełnego w tej fazie konfiguracji. Można go jednak pominąć, czekając Cortana monitu, a następnie mówiąc "Pomiń".
+Po skonfigurowaniu urządzenia HoloLens (1. generacji) zostanie wyświetlony monit o skalibrowanie wizualizacji po Cortana się. Zaleca się ukończenie kroku pełnego w tej fazie konfiguracji. Można go jednak pominąć, czekając Cortana monitu, a następnie mówiąc "Pomiń".
 
-Podczas procesu chłoniaka HoloLens o wyrównanie palca serią sześciu obiektów docelowych na oko. HoloLens używa tego procesu, aby prawidłowo ustawić adres IPD dla twoich oczu.
+Podczas procesu chłoniaka HoloLens, aby wyrównać palec do serii sześciu celów na okiem. HoloLens używa tego procesu, aby prawidłowo ustawić adres IPD dla twoich oczu.
 
 ![Ekran wyrównywania linii papilarnych IPD w drugim kroku.](./images/ipd-finger-alignment-300px.jpg)
 
@@ -147,10 +153,10 @@ Aby użyć menu **Start** do uruchomienia aplikacji Wynisz, wykonaj następując
 
    ![Aplikacja wytchnieniowa wyświetlana jako Live Cube po jej zakończeniu.](./images/calibration-livecube-200px.png)
 
-Aby użyć aplikacji Ustawienia do uruchomienia aplikacji Pogoni, wykonaj następujące kroki:
+Aby użyć aplikacji Ustawienia do uruchomienia aplikacji w 2018 r., wykonaj następujące kroki:
 
 1. Użyj [gestu Blooma,](hololens1-basic-usage.md) aby otworzyć menu **Start.**
-1. Jeśli **Ustawienia** nie jest przypięty do opcji **Start,** wybierz pozycję **+** , aby wyświetlić wszystkie aplikacje.
+1. Jeśli **Ustawienia** nie jest przypięty do opcji **Start,** wybierz pozycję , **+** aby wyświetlić wszystkie aplikacje.
 1. Wybierz pozycję **Ustawienia**.
 1. Wybierz **pozycję Narzędzia**  >  **systemowe**  >  **Otwórz i** otwórz .
 
