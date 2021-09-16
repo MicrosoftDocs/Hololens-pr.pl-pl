@@ -3,7 +3,7 @@
 # Omówienie urządzenia
 ## [Informacje HoloLens 2](hololens2-hardware.md)
 ## [Co może HoloLens 2?](hololens-commercial-features.md)
-## Odnajdywanie HoloLens 2
+## Odnajdywanie HoloLens 2 wersji
 ### [Porównanie HoloLens 2 opcji](hololens2-options.md)
 ### [Wersja tylko dla urządzeń](hololens2-options-device-only.md)
 ### [Wersja Remote Assist](hololens2-options-remote-assist.md)
@@ -76,8 +76,6 @@
 ### [Bezpieczeństwo sieci](security-network-security.md)
 ### [Inżynieria zabezpieczeń ](security-engineering.md)
 ### [HoloLens 2 Ochrona prywatności i danych](hololens2-privacy.md)
-## Zarządzanie urządzeniami
-### [Zarządzanie urządzeniami przenośnymi przy użyciu HoloLens zarządzania urządzeniami przenośnymi](hololens-mdm-configure.md)
 ## Rejestrowanie urządzenia
 ### [Rejestrowanie HoloLens zarządzania urządzeniami przenośnymi](hololens-enroll-mdm.md)
 ### [Windows Autopilot dla urządzenia HoloLens 2](hololens2-autopilot.md) 
@@ -90,24 +88,25 @@
 ### [Instalator aplikacji](app-deploy-app-installer.md)
 ## Zasady (CSP)
 ### [Konfigurowanie CSP i Zarządzanie urządzeniami omówienie](hololens-csp-policy-overview.md)
+### [Zarządzanie urządzeniami przenośnymi przy użyciu HoloLens zarządzania urządzeniami przenośnymi](hololens-mdm-configure.md)
 ### [Konfigurowanie HoloLens przy użyciu pakietów aprowizowania](hololens-provisioning.md)
 ### [Typowe ograniczenia dotyczące urządzeń](hololens-common-device-restrictions.md)
 ### [Konfigurowanie HoloLens jako kiosku](hololens-kiosk.md)
 ### [HoloLens Informacje referencyjne dotyczące kiosku](hololens-kiosk-reference.md)
 ### [Windows Defender Kontrola aplikacji — WDAC](windows-defender-application-control-wdac.md)
-### [Adres Ustawienia CSP i URI dla HoloLens](settings-uri-list.md)
+### [Adres Ustawienia CSP i URIs dla HoloLens](settings-uri-list.md)
 ## Łączność & sieciowa
 ### [Konfigurowanie sieci na HoloLens](hololens-commercial-infrastructure.md)
 ### [Przygotowywanie certyfikatów i profilów sieciowych dla HoloLens 2](hololens-certificates-network.md)
 ### [Zarządzanie punktami końcowymi połączenia dla HoloLens](hololens-offline.md)
 ### [Menedżer certyfikatów](certificate-manager.md)
-## [Zarządzanie HoloLens aktualizacji](hololens-updates.md)
+## [Zarządzanie HoloLens aktualizacjami](hololens-updates.md)
 
 # Rozwiązywanie problemów
 ## [Urządzenie](hololens-troubleshooting.md)
 ## [Hologramy i interakcje](hololens-faq.md)
 ## [Wyświetlanie](hololens2-display.md)
-## [Urządzenia implementacji i zarządzane](hololens2-enterprise-troubleshooting.md#)
+## [Urządzenia implementacji i urządzenia zarządzane](hololens2-enterprise-troubleshooting.md#)
 ## [Włączanie dzienników diagnostycznych](hololens-diagnostic-logs.md)
 ## [Resetowanie HoloLens 2](hololens-recovery.md)
 
@@ -116,9 +115,9 @@
 ## [Opcje wsparcia technicznego i pomocy](hololens2-support.md)
 ## [Żądania pomocy technicznej rozwiązania Autopilot](hololens2-autopilot-registration-support.md)
 ## [HoloLens wersji 2](hololens-release-notes.md)
-## [Niejawna wersja zapoznawcza dla Microsoft HoloLens](hololens-insider.md)
+## [Insider Preview for Microsoft HoloLens](hololens-insider.md)
 ## [Obsługiwane języki](hololens2-language-support.md)
-## [Opracowywanie przy użyciu usługi Microsoft Mesh (wersja zapoznawcza)](/mesh/overview)
+## [Opracowywanie za pomocą usługi Microsoft Mesh (wersja zapoznawcza)](/mesh/overview)
 ## HoloLens (1. generacja)
 ### Użycie po raz pierwszy
 #### [Informacje HoloLens (1. generacja)](hololens1-hardware.md)
@@ -130,11 +129,11 @@
 #### [Używanie Przeglądarka 3D na HoloLens (1. generacja)](holographic-3d-viewer-beta.md)
 #### [Poruszanie się HoloLens (1. generacja)](hololens1-basic-usage.md)
 #### [Zarządzanie aplikacjami niestandardowymi dla HoloLens](holographic-custom-apps.md)
-#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacji)](hololens1-install-localized.md)
-#### [Odblokowywanie Windows Holographic for Business funkcji](hololens1-upgrade-enterprise.md)
+#### [Instalowanie zlokalizowanej wersji HoloLens (1. generacja)](hololens1-install-localized.md)
+#### [Odblokowywanie Windows Holographic for Business zabezpieczeń](hololens1-upgrade-enterprise.md)
 #### [Resetowanie HoloLens (1. generacja)](hololens1-recovery.md)
-### HoloLens zabezpieczeń (1. generacji)
-#### [Często zadawane pytania HoloLens zabezpieczeń (1. generacji)](hololens1-faq-security.yml)
+### HoloLens (1. generacja) Zabezpieczenia
+#### [Często zadawane pytania HoloLens zabezpieczeń (pierwszej generacji)](hololens1-faq-security.yml)
 #### [HoloLens (1. generacji) szyfrowanie funkcją BitLocker](hololens1-encryption.md)
 ### [Znane problemy i obejścia dla HoloLens (1. generacja)](hololens-known-issues.md)
 ### [HoloLens wersji (1. generacji)](hololens1-release-notes.md)
