@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e3b067987fb339bc070fcb64ed01c28dee21ec35
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: bdfdcda8cc890691f6112e7798d402ca9e7f4c6d
+ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833543"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "127904314"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview for Microsoft HoloLens
 
@@ -29,14 +29,14 @@ Witamy w najnowszych kompilacjach insider preview dla HoloLens! Łatwo jest rozp
 
 ## <a name="windows-insider-release-notes"></a>Windows Informacje o wersji dla niejawnych testerów
 
-Z przyjemnością rozpoczynamy lotami po nowych funkcjach dla Windows insiderów. Nowe kompilacje będą dostępne w kanałach Dev i Beta, aby uzyskać najnowsze aktualizacje. Będziemy nadal aktualizować tę stronę w przypadku dodawania kolejnych funkcji i aktualizacji do naszych Windows niejawnych testerów. Przygotuj się do pomieszania tych aktualizacji ze swoją rzeczywistością.
+Z przyjemnością rozpoczynamy lotami po nowych funkcjach, aby ponownie Windows niejawnych testerów. Nowe kompilacje będą dostępne w kanałach Dev i Beta, aby uzyskać najnowsze aktualizacje. Będziemy nadal aktualizować tę stronę wraz z dodawaniem kolejnych funkcji i aktualizacji do naszych Windows niejawnych testerów. Przygotuj się do pomieszania tych aktualizacji ze swoją rzeczywistością.
 
 Dotyczy to ulepszonych raportów dotyczących rozwiązywania problemów i urządzeń, niektórych naprawień usterek w trybie kiosku i przeglądarki certyfikatów, rozszerzonej powierzchni możliwości zarządzania oraz zwiększonej niezawodności aktualizacji. Nową, nową funkcją tej aktualizacji funkcji, która zostanie HoloLens jest tryb przenoszenia platformy. Zapoznaj się ze wszystkimi nowymi doskonałymi funkcjami dla HoloLens 2!
 
 | Cecha                 | Opis                | Użytkownik lub scenariusz | Wprowadzono kompilację |
 |-------------------------|----------------------------|--------------|------------------|
-| [Przenoszenie trybu platformy](#moving-platform-mode) | Wprowadzono tryb przenoszenia platformy w wersji beta, który po skonfigurowaniu umożliwia korzystanie z wersji HoloLens 2 w dużych systemach z ruchami o niskiej dynamice. | Wszystko | 20348.1411 |
-| [Obsługa plików PFX dla Menedżera certyfikatów](#pfx-file-support-for-certificate-manager) | Dodawanie certyfikatów PFX za pomocą interfejsu Ustawienia użytkownika | Użytkownik końcowy | 20348.1405 |
+| [Przenoszenie trybu platformy](#moving-platform-mode) | Wprowadzono tryb przenoszenia platformy w wersji beta, który po skonfigurowaniu umożliwia korzystanie z wersji HoloLens 2 w dużych dyskach z ruchami o niskiej dynamice. | Wszystko | 20348.1411 |
+| [Obsługa plików PFX dla Menedżera certyfikatów](#pfx-file-support-for-certificate-manager) | Dodawanie certyfikatów PFX za pośrednictwem Ustawienia użytkownika | Użytkownik końcowy | 20348.1405 |
 | [Wyświetlanie zaawansowanego raportu diagnostycznego w Ustawienia na HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Wyświetlanie dzienników diagnostycznych mdm na urządzeniu | Rozwiązywanie problemów | 20348.1405 |
 | [Powiadomienia diagnostyki w trybie offline](#offline-diagnostics-notifications) | Opinie dotyczące zbierania dzienników | Rozwiązywanie problemów | 20348.1405 |
 | [Ulepszenia zbierania dzienników magazynu o niskiej wydajności](#low-storage-log-collection-improvements) | Ulepszenia scenariuszy zbierania dzienników w sytuacjach niskiego poziomu magazynowania. | Rozwiązywanie problemów | 20348.1412 |
@@ -51,27 +51,27 @@ Dotyczy to ulepszonych raportów dotyczących rozwiązywania problemów i urząd
 ### <a name="it-admin-insider-feature-checklist"></a>Lista kontrolna funkcji dla niejawnych testerów IT
 
 ✔️ Jeśli chcesz ustawić pojedyncze konto usługi Azure AD do automatycznego logowania, skonfiguruj [tego nowego programu CSP.](#auto-login-policy-controlled-by-csp) <br>
-✔️ Jeśli chcesz skonfigurować aplikacje tak, aby automatycznie podejmiły próbę aktualizacji po nieudanych aktualizacjach, ustaw tego nowego programu CSP na inteligentne [ponawianie próby.](#smart-retry-for-app-updates) <br>
+✔️ Jeśli chcesz skonfigurować aplikacje tak, aby automatycznie podejmiły próbę aktualizacji po nieudanych aktualizacjach, ustaw tego nowego usługę CSP na inteligentne [ponawianie próby.](#smart-retry-for-app-updates) <br>
 ✔️ Jeśli chcesz mieć większą kontrolę nad aktualizacjami systemu operacyjnego, zapoznaj się z tymi nowo włączonymi [zasadami aktualizacji.](#improved-update-restart-detection-and-notifications) <br>
-✔️ Jeśli chcesz udostępnić aplikacje organizacji w sklepie firmowym za pośrednictwem usługi Microsoft Store, ale chcesz zezwolić na dostęp tylko do aplikacji organizacji, a nie do pełnego sklepu, ustaw te [zasady.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ Jeśli chcesz poznać wolne miejsce do magazynowania, SSID lub BSSID urządzeń HoloLens, zapoznaj się z tymi raportami dla [CSP.](#csp-changes-for-reporting-hololens-details) <br>
-✔️ jeśli chcesz użyć funkcji WDAC, aby zablokować uruchamianie aplikacji lub procesów, ale musisz również użyć własnej linii aplikacji do pracy, możesz teraz zezwolić na używanie funkcji LOB w zasadach [funkcji WDAC.](#use-wdac-and-lob-apps)
+✔️ Jeśli musisz udostępnić aplikacje organizacji w sklepie firmowym za pośrednictwem usługi Microsoft Store, ale chcesz zezwolić tylko na dostęp do aplikacji organizacji, a nie do pełnego sklepu, ustaw te [zasady.](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ jeśli chcesz poznać wolne miejsce do magazynowania, SSID lub BSSID urządzeń z systemem HoloLens, zapoznaj się z tymi raportami dla [CSP.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ Jeśli chcesz użyć funkcji WDAC do blokowania uruchamiania aplikacji lub procesów, ale musisz również użyć własnej linii aplikacji do pracy, możesz teraz zezwolić na uruchamianie aplikacji biznesowych w zasadach [funkcji WDAC.](#use-wdac-and-lob-apps)
 
 ### <a name="moving-platform-mode"></a>Przenoszenie trybu platformy
 
-W wersji **Insider Build 20348.1411** dodaliśmy obsługę wersji beta śledzenia na platformach ruchu o niskiej dynamice na platformach w wersji HoloLens 2. Po zainstalowaniu kompilacji i włączeniu trybu przenoszenia platformy będzie można używać urządzenia HoloLens 2 w wcześniej niedostępnych środowiskach, takich jak duże statku i duże statku. Obecnie funkcja jest ukierunkowana na włączanie tylko tych konkretnych ruchomych platform. Chociaż nic nie uniemożliwia próby użycia tej funkcji w innych środowiskach, ta funkcja koncentruje się najpierw na dodawaniu obsługi tych środowisk.
+W wersji **Insider Build 20348.1411** dodaliśmy obsługę wersji beta śledzenia na platformach o niskim dynamicznym ruchu na platformach w wersji HoloLens 2. Po zainstalowaniu kompilacji i włączeniu trybu przenoszenia platformy będzie można używać urządzenia HoloLens 2 w wcześniej niedostępnych środowiskach, takich jak duże statku i duże statku. Obecnie funkcja jest ukierunkowana na włączanie tylko tych konkretnych ruchomych platform. Chociaż nic nie uniemożliwia próby użycia tej funkcji w innych środowiskach, ta funkcja koncentruje się najpierw na dodawaniu obsługi tych środowisk.
 
 Aby dowiedzieć się więcej o tym, co jest obsługiwane i jak włączyć tę nową funkcję, [odwiedź stronę przenoszenia platformy.](hololens2-moving-platform.md)
 
 #### <a name="overview-to-try-out-moving-platform-mode"></a>Omówienie w celu wypróbowania przenoszenia trybu platformy
 
-1. [Włącz tryb dewelopera i portal urządzeń.](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. [Włącz tryb dewelopera i portal urządzeń.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 1. [Włącz tryb przenoszenia platformy za pośrednictwem portalu urządzenia.](hololens2-moving-platform.md#enabling-moving-platform-mode)
 1. Zabierz urządzenie na dużą przenoszącą się platformę i sprawdź, jak stabilne są hologramy.
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>Obsługa plików PFX dla Menedżera certyfikatów
 
-Wprowadzono w kompilacji Windows Insider 20348.1405. Dodaliśmy obsługę Menedżera [](certificate-manager.md) certyfikatów, aby teraz używać certyfikatów pfx. Gdy użytkownicy **przejdą** do Ustawienia zaktualizują &, a następnie wybierzą pozycję Zainstaluj certyfikat, interfejs użytkownika obsługuje teraz  >    >  plik certyfikatu  pfx.
+Wprowadzono w kompilacji Windows Insider 20348.1405. Dodaliśmy obsługę Menedżera [](certificate-manager.md) certyfikatów, aby teraz używać certyfikatów pfx. Gdy użytkownicy przejdą do **Ustawienia** zaktualizują &, a następnie wybierzą pozycję Zainstaluj certyfikat, interfejs użytkownika obsługuje teraz  >    >  plik certyfikatu pfx. 
 Użytkownicy mogą importować certyfikat PFX z kluczem prywatnym do magazynu użytkowników lub magazynu maszynowego.
 
 #### <a name="overview-to-try-out-pfx-files-in-certificate-manager"></a>Omówienie wypróbowania plików PFX w Menedżerze certyfikatów
@@ -82,7 +82,7 @@ Użytkownicy mogą importować certyfikat PFX z kluczem prywatnym do magazynu u�
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Wyświetlanie zaawansowanego raportu diagnostycznego w Ustawienia na HoloLens
 
-W przypadku urządzeń zarządzanych podczas rozwiązywania problemów z zachowaniem ważnym krokiem jest potwierdzenie zastosowania oczekiwanej konfiguracji zasad. Wcześniej w przypadku tej nowej funkcji wyświetlanie tych informacji musiało odbywać się za pośrednictwem rozwiązania MDM lub w pobliżu urządzenia po wyeksportowaniu dzienników diagnostycznych MDM zebranych za pośrednictwem konta usługi Ustawienia Dostęp do miejsca pracy lub nauki, **a** następnie wybranie opcji Eksportuj dzienniki zarządzania i wyświetlane na pobliskim  ->    >  komputerze. 
+W przypadku urządzeń zarządzanych podczas rozwiązywania problemów z zachowaniem ważnym krokiem jest potwierdzenie zastosowania oczekiwanej konfiguracji zasad. Wcześniej w przypadku tej nowej funkcji wyświetlanie tych informacji musiało odbywać się za pośrednictwem zarządzania urządzeniami przenośnymi lub w pobliżu urządzenia po wyeksportowaniu dzienników diagnostycznych MDM zebranych za pośrednictwem konta usługi Ustawienia Dostęp do miejsca pracy lub nauki, **a** następnie wybranie opcji Eksportuj dzienniki zarządzania i wyświetlane na pobliskim  ->    >  komputerze. 
 
 Teraz diagnostykę MDM można wyświetlić na urządzeniu przy użyciu przeglądarki Edge. Aby łatwiej wyświetlić raport diagnostyczny MDM, przejdź do strony Dostęp do konta służbowego i wybierz pozycję **Wyświetl zaawansowany raport diagnostyczny.** Spowoduje to wygenerowanie i otwarcie raportu w nowym oknie przeglądarki Edge.
 
@@ -97,7 +97,7 @@ Teraz diagnostykę MDM można wyświetlić na urządzeniu przy użyciu przegląd
 ### <a name="offline-diagnostics-notifications"></a>Powiadomienia diagnostyki w trybie offline
 
 Jest to aktualizacja istniejącej funkcji o nazwie [Diagnostyka w trybie offline.](hololens-diagnostic-logs.md#offline-diagnostics) Wcześniej nie było wyraźnego wskaźnika dla użytkowników, że wyzwolono kolekcję diagnostyczną lub została ona zakończona.
-Teraz dodane w kompilacjach Windows Insider istnieją dwie formy wymiany opinii na temat diagnostyki w trybie offline. Pierwsze z nich to wyskakujące powiadomienia wyświetlane zarówno podczas uruchamiania, jak i zakończenia zbierania. Będą one wyświetlane, gdy użytkownik jest zalogowany i ma wizualizacje.
+Teraz dodane w kompilacjach Windows insiderów istnieją dwie formy opinii na temat diagnostyki w trybie offline. Pierwsze z nich to wyskakujące powiadomienia wyświetlane zarówno podczas uruchamiania, jak i zakończenia zbierania. Będą one wyświetlane, gdy użytkownik jest zalogowany i ma wizualizacje.
 
 ![Wyskakujące powiadomienia dotyczące zbierania dzienników.](./images/logcollection1.jpg)
 
@@ -117,7 +117,7 @@ Mamy nadzieję, że dzięki temu nowszej dodatku opinii będzie łatwiej zbiera�
 
 ### <a name="low-storage-log-collection-improvements"></a>Ulepszenia zbierania dzienników magazynu o niskiej wydajności
 
-W scenariuszach, w których ilość miejsca na dysku urządzenia wydaje się niska podczas zbierania dzienników diagnostycznych, zostanie utworzony dodatkowy raportStorageDiagnostics.zip **o** nazwie . Próg małej pojemności magazynu jest określany automatycznie przez Windows [magazynu](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+W scenariuszach, w których wydaje się, że ilość miejsca na dysku urządzenia podczas zbierania dzienników diagnostycznych jest niska, zostanie utworzony dodatkowy raportStorageDiagnostics.zip **o** nazwie . Próg małej pojemności magazynu jest określany automatycznie przez Windows [magazynu.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
 
 #### <a name="overview-to-try-out-the-low-storage-improvements"></a>Omówienie w celu wypróbowania ulepszeń niskiego poziomu magazynu
 
@@ -190,7 +190,7 @@ Na urządzeniu, na którym te zasady są skonfigurowane, użytkownik określony 
 
 ### <a name="improved-update-restart-detection-and-notifications"></a>Ulepszone wykrywanie ponownego uruchamiania aktualizacji i powiadomienia
 
-Między godzinami aktywnego użytkowania i zasadami czasu instalacji można uniknąć ponownego uruchamiania HoloLens, gdy są one w użyciu. Jednak takie rozwiązanie opóźniłoby również wdrożenie aktualizacji, jeśli ponowne uruchomienie nie zostanie ukończone w celu ukończenia instalacji wymaganej aktualizacji. Dodaliśmy zasady, które umożliwiają itom wymuszanie terminów ostatecznych i wymaganych ponownych uruchomień oraz zapewniają terminowe ukończenie instalacji aktualizacji. Użytkownicy mogą zostać powiadomieni przed zainicjowaniem ponownego rozruchu i mogą opóźnić ponowne uruchomienie zgodnie z zasadami IT.
+Między godzinami aktywnego użytkowania a zasadami czasu instalacji można uniknąć ponownego uruchamiania HoloLens, gdy są one w użyciu. Jednak takie rozwiązanie opóźniłoby również wdrożenie aktualizacji, jeśli ponowne uruchomienie nie zostanie ukończone w celu ukończenia instalacji wymaganej aktualizacji. Dodaliśmy zasady, które umożliwiają itom wymuszanie terminów ostatecznych i wymaganych ponownych uruchomień oraz zapewniają terminowe ukończenie instalacji aktualizacji. Użytkownicy mogą zostać powiadomieni przed zainicjowaniem ponownego rozruchu i mogą opóźnić ponowne uruchomienie zgodnie z zasadami IT.
 
 Dodano następujące zasady aktualizacji:
 
@@ -214,7 +214,7 @@ Dodano następujące zasady aktualizacji:
 
 ### <a name="smart-retry-for-app-updates"></a>Inteligentne ponawianie próby aktualizacji aplikacji
 
-Teraz włączone dla usługi HoloLens to nowe zasady, które umożliwiają administratorom IT ustawianie cyklicznych lub jednorazowych dat w celu ponownego uruchomienia aplikacji, których aktualizacja nie powiodła się, ponieważ aplikacja jest w użyciu, co umożliwia zastosowanie aktualizacji. Można je ustawić na podstawie kilku różnych wyzwalaczy, takich jak zaplanowany czas lub logowanie. Aby dowiedzieć się więcej na temat sposobu używania tego widoku zasad [ApplicationManagement/ScheduleForceRestartForUpdateFailures.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+Teraz włączone dla usługi HoloLens to nowe zasady, które umożliwiają administratorom IT ustawienie cyklicznej lub razowej daty ponownego uruchomienia aplikacji, których aktualizacja nie powiodła się, ponieważ aplikacja jest w użyciu, co umożliwia zastosowanie aktualizacji. Można je ustawić na podstawie kilku różnych wyzwalaczy, takich jak zaplanowany czas lub logowanie. Aby dowiedzieć się więcej na temat sposobu używania tego widoku zasad [ApplicationManagement/ScheduleForceRestartForUpdateFailures.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 #### <a name="overview-to-try-smart-retry-for-app-updates"></a>Omówienie do wypróbowania inteligentnego ponawiania prób aktualizacji aplikacji
 
@@ -233,7 +233,7 @@ Dowiedz się więcej [o applicationmanagement/RequirePrivateStoreOnly.](/windows
 
 1. Skonfiguruj nowe zasady dla urządzeń za pośrednictwem rozwiązania [MDM.](hololens-mdm-configure.md)
 1. Zaloguj się do urządzenia, które ma zasady.
-1. Otwórz Microsoft Store aplikacji i sprawdź, czy są dostępne tylko aplikacje organizacji.
+1. Otwórz Microsoft Store i sprawdź, czy są dostępne tylko aplikacje organizacji.
 
 ### <a name="use-wdac-and-lob-apps"></a>Korzystanie z aplikacji WDAC i LOB
 
@@ -249,7 +249,7 @@ Teraz możesz używać funkcji WDAC, aby blokować uruchamianie aplikacji lub pr
 ### <a name="fixes-and-improvements"></a>Poprawki i ulepszenia
 
 - Rozwiązano znany problem z Portal urządzeń, który nie wyświetlał monitu o [pobranie zablokowanych plików.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Rozwiązano znany problem z Portal urządzeń z przekierowywami czasu przekazywania i [pobierania plików.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- Rozwiązano [znany problem z Portal urządzeń przekazywania plików i przechyłki czasu pobierania.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Rozwiązuje problemy związane z raportowaniem właściwości zgodności z HoloLens urządzeń; Do wyzwolenia poprawnego raportowania w kompilacjach niejawnych testerów może być wymagany ponowny rozruch.  
 - Włączono [interfejs API przypisanego](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) dostępu, dzięki czemu aplikacje mogą teraz określić, HoloLens jest uruchomiona w trybie kiosku dla użytkownika zalogowanego do HoloLens.
 - Zaktualizowano wersję w polu usługi Remote Assist, która jest instalowana na nowych urządzeniach flash.
@@ -267,20 +267,20 @@ Teraz możesz używać funkcji WDAC, aby blokować uruchamianie aplikacji lub pr
 >
 > Na zadurze wystąpiła usterka, która może spowodować powrót na tory.
 
-Na urządzeniu HoloLens 2 przejdź do Ustawienia  >  **Update & Security**  >  **Windows niejawny program testów** i wybierz pozycję **Wprowadzenie.** Połącz konto użyte do zarejestrowania się jako Windows Insider.
+Na urządzeniu HoloLens 2 przejdź do Ustawienia  >  **Update & Security**  >  **Windows niejawny program testów** i wybierz **pozycję Wprowadzenie.** Połącz konto użyte do zarejestrowania się jako Windows Insider.
 
 > [!NOTE]
 > Aby zarejestrować urządzenie w kompilacjach niejawnych testerów, należy włączyć opcjonalną telemetrię. Jeśli jeszcze tego nie zrobiono, otwórz aplikację Ustawienia i wybierz pozycję Diagnostyka prywatności &  ->  **opinii, a** następnie wybierz pozycję Opcjonalne **dane diagnostyczne.**
 
-Windows niejawny tester jest teraz przenoszący się do kanałów. Szybki **pierścień** stanie się kanałem **dewelopera,** pierścień Wolny  stanie się kanał beta , **a** pierścień wersji zapoznawczej stanie się kanałem wersji **zapoznawczej.**  Oto jak wygląda to mapowanie:
+Windows niejawny tester jest teraz przenoszący się do kanałów. Szybki **pierścień** stanie się kanałem **dewelopera,** pierścień Wolny stanie  się kanał beta **,** a pierścień wersji zapoznawczej stanie się kanałem wersji  **zapoznawczej.** Oto jak wygląda to mapowanie:
 
 ![Windows Wyjaśnienie kanałów niejawnych testerów.](images/WindowsInsiderChannels.png)
 
 Aby uzyskać więcej informacji, zobacz Introducing Windows Insider Channels (Wprowadzenie [do kanałów niejawnych testerów)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) Windows Blogi.
-Następnie wybierz pozycję **Aktywne opracowywanie** Windows, wybierz, czy chcesz otrzymywać  kanał **dewelopera,** czy kanał beta kompilacje, i przejrzyj warunki programu.
-Wybierz **pozycję > uruchom ponownie teraz,** aby zakończyć. Po ponownym uruchomieniu urządzenia przejdź do Ustawienia > **Update & Security > Sprawdź** aktualizacje, aby pobrać najnowszą kompilację.
+Następnie wybierz pozycję Aktywne **opracowywanie** Windows, wybierz, czy chcesz otrzymywać kanał **dewelopera,** czy kanał beta **kompilacje,** i przejrzyj warunki programu.
+Wybierz **pozycję Potwierdź> uruchom ponownie teraz,** aby zakończyć. Po ponownym uruchomieniu urządzenia przejdź do Ustawienia > **Update & Security > Sprawdź** aktualizacje, aby pobrać najnowszą kompilację.
 
-### <a name="update-error-0x80070490-work-around"></a>Aktualizowanie 0x80070490 omięcie
+### <a name="update-error-0x80070490-work-around"></a>Błąd aktualizacji 0x80070490 omięcie
 
 Jeśli wystąpi błąd aktualizacji 0x80070490 podczas aktualizowania w kanale dewelopera lub wersji beta, spróbuj wykonać następujące krótkoterminowe czynności. Obejmuje to przeniesienie kanału dla niejawnych testerów, pobranie aktualizacji, a następnie przeniesienie kanału niejawnego testera z powrotem.
 
@@ -288,13 +288,13 @@ Jeśli wystąpi błąd aktualizacji 0x80070490 podczas aktualizowania w kanale d
 
 1. Ustawienia, Zaktualizuj zabezpieczenia &, Windows niejawny program testów wybierz pozycję Kanał **wersji zapoznawczej wersji zapoznawczej.**
 
-2. Ustawienia, Update & Security, Windows Update, Check **for updates**. Po aktualizacji przejdź do etapu 2.
+2. Ustawienia, Update & Security, Windows Update, **Check for updates**. Po aktualizacji przejdź do etapu 2.
 
 #### <a name="stage-two---dev-channel"></a>Etap drugi — kanał dewelopera
 
-1. Ustawienia, Zaktualizuj & Zabezpieczeń, Windows niejawny program testów wybierz pozycję Kanał **deweloperów.**
+1. Ustawienia, Zaktualizuj & Zabezpieczeń, Windows niejawny program testów pozycję **Kanał deweloperów.**
 
-2. Ustawienia, Update & Security, Windows Update, Check **for updates**.
+2. Ustawienia, Update & Security, Windows Update, **Check for updates**.
 
 ## <a name="ffu-download-and-flash-directions"></a>Wskazówki dotyczące pobierania i flasha ffu
 
@@ -311,23 +311,23 @@ Aby przetestować przy użyciu ffu z podpisem lotu, musisz najpierw odblokować 
 
 ### <a name="provide-feedback-and-report-issues"></a>Opinie i zgłaszanie problemów
 
-Użyj aplikacji [Centrum opinii aplikacji na](hololens-feedback.md) swoim HoloLens, aby przekazać opinię i zgłosić problemy. Użycie Centrum opinii zapewnia, że wszystkie niezbędne informacje diagnostyczne są uwzględniane, aby ułatwić naszym inżynierom szybkie debugowanie i rozwiązywanie problemu.  Problemy z chińskim i japońskim wersją języka HoloLens powinny być zgłaszane w ten sam sposób.
+Użyj aplikacji [Centrum opinii aplikacji na](hololens-feedback.md) swoim HoloLens, aby przekazać opinię i zgłosić problemy. Użycie Centrum opinii zapewnia, że uwzględniono wszystkie niezbędne informacje diagnostyczne, aby ułatwić naszym inżynierom szybkie debugowanie i rozwiązywanie problemu.  Problemy z chińskim i japońskim wersją HoloLens powinny być zgłaszane w ten sam sposób.
 
 > [!NOTE]
-> Pamiętaj, aby zaakceptować monit z pytaniem, czy chcesz Centrum opinii dostępu  do folderu Dokumenty (po wyświetleniu monitu wybierz pozycję Tak).
+> Pamiętaj, aby zaakceptować monit z pytaniem, czy chcesz Centrum opinii dostęp  do folderu Dokumenty (po wyświetleniu monitu wybierz pozycję Tak).
 
 ## <a name="note-for-developers"></a>Uwaga dla deweloperów
 
-Zachęcamy i zachęcamy do wypróbowania tworzenia aplikacji przy użyciu kompilacji niejawnych testerów HoloLens.  Zapoznaj się z [dokumentacją HoloLens Developer,](https://developer.microsoft.com/windows/mixed-reality/development) aby rozpocząć pracę. Te same instrukcje działają z kompilacjami niejawnych testerów HoloLens.  Możesz użyć tych samych kompilacji aparatu Unity i Visual Studio, których już używasz do HoloLens kompilowania.
+Zachęcamy i zachęcamy do wypróbowania tworzenia aplikacji przy użyciu kompilacji niejawnych testerów HoloLens.  Zapoznaj się z [HoloLens dla deweloperów,](https://developer.microsoft.com/windows/mixed-reality/development) aby rozpocząć pracę. Te same instrukcje działają z kompilacjami niejawnych testerów HoloLens.  Możesz użyć tych samych kompilacji aparatu Unity i Visual Studio, których już używasz do HoloLens kompilowania.
 
 ## <a name="stop-receiving-insider-builds"></a>Zatrzymywanie otrzymywania kompilacji niejawnych testerów
 
-Jeśli nie chcesz już otrzymywać kompilacji systemu Windows Holographic dla niejawnych testerów, możesz zrezygnować z [](hololens-recovery.md) uruchamiania kompilacji produkcyjnej na platformie HoloLens lub odzyskać urządzenie przy użyciu zaawansowanego pomocnika odzyskiwania, aby odzyskać urządzenie do wersji programu Windows Holographic, która nie jest niejawnym testerem.
+Jeśli nie chcesz już otrzymywać kompilacji systemu Windows Holographic dla niejawnych testerów, możesz zrezygnować z uruchamiania [](hololens-recovery.md) kompilacji produkcyjnej na platformie HoloLens lub odzyskać urządzenie przy użyciu zaawansowanego pomocnika odzyskiwania, aby odzyskać urządzenie do wersji systemu Windows Holographic innego niż niejawny program.
 
 > [!CAUTION]
 > Istnieje znany problem, w którym użytkownicy, którzy nie rejestrują się w kompilacjach insider preview po ręcznej ponownej instalacji nowej kompilacji w wersji zapoznawczej, będą mieli niebieski ekran. Następnie muszą ręcznie odzyskać urządzenie. Aby uzyskać szczegółowe informacje na temat tego problemu, zobacz więcej informacji na temat tego [znanego problemu.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-Aby sprawdzić, czy HoloLens kompilacji produkcyjnej:
+Aby sprawdzić, czy HoloLens jest uruchomiona kompilacja produkcyjna:
 
 1. Przejdź do **Ustawienia > System > informacje** i znajdź numer kompilacji.
 
@@ -335,6 +335,6 @@ Aby sprawdzić, czy HoloLens kompilacji produkcyjnej:
 
 Aby zrezygnować z kompilacji niejawnych testerów:
 
-1. Na stronie HoloLens kompilacji produkcyjnej przejdź do usługi **Ustawienia > Update & Security > Windows niejawny program testów** i wybierz pozycję Zatrzymaj kompilacje **niejawnych testerów.**
+1. Na stronie HoloLens kompilacji produkcyjnej przejdź do Ustawienia > **Update & Security > Windows niejawny program testów** i wybierz pozycję Zatrzymaj kompilacje **niejawnych testerów.**
 
 1. Postępuj zgodnie z instrukcjami, aby zrezygnować z urządzenia.
