@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens to pierwszy w pełni samodzielny komputer holograficzny do uruchamiania Windows 10. Teraz, wraz z wprowadzeniem programu HoloLens 2, każde urządzenie HoloLens zapewnia możliwości zarządzania gotowe do użycia na rynku, które są rozszerzone o niezawodność, zabezpieczenia i skalowalność usług w chmurze i AI firmy Microsoft.
+summary: Microsoft HoloLens to pierwszy w pełni samodzielny komputer holograficzny do uruchamiania Windows 10. Teraz, wraz z wprowadzeniem programu HoloLens 2, każde urządzenie z systemem HoloLens zapewnia możliwości komercyjnego zarządzania, które są rozszerzone o niezawodność, zabezpieczenia i skalowalność usług w chmurze i AI firmy Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Strona docelowa dla Microsoft HoloLens.
@@ -11,18 +11,18 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+  ms.openlocfilehash: 2d0d57406c0d8b1759c53bf5847d8369f98a865e
+  ms.sourcegitcommit: 2b541bacb32279ccec0d7b7caef216626634a2ad
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126033917"
+  ms.lasthandoff: 09/28/2021
+  ms.locfileid: "129145934"
 landingContent:
 - title: Poznaj HoloLens 2
   linkLists:
   - linkListType: learn
     links:
-    - text: HoloLens 2 możliwości i rozwiązania
+    - text: HoloLens 2 i rozwiązania
       url: hololens-commercial-features.md
     - text: HoloLens 2 opcje
       url: hololens2-options.md
@@ -34,7 +34,7 @@ landingContent:
       url: hololens2-options-device-only.md
     - text: Wersja Remote Assist
       url: hololens2-options-remote-assist.md
-    - text: Wersja industrialna
+    - text: Wersja przemysłowe
       url: hololens2-options-industrial-edition.md
     - text: Wersja deweloperska
       url: hololens2-options-dev-edition.md
@@ -56,18 +56,34 @@ landingContent:
       url: common-scenarios.md
     - text: Planowanie HoloLens 2 w środowisku komercyjnym
       url: hololens-core-components.md
-    - text: Rejestracja css rozwiązania Autopilot
+    - text: Rejestracja arkuszy CSS rozwiązania Autopilot
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Przewodnik wdrażania — wdrażanie w 2 HoloLens z chmurą na dużą skalę za pomocą usługi Remote Assist
+    - text: Przewodnik wdrażania — wdrożenie w 2. HoloLens połączone z chmurą na dużą skalę przy użyciu usługi Remote Assist
       url: hololens2-cloud-connected-overview.md
     - text: Przewodnik wdrażania — klienci zewnętrzni (połączeni z chmurą)
       url: hololens2-deployment-guide.md
-    - text: Przewodnik wdrażania — wdrażanie połączonych HoloLens 2 za pomocą przewodników usługi Dynamics 365
+    - text: Przewodnik wdrażania — wdrożenie w HoloLens 2 z usługą Dynamics 365
       url: hololens2-corp-connected-overview.md
     - text: Przewodnik wdrażania — bezpieczne w trybie offline
       url: hololens-common-scenarios-offline-secure.md
+- title: Mixed Reality partnerów
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Mixed Reality partnerów
+      url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+    - text: Mixed Reality Partner Forum
+      url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+    - text: Mixed Reality Blog partnera
+      url: https://aka.ms/MRPartnerBlog
+    - text: Rozpoczynanie projektowania i tworzenia prototypów
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+    - text: Przenoszenie trybu platformy
+      url: /hololens/hololens2-moving-platform
+    - text: Zagadnienia dotyczące środowiska
+      url: /hololens/hololens-environment-considerations
 - title: Rozwiązywanie problemów
   linkLists:
   - linkListType: how-to-guide
@@ -78,7 +94,7 @@ landingContent:
       url: hololens-faq.md
     - text: Wyświetl
       url: hololens2-display.md
-    - text: Urządzenia implementacji i zarządzane
+    - text: Urządzenia implementacji i urządzenia zarządzane
       url: hololens2-enterprise-troubleshooting.md
     - text: Zbieranie i używanie informacji diagnostycznych z HoloLens urządzeń
       url: hololens-diagnostic-logs.md
@@ -100,7 +116,7 @@ landingContent:
       url: hololens2-support.md
     - text: Wyślij do nas swoją opinię
       url: hololens-feedback.md
-- title: Opracowywanie przy użyciu HoloLens 2
+- title: Opracowywanie za pomocą HoloLens 2
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -120,7 +136,7 @@ landingContent:
     links:
     - text: Dynamics 365 Remote Assist Docs
       url: /dynamics365/mixed-reality/remote-assist/ra-overview
-    - text: Dynamics 365 Guides
+    - text: Przewodniki dotyczące usługi Dynamics 365
       url: /dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 Mixed Reality
       url: /dynamics365/mixed-reality/
