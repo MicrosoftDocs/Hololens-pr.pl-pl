@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a0ae0ccade01d7df520cd6cb142a9b51e63a2b05
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036471"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163985"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 baterii i ładowania
 
@@ -25,7 +25,7 @@ Ta strona zawiera szczegółowe informacje o ładowaniu HoloLens 2 i używaniu z
 
 ## <a name="charging-the-device"></a>Ładowanie urządzenia
 
-Użyj [kabla USB typu C,](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) który jest HoloLens 2, ponieważ jest to najlepszy sposób ładowania urządzenia. Nawiązana z HoloLens 2 zapewnia do 9V @ 2A (18W). Wraz z dostarczonym osłoną ściany HoloLens 2 urządzenia mogą ładować baterii do pełnej w czasie krótszym niż 65 minut, gdy urządzenie jest w stanie wstrzymania. Jeśli te akcesoria nie są dostępne, upewnij się, że dostępne akcesoria mogą obsługiwać moc co najmniej 15 W.
+Użyj [kabla USB typu C,](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) który jest HoloLens 2, ponieważ jest to najlepszy sposób ładowania urządzenia. Nawiązana z HoloLens 2 zapewnia do 9V @ 2A (18W). Wraz z dostarczonym urządzeniem ściany HoloLens 2 urządzenia mogą ładować baterii do pełnej w czasie krótszym niż 65 minut, gdy urządzenie jest w stanie wstrzymania. Jeśli te akcesoria nie są dostępne, upewnij się, że dostępne akcesoria mogą obsługiwać moc co najmniej 15 W.
 
 > [!NOTE]
 > Jeśli to możliwe, unikaj używania komputera do ładowania urządzenia za pośrednictwem portu USB, co działa wolno.
@@ -34,14 +34,14 @@ Użyj [kabla USB typu C,](https://www.microsoft.com/en-us/p/microsoft-hololens-2
 Jeśli urządzenie jest prawidłowo uruchomione, istnieją trzy sposoby sprawdzania poziomu naładowania baterii:
 
 - Z menu głównego interfejsu użytkownika HoloLens urządzenia.
-- Wyświetl diodę LED w pobliżu przycisku zasilania (w przypadku opłaty 40 procent powinna być co najmniej dwie ciągłe diody LED).
-    - Gdy urządzenie jest ładowane, wskaźnik baterii jest zapalany, aby wskazać bieżący poziom naładowania.  Ostatnie światło będzie zanikać i zanikać, aby wskazać aktywne ładowanie.
+- Wyświetl diodę LED w pobliżu przycisku zasilania (w przypadku 40-procentowego obciążenia powinny być na przykład co najmniej dwie ciągłe diody LED).
+    - Gdy urządzenie jest ładowane, wskaźnik naładowania baterii jest zapalany, aby wskazać bieżący poziom naładowania.  Ostatnie światło będzie zanikać i wygasnąć, aby wskazać aktywne ładowanie.
     - Gdy urządzenie HoloLens, wskaźnik baterii wyświetla poziom naładowania baterii w pięciu przyrostach.
-    - Gdy tylko jedno z pięciu światła jest w zasilania, poziom naładowania baterii jest poniżej 20 procent.
+    - Gdy tylko jedno z pięciu światła jest wł. , poziom naładowania baterii jest poniżej 20 procent.
     - Jeśli poziom naładowania baterii jest krytycznie niski i spróbujesz włączyć urządzenie, jedno światło miga krótko, a następnie wygania.
 - Na komputerze hosta otwórz **Eksplorator plików** i poszukaj urządzenia z systemem HoloLens 2 po lewej stronie w obszarze Ten **komputer.** Kliknij prawym przyciskiem myszy urządzenie, a następnie wybierz pozycję **Właściwości.** Zostanie wyświetlone okno dialogowe z poziomem naładowania baterii.
 
-   ![Ekran HoloLens 2 przedstawia poziom zmiany baterii.](images/ResetRecovery2.png)
+   ![Ekran HoloLens 2 pokazuje poziom zmiany baterii.](images/ResetRecovery2.png)
 
 ## <a name="alternative-charging-specifications"></a>Alternatywne specyfikacje dotyczące opłat
 
@@ -57,11 +57,11 @@ Gdy HoloLens jest w trybie rezerwy, 18 Watów jest wystarczające, aby osiągną
 
 ### <a name="external-battery-packs"></a>Zewnętrzne pakiety baterii
 
-Pakiety baterii spełniające powyższe specyfikacje mogą być używane z HoloLens 2. Należy jednak pamiętać, że niektóre pakiety baterii USB-C są ładowane i zapewniają zasilanie za pośrednictwem tego samego portu USB-C. Ważne jest, aby te pakiety baterii implementować [try. SRC,](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20) aby upewnić się, że HoloLens opłaty, a nie opłaty z niego. 
+Pakiety baterii spełniające powyższe specyfikacje mogą być używane z HoloLens 2. Należy jednak pamiętać, że niektóre pakiety baterii USB-C są ładowane i zapewniają zasilanie za pośrednictwem tego samego portu USB-C. Ważne jest, aby te pakiety baterii implementować [try. SRC,](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20) aby upewnić się, że są HoloLens, a nie opłaty z tego. 
 
 ### <a name="managing-heat"></a>Zarządzanie ciepłom
 
-Podobnie jak w przypadku każdego urządzenia, HoloLens generuje ciepło. Im szybsze ładowanie, tym więcej ciepła jest generowanych. Ponadto rozpoczęcie ładowania na niższym poziomie baterii spowoduje wygenerowanie większej energii cieplnej niż podczas ładowania, gdy bateria jest w większości pełna. Klienci, którzy muszą HoloLens przez dłuższy czas w gorących środowiskach, mogą korzystać z następujących technik:
+Podobnie jak w przypadku dowolnego urządzenia, HoloLens generuje ciepło. Im szybsze ładowanie, tym więcej ciepła jest generowane. Ponadto rozpoczęcie ładowania na niższym poziomie baterii spowoduje wygenerowanie większej energii cieplnej niż podczas ładowania, gdy bateria jest w większości pełna. Klienci, którzy muszą HoloLens przez dłuższy czas w gorących środowiskach, mogą korzystać z następujących technik:
 
 - Można podłączyć urządzenie HoloLens 2 do zewnętrznego źródła zasilania, nawet jeśli wewnętrzna bateria jest w pełni obciążona.
 - Po wyczerpaniu baterii zewnętrznej HoloLens będzie nadal zasilana z baterii wewnętrznej.    

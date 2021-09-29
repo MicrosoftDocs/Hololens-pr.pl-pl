@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f646e70c61bda17fb315670e94a6fbada010e1d5
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036434"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129164002"
 ---
 # <a name="about-hololens-2"></a>Informacje HoloLens 2
 
@@ -26,25 +26,25 @@ ms.locfileid: "126036434"
 Microsoft HoloLens 2 jest komputerem holograficznym.  Uściśliła podróż obliczeń holograficznych rozpoczętą przez firmę HoloLens (1. generacja), aby zapewnić wygodniejsze i immersywne środowisko połączone z większą możliwością współpracy w rzeczywistości mieszanej. HoloLens 2 działa w systemie [Windows Holographic OS](hololens-release-notes.md)opartym na "smaku" platformy Windows 10, która zapewnia użytkownikom, administratorom i deweloperom niezawodną, wydajne i bezpieczne platformy. 
 
 > [!NOTE]
-> Najnowsze Windows 11 dotyczyło wersji pc Windows. W maju [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) 2021 r. niedawno uruchomiliśmy dużą aktualizację systemu operacyjnego do wersji HoloLens 2. Pracujemy nad nadchodzącym wydaniem na podstawie opinii klientów na temat tej aktualizacji.
+> Najnowsze Windows 11 dotyczyło wersji pc Windows. Niedawno w [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) maju 2021 r. uruchomiliśmy dużą aktualizację systemu operacyjnego do wersji HoloLens 2. Pracujemy nad nadchodzącym wydaniem na podstawie opinii klientów na temat tej aktualizacji.
 
 Konto użytkownika jest wymagane do korzystania z HoloLens 2.
 
 ## <a name="hololens-components"></a>HoloLens składników
 
 - **Visor .** Zawiera czujniki HoloLens i ekrany. Możesz obrócić oszławkę w górę podczas noszenia HoloLens.
-- **Pałąk .** Aby umieścić na HoloLens, rozwiń pałąk za pomocą kółka korekty. Po HoloLens odciągaj koło korekty, obracając w prawo, aż pałąk będzie wygodny.
-- **Przyciski jasność**. Podczas noszenia HoloLens przyciski światła znajdują się po lewej stronie ochłody w pobliżu swojej daszki.
-- **Przyciski regulacji głośności**. Po HoloLens przycisków regulacji głośności znajdują się po prawej stronie przyszycie w pobliżu miejsu.
+- **Pałąk .** Aby umieścić na HoloLens, rozwiń pałąk za pomocą kółka korekty. Po HoloLens odkręć koło korekty, obracając w prawo, aż pasek będzie wygodny.
+- **Przyciski jasność**. Podczas noszenia HoloLens przyciski światła znajdują się po lewej stronie osłaniacza w pobliżu nawijki.
+- **Przyciski regulacji głośności**. Po HoloLens przycisków regulacji głośności znajdują się po prawej stronie osłaniacza w pobliżu miejsów.
 - **Przycisk zasilania**. Po HoloLens przycisk zasilania znajduje się po prawej stronie tylnej zewnętrznej okładki.
 - **Port USB-C.** Podczas noszenia HoloLens port USB-C znajduje się po prawej stronie zewnętrznej zewnętrznej okładki poniżej przycisku zasilania.
 
 ## <a name="in-the-box"></a>W polu
 
 - **[Brow pad](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. W razie potrzeby możesz usunąć i zastąpić nakładkę do przechwęć.
-- **[Narzut](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Gdy podczas poruszania się po HoloLens, użyj narzutu, aby zachować urządzenie na miejscu. W przypadku noszenia HoloLens przez dłuższy czas narzut może sprawić, że urządzenie będzie bardziej wygodne do zużycia.
+- **[Narzut](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Jeśli podczas przemieszczania się HoloLens, użyj narzutu, aby zachować urządzenie na miejscu. W przypadku noszenia HoloLens przez dłuższy czas narzut może sprawić, że urządzenie będzie bardziej wygodne w zużyciu.
 - **[Usb-C i kabel](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. Zasilacz podłącza się do gniazda zasilania. Za pomocą kabla USB-C podłącz urządzenie HoloLens do zasilacza w celu nawiązania połączenia lub HoloLens z komputerem.
-- **Mikrosieć**. Użyj , aby wyczyścić HoloLens użytkownika.
+- **Mikrofibry .** Użyj , aby wyczyścić HoloLens użytkownika.
 
 ### <a name="power-supply-details"></a>Szczegóły zasilacza
 
@@ -105,7 +105,7 @@ Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania bate
 |---|---|
 | **Baterii** | Aktywne użycie przez 2–3 godziny. Do dwóch tygodni czasu wstrzymania. |
 | **Technologia baterii** | [Litowych](https://www.microsoft.com/download/details.aspx?id=43388) |
-| **Zachowanie na ładowaniu** | W pełni funkcjonalne podczas ładowania |
+| **Zachowanie podczas naliowania opłat** | W pełni funkcjonalne podczas ładowania |
 | **Typ chłodzenia** | Pasywnie ochłodzoną (bez wentylatorów) |
 | **Rysowanie zasilania** | Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania baterii, gdy urządzenie jest włączona, musi być podłączone co najmniej do 15 W. |
 
@@ -113,7 +113,7 @@ Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania bate
 
 |   | &nbsp; |
 |---|---|
-| **Ustalanie rozmiaru** | Pojedynczy rozmiar z paskiem z możliwością regulacji.  Pasuje do okularów |
+| **Ustalanie rozmiaru** | Pojedynczy rozmiar z dostosowywalną taśmą.  Pasuje do okularów |
 | **Waga** | 566 gramy |
 
 ## <a name="device-capabilities"></a>Możliwości urządzenia
@@ -122,15 +122,15 @@ Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania bate
 
 |   | &nbsp; |
 |---|---|
-| **Śledzenie rąk** | Dwuręowy, w pełni sformułowany model, bezpośrednie manipulowanie |
+| **Śledzenie rąk** | Dwurętowy, w pełni sformułowany model, bezpośrednie manipulowanie |
 | **Śledzenie wzroku** | Śledzenie w czasie rzeczywistym |
-| **Połączenia głosowe** | Sterowanie i sterowanie na urządzeniu; Cortana języku naturalnym z łącznością z Internetem |
+| **Połączenia głosowe** | Sterowanie i sterowanie na urządzeniu; Cortana języka naturalnego z łącznością z Internetem |
 
 ### <a name="environment-understanding"></a>Zrozumienie środowiska
 
 |   | &nbsp; |
 |---|---|
-| **Śledzenie sześciu stopni swobody (6DoF)** | Śledzenie pozyacyjne w skali światowej |
+| **Śledzenie sześciu stopni swobody (6DoF)** | Śledzenie pozyacyjne na świecie |
 | **Mapowanie przestrzenne** | Siatka środowiska w czasie rzeczywistym |
 | **Przechwytywanie rzeczywistości mieszanej** | Mieszane hologramy i zdjęcia i wideo środowiska fizycznego |
 
@@ -140,18 +140,18 @@ Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania bate
 |---|---|
 | **Windows System operacyjny Holographic** | Dzięki [Windows Holographic OS](hololens-release-notes.md)użytkownicy Windows 10 będą mogli korzystać z niektórych swoich aplikacji i gier w środowisku rzeczywistości mieszanej za pośrednictwem HoloLens 2.
 | **Przeglądarka 3D** | [Przeglądarka 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) umożliwia łatwe wyświetlanie modeli 3D i animacji w czasie rzeczywistym.|
-| **Cortana** | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)to twój osobisty asystent produktywności, który pomaga być na szczycie ważnych kwestii i oszczędzać czas na znajdowaniu potrzebnych informacji.  |
-| **Dynamics 365 Guides** |  [Przewodniki usługi Dynamics 365](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) pomogą pracownikom szybciej uczyć się nowych umiejętności na HoloLens urządzeniach. |
+| **Cortana** | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), osobistego asystenta produktywności, pomaga być na szczycie ważnych kwestii i oszczędzać czas na znajdowaniu potrzebnych informacji.  |
+| **Przewodniki dotyczące usługi Dynamics 365** |  [Przewodniki usługi Dynamics 365](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) pomogą pracownikom szybciej uczyć się nowych umiejętności na HoloLens urządzeń. |
 | **Dynamics 365 Remote Assist** | [Usługa Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) umożliwia technikom współpracę i rozwiązywanie problemów ze zdalnymi współpracownikami przy użyciu usługi Microsoft Teams lub Dynamics 365 Remote Assist.  |
-| **Centrum opinii** | [Centrum opinii](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) udostępniając sugestie lub problemy, możesz przekazać Windows o aplikacjach i aplikacjach.  |
-| **Eksplorator plików** | Eksplorator plików udostępnia graficzny interfejs użytkownika do uzyskiwania dostępu do systemów plików. |
+| **Centrum opinii** | [Centrum opinii](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) udostępniając sugestie lub problemy, możesz przekazać opinię na temat Windows i aplikacji.  |
+| **Eksplorator plików** | Eksplorator plików graficzny interfejs użytkownika do uzyskiwania dostępu do systemów plików. |
 | **Poczta i kalendarz** | Aplikacje [Poczta i kalendarz](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) pomagają być na bieżąco z wiadomościami e-mail, zarządzać harmonogramem i być na bieżąco z kontaktami. |
-| **Microsoft Edge** | Microsoft Edge zapewnia światowej klasy wydajność dzięki większej prywatności, produktywności i większej wartości podczas przeglądania. |
+| **Microsoft Edge** | Microsoft Edge zapewnia światowej klasy wydajność z większą prywatnością, większą produktywnością i większą wartością podczas przeglądania. |
 | **Sklepie Microsoft** | Ten [Microsoft Store](https://www.microsoft.com) to twoje źródło dla aplikacji i gier, które działają z HoloLens.|
-| **Filmy & TV** | [Filmy & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) to najnowsza animacja w jednej prostej, szybkiej i eleganckij aplikacji. |
+| **Filmy & TV** | [Filmy & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) to najnowsza aplikacja w jednej prostej, szybkiej i eleganckim aplikacji. |
 | **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) umożliwia dostęp do plików i edytowanie ich ze wszystkich urządzeń w dowolnym miejscu.  |
 | **Zdjęcia** | [Zdjęcia](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) umożliwiają wyświetlanie i edytowanie zdjęć oraz filmów wideo, tworzenie filmów i tworzenie filmów.  |
-| **Ustawienia** | Aplikacja Ustawienia to miejsce, w którym można dostosować sposób szczegółowego działania Windows Holographic.  |
+| **Ustawienia** | Aplikacja Ustawienia to miejsce, w którym można szczegółowo dostosować sposób Windows Holographic.  |
 | **Porady** | [Wskazówki](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) umożliwia opanowanie zaskakujących i mniej znanych rzeczy, które można wykonać na Windows Holographic. |
 
 ## <a name="device-certifications"></a>Certyfikaty urządzeń
@@ -160,7 +160,7 @@ Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania bate
 
 * [Bezpieczeństwo produktu](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [Ostrzeżenia i instrukcje dotyczące bezpieczeństwa produktów](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* Bezpieczeństwo wzroku: HoloLens 2 zostały przetestowane i są zgodne z podstawowymi wymaganiami w zakresie ochrony przed wpływem ansi Z87.1, CSA Z94.3 i EN 166.
+* Bezpieczeństwo wzroku: HoloLens 2 zostały przetestowane i są zgodne z podstawowymi wymaganiami ochrony przed wpływem ansi Z87.1, CSA Z94.3 i EN 166.
 * [Informacje o SAR](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>Informacje prawne
@@ -168,12 +168,12 @@ Aby zachować/podwyższyć wartość procentową wewnętrznego naładowania bate
 
 ## <a name="warranty-information"></a>Informacje o gwarancji
 
-Microsoft HoloLens 2 jest objęte standardową ograniczoną [gwarancją.](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5) 
+Microsoft HoloLens 2 jest ze standardową ograniczoną [gwarancją.](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5) 
 
 
 Zakup podlega zasadom [Microsoft Store użytkowania i sprzedaży.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) Cała sprzedaż jest ostateczna. Brak zwrotów.
 
-Kupując program HoloLens 2, wyrażasz zgodę na umowę [licencyjną na oprogramowanie](https://www.microsoft.com/Useterms/).
+Kupując usługę HoloLens 2, wyrażasz zgodę na umowę [licencyjną na oprogramowanie](https://www.microsoft.com/Useterms/).
 
 Nie jest przeznaczony do użytku przez dzieci w wieku poniżej 13 lat.
 
@@ -184,23 +184,23 @@ Nie jest przeznaczony do użytku przez dzieci w wieku poniżej 13 lat.
 |     Długość jednostki                |     378,97 mm          |     14,920 cala       |
 |     Szerokość jednostki                 |     247,90 mm          |     9,760 cala        |
 |     Głębokość jednostki                 |     163,07 mm          |     6,420 cala        |
-|     Waga jednostkowa                |     2,878 kg           |     6,344 lbs           |
-|     Długość wysyłki    |     446,00 mm          |     17,559 cala       |
+|     Waga jednostki                |     2,878 kg           |     6,344 lbs           |
+|     Length (Długość wysyłki)    |     446,00 mm          |     17,559 cala       |
 |     Width (Szerokość wysyłki)     |     257,99 mm          |     10,157 cala       |
-|     Głębokość wysyłki     |     172,01 mm          |     6,772 cala        |
-|     Waga wysyłki    |     3,284 kg           |     7,240 lbs           |
+|     Depth (Głębokość wysyłki)     |     172,01 mm          |     6,772 cala        |
+|     Weight (Waga wysyłki)    |     3,284 kg           |     7,240 lbs           |
 
 > [!NOTE]
-> - Jednostka: czarne opakowanie w stylu sklepu detalicznego HoloLens 2 jest sprzedawane.
-> - ShippEr: Opakowanie transportowe zabezpieczające wokół jednostki.
+> - Jednostka: czarne skrzynki w stylu sklepu detalicznego HoloLens 2 są sprzedawane.
+> - Shipper: Opakowanie zabezpieczające wokół jednostki.
 
 ## <a name="finding-the-serial-number"></a>Znajdowanie numeru seryjnego
 
-Numer seryjny dla HoloLens 2 urządzeń jest drukowany pod osłoną.
+Numer seryjny dla HoloLens 2 urządzeń jest drukowany pod wizjerem.
 
-1. Podnieś daszek urządzenia w górę.
-1. Przyjrzyj się w pobliżu przeglądarki.
-1. Numer seryjny można znaleźć w pobliżu nasyłania.
+1. Podnieś daszek urządzenia do góry.
+1. Spójrz w pobliżu przeglądarki.
+1. Numer seryjny można znaleźć w pobliżu miejscowości.
 
    <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
@@ -208,7 +208,7 @@ Numer seryjny można również znaleźć za pośrednictwem podłączonego komput
 
 1. Podłączanie urządzenia
 1. Przejdź do tego **komputera w** Eksploratorze plików
-1. Kliknij prawym przyciskiem myszy i **wybierz pozycję** Właściwości HoloLens urządzenia
+1. Kliknij prawym przyciskiem myszy **i wybierz pozycję** Właściwości HoloLens urządzenia
 1. Spowoduje to wyświetlenie numeru serii urządzenia, jak pokazano na poniższym zrzucie ekranu.
 
    <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
