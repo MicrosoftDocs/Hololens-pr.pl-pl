@@ -28,7 +28,7 @@
 #### [Nowa Ustawienia aplikacji](hololens-new-settings.md)
 #### [Nowe Microsoft Edge](hololens-new-edge.md)
 ### Zarządzanie aplikacjami
-#### [Znajdowanie, instalowanie i odinstalowywanie aplikacji](holographic-store-apps.md)
+#### [Znajdowanie, instalowanie i odinstalowywanie aplikacji ze sklepu](holographic-store-apps.md)
 #### [Zarządzanie aplikacjami niestandardowymi dla HoloLens 2](hololens2-holographic-custom-apps.md)
 ### Holoogramy i umieszczanie w przestrzeni
 #### [Poprawianie jakości i komfortu wizualizacji](hololens-calibration.md)
@@ -82,7 +82,7 @@
 ### [Rejestrowanie w środowisku z ograniczeniami adresów MAC Wi-Fi MAC](mac-address-options.md)
 ## Wdrażanie aplikacji
 ### [Omówienie zarządzania aplikacją](app-deploy-overview.md)
-### [Usługa Intune & Portal firmy](app-deploy-intune.md)
+### [Intune & Portal firmy](app-deploy-intune.md)
 ### [Sklep Microsoft dla Firm](app-deploy-store-business.md)
 ### [Pakiet aprowizowania](app-deploy-provisioning-package.md)
 ### [Instalator aplikacji](app-deploy-app-installer.md)
@@ -94,7 +94,7 @@
 ### [Konfigurowanie HoloLens jako kiosku](hololens-kiosk.md)
 ### [HoloLens Informacje referencyjne dotyczące kiosku](hololens-kiosk-reference.md)
 ### [Windows Defender Kontrola aplikacji — WDAC](windows-defender-application-control-wdac.md)
-### [Adres Ustawienia CSP i URIs dla HoloLens](settings-uri-list.md)
+### [Adres Ustawienia CSP i URI dla HoloLens](settings-uri-list.md)
 ## Łączność & sieciowa
 ### [Konfigurowanie sieci na HoloLens](hololens-commercial-infrastructure.md)
 ### [Przygotowywanie certyfikatów i profilów sieciowych dla HoloLens 2](hololens-certificates-network.md)
@@ -133,7 +133,7 @@
 #### [Odblokowywanie Windows Holographic for Business zabezpieczeń](hololens1-upgrade-enterprise.md)
 #### [Resetowanie HoloLens (1. generacja)](hololens1-recovery.md)
 ### HoloLens (1. generacja) Zabezpieczenia
-#### [Często zadawane pytania HoloLens zabezpieczeń (pierwszej generacji)](hololens1-faq-security.yml)
+#### [Często zadawane pytania HoloLens zabezpieczeń (1. generacji)](hololens1-faq-security.yml)
 #### [HoloLens (1. generacji) szyfrowanie funkcją BitLocker](hololens1-encryption.md)
 ### [Znane problemy i obejścia dla HoloLens (1. generacja)](hololens-known-issues.md)
 ### [HoloLens wersji (1. generacji)](hololens1-release-notes.md)
