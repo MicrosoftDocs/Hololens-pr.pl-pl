@@ -1,6 +1,6 @@
 ---
 title: Znajdowanie, instalowanie i odinstalowywanie aplikacji
-description: Ta Microsoft Store źródło aplikacji i gier, które działają z HoloLens.  Dowiedz się więcej na temat znajdowania, instalowania i odinstalowywania aplikacji holograficznych.
+description: Aplikacja Microsoft Store źródło aplikacji i gier, które działają z HoloLens.  Dowiedz się więcej na temat znajdowania, instalowania i odinstalowywania aplikacji holograficznych.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
 ms.date: 9/7/2021
@@ -15,20 +15,20 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3442da500e7554d7f97db2178cbaceeecad143ac
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f7d4ddf41f02b083000c1e57f5140c38527826d7
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036065"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364409"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Znajdowanie, instalowanie i odinstalowywanie aplikacji z Microsoft Store
 
-Ten Microsoft Store to źródło dla aplikacji i gier, które działają z HoloLens. Po przejdź do sklepu na HoloLens zostaną uruchomione na nim wszystkie aplikacje, które tam zobaczysz.
+Ten Microsoft Store to twoje źródło dla aplikacji i gier, które działają z HoloLens. Po przejść do sklepu na HoloLens zostaną w nim uruchomione wszystkie aplikacje, które tam zobaczysz.
 
-Aplikacje w HoloLens używają widoku 2D lub widoku holograficznego. Aplikacje, które używają widoku 2D, wyglądają jak okna i mogą być rozmieszone wokół Ciebie. Aplikacje, które korzystają z widoku holograficznego, otaczają Cię i stają się jedyną zobaczysz.
+Aplikacje na HoloLens używają widoku 2D lub widoku holograficznego. Aplikacje, które używają widoku 2D, wyglądają jak okna i mogą być rozmieszone wokół Ciebie. Aplikacje, które korzystają z widoku holograficznego, otaczają Cię i stają się jedyną zobaczysz.
 
-HoloLens obsługuje wiele istniejących aplikacji z Microsoft Store, a nowe aplikacje opracowane specjalnie dla HoloLens.  Ten artykuł koncentruje się na aplikacjach holograficznych z Microsoft Store.
+HoloLens obsługuje wiele istniejących aplikacji z Microsoft Store, a także nowe aplikacje opracowane specjalnie dla HoloLens.  Ten artykuł koncentruje się na aplikacjach holograficznych z Microsoft Store.
 
 Aby dowiedzieć się więcej na temat instalowania i uruchamiania aplikacji niestandardowych, przeczytaj [niestandardowe aplikacje holograficzne.](holographic-custom-apps.md)
 
@@ -43,28 +43,28 @@ Otwórz Microsoft Store z menu **Start.** Następnie wyszukaj aplikacje i gry. M
 > - ARM = HoloLens 2
 
 > [!NOTE]
-> 12 stycznia 2021 r. następujące aplikacje zakończą wsparcie techniczne na HoloLens urządzeń. Zachęcamy do korzystania z internetowej wersji aplikacji na urządzeniu za pomocą następującego linku.
+> 12 stycznia 2021 r. następujące aplikacje zakończą wsparcie techniczne na HoloLens urządzeniach. Zachęcamy do korzystania z internetowej wersji aplikacji na urządzeniu za pomocą następującego linku.
 
 | Aplikacja        | Link                                          |
 |------------|-----------------------------------------------|
-| Excel mobilne      | [https://office.live.com/start/Excel.aspx](https://office.live.com/start/Excel.aspx)      |
+| Excel mobile      | [https://office.live.com/start/Excel.aspx](https://office.live.com/start/Excel.aspx)      |
 | Word Mobile       | [https://office.live.com/start/Word.aspx](https://office.live.com/start/Word.aspx)       |
 | PowerPoint mobilne | [https://office.live.com/start/PowerPoint.aspx](https://office.live.com/start/PowerPoint.aspx) |
 
 > [!NOTE]
-> Aplikacja OneDrive nie jest obecnie obsługiwana w przypadku kont usługi Azure AD na HoloLens. Zalecamy pobranie aplikacji Microsoft OneDrive PWA aplikacji. [Wykonaj następujące kroki, aby pobrać aplikację.]
+> Aplikacja OneDrive nie jest obecnie obsługiwana w przypadku kont usługi Azure AD w HoloLens. Zalecamy pobranie aplikacji Microsoft OneDrive PWA aplikacji. [Wykonaj następujące kroki, aby pobrać aplikację.]
 
 ## <a name="install-apps"></a>Instalowanie aplikacji
 
 Aby pobrać aplikacje, musisz zalogować się przy użyciu konto Microsoft. Niektóre aplikacje są bezpłatne i można je pobrać od razu. W przypadku aplikacji, które wymagają zakupu, musisz zalogować się do Sklepu przy użyciu konta konto Microsoft i mieć prawidłową formę płatności.
 
 > [!NOTE]
-> Konto, za pomocą Microsoft Store nie musi być takie samo jak konto, za pomocą których się zalogowano. Jeśli używasz konta służbowego na koncie usługi HoloLens może być konieczne zalogowanie się przy użyciu konta osobistego w aplikacji ze sklepu, aby dokonać zakupu.
+> Konto, za pomocą Microsoft Store nie musi być takie samo jak konto, za pomocą których się zalogowano. Jeśli używasz konta służbowego na koncie usługi HoloLens może być konieczne zalogowanie się przy użyciu konta osobistego w aplikacji sklepu, aby dokonać zakupu.
 
 > [!TIP]
-> Aby skonfigurować formę płatności, przejdź do usługi  [account.microsoft.com](https://account.microsoft.com/) i wybierz pozycję Rozliczenia & Opcje płatności  >    >  **Dodaj opcję płatności.**
+> Aby skonfigurować formę płatności, przejdź do usługi [account.microsoft.com](https://account.microsoft.com/) i wybierz pozycję Rozliczenia & **Opcje** płatności  >    >  **Dodaj opcję płatności.**
 
-1. Aby otworzyć menu [ **Start,**](holographic-home.md)wykonaj gest [Start](/hololens/hololens2-basic-usage#start-gesture) lub gest [Blooma](hololens1-basic-usage.md) HoloLens (1. generacja).
+1. Aby otworzyć menu [ **Start,**](holographic-home.md)wykonaj [](hololens1-basic-usage.md) gest [Start](/hololens/hololens2-basic-usage#start-gesture) lub gest Blooma HoloLens (1. generacja).
 
 1. Wybierz Microsoft Store aplikację. Po otworeniu aplikacji ze Sklepu:
    1. Użyj paska wyszukiwania, aby wyszukać aplikacje.
@@ -75,13 +75,13 @@ Aby pobrać aplikacje, musisz zalogować się przy użyciu konto Microsoft. Niek
 
 ### <a name="install-microsoft-onedrive-pwa-app"></a>Instalowanie Microsoft OneDrive PWA aplikacji
 
-Wymagania wstępne: Użytkownik dołączył już urządzenie HoloLens 2 do swojej dzierżawy służbowej.
+Wymagania wstępne: użytkownik dołączył już urządzenie HoloLens 2 do swojej dzierżawy służbowej.
 
 1. Otwórz menu Start i uruchom przeglądarkę Edge.
 
     ![Menu Start](images/office-pwa-1.jpg)
 
-1. Na stronie HoloLens i [https://onedrive.live.com/about/signin](https://onedrive.live.com/about/signin) wprowadź poświadczenia konta służbowego
+1. Na stronie HoloLens [https://onedrive.live.com/about/signin](https://onedrive.live.com/about/signin) i wprowadź poświadczenia konta służbowego
 
     ![Logowanie służbowe](images/office-pwa-2.jpg)
 
@@ -97,8 +97,8 @@ Wymagania wstępne: Użytkownik dołączył już urządzenie HoloLens 2 do swoje
 
     ![Wszystkie aplikacje obie aplikacje.](images/office-pwa-5.jpg)
 
-> [!NOTE]
-> "Microsoft OneDrive" jest aplikacją PWA której jako "OneDrive" jest starsza wersja platformy uniwersalnej systemu Windows.
+    > [!NOTE]
+    > "Microsoft OneDrive" jest aplikacją PWA której jako "OneDrive" jest starsza wersja platformy uniwersalnej systemu Windows.
 
 1. Następnie będzie można wyświetlić pliki OneDrive plików.
 
@@ -108,9 +108,11 @@ Zobacz też: [Włączanie automatycznego przekazywania do OneDrive dla firm](hol
 
 ## <a name="update-apps"></a>Aktualizowanie aplikacji
 
+### <a name="manual-updates"></a>Aktualizacje ręczne
+
 Aby zaktualizować aplikację zainstalowaną z Microsoft Store, możesz ją zaktualizować z Microsoft Store aplikacji. W przypadku aplikacji zainstalowanych Microsoft Store dla Firm można również aktualizować te aplikacje z Microsoft Store dla Firm.
 
-1. Aby otworzyć menu [ **Start,**](holographic-home.md)wykonaj gest [Start](/hololens/hololens2-basic-usage#start-gesture) lub gest [Blooma](hololens1-basic-usage.md) HoloLens (1. generacja).
+1. Aby otworzyć menu [ **Start,**](holographic-home.md)wykonaj [](hololens1-basic-usage.md) gest [Start](/hololens/hololens2-basic-usage#start-gesture) lub gest Blooma HoloLens (1. generacja).
 
 1. Wybierz aplikację ze Sklepu.
 
@@ -134,6 +136,26 @@ Aby zaktualizować aplikację zainstalowaną z Microsoft Store, możesz ją zakt
 >
 > Jeśli chcesz zaktualizować aplikację niestandardową, która została załadowana lub wdrożona w sposób sideload, musisz użyć tej samej metody ze zaktualizowaną wersją aplikacji. Aby dowiedzieć się więcej na temat instalowania i uruchamiania aplikacji niestandardowych, przeczytaj [temat Niestandardowe aplikacje holograficzne.](holographic-custom-apps.md)
 
+### <a name="automatic-app-updates"></a>Automatyczne aktualizacje aplikacji
+
+Aktualizacje automatyczne dotyczą Microsoft Store lub Microsoft Store dla Firm i mogą być aktualizowane automatycznie tylko wtedy, gdy zostały zainstalowane bezpośrednio ze Sklepu. Jeśli zainstalowano je z usługi Intune, it może wypychać aktualizacje z rozwiązania MDM, synchronizując Microsoft Store dla Firm z wersją dla najnowszej dostępnej wersji aplikacji.
+
+> [!NOTE]
+> W przypadku aplikacji pozyskonych z usługi Microsoft Store dla Firm musisz zalogować się do sklepu i uwierzytelnić się przy użyciu tej samej dzierżawy, która jest skojarzona z wykazem Microsoft Store dla Firm używanym na urządzeniu.
+
+#### <a name="how-automatic-updates-work"></a>Jak działają aktualizacje automatyczne
+
+Automatyczne aktualizacje aplikacji są zaplanowane na codzienne (mniej więcej co 24 godziny) w zależności od dostępności sieci. Aby otrzymywać aktualizacje, urządzenie musi być aktywne lub podłączone do prądu zmiennego. Nawet jeśli aktualizacje aplikacji są pobierane podczas aktywnego dziennego użycia, będą stosowane tylko wtedy, gdy aplikacja do zaktualizowania nie będzie już w użyciu.
+
+> [!TIP]
+> Jeśli to możliwe, ładuj urządzenie w nocy, gdy jest ono połączone z siecią firmową. Jeśli aktualizacje można pobrać i zainstalować w nocy, istnieje mniejsze prawdopodobieństwo przerwania aktywnego użycia urządzenia.
+
+#### <a name="how-it-administrators-can-control-automatic-updates"></a>Jak administratorzy IT mogą kontrolować aktualizacje automatyczne
+
+Administratorzy IT mogą kontrolować automatyczne aktualizacje aplikacji za pomocą [zasad ApplicationManagement/AllowAppStoreAutoUpdate.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) Te zasady umożliwiają im całkowite włączanie lub wyłączanie automatycznych aktualizacji aplikacji, ale nie kontrolują sytuacji, w których aktualizacje są dostępne.
+
+Od [21H2](hololens-release-notes.md#windows-holographic-version-21h1)administratorzy IT mogą również używać zasad [ScheduleForceRestartForUpdateFailures,](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) aby kontrolować, kiedy aplikacje, które były w użyciu, ale nie mogły zostać zaktualizowane w poprzednich próbach, powinny być ponownie uruchomione.
+
 ## <a name="uninstall-apps"></a>Odinstaluj aplikacje
 
 Istnieją trzy sposoby odinstalowywania aplikacji. Aplikacje można odinstalować za pośrednictwem Microsoft Store, menu Start lub z Ustawienia.
@@ -146,7 +168,7 @@ Istnieją trzy sposoby odinstalowywania aplikacji. Aplikacje można odinstalowa�
 
 ### <a name="uninstall-from-the-microsoft-store"></a>Odinstalowywanie z Microsoft Store
 
-Otwórz Microsoft Store menu **Start,** a następnie wyszukaj aplikację, którą chcesz odinstalować.  Na stronie Sklep każda zainstalowana aplikacja ma przycisk **Odinstaluj.**
+Otwórz Microsoft Store menu **Start,** a następnie przejdź do aplikacji, którą chcesz odinstalować.  Na stronie Sklep każda zainstalowana aplikacja ma przycisk **Odinstaluj.**
 
 ### <a name="uninstall-from-the-start-menu"></a>Odinstalowywanie z menu Start
 
@@ -156,4 +178,4 @@ W menu **Start** lub na **Wszystkie aplikacje** przejdź do aplikacji. Wybieraj 
 
 W menu **Start** wybierz pozycję **Ustawienia > Aplikacje.** Znajdź aplikację na liście, wybierz ją, a następnie kliknij pozycję **Odinstaluj.**
 
-Jeśli nie możesz odinstalować aplikacji, [](/hololens/hololens-feedback) prosimy o opinię przy użyciu Centrum opinii.
+Jeśli nie możesz odinstalować aplikacji, prosimy o [opinię](/hololens/hololens-feedback) przy użyciu Centrum opinii.
