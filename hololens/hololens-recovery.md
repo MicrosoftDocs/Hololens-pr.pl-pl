@@ -16,19 +16,19 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036506"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034250"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Ponowne uruchamianie, resetowanie lub odzyskiwanie HoloLens 2
 
 >[!IMPORTANT]
 > Przed rozpoczęciem procedury rozwiązywania problemów upewnij się, że urządzenie jest obciążane od **20 do 40%** pojemności baterii, jeśli jest to możliwe. Wskaźniki [naładowania baterii znajdujące](hololens2-setup.md#lights-that-indicate-the-battery-level) się pod przyciskiem zasilania to szybki sposób na sprawdzenie pojemności baterii bez logowania się do urządzenia.
 
-Użyj [kabla USB typu C,](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) który jest HoloLens 2, ponieważ jest to najlepszy sposób ładowania urządzenia. Zasilacz dostarcza moc 18W (9V przy 2A). Korzystając z dostarczonego urządzenia naścienowego, HoloLens 2 urządzenia mogą ładować baterii do pełnej baterii w czasie krótszym niż 65 minut, gdy urządzenie jest w stanie wstrzymania. Jeśli te akcesoria nie są dostępne, upewnij się, że dostępne akcesoria mogą obsługiwać moc co najmniej 15 W.
+Użyj kabla i kabla [USB typu C,](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) który jest HoloLens 2, ponieważ jest to najlepszy sposób ładowania urządzenia. Zasilacz dostarcza moc 18W (9V przy 2A). Przy użyciu dostarczonego urządzenia ściany HoloLens 2 urządzenia mogą ładować baterii do pełnej w mniej niż 65 minut, gdy urządzenie jest w stanie wstrzymania. Jeśli te akcesoria nie są dostępne, upewnij się, że dostępne akcesoria mogą obsługiwać moc co najmniej 15 W.
 
 > [!NOTE]
 > Jeśli to możliwe, unikaj używania komputera do ładowania urządzenia za pośrednictwem portu USB, co działa wolno.
@@ -36,8 +36,8 @@ Użyj [kabla USB typu C,](https://www.microsoft.com/en-us/p/microsoft-hololens-2
 Jeśli urządzenie jest prawidłowo uruchomione, istnieją trzy sposoby sprawdzania poziomu naładowania baterii:
 
 - Z menu głównego interfejsu użytkownika HoloLens urządzenia.
-- Wyświetl diodę LED w pobliżu przycisku zasilania (w przypadku 40-procentowego obciążenia powinny być na przykład co najmniej dwie ciągłe diody LED).
-    - Gdy urządzenie jest ładowane, wskaźnik naładowania baterii jest zapalany, aby wskazać bieżący poziom naładowania.  Ostatnie światło będzie zanikać i wygasnąć, aby wskazać aktywne ładowanie.
+- Wyświetl diodę LED w pobliżu przycisku zasilania (w przypadku opłaty 40 procent powinna być co najmniej dwie ciągłe diody LED).
+    - Gdy urządzenie jest ładowane, wskaźnik naładowania baterii jest zapalany, aby wskazać bieżący poziom naładowania.  Ostatnie światło będzie zanikać i zanikać, aby wskazać aktywne ładowanie.
     - Gdy urządzenie HoloLens, wskaźnik baterii wyświetla poziom naładowania baterii w pięciu przyrostach.
     - Gdy tylko jedno z pięciu światła jest w zasilania, poziom naładowania baterii jest poniżej 20 procent.
     - Jeśli poziom naładowania baterii jest krytycznie niski i spróbujesz włączyć urządzenie, jedno światło miga krótko, a następnie wygania.
@@ -45,13 +45,19 @@ Jeśli urządzenie jest prawidłowo uruchomione, istnieją trzy sposoby sprawdza
 
    ![Ekran HoloLens 2 pokazuje poziom zmiany baterii.](images/ResetRecovery2.png)
 
-Jeśli urządzenie nie może uruchomić się w menu startowym, zwróć uwagę na wygląd diody LED i wyliczenie urządzenia na komputerze hosta. Następnie postępuj zgodnie z [przewodnikiem rozwiązywania problemów.](hololens-troubleshooting.md) Jeśli stan urządzenia nie pasuje do żadnego ze stanów wymienionych w przewodniku rozwiązywania problemów, wykonaj procedurę resetowania na czas z urządzeniem podłączonym do źródła zasilania, a nie z komputerem hosta. [](hololens-recovery.md#hard-reset-procedure) Zaczekaj co najmniej godzinę na obciążenie urządzenia.
+Jeśli urządzenie nie może uruchomić się w menu startowym, zwróć uwagę na wygląd diody LED i wyliczenie urządzenia na komputerze hosta. Następnie postępuj zgodnie z [przewodnikiem rozwiązywania problemów.](hololens-troubleshooting.md) Jeśli stan urządzenia nie pasuje do żadnego ze stanów wymienionych w przewodniku rozwiązywania problemów, wykonaj procedurę resetowania na czas z urządzeniem podłączonym do źródła zasilania, a nie z komputerem hosta. [](hololens-recovery.md#hard-restart-procedure) Zaczekaj co najmniej godzinę na obciążenie urządzenia.
 
-## <a name="reset-the-device"></a>Resetowanie urządzenia
+> [!NOTE]
+> Zacznijmy od zdefiniowania terminów.\
+> "Uruchom ponownie" oznacza po prostu wyłączenie i włączenie urządzenia.\
+> "Resetowanie" oznacza przywrócenie ustawień domyślnych urządzenia za pomocą interfejsu Ustawienia, aby ponownie zainstalować bieżący obraz.\
+> "Reflash" oznacza, że urządzenie jest podłączone do komputera i ma zostać zainstalowany nowy obraz (opcjonalnie inny).
 
-W pewnych okolicznościach może być trzeba ręcznie zresetować urządzenie bez korzystania z interfejsu użytkownika oprogramowania.
+## <a name="restart-the-device"></a>Uruchom ponownie urządzenie
 
-### <a name="standard-procedure"></a>Standardowa procedura
+W pewnych okolicznościach może być konieczne ręczne ponowne uruchomienie urządzenia bez korzystania z interfejsu użytkownika oprogramowania. Może to pomóc w rozwiązaniu napotkanych problemów bez konieczności resetowania/zmiany ukośnika urządzenia.
+
+### <a name="standard-restart-procedure"></a>Standardowa procedura ponownego uruchamiania
 
 1. Odłącz kabel typu C, aby odłączyć urządzenie od zasilacza lub komputera hosta.
 
@@ -59,11 +65,11 @@ W pewnych okolicznościach może być trzeba ręcznie zresetować urządzenie be
 
 3. Poczekaj 2–3 sekundy, a następnie naciśnij krótko **przycisk** zasilania. Dioda LED w pobliżu przycisku zasilania zostanie zasysysana, a urządzenie zacznie się uruchamiać.
 
-4. Połączenie na komputerze hosta, a następnie otwórz Menedżer urządzeń. (Aby Windows 10, naciśnij klawisz **Windows** a następnie **klawisz X,** a następnie wybierz **pozycję Menedżer urządzeń).** Upewnij się, że urządzenie jest prawidłowo wyliczane *Microsoft HoloLens* jak pokazano na poniższej ilustracji:
+4. Połączenie na komputerze hosta, a następnie otwórz Menedżer urządzeń. (Aby Windows 10, naciśnij **klawisz Windows** klawisz **X,** a następnie wybierz pozycję **Menedżer urządzeń).** Upewnij się, że urządzenie jest poprawnie wyliczane *Microsoft HoloLens* jak pokazano na poniższej ilustracji:
 
    ![HoloLens 2 MicrosoftLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>Procedura resetowania na twardym dysku
+### <a name="hard-restart-procedure"></a>Procedura ponownego uruchamiania na twardym dysku
 
 Jeśli standardowa procedura resetowania nie zadziałała, użyj procedury resetowania na dysku twardym:
 
@@ -71,11 +77,11 @@ Jeśli standardowa procedura resetowania nie zadziałała, użyj procedury reset
 
 1. Przytrzymaj w dół **przyciski zasilania** głośności przez  +   15 sekund. Urządzenie zostanie automatycznie uruchomione ponownie.
 
-1. Połączenie urządzenie do komputera-hosta.
+1. Połączenie urządzenie do komputera hosta.
 
-1. Otwórz Menedżer urządzeń (na Windows 10 naciśnij klawisz **Windows, a** następnie **klawisz X,** a następnie wybierz pozycję **Menedżer urządzeń**). Upewnij się, że urządzenie jest prawidłowo wyliczane *Microsoft HoloLens* jak pokazano na poniższej ilustracji:
+1. Otwórz Menedżer urządzeń (w Windows 10 naciśnij klawisz **Windows,** a następnie **klawisz X,** a następnie wybierz pozycję **Menedżer urządzeń**). Upewnij się, że urządzenie jest poprawnie wyliczane *Microsoft HoloLens* jak pokazano na poniższej ilustracji:
 
-   ![HoloLens 2 MicrosoftDukoLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 Microsoft BluetoothLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>Czyszczenie i reflash urządzenia
 
@@ -87,7 +93,7 @@ W wyjątkowych sytuacjach może być trzeba "oczyścić flash" HoloLens 2. Nale�
 - [Przegrzanie](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - Awarie systemu operacyjnego (różniące się od awarii aplikacji)
 
-Istnieją dwa sposoby reflash urządzenia. W obu przypadkach należy najpierw zainstalować [program Advanced Recovery Companion ze sklepu Windows Store.](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+Istnieją dwa sposoby reflash urządzenia. W obu przypadkach należy najpierw zainstalować program [Advanced Recovery Companion ze sklepu Windows Store.](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 
 >[!WARNING]
 >W przypadku zmiany ukośnika urządzenia wszystkie dane osobowe, aplikacje i ustawienia zostaną usunięte, w tym informacje dotyczące resetowania modułu TPM.
@@ -98,7 +104,7 @@ Przed rozpoczęciem procedury reflash upewnij się, że aplikacja jest zainstalo
 
 ![HoloLens zrzut ekranu z 2 czystymi ukośnikiem odwrotnym.](images/ARC1.png)
 
-### <a name="normal-procedure"></a>Normalna procedura
+### <a name="normal-flashing-procedure"></a>Normalna procedura flashowania
 
 1. Gdy urządzenie HoloLens jest uruchomione, połącz je z komputerem Windows 10, na którym wcześniej otwarto aplikację Advanced Recovery Companion.
 
@@ -106,9 +112,9 @@ Przed rozpoczęciem procedury reflash upewnij się, że aplikacja jest zainstalo
 
    ![HoloLens 2 wyczyść początkowy ekran reflash.](images/ARC2.png)
 
-1. Wybierz urządzenie HoloLens 2 w interfejsie użytkownika aplikacji Pomocnik odzyskiwania zaawansowanego, a następnie postępuj zgodnie z instrukcjami, aby ukończyć reflash.
+1. Wybierz urządzenie HoloLens 2 w interfejsie użytkownika aplikacji pomocnika odzyskiwania zaawansowanego, a następnie postępuj zgodnie z instrukcjami, aby ukończyć reflash.
 
-### <a name="manual-procedure"></a>Procedura ręczna
+### <a name="manual-flashing-mode-procedure"></a>Procedura ręcznego trybu flashowania
 
 Może być konieczne przełoczenie urządzenia w tryb odzyskiwania, jeśli:
 
@@ -142,11 +148,11 @@ Może być konieczne przełoczenie urządzenia w tryb odzyskiwania, jeśli:
 
 1. Jeśli urządzenie nie jest wyświetlane jako urządzenie HoloLens/HoloLens Recovery w obszarze Sterowniki uniwersalnej magistrali szeregowej, sprawdź:
     1. **Porty** jako urządzenie Hs-USB
-    1. **Inne urządzenia**— jako QUSB_BULK — komputer hosta nie ma sterowników niezbędnych do wykrywania HoloLens. Kliknij prawym przyciskiem myszy i wybierz polecenie Aktualizuj sterownik i wyszukaj sterowniki w trybie online lub zaznacz pole wyboru Aktualizacje opcjonalne Windows [ustawienia aktualizacji.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674) Po pobraniu sterownika usługa ARC powinna być w stanie go wykryć.
+    1. **Inne urządzenia**— jako QUSB_BULK — komputer hosta nie ma sterowników niezbędnych do wykrywania HoloLens. Kliknij prawym przyciskiem myszy i wybierz polecenie Aktualizuj sterownik i wyszukaj sterowniki w trybie online lub zaznacz pole wyboru Aktualizacje opcjonalne [Windows ustawienia aktualizacji.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674) Po pobraniu sterownika usługa ARC powinna być w stanie go wykryć.
 
 1. Jeśli usługa ARC nie wykryje urządzenia, upewnij się, że możesz nawiązać połączenie z urządzeniem za pośrednictwem Eksplorator plików na komputerze. Jeśli nie możesz;
 
-    1. Urządzenie może mieć zasady USB, które wyłączą to połączenie. Jeśli tak, spróbuj [użyć trybu ręcznego flashowania.](hololens-recovery.md#manual-procedure)
+    1. Urządzenie może mieć zasady USB, które wyłączą to połączenie. Jeśli tak, spróbuj [użyć trybu ręcznego flashowania.](hololens-recovery.md#manual-flashing-mode-procedure)
     2. Jeśli nie ma żadnych zasad, wypróbuj inny kabel USB.
 
 1. Sprawdź, czy na urządzeniu nie jest wyświetlany wzorzec [led 1-3-5.](hololens2-setup.md#lights-to-indicate-problems)

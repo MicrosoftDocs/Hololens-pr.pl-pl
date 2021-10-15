@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemy, usterka, rozwiązywanie problemów, poprawka, pomoc, pomoc, HoloLens, emulator
-ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964568"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034199"
 ---
 # <a name="device-troubleshooting"></a>Rozwiązywanie problemów z urządzeniami
 
@@ -88,32 +88,32 @@ Wymaganie wstępne: klienci mogą Microsoft Edge, a system operacyjny urządzeni
 Jeśli ten problem występuje, spróbuj wykonać jedną z następujących czynności:
 
 - Użytkownicy mogą bezpośrednio uzyskać OneDrive do aplikacji Microsoft Edge i korzystać z plików w witrynie internetowej z przeglądarki.
-- Użytkownicy mogą zainstalować aplikację OneDrive PWA, aby HoloLens, pobierając ją z Microsoft Edge. Umożliwi to użytkownikom wyświetlanie plików na urządzeniu i zarządzanie nimi ponownie. Przeczytaj i postępuj zgodnie z [tymi instrukcjami dotyczącymi instalowania OneDrive PWA aplikacji na HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+- Użytkownicy mogą zainstalować aplikację OneDrive PWA, aby HoloLens, pobierając ją z Microsoft Edge. Umożliwi to użytkownikom wyświetlanie plików na urządzeniu i zarządzanie nimi ponownie. Przeczytaj te instrukcje [dotyczące instalowania aplikacji OneDrive PWA na komputerze HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
 
 [Powrót do listy](#list)
 
 ## <a name="why-do-i-see-0x80180014-during-autopilot"></a>Dlaczego widzę informacje 0x80180014 funkcji Autopilot?
 
-Ten błąd występuje zwykle podczas resetowania urządzenia i ponownego używania przepływów, w których urządzenie HoloLens zostało co najmniej raz za pośrednictwem rozwiązania Autopilot. Aby rozwiązać ten problem, usuń urządzenie z programu [Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) i zresetuj je ponownie, aby ukończyć przepływ rozwiązania Autopilot.
+Ten błąd występuje zwykle podczas resetowania urządzenia i ponownego używania przepływów, w których urządzenie HoloLens co najmniej raz za pośrednictwem rozwiązania Autopilot. Aby rozwiązać ten problem, usuń urządzenie z Microsoft Intune [i](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) zresetuj je ponownie, aby ukończyć przepływ rozwiązania Autopilot.
 
 Aby uzyskać więcej informacji, zapoznaj się z [krokami rozwiązywania problemów na stronie rozwiązania Autopilot.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
 
 ## <a name="microsoft-store-error-code-0x80131500"></a>Microsoft Store kod błędu 0x80131500
 
-Niektórzy użytkownicy mogą doświadczyć, Microsoft Store nie działają zgodnie z oczekiwaniami i widzą kod błędu 0x80131500. Jest to problem spowodowany tym, że region ustawiony na stronie HoloLens niedostępny w aplikacji Microsoft Store na HoloLens. Jeśli wystąpi błąd z kodem 0x80131500, aby obejść ten problem:
+Niektórzy użytkownicy mogą mieć Microsoft Store, że nie działają zgodnie z oczekiwaniami, i zobaczą kod błędu 0x80131500. Jest to problem spowodowany tym, że region ustawiony na stronie HoloLens jest niedostępny w aplikacji Microsoft Store na HoloLens. Jeśli wystąpi błąd z kodem 0x80131500, aby obejść ten problem:
 
-1. Dla Ustawienia > Time & Language > Region > Country or region (Kraj lub region) ustaw jedną z następujących czynności:
+1. Ustaw Ustawienia > Time & Language > Region > Country or region (Kraj lub region) na jedną z następujących czynności:
     - Stany Zjednoczone, Japonia, Chiny, Niemcy, Kanada, Zjednoczone Królestwo, Irlandia, Francja, Australia, Nowa Zelandia.
 1. Uruchom ponownie aplikację ze Sklepu.
 1. Aby zmiana odzwierciedliła zmianę dla całego urządzenia, konieczne będzie jego ponowne uruchomienie.
 
-Zespół HoloLens pracuje nad dodaniem obsługi większej liczby regionów.
+Zespół HoloLens pracuje nad dodaniem obsługi kolejnych regionów.
 
 Zobacz [tutaj, aby uzyskać informacje o krajach, w HoloLens 2.](hololens2-purchase.md)
 
 ## <a name="microsoft-edge-fails-to-start-the-microphone"></a>Microsoft Edge nie można uruchomić mikrofonu
 
-Gdy użytkownicy używający Microsoft Edge mogą nie uruchomić mikrofonu, w związku z tym interakcja z usługą Edge w programie HoloLens może się nie HoloLens. Ten znany problem jest związany z wersją aplikacji Microsoft Edge, nie należy przekłaniać urządzenia do starszej wersji, ponieważ nie rozwiąże to tego problemu.
+Jeśli użytkownicy używający Microsoft Edge mikrofonu mogą nie uruchomić się, w związku z tym interakcja z usługą Edge w aplikacji HoloLens nie będzie HoloLens. Ten znany problem jest związany z wersją aplikacji Microsoft Edge, nie przekłań urządzenia do starszej wersji, ponieważ nie rozwiąże to tego problemu.
 
 ### <a name="who-is-affected"></a>KtoTo problem?
 
@@ -140,7 +140,7 @@ Jeśli nie możesz zaktualizować usługi Remote Assist do nowszej kompilacji, s
 
 #### <a name="restart-in-between-calls"></a>Uruchom ponownie między wywołaniami
 
-Jeśli połączenia będą trwać ponad 20 minut i występuje ten problem, spróbuj ponownie uruchomić urządzenie. Ponowne uruchomienie urządzenia między wywołaniami usługi Remote Assist spowoduje odświeżenie urządzenia i jego ponowne uruchomienie w dobrym stanie.
+Jeśli połączenia trwają ponad 20 minut i występuje ten problem, spróbuj ponownie uruchomić urządzenie. Ponowne uruchomienie urządzenia między wywołaniami usługi Remote Assist spowoduje odświeżenie urządzenia i jego ponowne uruchomienie w dobrym stanie.
 
 Aby szybko ponownie uruchomić urządzenie na platformie Windows Holographic, w wersji [21H1](hololens-release-notes.md#windows-holographic-version-21h1) otwórz menu Start i wybierz ikonę użytkownika, a następnie wybierz pozycję **Uruchom ponownie.**
 
@@ -163,7 +163,7 @@ Nie powinno to mieć miejsca w trakcie:
 Pomiń metody:
 
 - Metody logowania, takie jak numer PIN, hasło, irys, uwierzytelnianie internetowe lub klucze FIDO2.
-- Jeśli nie można zapamiętać numeru PIN urządzenia i inne metody uwierzytelniania są niedostępne, użytkownik może użyć trybu [ręcznego reflashingu.](hololens-recovery.md#manual-procedure)
+- Jeśli nie można zapamiętać numeru PIN urządzenia i inne metody uwierzytelniania są niedostępne, użytkownik może użyć trybu [ręcznego reflashingu.](hololens-recovery.md#manual-flashing-mode-procedure)
 
 [Powrót do listy](#list)
 
@@ -262,7 +262,7 @@ Obejścia:
 Jeśli twój HoloLens nie zostanie uruchomić:
 
 - Jeśli diody LED obok przycisku zasilania nie zaczną się migać lub tylko jedna dioda LED miga, może być konieczne [HoloLens.](hololens2-charging.md#charging-the-device)
-- Jeśli diody LED są wyświetlane po naciśnięciu przycisku zasilania, ale na ekranie nie widać niczego, wykonaj twarde [resetowanie urządzenia.](hololens-recovery.md#hard-reset-procedure)
+- Jeśli diody LED są wyświetlane po naciśnięciu przycisku zasilania, ale na ekranie nie widać niczego, wykonaj twarde [resetowanie urządzenia.](hololens-recovery.md#hard-restart-procedure)
 
 Jeśli twoja HoloLens jest zamrożona lub nie odpowiada:
 
@@ -285,27 +285,27 @@ Konieczne będzie wolne miejsce do magazynowania, wykonując jedną lub więcej 
 
 ## <a name="calibration-fails"></a>Niepowodzenie awarii
 
-Większość osób powinna pracować, ale istnieją przypadki, w których nie powiedzie się to.
+Większość osób powinna pracować, ale istnieją przypadki, w których niepowodzeniem.
   
 Niektóre potencjalne przyczyny niepowodzenia awarii to:
 
-- Rozpraszanie uwagi i niesąsiadowanie po docelowych celach
-- Zanieczyszczona lub porysowana osłona urządzenia lub urządzenie nie jest prawidłowo pozycjonowane
+- Rozpraszanie uwagi i niesąsiadowanie po celach docelowych
+- Zanieczyszczona lub zadrzewiona osłona urządzenia lub urządzenie nie jest prawidłowo pozycjonowane
 - Zanieczyszczone lub porysowane okulary
-- Niektóre typy obiektywów i okularów kontaktowych (kolorowe obiektywy kontaktowe, niektóre torysowe obiektywy kontaktowe, okulary blokujące ireń, niektóre okulary przeciwsłoneczne, okulary przeciwsłoneczne lub podobne)
+- Niektóre typy obiektywów i okularów kontaktowych (kolorowe obiektywy kontaktowe, niektóre toryczne obiektywy kontaktowe, okulary blokujące ir IR, niektóre okulary przeciwsłoneczne, okulary przeciwsłoneczne lub podobne)
 - Bardziej wymawiane nagie i niektóre rozszerzenia ukośników
 - Zarost lub grube ramki okularów, jeśli blokują one wzrok urządzenia
-- Niektóre fizjologia, warunki oczu lub operacje oczu, takie jak wąskie oczy, długie ukośniki, amblyopia, nystagmus, niektóre przypadki lasik lub inne operacje oczu
+- Niektóre fizjologia, warunki wzrokowe lub operacje oczu, takie jak wąskie oczy, długie ukośniki, amblyopia, nystagmus, niektóre przypadki LASIK lub inne operacje skoków oczu
 
 Jeśli próba nie powiedzie się, spróbuj:
 
-- Czyszczenie urządzenia
+- Czyszczenie aplikacji do czyszczenia urządzenia
 - Czyszczenie okularów
-- Wypychanie wizjora urządzenia tak blisko oczu, jak to możliwe
-- Przenoszenie obiektów w ośledla poza drogę (takich jak zarost)
-- Włączanie światła w pomieszczeniu lub wyprowadzanie się z bezpośredniego światła
+- Wypychanie wizjonera urządzenia tak blisko oczu, jak to możliwe
+- Przenoszenie obiektów w osłodę poza drogę (na przykład zarostu)
+- Włączanie światła w pomieszczeniu lub wyprowadzanie bezpośredniego światła
 
-Jeśli wszystkie wytyczne i zalecenia nadal się nie pokajają, można wyłączyć monit o Ustawienia. Daj nam znać, składając opinię na stronie [Centrum opinii](hololens-feedback.md).
+Jeśli wszystkie wytyczne są nadal nieudane, można wyłączyć monit o monit o Ustawienia. Daj nam znać, klikając opinię w [Centrum opinii](hololens-feedback.md).
 
 Zobacz również powiązane informacje dotyczące [rozwiązywania problemów z kolorem obrazu lub jasność.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
@@ -313,7 +313,7 @@ Ustawienie adresu IPD nie ma zastosowania HoloLens 2, ponieważ pozycje oka są 
 
 [Powrót do listy](#list)
 
-## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>Nie można się zalogować, ponieważ moja HoloLens wcześniej została ustawiona dla kogoś innego
+## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>Nie można się zalogować, ponieważ HoloLens wcześniej została ustawiona dla kogoś innego
 
 Możesz [przełożyć urządzenie w tryb **flashowania i**](hololens-recovery.md#clean-reflash-the-device) użyć narzędzia Advanced Recovery Companion w celu odzyskania urządzenia.
 
@@ -322,16 +322,16 @@ Możesz [przełożyć urządzenie w tryb **flashowania i**](hololens-recovery.md
 
 ## <a name="unity-isnt-working"></a>Unity nie działa
 
-- Zobacz [Install the tools for](/windows/mixed-reality/install-the-tools) the most-to-date version of Unity recommended for HoloLens development (Instalowanie narzędzi dla najbardziej aktualnej wersji aparatu Unity zalecanej do HoloLens projektowania).
+- Zobacz [Instalowanie narzędzi dla](/windows/mixed-reality/install-the-tools) najbardziej aktualnej wersji aparatu Unity zalecanej do HoloLens projektowania.
 - Znane problemy z platformą Unity HoloLens Technical Preview są udokumentowane na [forach HoloLens Unity.](https://forum.unity3d.com/threads/known-issues.394627/)
 
 [Powrót do listy](#list)
 
 ## <a name="windows-device-portal-isnt-working-correctly"></a>Windows Portal urządzeń nie działa prawidłowo
 
-- Funkcja podglądu na żywo w Mixed Reality przechwytywania danych może mieć kilka sekund opóźnienia.
+- Funkcja podglądu na żywo w Mixed Reality przechwytywania danych może mieć opóźnienie kilku sekund.
 
-- Na stronie Wirtualne dane wejściowe kontrolki Gest i Przewiń w sekcji Gesty wirtualne nie działają. Ich użycie nie będzie mieć żadnego efektu. Klawiatura wirtualna na wirtualnej stronie wejściowej działa poprawnie.
+- Na stronie Wirtualne dane wejściowe kontrolki Gest i Przewiń w sekcji Gesty wirtualne nie działają. Ich użycie nie będzie mieć żadnego efektu. Klawiatura wirtualna na stronie wirtualnych danych wejściowych działa poprawnie.
 
 - Po włączeniu trybu dewelopera w Ustawienia Portal urządzeń może mieć kilka sekund, zanim przełącznik zostanie włączony.
 
@@ -342,44 +342,44 @@ Możesz [przełożyć urządzenie w tryb **flashowania i**](hololens-recovery.md
 Informacje o emulatorze HoloLens znajdują się w naszej dokumentacji dla deweloperów.  Przeczytaj więcej na [temat rozwiązywania problemów z HoloLens emulatorem.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)
 
 
-- Nie wszystkie aplikacje w Microsoft Store są zgodne z emulatorem. Na przykład w emulatorze nie można odtwarzać fragmentów i Young Conker.
+- Nie wszystkie aplikacje w Microsoft Store są zgodne z emulatorem. Na przykład w emulatorze nie można odtwarzać fragmentów Ani Younga Conkera.
 - Nie można używać kamery internetowej komputera w Emulator.
-- Funkcja podglądu na żywo Windows Portal urządzeń nie działa z emulatorem. Nadal możesz przechwytywać Mixed Reality wideo i obrazy.
+- Funkcja podglądu na żywo Windows Portal urządzeń nie działa z emulatorem. Nadal można przechwytywać Mixed Reality wideo i obrazy.
 
 [Powrót do listy](#list)
 
 ## <a name="voice-commands-arent-working"></a>Polecenia głosowe nie działają
 
-Jeśli Cortana nie odpowiada na polecenia głosowe, upewnij się, że Cortana włączona. Na liście Wszystkie aplikacje wybierz **pozycję** Cortana  >  **Menu**  >  **Ustawienia,** aby wprowadzić  >   zmiany. Aby dowiedzieć się więcej na temat tego, co możesz powiedzieć, zobacz Używanie głosu [z HoloLens.](hololens-cortana.md)
+Jeśli Cortana nie odpowiada na polecenia głosowe, upewnij się, że Cortana włączona. Na liście Wszystkie aplikacje wybierz pozycję **Cortana**  >  **Menu**  >  **Ustawienia,**  >   aby wprowadzić zmiany. Aby dowiedzieć się więcej na temat tego, co możesz powiedzieć, zobacz Używanie głosu [z HoloLens](hololens-cortana.md).
 
-Na HoloLens (1. generacji) wbudowanej funkcji rozpoznawania mowy nie można skonfigurować. Jest ona zawsze włączona. Na HoloLens 2 można wybrać, czy włączyć zarówno rozpoznawanie mowy, jak i Cortana podczas konfigurowania urządzenia.
+Na HoloLens (1. generacji) wbudowanej funkcji rozpoznawania mowy nie można skonfigurować. Jest ona zawsze włączona. Na HoloLens 2 możesz wybrać, czy włączyć zarówno rozpoznawanie mowy, jak i Cortana podczas konfigurowania urządzenia.
 
-Jeśli twój HoloLens 2 nie odpowiada na Twój głos, upewnij się, że funkcja rozpoznawania mowy jest włączona. Przejdź do  >  **tematu Start Ustawienia**  >  **Privacy**  >  **Speech** i włącz **rozpoznawanie mowy.**
+Jeśli urządzenie HoloLens 2 nie odpowiada na Twój głos, upewnij się, że funkcja rozpoznawania mowy jest włączona. Przejdź do **tematu**  >  **Start Ustawienia**  >  **privacy**  >  **speech** i włącz rozpoznawanie **mowy.**
 
 [Powrót do listy](#list)
 
 ## <a name="hand-input-isnt-working"></a>Ręczne wprowadzanie danych nie działa
 
-Aby upewnić się HoloLens, że twoje ręce są w stanie zobaczyć, musisz je zachować w ramce gestu.  Strona Mixed Reality home udostępnia opinię, która informuje o tym, kiedy twoje ręce są śledzone.  Opinie są inne w różnych wersjach HoloLens:
+Aby upewnić się HoloLens, że twoje ręce będą widać, musisz zachować je w ramce gestu.  Strona Mixed Reality Home udostępnia opinię, która informuje o tym, kiedy są śledzone twoje ręce.  Opinie są inne w różnych wersjach HoloLens:
 
 - Na HoloLens (1. generacja) kursor spojrzenia zmienia się z kropki na pierścień
-- Na HoloLens 2, gdy ręka znajduje się blisko planszy, pojawia się kursor w zasięgu ręki, a promienia ręki, gdy plansze znajdują się dalej
+- Na HoloLens 2, gdy ręka jest blisko planszy, pojawia się kursor w zasięgu ręki, a promienia ręki, gdy plansze są dalej
 
-Wiele aplikacji immersywnych ma wzorce wejściowe podobne do Mixed Reality Home.  Dowiedz się więcej na temat korzystania z danych wejściowych HoloLens [(1. generacji)](hololens1-basic-usage.md#use-hololens-with-your-hands) i [HoloLens 2.](hololens2-basic-usage.md#the-hand-tracking-frame)
+Wiele aplikacji immersywnych ma wzorce wejściowe podobne do Mixed Reality Home.  Dowiedz się więcej na temat korzystania z danych wejściowych HoloLens [(1. generacja)](hololens1-basic-usage.md#use-hololens-with-your-hands) [i HoloLens 2.](hololens2-basic-usage.md#the-hand-tracking-frame)
 
-Pamiętaj, że niektóre typy jeńcowe nie działają ze śledzeniem rąk.  Częstym przykładem są czarne gumy, które zwykle absorbują światło podczerwone i nie są odbierane przez kamerę głębi.  Jeśli Twoja praca obejmuje gumowe uchwyty, zalecamy wypróbowanie jaśniejszego koloru, takiego jak niebieski lub szary.  Innym przykładem są duże baggie podniebienia, które zwykle przesłaniają kształt ręki. Zalecamy używanie tak dopasowanych do formularzy, jak to tylko możliwe, aby uzyskać najlepsze wyniki.
+Należy pamiętać, że niektóre typy iniekcj nie działają w przypadku śledzenia rąk.  Powszechnym przykładem są czarne gumy, które zwykle absorbują światło podczerwone i nie są odbierane przez kamerę z głębokością.  Jeśli Twoja praca wiąże się z gumką, zalecamy wypróbowanie jaśniejszego koloru, takiego jak niebieski lub szary.  Innym przykładem są duże baggy nagie, które zwykle przesłaniają kształt ręki. Zalecamy używanie tak dopasowanych do formularzy, jak to tylko możliwe, aby uzyskać najlepsze wyniki.
 
-Jeśli twoje danie ma odciski palców lub smekty, użyj mikrofibry czyszczącej, która została HoloLens, aby wyczyścić ją.
+Jeśli twoje urządzenie ma odciski palców lub smekty, użyj mikrofibry czyszczącej, która została HoloLens, aby wyczyścić ją.
 
 [Powrót do listy](#list)
 
 ## <a name="cant-connect-to-wi-fi"></a>Nie można nawiązać połączenia z Wi-Fi
 
-Oto kilka rzeczy, które należy wypróbować, jeśli nie można połączyć HoloLens z Wi-Fi siecią:
+Oto kilka rzeczy, które należy wypróbować, jeśli nie można połączyć sieci HoloLens z Wi-Fi siecią:
 
-- Upewnij się, Wi-Fi jest włączona. Aby to sprawdzić, użyj gestu Uruchom, a następnie wybierz pozycję **Ustawienia**  >  **Sieci &amp;**  >  **Wi-Fi.** Jeśli Wi-Fi jest wł., spróbuj go wyłączyć, a następnie ponownie wł.
+- Upewnij się, Wi-Fi jest włączona. Aby to sprawdzić, użyj gestu Start, a następnie wybierz **Ustawienia**  >  **Sieci &amp;**  >  **Wi-Fi.** Jeśli Wi-Fi jest wł., spróbuj wyłączyć ją, a następnie ponownie wł.
 - Umieść komputer bliżej routera lub punktu dostępu.
-- Uruchom ponownie router Wi-Fi, a następnie [uruchom ponownie HoloLens](hololens-recovery.md). Spróbuj ponownie nawiązać połączenie.
+- Uruchom ponownie Wi-Fi, a następnie [uruchom ponownie HoloLens](hololens-recovery.md). Spróbuj ponownie nawiązać połączenie.
 - Jeśli żadna z tych czynności nie działa, upewnij się, że router korzysta z najnowszego oprogramowania układowego. Te informacje można znaleźć w witrynie internetowej producenta.
 
 [Powrót do listy](#list)
@@ -396,13 +396,13 @@ Jeśli masz problemy z [parowaniem urządzenia Bluetooth,](hololens-connect-devi
 
 ## <a name="usb-c-microphone-isnt-working"></a>Mikrofon USB-C nie działa
 
-Należy pamiętać, że niektóre mikrofony USB-C nieprawidłowo zgłaszają się jako mikrofon *i prelegent.* Jest to problem z mikrofonem, a nie z HoloLens. Podczas podłączania jednego z tych mikrofonów do HoloLens może zostać utracony dźwięk. Na szczęście istnieje prosta poprawka.  
+Należy pamiętać, że niektóre mikrofony USB-C nieprawidłowo zgłaszają się jako mikrofon i *prelegent.* Jest to problem z mikrofonem, a nie z HoloLens. Podczas podłączania jednego z tych mikrofonów do HoloLens, dźwięk może zostać utracony. Na szczęście istnieje prosta poprawka.  
 
-W **Ustawienia** System Sound jawnie ustaw wbudowane osoby mówiące (sterownik audio funkcji  ->    ->   **analogicznej)** jako **domyślne urządzenie**. HoloLens zapamiętać to ustawienie, nawet jeśli mikrofon zostanie później usunięty i ponownie nawiązyny połączenie.
+W **Ustawienia**  ->  **System**  ->  **Sound** jawnie ustaw wbudowane osoby mówiące **(sterownik audio** funkcji analogicznej) jako domyślne urządzenie . HoloLens zapamiętać to ustawienie, nawet jeśli mikrofon zostanie później usunięty i ponownie nawiązyny połączenie.
 
 ![Rozwiązywanie problemów z mikrofonami USB-C.](images/usbc-mic-4.png)
 
-## <a name="devices-listed-as-available-in-settings-dont-work"></a>Urządzenia wymienione jako dostępne w Ustawienia nie działają
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>Urządzenia wymienione jako dostępne Ustawienia nie działają
 
 HoloLens (1. generacji) nie obsługuje profilów Bluetooth audio. Bluetooth audio, takie jak głośniki i zestawy nagłowne, mogą być wyświetlane jako dostępne w HoloLens, ale nie są obsługiwane.
 
