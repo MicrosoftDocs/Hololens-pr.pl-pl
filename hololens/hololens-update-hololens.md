@@ -1,6 +1,6 @@
 ---
 title: Aktualizacja HoloLens 2
-description: Dowiedz się, jak sprawdzić HoloLens kompilacji, być na bieżąco z aktualizacjami urządzeń, dołączyć do programu dla niejawnych testerów i wycofać aktualizacje.
+description: Dowiedz się, jak sprawdzić numer HoloLens kompilacji, być na bieżąco z aktualizacjami urządzeń, dołączyć do programu dla niejawnych testerów i wycofać aktualizacje.
 keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
 ms.sitesec: library
@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034267"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151696"
 ---
 # <a name="update-hololens-2"></a>Aktualizacja HoloLens 2
 
@@ -27,11 +27,11 @@ ms.locfileid: "130034267"
 
 Zawsze pracujemy nad nowymi funkcjami, poprawkami błędów i aktualizacjami zabezpieczeń. Otrzymasz powiadomienie, gdy te aktualizacje będą gotowe.
 
-Zgodnie z preferencjami urządzenie HoloLens automatycznie pobierać i instalować aktualizacje systemu za każdym razem, gdy jest ona podłączona do zasilania, połączona z Internetem, a nawet w stanie wstrzymania.
+Zgodnie z preferencjami urządzenie HoloLens automatycznie pobierać i instalować aktualizacje systemu za każdym razem, gdy jest podłączony do zasilania, połączony z Internetem, a nawet w stanie wstrzymania.
 
-Aby upewnić się, HoloLens jest zawsze aktualizowana, pozostaw ją podłączaną z odjemną odejściem od niego. Chcesz również, aby HoloLens z Internetem. W ten sposób program automatycznie pobierze i zainstaluje aktualizacje systemu. 
+Aby upewnić się, HoloLens jest zawsze aktualizowana, pozostaw ją podłączaną do komputera z jego urządzeniem. Chcesz również, aby HoloLens z Internetem. W ten sposób program automatycznie pobierze i zainstaluje aktualizacje systemu. 
 
-Dzięki Windows Update Service będziesz kontrolować wiele aspektów procesu aktualizacji, takich jak to, które urządzenia mogą uzyskać aktualizacje o każdej godzinie. Ta kontrolka jest przydatna, ponieważ w celu testowania można HoloLens aktualizacji do podzbioru urządzeń. Następnie wdaj aktualizacje dla pozostałych. Można również zdefiniować różne harmonogramy aktualizacji dla różnych typów aktualizacji.
+Dzięki Windows Update service będziesz kontrolować wiele aspektów procesu aktualizacji, takich jak to, które urządzenia mogą pobrać aktualizacje o każdej godzinie. Ta kontrolka jest przydatna, ponieważ w celu testowania można HoloLens w podzestawie urządzeń. Następnie wdaj aktualizacje dla pozostałych. Można również zdefiniować różne harmonogramy aktualizacji dla różnych typów aktualizacji.
 
 ## <a name="types-of-updates"></a>Typy aktualizacji
 
@@ -44,11 +44,11 @@ Użyj **funkcji Update** / **AllowAutoUpdate,** aby zarządzać skanowaniem, pob
 
 ## <a name="scheduling-updates"></a>Planowanie aktualizacji
 
-Można również ustawić harmonogram aktualizacji. Może to być określony dzień lub codziennie o określonej godzinie. Na przykład o godzinie 17:00 lub poza godzinami aktywności.
+Można również ustawić harmonogram aktualizacji. Może to być określony dzień lub dzień o określonej godzinie. Na przykład o godzinie 17:00 lub poza godzinami aktywności.
 
 Na koniec kilka słów na temat planowania strategii aktualizacji. Obsługujemy odroczenia aktualizacji, dzięki czemu możesz zdecydować, jak długo czekać po wydaniu aktualizacji przez firmę Microsoft w celu zainstalowania tej aktualizacji na urządzeniach.
 
-Czasami firma lubi najpierw wypróbować wszystkie nowe funkcje, aby upewnić się, że wszystko działa, i zna nowe aktualizacje, aby przygotować zespół pomocy technicznej. Po potwierdzeniu, że wszystko jest dobre, wdają aktualizacje w całej firmie. Kojarząc podzestawy urządzeń z różnymi zasadami odroczenia, znanymi jako pierścienie aktualizacji, można skoordynować strategię aktualizacji w organizacji.
+Czasami firma lubi najpierw wypróbować wszystkie nowe funkcje, aby upewnić się, że wszystko działa, i zna nowe aktualizacje, aby przygotować zespół pomocy technicznej. Po potwierdzeniu, że wszystko jest dobre, wdają aktualizacje w całej firmie. Kojarząc podzestawy urządzeń z różnymi zasadami odroczenia, znanymi jako pierścienie aktualizacji, można skoordynować strategię aktualizacji dla organizacji.
 
 ## <a name="hololens-update-tools"></a>HoloLens narzędzi aktualizacji
 
@@ -75,7 +75,7 @@ HoloLens stosuje po jednej aktualizacji na raz.  Jeśli twoja HoloLens jest wię
 
 ### <a name="check-your-operating-system-version-build-number"></a>Sprawdź wersję systemu operacyjnego (numer kompilacji)
 
-Numer wersji systemu (numer kompilacji) można sprawdzić, otwierając Ustawienia **i** wybierz pozycję System About **(Informacje o**  >  **systemie).**
+Numer wersji systemu (numer kompilacji) można sprawdzić, **otwierając** Ustawienia i wybierz pozycję System About **(Informacje o**  >  **systemie).**
 
 ### <a name="go-back-to-a-previous-version"></a>Wstecz do poprzedniej wersji
 
@@ -86,7 +86,11 @@ W niektórych przypadkach może być konieczne powrót do poprzedniej wersji Hol
     1. W [pliku opinii być](hololens-feedback.md) jak najbardziej opisowe. Zanotuj tytuł lub użyj funkcji udostępniania, aby udostępnić usterkę pomocy technicznej.
     1. Skontaktuj się z [pomocą techniczną.](https://aka.ms/hlsupport) Jeśli problem należy rozwiązać, wracając do poprzedniej wersji, może dostarczyć ci ffu do flashowania urządzenia.
 
-1. Jeśli to nie zadziała, [przekszlij HoloLens 2 za pomocą pomocnika odzyskiwania zaawansowanego.](hololens-recovery.md#clean-reflash-the-device)
+1. Alternatywnie można zmienić ukośnik HoloLens [2 za pomocą pomocnika odzyskiwania zaawansowanego.](hololens-recovery.md#clean-reflash-the-device)
+    1.  Wybierz wersję, w której chcesz flashować: 
+        1.  Możesz pobrać [najnowszą wersję HoloLens 2.](https://aka.ms/hololens2download)
+        1.  Można użyć domyślnej kompilacji hostów ARC.
+        1.  Możesz użyć dostarczonej pomocy technicznej kompilacji.
 
 > [!NOTE]
 > Powrót do wcześniejszej wersji powoduje usunięcie osobistych plików i ustawień.

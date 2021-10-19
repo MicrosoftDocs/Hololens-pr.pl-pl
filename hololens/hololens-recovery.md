@@ -1,13 +1,13 @@
 ---
-title: Ponowne uruchamianie, resetowanie lub odzyskiwanie HoloLens
+title: Ponowne uruchamianie, resetowanie lub odzyskiwanie HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Jak używać pomocnika odzyskiwania zaawansowanego, aby flashować obraz do HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034250"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151636"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Ponowne uruchamianie, resetowanie lub odzyskiwanie HoloLens 2
 
@@ -45,7 +45,7 @@ Jeśli urządzenie jest prawidłowo uruchomione, istnieją trzy sposoby sprawdza
 
    ![Ekran HoloLens 2 pokazuje poziom zmiany baterii.](images/ResetRecovery2.png)
 
-Jeśli urządzenie nie może uruchomić się w menu startowym, zwróć uwagę na wygląd diody LED i wyliczenie urządzenia na komputerze hosta. Następnie postępuj zgodnie z [przewodnikiem rozwiązywania problemów.](hololens-troubleshooting.md) Jeśli stan urządzenia nie pasuje do żadnego ze stanów wymienionych w przewodniku rozwiązywania problemów, wykonaj procedurę resetowania na czas z urządzeniem podłączonym do źródła zasilania, a nie z komputerem hosta. [](hololens-recovery.md#hard-restart-procedure) Zaczekaj co najmniej godzinę na obciążenie urządzenia.
+Jeśli urządzenie nie może uruchomić się w menu startowym, zwróć uwagę na wygląd diody LED i wyliczenie urządzenia na komputerze hosta. Następnie postępuj zgodnie z [przewodnikiem rozwiązywania problemów.](hololens-troubleshooting.md) Jeśli stan urządzenia nie pasuje do żadnego ze stanów wymienionych w przewodniku rozwiązywania problemów, wykonaj procedurę twardego ponownego uruchamiania z urządzeniem podłączonym do źródła zasilania, a nie z komputerem hosta. [](hololens-recovery.md#hard-restart-procedure) Zaczekaj co najmniej godzinę na obciążenie urządzenia.
 
 > [!NOTE]
 > Zacznijmy od zdefiniowania terminów.\
@@ -67,11 +67,11 @@ W pewnych okolicznościach może być konieczne ręczne ponowne uruchomienie urz
 
 4. Połączenie na komputerze hosta, a następnie otwórz Menedżer urządzeń. (Aby Windows 10, naciśnij **klawisz Windows** klawisz **X,** a następnie wybierz pozycję **Menedżer urządzeń).** Upewnij się, że urządzenie jest poprawnie wyliczane *Microsoft HoloLens* jak pokazano na poniższej ilustracji:
 
-   ![HoloLens 2 MicrosoftLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftLensRecovery device manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-restart-procedure"></a>Procedura ponownego uruchamiania na twardym dysku
 
-Jeśli standardowa procedura resetowania nie zadziałała, użyj procedury resetowania na dysku twardym:
+Jeśli standardowa procedura resetowania nie zadziałała, użyj procedury ponownego uruchamiania:
 
 1. Odłącz kabel typu C, aby odłączyć urządzenie od zasilacza lub komputera hosta.
 
@@ -79,9 +79,17 @@ Jeśli standardowa procedura resetowania nie zadziałała, użyj procedury reset
 
 1. Połączenie urządzenie do komputera hosta.
 
-1. Otwórz Menedżer urządzeń (w Windows 10 naciśnij klawisz **Windows,** a następnie **klawisz X,** a następnie wybierz pozycję **Menedżer urządzeń**). Upewnij się, że urządzenie jest poprawnie wyliczane *Microsoft HoloLens* jak pokazano na poniższej ilustracji:
+1. Otwórz Menedżer urządzeń (na Windows 10 naciśnij klawisz **Windows,** a następnie **klawisz X,** a następnie wybierz pozycję **Menedżer urządzeń**). Upewnij się, że urządzenie jest prawidłowo wyliczane *Microsoft HoloLens* jak pokazano na poniższej ilustracji:
 
-   ![HoloLens 2 Microsoft BluetoothLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftLensRecovery device manager 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>Resetowanie urządzenia
+
+Urządzenie można zresetować bezpośrednio z zestawu nagłownego. Wybierz **Ustawienia** pozycję , a następnie wybierz pozycję & **Security > Resetuj & odzyskiwania > zresetuj to urządzenie.**
+
+   ![HoloLens resetowania zestawu nagłownego.](images/headset-reset-recovery.png)
+
+Zresetowanie w ten sposób spowoduje usunięcie wszystkich kont użytkowników i usunięcie wszystkich danych.
 
 ## <a name="clean-reflash-the-device"></a>Czyszczenie i reflash urządzenia
 
@@ -93,7 +101,7 @@ W wyjątkowych sytuacjach może być trzeba "oczyścić flash" HoloLens 2. Nale�
 - [Przegrzanie](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - Awarie systemu operacyjnego (różniące się od awarii aplikacji)
 
-Istnieją dwa sposoby reflash urządzenia. W obu przypadkach należy najpierw zainstalować program [Advanced Recovery Companion ze sklepu Windows Store.](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+Istnieją dwa sposoby reflash urządzenia. W obu przypadkach należy najpierw zainstalować [program Advanced Recovery Companion ze sklepu Windows Store.](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 
 >[!WARNING]
 >W przypadku zmiany ukośnika urządzenia wszystkie dane osobowe, aplikacje i ustawienia zostaną usunięte, w tym informacje dotyczące resetowania modułu TPM.
@@ -110,11 +118,11 @@ Przed rozpoczęciem procedury reflash upewnij się, że aplikacja jest zainstalo
 
    Urządzenie zostanie wykryte automatycznie, a interfejs użytkownika aplikacji pomocnika odzyskiwania zaawansowanego rozpocznie proces aktualizacji:
 
-   ![HoloLens 2 wyczyść początkowy ekran reflash.](images/ARC2.png)
+   ![HoloLens ekranu początkowego czystego ukośnika odwrotnego.](images/ARC2.png)
 
-1. Wybierz urządzenie HoloLens 2 w interfejsie użytkownika aplikacji pomocnika odzyskiwania zaawansowanego, a następnie postępuj zgodnie z instrukcjami, aby ukończyć reflash.
+1. Wybierz urządzenie HoloLens 2 w interfejsie użytkownika aplikacji Pomocnik odzyskiwania zaawansowanego, a następnie postępuj zgodnie z instrukcjami, aby ukończyć reflash.
 
-### <a name="manual-flashing-mode-procedure"></a>Procedura ręcznego trybu flashowania
+### <a name="manual-flashing-mode-procedure"></a>Procedura ręcznego flashowania
 
 Może być konieczne przełoczenie urządzenia w tryb odzyskiwania, jeśli:
 
@@ -130,7 +138,7 @@ Może być konieczne przełoczenie urządzenia w tryb odzyskiwania, jeśli:
 
 4. Połączenie na komputerze hosta, a następnie otwórz Menedżer urządzeń. (Aby Windows 10 naciśnij **klawisz Windows,** a następnie **klawisz X,** a następnie wybierz **pozycję Menedżer urządzeń).** Upewnij się, że urządzenie jest prawidłowo wyliczane Microsoft HoloLens jak pokazano na poniższej ilustracji:
 
-   ![HoloLens 2 MicrosoftLensRecovery.](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2 Microsoft WszystkieLensRecovery.](images/MicrosoftHoloLensRecovery.png)
 
    Urządzenie zostanie wykryte automatycznie, a interfejs użytkownika aplikacji pomocnika odzyskiwania zaawansowanego rozpocznie proces aktualizacji:
 
@@ -140,7 +148,7 @@ Może być konieczne przełoczenie urządzenia w tryb odzyskiwania, jeśli:
 
 ## <a name="troubleshoot-advanced-recovery-companion"></a>Rozwiązywanie problemów z zaawansowaną pomocniką odzyskiwania
 
-1. Przed próbą flashowania urządzenia upewnij się, że opłata za urządzenie jest naliczana w wysokości co najmniej 40%.
+1. Przed próbą flashowania upewnij się, że opłata za urządzenie jest naliczana w wysokości co najmniej 40%.
 
 1. Sprawdź, czy urządzenie jest odblokowane.
 
@@ -159,7 +167,7 @@ Może być konieczne przełoczenie urządzenia w tryb odzyskiwania, jeśli:
 
 ## <a name="download-arc-without-using-the-app-store"></a>Pobieranie usługi ARC bez korzystania ze sklepu z aplikacjami
 
-Jeśli środowisko IT uniemożliwia korzystanie z aplikacji ze sklepu Windows Store lub ogranicza dostęp do sklepu detalicznego, administrator IT może udostępnić tę aplikację za pośrednictwem ścieżki wdrożenia "w trybie offline".
+Jeśli środowisko IT uniemożliwia korzystanie z aplikacji ze sklepu Windows Store lub ogranicza dostęp do sklepu detalicznego, administrator IT może udostępnić tę aplikację za pośrednictwem ścieżki wdrażania "w trybie offline".
 
  >[!NOTE]
  > - Administratorzy IT mogą również rozpowszechniać tę aplikację za pośrednictwem System Center Configuration Manager (SCCM) lub usługi Intune.
@@ -180,7 +188,7 @@ Wykonaj następujące kroki, aby włączyć ścieżkę wdrażania:
     - Jeśli na tym etapie komputer stacjonarny ma dostęp do Internetu, kliknij dwukrotnie pakiet, aby zainstalować aplikację.
 
     - Jeśli komputer docelowy nie ma łączności z Internetem, wykonaj następujące kroki:
-       1. Wybierz niezakodowana licencję, a następnie wybierz pozycję **Generuj licencję.**
+       1. Wybierz niekodowana licencję, a następnie wybierz pozycję **Generuj licencję.**
        2. W **obszarze Wymagane struktury wybierz** pozycję **Pobierz**.
        3. Użyj funkcji DISM, aby zastosować pakiet z zależnością i licencją. W wierszu polecenia administratora uruchom następujące polecenie:
 
@@ -188,7 +196,7 @@ Wykonaj następujące kroki, aby włączyć ścieżkę wdrażania:
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
           > [!NOTE]
-          > Numer wersji w tym przykładzie kodu może nie odpowiadać obecnie dostępnej wersji. Być może wybrano również inną lokalizację pobierania niż w przykładzie. W razie potrzeby wprowadzaj zmiany w poleceniu.
+          > Numer wersji w tym przykładzie kodu może nie odpowiadać obecnie dostępnej wersji. Być może wybrano również inną lokalizację pobierania niż w przykładzie. W razie potrzeby należy wprowadzić zmiany w poleceniu.
 
 > [!TIP]
 > Jeśli planujesz użycie pomocnika odzyskiwania zaawansowanego w celu zainstalowania ffu w trybie offline, może być przydatne pobranie obrazu flash. [**Pobierz bieżący obraz dla wersji HoloLens 2.**](https://aka.ms/hololens2download)
